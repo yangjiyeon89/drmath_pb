@@ -76,6 +76,7 @@
   width: 244px;
   height: 52px;
   padding: 0 20px;
+  font-size: 20px;
   img {
     width: 14px;height: 15px;
   }
@@ -91,7 +92,7 @@
   }
 }
 .btn-icon-pen , a.btn-icon-pen {
-  width: 646px;height: 80px;
+  width: 464px;height: 80px;
   @include font(24px, 700);
 }
 .btn-icon-guide , a.btn-icon-guide {
@@ -245,6 +246,9 @@ input[type="text"] {
   &.w264 {
     width: 264px;
   }
+  &.w392 {
+    width: 392px;
+  }
   &.full {
     width: 100%;
   }
@@ -260,7 +264,7 @@ input[type="text"] {
   }
 }
 input[type="radio"], input[type="checkbox"] {
-  border:0;clip:rect(0 0 0 0);width:1px;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;
+  @include inputnone;
   & + label {
     position: relative;
     &::before {
@@ -357,6 +361,7 @@ input[type="checkbox"] {
   }
 }
 .select-list {
+  display: none;
   overflow-y: overlay;
   position: relative;
   top: -2px;
@@ -395,6 +400,9 @@ input[type="checkbox"] {
   @include layout-justify-center;
   .total {
     @include font(18px, 700);
+    em {
+      @include font(18px, 700);
+    }
   }
   .search-form {
     @include layout-center;
@@ -568,7 +576,7 @@ input[type="checkbox"] {
     overflow: hidden;
     border-radius: 10px;
     .txt-box {
-      padding: 40px;
+      padding: 35px 40px 40px;
       background-color: #f2f2f2;
     }
     .tit {

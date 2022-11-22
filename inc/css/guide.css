@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 .guide { padding: 0 30px 60px; background-color: #fafafa; }
 
-.guide h1 { margin: 60px 0 15px; font-size: 22px; }
+.guide h1 { margin: 60px 0 15px; font-size: 22px; font-weight: 700; }
 
 .guide h2 { margin: 40px 0 10px; font-size: 18px; }
 

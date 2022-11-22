@@ -54,13 +54,13 @@
 
 .btn-default-type02:hover, a.btn-default-type02:hover { color: #333333; background-color: #e6e6e6; }
 
-.btn-icon-arrow, a.btn-icon-arrow { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; position: relative; width: 244px; height: 52px; padding: 0 20px; }
+.btn-icon-arrow, a.btn-icon-arrow { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; position: relative; width: 244px; height: 52px; padding: 0 20px; font-size: 20px; }
 
 .btn-icon-arrow img, a.btn-icon-arrow img { width: 14px; height: 15px; }
 
 .btn-icon-arrow::after, a.btn-icon-arrow::after { position: absolute; right: 20px; top: 50%; content: ""; display: block; clear: both; width: 7px; height: 11px; margin-top: -6px; background: url(/images/common/ico_arrow_w_type02.png) no-repeat; background-size: contain; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
-.btn-icon-pen, a.btn-icon-pen { width: 646px; height: 80px; font-size: 24px; font-weight: 700; }
+.btn-icon-pen, a.btn-icon-pen { width: 464px; height: 80px; font-size: 24px; font-weight: 700; }
 
 .btn-icon-guide, a.btn-icon-guide { width: 400px; height: 60px; font-size: 18px; font-weight: 700; }
 
@@ -122,6 +122,8 @@ input[type="text"] { height: 40px; padding: 13px 15px; border-radius: 5px; borde
 
 input[type="text"].w264 { width: 264px; }
 
+input[type="text"].w392 { width: 392px; }
+
 input[type="text"].full { width: 100%; }
 
 input[type="text"]::-webkit-input-placeholder { color: #999; }
@@ -166,7 +168,7 @@ input[type="checkbox"]:checked + label::before { background: url(/images/common/
 
 .select-btn.active::after { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
-.select-list { overflow-y: overlay; position: relative; top: -2px; width: 180px; background: #fff; border: 1px solid #cfcfcf; border-top: 0; border-radius: 0 0 5px 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.select-list { display: none; overflow-y: overlay; position: relative; top: -2px; width: 180px; background: #fff; border: 1px solid #cfcfcf; border-top: 0; border-radius: 0 0 5px 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .select-list a { display: block; padding: 12px 15px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -181,6 +183,8 @@ input[type="checkbox"]:checked + label::before { background: url(/images/common/
 .table-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .table-top .total { font-size: 18px; font-weight: 700; }
+
+.table-top .total em { font-size: 18px; font-weight: 700; }
 
 .table-top .search-form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -256,7 +260,7 @@ input[type="checkbox"]:checked + label::before { background: url(/images/common/
 
 .list-thum-type02 li { overflow: hidden; border-radius: 10px; }
 
-.list-thum-type02 li .txt-box { padding: 40px; background-color: #f2f2f2; }
+.list-thum-type02 li .txt-box { padding: 35px 40px 40px; background-color: #f2f2f2; }
 
 .list-thum-type02 li .tit { color: #5a14be; font-size: 24px; font-weight: 700; line-height: 1.4; }
 
