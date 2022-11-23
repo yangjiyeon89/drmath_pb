@@ -74,9 +74,9 @@
   justify-content: flex-start;
   position: relative;
   width: 244px;
-  height: 52px;
-  padding: 0 20px;
+  padding: 13px 20px 15px;
   font-size: 20px;
+  color: #fff;
   img {
     width: 14px;height: 15px;
   }
@@ -786,7 +786,10 @@ input[type="checkbox"] {
 
 // header
 .header {
+  position: absolute;
+  top: 0;left: 0;right: 0;
   background-color: #fff;
+  z-index: 10;
   &.active {
     height: 270px;
     .header-content {

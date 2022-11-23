@@ -54,7 +54,7 @@
 
 .btn-default-type02:hover, a.btn-default-type02:hover { color: #333333; background-color: #e6e6e6; }
 
-.btn-icon-arrow, a.btn-icon-arrow { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; position: relative; width: 244px; height: 52px; padding: 0 20px; font-size: 20px; }
+.btn-icon-arrow, a.btn-icon-arrow { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; position: relative; width: 244px; padding: 13px 20px 15px; font-size: 20px; color: #fff; }
 
 .btn-icon-arrow img, a.btn-icon-arrow img { width: 14px; height: 15px; }
 
@@ -346,7 +346,7 @@ input[type="checkbox"]:checked + label::before { background: url(/images/common/
 
 .pop-wrap.content-type .pop-footer button:last-child { color: #fff; font-weight: 500; background-color: #5a14be; }
 
-.header { background-color: #fff; }
+.header { position: absolute; top: 0; left: 0; right: 0; background-color: #fff; z-index: 10; }
 
 .header.active { height: 270px; }
 
