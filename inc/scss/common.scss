@@ -4,6 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
 // common
+[class^='web-'] {
+  display: block !important;
+}
+[class^='mo-'] {
+  display: none !important;
+}
+html {
+  min-width: 1200px;
+}
 .inner {
   width: 1240px;
   margin: auto;
@@ -790,6 +799,7 @@ input[type="checkbox"] {
   top: 0;left: 0;right: 0;
   background-color: #fff;
   z-index: 10;
+  min-width: 1200px;
   &.active {
     height: 270px;
     .header-content {
@@ -805,6 +815,9 @@ input[type="checkbox"] {
     a {
       display: block;
     }
+    & + div {
+      display: flex;
+    }
   }
   .nav-wrap {
     @include layout-center; 
@@ -818,13 +831,13 @@ input[type="checkbox"] {
         display: block;
         padding: 30px 0;
         font-weight: 700;
+        font-size: 22px;
         &.active {
           padding: 30px 0 29px;
           border-bottom: 1px solid $color-main-purple;
         }
       }
       a {
-        font-size: 18px;
         &.active {
           color: $color-main-purple;
         }
@@ -839,6 +852,9 @@ input[type="checkbox"] {
           & + li {
             margin-top: 28px;
           }
+          a {
+            font-size: 18px;
+          }
         }
         &.on {
           display: block;
@@ -847,7 +863,7 @@ input[type="checkbox"] {
     }
   }
   .btn-wrap {
-    margin-left: 50px;
+    margin-left: 30px;
     a {
       display: inline-block;
       padding: 16px 30px 14px 25px;
@@ -904,6 +920,9 @@ input[type="checkbox"] {
           margin-top: 10px;
           color: #a1a1a1;
           font-weight: 500;
+        }
+        span {
+          display: inline-block !important;
         }
       }
     }
@@ -981,6 +1000,41 @@ input[type="checkbox"] {
         width: 17px;height: 15px;
         img {
           display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px){
+  [class^='web-']  {
+    display: none !important;
+  }
+  [class^='mo-']  {
+    display: block !important;
+  }
+  .inner {
+    width: 1020px;
+  }
+  .footer {
+    .inner {
+      padding: 33px 0 20px;
+    }
+    .left-cnt {
+      position: relative;
+      .link-wrap {
+        position: absolute;
+        top: 0;left: 0;
+      }
+      .ft-logo {
+        padding-top: 40px;
+      }
+      .txt {
+        margin-top: 40px;
+        span {
+          span {
+            display: none !important;
+          }
         }
       }
     }

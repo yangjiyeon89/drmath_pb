@@ -72,7 +72,7 @@ $(function(){
 
   // sec02 swiper
   const sec02Swiper = new Swiper('.sec02-swiper', {
-    slidesPerView: 6,
+    slidesPerView: 4,
     pagination: {
       el: ".sec02-swiper .swiper-pagination",
       clickable: true,
@@ -81,6 +81,14 @@ $(function(){
       delay: 5000,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      1770: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    }
   });
 
   let _btn2 = $('.sec02-swiper button')
@@ -101,12 +109,48 @@ $(function(){
     sec02Swiper.autoplay.start();
   });
 
-  //sec03 swiper
+  // sec03 swiper
   const sec03Swiper = new Swiper(".sec03-swiper .swiper-container", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     navigation: {
       nextEl: ".sec03-swiper .swiper-button-next",
       prevEl: ".sec03-swiper .swiper-button-prev",
     },
+    breakpoints: {
+      1240: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 2,
+      },
+    }
   });
+
+  // sec04
+  let target = $('.sec04-list button');
+
+  target.on('click', function(){
+    let _this = $(this);
+    let now = $('.ui-tab-btn.active').index();
+    
+    if(_this.hasClass('next')) {
+      if(now !== 3) {
+        $('.ui-tab-btn').removeClass('active');
+        $('.ui-tab-btn').eq(now + 1).addClass('active');
+        $('.contents').removeClass('on');
+        $('.contents').eq(now + 1).addClass('on');
+      }
+    } else if(_this.hasClass('prev')) {
+      if(now !== 0) {
+        $('.ui-tab-btn').removeClass('active');
+        $('.ui-tab-btn').eq(now - 1).addClass('active');
+        $('.contents').removeClass('on');
+        $('.contents').eq(now - 1).addClass('on');
+      }
+    }
+    
+
+    
+  })
+
 })

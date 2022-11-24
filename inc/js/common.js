@@ -91,6 +91,7 @@ $(function(){
       _cnt.removeClass('on');
       _cnt.eq(_idx).addClass('on');      
     }
+    console.log(_idx)
   }
 
   tabBtn.on('click', tabUI);
