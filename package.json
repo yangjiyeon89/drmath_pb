@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "air-datepicker": "^3.3.1"
+    "air-datepicker": "^3.3.1",
+    "node-sass": "^8.0.0"
   }
 }
