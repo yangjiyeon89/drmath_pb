@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-<<<<<<< Updated upstream
 .guide { margin-top: 100px; padding: 0 30px 60px; background-color: #fafafa; }
 
 .guide h1 { margin: 60px 0 15px; font-size: 22px; font-weight: 700; }
@@ -11,7 +10,7 @@
 .guide .tab-wrap + .tab-wrap { margin-top: 40px; }
 
 .guide .pop-wrap { position: relative; top: inherit; left: inherit; -webkit-transform: none; transform: none; }
-=======
+
 .guide {
   padding: 0 30px 60px;
   background-color: #fafafa;
@@ -37,4 +36,3 @@
   left: inherit;
   transform: none;
 }
->>>>>>> Stashed changes
