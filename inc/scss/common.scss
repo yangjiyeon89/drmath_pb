@@ -98,7 +98,7 @@ html {
     @include virtual-selector;
     width: 7px;height: 11px;
     margin-top: -6px;
-    background: url(/images/common/ico_arrow_w_type02.png) no-repeat;
+    background: url(../../images/common/ico_arrow_w_type02.png) no-repeat;
     background-size: contain;
     transform: rotate(-180deg);
   }
@@ -226,12 +226,12 @@ html {
     }
     &.prev {
       margin-right: 18px;
-      background: url(/images/common/ico_arrow_g.png) no-repeat;
+      background: url(../../images/common/ico_arrow_g.png) no-repeat;
       background-size: contain;
     }
     &.next {
       margin-left: 18px;
-      background: url(/images/common/ico_arrow_b.png) no-repeat;
+      background: url(../../images/common/ico_arrow_b.png) no-repeat;
       background-size: contain;
     }
   }
@@ -245,7 +245,7 @@ html {
     top: 50%;right: 24px;
     width: 18px;height: 20px;
     margin-top: -10px;
-    background: url(/images/common/ico_search.png) no-repeat;
+    background: url(../../images/common/ico_search.png) no-repeat;
     background-size: contain;
   }
 }
@@ -302,7 +302,7 @@ input[type="radio"], input[type="checkbox"] {
       &::before {      
         width: 20px;height: 20px;
         margin-top: -10px;
-        background: url(/images/common/input_radio.png) no-repeat;
+        background: url(../../images/common/input_radio.png) no-repeat;
         background-size: contain;
       }
       &:last-child {
@@ -311,7 +311,7 @@ input[type="radio"], input[type="checkbox"] {
     }
     &:checked + label {
       &::before {
-        background: url(/images/common/input_radio_chk.png) no-repeat;
+        background: url(../../images/common/input_radio_chk.png) no-repeat;
         background-size: contain;
       }
     }
@@ -330,7 +330,7 @@ input[type="radio"], input[type="checkbox"] {
         left: 5px;
         width: 16px;height: 11px;
         margin-top: -6px;
-        background: url(/images/common/input_radio_chk02.png) no-repeat;
+        background: url(../../images/common/input_radio_chk02.png) no-repeat;
         background-size: contain;
       }
     }
@@ -343,13 +343,13 @@ input[type="checkbox"] {
     &::before {      
       width: 18px;height: 18px;
       margin-top: -8px;
-      background: url(/images/common/input_checkbox.png) no-repeat;
+      background: url(../../images/common/input_checkbox.png) no-repeat;
       background-size: contain;
     }
   }
   &:checked + label {
     &::before {
-      background: url(/images/common/input_checkbox_chk.png) no-repeat;
+      background: url(../../images/common/input_checkbox_chk.png) no-repeat;
       background-size: contain;
     }
   }
@@ -372,7 +372,7 @@ input[type="checkbox"] {
     @include virtual-selector;
     width: 13px;height: 7px;
     margin-top: -4px;
-    background: url(/images/common/select_arrow.png) no-repeat;
+    background: url(../../images/common/select_arrow.png) no-repeat;
     background-size: contain;    
   }
   &.active {
@@ -460,7 +460,7 @@ input[type="checkbox"] {
       @include virtual-selector;
       width: 7px;height: 11px;
       margin-top: -5px;
-      background: url(/images/common/ico_arrow_c.png) no-repeat; 
+      background: url(../../images/common/ico_arrow_c.png) no-repeat; 
       background-size: contain;
     }
   }
@@ -714,7 +714,7 @@ input[type="checkbox"] {
   z-index: 10;
   .pop-close {
     width: 25px;height: 25px;
-    background: url(/images/common/ico_close.png) no-repeat;
+    background: url(../../images/common/ico_close.png) no-repeat;
   }
   &.search-type {
     width: 600px;
@@ -729,7 +729,7 @@ input[type="checkbox"] {
         @include font(24px, 700);
       }
       .pop-close {
-        background: url(/images/common/ico_close_w.png) no-repeat;
+        background: url(../../images/common/ico_close_w.png) no-repeat;
         background-size: contain;
       }
     }
@@ -1047,7 +1047,7 @@ input[type="checkbox"] {
   margin-top: 85px;
   padding-top: 30px;
   text-align: center;
-  background: url(/images/sub/sub_title_bg.jpg) no-repeat;
+  background: url(../../images/sub/sub_title_bg.jpg) no-repeat;
   background-size: cover;
   box-sizing: border-box;
   .txt {
@@ -1083,7 +1083,7 @@ input[type="checkbox"] {
           left: 0;top: 50%;
           @include virtual-selector;
           width: 4px;height: 7px;
-          background: url(/images/common/ico_arrow_w.png) no-repeat;
+          background: url(../../images/common/ico_arrow_w.png) no-repeat;
           background-size: contain;
           transform: translateY(-50%);
         }
