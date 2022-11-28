@@ -36,9 +36,9 @@
 
 .pagination button { margin-top: 9px; }
 
-.pagination .stop { width: 15px; height: 10px; margin-right: 10px; background: url(/images/common/ico_stop.png) no-repeat; background-size: contain; }
+.pagination .stop { width: 15px; height: 10px; margin-right: 10px; background: url(../../images/common/ico_stop.png) no-repeat; background-size: contain; }
 
-.pagination .start { width: 13px; height: 10px; background: url(/images/common/ico_play.png) no-repeat; background-size: contain; }
+.pagination .start { width: 13px; height: 10px; background: url(../../images/common/ico_play.png) no-repeat; background-size: contain; }
 
 .section .inner > .tit-wrap { padding-top: 80px; }
 
@@ -106,7 +106,7 @@
 
 .sec01 .left-cnt .notice-wrap .notice-swiper .swiper-slide .date { color: #aaa; }
 
-.sec01 .left-cnt .notice-wrap .notice-swiper button { position: absolute; right: 0; width: 12px; height: 7px; background: url(/images/common/select_arrow.png) no-repeat; background-size: contain; }
+.sec01 .left-cnt .notice-wrap .notice-swiper button { position: absolute; right: 0; width: 12px; height: 7px; background: url(../../images/common/select_arrow.png) no-repeat; background-size: contain; }
 
 .sec01 .left-cnt .notice-wrap .notice-swiper .prev { top: 11px; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
@@ -116,7 +116,7 @@
 
 .sec01 .left-cnt .banner-wrap { margin-top: 25px; }
 
-.sec01 .left-cnt .banner-wrap .banner-swiper .text-box { width: 100%; height: 209px; padding: 44px; background: url(/images/main/sec01_img01.png) no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sec01 .left-cnt .banner-wrap .banner-swiper .text-box { width: 100%; height: 209px; padding: 44px; background: url(../../images/main/sec01_img01.png) no-repeat; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .sec01 .left-cnt .banner-wrap .banner-swiper .text-box .tit { display: block; font-size: 28px; font-weight: 700; }
 
@@ -188,7 +188,7 @@
 
 .sec03 .sec03-swiper .swiper-container { width: 100%; overflow: hidden; }
 
-.sec03 .sec03-swiper .swiper-button-next, .sec03 .sec03-swiper .swiper-button-prev { top: 29%; width: 50px; height: 50px; border-radius: 100%; background: url(/images/common/ico_arrow_bg.png) no-repeat; background-size: contain; }
+.sec03 .sec03-swiper .swiper-button-next, .sec03 .sec03-swiper .swiper-button-prev { top: 29%; width: 50px; height: 50px; border-radius: 100%; background: url(../../images/common/ico_arrow_bg.png) no-repeat; background-size: contain; }
 
 .sec03 .sec03-swiper .swiper-button-prev, .sec03 .sec03-swiper .swiper-rtl .swiper-button-next { left: -73px; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
@@ -218,7 +218,7 @@
 
 .sec04 .left-cnt div span { position: relative; display: block; padding-bottom: 15px; color: #3dc8a2; font-family: 'Montserrat'; font-size: 20px; font-weight: 700; text-align: left; }
 
-.sec04 .left-cnt div span::after { position: absolute; bottom: 0; left: 0; content: ""; display: block; clear: both; width: 176px; height: 9px; background: url(/images/main/sec04_arrow.png) no-repeat; background-size: contain; }
+.sec04 .left-cnt div span::after { position: absolute; bottom: 0; left: 0; content: ""; display: block; clear: both; width: 176px; height: 9px; background: url(../../images/main/sec04_arrow.png) no-repeat; background-size: contain; }
 
 .sec04 .left-cnt div span + span { margin-top: 45px; }
 
@@ -226,7 +226,7 @@
 
 .sec04 .right-cnt .sec04-list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.sec04 .right-cnt .sec04-list button { width: 42px; height: 42px; background: url(/images/common/ico_arrow_bg.png) no-repeat; background-size: contain; }
+.sec04 .right-cnt .sec04-list button { width: 42px; height: 42px; background: url(../../images/common/ico_arrow_bg.png) no-repeat; background-size: contain; }
 
 .sec04 .right-cnt .sec04-list button.prev { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
@@ -296,7 +296,7 @@
 
 .sec05 .sec05-cnt .right .txt-box span em { color: #45f1c2; font-weight: 700; }
 
-.sec05 .sec05-cnt .right .txt-box::before { content: ""; display: block; clear: both; position: absolute; left: 50%; top: -13px; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 49px; height: 28px; background: url(/images/main/deco_arrow.png) no-repeat; background-size: contain; }
+.sec05 .sec05-cnt .right .txt-box::before { content: ""; display: block; clear: both; position: absolute; left: 50%; top: -13px; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 49px; height: 28px; background: url(../../images/main/deco_arrow.png) no-repeat; background-size: contain; }
 
 .sec06 { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -320,7 +320,7 @@
 
 .sec06 .sec06-table .table-cnt .top li::before { position: absolute; left: 0; top: 11px; content: ""; display: block; clear: both; width: 4px; height: 4px; border-radius: 100%; background-color: #3dc8a2; }
 
-.sec06 .sec06-table .table-cnt .top::after { position: absolute; bottom: -18px; left: 50%; content: ""; display: block; clear: both; width: 37px; height: 37px; background: url(/images/main/sec06_arrow.png) no-repeat; background-size: contain; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.sec06 .sec06-table .table-cnt .top::after { position: absolute; bottom: -18px; left: 50%; content: ""; display: block; clear: both; width: 37px; height: 37px; background: url(../../images/main/sec06_arrow.png) no-repeat; background-size: contain; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
 .sec06 .sec06-table .table-cnt .btm { height: 190px; padding-top: 40px; text-align: center; background-color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -358,13 +358,13 @@
 
 .sec07 > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 250px; padding-top: 40px; color: #fff; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.sec07 > div:nth-child(1) { background: url(/images/main/sec06_bg01.png) no-repeat; background-size: cover; }
+.sec07 > div:nth-child(1) { background: url(../../images/main/sec06_bg01.png) no-repeat; background-size: cover; }
 
 .sec07 > div:nth-child(1) .txt { margin-bottom: 31px; }
 
 .sec07 > div:nth-child(1) .tit { font-size: 40px; font-weight: 700; }
 
-.sec07 > div:nth-child(2) { background: url(/images/main/sec06_bg02.png) no-repeat; background-size: cover; }
+.sec07 > div:nth-child(2) { background: url(../../images/main/sec06_bg02.png) no-repeat; background-size: cover; }
 
 .sec07 > div:nth-child(2) .txt { margin-bottom: 24px; }
 
@@ -376,7 +376,7 @@
 
 .sec07 > div a { position: relative; display: inline-block; padding-right: 28px; margin-top: 20px; color: #fff; font-size: 20px; font-weight: 700; }
 
-.sec07 > div a::after { position: absolute; right: 0; top: 50%; content: ""; display: block; clear: both; width: 10px; height: 18px; margin-top: -9px; background: url(/images/common/ico_arrow_b.png) no-repeat; background-size: cover; -webkit-filter: invert(0) sepia(100) saturate(2%) hue-rotate(175deg) brightness(100) contrast(101%); filter: invert(0) sepia(100) saturate(2%) hue-rotate(175deg) brightness(100) contrast(101%); }
+.sec07 > div a::after { position: absolute; right: 0; top: 50%; content: ""; display: block; clear: both; width: 10px; height: 18px; margin-top: -9px; background: url(../../images/common/ico_arrow_b.png) no-repeat; background-size: cover; -webkit-filter: invert(0) sepia(100) saturate(2%) hue-rotate(175deg) brightness(100) contrast(101%); filter: invert(0) sepia(100) saturate(2%) hue-rotate(175deg) brightness(100) contrast(101%); }
 
 .sec07 > div .sub-txt { margin-top: 10px; font-size: 18px; font-weight: 500; }
 
