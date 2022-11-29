@@ -7933,7 +7933,7 @@ $.extend( Datepicker.prototype, {
 						if ( sel[ 0 ] ) {
 							$.datepicker._selectDay( event.target, inst.selectedMonth, inst.selectedYear, sel[ 0 ] );
 						}
-
+						
 						onSelect = $.datepicker._get( inst, "onSelect" );
 						if ( onSelect ) {
 							dateStr = $.datepicker._formatDate( inst );
@@ -8010,11 +8010,12 @@ $.extend( Datepicker.prototype, {
 		} else {
 			handled = false;
 		}
-
+		
 		if ( handled ) {
 			event.preventDefault();
 			event.stopPropagation();
 		}
+		console.log(sel)
 	},
 
 	/* Filter entered characters - based on date format. */
