@@ -1,3 +1,241 @@
-.aa {
-	display: none;
+@charset "UTF-8";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+.user-cnt {
+	.tab-menu-type01 {
+		width: 100%;
+		li {
+			width: 33.333%;
+			a {
+				width: 100%;
+			}
+		}
+	}
+	.contents {
+		padding: 50px 0 100px 0;
+	}
+	.box-wrap {
+		@include layout-justify-start;
+		width: 100%;
+		gap: 20px;
+		.line-box {
+			@include layout-justify-center;
+			flex-direction: column;
+			width: 50%;
+			height: 516px;
+			border: 1px solid $color-line;
+			border-radius: 10px;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 57px 0 36px 0;
+			.img-box {
+				margin-left: 20px;
+			}
+			.tit {
+				@include font(30px, 700);
+				color: $color-main-purple;
+
+				.underline {
+					@include font(20px, 700);
+					margin-bottom: 10px;
+					text-decoration: underline;
+					text-underline-position: under;
+				}
+			}
+			.desc {
+				@include font(18px, 400);
+				color: $color-sub33;
+				line-height: 36px;
+				padding: 0 70px;
+			}
+		}
+	}
+
+	.list-thum-type02 {
+		@include layout-center-center;
+		flex-wrap: wrap;
+		gap: 20px;
+		li {
+			width: calc(50% - 10px);
+			.img-box {
+				position: relative;
+				overflow: hidden;
+				height: 240px;
+				img {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			.txt {
+				&.type02 {
+					.name {
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		& + .paging-wrap {
+			margin-top: 60px;
+		}
+	}
+
+	.table-view {
+		margin-top: 30px;
+		.prev-cnt, .next-cnt {
+			&:last-child {
+			  th, td {
+				border-bottom: 1px solid #c5c5c5;
+			  }
+			}
+			th, td {
+			  border-top: 1px solid #c5c5c5;
+			}
+			th {
+				@include font(18px, 400);
+				img {
+					margin-right: 24px;
+				}
+			}
+			td {
+			  text-align: left;
+			  @include font(18px, 500);
+			  a {
+				margin-left: 10px;
+			  }
+			}
+		}
+	}
+
+	.list-thum-type01 {
+		@include layout-center-center;
+		flex-wrap: wrap;
+		gap: 20px;
+		li {
+			width: calc(50% - 10px);
+			margin-bottom: 10px;
+			.img-box {
+				position: relative;
+				overflow: hidden;
+				height: 240px;
+				img {
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+		& + .paging-wrap {
+			margin-top: 30px;
+		}
+	}
+}
+
+.fee-cnt01 {
+	.list-thum-type03 {
+		@include layout-center-center;
+		flex-direction: row;
+		gap: 20px;
+		padding: 40px 0 15px 0;
+		li {
+			width: 300px;
+			height: 450px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-sizing: border-box;
+			.tit {
+				@include layout-center-center;
+				height: 100px;
+				background: url(../../images/sub/sub03_01_bg.png) no-repeat right -30px;
+				@include font(30px, 700);
+				color: #fff;
+			}
+			.cont {
+				padding: 30px;
+				color: $color-sub33;
+				p {
+  					@include font(14px, 400);
+					span {
+						display: inline-block;
+						margin-top: 5px;
+						@include font(24px, 700);
+					}
+					& + p {
+						margin-top: 50px;
+					}
+				}
+				.icon {
+					display: block;
+					margin: 20px auto 0;
+				}
+			}
+			&.item-type01 {
+				border: 1px solid $color-main-green;
+				background-color: #e5f8f4;
+				.tit {
+					background-color: $color-main-green;
+				}
+			}
+			&.item-type02 {
+				border: 1px solid #4953e8;
+				background-color: #eaebff;
+				.tit {
+					background-color: #4953e8;
+				}
+			}
+			&.item-type03 {
+				border: 1px solid $color-main-purple;
+				background-color: #eee7f7;
+				.tit {
+					background-color: $color-main-purple;
+				}
+			}
+		}
+	}
+	.msg-txt {
+		display: block;
+		width: 940px;
+		margin: 0 auto;
+		text-align: right;
+		span {
+			@include font(16px, 400);
+ 			color: $color-sub33;
+		}
+		& + .btn-wrap {
+			margin: 30px 0 70px 0;
+		}
+	}
+
+	.fee-cnt02 {
+		@include layout-center-center;
+		flex-direction: column;
+		width: 100%;
+		background-color: #f4f4f4;
+
+		.tit {
+			margin: 70px 0;
+			span {
+				@include font(30px, 700);
+				color: $color-sub33;
+			}
+		}
+
+		.input-radio-type01 {
+			input[type="radio"] {
+				& + label {
+				  	padding-left: 30px;
+				  	margin-right: 90px;
+				  	@include font(18px, 400);
+					color: $color-sub33;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
 }

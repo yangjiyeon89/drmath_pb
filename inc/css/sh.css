@@ -1,3 +1,325 @@
-.aa {
+@charset "UTF-8";
+/**
+	* Computes a CSS calc function that betweens a value from
+	* A to B over viewport-width A to viewport-width B.
+	* Requires a media query to cap the value at B.
+	* vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을
+	* 계산해주는 SASS 함수.
+	* 간격이나 폰트사이즈에 적용하면 자연스러운
+	* 반응형 사이즈 처리가 가능 함.
+	* 참고사이트 http://dohoons.com/blog/1364
+	*/
+/**
+	* Read the article: http://sassbreak.com/viewport-relative-headings-with-sass
+	* px 를 vw 로 자동으로 바꿔 줌.
+	* max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨.
+	* 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨.
+	* 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨.
+	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
+	*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+.h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5a14be;
+}
+
+.h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #3dc8a2;
+}
+
+.h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #282828;
+}
+
+.h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.h5 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e6e6e6;
+}
+
+.h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.p1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.p2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #e0e0e0;
+}
+
+.p3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fc3812;
+}
+
+.p4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.user-cnt .tab-menu-type01 {
+  width: 100%;
+}
+.user-cnt .tab-menu-type01 li {
+  width: 33.333%;
+}
+.user-cnt .tab-menu-type01 li a {
+  width: 100%;
+}
+.user-cnt .contents {
+  padding: 50px 0 100px 0;
+}
+.user-cnt .box-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+.user-cnt .box-wrap .line-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 516px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 57px 0 36px 0;
+}
+.user-cnt .box-wrap .line-box .img-box {
+  margin-left: 20px;
+}
+.user-cnt .box-wrap .line-box .tit {
+  font-size: 30px;
+  font-weight: 700;
+  color: #5a14be;
+}
+.user-cnt .box-wrap .line-box .tit .underline {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.user-cnt .box-wrap .line-box .desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 36px;
+  padding: 0 70px;
+}
+.user-cnt .list-thum-type02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.user-cnt .list-thum-type02 li {
+  width: calc(50% - 10px);
+}
+.user-cnt .list-thum-type02 li .img-box {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+.user-cnt .list-thum-type02 li .img-box img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-cnt .list-thum-type02 li .txt.type02 .name::after {
   display: none;
+}
+.user-cnt .list-thum-type02 + .paging-wrap {
+  margin-top: 60px;
+}
+.user-cnt .table-view {
+  margin-top: 30px;
+}
+.user-cnt .table-view .prev-cnt:last-child th, .user-cnt .table-view .prev-cnt:last-child td, .user-cnt .table-view .next-cnt:last-child th, .user-cnt .table-view .next-cnt:last-child td {
+  border-bottom: 1px solid #c5c5c5;
+}
+.user-cnt .table-view .prev-cnt th, .user-cnt .table-view .prev-cnt td, .user-cnt .table-view .next-cnt th, .user-cnt .table-view .next-cnt td {
+  border-top: 1px solid #c5c5c5;
+}
+.user-cnt .table-view .prev-cnt th, .user-cnt .table-view .next-cnt th {
+  font-size: 18px;
+  font-weight: 400;
+}
+.user-cnt .table-view .prev-cnt th img, .user-cnt .table-view .next-cnt th img {
+  margin-right: 24px;
+}
+.user-cnt .table-view .prev-cnt td, .user-cnt .table-view .next-cnt td {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+.user-cnt .table-view .prev-cnt td a, .user-cnt .table-view .next-cnt td a {
+  margin-left: 10px;
+}
+.user-cnt .list-thum-type01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.user-cnt .list-thum-type01 li {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+.user-cnt .list-thum-type01 li .img-box {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+.user-cnt .list-thum-type01 li .img-box img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user-cnt .list-thum-type01 + .paging-wrap {
+  margin-top: 30px;
+}
+
+.fee-cnt01 .list-thum-type03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 40px 0 15px 0;
+}
+.fee-cnt01 .list-thum-type03 li {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.fee-cnt01 .list-thum-type03 li .tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: url(../../images/sub/sub03_01_bg.png) no-repeat right -30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.fee-cnt01 .list-thum-type03 li .cont {
+  padding: 30px;
+  color: #333333;
+}
+.fee-cnt01 .list-thum-type03 li .cont p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.fee-cnt01 .list-thum-type03 li .cont p span {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.fee-cnt01 .list-thum-type03 li .cont p + p {
+  margin-top: 50px;
+}
+.fee-cnt01 .list-thum-type03 li .cont .icon {
+  display: block;
+  margin: 20px auto 0;
+}
+.fee-cnt01 .list-thum-type03 li.item-type01 {
+  border: 1px solid #3dc8a2;
+  background-color: #e5f8f4;
+}
+.fee-cnt01 .list-thum-type03 li.item-type01 .tit {
+  background-color: #3dc8a2;
+}
+.fee-cnt01 .list-thum-type03 li.item-type02 {
+  border: 1px solid #4953e8;
+  background-color: #eaebff;
+}
+.fee-cnt01 .list-thum-type03 li.item-type02 .tit {
+  background-color: #4953e8;
+}
+.fee-cnt01 .list-thum-type03 li.item-type03 {
+  border: 1px solid #5a14be;
+  background-color: #eee7f7;
+}
+.fee-cnt01 .list-thum-type03 li.item-type03 .tit {
+  background-color: #5a14be;
+}
+.fee-cnt01 .msg-txt {
+  display: block;
+  width: 940px;
+  margin: 0 auto;
+  text-align: right;
+}
+.fee-cnt01 .msg-txt span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+.fee-cnt01 .msg-txt + .btn-wrap {
+  margin: 30px 0 70px 0;
+}
+.fee-cnt01 .fee-cnt02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.fee-cnt01 .fee-cnt02 .tit {
+  margin: 70px 0;
+}
+.fee-cnt01 .fee-cnt02 .tit span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+}
+.fee-cnt01 .fee-cnt02 .input-radio-type01 input[type=radio] + label {
+  padding-left: 30px;
+  margin-right: 90px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
+.fee-cnt01 .fee-cnt02 .input-radio-type01 input[type=radio] + label:last-child {
+  margin-right: 0;
 }
