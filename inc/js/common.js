@@ -6,19 +6,16 @@ $(function () {
       _gnbMenuLink = $('.nav > li');
 
     switch (_afterStr[0]) {
-      case 'page01_01':
+      case 'page03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
-        _gnbMenuLink.eq(0).find('.depth2').show();
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
       case 'page02_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').show();
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
       case 'page02_02':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').show();
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
         break;
       case 'page03':
@@ -54,9 +51,10 @@ $(function () {
       subMenu.addClass('on');
 
       _thisMenu.siblings('li').find('> a').removeClass('active');
-      subMenu.find('a').removeClass('active');
+      _thisMenu.siblings('li').find(subMenu).find('a').removeClass('active');
       _thisMenu.find('> a').addClass('active');
       _this.addClass('active');
+      
     });
 
     _header.on('mouseleave', function () {
@@ -69,10 +67,10 @@ $(function () {
     })
   }
 
-  $(document).ready(function () {
+  $(document).on('ready', function(){
     checkCurrentGnb();
     menuUI();
-  });
+  })
 
 
   // tab
@@ -87,7 +85,6 @@ $(function () {
     if (!_this.hasClass('active')) {
       _this.siblings().removeClass('active');
       _this.addClass('active');
-
       _cnt.removeClass('on');
       _cnt.eq(_idx).addClass('on');
     }
