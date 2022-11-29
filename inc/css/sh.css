@@ -141,6 +141,9 @@
   line-height: 36px;
   padding: 0 70px;
 }
+.user-cnt .box-wrap .line-box .btn-icon-guide {
+  color: #fff;
+}
 .user-cnt .list-thum-type02 {
   display: flex;
   justify-content: center;
@@ -165,7 +168,7 @@
   display: none;
 }
 .user-cnt .list-thum-type02 + .paging-wrap {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .user-cnt .table-view {
   margin-top: 30px;
@@ -188,7 +191,7 @@
   font-size: 18px;
   font-weight: 500;
 }
-.user-cnt .table-view .prev-cnt td a, .user-cnt .table-view .next-cnt td a {
+.user-cnt .table-view .prev-cnt td span, .user-cnt .table-view .next-cnt td span {
   margin-left: 10px;
 }
 .user-cnt .list-thum-type01 {
@@ -297,29 +300,91 @@
 .fee-cnt01 .msg-txt + .btn-wrap {
   margin: 30px 0 70px 0;
 }
-.fee-cnt01 .fee-cnt02 {
+.fee-cnt01 .btn-icon-pen {
+  color: #fff;
+}
+
+.fee-cnt02 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   background-color: #f4f4f4;
+  padding: 70px 0;
 }
-.fee-cnt01 .fee-cnt02 .tit {
-  margin: 70px 0;
+.fee-cnt02 .tit {
+  margin-bottom: 70px;
 }
-.fee-cnt01 .fee-cnt02 .tit span {
+.fee-cnt02 .tit span {
   font-size: 30px;
   font-weight: 700;
   color: #333333;
 }
-.fee-cnt01 .fee-cnt02 .input-radio-type01 input[type=radio] + label {
+.fee-cnt02 .input-radio-type01 input[type=radio] + label {
   padding-left: 30px;
   margin-right: 90px;
   font-size: 18px;
   font-weight: 400;
   color: #333333;
 }
-.fee-cnt01 .fee-cnt02 .input-radio-type01 input[type=radio] + label:last-child {
+.fee-cnt02 .input-radio-type01 input[type=radio] + label:last-child {
   margin-right: 0;
+}
+.fee-cnt02 .fee-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 40px;
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 0 50px 0;
+  margin-top: 30px;
+}
+.fee-cnt02 .fee-box .box {
+  text-align: center;
+  width: 216px;
+}
+.fee-cnt02 .fee-box .box p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #5a14be;
+  margin-bottom: 15px;
+}
+.fee-cnt02 .fee-box .box.type01 .num-box {
+  width: 216px;
+  height: 80px;
+}
+.fee-cnt02 .fee-box .box.type01 .num-box input {
+  width: 216px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #5a14be;
+  text-align: center;
+}
+.fee-cnt02 .fee-box .box.type02 .num-box {
+  height: 80px;
+  background-color: #5a14be;
+  border-radius: 5px;
+}
+.fee-cnt02 .fee-box .box.type02 .num-box .value {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+}
+.fee-cnt02 .msg-txt {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5;
+}
+.fee-cnt02 .msg-txt img {
+  margin-right: 7px;
 }

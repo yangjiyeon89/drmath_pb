@@ -50,6 +50,9 @@
 				line-height: 36px;
 				padding: 0 70px;
 			}
+			.btn-icon-guide {
+				color: #fff;
+			}
 		}
 	}
 
@@ -80,7 +83,7 @@
 			}
 		}
 		& + .paging-wrap {
-			margin-top: 60px;
+			margin-top: 30px;
 		}
 	}
 
@@ -104,7 +107,7 @@
 			td {
 			  text-align: left;
 			  @include font(18px, 500);
-			  a {
+			  span {
 				margin-left: 10px;
 			  }
 			}
@@ -209,33 +212,87 @@
 			margin: 30px 0 70px 0;
 		}
 	}
-
-	.fee-cnt02 {
-		@include layout-center-center;
-		flex-direction: column;
-		width: 100%;
-		background-color: #f4f4f4;
-
-		.tit {
-			margin: 70px 0;
-			span {
-				@include font(30px, 700);
+	.btn-icon-pen {
+		color: #fff;
+	}
+}
+.fee-cnt02 {
+	@include layout-center-center;
+	flex-direction: column;
+	width: 100%;
+	background-color: #f4f4f4;
+	padding: 70px 0;
+	.tit {
+		margin-bottom: 70px;
+		span {
+			@include font(30px, 700);
+			color: $color-sub33;
+		}
+	}
+	.input-radio-type01 {
+		input[type="radio"] {
+			& + label {
+					padding-left: 30px;
+					margin-right: 90px;
+					@include font(18px, 400);
 				color: $color-sub33;
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
-
-		.input-radio-type01 {
-			input[type="radio"] {
-				& + label {
-				  	padding-left: 30px;
-				  	margin-right: 90px;
-				  	@include font(18px, 400);
-					color: $color-sub33;
-					&:last-child {
-						margin-right: 0;
+	}
+	.fee-box {
+		@include layout-justify-start;
+		flex-direction: row;
+		gap: 40px;
+		border-top: 1px solid $color-line;
+		padding: 30px 0 50px 0;
+		margin-top: 30px;
+		.box {
+			text-align: center;
+			width: 216px;
+			p {
+				@include font(22px, 700);
+				color: $color-main-purple;
+				margin-bottom: 15px;
+			}
+			&.type01 {
+				.num-box {
+					width: 216px;
+					height: 80px;
+					input {
+						width: 216px;
+						height: 80px;
+						@include font(30px, 700);
+						color: $color-main-purple;
+						text-align: center;
 					}
 				}
 			}
+			&.type02 {
+				.num-box {
+					height: 80px;
+					background-color: $color-main-purple;
+					border-radius: 5px;
+					.value {
+						@include content-center-center;
+						@include font(30px, 700);
+						height: 80px;
+						color: #fff;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.msg-txt {
+		text-align: center;
+		@include font(16px, 400);
+		color: $color-sub33;
+		line-height: 1.5;
+		img {
+			margin-right: 7px;
 		}
 	}
 }
