@@ -31,7 +31,7 @@
     overflow: hidden;
     width: 29px;height: 29px;
     border-radius: 100%;
-    cursor: pointer;
+    
   }
   .ui-widget-header .ui-icon {
     position: relative;
@@ -65,12 +65,13 @@
     color: #333;
     background: transparent;
   }
-  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-datepicker-today {
     border: none;
     background-color: #e7ddf5;
+    opacity: 1;
   }
   .ui-datepicker-current-day, .ui-state-active {
-    background-color: #5a14be !important;
+    background: #e7ddf5 url(../../images/sub/calendar_bg.png) no-repeat left center !important;
     a {
       color: #fff !important;
     }
@@ -81,6 +82,14 @@
     font-size: 16px;
   }
   .ui-datepicker td {
-    padding: 8px 0;
+    height: 42px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .hasDatepicker {
+    padding: 30px 0 10px;
+    margin-bottom: 75px;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #e1e1e1;
   }
 }

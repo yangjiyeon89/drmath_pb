@@ -357,7 +357,7 @@
 						for(var i = begin; i < end; i++) 
 							methods.addDates.call(this, methods.sumDays.call(this,date, i), type);
 							
-							console.log($('td.ui-state-highlight').last());
+							// console.log($('.ui-state-highlight').eq(end));
 						break;
 					default:
 						if(methods.gotDate.call(this, date) === false) // adds dates
