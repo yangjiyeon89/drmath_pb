@@ -404,22 +404,22 @@
                   <div class="chk-box">
                     <input type="checkbox" id="chk02_01">
                     <label for="chk02_01"></label>
-                    <a href="javascript:;" class="pop-btn" date-pop="pop01">이용약관 <em>(필수)</em></a>
+                    <a href="javascript:;" class="pop-btn" data-pop="pop01">이용약관 <em>(필수)</em></a>
                   </div>
                   <div class="chk-box">
                     <input type="checkbox" id="chk02_02">
                     <label for="chk02_02"></label>
-                    <a href="javascript:;" class="pop-btn" date-pop="pop02">개인정보 수집 및 이용 안내<em>(필수)</em></a>
+                    <a href="javascript:;" class="pop-btn" data-pop="pop02">개인정보 수집 및 이용 안내<em>(필수)</em></a>
                   </div>
                   <div class="chk-box">
                     <input type="checkbox" id="chk02_03">
                     <label for="chk02_03"></label>
-                    <a href="javascript:;" class="pop-btn" date-pop="pop03">마케팅 동의 안내(선택)</a>
+                    <a href="javascript:;" class="pop-btn" data-pop="pop03">마케팅 동의 안내(선택)</a>
                   </div>
                   <div class="chk-box">
                     <input type="checkbox" id="chk02_04">
                     <label for="chk02_04"></label>
-                    <a href="javascript:;" class="pop-btn" date-pop="pop04">개인정보 제2자 제공 동의(선택)</a>
+                    <a href="javascript:;" class="pop-btn" data-pop="pop04">개인정보 제2자 제공 동의(선택)</a>
                   </div>
                 </td>
               </tr>
@@ -434,7 +434,7 @@
         </div>
         <div class="btn-wrap">
           <button type="button" class="btn-default-type02">취소</button>
-          <button type="button" class="btn-default-type01">신청하기</button>
+          <button type="button" class="btn-default-type01 pop-btn" data-pop="alert-pop">신청하기</button>
         </div>
       </div>
     </div>
@@ -464,6 +464,7 @@
     </div>
   </div>
   <div class="dim"></div>
+  <!-- 우편번호 찾기 팝업 -->
   <div class="pop-wrap search-type" data-pop="search-pop">
     <div class="pop-header">
       <span class="tit">우편번호 검색</span>
@@ -580,6 +581,44 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- 서비스 약관 동의 팝업 -->
+  <div class="pop-wrap content-type" data-pop="pop01">
+    <div class="pop-header">
+      <span class="tit">개인 정보 수집 및 이용 안내</span>
+      <button type="button" class="pop-close"></button>
+    </div>
+    <div class="pop-content">
+      <div class="scroll-inner"></div>
+    </div>
+    <div class="pop-footer">
+      <button>확인</button>
+    </div>
+  </div>
+
+  <!-- 얼럿 팝업 -->
+  <div class="pop-wrap alert-type" data-pop="alert-pop">
+    <div class="pop-content">
+      <button type="button" class="pop-close"></button>
+      <span class="txt">필수 입력 항목을<br>빠짐없이 입력해주세요.</span>
+    </div>
+    <div class="pop-footer">
+      <button>확인</button>
+    </div>
+  </div>
+
+  <!-- 완료 팝업  -->
+  <div class="pop-wrap alert-type img-type">
+    <div class="pop-content">
+      <button type="button" class="pop-close"></button>
+      <img src="../images/common/web_img.png" alt="">
+      <span class="tit">분석/처방 수학 전문의 닥터매쓰 가입을 환영합니다.</span>
+      <span class="form-txt-error type-color03"><img src="../images/common/ico_check03.png" alt="">업체 측의 학원 운영 인증 후 무료 체험 사용이 가능합니다.</span>
+    </div>
+    <div class="pop-footer">
+      <button>확인</button>
     </div>
   </div>
 </body>

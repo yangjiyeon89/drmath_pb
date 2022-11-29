@@ -818,7 +818,10 @@ input[type="checkbox"] {
     .pop-content {
       position: relative;
       @include layout-center-center;
-      height: 148px;      
+      height: 148px;
+      .tit {
+        @include font(20px, 700);
+      }
       .txt {
         padding-top: 20px;
         font-size: 18px;
@@ -845,6 +848,21 @@ input[type="checkbox"] {
           font-weight: 500;
           background-color: $color-main-purple;
         }
+      }
+    }
+    &.img-type {
+      width: 600px;
+      .pop-content {
+        flex-direction: column;
+        padding: 80px 0;
+      }
+      .tit {
+        margin-top: 35px;
+      }
+      .form-txt-error {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
       }
     }
   }
