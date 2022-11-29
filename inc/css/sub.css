@@ -1,27 +1,116 @@
 @charset "UTF-8";
-/** Computes a CSS calc function that betweens a value from A to B over viewport-width A to viewport-width B. Requires a media query to cap the value at B. vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을 계산해주는 SASS 함수. 간격이나 폰트사이즈에 적용하면 자연스러운 반응형 사이즈 처리가 가능 함. 참고사이트 http://dohoons.com/blog/1364 */
-/** Read the article: http://sassbreak.com/viewport-relative-headings-with-sass px 를 vw 로 자동으로 바꿔 줌. max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨. 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨. 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨. 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/ */
+/**
+	* Computes a CSS calc function that betweens a value from
+	* A to B over viewport-width A to viewport-width B.
+	* Requires a media query to cap the value at B.
+	* vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을
+	* 계산해주는 SASS 함수.
+	* 간격이나 폰트사이즈에 적용하면 자연스러운
+	* 반응형 사이즈 처리가 가능 함.
+	* 참고사이트 http://dohoons.com/blog/1364
+	*/
+/**
+	* Read the article: http://sassbreak.com/viewport-relative-headings-with-sass
+	* px 를 vw 로 자동으로 바꿔 줌.
+	* max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨.
+	* 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨.
+	* 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨.
+	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
+	*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
-.h1 { margin-bottom: 10px; font-size: 40px; font-weight: 700; color: #5a14be; }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+.h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5a14be;
+}
 
-.h2 { margin-bottom: 10px; font-size: 40px; font-weight: 500; color: #3dc8a2; }
+.h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #3dc8a2;
+}
 
-.h3 { margin-bottom: 10px; font-size: 30px; font-weight: 700; color: #282828; }
+.h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #282828;
+}
 
-.h4 { margin-bottom: 10px; font-size: 24px; font-weight: 700; color: #333333; }
+.h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
 
-.h5 { margin-bottom: 10px; font-size: 22px; font-weight: 700; color: #e6e6e6; }
+.h5 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e6e6e6;
+}
 
-.h6 { margin-bottom: 10px; font-size: 20px; font-weight: 700; color: #e0e0e0; }
+.h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0e0e0;
+}
 
-.p1 { margin-bottom: 10px; font-size: 20px; font-weight: 400; color: #666666; }
+.p1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666666;
+}
 
-.p2 { margin-bottom: 10px; font-size: 18px; font-weight: 400; color: #e0e0e0; }
+.p2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #e0e0e0;
+}
 
-.p3 { margin-bottom: 10px; font-size: 16px; font-weight: 400; color: #fc3812; }
+.p3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fc3812;
+}
 
-.p4 { margin-bottom: 10px; font-size: 14px; font-weight: 400; }
+.p4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
 
-.free-cnt { padding-bottom: 117px; }
+/**
+	* Computes a CSS calc function that betweens a value from
+	* A to B over viewport-width A to viewport-width B.
+	* Requires a media query to cap the value at B.
+	* vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을
+	* 계산해주는 SASS 함수.
+	* 간격이나 폰트사이즈에 적용하면 자연스러운
+	* 반응형 사이즈 처리가 가능 함.
+	* 참고사이트 http://dohoons.com/blog/1364
+	*/
+/**
+	* Read the article: http://sassbreak.com/viewport-relative-headings-with-sass
+	* px 를 vw 로 자동으로 바꿔 줌.
+	* max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨.
+	* 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨.
+	* 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨.
+	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
+	*/
+.h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #5a14be;
+}
 
 .free-cnt .input-radio-type01 { margin-bottom: 50px; text-align: center; }
