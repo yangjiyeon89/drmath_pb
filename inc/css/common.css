@@ -324,7 +324,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap .pop-close { width: 25px; height: 25px; background: url(../../images/common/ico_close.png) no-repeat; }
 
-.pop-wrap.search-type { width: 600px; background-color: #fff; }
+.pop-wrap.search-type { width: 600px; min-height: 660px; background-color: #fff; }
 
 .pop-wrap.search-type .pop-header { height: 80px; padding: 0 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; background-color: #5a14be; }
 
@@ -361,6 +361,10 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap.search-type .pop-content table td:nth-child(1) { padding: 10px 8px; }
 
 .pop-wrap.search-type .pop-content table td:last-child { font-size: 18px; font-weight: 700; color: #5a14be; }
+
+.pop-wrap.search-type .no-data { padding-top: 30px; text-align: center; line-height: 1.5; }
+
+.pop-wrap.search-type .no-data em { color: #5a14be; }
 
 .pop-wrap.alert-type { overflow: hidden; width: 300px; border: 2px solid #5a14be; border-radius: 10px; background-color: #fff; }
 

@@ -1,0 +1,90 @@
+/*IR 화면에서 숨김*/
+.offscreen {position: absolute !important;top: 0;left: 0;display: block; overflow: hidden; height: 1px;width: 1px;clip: rect(1px, 1px, 1px, 1px);}
+
+
+/**********************************************************************************
+** Align
+***********************************************************************************/
+.al {text-align: left !important;}
+.ar {text-align: right !important;}
+.ac {text-align: center !important;}
+/**********************************************************************************
+** input
+***********************************************************************************/
+input[type="tel"], input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="number"], input[type="search"]{ width: 100%; padding: 6px 9px 7px; height: 46px; border: 1px solid #ddd; color: #000; font-size: 15px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; line-height: 42px; vertical-align: top; -webkit-appearance: none; appearance: none; border-radius: 0; box-shadow: none;}
+textarea[disabled], textarea[readonly], select[disabled], select[readonly], input[type="tel"][disabled], input[type="text"][disabled], input[type="password"][disabled], input[type="number"][disabled], input[type="email"][disabled], input[type="text"][readonly], input[type="password"][readonly], input[type="number"][readonly], input[type="email"][readonly] { border: 1px solid #ddd; background-color: #fafafa; color: #999; opacity: .7; }
+textarea { width: 100%; min-width: 100%; max-width: 100%; height: 200px; padding: 9px 9px 9px; border: 1px solid #ddd; color: #000; line-height: 16px; vertical-align: top; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance: none; -webkit-border-radius: 0;}
+
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder{ color: #999 !important;} /* 파이어폭스 4–18 : placeholder style */
+
+input[type="search"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder{ color: #999 !important;} /* 파이어폭스 19–50 : placeholder style */
+
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder{ color: #999 !important;} /* 인터넷 익스플로러 10+ : placeholder style */
+
+input[type="search"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder,
+input[type="email"]::placeholder{ color: #999 !important;} /* 파이어폭스 51+, 크롬 57+ : placeholder style */
+
+textarea::-webkit-input-placeholder {color: #999 !important;} /* 크롬 4–56 : placeholder style */
+textarea:-moz-placeholder {color: #999 !important;} /* 파이어폭스 4–18 : placeholder style */
+textarea::-moz-placeholder {color: #999 !important;} /* 파이어폭스 19–50 : placeholder style */
+textarea:-ms-input-placeholder {color: #999 !important;} /* 인터넷 익스플로러 10+ : placeholder style */
+textarea::placeholder {color: #999 !important;} /* 파이어폭스 51+, 크롬 57+ : placeholder style */
+
+
+/* checkbox */
+.checkbox-a { display: inline-flex; align-items: center; }
+.checkbox-a .checkbox-form { appearance: none; width: 20px; height: 20px; background: url(../image/checkbox-a-default.png) no-repeat 0 0; }
+.checkbox-a .checkbox-form:checked { background-image:url(../image/checkbox-a-checked.png); }
+.checkbox-a .checkbox-txt { margin-left:10px; color:#666; font-size:14px;line-height:20px; }
+
+/* icon */
+[class^='ic-'] {display:inline-block;background-repeat:no-repeat;background-position:center center;background-size:100%;background-size:contain;}
+.ic-home {width:24px;height:24px;background-image:url(../image/ic-home.png)}
+.ic-storage {width:24px;height:24px;background-image:url(../image/ic-storage.png)}
+.ic-file {width:24px;height:24px;background-image:url(../image/ic-file.png)}
+.ic-notice {width:18px;height:18px;background-image:url(../image/ic-notice.png)}
+
+/* button */
+[class^='btn-type-'] {display:inline-flex;justify-content:center;align-items:center;width:auto;height:40px;padding:0 20px;border-radius:5px;font-size:14px}
+[class^='btn-type-'][class*='size-lg'] {height:48px;border-radius:6px;font-size:16px}
+[class^='btn-type-'][class*='size-sm'] {height:36px;padding-left:16px;padding-right:16px}
+.btn-type-gray {background-color:#888; color:#fff;}
+.btn-type-white {background-color:#fff; border:1px solid #c7c9d3; color:#333;}
+
+.btn-like { z-index: 99; position: absolute; bottom: 15px; left: 15px;width: 30px; height: 30px;}
+.btn-like:after,
+.btn-like:before { content:''; position: absolute; top: 0; left: 0; display: block; width: 30px; height: 30px; background-repeat: no-repeat; background-size: 30px; background-position: center;}
+.btn-like.active:after,
+.btn-like.active:before { transition: opacity 0.25s ease-in-out; }
+.btn-like.active:after { opacity: 1; }
+.btn-like.active:before { opacity: 0; }
+.btn-like:after { background-image: url(../image/ic-star-on.png); opacity: 0; transition: opacity 0.15s ease-in-out; }
+.btn-like:before { background-image: url(../image/ic-star-off.png); }
+
+.btn-download { display:inline-block; width:30px; height:30px; background:url(../image/ic-download.png) no-repeat; background-size:contain;}
+.btn-bookmark { display:inline-block; width:30px; height:30px; background:url(../image/ic-bookmark.png) no-repeat; background-size:contain;}
+
+/* scrollbar */
+::-webkit-scrollbar {width:6px;height:6px;background-color:transparent}
+::-webkit-scrollbar-thumb {width:6px;background-color:rgba(51,51,51,.2);border-radius:2px}
+::-webkit-scrollbar-corner {background-color:transparent}
+

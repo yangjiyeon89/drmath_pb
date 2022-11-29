@@ -259,7 +259,7 @@ input[type="text"], input[type="number"] {
   &.w88 {
     width: 88px;
   }
-  &.182 {
+  &.w182 {
     width: 182px;
   }
   &.w264 {
@@ -718,6 +718,7 @@ input[type="checkbox"] {
   }
   &.search-type {
     width: 600px;
+    min-height: 660px;
     background-color: #fff;
     .pop-header {
       height: 80px;
@@ -796,6 +797,14 @@ input[type="checkbox"] {
             color: $color-main-purple;
           }
         }
+      }
+    }
+    .no-data {
+      padding-top: 30px;
+      text-align: center;
+      line-height: 1.5;
+      em {
+        color: $color-main-purple;
       }
     }
   }
