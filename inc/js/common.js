@@ -142,7 +142,9 @@ $(function () {
     _html.css('overflow', 'hidden');
     _dim.fadeIn();
 
-    $(".popup[data-pop='" + popData + "']").show();
+    $(".pop-wrap[data-pop='" + popData + "']").show();
+
+    console.log($(".pop-wrap[data-pop='" + popData + "']"))
   }
 
   function popClose() {

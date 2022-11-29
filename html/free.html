@@ -194,7 +194,7 @@
                 <td class="input-row">
                   <div class="input-box">
                     <input type="text" placeholder="우편번호" class="w264" disabled>
-                    <button type="button" class="btn-line-type01">우편번호 찾기</button>
+                    <button type="button" class="btn-line-type01 pop-btn" data-pop="search-pop">우편번호 찾기</button>
                   </div>
                   <input type="text" placeholder="주소" class="full">
                   <input type="text" placeholder="상세 주소" class="full">
@@ -463,8 +463,126 @@
       </div>
     </div>
   </div>
+  <div class="dim"></div>
+  <div class="pop-wrap search-type" data-pop="search-pop">
+    <div class="pop-header">
+      <span class="tit">우편번호 검색</span>
+      <button type="button" class="pop-close"></button>
+    </div>
+    <div class="pop-content">
+      <div class="tab-wrap">
+        <ul class="tab-menu-type01">
+          <li class="ui-tab-btn active">
+            <a href="javascript:;">도로명 주소</a>
+          </li>
+          <li class="ui-tab-btn">
+            <a href="javascript:;">지번주소</a>
+          </li>
+        </ul>
+        <div class="contents on">
+          <div class="search-wrap">
+            <input type="text" placeholder="천재교육">
+            <button type="button" class="btn-default-type01 w100">검색</button>
+          </div>
+          <div class="table-top">
+            <div class="txt"><em>‘천재교육’</em>검색 결과입니다.</div>
+            <div class="select-wrap">
+              <button type="button" class="select-btn">전체지역(618) </button>
+              <ul class="select-list scroll-inner">
+                <li>
+                  <a href="javascript:;">전체지역(618) </a>
+                </li>
+                <li>
+                  <a href="javascript:;">전체지역(618) </a>
+                </li>
+                <li>
+                  <a href="javascript:;">전체지역(618) </a>
+                </li>
+                <li>
+                  <a href="javascript:;">전체지역(618) </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-list">
+            <table>
+              <colgroup>
+                <col width="*">
+                <col width="10%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <div>
+                      <span>도로명</span>
+                      <span>서울 특별시 금천구 가산로9길 54(가산동,천재교육)</span>
+                    </div>
+                    <div>
+                      <span>지번</span>
+                      <span>서울 특별시 금천구 가산동 60-28 천재교육</span>
+                    </div>
+                  </td>
+                  <td>08513</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <span>도로명</span>
+                      <span>서울 특별시 금천구 가산로9길 54(가산동,천재교육)</span>
+                    </div>
+                    <div>
+                      <span>지번</span>
+                      <span>서울 특별시 금천구 가산동 60-28 천재교육</span>
+                    </div>
+                  </td>
+                  <td>08513</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <span>도로명</span>
+                      <span>서울 특별시 금천구 가산로9길 54(가산동,천재교육)</span>
+                    </div>
+                    <div>
+                      <span>지번</span>
+                      <span>서울 특별시 금천구 가산동 60-28 천재교육</span>
+                    </div>
+                  </td>
+                  <td>08513</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <span>도로명</span>
+                      <span>서울 특별시 금천구 가산로9길 54(가산동,천재교육)</span>
+                    </div>
+                    <div>
+                      <span>지번</span>
+                      <span>서울 특별시 금천구 가산동 60-28 천재교육</span>
+                    </div>
+                  </td>
+                  <td>08513</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="contents">
+          <div class="search-wrap">
+            <input type="text" placeholder="천재교육">
+            <button type="button" class="btn-default-type01 w100">검색</button>
+          </div>
+          <div class="no-data">
+            <span>
+              찾으시려는 <em>도로명 주소+건물번호/건물명</em><br>
+              혹은 <em>지번주소+번지수/건물명</em>을 입력해주세요.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 <script>
   // var currentMonth = new Date().getMonth();
   // var currentYear = new Date().getFullYear();

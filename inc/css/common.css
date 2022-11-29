@@ -320,7 +320,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .list-thum-type02 li .date { display: block; margin-top: 28px; font-size: 14px; }
 
-.pop-wrap { position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; }
+.pop-wrap { display: none; position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; }
 
 .pop-wrap .pop-close { width: 25px; height: 25px; background: url(../../images/common/ico_close.png) no-repeat; }
 
@@ -502,3 +502,5 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
   .footer .left-cnt .ft-logo { padding-top: 40px; }
   .footer .left-cnt .txt { margin-top: 40px; }
   .footer .left-cnt .txt span span { display: none !important; } }
+
+.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5); }
