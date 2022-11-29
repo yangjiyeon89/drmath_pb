@@ -10,6 +10,19 @@ $(function () {
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
+      case 'page04_01':
+      _gnbMenuLink.eq(1).find('> a').addClass('active');
+      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        break;
+      case 'page04_02':
+      _gnbMenuLink.eq(1).find('> a').addClass('active');
+      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
+        break;
+      case 'page04_03':
+      _gnbMenuLink.eq(1).find('> a').addClass('active');
+      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
+        break;
+
       case 'page02_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
