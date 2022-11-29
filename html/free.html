@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="../inc/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/jquery-ui.multidatespicker.css">
   <link rel="stylesheet" href="../inc/css/common.css">
   <link rel="stylesheet" href="../inc/css/sub.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/jquery-ui.multidatespicker.js"></script>
   <script src="../inc/js/common.js"></script>
   <script src="../inc/js/main.js"></script>
 </head>
@@ -286,106 +288,129 @@
             </div>
           </div>
         </div> -->
-        <div id="datepicker"></div>
+        <div id="mdp-demo"></div>
         <script>
-          
-          var holidays = {
-            "0101":{type:0, title:"신정", year:""},
-            "0301":{type:0, title:"삼일절", year:""},
-            "0505":{type:0, title:"어린이날", year:""},
-            "0606":{type:0, title:"현충일", year:""},
-            "0815":{type:0, title:"광복절", year:""},
-            "1003":{type:0, title:"개천절", year:""},
-            "1009":{type:0, title:"한글날", year:""},
-            "1225":{type:0, title:"크리스마스", year:""},
+          const month_name = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
+          const day_name = ['일', '월', '화', '수', '목', '금', '토'];
 
-            "0209":{type:0, title:"설날", year:"2013"},
-            "0210":{type:0, title:"설날", year:"2013"},
-            "0211":{type:0, title:"설날", year:"2013"},
-            "0918":{type:0, title:"추석", year:"2013"},
-            "0919":{type:0, title:"추석", year:"2013"},
-            "0920":{type:0, title:"추석", year:"2013"},
-            "0517":{type:0, title:"석가탄신일", year:"2013"}
-          };
 
-          jQuery(function($){
-            $.datepicker.regional['ko'] = {
-                closeText: '닫기',
-                prevText: '이전달',
-                nextText: '다음달',
-                currentText: '오늘',
-                monthNames: ['1월','2월','3월','4월','5월','6월',
-                '7월','8월','9월','10월','11월','12월'],
-                monthNamesShort: ['1월','2월','3월','4월','5월','6월',
-                '7월','8월','9월','10월','11월','12월'],
-                dayNames: ['일','월','화','수','목','금','토'],
-                dayNamesShort: ['일','월','화','수','목','금','토'],
-                dayNamesMin: ['일','월','화','수','목','금','토'],
-                weekHeader: 'Wk',
-                dateFormat: 'yy-mm-dd',
-                firstDay: 0,
-                isRTL: false,
-                showMonthAfterYear: true,
-                yearSuffix: ''
-            };
-            $.datepicker.setDefaults($.datepicker.regional['ko']);
+          $('#mdp-demo').multiDatesPicker({
+            monthNames: month_name,
+            monthNamesShort: month_name,
+            dayNames: day_name,
+            dayNamesMin: day_name,
+            dateFormat: 'yy-mm-dd',
+            showMonthAfterYear: true,
+            yearSuffix: '년',
+            beforeShowDay: disableSpecificWeekDays,
+            multidate: true,
+            mode: 'daysRange',
+            autoselectRange: [0,7],
+            minDate : 0 ,
 
-            $('#datepicker').datepicker({
-              minDate: 0,
-              showOn: 'both',
-              buttonImage: '&amp;lt;?=$g4[path]?&amp;gt;/img/calendar.gif',
-              buttonImageOnly: true,
-              buttonText: "달력",
-              changeMonth: false,
-              changeYear: false,
-              showButtonPanel: true,
-              yearRange: 'c-99:c+99',
-              minDate: '+1d',
-
-              beforeShowDay: function(day) {
-                var result;
-                // 포맷에 대해선 다음 참조(http://docs.jquery.com/UI/Datepicker/formatDate)
-                var holiday = holidays[$.datepicker.formatDate("mmdd",day )];
-                var thisYear = $.datepicker.formatDate("yy", day);
-
-                // exist holiday?
-                if (holiday) {
-                if(thisYear == holiday.year || holiday.year == "") {
-                  result =  [false, "date-holiday", holiday.title];
-                }
-                }
-
-                if(!result) {
-                  switch (day.getDay()) {
-                    case 0: // is sunday?
-                      result = [false, "date-sunday"];
-                      break;
-                    case 6: // is saturday?
-                      result = [false, "date-saturday"];
-                      break;
-                    default:
-                      result = [true, ""];
-                      break;
-                  }
-                }
-
-                return result;
-              },
-              onSelect: function(dateText, inst) {
-                var toYear = this.date.getFullYear();
-                // var toMonth = this.date.getMonth();
-                // var toDay = this.date.getDate();
-                // maxDate = new Date(toYear, toMonth, toDay + 7);
-
-                console.log(toYear)
-                // $("#datepicker").datepicker({
-                //     format : 'yy-mm-dd',
-                //     defaultDate: maxDate,
-                //     setDefaultDate:maxDate
-                // })
-              }
-            });
           });
+
+
+          function disableSpecificWeekDays(date) {
+            var theday = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+            var day = date.getDay();
+            return [day != 0 && day != 6];
+            
+          }
+          // var holidays = {
+          //   "0101":{type:0, title:"신정", year:""},
+          //   "0301":{type:0, title:"삼일절", year:""},
+          //   "0505":{type:0, title:"어린이날", year:""},
+          //   "0606":{type:0, title:"현충일", year:""},
+          //   "0815":{type:0, title:"광복절", year:""},
+          //   "1003":{type:0, title:"개천절", year:""},
+          //   "1009":{type:0, title:"한글날", year:""},
+          //   "1225":{type:0, title:"크리스마스", year:""},
+
+          //   "0209":{type:0, title:"설날", year:"2013"},
+          //   "0210":{type:0, title:"설날", year:"2013"},
+          //   "0211":{type:0, title:"설날", year:"2013"},
+          //   "0918":{type:0, title:"추석", year:"2013"},
+          //   "0919":{type:0, title:"추석", year:"2013"},
+          //   "0920":{type:0, title:"추석", year:"2013"},
+          //   "0517":{type:0, title:"석가탄신일", year:"2013"}
+          // };
+
+          // jQuery(function($){
+          //   $.datepicker.regional['ko'] = {
+          //       closeText: '닫기',
+          //       prevText: '이전달',
+          //       nextText: '다음달',
+          //       currentText: '오늘',
+          //       monthNames: ['1월','2월','3월','4월','5월','6월',
+          //       '7월','8월','9월','10월','11월','12월'],
+          //       monthNamesShort: ['1월','2월','3월','4월','5월','6월',
+          //       '7월','8월','9월','10월','11월','12월'],
+          //       dayNames: ['일','월','화','수','목','금','토'],
+          //       dayNamesShort: ['일','월','화','수','목','금','토'],
+          //       dayNamesMin: ['일','월','화','수','목','금','토'],
+          //       weekHeader: 'Wk',
+          //       dateFormat: 'yy-mm-dd',
+          //       firstDay: 0,
+          //       isRTL: false,
+          //       showMonthAfterYear: true,
+          //       yearSuffix: ''
+          //   };
+          //   $.datepicker.setDefaults($.datepicker.regional['ko']);
+
+          //   $('#datepicker').datepicker({
+          //     minDate: 0,
+          //     showOn: 'both',
+          //     buttonImage: '&amp;lt;?=$g4[path]?&amp;gt;/img/calendar.gif',
+          //     buttonImageOnly: true,
+          //     buttonText: "달력",
+          //     changeMonth: false,
+          //     changeYear: false,
+          //     showButtonPanel: true,
+          //     yearRange: 'c-99:c+99',
+          //     minDate: '+1d',
+
+          //     beforeShowDay: function(day) {
+          //       var result;
+          //       // 포맷에 대해선 다음 참조(http://docs.jquery.com/UI/Datepicker/formatDate)
+          //       var holiday = holidays[$.datepicker.formatDate("mmdd",day )];
+          //       var thisYear = $.datepicker.formatDate("yy", day);
+
+          //       // exist holiday?
+          //       if (holiday) {
+          //       if(thisYear == holiday.year || holiday.year == "") {
+          //         result =  [false, "date-holiday", holiday.title];
+          //       }
+          //       }
+
+          //       if(!result) {
+          //         switch (day.getDay()) {
+          //           case 0: // is sunday?
+          //             result = [false, "date-sunday"];
+          //             break;
+          //           case 6: // is saturday?
+          //             result = [false, "date-saturday"];
+          //             break;
+          //           default:
+          //             result = [true, ""];
+          //             break;
+          //         }
+          //       }
+
+          //       return result;
+          //     },
+          //     onSelect: function(dateText, inst) {
+          //       $('#datepicker').datepicker({
+          //         defaultDate: "+1w",
+          //         changeMonth: true,
+          //         numberOfMonths: 3
+          //       })
+          //       .on( "change", function() {
+          //         from.datepicker( "option", "maxDate", getDate( this ) );
+          //       });
+          //     }
+          //   });
+          // });
         </script>
         <div class="table-tit">
           <span class="tit">서비스 약관 동의</span>
