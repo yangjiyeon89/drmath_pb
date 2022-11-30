@@ -498,7 +498,7 @@
     mode: 'daysRange',
     autoselectRange: [0,7],
     minDate : 0 ,
-    onSelect: lastSelect,
+    // onSelect: lastSelect,
   });
 
   function disableSpecificWeekDays(date) {
@@ -508,8 +508,11 @@
   }
   
 
-  function lastSelect(indexes){
-    console.log(indexes)
-  }
+  // function lastSelect(){
+  //   setTimeout(function(){
+  //     var $selectedTd = $('td.ui-state-highlight');
+  //     $selectedTd.eq($selectedTd.length-1).addClass('end');
+  //   }, 0);
+  // }
 </script>
 </html>
