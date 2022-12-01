@@ -23,6 +23,21 @@ $(function () {
       _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
         break;
 
+      case 'page05_01':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        break;
+      
+      case 'page05_02':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('active');
+        break;
+
+      case 'page05_03':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('active');
+        break;
+
       case 'page02_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');

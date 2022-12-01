@@ -87,135 +87,193 @@
   font-weight: 400;
 }
 
-.sub05 .tab-wrap .contents.on .tab-wrap-type01 {
+.serv-cnt .tab-menu-type01 {
+  width: 100%;
+}
+.serv-cnt .tab-menu-type01 li {
+  width: 100%;
+}
+.serv-cnt .tab-menu-type01 li a {
+  width: 100%;
+}
+.serv-cnt .contents {
   margin: 50px auto 110px;
 }
-.sub05 .tab-wrap .contents.on .tab-wrap-type01 .table-tit {
-  margin: 50px 0 15px;
-}
-.sub05 .tab-wrap .contents.on .table-view {
-  margin: 80px auto 110px;
-}
-.sub05 .tab-wrap .contents.on .table-view .btn-default-type01 {
-  margin: 50px auto 0;
-}
-.sub05 .tab-wrap .contents.on .tab-wrap-type02 {
-  margin: 50px auto 125px;
-}
-.sub05 .tab-wrap .contents.on .tab-wrap-type02 .btn-line-type01 {
-  margin: 30px auto 0;
-}
-
-.sub-section {
-  position: relative;
-  width: 100%;
-  margin-top: 20px;
-}
-.sub-section .tab-wrap .tab-menu-type01 {
-  width: 100%;
-}
-.sub-section .tab-wrap .tab-menu-type01 li {
-  width: 100%;
-}
-.sub-section .tab-wrap .tab-menu-type01 li a {
-  width: 100%;
-}
-.sub-section .tab-wrap .contents .sub-tit {
+.serv-cnt .sub-tit {
   font-size: 36px;
   font-weight: 700;
+  color: #333333;
   line-height: 48px;
   letter-spacing: -0.025em;
 }
-.sub-section .tab-wrap .contents .tab-wrap {
-  text-align: center;
+.serv-cnt .tab-wrap {
   margin: 30px 0;
 }
-.sub-section .tab-wrap .contents .paging-wrap {
+.serv-cnt .tab-wrap .tab-wrap {
+  text-align: center;
+}
+.serv-cnt .paging-wrap {
   margin-top: 30px;
 }
-.sub-section .tab-wrap .table-list table {
+.serv-cnt .table-list table {
   border-bottom: 1px solid #e6e6e6;
 }
-.sub-section .faq-list {
+.serv-cnt .table-view {
+  padding-top: 30px;
+}
+.serv-cnt .table-tit {
+  padding-top: 50px;
+}
+.serv-cnt .faq-list {
   width: 100%;
   text-align: left;
   border-top: 2px solid #282828;
+  margin-bottom: 30px;
+}
+.serv-cnt .faq-list ul li {
   border-bottom: 1px solid #e6e6e6;
 }
-.sub-section .faq-list ul li {
-  border-bottom: 1px solid #e6e6e6;
-}
-.sub-section .faq-list ul li .acc-btn {
+.serv-cnt .faq-list ul li .acc-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   width: 100%;
   font-size: 18px;
+  font-weight: 500;
+  color: #333333;
   text-align: left;
   height: 80px;
   padding: 0 30px;
   cursor: pointer;
 }
-.sub-section .faq-list ul li .acc-btn em {
+.serv-cnt .faq-list ul li .acc-btn em {
   display: inline-block;
   margin-right: 10px;
   color: #5a14be;
 }
-.sub-section .faq-list ul li .cnt {
+.serv-cnt .faq-list ul li .cnt {
   display: none;
   padding: 25px 30px;
   background-color: #f4f4f4;
   border-radius: 10px;
   margin: 0 30px 35px;
 }
-.sub-section .faq-list ul li .cnt span {
+.serv-cnt .faq-list ul li .cnt span {
   line-height: 26px;
 }
-.sub-section .table-form table th.middle {
-  padding-top: 0;
-  vertical-align: middle;
+.serv-cnt .table-form.tbl_flex_type {
+  width: 100%;
+  border-top: 2px solid #333333;
 }
-.sub-section .table-form table td .input-box .stan {
+.serv-cnt .table-form > div {
+  width: 100%;
+}
+.serv-cnt .table-form > div .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.serv-cnt .table-form > div .row.wide .tr .tit,
+.serv-cnt .table-form > div .row.wide .tr .cnt {
+  height: 93px;
+}
+.serv-cnt .table-form > div .row.wide .tr .tit {
+  padding: 35px 25px;
+  white-space: nowrap;
+}
+.serv-cnt .table-form > div .row.wide .tr .cnt {
+  padding: 25px 20px;
+}
+.serv-cnt .table-form > div .row.wide .tr .cnt.small {
+  padding: 10px 20px;
+}
+.serv-cnt .table-form > div .row .tr {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.serv-cnt .table-form > div .row .tr .tit,
+.serv-cnt .table-form > div .row .tr .cnt {
+  height: 60px;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.serv-cnt .table-form > div .row .tr .tit {
+  width: 120px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+}
+.serv-cnt .table-form > div .row .tr .cnt {
+  width: 500px;
+  padding: 10px 20px;
+}
+.serv-cnt .table-form > div .row .tr .cnt .stan {
   position: relative;
 }
-.sub-section .table-form table td em.time-txt {
+.serv-cnt .table-form > div .row .tr .cnt .stan .time-txt {
   position: absolute;
-  right: 15px;
   top: 10px;
-  margin: 0;
+  right: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fc3812;
 }
-.sub-section .table-form table .form-txt-error {
-  padding: 15px 0 0;
+.serv-cnt .table-form .form-txt-error {
+  padding: 10px 0;
   display: block;
 }
-.sub-section .table-form table .select-btn.w188 {
+.serv-cnt .table-form .select-btn.w188 {
   width: 188px;
 }
-.sub-section .table-form table input[type=text].w68,
-.sub-section .table-form table input[type=number].w68 {
+.serv-cnt .table-form input[type=text].w68,
+.serv-cnt .table-form input[type=number].w68 {
   width: 68px;
 }
-.sub-section .table-form table input[type=text].w188,
-.sub-section .table-form table input[type=number].w188 {
+.serv-cnt .table-form input[type=text].w188,
+.serv-cnt .table-form input[type=number].w188 {
   width: 188px;
 }
-.sub-section .table-form table input[type=text].w325,
-.sub-section .table-form table input[type=number].w325 {
+.serv-cnt .table-form input[type=text].w325,
+.serv-cnt .table-form input[type=number].w325 {
   width: 325px;
 }
-.sub-section .text-box {
+.serv-cnt .table-form input[type=text].w458,
+.serv-cnt .table-form input[type=number].w458 {
+  width: 458px;
+}
+@media (max-width: 1240px) {
+  .serv-cnt .table-form.tbl_flex_type > div .row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .serv-cnt .table-form.tbl_flex_type > div .row .tr {
+    width: 100%;
+  }
+  .serv-cnt .table-form.tbl_flex_type > div .row .tr .tit {
+    width: 140px;
+  }
+  .serv-cnt .table-form.tbl_flex_type > div .row .tr .cnt {
+    width: 100%;
+  }
+}
+.serv-cnt .text-box {
   margin: 20px 0;
 }
-.sub-section .text-box textarea {
+.serv-cnt .text-box textarea {
   width: 100%;
   padding: 20px;
   resize: none;
   box-sizing: border-box;
   font-size: 16px;
+  font-weight: 400;
+  color: #666666;
   border-radius: 8px;
   border: 1px solid #959595;
 }
-.sub-section .line {
+.serv-cnt .line {
   width: 100%;
   height: 1px;
   background-color: #e6e6e6;
