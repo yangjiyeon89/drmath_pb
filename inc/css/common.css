@@ -238,7 +238,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .table-view table td { text-align: center; }
 
-.table-view table .tit { display: block; font-size: 34px; font-weight: 700; }
+.table-view table .tit { display: block; font-size: 34px; font-weight: 700; line-height: 1.3; }
 
 .table-view table .tit.notice { color: #5a14be; }
 
