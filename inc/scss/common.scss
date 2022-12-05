@@ -3,6 +3,7 @@
 @import "_setting.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
+// 홍보사이트
 // common
 [class^='web-'] {
   display: block !important;
@@ -1127,6 +1128,176 @@ input[type="checkbox"] {
   }
 }
 
+//문제은행
+.que-wrap {
+  font-family: 'Pretendard', sans-serif;
+  .inner {
+    width: 1280px;
+    margin: auto;
+  }
+  .scroll-inner {
+    overflow: overlay;
+  }
+  .scroll-inner::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scroll-inner::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
+    // border: 10px solid #fff;
+    border-radius: 35px;
+  }
+  .scroll-inner::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+// header
+.que-header {
+  .inner {
+    position: relative;
+    @include layout-justify-center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  .logo {
+    a {
+      display: block;
+      width: 105px;
+      height: 27px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .nav {
+    @include layout-center;
+    li {
+      > a {
+        position: relative;
+        @include font(18px, 700);
+        &.active {
+          color: $color-main-purple;
+          &::after {
+            position: absolute;
+            top: 1px;right: -9px;
+            @include virtual-selector;
+            width: 5px;height: 5px;
+            border-radius: 100%;
+            background-color: #ffba00;
+          }
+        }
+      }
+      & + li {
+        margin-left: 40px;
+      }
+      &:nth-child(2) {
+        .depth2 {
+          padding-left: 30%;
+        }
+      }
+      &:nth-child(3) {
+        .depth2 {
+          padding-left: 37%;
+        }
+      }
+      &:nth-child(4) {
+        .depth2 {
+          padding-left: 43%;
+        }
+      }
+    }
+  }
+  .depth2 {
+    @include layout-center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-left: 21%;
+    border-bottom: 1px solid #d3c9ee;
+    background-color: #f5f1ff;
+    box-sizing: border-box;
+    li {
+      a {
+        display: block;
+        padding: 11px 0;
+        @include font(16px, 400);
+        &:hover {
+          padding-bottom: 9px;
+          color: $color-main-purple;
+          font-weight: 700;
+          border-bottom: 2px solid $color-main-purple;
+        }
+      }
+      
+    }
+    &.on {
+      display: flex;
+    }
+  }
+  .btn-wrap {
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 0 10px;
+      
+      &:last-child {
+        padding-right: 0;
+      }
+      & + a {
+        &::before {
+          position: absolute;
+          left: 0;top: 50%;
+          @include virtual-selector;
+          width: 1px;height: 11px;
+          margin-top: -5px;
+          background-color: #dedede;
+        }
+      }
+      span {
+        display: block;
+        font-size: 12px;
+      }
+      &:nth-child(1) {
+        span {
+          padding-left: 24px;
+          background: url(../../images/common/ico_guide_type02.png) no-repeat left center;
+          background-size: 17px 14px;
+        }
+      }
+      &:nth-child(2) {
+        span {
+          padding-left: 19px;
+          background: url(../../images/common/ico_service.png) no-repeat left center;
+          background-size: 13px 10px;
+        }
+      }
+      &:nth-child(3) {
+        span {
+          padding-left: 18px;
+          background: url(../../images/common/ico_mypage.png) no-repeat left center;
+          background-size: 13px 13px;
+        }
+      }
+      &:nth-child(4) {
+        span {
+          padding-left: 18px;
+          background: url(../../images/common/ico_logout.png) no-repeat left center;
+          background-size: 12px 13px;
+        }
+      }
+      &:hover {
+        span {
+          filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
+        }
+      }
+    }
+  }
+}
+
+
+//홍보사이트
 @media (max-width: 1240px){
   [class^='web-']  {
     display: none !important;
@@ -1171,3 +1342,4 @@ input[type="checkbox"] {
   width: 100%;height: 100vh;
   background-color: rgba(0,0,0,0.5);
 }
+

@@ -18,6 +18,26 @@
 
 .guide .site { color: #5a14be; }
 
+.guide .h1 { margin-bottom: 10px; font-size: 40px; font-weight: 700; color: #5a14be; }
+
+.guide .h2 { margin-bottom: 10px; font-size: 40px; font-weight: 500; color: #3dc8a2; }
+
+.guide .h3 { margin-bottom: 10px; font-size: 30px; font-weight: 700; color: #282828; }
+
+.guide .h4 { margin-bottom: 10px; font-size: 24px; font-weight: 700; color: #333333; }
+
+.guide .h5 { margin-bottom: 10px; font-size: 22px; font-weight: 700; color: #e6e6e6; }
+
+.guide .h6 { margin-bottom: 10px; font-size: 20px; font-weight: 700; color: #e0e0e0; }
+
+.guide .p1 { margin-bottom: 10px; font-size: 20px; font-weight: 400; color: #666666; }
+
+.guide .p2 { margin-bottom: 10px; font-size: 18px; font-weight: 400; color: #e0e0e0; }
+
+.guide .p3 { margin-bottom: 10px; font-size: 16px; font-weight: 400; color: #fc3812; }
+
+.guide .p4 { margin-bottom: 10px; font-size: 14px; font-weight: 400; }
+
 .guide.que-wrap .h1 { margin-bottom: 10px; font-size: 20px; font-weight: 600; color: #5a14be; }
 
 .guide.que-wrap .h2 { margin-bottom: 10px; font-size: 20px; font-weight: 700; color: #ffba00; }

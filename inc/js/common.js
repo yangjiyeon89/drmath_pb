@@ -82,6 +82,7 @@ $(function () {
       _thisMenu.siblings('li').find(subMenu).find('a').removeClass('active');
       _thisMenu.find('> a').addClass('active');
       _this.addClass('active');
+      
     });
 
     _header.on('mouseleave', function () {
