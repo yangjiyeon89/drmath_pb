@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/guide.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body class="guide que-wrap">
+  <h1 class="site">문제은행</h1>
+  <h1>Layout</h1>
+
+  <h2>GNB</h2>
+  <div class="header">
+    <div class="nav-wrap">
+      <div class="inner">
+        <div class="logo">
+          <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="javascript:;">수업준비</a>
+            <ul class="depth2">
+              <li>
+                <a href="javascript:;">맞춤문제지</a>
+              </li>
+              <li>
+                <a href="javascript:;">교재연동</a>
+              </li>
+              <li>
+                <a href="javascript:;">추천 문제지</a>
+              </li>
+              <li>
+                <a href="javascript:;">기출 문제지</a>
+              </li>
+              <li>
+                <a href="javascript:;">AI 기출 마스터</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">수업진행</a>
+            <ul class="depth2">
+              <li>
+                <a href="javascript:;">학습현황</a>
+              </li>
+              <li>
+                <a href="javascript:;">문제지</a>
+              </li>
+              <li>
+                <a href="javascript:;">교재</a>
+              </li>
+              <li>
+                <a href="javascript:;">분석표</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">운영관리</a>
+            <ul class="depth2">
+              <li>
+                <a href="javascript:;">원 관리</a>
+              </li>
+              <li>
+                <a href="javascript:;">문자 관리</a>
+              </li>
+              <li>
+                <a href="javascript:;">출결 관리</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">결제 관리</a>
+            <ul class="depth2">
+              <li>
+                <a href="javascript:;">회원권 결제</a>
+              </li>
+              <li>
+                <a href="javascript:;">문자 관리</a>
+              </li>
+              <li>
+                <a href="javascript:;">교재 결제</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btn-wrap">
+          <a href="javascirpt:;"><span>가이드</span></a>
+          <a href="javascirpt:;"><span>고객센터</span></a>
+          <a href="javascirpt:;"><span>김천재님</span></a>
+          <a href="javascirpt:;"><span>로그아웃</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Font/Color</h1>
+
+  <h2>class명 무시, guide.scss css만 참고</h2>
+  <div class="h1">메인 강조 타이틀 H1</div>
+  <div class="h2">메인 강조 타이틀 H2</div>
+  <div class="h3">세부 컨텐츠 타이틀 H3</div>
+  <div class="h4">세부 컨텐츠 타이틀 H4</div>
+  <div class="p1">본문텍스트  P1</div>
+  <div class="p2">본문텍스트  P2</div>
+  <div class="p3">본문텍스트  P3</div>
+  <div class="p4">본문 보조 텍스트 P4</div>
+
+
+  <h1>Components</h1>
+
+  <h2>Button</h2>
+  <button type="button" class="btn-default">로그인</button>
+  <button type="button" class="btn-step">STEP 1</button>
+  <button type="button" class="btn-icon"><i class="preview"></i>미리보기</button>
+  <button type="button" class="btn-icon"><i class="replace"></i>교체</button>
+  <button type="button" class="btn-icon"><i class="linking"></i>연동하기</button>
+  <button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button>
+  <button type="button" class="btn-icon type02"><i class="add"></i> 맞춤 문제지 만들기</button>
+  <button type="button" class="btn-arrow"></button>
+
+  <h2>Tab</h2>
+  <div class="tab-wrap">
+    <ul class="tab-menu-type01">
+      <li class="ui-tab-btn active">
+        <a href="javascript:;">문제지 보관함</a>
+      </li>
+      <li class="ui-tab-btn">
+        <a href="javascript:;">즐겨찾는 문제지</a>
+      </li>
+    </ul>
+    <div class="contents on">
+      문제지 보관함
+    </div>
+    <div class="contents">
+      즐겨찾는 문제지
+    </div>
+  </div>
+  <div class="tab-wrap">
+    <ul class="tab-menu-type02">
+      <li class="ui-tab-btn active">
+        <a href="javascript:;">전체</a>
+      </li>
+      <li class="ui-tab-btn">
+        <a href="javascript:;">초</a>
+      </li>
+      <li class="ui-tab-btn">
+        <a href="javascript:;">중</a>
+      </li>
+      <li class="ui-tab-btn">
+        <a href="javascript:;">고</a>
+      </li>
+    </ul>
+  </div>
+  <div class="tab-wrap">
+    <ul class="tab-menu-type03">
+      <li class="ui-tab-btn">
+        <a href="javascript:;">문제지 요약</a>
+      </li>
+      <li class="ui-tab-btn active">
+        <a href="javascript:;">유사문제</a>
+      </li>
+      <li class="ui-tab-btn">
+        <a href="javascript:;">삭제문항</a>
+      </li>
+    </ul>
+  </div>
+  
+  <h1>Form</h1>
+
+  <h2>Inputbox</h2>
+  <input type="text" value="거듭제곱">
+  <br>
+  <br>
+  <div class="input-tit">
+    <span>아이디</span>
+    <input type="text" placeholder="아이디를 입력해주세요.">
+  </div>
+  <br><br>
+  <div class="search-box">
+    <input type="text" placeholder=" 교재명, 출판사 검색" class="search">
+    <button type="button" class="btn-search"></button>
+  </div>
+
+  <h2>Radio&Checkbox</h2>
+  <div class="input-radio-type01">
+    <input type="radio" id="radio01_01" name="radio01">
+    <label for="radio01_01">지역별 기출</label>
+    <input type="radio" id="radio01_02" name="radio01" checked>
+    <label for="radio01_02">수준별 기출</label>
+  </div>
+  <br>
+  <input type="checkbox" id="chk01_01" checked>
+  <label for="chk01_01"></label>
+  <input type="checkbox" id="chk01_02">
+  <label for="chk01_02"></label>
+  <br>
+  <br>
+  <div class="toggle-btn">
+    <input type="checkbox" class="checkbox" />
+    <div class="knobs"></div>
+    <div class="layer"></div>
+  </div>
+
+
+  <h2>Select Box</h2>
+  <div class="select-wrap">
+    <button type="button" class="select-btn">유형 전체</button>
+    <ul class="select-list">
+      <li>
+        <a href="javascript:;">일일</a>
+      </li>
+      <li>
+        <a href="javascript:;">주간</a>
+      </li>
+      <li>
+        <a href="javascript:;">기본</a>
+      </li>
+    </ul>
+  </div>
+  <br><br>
+  <ul class="open-select-list">
+    <li>
+      <a href="javascript:;" class="active">인쇄하기</a>
+    </li>
+    <li>
+      <a href="javascript:;">수정하기</a>
+    </li>
+    <li>
+      <a href="javascript:;">다운로드</a>
+    </li>
+  </ul>
+
+  <h1>Tab List</h1>
+  <div class="tab-wrap tab-list-type01">
+    <div class="inner">
+      <div class="tab-top">
+        <div class="left-wrap">
+          <ul class="tab-menu-type02">
+            <li class="ui-tab-btn active">
+              <a href="javascript:;">전체</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">초</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">중</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">고</a>
+            </li>
+          </ul>
+          <div class="select-wrap">
+            <button type="button" class="select-btn">1-1</button>
+            <ul class="select-list">
+              <li>
+                <a href="javascript:;">1-1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder=" 교재명, 출판사 검색" class="search">
+          <button type="button" class="btn-search"></button>
+        </div>
+      </div>
+      <div class="contents on">
+        <div class="table">
+          <div class="fix-head">
+            <span>학년</span>
+            <span>교재명</span>
+            <span>판수</span>
+            <span>출판사</span>
+            <span>저자명</span>
+            <span>연동</span>
+          </div>
+          <div class="tbody">
+            <div class="scroll-inner">
+              <div class="test">
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span>초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="table">
+          <div class="fix-head">
+            <span>학년</span>
+            <span>교재명</span>
+            <span>판수</span>
+            <span>출판사</span>
+            <span>저자명</span>
+            <span>연동</span>
+          </div>
+          <div class="scroll-inner">
+            <div class="tbody">
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>초 1-1</span>
+                <span>초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="table">
+          <div class="fix-head">
+            <span>학년</span>
+            <span>교재명</span>
+            <span>판수</span>
+            <span>출판사</span>
+            <span>저자명</span>
+            <span>연동</span>
+          </div>
+          <div class="scroll-inner">
+            <div class="tbody">
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>중 1-1</span>
+                <span>중등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="table">
+          <div class="fix-head">
+            <span>학년</span>
+            <span>교재명</span>
+            <span>판수</span>
+            <span>출판사</span>
+            <span>저자명</span>
+            <span>연동</span>
+          </div>
+          <div class="scroll-inner">
+            <div class="tbody">
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>고 1-1</span>
+                <span>고등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1>Popup</h1>
+  
+  <h2>type A</h2>
+  <div class="pop-wrap table-type">
+    <div class="pop-inner">
+      <div class="pop-header">
+        <span>문항 오류 신고</span>
+        <button type="button" class="pop-close"></button>
+      </div>
+      <div class="pop-content">
+        <table>
+          <colgroup>
+            <col width="18%">
+            <col width="*">
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>오류유형</th>
+              <td>
+                <div class="select-wrap">
+                  <button type="button" class="select-btn">문제오류</button>
+                  <ul class="select-list">
+                    <li>
+                      <a href="javascript:;">문제오류</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>첨부파일</th>
+              <td class="file">
+                <span>첨부파일명.hwp</span>
+                <button type="button" class="btn-icon"><i class="add-type02"></i>파일첨부</button>
+              </td>
+            </tr>
+            <tr>
+              <th>오류 내용</th>
+              <td>
+                <textarea name="" id="" cols="30" rows="10" placeholder="오류내용을 간단히 적어주세요. (최대 50자)"></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pop-footer">
+        <button>신고하기</button>
+      </div>
+    </div>
+  </div>
+  
+  <h2>type B</h2>
+  <div class="pop-wrap alert-type">
+    <div class="pop-inner">
+      <div class="pop-content">
+        <button type="button" class="pop-close"></button>
+        <img src="../images/common/ico_pop.png" alt="">
+        <span class="txt">페이지 이동 시 변경사항이<br>저장되지 않습니다.</span>
+      </div>
+      <div class="pop-footer">
+        <button>취소</button>
+        <button>닫기</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

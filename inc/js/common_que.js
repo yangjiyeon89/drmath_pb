@@ -67,7 +67,7 @@ $(function () {
   function menuUI() {
     let menuWrap = $('.nav');
     let menu = $('.nav li');
-    let menuBtn = $('.nav li a');
+    let menuBtn = $('.nav > li > a');
     let _header = $('.header');
     let subMenu = $('.depth2')
 
@@ -75,21 +75,16 @@ $(function () {
       let _this = $(this);
       let _thisMenu = $(this).parents('li');
 
-      _header.addClass('active');
-      subMenu.addClass('on');
-
-      _thisMenu.siblings('li').find('> a').removeClass('active');
-      _thisMenu.siblings('li').find(subMenu).find('a').removeClass('active');
-      _thisMenu.find('> a').addClass('active');
+      _thisMenu.siblings('li').find('> a').removeClass('active')
       _this.addClass('active');
+      _thisMenu.siblings('li').find(subMenu).removeClass('on');
+      _this.next(subMenu).addClass('on');
+
     });
 
     _header.on('mouseleave', function () {
-
-      _header.removeClass('active');
-      subMenu.removeClass('on');
       menuBtn.removeClass('active');
-
+      subMenu.removeClass('on');
       checkCurrentGnb();
     })
   }
@@ -137,6 +132,7 @@ $(function () {
 
   // select
   let selectBtn = $('.select-btn');
+  let selectCnt = $('.open-select-list li a')
 
   function selectUI() {
     let _this = $(this);
@@ -150,8 +146,14 @@ $(function () {
         _this.removeClass('active');
       })
     }
+
+    if(_this.parents('ul').hasClass('open-select-list')) {
+      selectCnt.removeClass('active');
+      _this.addClass('active');
+    }
   }
   selectBtn.on('click', selectUI);
+  selectCnt.on('click', selectUI);
 
   // popup
   let _dim = $('.dim');
