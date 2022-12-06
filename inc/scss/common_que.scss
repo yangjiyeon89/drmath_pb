@@ -4,6 +4,9 @@
 @import url(../css/font.css);
 
 // common
+html {
+  min-width: 1280px;
+}
 body {
   font-family: 'Pretendard', sans-serif;
 }

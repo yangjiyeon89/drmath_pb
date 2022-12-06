@@ -104,9 +104,16 @@
     display: flex;
     overflow: hidden;
     width: 900px;
+    height: 473px;
     margin: auto;
     border-radius: 10px;
     background-color: #fff;
+  }
+  .left-img {
+    width: 350px;
+    img {
+      width: 100%;
+    }
   }
   .right-form {
     padding: 70px 102px 0;
@@ -152,7 +159,17 @@
   }
   .txt {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1280px) {
+  
+  // 문제은행
+  // 로그인
+  .login-wrap {
+    width: 100%;
   }
 }

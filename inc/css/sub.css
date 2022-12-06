@@ -130,7 +130,11 @@
 
 .login { height: 100vh; padding-top: 249px; background-color: #f8f8f8; }
 
-.login .login-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; width: 900px; margin: auto; border-radius: 10px; background-color: #fff; }
+.login .login-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; width: 900px; height: 473px; margin: auto; border-radius: 10px; background-color: #fff; }
+
+.login .left-img { width: 350px; }
+
+.login .left-img img { width: 100%; }
 
 .login .right-form { padding: 70px 102px 0; text-align: center; }
 
@@ -150,4 +154,6 @@
 
 .login .form-txt-chk { display: block; margin-top: 40px; }
 
-.login .txt { display: block; margin-top: 20px; font-size: 14px; }
+.login .txt { display: block; margin-top: 15px; font-size: 14px; }
+
+@media (max-width: 1280px) { .login-wrap { width: 100%; } }
