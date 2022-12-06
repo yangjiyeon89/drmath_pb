@@ -707,7 +707,7 @@ input[type="checkbox"] {
     }
     .pop-header {
       padding: 30px 0 17px;
-      @include font(20px, 700)
+      @include font(20px, 700);
       text-align: center;
     }
     .pop-content {

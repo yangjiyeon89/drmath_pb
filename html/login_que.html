@@ -33,7 +33,7 @@
             </div>
             <div class="btn-wrap">
               <a href="javascript:;" class="pop-btn" data-pop="id-pop">아이디 찾기</a>
-              <a href="javascript:;">비밀번호 찾기</a>
+              <a href="javascript:;" class="pop-btn" data-pop="pw-pop">비밀번호 찾기</a>
             </div>
           </div>
         </div>
@@ -43,10 +43,10 @@
     </div>
 
     <!-- 아이디 찾기 팝업 -->
-    <div class="pop-wrap table-type" data-pop="id-pop">
+    <div class="pop-wrap table-type form-pop" data-pop="id-pop">
       <div class="pop-inner">
         <div class="pop-header">
-          <span>문항 오류 신고</span>
+          <span>아이디 찾기</span>
           <button type="button" class="pop-close"></button>
         </div>
         <div class="pop-content">
@@ -57,41 +57,166 @@
             </colgroup>
             <tbody>
               <tr>
-                <th>오류유형</th>
+                <th>이름</th>
                 <td>
-                  <div class="select-wrap">
-                    <button type="button" class="select-btn">문제오류</button>
-                    <ul class="select-list">
-                      <li>
-                        <a href="javascript:;">문제오류</a>
-                      </li>
-                    </ul>
+                  <input type="text" class="w160">
+                </td>
+              </tr>
+              <tr>
+                <th>휴대폰 번호</th>
+                <td>
+                  <div class="tel-form">
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn">010</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">010</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span>-</span>
+                    <input type="number">
+                    <span>-</span>
+                    <input type="number">
+                    <button type="button" class="btn">인증번호 요청</button>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th>첨부파일</th>
-                <td class="file">
-                  <span>첨부파일명.hwp</span>
-                  <button type="button" class="btn-icon"><i class="add-type02"></i>파일첨부</button>
-                </td>
-              </tr>
-              <tr>
-                <th>오류 내용</th>
+                <th>인증 번호</th>
                 <td>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="오류내용을 간단히 적어주세요. (최대 50자)"></textarea>
+                  <input type="number" class="w160">
+                  <button type="button" class="btn">인증 확인</button>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="pop-footer">
-          <button>신고하기</button>
+          <button>확인</button>
         </div>
       </div>
     </div>
-    <div class="dim"></div>
 
+    <!-- 비밀번호 찾기 팝업 -->
+    <div class="pop-wrap table-type form-pop" data-pop="pw-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>비밀번호 찾기</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <table>
+            <colgroup>
+              <col width="18%">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>이름</th>
+                <td>
+                  <input type="text" class="w160">
+                </td>
+              </tr>
+              <tr>
+                <th>아이디</th>
+                <td>
+                  <input type="text" class="w160">
+                </td>
+              </tr>
+              <tr>
+                <th>휴대폰 번호</th>
+                <td>
+                  <div class="tel-form">
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn">010</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">010</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span>-</span>
+                    <input type="number">
+                    <span>-</span>
+                    <input type="number">
+                    <button type="button" class="btn">인증번호 요청</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>인증 번호</th>
+                <td>
+                  <input type="number" class="w160">
+                  <button type="button" class="btn">인증 확인</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 아이디 전송 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">입력하신 핸드폰 번호로<br>아이디가 전송되었습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 비밀번호 전송 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">입력하신 핸드폰 번호로<br>임시 비밀번호가 전송되었습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 로그인 제한 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">로그인 5회 오류로 인해<br>5분동안 로그인이 제한됩니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 입력 오류 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">아이디 또는 비밀번호를<br>잘못 입력하셨습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dim"></div>
   </div>
 </body>
 </html>

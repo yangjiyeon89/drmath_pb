@@ -156,6 +156,18 @@
 
 .login .txt { display: block; margin-top: 15px; font-size: 14px; }
 
+.login .form-pop .pop-inner { width: 560px; }
+
+.login .form-pop input.w160 { width: 160px; }
+
+.login .form-pop .btn { width: 110px; height: 40px; margin-left: 6px; color: #5a14be; border: 1px solid #5a14be; border-radius: 5px; }
+
+.login .form-pop .select-btn { width: 73px; }
+
+.login .form-pop .tel-form input { width: 65px; }
+
+.login .form-pop .tel-form span { margin: 0 9px; }
+
 @media (max-width: 1280px) { .login { padding-top: 0; }
   .login .login-wrap { width: 100%; height: 100vh; }
   .login .left-img { width: 500px; }
