@@ -14,6 +14,11 @@ body {
   width: 1280px;
   margin: auto;
 }
+.container {
+  .inner {
+    margin: 41px auto 0;
+  }
+}
 .scroll-inner {
   overflow: overlay;
 }
@@ -45,6 +50,20 @@ body {
     padding: 10px 20px;
     box-sizing: border-box;
   }
+  .nav-wrap {
+    position: relative;
+    &.on {
+      &::after {
+        @include virtual-selector;
+        position: absolute;
+        left: 0;right: 0;top: 47px;
+        height: 41.39px;
+        border-bottom: 1px solid #d3c9ee;
+        background-color: #f5f1ff;
+        z-index: -1;
+      }
+    }
+  }
   .logo {
     a {
       display: block;
@@ -74,21 +93,21 @@ body {
         }
       }
       & + li {
-        margin-left: 40px;
+        margin-left: 45px;
       }
       &:nth-child(2) {
         .depth2 {
-          padding-left: 30%;
+          padding-left: 22%;
         }
       }
       &:nth-child(3) {
         .depth2 {
-          padding-left: 37%;
+          padding-left: 32%;
         }
       }
       &:nth-child(4) {
         .depth2 {
-          padding-left: 43%;
+          padding-left: 40%;
         }
       }
     }
@@ -100,23 +119,26 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    padding-left: 21%;
-    border-bottom: 1px solid #d3c9ee;
+    padding-left: 17%;
     background-color: #f5f1ff;
     box-sizing: border-box;
     li {
+      width: 120px;
+      text-align: center;
       a {
-        display: block;
-        padding: 11px 0;
+        display: inline-block;
+        padding: 11px 0 12px;
         @include font(16px, 400);
         &:hover {
-          padding-bottom: 9px;
+          padding-bottom: 10px;
           color: $color-main-purple;
           font-weight: 700;
           border-bottom: 2px solid $color-main-purple;
         }
       }
-      
+      & + li {
+        margin-left: 11px;
+      }
     }
     &.on {
       display: flex;

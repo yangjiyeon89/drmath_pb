@@ -75,14 +75,17 @@ $(function () {
       let _this = $(this);
       let _thisMenu = $(this).parents('li');
 
+      $('.nav-wrap').addClass('on');
       _thisMenu.siblings('li').find('> a').removeClass('active')
       _this.addClass('active');
       _thisMenu.siblings('li').find(subMenu).removeClass('on');
       _this.next(subMenu).addClass('on');
+      
 
     });
 
     _header.on('mouseleave', function () {
+      $('.nav-wrap').removeClass('on');
       menuBtn.removeClass('active');
       subMenu.removeClass('on');
       checkCurrentGnb();
