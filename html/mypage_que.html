@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../inc/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="../inc/css/common_que.css">
-  <link rel="stylesheet" href="../inc/css/sub.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -100,7 +100,102 @@
     </div>
     <div class="container">
       <div class="inner">
-        aaa
+        <div class="tab-wrap">
+          <ul class="tab-menu-type01">
+            <li class="ui-tab-btn active">
+              <a href="javascript:;">회원정보</a>
+            </li>
+          </ul>
+          <div class="contents on">
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col width="15%">
+                  <col width="*">
+                  <col width="15%">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>학원명</th>
+                    <td>닥터매쓰학원</td>
+                    <th>학원코드</th>
+                    <td>H0005156</td>
+                  </tr>
+                  <tr>
+                    <th>아이디</th>
+                    <td>chunjae</td>
+                    <th>비밀번호</th>
+                    <td><button type="button" class="pop-btn">비밀번호 변경</button></td>
+                  </tr>
+                  <tr>
+                    <th>이름</th>
+                    <td colspan="3"><input type="text" value="고길동"></td>
+                  </tr>
+                  <tr>
+                    <th>휴대폰 번호</th>
+                    <td colspan="3">
+                      <div class="tel-form">
+                        <div class="select-wrap">
+                          <button type="button" class="select-btn">010</button>
+                          <ul class="select-list">
+                            <li>
+                              <a href="javascript:;">010</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <span>-</span>
+                        <input type="number">
+                        <span>-</span>
+                        <input type="number">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>이메일 주소</th>
+                    <td colspan="3">
+                      <div class="email-form">
+                        <input type="text" value="abc123">
+                        <span>@</span>
+                        <div class="select-wrap">
+                          <button type="button" class="select-btn">daum.net</button>
+                          <ul class="select-list">
+                            <li>
+                              <a href="javascript:;">naver.com</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <input type="text" placeholder="직접입력">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      학원로고
+                      <button type="button"></button>
+                      <div class="tooltip">
+                        <span>학원로고 미 등록시 문제지에 학원명이 텍스트로 입력됩니다.</span>
+                      </div>
+                    </th>
+                    <td colspan="3">
+                      <div class="img-drop">
+                        <div class="cnt">
+                          <img src="../images/sub/ico_img.png" alt="">
+                          <div class="txt">
+                            <span class="tit">해당 영역에 이미지를 드래그 앤 드롭 해주세요.</span>
+                            <span class="txt">가로 400 X 세로 150 이상 JPG 확장자를 권장합니다.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="../images/sub/sample_img02.png" alt="닥터매쓰">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="btn-default">수정하기</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

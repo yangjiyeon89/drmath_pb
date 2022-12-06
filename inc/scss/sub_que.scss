@@ -1,100 +1,8 @@
 @charset "UTF-8";
 @import "_mixin.scss";
 @import "_setting.scss";
-@import "ej.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import url(../css/font.css);
 
-// 무료체험
-.free-cnt {
-  padding-bottom: 117px;
-  .input-radio-type01 {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .ui-datepicker {
-    width: 486px;
-  }
-  .ui-widget.ui-widget-content {
-    margin: auto;
-    border: none;
-  }
-  .ui-datepicker .ui-datepicker-header {
-    border: none;
-    background-color: transparent;
-  }
-  .ui-datepicker .ui-datepicker-title {
-    font-family: 'Noto Sans KR', sans-serif;
-    @include font(26px, 700);
-    line-height: 1;
-  }
-  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
-    overflow: hidden;
-    width: 29px;height: 29px;
-    border-radius: 100%;
-    
-  }
-  .ui-widget-header .ui-icon {
-    position: relative;
-    top: 0;left: 0;
-    display: inline-block;
-    width: 100%;height: 100%;    
-    margin: 0;
-    background: #282828 url(../../images/common/ico_arrow_w_type02.png) no-repeat 49% 50%;
-    background-size: 7px 11px;
-  }
-  .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
-    .ui-icon {
-      background-color: $color-main-purple;
-    }
-  }
-  .ui-datepicker-next {
-    transform: rotate(-180deg);
-  }
-  .ui-datepicker-week-end {
-    color: $color-font-red;
-    &:last-child {
-      color: #1669e7;
-    }
-  }
-  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    border: none;
-    text-align: center;
-    background: transparent;
-  }
-  .ui-datepicker .ui-datepicker-calendar .ui-state-highlight a {
-    color: #333;
-    background: transparent;
-  }
-  .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight, .ui-datepicker-today {
-    border: none;
-    background-color: #e7ddf5;
-    opacity: 1;
-  }
-  .ui-datepicker-current-day, .ui-state-active {
-    background: #e7ddf5 url(../../images/sub/calendar_bg.png) no-repeat left center !important;
-    a {
-      color: #fff !important;
-    }
-  }
-  .ui-datepicker-calendar {
-    margin-top: 40px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 16px;
-  }
-  .ui-datepicker td {
-    height: 42px;
-    padding: 0;
-    cursor: pointer;
-  }
-  .hasDatepicker {
-    padding: 30px 0 10px;
-    margin-bottom: 75px;
-    border-top: 2px solid #000;
-    border-bottom: 1px solid #e1e1e1;
-  }
-}
-
-// 문제은행
 // 로그인
 .login {
   height: 100vh;
@@ -229,7 +137,6 @@
 
 @media (max-width: 1280px) {
   
-  // 문제은행
   // 로그인
   .login {
     padding-top: 0;

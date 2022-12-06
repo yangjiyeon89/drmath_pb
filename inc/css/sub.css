@@ -168,6 +168,18 @@
 
 .login .form-pop .tel-form span { margin: 0 9px; }
 
+.mypage-que .tab-wrap { padding: 32px 20px 0; }
+
+.mypage-que .contents { padding: 30px; border: 1px solid #dddddd; border-top: 0; }
+
+.mypage-que .table-wrap { overflow: hidden; border: 1px solid #dddddd; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.mypage-que table tr:last-child th, .mypage-que table tr:last-child td { border-bottom: 0; }
+
+.mypage-que table th, .mypage-que table td { border-bottom: 1px solid #dddddd; }
+
+.mypage-que table th { padding: 21px 20px; font-weight: 600; background-color: #f7f7f7; }
+
 @media (max-width: 1280px) { .login { padding-top: 0; }
   .login .login-wrap { width: 100%; height: 100vh; }
   .login .left-img { width: 500px; }

@@ -9,7 +9,7 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; line-height: 
 
 article, aside, audio, blockquote, body, canvas, code, dd, details, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, input, legend, li, mark, nav, ol, p, pre, section, td, textarea, th, time, ul, video { margin: 0; padding: 0; }
 
-body, table { font-family: 'Noto Sans KR', sans-serif; color: #333; background-color: #fff; font-size: 16px; }
+body { font-family: 'Noto Sans KR', sans-serif; color: #333; background-color: #fff; font-size: 16px; }
 
 img { vertical-align: middle; border: 0; border-style: none; }
 
