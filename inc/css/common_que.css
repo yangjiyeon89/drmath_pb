@@ -140,7 +140,7 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .search-box input[type="text"] { width: 100%; padding: 0 40px 0 10px; }
 
-input[type="text"], input[type="number"] { width: 310px; height: 40px; padding: 0 10px; border-radius: 6px; border: 1px solid #dddddd; -webkit-box-sizing: border-box; box-sizing: border-box; }
+input[type="text"], input[type="number"] { width: 310px; height: 40px; padding: 0 10px; border-radius: 6px; border: 1px solid #dddddd; -webkit-box-sizing: border-box; box-sizing: border-box; outline-color: #5a14be; outline-width: thin; }
 
 input[type="text"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder { color: #999; font-weight: 400; }
 
@@ -149,6 +149,8 @@ input[type="text"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeho
 input[type="text"]::-ms-input-placeholder, input[type="number"]::-ms-input-placeholder { color: #999; font-weight: 400; }
 
 input[type="text"]::placeholder, input[type="number"]::placeholder { color: #999; font-weight: 400; }
+
+input[type="text"]:focus, input[type="number"]:focus { outline-style: solid; }
 
 input[type="radio"], input[type="checkbox"] { border: 0; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; }
 
@@ -164,9 +166,9 @@ input[type="radio"] + label::before, input[type="checkbox"] + label::before { co
 
 .input-radio-type01 input[type="radio"]:checked + label::before { background: url(../../images/common/input_radio_chk.png) no-repeat; background-size: contain; }
 
-input[type="checkbox"] + label { padding-left: 27px; }
+input[type="checkbox"] + label { padding-left: 27px; font-size: 14px; }
 
-input[type="checkbox"] + label::before { width: 20px; height: 20px; margin-top: -8px; border-radius: 3px; background: url(../../images/common/input_checkbox.png) no-repeat; background-size: contain; }
+input[type="checkbox"] + label::before { width: 18px; height: 18px; margin-top: -9px; border-radius: 3px; background: url(../../images/common/input_checkbox.png) no-repeat; background-size: contain; }
 
 input[type="checkbox"]:checked + label::before { background: url(../../images/common/input_checkbox_chk.png) no-repeat; background-size: contain; }
 
@@ -207,6 +209,16 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .open-select-list li a:hover { color: #5a14be; background-color: #ebe3ff; }
 
 .open-select-list li a.active { color: #5a14be; background-color: #ebe3ff; }
+
+[class^='form-txt-'] { font-size: 14px; }
+
+[class^='form-txt-'] img { position: relative; top: -2px; margin-right: 4px; width: 15px; height: 15px; }
+
+.form-txt-error { color: #fc3812; }
+
+.form-txt-error.type-color02 { color: #666666; }
+
+.form-txt-error.type-color03 { color: #5a14be; }
 
 .tab-list-type01 .tab-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 25px 20px; }
 
