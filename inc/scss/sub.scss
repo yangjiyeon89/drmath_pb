@@ -93,3 +93,66 @@
     border-bottom: 1px solid #e1e1e1;
   }
 }
+
+// 문제은행
+// 로그인
+.login {
+  height: 100vh;
+  padding-top: 249px;
+  background-color: #f8f8f8;
+  .login-wrap {
+    display: flex;
+    overflow: hidden;
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .right-form {
+    padding: 70px 102px 0;
+    text-align: center;
+  }
+  .tit {
+    @include font(32px, 600);
+  }
+  .input-form {
+    width: 355px;
+    margin-top: 45px;
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .btm-cnt {
+    @include layout-justify-center;
+    margin-top: 20px;
+  }
+  .btn-wrap {
+    a {
+      position: relative;
+      color: #999;
+      font-size: 14px;
+      + a {
+        margin-left: 16px;
+        padding-left: 16px;
+        &::before {
+          position: absolute;
+          left: 0;top: 50%;
+          @include virtual-selector;
+          width: 1px;height: 12px;
+          margin-top: -6px;
+          background-color: #999999;
+        }
+      }
+    }
+  }
+  .form-txt-chk {
+    display: block;
+    margin-top: 40px;
+  }
+  .txt {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
