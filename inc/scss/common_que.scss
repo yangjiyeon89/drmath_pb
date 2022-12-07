@@ -397,11 +397,20 @@ body {
   }
 }
 .tab-wrap {
+  position: relative;
   .contents {
     display: none;
     &.on {
       display: block;
     }
+  }
+  &::after {
+    @include virtual-selector;
+    position: absolute;
+    top: 50%;right: -26px;
+    width: 11px;height: 18px;
+    margin-top: -9px;
+    background: url(../../images/common/ico_arrow_c_type02.png) no-repeat;
   }
 }
 .input-tit {
@@ -847,6 +856,161 @@ input[type="checkbox"] {
         padding: 15px 0 28px;
         font-size: 18px;
         line-height: 1.5;
+      }
+    }
+  }
+  &.check-type {
+    .pop-inner {
+      overflow: visible;
+      width: 600px;
+    }
+    .pop-header {
+      padding-top: 30px;
+      @include font(20px, 700);
+      text-align: center;
+    }
+    .pop-content {
+      @include layout-justify-start;
+      padding: 30px;
+      & > div {
+        width: 250px;
+      }
+    }
+    .left-cnt {
+      .scroll-inner {
+        height: 290px;
+      }
+    }
+    .search-box {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .tab-menu-type03 {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px 5px 0 0;
+      li {
+        a {
+          width: 115px;
+        }
+      }
+    }
+    .contents {
+      border: 1px solid $color-line-type02;
+      border-top: 0;
+      border-radius: 0 0 5px 5px;
+    }
+    
+    .chk-acc {
+      .cnt {
+        display: none;
+        padding: 0 30px 0 40px;
+        background-color: #f6f6f6;
+        li {
+          padding: 10px 0;
+          input[type="checkbox"] {
+            & + label {
+              display: block;
+              padding-left: 0;
+              font-size: 16px;
+              &::before {
+                left: inherit;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .acc-btn {
+      position: relative;
+      padding: 15px 30px 15px 20px;
+      cursor: pointer;
+      label {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 24px;
+      }
+      &.active {
+        label {
+          display: inline;
+        }
+        span::before {
+          transform: rotate(90deg);
+        }
+        em {
+          position: relative;
+          top: inherit;
+          right: inherit;
+        }
+      }
+      span {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 600;
+        &::before {
+          position: absolute;
+          left: 0;top: 50%;
+          @include virtual-selector;
+          width: 7px;height: 11px;
+          margin-top: -5px;
+          background: url(../../images/common/ico_arrow_acc.png) no-repeat;
+        }
+      }
+      em {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        color: $color-main-purple;
+      }
+    }
+    .top-txt {
+      @include layout-justify-center;
+      height: 40px;
+      margin-bottom: 10px;
+      span {
+        @include font(18px, 700);
+      }
+      em {
+        color: $color-main-purple;
+        font-size: 18px;
+      }
+    }
+    .right-cnt {
+      .check-wrap {
+        border: 1px solid #d8d8d8;
+        border-radius: 6px;
+        background-color: $color-box-type02;
+      }
+      .scroll-inner {
+        height: 358px;
+      }
+      .acc-btn {
+        span {
+          padding-right: 74px;
+        }
+        label {
+          display: block;
+        }
+        em {
+          position: relative;
+          top: inherit;right: inherit;
+        }
+      }
+      .cnt {
+        padding: 0 29px 0 46px;
+        li {
+          display: none;
+        }
+      }
+      .chk-acc {
+        display: none;
+      }
+    }
+    .pop-footer {
+      button {
+        border-radius: 0 0 10px 10px;
       }
     }
   }

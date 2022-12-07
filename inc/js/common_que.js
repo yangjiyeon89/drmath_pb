@@ -191,20 +191,70 @@ $(function () {
 
   // checkbox
   let chkAll = $('.allCheck');
+  let chkList = $('.left-cnt .chk-acc input[type="checkbox"]');
+  let selectList = $('.right-cnt .chk-acc input[type="checkbox"]');
 
   function checkFunc() {
     let _this = $(this);
 
     if (_this.prop('checked')) {
       _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+      _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', true);
     } else {
       _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+      _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', false);
     }
+  }
 
+  function checkMove(){
+    let _this = $(this);
+    let _idx = $(this).parents('.chk-acc').data('index');
+    let selectCnt = $('.right-cnt .chk-acc');
+    let _name = $(this).attr('name');
+
+    if (_this.prop('checked')) {
+
+      $(".right-cnt .chk-acc[data-index='" + _idx + "']").show();
+      $(".right-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").prop('checked', true);
+      $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('.cnt').show();
+      _this.attr('disabled', true);
+
+      if(_this.hasClass('allCheck')){
+        $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').show();
+        $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').find('input').prop('checked', true);        
+        _this.parents('.chk-acc').find('input').attr('disabled', true);        
+      } else {
+        selectCnt.find("input:checkbox[name='" + _name + "']").parents('li').show();      
+        selectCnt.find("input:checkbox[name='" + _name + "']").prop('checked', true);
+      }
+    }
+  }
+
+  function chkSelectFunc(){
+    let _this = $(this);
+    let chkCnt = $('.left-cnt .chk-acc');
+    let _name = $(this).attr('name');
+
+    if (!_this.prop('checked')) {
+      chkCnt.find(".allCheck").prop('checked', false);
+      chkCnt.find(".allCheck").attr('disabled', false);
+
+      if(_this.hasClass('allCheck')) {
+        _this.parents('.chk-acc').hide();
+        _this.parents('.chk-acc').find('li').hide();
+        chkCnt.find('input').attr('disabled', false);
+        chkCnt.find('input').prop('checked', false);
+      } else {
+        _this.parents('li').hide();
+        chkCnt.find("input:checkbox[name='" + _name + "']").attr('disabled', false);
+        chkCnt.find("input:checkbox[name='" + _name + "']").prop('checked', false);
+      }
+    }
   }
 
   chkAll.on('click', checkFunc);
-
+  chkList.on('click', checkMove);
+  selectList.on('click', chkSelectFunc)
   
 
 
@@ -221,7 +271,6 @@ $(function () {
     } else {
       _this.next('.cnt').stop().slideUp('fast');
     }
-
   }
 
   accBtn.on('click', accFunc);
