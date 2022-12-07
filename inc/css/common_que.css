@@ -236,6 +236,20 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .form-txt-chk.type-color03 { color: #5a14be; }
 
+.tooltip-wrap { position: relative; }
+
+.tooltip-wrap .btn-tip { position: relative; top: 1px; width: 19px; height: 19px; margin-left: 53px; border-radius: 100%; border: 1px solid #989898; background: #fff url(../../images/common/ico_tooltip.png) no-repeat left 7px top 4px; background-size: 4px 8px; }
+
+.tooltip-wrap .btn-tip:hover { background-color: #969696; -webkit-filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); }
+
+.tooltip-wrap .btn-tip:hover + .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
+.tooltip-wrap .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 33px; left: 0px; width: 355px; height: 50px; color: #fff; border-radius: 5px; background-color: #969696; }
+
+.tooltip-wrap .tooltip span { font-size: 14px; font-weight: 400; }
+
+.tooltip-wrap .tooltip::before { content: ""; display: block; clear: both; position: absolute; left: 57px; top: -8px; width: 11px; height: 8px; background: url(../../images/common/ico_arrow_tooltip.png) no-repeat; }
+
 .tab-list-type01 .tab-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 25px 20px; }
 
 .tab-list-type01 .tab-top .select-wrap { margin-left: 6px; }
