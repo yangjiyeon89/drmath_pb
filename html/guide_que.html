@@ -443,11 +443,11 @@
   <h2>calendar</h2>
   <p>script는 페이지 하단에 입력</p>
   <div class="date-wrap">
-    <div class="input-wrap">
+    <div class="date-box">
       <input type="text" id="from" name="from" disabled>
     </div>
     <span>~</span>
-    <div class="input-wrap">
+    <div class="date-box">
       <input type="text" id="to" name="to" disabled>
     </div>
   </div>
@@ -2635,6 +2635,12 @@
  
       return date;
     }
+
+    $('.ui-datepicker-trigger').on('click', function(){
+      let _this = $(this);
+
+      _this.parents('.date-box').find('input').toggleClass('focus');
+    })
   })
   
   

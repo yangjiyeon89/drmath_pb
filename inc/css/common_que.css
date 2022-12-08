@@ -266,6 +266,12 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .open-select-list li a.active { color: #5a14be; background-color: #ebe3ff; }
 
+.date-box { display: inline-block; }
+
+.date-box input { width: 142px; height: 44px; border: 1px solid #dddddd; border-radius: 5px; background-color: #fff; }
+
+.date-box input:focus { border-color: #000; }
+
 [class^='form-txt-'] { font-size: 14px; }
 
 [class^='form-txt-'] img { position: relative; top: -2px; margin-right: 4px; width: 15px; height: 15px; }

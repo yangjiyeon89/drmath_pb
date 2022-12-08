@@ -725,6 +725,20 @@ input[type="checkbox"] {
     }
   }
 }
+
+.date-box {
+  display: inline-block;
+  input {
+    width: 142px;height: 44px;
+    border: 1px solid $color-line-type02;
+    border-radius: 5px;
+    background-color: #fff;
+    &:focus {
+      border-color: #000;
+    }
+  }
+}
+
 [class^='form-txt-'] {
   font-size: 14px;
   img {
