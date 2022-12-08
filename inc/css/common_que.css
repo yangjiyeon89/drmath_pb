@@ -90,6 +90,10 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .btn-icon.type02 i { margin-right: 10px; }
 
+.btn-icon.type03 { height: 44px; padding: 0 20px; color: #fff; font-size: 16px; font-weight: 600; border-radius: 5px; background-color: #5a14be; }
+
+.btn-icon.type03 i { margin-right: 3px; }
+
 .btn-icon.fix-w { width: 97px; }
 
 .btn-step { width: 120px; height: 50px; padding-left: 30px; color: #fff; font-weight: 500; border-radius: 25px; background: #7e7e7e url(../../images/common/ico_arrow_step.png) no-repeat left 20px center; background-size: 18px 8px; }
@@ -105,6 +109,8 @@ body { font-family: 'Pretendard', sans-serif; }
 .add { background: url(../../images/common/ico_add.png); background-size: 18px  !important; background-size: contain; }
 
 .add-type02 { background: url(../../images/common/ico_add_type02.png); background-size: 13px !important; background-size: contain; }
+
+.search { background: url(../../images/common/ico_search_w.png); background-size: 15px 13px !important; background-size: contain; }
 
 .people { background: url(../../images/common/ico_mypage.png); background-size: 13px 14px  !important; background-size: contain; }
 
@@ -266,11 +272,59 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .open-select-list li a.active { color: #5a14be; background-color: #ebe3ff; }
 
-.date-box { display: inline-block; }
+.date-wrap .date-box { position: relative; display: inline-block; }
 
-.date-box input { width: 142px; height: 44px; border: 1px solid #dddddd; border-radius: 5px; background-color: #fff; }
+.date-wrap .date-box input { position: relative; width: 132px; height: 44px; padding-left: 46px; border: 1px solid #dddddd; border-radius: 5px; background-color: #fff; }
 
-.date-box input:focus { border-color: #000; }
+.date-wrap .date-box input:focus { border: 1px solid #565656; outline: none; }
+
+.date-wrap .date-box img { position: absolute; top: 15px; left: 13px; }
+
+.date-wrap span { margin: 0 6px 0 5px; }
+
+.ui-widget.ui-widget-content { margin-top: 12px; margin-left: -110px; border: 1px solid #565656; border-radius: 10px; }
+
+.ui-widget.ui-widget-content .ui-datepicker-prev-hover { top: 3px; left: 77px; }
+
+.ui-widget.ui-widget-content .ui-datepicker-next-hover { top: 3px; right: 77px; }
+
+.ui-datepicker { width: 343px; padding: 20px 15px 10px 15px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ui-datepicker .ui-datepicker-header { background-color: #fff; border: 0; }
+
+.ui-datepicker .ui-datepicker-calendar { margin-top: 20px; }
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { top: 3px; }
+
+.ui-datepicker .ui-datepicker-prev { left: 77px; }
+
+.ui-datepicker .ui-datepicker-prev span { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
+
+.ui-datepicker .ui-datepicker-next { right: 77px; }
+
+.ui-datepicker .ui-widget-header .ui-icon { background: url(../../images/common/ico_arrow_b.png) no-repeat; }
+
+.ui-datepicker .ui-datepicker-year { display: none; }
+
+.ui-datepicker .ui-datepicker-month { font-family: 'Pretendard', sans-serif; font-size: 20px; font-weight: 700; }
+
+.ui-datepicker th { font-family: 'Pretendard', sans-serif; font-size: 14px; font-weight: 400; }
+
+.ui-datepicker th.ui-datepicker-week-end { color: #ff0000; }
+
+.ui-datepicker th.ui-datepicker-week-end:last-child { color: #1669e7; }
+
+.ui-datepicker td .ui-state-default { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 34px; height: 34px; text-align: center; background: #fff; border: 0; border-radius: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.ui-datepicker td .ui-state-active { color: #5a14be; background-color: #ebe3ff; }
+
+.ui-datepicker td .ui-state-hover { border: 0; color: #5a14be; background-color: #ebe3ff; opacity: .5; }
+
+.ui-datepicker td.ui-datepicker-week-end .ui-state-default { color: #ff0000; }
+
+.ui-datepicker td.ui-datepicker-week-end:last-child .ui-state-default { color: #1669e7; }
+
+.ui-datepicker td.ui-datepicker-today .ui-state-default { color: #5a14be; background-color: #ebe3ff; opacity: .5; }
 
 [class^='form-txt-'] { font-size: 14px; }
 

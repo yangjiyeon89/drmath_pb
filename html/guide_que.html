@@ -7,6 +7,7 @@
   <title>닥터매쓰</title>
   <link rel="stylesheet" href="../inc/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/guide.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -125,7 +126,9 @@
   <button type="button" class="btn-icon"><i class="linking"></i>연동하기</button>
   <button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button>
   <button type="button" class="btn-icon type02"><i class="add"></i> 맞춤 문제지 만들기</button>
+  <button type="button" class="btn-icon type03"><i class="search"></i> 검색하기</button>
   <button type="button" class="btn-arrow"></button>
+  
 
   <h2>Tab</h2>
   <div class="tab-wrap">
@@ -442,13 +445,14 @@
 
   <h2>calendar</h2>
   <p>script는 페이지 하단에 입력</p>
+  <br>
   <div class="date-wrap">
     <div class="date-box">
-      <input type="text" id="from" name="from" disabled>
+      <input type="text" id="from" name="from" autocomplete="off">
     </div>
     <span>~</span>
     <div class="date-box">
-      <input type="text" id="to" name="to" disabled>
+      <input type="text" id="to" name="to" autocomplete="off">
     </div>
   </div>
   
@@ -461,6 +465,16 @@
     <button type="button" class="btn-tip"></button>
     <div class="tooltip">
       <span>학원로고 미 등록시 문제지에 학원명이 텍스트로 입력됩니다.</span>
+    </div>
+  </div>
+  <div class="tooltip-wrap">
+    <button type="button" class="txt-tip">중</button>
+    <div class="tooltip type02">
+      <span>최상</span>
+      <span>상</span>
+      <span>중</span>
+      <span>하</span>
+      <span>최하</span>
     </div>
   </div>
 
@@ -1614,30 +1628,35 @@
 </body>
 <script>
   $(function(){
-    var dateFormat = "yy-mm-dd",
+    var dateFormat = "y.mm.dd",
     from = $( "#from" )
       .datepicker({
         defaultDate: "+1w",
-        changeMonth: true,
+        changeMonth: false,
         numberOfMonths: 1,
-        dateFormat: "yy-mm-dd",
+        dateFormat: "y.mm.dd",
         showOn: "button",
         buttonImage: "../images/common/ico_calendar.png",
         buttonImageOnly: true,
-        buttonText: "Select date"
+        buttonText: "Select date",
+        monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ]
       })
       .on( "change", function() {
         to.datepicker( "option", "minDate", getDate( this ) );
       }),
     to = $( "#to" ).datepicker({
       defaultDate: "+1w",
-      changeMonth: true,
+      changeMonth: false,
       numberOfMonths: 1,
-      dateFormat: "yy-mm-dd",
+      dateFormat: "y.mm.dd",
       showOn: "button",
       buttonImage: "../images/common/ico_calendar.png",
       buttonImageOnly: true,
-      buttonText: "Select date"
+      buttonText: "Select date",
+      monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+      dayNamesMin: [ "일", "월", "화", "수", "목", "금", "토" ]
+      
     })
     .on( "change", function() {
       from.datepicker( "option", "maxDate", getDate( this ) );
@@ -1653,12 +1672,8 @@
  
       return date;
     }
+    $(".ui-datepicker-trigger").removeAttr("title");
 
-    $('.ui-datepicker-trigger').on('click', function(){
-      let _this = $(this);
-
-      _this.parents('.date-box').find('input').toggleClass('focus');
-    })
   })
   
   
