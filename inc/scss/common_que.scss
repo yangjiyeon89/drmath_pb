@@ -404,13 +404,11 @@ body {
       display: block;
     }
   }
-  &::after {
-    @include virtual-selector;
-    position: absolute;
-    top: 50%;right: -26px;
-    width: 11px;height: 18px;
-    margin-top: -9px;
-    background: url(../../images/common/ico_arrow_c_type02.png) no-repeat;
+  .content {
+    display: none;
+    &.on {
+      display: block;
+    }
   }
 }
 .input-tit {
@@ -644,6 +642,9 @@ input[type="checkbox"] {
   &.type-color03 {
     color: $color-main-purple;
   }
+  &.type-color04 {
+    color: $color-sub33;
+  }
 }
 
 .tooltip-wrap {
@@ -699,6 +700,7 @@ input[type="checkbox"] {
   .table {
     border: 1px solid $color-line-type02;
     border-bottom: 0;
+    background-color: $color-table;
     .fix-head, .col {
       display: flex;
       width: 100%;
@@ -726,7 +728,7 @@ input[type="checkbox"] {
     }
     .fix-head {
       border-bottom: 1px solid $color-line-type02;
-      background-color: #f2f2f2;
+      background-color: $color-table;
       span {
         padding: 11px 0;
         font-weight: 600;
@@ -745,7 +747,45 @@ input[type="checkbox"] {
     .scroll-inner {
       height: 630px;
     }
+    .tbody {
+      background-color: #fff;
+    }
+    &.half-type {
+      .scroll-inner {
+        height: 409px;
+      }
+      span:nth-child(1) {
+        width: 12%;
+      }
+      span:nth-child(2) {
+        width: 7%;
+        padding: 0;
+        justify-content: center;
+      }
+      span:nth-child(3) {
+        width: 55%;
+        padding: 13px 27px;
+        justify-content: flex-start;
+      }
+      span:nth-child(4) {
+        width: 13%;
+      }
+      span:nth-child(5) {
+        width: 13%;
+      }
+      a {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .dragHandle {
+      cursor: move;
+    }
+    .myDragClass {
+      box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34);
+    }
   }
+
 }
 .pop-wrap {
   display: none;  
@@ -880,6 +920,16 @@ input[type="checkbox"] {
       .scroll-inner {
         height: 290px;
       }
+      .tab-wrap {
+        &::after {
+          @include virtual-selector;
+          position: absolute;
+          top: 50%;right: -26px;
+          width: 11px;height: 18px;
+          margin-top: -9px;
+          background: url(../../images/common/ico_arrow_c_type02.png) no-repeat;
+        }
+      }
     }
     .search-box {
       width: 100%;
@@ -987,9 +1037,6 @@ input[type="checkbox"] {
         height: 358px;
       }
       .acc-btn {
-        span {
-          padding-right: 74px;
-        }
         label {
           display: block;
         }
@@ -1007,6 +1054,15 @@ input[type="checkbox"] {
       .chk-acc {
         display: none;
       }
+      input[type="checkbox"]:checked + label::before {
+        width: 20px;height: 20px;
+        margin-top: -10px;
+        background: url(../../images/common/ico_delete_type02.png) no-repeat;
+        background-size: contain;
+      }
+      .select label {
+        color: #999;
+      }
     }
     .pop-footer {
       button {
@@ -1014,4 +1070,130 @@ input[type="checkbox"] {
       }
     }
   }
+  &.paper-type {
+    .pop-inner {
+      width: 1210px;
+      padding: 30px;
+    }
+    .pop-header {
+      text-align: center;
+      span {
+        @include font(20px, 700);
+      }
+    }
+    .pop-content {
+      margin-top: 20px;
+      border: 1px solid $color-line-type02;
+      border-radius: 5px;
+      .paper-wrap {
+        display: flex;
+      }
+      .form-wrap {
+        width: 445px;
+        padding: 20px;
+        border-right: 1px solid $color-line-type02;
+        .tit {
+          display: block;
+          margin-bottom: 10px;
+          @include font(18px, 600);
+        }
+      }
+      table {
+        width: 100%;
+        border: 1px solid $color-line-type02;
+        border-bottom: 0;
+        border-collapse:inherit;
+        th, td {
+          position: relative;
+          height: 50px;
+          border-bottom: 1px solid $color-line-type02;
+        }
+        th {
+          font-weight: 600;
+          text-align: center;
+          border-right: 1px solid $color-line-type02;
+          background-color: $color-box-type02;
+        }
+        td {
+          padding-left: 20px;
+          &.placeholder {
+            color: #999;
+          }
+        }
+        .select-btn {
+          width: 130px;
+        }
+        input[type="number"] {
+          width: 234px;
+          height: 36px;
+        }
+        & + table {
+          margin: 10px 0 20px;
+        }        
+        .pop-btn {
+          display: block;
+          position: absolute;
+          top: 7px;right: 11px;
+          padding: 0 14px 0 33px;
+        }
+        .search-btn {
+          background: url(../../images/common/ico_search.png) no-repeat left 16px center;
+          background-size: 14px 15px;
+        }
+        .preview-btn {
+          background: url(../../images/common/ico_preview.png) no-repeat left 16px center;
+          background-size: 14px;
+        }
+      }
+      .pop-btn, .file-area label {
+        height: 36px;
+        color: $color-font66;
+        font-size: 14px;
+        border: 1px solid $color-line-type02;
+        border-radius: 3px;
+      }
+      .file-area {
+        padding: 12px 0 7px;
+        text-align: center;
+        border: 1px solid $color-line-type02;
+        background-color: $color-box-type02;
+        span {
+          display: block;
+          color: #999;
+          font-size: 14px;
+        }
+        .file-box {
+          display: inline-block;
+          height: 27px;
+          margin-top: 16px;
+        }
+        label {
+          padding: 8px 14px 8px 33px;
+          background: #fff url(../../images/common/ico_flie.png) no-repeat left 16px center;
+          background-size: 14px 12px;
+        }
+      }
+      input[type="file"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip:rect(0,0,0,0);
+        border: 0;
+      }
+      .form-txt-chk {
+        display: block;
+        margin-top: 8px;
+        padding-left: 22px;
+        text-indent: -22px;
+      }
+    }
+  }
+}
+.ui-sortable-helper {
+  border: 1px solid $color-line-type02;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  background-color: #fff;
 }
