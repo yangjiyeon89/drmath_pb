@@ -246,17 +246,27 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .tooltip-wrap { position: relative; }
 
+.tooltip-wrap button { margin-left: 81px; }
+
+.tooltip-wrap button:hover + .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
 .tooltip-wrap .btn-tip { position: relative; top: 1px; width: 19px; height: 19px; margin-left: 53px; border-radius: 100%; border: 1px solid #989898; background: #fff url(../../images/common/ico_tooltip.png) no-repeat left 7px top 4px; background-size: 4px 8px; }
 
 .tooltip-wrap .btn-tip:hover { background-color: #969696; -webkit-filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); }
-
-.tooltip-wrap .btn-tip:hover + .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 
 .tooltip-wrap .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 33px; left: 0px; width: 355px; height: 50px; color: #fff; border-radius: 5px; background-color: #969696; }
 
 .tooltip-wrap .tooltip span { font-size: 14px; font-weight: 400; }
 
 .tooltip-wrap .tooltip::before { content: ""; display: block; clear: both; position: absolute; left: 57px; top: -8px; width: 11px; height: 8px; background: url(../../images/common/ico_arrow_tooltip.png) no-repeat; }
+
+.tooltip-wrap .tooltip.type02 { width: auto; height: 40px; padding: 0 20px; border-radius: 3px; border: 1px solid #e4d6ff; background-color: #f4eeff; }
+
+.tooltip-wrap .tooltip.type02 span { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 28px; height: 28px; color: #5a14be; border: 1px solid #c5aceb; border-radius: 3px; background-color: #fff; }
+
+.tooltip-wrap .tooltip.type02 span + span { margin-left: 5px; }
+
+.tooltip-wrap .tooltip.type02::before { left: 50%; top: -8px; width: 11px; height: 9px; -webkit-transform: translateX(-50%); transform: translateX(-50%); background: url(../../images/common/ico_arrow_tooltip_type02.png) no-repeat; }
 
 .tab-list-type01 .tab-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 25px 20px; }
 

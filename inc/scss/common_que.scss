@@ -647,8 +647,18 @@ input[type="checkbox"] {
   }
 }
 
+
+
 .tooltip-wrap {
   position: relative;
+  button {
+    margin-left: 81px;
+    &:hover {
+      & + .tooltip {
+        display: inline-flex;
+      }
+    }
+  }
   .btn-tip {
     position: relative;
     top: 1px;
@@ -661,17 +671,14 @@ input[type="checkbox"] {
     &:hover {
       background-color: #969696;
       filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%);
-      & + .tooltip {
-        display: inline-flex;
-      }
     }
   }
-  .tooltip {    
+  .tooltip {
     @include content-center-center;
     display: none;
     position: absolute;
     top: 33px;left: 0px;
-    width: 355px;height: 50px;    
+    width: 355px;height: 50px;
     color: #fff;
     border-radius: 5px;
     background-color: #969696;
@@ -686,8 +693,34 @@ input[type="checkbox"] {
       width: 11px;height: 8px;
       background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
     }
+    &.type02 {
+      width: auto;height: 40px;
+      padding: 0 20px;
+      border-radius: 3px;
+      border: 1px solid #e4d6ff;
+      background-color: #f4eeff;
+      span {
+        @include content-center-center;
+        width: 28px;height: 28px;
+        color: $color-main-purple;
+        border: 1px solid #c5aceb;
+        border-radius: 3px;
+        background-color: #fff;
+        & + span {
+          margin-left: 5px;
+        }
+      }
+      &::before {
+        left: 50%;
+        top: -8px;
+        width: 11px;height: 9px;
+        transform: translateX(-50%);
+        background: url(../../images/common/ico_arrow_tooltip_type02.png) no-repeat;
+      }
+    }
   }
 }
+
 
 .tab-list-type01 {
   .tab-top {

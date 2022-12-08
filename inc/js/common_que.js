@@ -282,8 +282,14 @@ $(function () {
 
     if (_this.hasClass('active')) {
       _this.next('.cnt').stop().slideDown('fast');
+      if(_this.parents('div').hasClass('acc-btn-wrap')){
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
+      }
     } else {
       _this.next('.cnt').stop().slideUp('fast');
+      if(_this.parents('div').hasClass('acc-btn-wrap')){
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+      }
     }
   }
 
