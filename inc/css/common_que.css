@@ -142,6 +142,12 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .tab-menu-type03 li.active a { color: #fff; background-color: #5a14be; }
 
+.tab-menu-type04 li a { width: 100px; height: 50px; color: #a7a7a7; font-weight: 500; border: 1px solid #dddddd; background-color: #f6f6f6; }
+
+.tab-menu-type04 li + li a { border-left: 0; }
+
+.tab-menu-type04 li.active a { color: #5a14be; font-weight: 700; border-top: 2px solid #5a14be; border-bottom: 0; background-color: #fff; }
+
 .tab-wrap { position: relative; }
 
 .tab-wrap .contents { display: none; }
@@ -151,6 +157,34 @@ body { font-family: 'Pretendard', sans-serif; }
 .tab-wrap .content { display: none; }
 
 .tab-wrap .content.on { display: block; }
+
+.acc-tab-wrap .contents { width: 200px; }
+
+.acc-tab-wrap .scroll-inner { height: 760px; border: 1px solid #dddddd; border-top: 0; background-color: #fff; }
+
+.acc-tab-wrap .acc-btn-wrap { padding: 16px 16px 16px 53px; border-bottom: 1px solid #dddddd; }
+
+.acc-tab-wrap .acc-btn-wrap span { padding-right: 25px; font-weight: 600; cursor: pointer; }
+
+.acc-tab-wrap .acc-btn-wrap em { padding-right: 25px; }
+
+.acc-tab-wrap .acc-btn-wrap .acc-btn { width: 7px; height: 11px; background: url(../../images/common/ico_arrow_acc.png) no-repeat; background-size: contain; -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.acc-tab-wrap .acc-btn-wrap.active span { color: #5a14be; font-weight: 700; }
+
+.acc-tab-wrap .acc-btn-wrap.active .acc-btn { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+
+.acc-tab-wrap .acc-cnt .cnt { display: none; padding: 7px 0; border-bottom: 1px solid #dddddd; }
+
+.acc-tab-wrap .acc-cnt li { padding: 14px 55px; }
+
+.acc-tab-wrap .acc-cnt li.active span { color: #5a14be; font-weight: 700; }
+
+.acc-tab-wrap .acc-cnt li span { width: 75px; display: inline-block; cursor: pointer; }
+
+.acc-tab-wrap .acc-cnt li em { position: relative; top: -1px; display: inline-block; width: 8px; height: 8px; border-radius: 100%; background-color: #d6d6d6; }
+
+.acc-tab-wrap .acc-cnt li em.on { background-color: #ffba00; }
 
 .input-tit span { display: block; margin-bottom: 10px; font-weight: 700; }
 

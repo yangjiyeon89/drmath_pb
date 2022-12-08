@@ -396,6 +396,34 @@ body {
     }
   }
 }
+.tab-menu-type04 {
+  li {
+    a {
+      width: 100px;
+      height: 50px;
+      color: #a7a7a7;
+      font-weight: 500;
+      border: 1px solid $color-line-type02;
+      background-color: #f6f6f6;
+    }
+    & + li {
+      a {
+        border-left: 0;
+      }
+    }
+    &.active {
+      a {
+        color: $color-main-purple;
+        font-weight: 700;
+        border-top: 2px solid $color-main-purple;
+        border-bottom: 0;
+        background-color: #fff;
+        
+      }
+    }
+  }
+}
+
 .tab-wrap {
   position: relative;
   .contents {
@@ -411,6 +439,78 @@ body {
     }
   }
 }
+.acc-tab-wrap {
+  
+  .contents {
+    width: 200px;
+  }
+  .scroll-inner {
+    height: 760px;
+    border: 1px solid $color-line-type02;
+    border-top: 0;
+    background-color: #fff;
+  }
+  .acc-btn-wrap {
+    padding: 16px 16px 16px 53px;
+    border-bottom: 1px solid $color-line-type02;
+    span {
+      padding-right: 25px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    em {
+      padding-right: 25px;
+    }
+    .acc-btn {
+      width: 7px;height: 11px;
+      background: url(../../images/common/ico_arrow_acc.png) no-repeat;
+      background-size: contain;      
+      transform: rotate(90deg);
+    }
+    &.active {
+      span {
+        color: $color-main-purple;
+        font-weight: 700;
+      }
+      .acc-btn {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .acc-cnt {
+    .cnt {
+      display: none;
+      padding: 7px 0;
+      border-bottom: 1px solid $color-line-type02;
+    }
+    li {
+      padding: 14px 55px;
+      &.active {
+        span {
+          color: $color-main-purple;
+          font-weight: 700;
+        }
+      }
+      span {
+        width: 75px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      em {
+        position: relative;
+        top: -1px;
+        display: inline-block;
+        width: 8px;height: 8px;
+        border-radius: 100%;
+        background-color: #d6d6d6;
+        &.on {
+          background-color: $color-main-yellow;
+        }
+      }
+    }
+  }
+}
+
 .input-tit {
   span {
     display: block;

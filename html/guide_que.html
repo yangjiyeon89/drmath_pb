@@ -173,7 +173,7 @@
       </li>
     </ul>
   </div>
-  <div class="tab-wrap">
+  <div class="tab-wrap acc-tab-wrap">
     <ul class="tab-menu-type04">
       <li class="ui-tab-btn active">
         <a href="javascript:;">클래스</a>
@@ -438,6 +438,19 @@
       <a href="javascript:;">다운로드</a>
     </li>
   </ul>
+
+
+  <h2>calendar</h2>
+  <p>script는 페이지 하단에 입력</p>
+  <div class="date-wrap">
+    <div class="input-wrap">
+      <input type="text" id="from" name="from" disabled>
+    </div>
+    <span>~</span>
+    <div class="input-wrap">
+      <input type="text" id="to" name="to" disabled>
+    </div>
+  </div>
   
 
   <h2>Etc</h2>
@@ -2580,7 +2593,50 @@
       </div>
     </div>
   </div>
-
-
 </body>
+<script>
+  $(function(){
+    var dateFormat = "yy-mm-dd",
+    from = $( "#from" )
+      .datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      })
+      .on( "change", function() {
+        to.datepicker( "option", "minDate", getDate( this ) );
+      }),
+    to = $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      dateFormat: "yy-mm-dd",
+      showOn: "button",
+      buttonImage: "../images/common/ico_calendar.png",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    })
+    .on( "change", function() {
+      from.datepicker( "option", "maxDate", getDate( this ) );
+    });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  })
+  
+  
+</script>
 </html>

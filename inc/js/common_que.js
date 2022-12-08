@@ -277,22 +277,75 @@ $(function () {
 
   function accFunc() {
     let _this = $(this);
+    let accWrap = _this.parents('.acc-btn-wrap');   
 
-    _this.toggleClass('active');
-
-    if (_this.hasClass('active')) {
-      _this.next('.cnt').stop().slideDown('fast');
-      if(_this.parents('div').hasClass('acc-btn-wrap')){
+    if(_this.parents('div').hasClass('acc-btn-wrap')){
+      accWrap.toggleClass('active');
+      if(accWrap.hasClass('active')) {
         _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
+      } else {
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
       }
     } else {
-      _this.next('.cnt').stop().slideUp('fast');
-      if(_this.parents('div').hasClass('acc-btn-wrap')){
-        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+      _this.toggleClass('active');    
+
+      if (_this.hasClass('active')) {
+        _this.next('.cnt').stop().slideDown('fast');
+      } else {
+        _this.next('.cnt').stop().slideUp('fast');
       }
     }
   }
 
   accBtn.on('click', accFunc);
+
+  // depth
+  let depBtn = $('.dep-btn');
+
+  function depFunc(){
+    let _this = $(this);
+
+    if(!_this.hasClass('active')){
+      _this.addClass('active');
+      _this.parents('.check-group').next('div').stop().slideUp('fast');
+
+    } else {
+      _this.removeClass('active');
+      _this.parents('.check-group').next('div').stop().slideDown('fast');
+    }
+
+    _this.parents('.check-group').toggleClass('on');
+  }
+
+  depBtn.on('click', depFunc);
+
+
+  // que-checkbox
+  let queChkAll = $('.que-allCheck');
+
+  function queCheckFunc(){
+    let _this = $(this);
+
+    if(_this.prop('checked')){
+      _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
+    } else {
+      _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
+    }
+
+    if(_this.prop('checked') && _this.hasClass('depth01')) {
+      _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
+    } else {
+      _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
+    }
+
+    if(_this.prop('checked')){
+      _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+    } else {
+      _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+    }
+
+  }
+
+  queChkAll.on('click', queCheckFunc);
 
 });
