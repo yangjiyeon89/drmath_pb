@@ -248,16 +248,17 @@ $(function () {
     let _this = $(this);
     let chkCnt = $('.left-cnt .chk-acc');
     let _name = $(this).attr('name');
+    let _idx = $(this).parents('.chk-acc').data('index');
 
     if (!_this.prop('checked')) {
-      chkCnt.find(".allCheck").prop('checked', false);
-      chkCnt.find(".allCheck").attr('disabled', false);
+      $(".left-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").prop('checked', false);
+      $(".left-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").attr('disabled', false);
 
       if(_this.hasClass('allCheck')) {
         _this.parents('.chk-acc').hide();
         _this.parents('.chk-acc').find('li').hide();
-        chkCnt.find('input').attr('disabled', false);
-        chkCnt.find('input').prop('checked', false);
+        $(".left-cnt .chk-acc[data-index='" + _idx + "']").find('input').attr('disabled', false);
+        $(".left-cnt .chk-acc[data-index='" + _idx + "']").find('input').prop('checked', false);
       } else {
         _this.parents('li').hide();
         chkCnt.find("input:checkbox[name='" + _name + "']").attr('disabled', false);
