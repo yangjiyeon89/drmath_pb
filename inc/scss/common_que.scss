@@ -956,6 +956,15 @@ input[type="checkbox"] {
   }
 }
 
+[class^='tag-']{
+  padding: 4px 10px 3px;
+  @include font(12px, 700);
+  border-radius: 10px;
+}
+.tag-type01 {
+  color: #eb3c21;
+  background-color: #ffedea;
+}
 
 
 
