@@ -870,7 +870,7 @@ input[type=checkbox]:checked + label::before {
 .btn-dot .open-select-list {
   position: absolute;
   width: 86px;
-  right: -13px;
+  right: 0px;
   top: 24px;
   background: #fff;
   z-index: 100;

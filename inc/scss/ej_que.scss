@@ -5,13 +5,6 @@
 
 
 //문제은행 사이트
-
-// .sub01_03_01 .tab-wrap.tab-padding {
-// 	padding: 0px 20px 20px;
-// }
-
-
-
 .que_cont {
 
 	.tab-wrap::after {
@@ -36,7 +29,7 @@
 			.fix-head {}
 
 			span:nth-child(1) {
-				width: 7%;
+				width: 6%;
 			}
 
 			span:nth-child(2) {
@@ -50,12 +43,11 @@
 			}
 
 			span:nth-child(4) {
-				width: 6%;
+				width: 7%;
 			}
 
 			span:nth-child(5) {
-				width: 32%;
-				padding: 13px;
+				width: 35%;
 
 				img {
 					margin: 0 10px;
@@ -153,41 +145,31 @@
 
 }
 
-.btn-icon {
-	&.fix-s {
-		width: 36px;
-		padding: 0;
 
-		i {
-			margin-right: 0;
-		}
-	}
-}
+// .print {
+// 	background: url(../../images/common/ico_print.png);
+// 	background-size: 14px 13px !important;
+// 	background-size: contain;
+// }
 
-.print {
-	background: url(../../images/common/ico_print.png);
-	background-size: 14px 13px !important;
-	background-size: contain;
-}
+// .launch {
+// 	background: url(../../images/common/ico_launch.png);
+// 	background-size: 14px 14px !important;
+// 	background-size: contain;
+// }
 
-.launch {
-	background: url(../../images/common/ico_launch.png);
-	background-size: 14px 14px !important;
-	background-size: contain;
-}
+// .gallery {
+// 	background: url(../../images/common/ico_gallery_off.png);
+// 	background-size: 14px 14px !important;
+// 	background-size: contain;
+// }
 
-.gallery {
-	background: url(../../images/common/ico_gallery_off.png);
-	background-size: 14px 14px !important;
-	background-size: contain;
-}
+// .list {
+// 	background: url(../../images/common/ico_list_off.png);
+// 	background-size: 14px 11px !important;
+// 	background-size: contain;
 
-.list {
-	background: url(../../images/common/ico_list_off.png);
-	background-size: 14px 11px !important;
-	background-size: contain;
-
-}
+// }
 
 
 
@@ -247,22 +229,22 @@
 	}
 }
 
-.btn-dot {
-	background: url(../../images/common/ico_dot.png) no-repeat;
-	background-size: contain;
-	width: 10px;
-	height: 18px;
-	position: relative;
+// .btn-dot {
+// 	background: url(../../images/common/ico_dot.png) no-repeat;
+// 	background-size: contain;
+// 	width: 10px;
+// 	height: 18px;
+// 	position: relative;
 
-	.open-select-list {
-		position: absolute;
-		width: 86px;
-		right: -13px;
-		top: 24px;
-		background: #fff;
-		z-index: 100;
-	}
-}
+// 	.open-select-list {
+// 		position: absolute;
+// 		width: 86px;
+// 		right: -13px;
+// 		top: 24px;
+// 		background: #fff;
+// 		z-index: 100;
+// 	}
+// }
 
 .pop-wrap {
 	&.table-type {
