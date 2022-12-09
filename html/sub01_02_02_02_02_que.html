@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="full-pop-que">
+    <div class="full-pop-wrap">
+      <div class="pop-header">
+        <ul class="title">
+          <li>STEP 1 단원선택</li>
+          <li class="active"><img src="../images/sub/ico_step_active.jpg" alt="">STEP 2 문힝편집</li>
+          <li>STEP 3 문제지 설정</li>
+        </ul>
+        <button type="button" class="pop-btn" data-pop="alert-pop"></button>
+      </div>
+      <div class="pop-content">
+        <div class="view-box-wrap">
+          <div class="view-box">
+            <div class="view-top">
+              <span class="title">문제 목록</span>
+              <div class="right-area">
+                <div class="toggle-wrap">
+                  <div class="toggle-btn">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                  <span>정답 함께 보기</span>
+                </div>
+                <div class="select-wrap">
+                  <button type="button" class="select-btn">단원순</button>
+                  <ul class="select-list">
+                    <li>
+                      <a href="javascript:;">난이도순</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">문제 형태순</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">출제순</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="view-que-list scroll-inner">
+              <div class="view-que">
+                <div class="que-top">
+                  <div class="title">
+                    <span class="num">1</span>
+                    <div class="que-badge-group">
+                      <span class="que-badge yellow">상</span>
+                      <span class="que-badge gray">주관식</span>
+                      <span class="que-badge gray">80%</span>
+                    </div>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-error"></button>
+                    <button type="button" class="btn-delete"></button>
+                  </div>
+                </div>
+                <div class="que-content">
+                  <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                </div>
+                <div class="que-bottom">
+                  <div class="que-info">
+                    <p class="answer"><span class="label">정답</span>11</p>
+                    <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                  </div>
+                  <button type="button" class="btn-que"></button>
+                </div>
+              </div>
+              <div class="view-que active">
+                <div class="que-top">
+                  <div class="title">
+                    <span class="num">2</span>
+                    <div class="que-badge-group">
+                      <span class="que-badge green">중</span>
+                      <span class="que-badge gray">객관식</span>
+                      <span class="que-badge gray">50%</span>
+                    </div>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-error"></button>
+                    <button type="button" class="btn-delete"></button>
+                  </div>
+                </div>
+                <div class="que-content">
+                  <p class="txt">다음 중 3 : 4에 대해서 잘못 말한 것은 어느 것입니까?</p>
+                  <ul>
+                    <ol><em>①</em> 3 대 4</ol>
+                    <ol><em>②</em> 3의 4에 대한 비 </ol>
+                    <ol><em>③</em> 4에 대한 3의 비 </ol>
+                    <ol><em>④</em> 3에 대한 4의 비</ol>
+                    <ol><em>⑤</em> 3과 4의 비 </ol>
+                  </ul>
+                </div>
+                <div class="que-bottom">
+                  <div class="que-info">
+                    <p class="answer"><span class="label">정답</span><em>①</em></p>
+                    <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                  </div>
+                  <button type="button" class="btn-que"></button>
+                </div>
+              </div>
+              <div class="view-que">
+                <div class="que-top">
+                  <div class="title">
+                    <span class="num">3</span>
+                    <div class="que-badge-group">
+                      <span class="que-badge blue">하</span>
+                      <span class="que-badge gray">주관식</span>
+                      <span class="que-badge gray">80%</span>
+                    </div>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-error"></button>
+                    <button type="button" class="btn-delete"></button>
+                  </div>
+                </div>
+                <div class="que-content">
+                  <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                  <ul>
+                    <ol><em>①</em> 3 대 4</ol>
+                    <ol><em>②</em> 3의 4에 대한 비 </ol>
+                    <ol><em>③</em> 4에 대한 3의 비 </ol>
+                    <ol><em>④</em> 3에 대한 4의 비</ol>
+                    <ol><em>⑤</em> 3과 4의 비 </ol>
+                  </ul>
+                </div>
+                <div class="que-bottom">
+                  <div class="que-info">
+                    <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                  </div>
+                  <button type="button" class="btn-que"></button>
+                </div>
+              </div>
+              <div class="view-que">
+                <div class="que-top">
+                  <div class="title">
+                    <span class="num">4</span>
+                    <div class="que-badge-group">
+                      <span class="que-badge yellow">상</span>
+                      <span class="que-badge gray">주관식</span>
+                      <span class="que-badge gray">80%</span>
+                    </div>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-error"></button>
+                    <button type="button" class="btn-delete"></button>
+                  </div>
+                </div>
+                <div class="que-content">
+                  <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                </div>
+                <div class="que-bottom">
+                  <div class="que-info">
+                    <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                  </div>
+                  <button type="button" class="btn-que"></button>
+                </div>
+              </div>
+            </div>
+            <div class="view-bottom">
+              <div class="que-badge-group">
+                <div class="que-badge-wrap">
+                  <span class="que-badge blue">하</span>
+                  <span class="num">5</span>
+                </div>
+                <div class="que-badge-wrap">
+                  <span class="que-badge green">중</span>
+                  <span class="num">15</span>
+                </div>
+                <div class="que-badge-wrap">
+                  <span class="que-badge yellow">상</span>
+                  <span class="num">25</span>
+                </div>
+              </div>
+              <p class="total-num">총 <span>20</span>문제</p>
+            </div>
+          </div>
+          <div class="view-box type02">
+            <div class="tab-wrap">
+              <ul class="tab-menu-type03">
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">문제지 요약</a>
+                </li>
+                <li class="ui-tab-btn active">
+                  <a href="javascript:;">유사문제</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">삭제문항</a>
+                </li>
+              </ul>
+              <div class="contents">
+                탭 컨텐츠 (1)
+              </div>
+              <div class="contents on">
+                <div class="view-top">
+                  <span class="title">2번 유사문제</span>
+                  <div class="right-area">
+                    <div class="toggle-wrap">
+                      <div class="toggle-btn">
+                        <input type="checkbox" class="checkbox">
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                      </div>
+                      <span>쌍둥이문제만 보기</span>
+                    </div>
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn">난이도 전체</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">최상</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">상</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">중</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">하</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">최하</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-que-list scroll-inner">
+                  <div class="view-que">
+                    <div class="que-top">
+                      <div class="title">
+                        <span class="num">1</span>
+                        <div class="que-badge-group">
+                          <span class="que-badge yellow">상</span>
+                          <span class="que-badge gray">주관식</span>
+                          <span class="que-badge gray">80%</span>
+                        </div>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-error"></button>
+                        <button type="button" class="btn-delete"></button>
+                      </div>
+                    </div>
+                    <div class="que-content">
+                      <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                    </div>
+                    <div class="que-bottom">
+                      <div class="que-info">
+                        <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-icon"><i class="add-type03"></i>추가</button>
+                        <button type="button" class="btn-icon"><i class="replace"></i>교체</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-que">
+                    <div class="que-top">
+                      <div class="title">
+                        <span class="num">2</span>
+                        <div class="que-badge-group">
+                          <span class="que-badge green">중</span>
+                          <span class="que-badge gray">객관식</span>
+                          <span class="que-badge gray">50%</span>
+                        </div>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-error"></button>
+                        <button type="button" class="btn-delete"></button>
+                      </div>
+                    </div>
+                    <div class="que-content">
+                      <p class="txt">다음 중 3 : 4에 대해서 잘못 말한 것은 어느 것입니까?</p>
+                      <ul>
+                        <ol><em>①</em> 3 대 4</ol>
+                        <ol><em>②</em> 3의 4에 대한 비 </ol>
+                        <ol><em>③</em> 4에 대한 3의 비 </ol>
+                        <ol><em>④</em> 3에 대한 4의 비</ol>
+                        <ol><em>⑤</em> 3과 4의 비 </ol>
+                      </ul>
+                    </div>
+                    <div class="que-bottom">
+                      <div class="que-info">
+                        <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-icon"><i class="add-type03"></i>추가</button>
+                        <button type="button" class="btn-icon"><i class="replace"></i>교체</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-que">
+                    <div class="que-top">
+                      <div class="title">
+                        <span class="num">3</span>
+                        <div class="que-badge-group">
+                          <span class="que-badge blue">하</span>
+                          <span class="que-badge gray">주관식</span>
+                          <span class="que-badge gray">80%</span>
+                        </div>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-error"></button>
+                        <button type="button" class="btn-delete"></button>
+                      </div>
+                    </div>
+                    <div class="que-content">
+                      <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                      <ul>
+                        <ol><em>①</em> 3 대 4</ol>
+                        <ol><em>②</em> 3의 4에 대한 비 </ol>
+                        <ol><em>③</em> 4에 대한 3의 비 </ol>
+                        <ol><em>④</em> 3에 대한 4의 비</ol>
+                        <ol><em>⑤</em> 3과 4의 비 </ol>
+                      </ul>
+                    </div>
+                    <div class="que-bottom">
+                      <div class="que-info">
+                        <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-icon"><i class="add-type03"></i>추가</button>
+                        <button type="button" class="btn-icon"><i class="replace"></i>교체</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view-que">
+                    <div class="que-top">
+                      <div class="title">
+                        <span class="num">4</span>
+                        <div class="que-badge-group">
+                          <span class="que-badge yellow">상</span>
+                          <span class="que-badge gray">주관식</span>
+                          <span class="que-badge gray">80%</span>
+                        </div>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-error"></button>
+                        <button type="button" class="btn-delete"></button>
+                      </div>
+                    </div>
+                    <div class="que-content">
+                      <p class="txt">5×5×13×13×13×13을 거듭제곱으로 나타낼 5의 지수를 a, 13의 거듭제곱의 밑을 b라 하자. 이때 b−a의 값을 구하시오.</p>
+                    </div>
+                    <div class="que-bottom">
+                      <div class="que-info">
+                        <p class="chapter">자연수의 성질>소인수분해>거듭제곱>거듭제곱으로표현</p>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-icon"><i class="add-type03"></i>추가</button>
+                        <button type="button" class="btn-icon"><i class="replace"></i>교체</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contents">
+                탭 컨텐츠 (3)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-btn-wrap">
+        <button type="button" class="btn-step">STEP 1</button>
+        <button type="button" class="btn-step next">STEP 3</button>
+      </div>
+    </div>
+    <div class="dim"></div>
+    <!-- 변경사항 저장 팝업 -->
+    <div class="pop-wrap alert-type" data-pop="alert-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">페이지 이동 시 변경사항이<br>저장되지 않습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -107,11 +107,8 @@
 							overflow-y: auto;
 							.unit-cnt {
 								width: 100%;
-								height: 679px;
+								height: 684px;
 								overflow-y: auto;
-								@media (max-width: 1280px) {
-									height: 490px;
-								}
 								.check-group {
 									position: relative;
 									padding: 10px 0 10px 20px;
@@ -178,13 +175,10 @@
 						}
 						.type-box {
 							width: 440px;
-							height: 772px;
+							height: 777px;
 							border: 1px solid $color-line-type02;
 							box-sizing: border-box;
 							padding: 0 30px;
-							@media (max-width: 1280px) {
-								height: 583px;
-							}
 							.box {
 								padding: 25px 0;
 								.btn-wrap {
@@ -330,17 +324,13 @@
 				gap: 10px;
 				.view-box {
 					width: calc(50% - 5px);
-					height: 824px;
 					background-color: #fff;
 					border: 1px solid $color-line-type02;
 					border-radius: 5px;
-					padding: 20px 30px;
 					box-sizing: border-box;
-					overflow-y: auto;
-
 					.view-top {
 						@include layout-justify-center;
-						margin-bottom: 20px;
+						padding: 20px 30px;
 						.title {
 							@include font(20px, 600);
 						}
@@ -355,108 +345,152 @@
 							}
 						}
 					}
-					.view-que {
-						border: 1px solid $color-line-type02;
-						border-radius: 5px;
-						padding: 15px 20px;
-						.que-top {
-							@include layout-justify-start;
-							.title {
-								@include layout-center-center;
-								gap: 10px;
-								.num {
-									@include font(16px, 700);
-								}
-								.que-badge-group {
+					.view-que-list {
+						height: 690px;
+						overflow-y: auto;
+						margin: 0 30px;
+						
+						.view-que {
+							border: 1px solid $color-line-type02;
+							border-radius: 5px;
+							padding: 15px 20px;
+							background-color: #fff;
+							.que-top {
+								@include layout-justify-start;
+								.title {
 									@include layout-center-center;
 									gap: 10px;
+									.num {
+										@include font(16px, 700);
+									}
+									.que-badge-group {
+										@include layout-center-center;
+										gap: 10px;
+									}
+								}
+								.btn-wrap {
+									@include layout-center-center;
+									margin-top: 0;
+									gap: 24px;
+									.btn-error {
+										width: 26px;
+										height: 21px;
+										background: url(../../images/sub/ic_btn_error.png) no-repeat;
+										background-size: contain;
+									}
+									.btn-delete {
+										width: 17px;
+										height: 20px;
+										background: url(../../images/sub/ic_btn_delete.png) no-repeat;
+										background-size: contain;
+									}
+								}
+							
+							}
+							.que-content {
+								padding: 20px 0;
+								.txt {
+									@include font(16px, 700);
+									line-height: 30px;
+								}
+								ul {
+									margin-top: 15px;
+									ol {
+										& + ol {
+											margin-top: 15px;
+										}
+									}
 								}
 							}
-							.btn-wrap {
-								@include layout-center-center;
-								margin-top: 0;
-								gap: 24px;
-								.btn-error {
-									width: 26px;
-									height: 21px;
-									background: url(../../images/sub/ic_btn_error.png) no-repeat;
-									background-size: contain;
+							.que-bottom {
+								@include layout-justify-center;
+								.que-info {
+									.answer {
+										.label {
+											@include content-center-center;
+											width: 33px;
+											height: 24px;
+											border: 1px solid $color-line-type02;
+											border-radius: 3px;
+											@include font(12px, 600);
+											line-height: 24px;
+											margin-right: 5px;
+										}		
+									}
+									.chapter {
+										@include font(14px, 400);
+										color: #999;
+										margin-top: 7px;
+									}
 								}
-								.btn-delete {
-									width: 17px;
-									height: 20px;
-									background: url(../../images/sub/ic_btn_delete.png) no-repeat;
-									background-size: contain;
+								.btn-que {
+									width: 36px;
+									height: 36px;
+									border: 1px solid $color-line-type02;
+									border-radius: 5px;
+									background: url(../../images/sub/ic_btn_que.png) center center no-repeat;
 								}
 							}
-						
-						}
-						.que-content {
-							padding: 20px 0;
-							.txt {
-								@include font(16px, 700);
-								line-height: 30px;
+							em {
+								font-size: 12px;
 							}
-							ul {
-								margin-top: 15px;
-								ol {
-									& + ol {
-										margin-top: 15px;
+							& + .view-que {
+								margin-top: 20px;
+							}
+							/* view-que active */
+							&.active {
+								border: 2px solid $color-main-purple;
+								background-color: #fcfaff;
+								.que-bottom {
+									.btn-que {
+										border: 1px solid $color-main-purple;
 									}
 								}
 							}
 						}
-						.que-bottom {
-							@include layout-justify-center;
-							.que-info {
-								.answer {
-									.label {
-										@include content-center-center;
-										width: 33px;
-										height: 24px;
-										border: 1px solid $color-line-type02;
-										border-radius: 3px;
-										@include font(12px, 600);
-										line-height: 24px;
-										margin-right: 5px;
-									}		
+					}
+					.view-bottom {
+						width: 100%;
+						height: 56px;
+						border-top: 1px solid $color-line-type02;
+						padding: 0 30px;
+						box-sizing: border-box;
+						@include layout-justify-center;
+						.que-badge-group {
+							@include layout-center;
+							gap: 20px;
+							.que-badge-wrap {
+								@include layout-center-center;
+								gap: 5px;
+								.que-badge {
+									min-width: 24px;
+									height: 24px;
+									border-radius: 12px;
+									padding: 0;
 								}
-								.chapter {
-									@include font(14px, 400);
-									color: #999;
-									margin-top: 7px;
+								.num {
+									@include font(16px, 500);
 								}
 							}
-							.btn-que {
-								width: 36px;
-								height: 36px;
-								border: 1px solid $color-line-type02;
-								border-radius: 5px;
-								background: url(../../images/sub/ic_btn_que.png) center center no-repeat;
-							}
 						}
-						& + .view-que {
-							margin-top: 20px;
-						}
-						/* view-que active */
-						&.active {
-							border: 2px solid $color-main-purple;
-							background-color: #fcfaff;
-							.que-bottom {
-								.btn-que {
-									border: 1px solid $color-main-purple;
-								}
+						.total-num {
+							@include font(16px, 500);
+							span {
+								@include font(16px, 700);
 							}
 						}
 					}
 					.table {
-						width: 100%;
+						width: calc(100% - 60px);
+						height: 668px;
+						overflow-y: auto;
 						border: 1px solid $color-line-type02;
 						background-color: #fff;
 						border-radius: 5px;
-						margin-top: 20px;
 						border-bottom: 0;
+						margin: 0 30px;
 						.col {
+							@include font(14px, 400);
 							&.active {
 								border: 1px solid $color-main-purple;
 							}
@@ -544,6 +578,34 @@
 						}
 						.myDragClass {
 							box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34);
+						}
+					}
+					&.type02 {
+						background-color: #f6f3fa;
+						border: 1px solid #d2c6e4;
+						.tab-menu-type03 {
+							background-color: #fff;
+							margin: 20px 30px;
+						}
+						.view-top {
+							padding-top: 0;
+							.select-btn {
+								width: 130px;
+							}
+						}
+						.view-que-list {
+							height: 643px;
+							margin: 0 30px 20px 30px;
+						}
+						.view-bottom {
+							@include layout-center-center;
+							.que-badge-group {
+								.que-badge-wrap {
+									.que-badge {
+										min-width: 45px;
+									}
+								}
+							}
 						}
 					}
 				}
