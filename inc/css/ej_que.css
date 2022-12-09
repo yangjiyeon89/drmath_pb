@@ -69,8 +69,12 @@
   width: auto;
   padding: 10px;
 }
-.que_cont.sub01 .table span.tool-type01 img {
-  margin: 0 10px 0 0;
+.que_cont.sub01 .table span.tool-type01 .tag-type01 {
+  width: auto;
+  padding: 4px 10px 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 5px 0 0;
 }
 .que_cont.sub01 .table p.txt {
   white-space: nowrap;
@@ -84,6 +88,11 @@
 .que_cont.sub01 .table .col span:nth-child(5) {
   justify-content: flex-start;
   padding: 13px;
+}
+.que_cont .tag-type01 {
+  padding: 4px 10px 3px !important;
+  width: auto !important;
+  margin-left: 5px;
 }
 .que_cont .tooltip-wrap button {
   margin: 0;
@@ -159,4 +168,15 @@
   float: right;
   margin-right: 26px;
   margin-bottom: 10px;
+}
+
+.btn-book {
+  width: 14px;
+  height: 20px;
+  background: url(../../images/common/ico_bookmark_off.png);
+  background-size: 14px 20px !important;
+  background-size: contain;
+}
+.btn-book.active {
+  background: url(../../images/common/ico_bookmark_on.png);
 }

@@ -7,169 +7,180 @@
 //문제은행 사이트
 .que_cont {
 
-	.tab-wrap::after {
-		display: none;
-	}
+  .tab-wrap::after {
+    display: none;
+  }
 
-	.tab-menu-type01 {
-		margin-top: 30px;
-	}
+  .tab-menu-type01 {
+    margin-top: 30px;
+  }
 
-	.tab-list-type01 {
+  .tab-list-type01 {
 
-		padding: 0px 20px 20px;
+    padding: 0px 20px 20px;
 
-		.table.half-type .scroll-inner {
-			height: 630px;
-		}
-	}
+    .table.half-type .scroll-inner {
+      height: 630px;
+    }
+  }
 
-	&.sub01 {
-		.table {
-			.fix-head {}
 
-			span:nth-child(1) {
-				width: 6%;
-			}
+  &.sub01 {
+    .table {
+      .fix-head {}
 
-			span:nth-child(2) {
-				width: 6%;
-			}
+      span:nth-child(1) {
+        width: 6%;
+      }
 
-			span:nth-child(3) {
-				width: 8%;
-				padding: 0;
-				justify-content: center;
-			}
+      span:nth-child(2) {
+        width: 6%;
+      }
 
-			span:nth-child(4) {
-				width: 7%;
-			}
+      span:nth-child(3) {
+        width: 8%;
+        padding: 0;
+        justify-content: center;
+      }
 
-			span:nth-child(5) {
-				width: 35%;
+      span:nth-child(4) {
+        width: 7%;
+      }
 
-				img {
-					margin: 0 10px;
-				}
-			}
+      span:nth-child(5) {
+        width: 35%;
 
-			span:nth-child(6) {
-				width: 6%;
-			}
+        img {
+          margin: 0 10px;
+        }
+      }
 
-			span:nth-child(7) {
-				width: 8%;
-			}
+      span:nth-child(6) {
+        width: 6%;
+      }
 
-			span:nth-child(8) {
-				width: 6%;
-			}
+      span:nth-child(7) {
+        width: 8%;
+      }
 
-			span:nth-child(9) {
-				width: 6%;
-			}
+      span:nth-child(8) {
+        width: 6%;
+      }
 
-			span:nth-child(10) {
-				width: 10%;
-			}
+      span:nth-child(9) {
+        width: 6%;
+      }
 
-			span.tool-type01 {
-				width: auto;
-				padding: 10px;
+      span:nth-child(10) {
+        width: 10%;
+      }
 
-				img {
-					margin: 0 10px 0 0;
-				}
-			}
+      span.tool-type01 {
+        width: auto;
+        padding: 10px;
 
-			p.txt {
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
-			}
+        .tag-type01 {
+          width: auto;
+          padding: 4px 10px 3px;
+          font-size: 12px;
+          font-weight: 700;
+          margin: 0 5px 0 0;
+        }
+      }
 
-			.fix-head {}
+      p.txt {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
 
-			.col {
-				span {
-					&:nth-child(2) {
-						justify-content: center;
-						padding: 0;
-					}
+      .fix-head {}
 
-					&:nth-child(5) {
-						justify-content: flex-start;
-						padding: 13px;
-					}
-				}
-			}
-		}
-	}
+      .col {
+        span {
+          &:nth-child(2) {
+            justify-content: center;
+            padding: 0;
+          }
 
-	
+          &:nth-child(5) {
+            justify-content: flex-start;
+            padding: 13px;
+          }
+        }
+      }
+    }
+  }
 
-	.tooltip-wrap {
-		button {
-			margin: 0;
-		}
+  .tag-type01 {
+    padding: 4px 10px 3px !important;
+    width: auto !important;
+    margin-left: 5px;
+  }
 
-		.btn-tip {
-			margin: 0 5px 0 0;
-		}
 
-		.tooltip {
-			&.type01 {
-				width: 408px;
-				left: -200px;
-			}
 
-			&::before {
-				left: 50%;
-			}
+  .tooltip-wrap {
+    button {
+      margin: 0;
+    }
 
-			&.type02 {
-				left: -100px;
+    .btn-tip {
+      margin: 0 5px 0 0;
+    }
 
-				span.level {
-					@include content-center-center;
-					width: 28px;
-					height: 28px;
-					padding: 0;
-					z-index: 10;
-				}
-			}
-		}
+    .tooltip {
+      &.type01 {
+        width: 408px;
+        left: -200px;
+      }
 
-	}
+      &::before {
+        left: 50%;
+      }
+
+      &.type02 {
+        left: -100px;
+
+        span.level {
+          @include content-center-center;
+          width: 28px;
+          height: 28px;
+          padding: 0;
+          z-index: 10;
+        }
+      }
+    }
+
+  }
 
 }
 
 
 
 .top_box {
-	position: relative;
+  position: relative;
 
-	.topbtn-right{
-		position: absolute;
-		right: 0;
-		bottom: 10px;
-	}
+  .topbtn-right {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
 
-	.btn-icon.type02 {
-		margin-left: 5px;
-	}
+  .btn-icon.type02 {
+    margin-left: 5px;
+  }
 
   .btn-icon.type04 {
-		margin-left: 5px;
+    margin-left: 5px;
     display: inline-flex;
-	}
+  }
 }
 
 .btn-icon {
-	&.type04 {
-		padding: 10px 15px;
-		color: $color-sub33;
+  &.type04 {
+    padding: 10px 15px;
+    color: $color-sub33;
 
     &.active {
       color: $color-main-purple;
@@ -180,7 +191,7 @@
 
       }
 
-      .list{
+      .list {
         background: url(../../images/common/ico_list_on.png);
         height: 11px;
       }
@@ -191,26 +202,39 @@
       height: 14px;
       margin-right: 5px;
     }
-	}
+  }
 }
 
 .right_wrap {
-	display: flex;
+  display: flex;
 
-	.search-box {
-		margin-left: 6px;
-	}
+  .search-box {
+    margin-left: 6px;
+  }
 }
 
 
 .pop-wrap {
-	&.table-type {
-		.btn-icon {
-			&.pop-top-btn {
-				float: right;
-				margin-right: 26px;
-				margin-bottom: 10px;
-			}
-		}
-	}
+  &.table-type {
+    .btn-icon {
+      &.pop-top-btn {
+        float: right;
+        margin-right: 26px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+.btn-book {
+  width: 14px;
+  height: 20px;
+  background: url(../../images/common/ico_bookmark_off.png);
+  background-size: 14px 20px !important;
+  background-size: contain;
+
+  &.active {
+    background: url(../../images/common/ico_bookmark_on.png);
+  }
 }

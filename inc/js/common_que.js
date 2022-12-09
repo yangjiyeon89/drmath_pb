@@ -187,11 +187,21 @@ $(function () {
   selectCnt.on('click', selectUI);
 
 
+  //dot버튼 클릭시 select toggle
   $(function () {
     $(".btn-dot").click(function () {
       $(this).find(".open-select-list").toggle();
     });
   });
+
+  //북마크 버튼
+  $(function () {
+    $(".btn-book").click(function () {
+      $(this).toggleClass("active");
+    });
+  });
+
+
 
 
 
