@@ -6,38 +6,49 @@ $(function () {
       _gnbMenuLink = $('.nav > li');
 
     switch (_afterStr[0]) {
+      case 'sub01_03_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        break;
+
+      case 'sub01_04_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        break;
+
+
       case 'page03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
       case 'page04_01':
-      _gnbMenuLink.eq(0).find('> a').addClass('active');
-      $('.nav-wrap').addClass('on');
-      _gnbMenuLink.eq(0).find('.depth2').css('display','flex');
-      _gnbMenuLink.eq(0).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(3).find('a').addClass('on');
         break;
       case 'page04_02':
-      _gnbMenuLink.eq(1).find('> a').addClass('active');
-      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
+        _gnbMenuLink.eq(1).find('> a').addClass('active');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
         break;
       case 'page04_03':
-      _gnbMenuLink.eq(1).find('> a').addClass('active');
-      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
+        _gnbMenuLink.eq(1).find('> a').addClass('active');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
         break;
 
       case 'page05_01':
-      _gnbMenuLink.eq(2).find('> a').addClass('active');
-      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        _gnbMenuLink.eq(2).find('> a').addClass('active');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
-      
+
       case 'page05_02':
-      _gnbMenuLink.eq(2).find('> a').addClass('active');
-      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('active');
+        _gnbMenuLink.eq(2).find('> a').addClass('active');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('active');
         break;
 
       case 'page05_03':
-      _gnbMenuLink.eq(2).find('> a').addClass('active');
-      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('active');
+        _gnbMenuLink.eq(2).find('> a').addClass('active');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('active');
         break;
 
       case 'page02_01':
@@ -82,7 +93,7 @@ $(function () {
       _this.addClass('active');
       _thisMenu.siblings('li').find(subMenu).removeClass('on');
       _this.next(subMenu).addClass('on');
-      
+
 
     });
 
@@ -94,7 +105,7 @@ $(function () {
     })
   }
 
-  $(document).on('ready', function(){
+  $(document).on('ready', function () {
     checkCurrentGnb();
     menuUI();
   })
@@ -166,13 +177,23 @@ $(function () {
       })
     }
 
-    if(_this.parents('ul').hasClass('open-select-list')) {
+    if (_this.parents('ul').hasClass('open-select-list')) {
       selectCnt.removeClass('active');
       _this.addClass('active');
     }
   }
+
   selectBtn.on('click', selectUI);
   selectCnt.on('click', selectUI);
+
+
+  $(function () {
+    $(".btn-dot").click(function () {
+      $(this).find(".open-select-list").toggle();
+    });
+  });
+
+
 
   // popup
   let _dim = $('.dim');
@@ -220,7 +241,7 @@ $(function () {
     }
   }
 
-  function checkMove(){
+  function checkMove() {
     let _this = $(this);
     let _idx = $(this).parents('.chk-acc').data('index');
     let selectCnt = $('.right-cnt .chk-acc');
@@ -233,18 +254,18 @@ $(function () {
       $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('.cnt').show();
       _this.attr('disabled', true);
 
-      if(_this.hasClass('allCheck')){
+      if (_this.hasClass('allCheck')) {
         $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').show();
-        $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').find('input').prop('checked', true);        
-        _this.parents('.chk-acc').find('input').attr('disabled', true);        
+        $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').find('input').prop('checked', true);
+        _this.parents('.chk-acc').find('input').attr('disabled', true);
       } else {
-        selectCnt.find("input:checkbox[name='" + _name + "']").parents('li').show();      
+        selectCnt.find("input:checkbox[name='" + _name + "']").parents('li').show();
         selectCnt.find("input:checkbox[name='" + _name + "']").prop('checked', true);
       }
     }
   }
 
-  function chkSelectFunc(){
+  function chkSelectFunc() {
     let _this = $(this);
     let chkCnt = $('.left-cnt .chk-acc');
     let _name = $(this).attr('name');
@@ -254,7 +275,7 @@ $(function () {
       $(".left-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").prop('checked', false);
       $(".left-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").attr('disabled', false);
 
-      if(_this.hasClass('allCheck')) {
+      if (_this.hasClass('allCheck')) {
         _this.parents('.chk-acc').hide();
         _this.parents('.chk-acc').find('li').hide();
         $(".left-cnt .chk-acc[data-index='" + _idx + "']").find('input').attr('disabled', false);
@@ -270,7 +291,8 @@ $(function () {
   chkAll.on('click', checkFunc);
   chkList.on('click', checkMove);
   selectList.on('click', chkSelectFunc)
-  
+
+
 
 
   // accordion
@@ -278,75 +300,22 @@ $(function () {
 
   function accFunc() {
     let _this = $(this);
-    let accWrap = _this.parents('.acc-btn-wrap');   
 
-    if(_this.parents('div').hasClass('acc-btn-wrap')){
-      accWrap.toggleClass('active');
-      if(accWrap.hasClass('active')) {
+    _this.toggleClass('active');
+
+    if (_this.hasClass('active')) {
+      _this.next('.cnt').stop().slideDown('fast');
+      if(_this.parents('div').hasClass('acc-btn-wrap')){
         _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
-      } else {
-        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
       }
     } else {
-      _this.toggleClass('active');    
-
-      if (_this.hasClass('active')) {
-        _this.next('.cnt').stop().slideDown('fast');
-      } else {
-        _this.next('.cnt').stop().slideUp('fast');
+      _this.next('.cnt').stop().slideUp('fast');
+      if(_this.parents('div').hasClass('acc-btn-wrap')){
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
       }
     }
   }
 
   accBtn.on('click', accFunc);
-
-  // depth
-  let depBtn = $('.dep-btn');
-
-  function depFunc(){
-    let _this = $(this);
-
-    if(!_this.hasClass('active')){
-      _this.addClass('active');
-      _this.parents('.check-group').next('div').stop().slideUp('fast');
-
-    } else {
-      _this.removeClass('active');
-      _this.parents('.check-group').next('div').stop().slideDown('fast');
-    }
-
-    _this.parents('.check-group').toggleClass('on');
-  }
-
-  depBtn.on('click', depFunc);
-
-
-  // que-checkbox
-  let queChkAll = $('.que-allCheck');
-
-  function queCheckFunc(){
-    let _this = $(this);
-
-    if(_this.prop('checked')){
-      _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
-    } else {
-      _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
-    }
-
-    if(_this.prop('checked') && _this.hasClass('depth01')) {
-      _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
-    } else {
-      _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
-    }
-
-    if(_this.prop('checked')){
-      _this.parents('table').find('input[type=checkbox]').prop('checked', true);
-    } else {
-      _this.parents('table').find('input[type=checkbox]').prop('checked', false);
-    }
-
-  }
-
-  queChkAll.on('click', queCheckFunc);
 
 });

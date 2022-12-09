@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
 
+
+//홍보사이트
 .serv-cnt {
 	.tab-menu-type01 {
 		width: 100%;
@@ -220,7 +222,7 @@
 
 		@media (max-width: 1240px) {
 			&.tbl_flex_type {
-				> div {
+				>div {
 					.row {
 						@include layout-center;
 						flex-direction: column;
@@ -242,8 +244,6 @@
 		}
 
 	}
-
-
 
 	.text-box {
 		margin: 20px 0;
@@ -269,8 +269,6 @@
 		background-color: $color-line;
 		margin-bottom: 20px;
 	}
-
-
 
 
 }

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/**
+	* Computes a CSS calc function that betweens a value from
+	* A to B over viewport-width A to viewport-width B.
+	* Requires a media query to cap the value at B.
+	* vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을
+	* 계산해주는 SASS 함수.
+	* 간격이나 폰트사이즈에 적용하면 자연스러운
+	* 반응형 사이즈 처리가 가능 함.
+	* 참고사이트 http://dohoons.com/blog/1364
+	*/
+/**
+	* Read the article: http://sassbreak.com/viewport-relative-headings-with-sass
+	* px 를 vw 로 자동으로 바꿔 줌.
+	* max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨.
+	* 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨.
+	* 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨.
+	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
+	*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+.que_cont .tab-wrap::after {
+  display: none;
+}
+.que_cont .tab-menu-type01 {
+  margin-top: 30px;
+}
+.que_cont .tab-list-type01 {
+  padding: 0px 20px 20px;
+}
+.que_cont .tab-list-type01 .table.half-type .scroll-inner {
+  height: 630px;
+}
+.que_cont.sub01 .table span:nth-child(1) {
+  width: 7%;
+}
+.que_cont.sub01 .table span:nth-child(2) {
+  width: 6%;
+}
+.que_cont.sub01 .table span:nth-child(3) {
+  width: 8%;
+  padding: 0;
+  justify-content: center;
+}
+.que_cont.sub01 .table span:nth-child(4) {
+  width: 6%;
+}
+.que_cont.sub01 .table span:nth-child(5) {
+  width: 32%;
+  padding: 13px;
+}
+.que_cont.sub01 .table span:nth-child(5) img {
+  margin: 0 10px;
+}
+.que_cont.sub01 .table span:nth-child(6) {
+  width: 6%;
+}
+.que_cont.sub01 .table span:nth-child(7) {
+  width: 8%;
+}
+.que_cont.sub01 .table span:nth-child(8) {
+  width: 6%;
+}
+.que_cont.sub01 .table span:nth-child(9) {
+  width: 6%;
+}
+.que_cont.sub01 .table span:nth-child(10) {
+  width: 10%;
+}
+.que_cont.sub01 .table span.tool-type01 {
+  width: auto;
+  padding: 10px;
+}
+.que_cont.sub01 .table span.tool-type01 img {
+  margin: 0 10px 0 0;
+}
+.que_cont.sub01 .table p.txt {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.que_cont.sub01 .table .col span:nth-child(2) {
+  justify-content: center;
+  padding: 0;
+}
+.que_cont.sub01 .table .col span:nth-child(5) {
+  justify-content: flex-start;
+  padding: 13px;
+}
+.que_cont .tooltip-wrap button {
+  margin: 0;
+}
+.que_cont .tooltip-wrap .btn-tip {
+  margin: 0 5px 0 0;
+}
+.que_cont .tooltip-wrap .tooltip.type01 {
+  width: 408px;
+  left: -200px;
+}
+.que_cont .tooltip-wrap .tooltip::before {
+  left: 50%;
+}
+.que_cont .tooltip-wrap .tooltip.type02 {
+  left: -100px;
+}
+.que_cont .tooltip-wrap .tooltip.type02 span.level {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  z-index: 10;
+}
+
+.btn-icon.fix-s {
+  width: 36px;
+  padding: 0;
+}
+.btn-icon.fix-s i {
+  margin-right: 0;
+}
+
+.print {
+  background: url(../../images/common/ico_print.png);
+  background-size: 14px 13px !important;
+  background-size: contain;
+}
+
+.launch {
+  background: url(../../images/common/ico_launch.png);
+  background-size: 14px 14px !important;
+  background-size: contain;
+}
+
+.gallery {
+  background: url(../../images/common/ico_gallery_off.png);
+  background-size: 14px 14px !important;
+  background-size: contain;
+}
+
+.list {
+  background: url(../../images/common/ico_list_off.png);
+  background-size: 14px 11px !important;
+  background-size: contain;
+}
+
+.top_box {
+  position: relative;
+}
+.top_box .topbtn-right {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.top_box .btn-icon.type02 {
+  display: inline-block;
+  margin-left: 5px;
+}
+.top_box .btn-icon.type04 {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.btn-icon.type04 {
+  padding: 10px 15px;
+  color: #333333;
+}
+.btn-icon.type04.active {
+  color: #5a14be;
+  border-color: #5a14be;
+}
+.btn-icon.type04.active .gallery {
+  background: url(../../images/common/ico_gallery_on.png);
+}
+.btn-icon.type04.active .list {
+  background: url(../../images/common/ico_list_on.png);
+  height: 11px;
+}
+.btn-icon.type04 i {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.right_wrap {
+  display: flex;
+}
+.right_wrap .search-box {
+  margin-left: 6px;
+}
+
+.btn-dot {
+  background: url(../../images/common/ico_dot.png) no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 18px;
+  position: relative;
+}
+.btn-dot .open-select-list {
+  position: absolute;
+  width: 86px;
+  right: -13px;
+  top: 24px;
+  background: #fff;
+  z-index: 100;
+}
+
+.pop-wrap.table-type .btn-icon.pop-top-btn {
+  float: right;
+  margin-right: 26px;
+  margin-bottom: 10px;
+}
