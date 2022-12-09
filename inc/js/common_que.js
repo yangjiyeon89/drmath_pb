@@ -314,18 +314,21 @@ $(function () {
 
   function accFunc() {
     let _this = $(this);
+    let accWrap = _this.parents('.acc-btn-wrap');   
 
-    _this.toggleClass('active');
-
-    if (_this.hasClass('active')) {
-      _this.next('.cnt').stop().slideDown('fast');
-      if(_this.parents('div').hasClass('acc-btn-wrap')){
+    if(_this.parents('div').hasClass('acc-btn-wrap')){
+      accWrap.toggleClass('active');
+      if(accWrap.hasClass('active')) {
         _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
+      } else {
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
       }
     } else {
-      _this.next('.cnt').stop().slideUp('fast');
-      if(_this.parents('div').hasClass('acc-btn-wrap')){
-        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+      _this.toggleClass('active');
+      if (_this.hasClass('active')) {
+        _this.next('.cnt').stop().slideDown('fast');
+      } else {
+        _this.next('.cnt').stop().slideUp('fast');
       }
     }
   }
