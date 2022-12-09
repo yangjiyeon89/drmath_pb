@@ -120,12 +120,11 @@
   bottom: 10px;
 }
 .top_box .btn-icon.type02 {
-  display: inline-block;
   margin-left: 5px;
 }
 .top_box .btn-icon.type04 {
-  display: inline-block;
   margin-left: 5px;
+  display: inline-flex;
 }
 
 .btn-icon.type04 {

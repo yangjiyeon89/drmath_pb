@@ -146,32 +146,6 @@
 }
 
 
-// .print {
-// 	background: url(../../images/common/ico_print.png);
-// 	background-size: 14px 13px !important;
-// 	background-size: contain;
-// }
-
-// .launch {
-// 	background: url(../../images/common/ico_launch.png);
-// 	background-size: 14px 14px !important;
-// 	background-size: contain;
-// }
-
-// .gallery {
-// 	background: url(../../images/common/ico_gallery_off.png);
-// 	background-size: 14px 14px !important;
-// 	background-size: contain;
-// }
-
-// .list {
-// 	background: url(../../images/common/ico_list_off.png);
-// 	background-size: 14px 11px !important;
-// 	background-size: contain;
-
-// }
-
-
 
 .top_box {
 	position: relative;
@@ -183,13 +157,12 @@
 	}
 
 	.btn-icon.type02 {
-		display: inline-block;
 		margin-left: 5px;
 	}
 
   .btn-icon.type04 {
-		display: inline-block;
 		margin-left: 5px;
+    display: inline-flex;
 	}
 }
 
@@ -229,22 +202,6 @@
 	}
 }
 
-// .btn-dot {
-// 	background: url(../../images/common/ico_dot.png) no-repeat;
-// 	background-size: contain;
-// 	width: 10px;
-// 	height: 18px;
-// 	position: relative;
-
-// 	.open-select-list {
-// 		position: absolute;
-// 		width: 86px;
-// 		right: -13px;
-// 		top: 24px;
-// 		background: #fff;
-// 		z-index: 100;
-// 	}
-// }
 
 .pop-wrap {
 	&.table-type {
