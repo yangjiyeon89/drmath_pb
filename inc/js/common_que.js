@@ -8,12 +8,16 @@ $(function () {
     switch (_afterStr[0]) {
       case 'sub01_03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
-        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
 
       case 'sub01_04_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
-        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
 
 
