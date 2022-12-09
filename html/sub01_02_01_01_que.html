@@ -24,7 +24,7 @@
           <li>STEP 2 문힝편집</li>
           <li>STEP 3 문제지 설정</li>
         </ul>
-        <button type="button" class="pop-btn" data-pop="alert-pop"></button>
+        <button type="button" class="pop-btn" data-pop="que-alert-pop"></button>
       </div>
       <div class="pop-content">
         <div class="tab-wrap tab-list-type01">
@@ -282,7 +282,7 @@
     </div>
     <div class="dim" style="display: none;"></div>
     <!-- 변경사항 저장 팝업 -->
-    <div class="pop-wrap alert-type" data-pop="alert-pop" style="display: none;">
+    <div class="pop-wrap alert-type" data-pop="que-alert-pop" style="display: none;">
       <div class="pop-inner">
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
@@ -297,4 +297,54 @@
     </div>
   </div>
 </body>
+<script>
+// depth
+let depBtn = $('.dep-btn');
+
+function depFunc(){
+  let _this = $(this);
+
+  if(!_this.hasClass('active')){
+    _this.addClass('active');
+    _this.parents('.check-group').next('div').stop().slideUp('fast');
+
+  } else {
+    _this.removeClass('active');
+    _this.parents('.check-group').next('div').stop().slideDown('fast');
+  }
+
+  _this.parents('.check-group').toggleClass('on');
+}
+
+depBtn.on('click', depFunc);
+
+
+// que-checkbox
+let queChkAll = $('.que-allCheck');
+
+function queCheckFunc(){
+  let _this = $(this);
+
+  if(_this.prop('checked')){
+    _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
+  } else {
+    _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
+  }
+
+  if(_this.prop('checked') && _this.hasClass('depth01')) {
+    _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
+  } else {
+    _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
+  }
+
+  if(_this.prop('checked')){
+    _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+  } else {
+    _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+  }
+
+}
+
+queChkAll.on('click', queCheckFunc)
+</script>
 </html>

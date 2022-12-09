@@ -2,12 +2,16 @@
 @import "_mixin.scss";
 @import "_setting.scss";
 @import url(../css/font.css);
-/* .btn-step.next 가이드 추가 */
+/* .btn-step */
 .btn-step {
 	&.next {
 		background: $color-main-purple url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
 		padding-left: 0;
 		padding-right: 30px;
+	}
+	&.end {
+		background: $color-main-purple;
+		padding-left: 0;
 	}
 }
 /* que-badge */
@@ -102,12 +106,16 @@
 						background-color: #fff;
 						.unit-box {
 							width: 800px;
+							height: calc(824px - 52px);
 							border: 1px solid #dbcbf3;
 							box-sizing: border-box;
 							overflow-y: auto;
+							@media (max-width: 1280px) {
+								height: calc(630px - 52px);
+							}
 							.unit-cnt {
 								width: 100%;
-								height: 684px;
+								// height: 684px;
 								overflow-y: auto;
 								.check-group {
 									position: relative;
@@ -175,10 +183,13 @@
 						}
 						.type-box {
 							width: 440px;
-							height: 777px;
+							height: calc(824px - 52px);
 							border: 1px solid $color-line-type02;
 							box-sizing: border-box;
 							padding: 0 30px;
+							@media (max-width: 1280px) {
+								height: calc(630px - 52px);
+							}
 							.box {
 								padding: 25px 0;
 								.btn-wrap {
@@ -324,10 +335,14 @@
 				gap: 10px;
 				.view-box {
 					width: calc(50% - 5px);
+					height: 824px;
 					background-color: #fff;
 					border: 1px solid $color-line-type02;
 					border-radius: 5px;
 					box-sizing: border-box;
+					@media (max-width: 1280px) {
+						height: 630px;
+					}
 					.view-top {
 						@include layout-justify-center;
 						padding: 20px 30px;
@@ -346,10 +361,14 @@
 						}
 					}
 					.view-que-list {
-						height: 690px;
+						&.scroll-inner {
+							height: calc(824px - 137px);
+							@media (max-width: 1280px) {
+								height: calc(630px - 137px);
+							}
+						}
 						overflow-y: auto;
 						margin: 0 30px;
-						
 						.view-que {
 							border: 1px solid $color-line-type02;
 							border-radius: 5px;
@@ -482,7 +501,6 @@
 					}
 					.table {
 						width: calc(100% - 60px);
-						height: 668px;
 						overflow-y: auto;
 						border: 1px solid $color-line-type02;
 						background-color: #fff;
@@ -539,15 +557,15 @@
 								}
 							}
 						}
-						.scroll-inner {
-							height: 630px;
-						}
 						.tbody {
 							background-color: #fff;
 						}
 						&.half-type {
 							.scroll-inner {
-								height: 100%;
+								height: 619px;
+								@media (max-width: 1280px) {
+									height: 426px;
+								}
 							}
 							span:nth-child(1) {
 								width: 12%;
@@ -592,10 +610,44 @@
 							.select-btn {
 								width: 130px;
 							}
+							& + .view-que-list {
+								&.scroll-inner {
+									height: calc(824px - 137px - 61px);
+									@media (max-width: 1280px) { 
+										height: calc(630px - 137px - 61px);
+									}
+								}
+							}
 						}
 						.view-que-list {
-							height: 643px;
-							margin: 0 30px 20px 30px;
+							.btn-wrap {
+								button {
+									& + button {
+										margin-left: 10px;
+									}
+								}
+							}
+							&.no-data {
+								@include layout-center-center;
+								flex-direction: column;
+								text-align: center;
+								height: calc(824px - 137px);
+								@media (max-width: 1280px) {
+									height: calc(630px - 137px);
+								}
+								.ic-no-data {
+									display: block;
+									width: 110px;
+									height: 110px;
+									background: url(../../images/sub/ic_que_no_data.png) center center no-repeat;
+									background-size: contain;
+									margin-bottom: 18px;
+								}
+								p {
+									@include font(18px, 500);
+									line-height: 30px;
+								}
+							}
 						}
 						.view-bottom {
 							@include layout-center-center;
