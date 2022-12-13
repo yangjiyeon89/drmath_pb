@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../inc/css/guide.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/ej_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="sub03_03">
+    <div class="header">
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">수업준비</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">맞춤문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재연동</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">AI 기출 마스터</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">수업진행</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">학습현황</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재</a>
+                </li>
+                <li>
+                  <a href="javascript:;">분석표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">운영관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">원 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">출결 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">결제 관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">회원권 결제</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 결제</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="javascirpt:;"><span>가이드</span></a>
+            <a href="javascirpt:;"><span>고객센터</span></a>
+            <a href="javascirpt:;"><span>김천재님</span></a>
+            <a href="javascirpt:;"><span>로그아웃</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section que_cont sub03">
+        <div class="inner">
+          <div class="tab-wrap tab-list-type01">
+            <div class="top_box">
+
+              <ul class="tab-menu-type01">
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">입학 TEST</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">주간 TEST</a>
+                </li>
+                <li class="ui-tab-btn active">
+                  <a href="javascript:;">단원 TEST</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">연산</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contents">
+              [ sub_03_01_que] 탭으로 구현
+            </div>
+            <div class="contents">
+              [ sub_03_02_que] 탭으로 구현
+            </div>
+            <div class="contents on">
+              <div class="tab-top">
+                <div class="left-wrap">
+                  <ul class="tab-menu-type02">
+                    <li class="ui-tab-btn active">
+                      <a href="javascript:;">전체</a>
+                    </li>
+                    <li class="ui-tab-btn">
+                      <a href="javascript:;">초</a>
+                    </li>
+                    <li class="ui-tab-btn">
+                      <a href="javascript:;">중</a>
+                    </li>
+                    <li class="ui-tab-btn">
+                      <a href="javascript:;">고</a>
+                    </li>
+                  </ul>
+                  <div class="select-wrap">
+                    <button type="button" class="select-btn">1학년</button>
+                    <ul class="select-list">
+                      <li>
+                        <a href="javascript:;">1학년</a>
+                        <a href="javascript:;">2학년</a>
+                        <a href="javascript:;">3학년</a>
+                        <a href="javascript:;">4학년</a>
+                        <a href="javascript:;">5학년</a>
+                        <a href="javascript:;">6학년</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right_wrap">
+                  <div class="search-box">
+                    <input type="text" placeholder="문제지명 검색" class="search">
+                    <button type="button" class="btn-search"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="content on">
+                <div class="table">
+                  <div class="fix-head">
+                    <span>학년</span>
+                    <span>문제지명</span>
+                    <span>난이도</span>
+                    <span>문제수</span>
+                    <span>미리보기</span>
+                    <span>배포하기</span>
+                    <span></span>
+                  </div>
+                  <div class="tbody">
+                    <div class="scroll-inner">
+                      <div class="test">
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="table">
+                  <div class="fix-head">
+                    <span>학년</span>
+                    <span>문제지명</span>
+                    <span>난이도</span>
+                    <span>문제수</span>
+                    <span>미리보기</span>
+                    <span>배포하기</span>
+                    <span></span>
+                  </div>
+                  <div class="tbody">
+                    <div class="scroll-inner">
+                      <div class="test">
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>초1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="table">
+                  <div class="fix-head">
+                    <span>학년</span>
+                    <span>문제지명</span>
+                    <span>난이도</span>
+                    <span>문제수</span>
+                    <span>미리보기</span>
+                    <span>배포하기</span>
+                    <span></span>
+                  </div>
+                  <div class="tbody">
+                    <div class="scroll-inner">
+                      <div class="test">
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>중1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="table">
+                  <div class="fix-head">
+                    <span>학년</span>
+                    <span>문제지명</span>
+                    <span>난이도</span>
+                    <span>문제수</span>
+                    <span>미리보기</span>
+                    <span>배포하기</span>
+                    <span></span>
+                  </div>
+                  <div class="tbody">
+                    <div class="scroll-inner">
+                      <div class="test">
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i
+																class="launch"></i>배포하기</button>
+                          </span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                        <div class="col">
+                          <span>고1</span>
+                          <span><p class="txt">3-1(덧셈과 뺄셈 ~ 분수와 소수) /  하급</p></span>
+                          <span>하</span>
+                          <span>20문제</span>
+                          <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i
+																class="preview"></i></button></span>
+                          <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                          <span><button type="button" class="btn-dot">
+															<ul class="open-select-list" style="display: none;">
+																<li>
+																	<a href="javascript:;" class="active pop-btn" data-pop="print-pop">인쇄하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">수정하기</a>
+																</li>
+																<li>
+																	<a href="javascript:;">다운로드</a>
+																</li>
+															</ul>
+														</button>
+													</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contents">
+              [ sub_03_04_que] 탭으로 구현
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dim"></div>
+
+  <!-- 미리보기 팝업 -->
+		<div class="pop-wrap table-type" data-pop="preview-pop">
+			<div class="pop-inner">
+				<div class="pop-header">
+					<span>미리보기</span>
+					<button type="button" class="pop-close"></button>
+				</div>
+				<div class="pop-content">
+					<img src="../images/sub/sample-testpaper.jpg" alt="샘플시험지">
+				</div>
+				<div class="pop-footer">
+					<button>닫기</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 인쇄 팝업 -->
+		<div class="pop-wrap table-type" data-pop="print-pop">
+			<div class="pop-inner">
+				<div class="pop-header">
+					<span>미리보기</span>
+					<button type="button" class="pop-close"></button>
+				</div>
+				<button type="button" class="btn-icon pop-top-btn"><i class="print"></i>인쇄</button>
+				<div class="pop-content">
+					<img src="../images/sub/sample-testpaper.jpg" alt="샘플시험지">
+				</div>
+				<div class="pop-footer">
+					<button>닫기</button>
+				</div>
+			</div>
+		</div>
+
+
+    <!-- 배포하기 팝업 -->
+    <div class="pop-wrap check-type" data-pop="launch-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>중1 – 도형의 성질</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="left-cnt">
+            <div class="search-box">
+              <input type="text" placeholder="이름 검색" class="search">
+              <button type="button" class="btn-search"></button>
+            </div>
+            <div class="tab-wrap">
+              <ul class="tab-menu-type03">
+                <li class="ui-tab-btn active">
+                  <a href="javascript:;">클래스</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">학년</a>
+                </li>
+              </ul>
+              <div class="contents on">
+                <div class="scroll-inner">
+                  <div class="check-wrap">
+                    <div class="chk-acc" data-index="1">
+                      <div class="acc-btn active">
+                        <span>매쓰반</span>
+                        <em>4명</em>
+                        <input type="checkbox" id="chk02_01" class="allCheck">
+                        <label for="chk02_01"></label>
+                      </div>
+                      <ul class="cnt" style="display:block;">
+                        <li>
+                          <input type="checkbox" id="chk02_02" name="chk02_02">
+                          <label for="chk02_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk02_03" name="chk02_03">
+                          <label for="chk02_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk02_04" name="chk02_04">
+                          <label for="chk02_04">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk02_05" name="chk02_05">
+                          <label for="chk02_05">유또치</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="2">
+                      <div class="acc-btn">
+                        <span>닥터반</span>
+                        <em>3명</em>
+                        <input type="checkbox" id="chk03_01" class="allCheck">
+                        <label for="chk03_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk03_02" name="chk03_02">
+                          <label for="chk03_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_03" name="chk03_03">
+                          <label for="chk03_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_04" name="chk03_04">
+                          <label for="chk03_04">도우너</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="3">
+                      <div class="acc-btn">
+                        <span>천재반</span>
+                        <em>7명</em>
+                        <input type="checkbox" id="chk04_01" class="allCheck">
+                        <label for="chk04_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk04_02" name="chk04_02">
+                          <label for="chk04_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_03" name="chk04_03">
+                          <label for="chk04_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_04" name="chk04_04">
+                          <label for="chk04_04">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_05" name="chk04_05">
+                          <label for="chk04_05">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_06" name="chk04_06">
+                          <label for="chk04_06">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_07" name="chk04_07">
+                          <label for="chk04_07">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_08" name="chk04_08">
+                          <label for="chk04_08">도우너</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="contents">
+                <div class="scroll-inner">
+                  <div class="check-wrap">
+                    <div class="chk-acc" data-index="4">
+                      <div class="acc-btn active">
+                        <span>3학년</span>
+                        <em>4명</em>
+                        <input type="checkbox" id="chk05_01" class="allCheck">
+                        <label for="chk05_01"></label>
+                      </div>
+                      <ul class="cnt" style="display:block;">
+                        <li>
+                          <input type="checkbox" id="chk05_02" name="chk05_02">
+                          <label for="chk05_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_03" name="chk05_03">
+                          <label for="chk05_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_04" name="chk05_04">
+                          <label for="chk05_04">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_05" name="chk05_05">
+                          <label for="chk05_05">유또치</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="5">
+                      <div class="acc-btn">
+                        <span>4학년</span>
+                        <em>3명</em>
+                        <input type="checkbox" id="chk06_01" class="allCheck">
+                        <label for="chk06_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk06_02" name="chk06_02">
+                          <label for="chk06_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk06_03" name="chk06_03">
+                          <label for="chk06_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk06_04" name="chk06_04">
+                          <label for="chk06_04">도우너</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="6">
+                      <div class="acc-btn">
+                        <span>5학년</span>
+                        <em>7명</em>
+                        <input type="checkbox" id="chk08_01" class="allCheck">
+                        <label for="chk08_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk08_02" name="chk14_02">
+                          <label for="chk08_02">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_03" name="chk14_03">
+                          <label for="chk08_03">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_04" name="chk14_04">
+                          <label for="chk08_04">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_05" name="chk14_05">
+                          <label for="chk08_05">고희동</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_06" name="chk14_06">
+                          <label for="chk08_06">김둘리</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_07" name="chk14_07">
+                          <label for="chk08_07">도우너</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk08_08" name="chk14_08">
+                          <label for="chk08_08">도우너</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-cnt">
+            <div class="top-txt">
+              <span>선택된 학생</span>
+              <em>3명</em>
+            </div>
+            <div class="check-wrap">
+              <div class="scroll-inner">
+                <div class="chk-acc" data-index="1">
+                  <div class="acc-btn active">
+                    <span>매쓰반</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk09_01" class="allCheck">
+                    <label for="chk09_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk09_02" name="chk02_02">
+                      <label for="chk09_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_03" name="chk02_03">
+                      <label for="chk09_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_04" name="chk02_04">
+                      <label for="chk09_04">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_05" name="chk02_05">
+                      <label for="chk09_05">유또치</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="2">
+                  <div class="acc-btn active">
+                    <span>닥터반</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk10_01" class="allCheck">
+                    <label for="chk10_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk10_02" name="chk03_02">
+                      <label for="chk10_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk10_03" name="chk03_03">
+                      <label for="chk10_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk10_04" name="chk03_04">
+                      <label for="chk10_04">도우너</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="3">
+                  <div class="acc-btn active">
+                    <span>천재반</span>
+                    <em>7명</em>
+                    <input type="checkbox" id="chk11_01" class="allCheck">
+                    <label for="chk11_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk11_02" name="chk04_02">
+                      <label for="chk11_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_03" name="chk04_03">
+                      <label for="chk11_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_04" name="chk04_04">
+                      <label for="chk11_04">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_05" name="chk04_05">
+                      <label for="chk11_05">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_06" name="chk04_06">
+                      <label for="chk11_06">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_07" name="chk04_07">
+                      <label for="chk11_07">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_08" name="chk04_08">
+                      <label for="chk11_08">도우너</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="4">
+                  <div class="acc-btn active">
+                    <span>3학년</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk12_01" class="allCheck">
+                    <label for="chk12_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk12_02" name="chk05_02">
+                      <label for="chk12_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_03" name="chk05_03">
+                      <label for="chk12_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_04" name="chk05_04">
+                      <label for="chk12_04">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_05" name="chk05_05">
+                      <label for="chk12_05">유또치</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="5">
+                  <div class="acc-btn">
+                    <span>4학년</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk13_01" class="allCheck">
+                    <label for="chk13_01"></label>
+                  </div>
+                  <ul class="cnt">
+                    <li>
+                      <input type="checkbox" id="chk13_02" name="chk06_02">
+                      <label for="chk13_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk13_03" name="chk06_03">
+                      <label for="chk13_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk13_04" name="chk06_04">
+                      <label for="chk13_04">도우너</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="6">
+                  <div class="acc-btn">
+                    <span>5학년</span>
+                    <em>7명</em>
+                    <input type="checkbox" id="chk14_01" class="allCheck">
+                    <label for="chk14_01"></label>
+                  </div>
+                  <ul class="cnt">
+                    <li>
+                      <input type="checkbox" id="chk14_02" name="chk14_02">
+                      <label for="chk14_02">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_03" name="chk14_03">
+                      <label for="chk14_03">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_04" name="chk14_04">
+                      <label for="chk14_04">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_05" name="chk14_05">
+                      <label for="chk14_05">고희동</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_06" name="chk14_06">
+                      <label for="chk14_06">김둘리</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_07" name="chk14_07">
+                      <label for="chk14_07">도우너</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk14_08" name="chk14_08">
+                      <label for="chk14_08">도우너</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>완료</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 출제취소 팝업 -->
+    <div class="pop-wrap alert-type" data-pop="cancle-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">출제 취소 시 출제된 모든 내역이<br>사라지며 복구가 불가능 합니다. </span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
