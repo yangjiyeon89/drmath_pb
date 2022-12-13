@@ -256,14 +256,13 @@
       }
     });
 
-    templateSwiper.on('slideChange', function (realIndex) {
-      console.log($('.swiper-slide.swiper-slide-active'))
-      if ($('.swiper-slide.swiper-slide-active').hasClass('dark')) {
-          $(this).removeClass('darknav')
-      } else {
-        $(this).addClass('darknav')
-      }
-    });
+    let slideActing = $('.template-swiper .swiper-slide');
+
+    slideActing.on('click', function(){
+      let _this = $(this);
+
+      _this.toggleClass('on');
+    })
 
     // button active
     let _btn = $('.opt-wrap .btn-wrap button');

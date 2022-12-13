@@ -368,9 +368,9 @@
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide { position: relative; border: 1px solid #dddddd; border-radius: 3px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.active { border: 1px solid #5a14be; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.on { border: 1px solid #5a14be; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.active .btn-star { background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.on .btn-star { background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center; }
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide .btn-star { position: absolute; right: 6px; bottom: 7px; }
 
