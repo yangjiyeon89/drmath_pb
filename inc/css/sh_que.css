@@ -884,8 +884,11 @@
   border-radius: 3px;
   box-sizing: border-box;
 }
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.active {
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.swiper-slide-active {
   border: 1px solid #5a14be;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.swiper-slide-active .btn-star {
+  background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide .btn-star {
   position: absolute;
