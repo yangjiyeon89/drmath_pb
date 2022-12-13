@@ -298,53 +298,55 @@
   </div>
 </body>
 <script>
-// depth
-let depBtn = $('.dep-btn');
+  $(function () {
+    // depth
+    let depBtn = $('.dep-btn');
 
-function depFunc(){
-  let _this = $(this);
+    function depFunc(){
+      let _this = $(this);
 
-  if(!_this.hasClass('active')){
-    _this.addClass('active');
-    _this.parents('.check-group').next('div').stop().slideUp('fast');
+      if(!_this.hasClass('active')){
+        _this.addClass('active');
+        _this.parents('.check-group').next('div').stop().slideUp('fast');
 
-  } else {
-    _this.removeClass('active');
-    _this.parents('.check-group').next('div').stop().slideDown('fast');
-  }
+      } else {
+        _this.removeClass('active');
+        _this.parents('.check-group').next('div').stop().slideDown('fast');
+      }
 
-  _this.parents('.check-group').toggleClass('on');
-}
+      _this.parents('.check-group').toggleClass('on');
+    }
 
-depBtn.on('click', depFunc);
+    depBtn.on('click', depFunc);
 
 
-// que-checkbox
-let queChkAll = $('.que-allCheck');
+    // que-checkbox
+    let queChkAll = $('.que-allCheck');
 
-function queCheckFunc(){
-  let _this = $(this);
+    function queCheckFunc(){
+      let _this = $(this);
 
-  if(_this.prop('checked')){
-    _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
-  } else {
-    _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
-  }
+      if(_this.prop('checked')){
+        _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
+      }
 
-  if(_this.prop('checked') && _this.hasClass('depth01')) {
-    _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
-  } else {
-    _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
-  }
+      if(_this.prop('checked') && _this.hasClass('depth01')) {
+        _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
+      }
 
-  if(_this.prop('checked')){
-    _this.parents('table').find('input[type=checkbox]').prop('checked', true);
-  } else {
-    _this.parents('table').find('input[type=checkbox]').prop('checked', false);
-  }
+      if(_this.prop('checked')){
+        _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+      }
 
-}
+    }
 
-queChkAll.on('click', queCheckFunc)
+    queChkAll.on('click', queCheckFunc)
+  });
 </script>
 </html>

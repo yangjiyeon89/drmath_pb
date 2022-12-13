@@ -24,31 +24,204 @@
           <li>STEP 2 문힝편집</li>
           <li class="active"><img src="../images/sub/ico_step_active.jpg" alt="">STEP 3 문제지 설정</li>
         </ul>
-        <button type="button" class="pop-btn" data-pop="alert-pop"></button>
+        <button type="button" class="pop-btn" data-pop="que-alert-pop"></button>
       </div>
       <div class="pop-content">
         <div class="view-box-wrap">
-          <div class="view-box">
-
+          <div class="view-box scroll-inner">
+            <ul class="que-setting-list">
+              <li>
+                <span class="tit">문제지명</span>
+                <div class="opt-wrap">
+                  <input class="ip-name" type="text" value="거듭제곱">
+                  <span class="sel-label">학년</span>
+                  <div class="select-wrap">
+                    <button type="button" class="select-btn">초1</button>
+                    <ul class="select-list">
+                      <li>
+                        <a href="javascript:;">초2</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">초3</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">초4</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <span class="form-txt-error"><img src="../images/common/ico_check01.png" alt="">문제지명을 입력해주세요. / 20자 이하로 입력해주세요.</span>
+                </div>
+              </li>
+              <li>
+                <span class="tit">유형</span>
+                <div class="opt-wrap">
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-line active">기본</button>
+                    <button type="button" class="btn-line">일일</button>
+                    <button type="button" class="btn-line">주간</button>
+                    <button type="button" class="btn-line">입학</button>
+                    <button type="button" class="btn-line">연습</button>
+                    <button type="button" class="btn-line">숙제</button>
+                    <button type="button" class="btn-line">내신대비</button>
+                    <button type="button" class="btn-line">모의고사</button>
+                    <button type="button" class="btn-line">수능대비</button>
+                    <button type="button" class="btn-line">직접입력</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tit">템플릿 종류</span>
+                <div class="opt-wrap">
+                  <div class="swiper template-swiper">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide active">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star active"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+					          <div class="swiper-button-prev"></div>
+                  </div>
+                  <div class="btn-color-wrap">
+                    <button type="button" class="btn-color type01"></button>
+                    <button type="button" class="btn-color type02"></button>
+                    <button type="button" class="btn-color type03"></button>
+                    <button type="button" class="btn-color type04"></button>
+                    <button type="button" class="btn-color type05"></button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tit">문제지 단</span>
+                <div class="opt-wrap">
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-line active">2단</button>
+                    <button type="button" class="btn-line">1단</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tit">레이아웃</span>
+                <div class="opt-wrap">
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-line active">기본</button>
+                    <button type="button" class="btn-line">2분할</button>
+                    <button type="button" class="btn-line">4분할</button>
+                    <button type="button" class="btn-line">6분할</button>
+                  </div>
+                  <div class="range-wrap">
+                    <span>좁게</span>
+                    <div class="range-bar"></div>
+                    <span>넓게</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tit">추가 옵션
+                  <div class="tooltip-wrap">
+                    <button type="button" class="btn-tip"></button>
+                    <div class="tooltip">
+                      <span>선택한 옵션은 문제지에 표시됩니다.</span>
+                    </div>
+                  </div>
+                </span>
+                <div class="opt-wrap">
+                  <div class="check-wrap">
+                    <span class="check-group">
+                      <input type="checkbox" id="chk01_01" checked="">
+                      <label for="chk01_01">출제자</label>
+                    </span>
+                    <span class="check-group">
+                      <input type="checkbox" id="chk01_02">
+                      <label for="chk01_02">날짜</label>
+                    </span>
+                    <span class="check-group">
+                      <input type="checkbox" id="chk01_03">
+                      <label for="chk01_03">난이도</label>
+                    </span>
+                    <span class="check-group">
+                      <input type="checkbox" id="chk01_04">
+                      <label for="chk01_04">학년</label>
+                    </span>
+                    <span class="check-group">
+                      <input type="checkbox" id="chk01_05">
+                      <label for="chk01_05">문제유형</label>
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="view-box">
-
+            <div class="preview-box">
+              <div class="tit">
+                <i class="preview-file"></i>
+                <span>문제지 미리보기</span>
+              </div>
+              <div class="img-box">
+                <img src="../images/sub/sample-testpaper02.jpg" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="step-btn-wrap">
         <button type="button" class="btn-step">STEP 2</button>
-        <button type="button" class="btn-step end">완료</button>
+        <button type="button" class="btn-step end pop-btn" data-pop="que-make-alert-pop">완료</button>
       </div>
     </div>
     <div class="dim"></div>
+     <!-- 변경사항 저장 팝업 -->
+     <div class="pop-wrap alert-type" data-pop="que-alert-pop" style="display: none;">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">페이지 이동 시 변경사항이<br>저장되지 않습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>닫기</button>
+        </div>
+      </div>
+    </div>
     <!-- 문제지 만들기 완료 팝업 -->
-    <div class="pop-wrap alert-type" data-pop="que-make-alert-pop">
+    <div class="pop-wrap alert-type has-check" data-pop="que-make-alert-pop">
       <div class="pop-inner">
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
           <img src="../images/common/ico_pop.png" alt="">
           <span class="txt">문제지 만들기를<br>완료하시겠습니까?</span>
+          <div class="check-wrap">
+            <input type="checkbox" id="chk01_01" checked="">
+            <label for="chk01_01">학생에게 바로 배포하기</label>
+          </div>
         </div>
         <div class="pop-footer">
           <button>취소</button>
@@ -59,4 +232,21 @@
 
   </div>
 </body>
+<script>
+  $(function(){
+    $(".range-bar").slider({
+      range: "min",
+      value: 50
+    });
+
+    let templateSwiper = new Swiper(".template-swiper .swiper-container", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".template-swiper .swiper-button-next",
+        prevEl: ".template-swiper .swiper-button-prev",
+      }
+    });
+  });
+</script>
 </html>
