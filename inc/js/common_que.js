@@ -20,6 +20,55 @@ $(function () {
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
 
+      case 'sub02_01_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        break;
+
+      case 'sub02_02_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        break;
+
+      case 'sub02_03_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        break;
+
+      case 'sub03_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        break;
+      
+      case 'sub03_02':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        break;
+
+      case 'sub03_03':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        break;
+
+      case 'sub03_04':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        break;
+
 
       case 'page03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
