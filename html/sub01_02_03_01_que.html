@@ -242,11 +242,42 @@
     let templateSwiper = new Swiper(".template-swiper .swiper-container", {
       slidesPerView: 4,
       spaceBetween: 10,
+      loop: true,
+      slideToClickedSlide: true,
       navigation: {
         nextEl: ".template-swiper .swiper-button-next",
         prevEl: ".template-swiper .swiper-button-prev",
+      },
+      on: {
+        slideChange: function () {
+          $('.swiper-slide').removeClass('active');
+          $('.swiper-slide').eq(this.realIndex).addClass('active');
+        }
       }
     });
+
+    templateSwiper.on('slideChange', function (realIndex) {
+      console.log($('.swiper-slide.swiper-slide-active'))
+      if ($('.swiper-slide.swiper-slide-active').hasClass('dark')) {
+          $(this).removeClass('darknav')
+      } else {
+        $(this).addClass('darknav')
+      }
+    });
+
+    // button active
+    let _btn = $('.opt-wrap .btn-wrap button');
+
+    function btnClickFunc(){
+      let _this = $(this);
+      
+      if(!_this.hasClass('active')) {
+        _this.parents('.btn-wrap').find('.btn-line').removeClass('active');
+        _this.addClass('active');
+      } 
+    }
+
+    _btn.on('click', btnClickFunc)
   });
 </script>
 </html>

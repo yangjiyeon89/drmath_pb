@@ -258,6 +258,8 @@ $(function () {
 
 
 
+
+
   // popup
   let _dim = $('.dim');
   let _html = $('html , body');
@@ -383,5 +385,7 @@ $(function () {
   }
 
   accBtn.on('click', accFunc);
+
+  
 
 });

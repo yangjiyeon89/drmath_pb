@@ -812,7 +812,7 @@
 									border: 1px solid $color-line-type02;
 									border-radius: 3px;
 									box-sizing: border-box;
-									&.swiper-slide-active {
+									&.active {
 										border: 1px solid $color-main-purple;
 										.btn-star {
 											background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
