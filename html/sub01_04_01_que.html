@@ -109,16 +109,19 @@
 						<div class="top_box">
 
 							<ul class="tab-menu-type01">
-								<li class="ui-tab-btn active">
+								<li class="ui-tab-btn">
 									<a href="javascript:;">문제지 보관함</a>
 								</li>
-								<li class="ui-tab-btn">
+								<li class="ui-tab-btn active">
 									<a href="javascript:;">즐겨찾는 문제지</a>
 								</li>
 							</ul>
 							<div class="topbtn-right">
 								<button type="button" class="btn-icon type02"><i class="add"></i> 맞춤 문제지 만들기</button>
 							</div>
+						</div>
+						<div class="contents">
+							[ sub_03_01_que] 탭으로 구현
 						</div>
 						<div class="contents on">
 							<div class="tab-top">
@@ -170,7 +173,7 @@
 										</ul>
 									</div>
 									<div class="search-box">
-										<input type="text" placeholder=" 교재명, 출판사 검색" class="search">
+										<input type="text" placeholder=" 문제지명 검색" class="search">
 										<button type="button" class="btn-search"></button>
 									</div>
 								</div>
@@ -2230,9 +2233,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="contents">
-							[ sub_04_01_que] 탭으로 구현
-						</div>
 					</div>
 				</div>
 			</div>
@@ -2318,7 +2318,7 @@
 													<input type="checkbox" id="chk02_04" name="chk02_04">
 													<label for="chk02_04">도우너</label>
 												</li>
-												<li>
+												<li class="select">
 													<input type="checkbox" id="chk02_05" name="chk02_05">
 													<label for="chk02_05">유또치</label>
 												</li>
@@ -2386,14 +2386,14 @@
 										</div>
 									</div>
 								</div>
-
+	
 							</div>
 							<div class="contents">
 								<div class="scroll-inner">
 									<div class="check-wrap">
-										<div class="chk-acc" data-index="4">
+										<div class="chk-acc type02" data-index="4">
 											<div class="acc-btn active">
-												<span>3학년</span>
+												<span>초1</span>
 												<em>4명</em>
 												<input type="checkbox" id="chk05_01" class="allCheck">
 												<label for="chk05_01"></label>
@@ -2417,9 +2417,9 @@
 												</li>
 											</ul>
 										</div>
-										<div class="chk-acc" data-index="5">
+										<div class="chk-acc type02" data-index="5">
 											<div class="acc-btn">
-												<span>4학년</span>
+												<span>초2</span>
 												<em>3명</em>
 												<input type="checkbox" id="chk06_01" class="allCheck">
 												<label for="chk06_01"></label>
@@ -2439,9 +2439,9 @@
 												</li>
 											</ul>
 										</div>
-										<div class="chk-acc" data-index="6">
+										<div class="chk-acc type02" data-index="6">
 											<div class="acc-btn">
-												<span>5학년</span>
+												<span>초3</span>
 												<em>7명</em>
 												<input type="checkbox" id="chk08_01" class="allCheck">
 												<label for="chk08_01"></label>
@@ -2509,7 +2509,7 @@
 											<input type="checkbox" id="chk09_04" name="chk02_04">
 											<label for="chk09_04">도우너</label>
 										</li>
-										<li>
+										<li  class="select">
 											<input type="checkbox" id="chk09_05" name="chk02_05">
 											<label for="chk09_05">유또치</label>
 										</li>
@@ -2575,9 +2575,9 @@
 										</li>
 									</ul>
 								</div>
-								<div class="chk-acc" data-index="4">
+								<div class="chk-acc type02" data-index="4">
 									<div class="acc-btn active">
-										<span>3학년</span>
+										<span>초1</span>
 										<em>4명</em>
 										<input type="checkbox" id="chk12_01" class="allCheck">
 										<label for="chk12_01"></label>
@@ -2601,9 +2601,9 @@
 										</li>
 									</ul>
 								</div>
-								<div class="chk-acc" data-index="5">
+								<div class="chk-acc type02" data-index="5">
 									<div class="acc-btn">
-										<span>4학년</span>
+										<span>초2</span>
 										<em>3명</em>
 										<input type="checkbox" id="chk13_01" class="allCheck">
 										<label for="chk13_01"></label>
@@ -2623,9 +2623,9 @@
 										</li>
 									</ul>
 								</div>
-								<div class="chk-acc" data-index="6">
+								<div class="chk-acc type02" data-index="6">
 									<div class="acc-btn">
-										<span>5학년</span>
+										<span>초3</span>
 										<em>7명</em>
 										<input type="checkbox" id="chk14_01" class="allCheck">
 										<label for="chk14_01"></label>
