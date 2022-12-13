@@ -311,6 +311,16 @@ body {
   background-size: 13px 14px  !important;
   background-size: contain;
 }
+.paper {
+  background: url(../../images/common/ico_paper.png);
+  background-size: 14px  !important;
+  background-size: contain;
+}
+.paper-type02 {
+  background: url(../../images/common/ico_paper_type02.png);
+  background-size: 14px  !important;
+  background-size: contain;
+}
 .linking {
   background: url(../../images/common/ico_linking.png);
   background-size: 14px 13px  !important;
@@ -587,6 +597,32 @@ body {
         }
       }
     }
+  }
+}
+.paging-wrap {
+  @include layout-center-center;
+  .page {
+    @include content-center-center;
+    width: 30px;height: 30px;
+    margin: 0 5px;
+    border-radius: 100%;
+    font-weight: 500;
+    &.active {
+      color: #fff;
+      background-color: #1c1c1c;
+    }
+  }
+  .prev, .next {
+    width: 9px;height: 13px;
+    margin: 0 25px;
+    background: url(../../images/common/ico_arrow_paging.png) no-repeat;
+  }
+  .next, .last {
+    transform: rotate(-180deg);
+  }
+  .first, .last {
+    width: 18px;height: 13px;
+    background: url(../../images/common/ico_arrow_first.png) no-repeat;
   }
 }
 
@@ -982,11 +1018,29 @@ input[type="checkbox"] {
 }
 
 
+.tab-list-type01 {
+  .tooltip-wrap {
+    .tooltip{
+      &.type02 {
+        .level {
+          @include content-center-center;
+          width: 28px;height: 28px;
+          color: $color-main-purple;
+          border: 1px solid #c5aceb;
+          border-radius: 3px;
+          background-color: #fff;
+          & + span {
+            margin-left: 5px;
+          }
+        } 
+      }
+    }  
+  }
+}
 
 .tooltip-wrap {
   position: relative;
-  button {
-    margin-left: 81px;
+  button {    
     &:hover {
       & + .tooltip {
         display: inline-flex;
@@ -1035,7 +1089,7 @@ input[type="checkbox"] {
       border: 1px solid #e4d6ff;
       background-color: #f4eeff;
       z-index: 1;
-      span {
+      .level {
         @include content-center-center;
         width: 28px;height: 28px;
         color: $color-main-purple;
@@ -1155,7 +1209,9 @@ input[type="checkbox"] {
       box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34);
     }
   }
-
+  & + .paging-wrap {
+    margin-top: 15px;
+  }
 }
 .pop-wrap {
   display: none;  

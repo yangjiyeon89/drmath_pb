@@ -338,7 +338,128 @@
     }
   }
 }
+// 기출문제지
+.sub04-que {
+  .container {
+    .inner {
+      padding: 0 20px 30px;
+      box-sizing: border-box;
+    }
+  }
+  .tab-top {
+    border-left: 1px solid $color-line-type02;
+    border-right: 1px solid $color-line-type02;
+  }
+  .tab-menu-type01 {
+    margin-top: 30px;
+    li {
+      &:last-child {
+        a {
+          width: 284px;
+        }
+      }
+    }
+  }
+  .tab-list-type01 {
+    .table {
+      span {
+        &:nth-child(1) {
+          width: 10%;
+        }
+        &:nth-child(2) {
+          width: 10%;
+          justify-content: center;
+        }
+        &:nth-child(3) {
+          width: 42%;
+        }
+        &:nth-child(4) {
+          width: 12%;
+          justify-content: center;
+        }
+        &:nth-child(5) {
+          width: 5%;
+        }
+        &:nth-child(6) {
+          width: 11%;
+        }
+        &:nth-child(7) {
+          width: 8%;
+        }
+        &:nth-child(8) {
+          width: 2%;
+        }
+      }
+      
+    }
+    .table {
+      .scroll-inner {
+        height: 567px;
+      }
+    }
+  }
+  .tbody {
+    .col {
+      > span {
+        &:nth-child(3) {
+          padding-left: 30px;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  .tooltip {
+    left: -93px;
+  }
+}
 
+//tab2
+.sub04-02 {
+  .tab-list-type01 {
+    .table {
+      span {
+        &:nth-child(3) {
+          width: 54%;
+        }
+        &:nth-child(4) {
+          width: 5%;
+        }
+        &:nth-child(5) {
+          width: 11%;
+        }
+        &:nth-child(6) {
+          width: 8%;
+        }
+        &:nth-child(7) {
+          width: 2%;
+        }
+      }
+    }
+  }
+}
+//tab3
+.sub04-03 {
+  .tab-list-type01 {
+    .table {
+      span {
+        &:nth-child(3) {
+          width: 55%;
+        }
+        &:nth-child(4) {
+          width: 5%;
+        }
+        &:nth-child(5) {
+          width: 20%;
+        }
+      }
+    }
+  }
+  .tbody {
+    a + a {
+      margin-left: 10px;
+    }
+  }
+}
 
 @media (max-width: 1280px) {
   
