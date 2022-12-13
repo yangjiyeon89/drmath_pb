@@ -168,7 +168,7 @@
 
 .sub04-que .tab-list-type01 .table span:nth-child(8) { width: 2%; }
 
-.sub04-que .tab-list-type01 .table .scroll-inner { height: 567px; }
+.sub04-que .tab-list-type01 .table .scroll-inner { height: 566px; border-bottom: 1px solid #dddddd; }
 
 .sub04-que .tbody .col > span:nth-child(3) { padding-left: 30px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
