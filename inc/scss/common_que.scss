@@ -1130,6 +1130,7 @@ input[type="checkbox"] {
     }
     span {
       @include content-center-center;
+      box-sizing: border-box;
     }
     span:nth-child(1) {
       width: 8%;
@@ -1162,11 +1163,11 @@ input[type="checkbox"] {
       span {
         padding: 13px 0;
         box-sizing: border-box;
-        &:nth-child(2) {
-          justify-content: flex-start;
-          padding: 13px;
-        }
       }
+    }
+    .tit {
+      justify-content: flex-start;
+      padding: 13px;
     }
     .scroll-inner {
       height: 630px;
@@ -1188,8 +1189,7 @@ input[type="checkbox"] {
       }
       span:nth-child(3) {
         width: 55%;
-        padding: 13px 27px;
-        justify-content: flex-start;
+        
       }
       span:nth-child(4) {
         width: 13%;
@@ -1207,6 +1207,10 @@ input[type="checkbox"] {
     }
     .myDragClass {
       box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34);
+    }
+    .tit {
+      padding: 13px 27px;
+      justify-content: flex-start;
     }
   }
   & + .paging-wrap {
