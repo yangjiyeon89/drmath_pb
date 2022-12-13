@@ -396,7 +396,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .tooltip-wrap .btn-tip:hover { background-color: #969696; -webkit-filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%); }
 
-.tooltip-wrap .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 33px; left: 0px; width: 355px; height: 50px; color: #fff; border-radius: 5px; background-color: #969696; }
+.tooltip-wrap .tooltip { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 33px; left: 0px; width: 355px; height: 50px; color: #fff; border-radius: 5px; background-color: #969696; z-index: 1; }
 
 .tooltip-wrap .tooltip span { font-size: 14px; font-weight: 400; }
 
@@ -467,6 +467,46 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .tab-list-type01 .table .tit { padding: 13px 27px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
 .tab-list-type01 + .paging-wrap { margin-top: 15px; }
+
+.table-wrap .inner { width: 1019px; border: 1px solid #dddddd; border-top: 0; border-right: 0; }
+
+.table-wrap .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.table-wrap .col { width: 50%; border-right: 1px solid #dddddd; background-color: #fff; }
+
+.table-wrap .tit-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 44px; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; background-color: #f6f6f6; }
+
+.table-wrap .tit-wrap > span { font-size: 18px; font-weight: 700; }
+
+.table-wrap .tit-wrap .pop-btn { width: 183px; padding: 5px 0; margin-left: 15px; font-weight: 600; border: 1px solid #dddddd; border-radius: 5px; background-color: #fff; }
+
+.table-wrap .tit-wrap .pop-btn img { margin-left: 10px; }
+
+.table-wrap .tit-wrap .tooltip-wrap { display: inline-block; }
+
+.table-wrap .tit-wrap .tooltip-wrap .btn-tip { top: 4px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin-left: 0; }
+
+.table-wrap .tit-wrap .tooltip-wrap .tooltip { left: -53px; width: 266px; }
+
+.table-wrap .scroll-inner { height: 330px; }
+
+.table-wrap li { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 56px; padding-left: 20px; border-bottom: 1px solid #dddddd; }
+
+.table-wrap li .date { margin-right: 25px; }
+
+.table-wrap li .tag-type01 { margin-left: 8px; }
+
+.table-wrap li .cate { width: 55px; padding: 3px 0 1px; margin-left: -3px; margin-right: 17px; text-align: center; color: #fff; background-color: #979797; }
+
+.table-wrap li .num { margin: 0 30px 0 12px; font-size: 14px; font-weight: 500; }
+
+.table-wrap .right-cnt { position: absolute; right: 10px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.table-wrap .right-cnt .btn-icon { margin-left: 15px; }
+
+.table-wrap .people-wrap { position: relative; padding-left: 19px; background: url(../../images/common/ico_mypage.png) no-repeat left center; background-size: 13px 14px; }
+
+.table-wrap .people-wrap + span { width: 87px; margin-left: 15px; text-align: center; }
 
 .pop-wrap { display: none; position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; }
 

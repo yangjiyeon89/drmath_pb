@@ -12,67 +12,53 @@ $(function () {
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
-
       case 'sub01_04_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
-
       case 'sub02_01_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
-
       case 'sub02_02_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
-
       case 'sub02_03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
-
       case 'sub03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
-        break;
-      
+        break; 
       case 'sub03_02':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
-
       case 'sub03_03':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
-
       case 'sub03_04':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
-        break;
-
-
-      case 'page03_01':
-        _gnbMenuLink.eq(0).find('> a').addClass('active');
-        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
       case 'page04_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
@@ -80,53 +66,12 @@ $(function () {
         _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(3).find('a').addClass('on');
         break;
-      case 'page04_02':
+      
+      case 'page06_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
-        break;
-      case 'page04_03':
-        _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
-        break;
-
-      case 'page05_01':
-        _gnbMenuLink.eq(2).find('> a').addClass('active');
-        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('active');
-        break;
-
-      case 'page05_02':
-        _gnbMenuLink.eq(2).find('> a').addClass('active');
-        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('active');
-        break;
-
-      case 'page05_03':
-        _gnbMenuLink.eq(2).find('> a').addClass('active');
-        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('active');
-        break;
-
-      case 'page02_01':
-        _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
-        break;
-      case 'page02_02':
-        _gnbMenuLink.eq(1).find('> a').addClass('active');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
-        break;
-      case 'page03':
-        _gnbMenuLink.eq(2).addClass('active');
-        break;
-      case 'page04':
-        _gnbMenuLink.eq(3).addClass('active');
-
-        break;
-      case 'page05':
-        _gnbMenuLink.eq(4).addClass('active');
-
-        break;
-      case 'page06':
-        _gnbMenuLink.eq(5).addClass('active');
-
-        break;
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
     }
   }
 
