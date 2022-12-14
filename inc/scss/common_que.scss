@@ -1158,6 +1158,7 @@ input[type="checkbox"] {
     }
     span {
       @include content-center-center;
+      padding: 13px 0;
       box-sizing: border-box;
     }
     span:nth-child(1) {
@@ -1188,10 +1189,6 @@ input[type="checkbox"] {
     }
     .col {
       border-bottom: 1px solid $color-line-type02;
-      span {
-        padding: 13px 0;
-        box-sizing: border-box;
-      }
     }
     .tit {
       justify-content: flex-start;
@@ -1239,6 +1236,29 @@ input[type="checkbox"] {
     .tit {
       padding: 13px 27px;
       justify-content: flex-start;
+    }
+    &.chk-acc {
+      span:nth-child(1) {
+        width: 5%;
+      }
+      span:nth-child(2) {
+        width: 8%;
+      }
+      span:nth-child(3) {
+        width: 40%;
+      }
+      span:nth-child(4) {
+        width: 4%;
+      }
+      span:nth-child(5) {
+        width: 21%;
+      }
+      span:nth-child(6) {
+        width: 7%;
+      }
+      span:nth-child(7) {
+        width: 15%;
+      }
     }
   }
   & + .paging-wrap {

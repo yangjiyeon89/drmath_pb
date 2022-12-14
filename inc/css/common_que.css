@@ -428,7 +428,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .tab-list-type01 .table .fix-head, .tab-list-type01 .table .col { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
 
-.tab-list-type01 .table span { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.tab-list-type01 .table span { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 13px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .tab-list-type01 .table span:nth-child(1) { width: 8%; }
 
@@ -447,8 +447,6 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .tab-list-type01 .table .fix-head span { padding: 11px 0; font-weight: 600; }
 
 .tab-list-type01 .table .col { border-bottom: 1px solid #dddddd; }
-
-.tab-list-type01 .table .col span { padding: 13px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .tab-list-type01 .table .tit { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding: 13px; }
 
@@ -475,6 +473,20 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .tab-list-type01 .table .myDragClass { -webkit-box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34); box-shadow: 1px 1px 9.9px 0.1px rgba(0, 0, 0, 0.34); }
 
 .tab-list-type01 .table .tit { padding: 13px 27px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(1) { width: 5%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(2) { width: 8%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(3) { width: 40%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(4) { width: 4%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(5) { width: 21%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(6) { width: 7%; }
+
+.tab-list-type01 .table.chk-acc span:nth-child(7) { width: 15%; }
 
 .tab-list-type01 + .paging-wrap { margin-top: 15px; }
 
