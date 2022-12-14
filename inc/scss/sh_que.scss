@@ -63,6 +63,28 @@
 		background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
 	}
 }
+/* btn-icon type04 (ej_que.scss) */
+.btn-icon {
+  &.type04 {
+		background-color: #fff;
+    &.active {
+      color: $color-main-purple;
+      border-color: $color-main-purple;
+			.gallery {
+        background: url(../../images/common/ico_gallery_on.png) no-repeat;
+      }
+      .list {
+        background: url(../../images/common/ico_list_on.png) no-repeat;
+				height: 11px;
+      }
+    }
+		i {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+    }
+  }
+}
 /* que-badge */
 .que-badge {
 	@include content-center-center;
@@ -94,8 +116,10 @@
 .full-pop-que {
 	width: 100%;
 	height: 100%;
-	min-height: 100vh;
 	background-color: #f8f8f8;
+	@media (max-width: 1280px) {
+		height: 760px;
+	}
 	.full-pop-wrap {
 		max-width: 1280px;
 		padding: 10px 20px;
@@ -881,6 +905,16 @@
 				}
 			}
 			&.cnt02 {
+				.top-box {
+					position: relative;
+					.top-btn-right {
+						@include layout-center-center;
+						gap: 10px;
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
 				.tab-top {
 					background-color: #fff;
 					border-left: 1px solid $color-line-type02;
@@ -926,6 +960,45 @@
 					padding: 13px 30px 20px 20px;
 					border: 1px solid $color-line-type02;
 					border-radius: 5px;
+				}
+				.gallery-wrap {
+					background-color: #fff;
+					border: 1px solid $color-line-type02;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+					.gallery-list {
+						@include layout-center;
+						flex-wrap: wrap;
+						padding: 30px 85px;
+						gap: 35px 75px;
+						&.scroll-inner {
+							height: 679px;
+							@media (max-width: 1280px) {
+								height: 424px;
+							}
+						}
+						.book-item {
+							@include layout-center-center;
+							flex-direction: column;
+							width: 210px;
+							text-align: center;
+							span {
+								@include font(18px, 500);
+								color: $color-sub33;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+								width: 100%;
+							}
+							.grade {
+								@include font(14px, 500);
+								color: $color-font66;
+								margin: 15px 0 10px;
+							}
+					
+						}
+					}
+					
 				}
 			}
 		}
