@@ -338,5 +338,14 @@ $(function () {
   accBtn.on('click', accFunc);
 
   
+  // 채점 팝업 슬라이드
+  var swiper = new Swiper(".sheet-swiper .swiper-container", {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".sheet-swiper .swiper-button-next",
+      prevEl: ".sheet-swiper .swiper-button-prev",
+    },
+  });
 
 });

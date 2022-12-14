@@ -469,6 +469,16 @@
       padding-top: 30px;
     }
   }
+  .tit-wrap {
+    span {
+      @include font(18px, 700);
+    }    
+  }
+  .tooltip {
+    span {
+      @include font(14px, 400);
+    }
+  }
   .list-cnt {
     width: 200px;
     margin-right: 20px;
@@ -597,9 +607,17 @@
     float: right;
     margin-right: 26px;
     margin-bottom: 10px;
-    
+  }
+  .sub06-student {
+    .table-wrap {
+      .tit-wrap {
+        padding-left: 20px;
+        justify-content: flex-start;
+      }
+    }
   }
 }
+
 
 @media (max-width: 1280px) {
   
