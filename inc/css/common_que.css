@@ -78,6 +78,14 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .header .btn-wrap a:hover span { -webkit-filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%); filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%); }
 
+.fix-btm-bar { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; gap: 10px; padding: 15px 20px; border-radius: 5px; background-color: rgba(0, 0, 0, 0.7); }
+
+.fix-btm-bar a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 90px; height: 80px; border-radius: 5px; }
+
+.fix-btm-bar a span { display: block; margin-top: 15px; color: #fff; font-size: 14px; }
+
+.fix-btm-bar a:hover { background-color: #838383; }
+
 [class^='btn-'], [class^='a.btn-'] { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .btn-default { width: 355px; height: 50px; color: #fff; font-size: 18px; font-weight: 700; border-radius: 10px; background-color: #5a14be; }
@@ -131,6 +139,8 @@ body { font-family: 'Pretendard', sans-serif; }
 .move { background: url(../../images/common/ico_move_type03.png); background-size: 13px 10px  !important; background-size: contain; }
 
 .pen { background: url(../../images/common/ico_pen_type02.png); background-size: 13px 14px  !important; background-size: contain; }
+
+.pen-type02 { background: url(../../images/common/ico_pen_type03.png); background-size: 13px 14px  !important; background-size: contain; }
 
 .btn-arrow { width: 32px; height: 32px; border-radius: 100%; background: #4a4a4a url(../../images/common/ico_arrow_w_lg.png) no-repeat center; background-size: 9px 14px; }
 
@@ -699,3 +709,5 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap.table-type02 table td { padding: 20px 0; border-top: 1px solid #dddddd; }
 
 .ui-sortable-helper { border: 1px solid #dddddd; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: #fff; }
+
+@media (max-width: 1280px) { .acc-tab-wrap .scroll-inner { height: 569px; } }

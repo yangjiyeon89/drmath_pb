@@ -535,4 +535,32 @@
       padding: 30px 30px 16px;
     }
   }
+
+  //기출문제지
+  .sub04-que {
+    .tab-list-type01 {
+      .table {
+        .scroll-inner {
+          height: 440px;
+        }
+      }
+    }
+  }
+
+  //학습현황
+  .sub06-que {
+    .table-wrap {
+      .row {
+        .scroll-inner {
+          height: 269px;
+        }
+        &:last-child {
+          .scroll-inner {
+            height: 199px;
+          }
+        }
+      }
+    }
+  }
+
 }
