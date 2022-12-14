@@ -30,6 +30,16 @@
 .que_cont .tab-list-type01 .table.half-type .scroll-inner {
   height: 630px;
 }
+@media (max-width: 1280px) {
+  .que_cont .tab-list-type01 .table.half-type .scroll-inner {
+    height: 435px;
+  }
+}
+@media (max-width: 1280px) {
+  .que_cont .tab-list-type01 .table .scroll-inner {
+    height: 435px;
+  }
+}
 .que_cont .tab-top {
   border: 1px solid #dddddd;
   border-top: 0;
@@ -198,6 +208,11 @@
 .gallery-box .scroll-inner {
   height: 630px;
 }
+@media (max-width: 1280px) {
+  .gallery-box .scroll-inner {
+    height: 475px;
+  }
+}
 .gallery-box .book-box {
   display: flex;
   justify-content: center;
@@ -301,3 +316,5 @@
   margin-right: 26px;
   margin-bottom: 10px;
 }
+
+@mi;

@@ -19,8 +19,22 @@
 
     padding: 0px 20px 20px;
 
-    .table.half-type .scroll-inner {
-      height: 630px;
+    .table.half-type {
+      .scroll-inner {
+        height: 630px;
+
+        @media (max-width: 1280px) {
+          height: calc(630px - 195px);
+        }
+      }
+    }
+
+    .table {
+      .scroll-inner {
+        @media (max-width: 1280px) {
+          height: calc(630px - 195px);
+        }
+      }
     }
   }
 
@@ -239,6 +253,7 @@
 
       &.type03 {
         left: -260px;
+
         &::before {
           left: 264px;
         }
@@ -262,6 +277,10 @@
 
   .scroll-inner {
     height: 630px;
+
+    @media (max-width: 1280px) {
+      height: calc(630px - 155px);
+    }
   }
 
   .book-box {
@@ -394,3 +413,5 @@
     }
   }
 }
+
+@mi
