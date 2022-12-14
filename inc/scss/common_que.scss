@@ -1328,6 +1328,11 @@ input[type="checkbox"] {
     border-radius: 10px;
     background-color: #fff;
   }
+  .pop-header {
+    padding: 30px 0 17px;
+    @include font(20px, 700);
+    text-align: center;
+  }
   .pop-close {
     position: absolute;
     top: 30px;right: 30px;
@@ -1352,12 +1357,7 @@ input[type="checkbox"] {
   &.table-type {
     .pop-inner {
       width: 600px;
-    }
-    .pop-header {
-      padding: 30px 0 17px;
-      @include font(20px, 700);
-      text-align: center;
-    }
+    }    
     .pop-content {
       padding: 0 30px 30px;
     }
@@ -1425,6 +1425,10 @@ input[type="checkbox"] {
         padding: 15px 0 28px;
         font-size: 18px;
         line-height: 1.5;
+        em {
+          color: $color-main-purple;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -1432,11 +1436,6 @@ input[type="checkbox"] {
     .pop-inner {
       overflow: visible;
       width: 600px;
-    }
-    .pop-header {
-      padding-top: 30px;
-      @include font(20px, 700);
-      text-align: center;
     }
     .pop-content {
       @include layout-justify-start;
@@ -1614,12 +1613,6 @@ input[type="checkbox"] {
       width: 1210px;
       padding: 30px;
     }
-    .pop-header {
-      text-align: center;
-      span {
-        @include font(20px, 700);
-      }
-    }
     .pop-content {
       margin-top: 20px;
       border: 1px solid $color-line-type02;
@@ -1727,6 +1720,40 @@ input[type="checkbox"] {
         margin-top: 8px;
         padding-left: 22px;
         text-indent: -22px;
+      }
+    }
+  }
+  &.table-type02 {
+    .pop-inner {
+      width: 680px;
+    }
+    .input-radio-type01 {
+      margin-bottom: 10px;
+      input[type="radio"] + label {
+        padding-left: 25px;
+      }
+    }
+    .pop-content {
+      padding: 0 10px 30px 30px;
+    }
+    .scroll-inner {
+      height: 394px;
+    }
+    table {
+      width: calc(100% - 20px);
+      border-top: 1px solid $color-sub33;
+      border-bottom: 1px solid $color-sub33;
+      th, td {
+        text-align: center;
+      }
+      th {
+        height: 40px;
+        font-weight: 500;
+        background-color: $color-box-type02;
+      }
+      td {
+        padding: 20px 0;
+        border-top: 1px solid $color-line-type02;
       }
     }
   }

@@ -7,6 +7,7 @@
   <title>닥터매쓰</title>
   <link rel="stylesheet" href="../inc/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
   <link rel="stylesheet" href="../inc/css/sub_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
   <script src="../inc/js/common_que.js"></script>
 </head>
 <body>
-  <div id="wrap" class="page06_01">
+  <div id="wrap" class="page06_01 sub06-que">
     <div class="header">
       <div class="nav-wrap">
         <div class="inner">
@@ -100,7 +101,7 @@
     </div>
     <div class="container sub06-01">
       <div class="inner">
-        <div class="left-cnt">
+        <div class="list-cnt">
           <div class="tab-wrap acc-tab-wrap">
             <ul class="tab-menu-type04">
               <li class="ui-tab-btn active">
@@ -302,17 +303,17 @@
             </div>
           </div>
         </div>
-        <div class="right-cnt">
+        <div class="detail-cnt">
           <div class="title-wrap">
             <span class="title">매쓰반 학습현황</span>
             <div class="search-wrap">
               <div class="date-wrap">
                 <div class="date-box">
-                  <input type="text" id="from" name="from" autocomplete="off" class="hasDatepicker"><img class="ui-datepicker-trigger" src="../images/common/ico_calendar.png" alt="Select date">
+                  <input type="text" id="from" name="from" autocomplete="off">
                 </div>
                 <span>~</span>
                 <div class="date-box">
-                  <input type="text" id="to" name="to" autocomplete="off" class="hasDatepicker"><img class="ui-datepicker-trigger" src="../images/common/ico_calendar.png" alt="Select date">
+                  <input type="text" id="to" name="to" autocomplete="off">
                 </div>
               </div>
               <button type="button" class="btn-icon type03"><i class="search"></i> 검색하기</button>
@@ -324,7 +325,7 @@
                 <div class="col">
                   <div class="tit-wrap">
                     <span>교재</span>
-                    <button type="button" class="pop-btn">최상위 수학(2015개정) <img src="../images/common/ico_more.png" alt=""> </button>
+                    <button type="button" class="pop-btn" data-pop="pop01">최상위 수학(2015개정) <img src="../images/common/ico_more.png" alt=""> </button>
                   </div>
                   <div class="scroll-inner">
                     <ul class="cnt">
@@ -473,6 +474,158 @@
       </div>
     </div>
     <div class="dim"></div>
+
+    <!-- 교재 변경 팝업 -->
+    <div class="pop-wrap table-type02" data-pop="pop01">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>교재 변경</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="input-radio-type01">
+            <input type="radio" id="radio05_01" name="radio05" checked>
+            <label for="radio05_01">시중교재</label>
+            <input type="radio" id="radio05_02" name="radio05">
+            <label for="radio05_02">교과서</label>
+            <input type="radio" id="radio05_03" name="radio05">
+            <label for="radio05_03">전용교재</label>
+          </div>
+          <div class="scroll-inner">
+            <table>
+              <colgroup>
+                <col width="10%">
+                <col width="*">
+                <col width="18%">
+                <col width="15%">
+                <col width="16%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>학년</th>
+                  <th>교재명</th>
+                  <th>판수</th>
+                  <th>출판사</th>
+                  <th>저자명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 응용 파워</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>김명숙 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 기본 라이트</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>이경민 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념쎈 – 개념북</td>
+                  <td>1판</td>
+                  <td>좋은책<br>신사고</td>
+                  <td>홍범준 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>만점왕 수학</td>
+                  <td>-</td>
+                  <td>EBS한국교육<br>방송공사</td>
+                  <td>EBS</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>최상위수학S(2015개정)</td>
+                  <td>개정판</td>
+                  <td>디딤돌</td>
+                  <td>디딤돌<br>초등수학</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 응용 파워</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>김명숙 외 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button class="ui-close">닫기</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- alert 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt"><em>개념쎈- 개념북</em>으로 교재를<br>변경할까요?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
+<script>
+  $(function () {
+    var dateFormat = "y.mm.dd",
+      from = $("#from")
+      .datepicker({
+        defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "y.mm.dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+      })
+      .on("change", function () {
+        to.datepicker("option", "minDate", getDate(this));
+      }),
+      to = $("#to").datepicker({
+        defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "y.mm.dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+
+      })
+      .on("change", function () {
+        from.datepicker("option", "maxDate", getDate(this));
+      });
+
+    function getDate(element) {
+      var date;
+      try {
+        date = $.datepicker.parseDate(dateFormat, element.value);
+      } catch (error) {
+        date = null;
+      }
+
+      return date;
+    }
+    $(".ui-datepicker-trigger").removeAttr("title");
+
+  })
+</script>
 </html>

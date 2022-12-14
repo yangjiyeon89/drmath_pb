@@ -209,7 +209,7 @@ $(function () {
   let _dim = $('.dim');
   let _html = $('html , body');
   let popBtn = $('.pop-btn');
-  let closePop = $('.pop-close');
+  let closePop = $('.pop-close, .ui-close');
 
   function popFunc() {
     let _this = $(this);

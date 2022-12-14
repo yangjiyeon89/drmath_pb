@@ -413,7 +413,6 @@
     left: -93px;
   }
 }
-
 //tab2
 .sub04-02 {
   .tab-list-type01 {
@@ -458,6 +457,43 @@
   .tbody {
     a + a {
       margin-left: 10px;
+    }
+  }
+}
+// 수업진행
+.sub06-que {
+  .container {
+    > .inner {
+      display: flex;
+      width: 1240px;
+      padding-top: 30px;
+    }
+  }
+  .list-cnt {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .detail-cnt {
+    width: calc(100% - 220px);
+  }
+  .title {
+    margin-right: 170px;
+    @include font(20px, 700);
+  }
+  .search-wrap {
+    display: inline-block;
+    > div, > button {
+      display: inline-block;
+    }
+    .btn-icon {
+      position: relative;
+      top: 2px;
+      margin-left: 5px;
+    }
+  }
+  .table-wrap {
+    .inner {
+      margin-top: 12px;
     }
   }
 }
