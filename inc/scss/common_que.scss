@@ -211,6 +211,30 @@ body {
   }
 }
 
+// fix bar
+.fix-btm-bar {
+  display: inline-flex;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.7);
+  a {
+    @include layout-center-center;
+    flex-direction: column;
+    width: 90px;height: 80px;
+    border-radius: 5px;
+    span {
+      display: block;
+      margin-top: 15px;
+      color: #fff;
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: #838383;
+    }
+  }
+}
+
 // components
 [class^='btn-'] , [class^='a.btn-'] {
   @include layout-center-center;
@@ -358,6 +382,11 @@ body {
 }
 .pen {
   background: url(../../images/common/ico_pen_type02.png);
+  background-size: 13px 14px  !important;
+  background-size: contain;
+}
+.pen-type02 {
+  background: url(../../images/common/ico_pen_type03.png);
   background-size: 13px 14px  !important;
   background-size: contain;
 }
@@ -1762,4 +1791,13 @@ input[type="checkbox"] {
   border: 1px solid $color-line-type02;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
   background-color: #fff;
+}
+
+@media (max-width: 1280px) {
+  // tab
+  .acc-tab-wrap {
+    .scroll-inner {
+      height: 569px;
+    }
+  }
 }

@@ -215,4 +215,7 @@
   .login .right-form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: calc(100% - 500px); padding: 0; }
   .login .input-form { width: 440px; margin: 45px auto 0; }
   .login .btn-default { width: 100%; }
-  .mypage-que .contents { padding: 30px 30px 16px; } }
+  .mypage-que .contents { padding: 30px 30px 16px; }
+  .sub04-que .tab-list-type01 .table .scroll-inner { height: 440px; }
+  .sub06-que .table-wrap .row .scroll-inner { height: 269px; }
+  .sub06-que .table-wrap .row:last-child .scroll-inner { height: 199px; } }
