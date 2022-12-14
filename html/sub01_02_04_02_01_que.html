@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="full-pop-que">
+    <div class="full-pop-wrap">
+      <div class="pop-header">
+        <ul class="title">
+          <li class="active"><img src="../images/sub/ico_step_active.jpg" alt="">STEP 1 범위선택</li>
+          <li>STEP 2 문항편집</li>
+          <li>STEP 3 문제지 설정</li>
+        </ul>
+        <button type="button" class="pop-btn" data-pop="que-alert-pop"></button>
+      </div>
+      <div class="pop-content cnt02">
+        <div class="tab-wrap tab-list-type01">
+          <div class="top-box">
+            <ul class="tab-menu-type01">
+              <li class="ui-tab-btn">
+                <a href="javascript:;">단원/유형별</a>
+              </li>
+              <li class="ui-tab-btn active">
+                <a href="javascript:;">교재별</a>
+              </li>
+            </ul>
+            <div class="top-btn-right">
+              <button type="button" class="btn-icon type04"><i class="gallery"></i>갤러리형</button>
+              <button type="button" class="btn-icon type04 active"><i class="list"></i>목록형</button>
+            </div>
+          </div>
+          <div class="contents">
+            탭 컨텐츠 (1)
+          </div>
+          <div class="contents on">
+
+          </div>
+        </div>
+      </div>
+      <div class="step-btn-wrap single">
+        <button type="button" class="btn-step next">STEP 2</button>
+      </div>
+    </div>
+    <div class="dim" style="display: none;"></div>
+    <!-- 변경사항 저장 팝업 -->
+    <div class="pop-wrap alert-type" data-pop="que-alert-pop" style="display: none;">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">페이지 이동 시 변경사항이<br>저장되지 않습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
