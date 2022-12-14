@@ -269,8 +269,13 @@ body {
     color: $color-sub33;
     border-radius: 6px;
     border-color: $color-main-purple;
+    background-color: #fff;
     i {
       margin-right: 10px;
+    }
+    &.bg-c {
+      color: #fff;
+      background: $color-main-purple;
     }
   }
   &.type03 {
@@ -296,6 +301,14 @@ body {
 			margin-right: 0;
 		}
 	}
+}
+.btn-line {
+  height: 40px;
+  padding: 0 10px;
+  font-weight: 600;
+  border: 1px solid #dbcbf3;
+  border-radius: 6px;
+  background-color: #fff;
 }
 .btn-step {
   width: 120px;
@@ -363,6 +376,16 @@ body {
 .add-type03 {
   background: url(../../images/common/ico_add_type03.png);
   background-size: 14px 13px !important;
+  background-size: contain;
+}
+.add-type04 {
+  background: url(../../images/common/ico_add_type04.png);
+  background-size: 18px !important;
+  background-size: contain;
+}
+.add-type05 {
+  background: url(../../images/common/ico_add_type05.png);
+  background-size: 18px !important;
   background-size: contain;
 }
 .search {
@@ -1148,6 +1171,9 @@ input[type="checkbox"] {
       margin-left: 6px;
     }
   }
+  .col {
+    
+  }
   .table {
     border: 1px solid $color-line-type02;
     border-bottom: 0;
@@ -1199,6 +1225,7 @@ input[type="checkbox"] {
     }
     .tbody {
       background-color: #fff;
+      border-bottom: 1px solid $color-line-type02;
     }
     &.half-type {
       .scroll-inner {

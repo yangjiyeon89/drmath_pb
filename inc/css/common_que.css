@@ -94,9 +94,11 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .btn-icon i { display: inline-block; width: 18px; height: 18px; margin-right: 3px; background-repeat: no-repeat; background-position: center; }
 
-.btn-icon.type02 { height: 40px; padding: 0 17px 0 15px; font-size: 16px; color: #333333; border-radius: 6px; border-color: #5a14be; }
+.btn-icon.type02 { height: 40px; padding: 0 17px 0 15px; font-size: 16px; color: #333333; border-radius: 6px; border-color: #5a14be; background-color: #fff; }
 
 .btn-icon.type02 i { margin-right: 10px; }
+
+.btn-icon.type02.bg-c { color: #fff; background: #5a14be; }
 
 .btn-icon.type03 { height: 44px; padding: 0 20px; color: #fff; font-size: 16px; font-weight: 600; border-radius: 5px; background-color: #5a14be; }
 
@@ -107,6 +109,8 @@ body { font-family: 'Pretendard', sans-serif; }
 .btn-icon.fix-s { width: 36px; padding: 0; }
 
 .btn-icon.fix-s i { margin-right: 0; }
+
+.btn-line { height: 40px; padding: 0 10px; font-weight: 600; border: 1px solid #dbcbf3; border-radius: 6px; background-color: #fff; }
 
 .btn-step { width: 120px; height: 50px; padding-left: 30px; color: #fff; font-weight: 500; border-radius: 25px; background: #7e7e7e url(../../images/common/ico_arrow_step.png) no-repeat left 20px center; background-size: 18px 8px; }
 
@@ -131,6 +135,10 @@ body { font-family: 'Pretendard', sans-serif; }
 .add-type02 { background: url(../../images/common/ico_add_type02.png); background-size: 13px !important; background-size: contain; }
 
 .add-type03 { background: url(../../images/common/ico_add_type03.png); background-size: 14px 13px !important; background-size: contain; }
+
+.add-type04 { background: url(../../images/common/ico_add_type04.png); background-size: 18px !important; background-size: contain; }
+
+.add-type05 { background: url(../../images/common/ico_add_type05.png); background-size: 18px !important; background-size: contain; }
 
 .search { background: url(../../images/common/ico_search_w.png); background-size: 15px 13px !important; background-size: contain; }
 
@@ -452,7 +460,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .tab-list-type01 .table .scroll-inner { height: 630px; }
 
-.tab-list-type01 .table .tbody { background-color: #fff; }
+.tab-list-type01 .table .tbody { background-color: #fff; border-bottom: 1px solid #dddddd; }
 
 .tab-list-type01 .table.half-type .scroll-inner { height: 409px; }
 
