@@ -1901,7 +1901,7 @@ input[type="checkbox"] {
           transform: rotate(90deg);
         }
       }
-      .cnt {
+      .cnt, .contents {
         display: none;
         padding: 12px 15px;
         border: 1px solid $color-line-type02;
@@ -1921,6 +1921,10 @@ input[type="checkbox"] {
           @include font(14px, 700);
           text-align: center;
           border: 1px solid $color-line-type02;
+        }
+        &.on {
+          border-top: 1px solid $color-line-type02;
+          display: block;
         }
       }
       .btn-wrap {
@@ -2039,6 +2043,76 @@ input[type="checkbox"] {
       left: 418px;
       margin-top: -15px;
       transform: rotate(-180deg);
+    }
+    &.type02 {
+      .scroll-inner {
+        height: 711px;
+      }
+      .pop-inner {
+        width: 986px;
+      }
+      .pop-header {
+        padding: 30px 0 20px 30px;
+      }
+      .pop-content {
+        padding: 0 28px 38px 30px;
+        > div {
+          border-top: 1px solid #000;
+          box-sizing: border-box;
+        }
+      }
+      .sheet-cnt {
+        width: calc(100% - 499px);
+        .scroll-inner {
+          border-left: 1px solid $color-line-type02;
+        }
+      }
+      .answer-cnt {
+        width: 499px;
+      }
+      .content-wrap {
+        height: 650px;
+        padding: 21px;
+        background-color: #f2f2f2;
+        box-sizing: border-box;
+      }
+      .name-wrap {
+        padding: 0;
+        height: auto;
+        .th {
+          font-size: 18px;
+        }
+        .td {
+          text-align: right;
+          .red {
+            margin-left: 6px;
+          }
+        }
+      }
+      .th {
+        @include content-center-center;
+        width: 70px;height: 60px;
+        font-weight: 600;
+        border-right: 1px solid $color-line-type02;
+      }
+      .td {
+        width: calc(100% - 70px);
+        padding-right: 34px;
+        box-sizing: border-box;
+      }
+      .sheet-list {
+        .td {
+          padding-left: 20px;
+          justify-content: flex-start;
+          span {
+            width: 184px;
+          }
+        }
+      }
+      .btn-wrap {
+        padding: 10px 20px;
+        justify-content: space-between;
+      }
     }
   }
 }

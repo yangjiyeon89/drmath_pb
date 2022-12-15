@@ -758,11 +758,13 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type .answer-cnt .acc-btn::after { position: absolute; right: 3px; top: 22px; content: ""; display: block; clear: both; width: 9px; height: 16px; background: url(../../images/common/ico_arrow_b.png) no-repeat; -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 
-.pop-wrap.answer-sheet-type .answer-cnt .cnt { display: none; padding: 12px 15px; border: 1px solid #dddddd; border-top: 0; background-color: #fff; }
+.pop-wrap.answer-sheet-type .answer-cnt .cnt, .pop-wrap.answer-sheet-type .answer-cnt .contents { display: none; padding: 12px 15px; border: 1px solid #dddddd; border-top: 0; background-color: #fff; }
 
-.pop-wrap.answer-sheet-type .answer-cnt .cnt .txt-box + .txt-box { margin-top: 25px; }
+.pop-wrap.answer-sheet-type .answer-cnt .cnt .txt-box + .txt-box, .pop-wrap.answer-sheet-type .answer-cnt .contents .txt-box + .txt-box { margin-top: 25px; }
 
-.pop-wrap.answer-sheet-type .answer-cnt .cnt .tit { display: block; width: 45px; padding: 4px 0; margin-bottom: 10px; color: #5a14be; font-size: 14px; font-weight: 700; text-align: center; border: 1px solid #dddddd; }
+.pop-wrap.answer-sheet-type .answer-cnt .cnt .tit, .pop-wrap.answer-sheet-type .answer-cnt .contents .tit { display: block; width: 45px; padding: 4px 0; margin-bottom: 10px; color: #5a14be; font-size: 14px; font-weight: 700; text-align: center; border: 1px solid #dddddd; }
+
+.pop-wrap.answer-sheet-type .answer-cnt .cnt.on, .pop-wrap.answer-sheet-type .answer-cnt .contents.on { border-top: 1px solid #dddddd; display: block; }
 
 .pop-wrap.answer-sheet-type .answer-cnt .btn-wrap .btn-icon { padding: 0 25px 0 44px; }
 
@@ -815,6 +817,42 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap.answer-sheet-type .swiper-button-next:after, .pop-wrap.answer-sheet-type .swiper-button-prev:after { display: none; }
 
 .pop-wrap.answer-sheet-type .swiper-button-prev { position: fixed; left: 418px; margin-top: -15px; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
+
+.pop-wrap.answer-sheet-type.type02 .scroll-inner { height: 711px; }
+
+.pop-wrap.answer-sheet-type.type02 .pop-inner { width: 986px; }
+
+.pop-wrap.answer-sheet-type.type02 .pop-header { padding: 30px 0 20px 30px; }
+
+.pop-wrap.answer-sheet-type.type02 .pop-content { padding: 0 28px 38px 30px; }
+
+.pop-wrap.answer-sheet-type.type02 .pop-content > div { border-top: 1px solid #000; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.pop-wrap.answer-sheet-type.type02 .sheet-cnt { width: calc(100% - 499px); }
+
+.pop-wrap.answer-sheet-type.type02 .sheet-cnt .scroll-inner { border-left: 1px solid #dddddd; }
+
+.pop-wrap.answer-sheet-type.type02 .answer-cnt { width: 499px; }
+
+.pop-wrap.answer-sheet-type.type02 .content-wrap { height: 650px; padding: 21px; background-color: #f2f2f2; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.pop-wrap.answer-sheet-type.type02 .name-wrap { padding: 0; height: auto; }
+
+.pop-wrap.answer-sheet-type.type02 .name-wrap .th { font-size: 18px; }
+
+.pop-wrap.answer-sheet-type.type02 .name-wrap .td { text-align: right; }
+
+.pop-wrap.answer-sheet-type.type02 .name-wrap .td .red { margin-left: 6px; }
+
+.pop-wrap.answer-sheet-type.type02 .th { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 70px; height: 60px; font-weight: 600; border-right: 1px solid #dddddd; }
+
+.pop-wrap.answer-sheet-type.type02 .td { width: calc(100% - 70px); padding-right: 34px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.pop-wrap.answer-sheet-type.type02 .sheet-list .td { padding-left: 20px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+.pop-wrap.answer-sheet-type.type02 .sheet-list .td span { width: 184px; }
+
+.pop-wrap.answer-sheet-type.type02 .btn-wrap { padding: 10px 20px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .ui-sortable-helper { border: 1px solid #dddddd; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: #fff; }
 
