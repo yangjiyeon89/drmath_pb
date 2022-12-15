@@ -65,7 +65,7 @@
                     <button type="button" class="btn-line">내신대비</button>
                     <button type="button" class="btn-line">모의고사</button>
                     <button type="button" class="btn-line">수능대비</button>
-                    <button type="button" class="btn-line">직접입력</button>
+                    <input type="text" class="input-line" placeholder="직접입력">
                   </div>
                 </div>
               </li>
@@ -263,20 +263,6 @@
 
       _this.toggleClass('on');
     })
-
-    // button active
-    let _btn = $('.opt-wrap .btn-wrap button');
-
-    function btnClickFunc(){
-      let _this = $(this);
-      
-      if(!_this.hasClass('active')) {
-        _this.parents('.btn-wrap').find('.btn-line').removeClass('active');
-        _this.addClass('active');
-      } 
-    }
-
-    _btn.on('click', btnClickFunc)
   });
 </script>
 </html>

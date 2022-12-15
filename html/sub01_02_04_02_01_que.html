@@ -37,16 +37,197 @@
                 <a href="javascript:;">교재별</a>
               </li>
             </ul>
-            <div class="top-btn-right">
-              <button type="button" class="btn-icon type04"><i class="gallery"></i>갤러리형</button>
-              <button type="button" class="btn-icon type04 active"><i class="list"></i>목록형</button>
-            </div>
           </div>
           <div class="contents">
             탭 컨텐츠 (1)
           </div>
           <div class="contents on">
-
+            <div class="opt-wrap">
+              <div class="top-tit">
+                <span>최상위 수학</span>
+                <button type="button" class="btn-icon type02 pop-btn" data-pop="change-alert-pop"><i class="change"></i>다른 교재 선택</button>
+              </div>
+              <div class="line-box-wrap">
+                <div class="line-box">
+                  <div class="scroll-inner">
+                    <div class="chk-box">
+                      <div class="tit">초과와 미만</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk01_01">
+                          <label for="chk01_01">12P</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-box">
+                      <div class="tit">올림과 버림</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk02_01">
+                          <label for="chk02_01">13P</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-box">
+                      <div class="tit">수의 범위를 활용한 문제 해결</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk03_01">
+                          <label for="chk03_01">14P</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_02">
+                          <label for="chk03_02">15P</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_03">
+                          <label for="chk03_03">16P</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-box">
+                      <div class="tit">반올림</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk04_01">
+                          <label for="chk04_01">17P</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_02">
+                          <label for="chk04_02">18P</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-box">
+                      <div class="tit">어림하기 활용</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk05_01">
+                          <label for="chk05_01">19P</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_02">
+                          <label for="chk05_02">20P</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="line-box">
+                  <div class="scroll-inner">
+                    <div class="chk-box">
+                      <div class="tit">13P 올림과 버림</div>
+                      <ul class="chk-list">
+                        <li>
+                          <input type="checkbox" id="chk01_01_01">
+                          <label for="chk01_01_01">1.(1)번</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk01_01_02">
+                          <label for="chk01_01_02">1.(2)번</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk01_01_03">
+                          <label for="chk01_01_03">2번</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk01_01_04">
+                          <label for="chk01_01_04">3번</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk01_01_05">
+                          <label for="chk01_01_05">4번</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk01_01_06">
+                          <label for="chk01_01_06">5번</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="line-box">
+                  <div class="scroll-inner">
+                    <div class="box">
+                      <div class="title-wrap"><span class="title">문제 종류</span></div>
+                      <div class="input-radio-type01">
+                        <input type="radio" id="radio01_01" name="radio01" checked="">
+                        <label for="radio01_01">유사 문제</label>
+                        <input type="radio" id="radio01_02" name="radio01">
+                        <label for="radio01_02">쌍둥이 문제</label>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="title-wrap"><span class="title">문제 수</span></div>
+                      <div class="gray-box">
+                        <span class="que-num">오답 문제 6개
+                          <button type="button" class="btn-delete"></button>
+                        </span>
+                        <div class="num-box">
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn">1</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">2</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">3</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">4</a>
+                              </li>
+                            </ul>
+                          </div>
+                          문제
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="title-wrap"><span class="title">난이도 구성</span></div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn-line">최하</button>
+                        <button type="button" class="btn-line">하</button>
+                        <button type="button" class="btn-line">중</button>
+                        <button type="button" class="btn-line">상</button>
+                        <button type="button" class="btn-line">최상</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="title-wrap">
+                        <span class="title">문제 형태</span>
+                        <div class="right-area">
+                          <div class="tooltip-wrap">
+                            <button type="button" class="btn-tip"></button>
+                            <div class="tooltip">
+                              <span>학생이 학생앱에 답을 입력하면,<br>자동으로 채점이 이루어지는 기능입니다.</span>
+                            </div>
+                          </div>
+                          <div class="toggle-wrap">
+                            <span class="tit on">자동채점 ON</span>
+                            <div class="toggle-btn">
+                              <input type="checkbox" class="checkbox">
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn-wrap multi">
+                        <button type="button" class="btn-line">객관식</button>
+                        <button type="button" class="btn-line">주관식</button>
+                        <button type="button" class="btn-line">서술형</button>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="title-wrap"><span class="title">총 문항 수</span></div>
+                      <div class="gray-box">
+                        <span class="total-num">6 문제</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,6 +247,20 @@
         <div class="pop-footer">
           <button>취소</button>
           <button>닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- 다른 교재 선택 팝업 -->
+    <div class="pop-wrap alert-type change" data-pop="change-alert-pop" style="display: none;">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">페이지 이동 시 변경사항이 저장되지 않습니다.<br>다른 교재 선택 화면으로 이동하시겠습니까?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>이동</button>
         </div>
       </div>
     </div>
