@@ -159,7 +159,7 @@
   <button type="button" class="btn-icon fix-s"><i class="print"></i></button>
   <button type="button" class="btn-icon fix-s"><i class="pen-type02"></i></button>
   <button type="button" class="btn-icon fix-s"><i class="pen-type03"></i></button>
-  <button type="button" class="btn-icon fix-s bg-gray"><i class="pen-type04"></i></button>
+  <button type="button" class="btn-icon fix-s bg-gray" disabled><i class="pen-type04"></i></button>
 
 
 
@@ -3097,22 +3097,26 @@
           </div>
         </div>
         <div class="sheet-cnt">
-          <div class="swiper sheet-swiper">
+          <div class="swiper sheet-swiper chk-acc">
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="name-wrap">
                     <span>고희동</span>
-                    <em class="blue">일괄 O</em>
-                    <em class="red">일괄 X</em>
+                    <input type="checkbox" id="chk101_01" class="allCheck">
+                    <label class="blue" for="chk101_01">일괄 O</label>
+                    <input type="checkbox" id="chk101_02" class="allCheck">
+                    <label class="red" for="chk101_02">일괄 X</label>
                   </div>
                   <div class="scroll-inner">
                     <ul class="sheet-list">
                       <li>
                         <span class="num">1</span>
                         <div class="check-wrap">
-                          <i class="answer"></i>
-                          <i class="wrong"></i>
+                          <input type="checkbox" id="chk101_03" class="answer">
+                          <label for="chk101_03" ></label>
+                          <input type="checkbox" id="chk101_04" class="wrong">
+                          <label for="chk101_04" ></label>
                         </div>
                       </li>
                       <li>
@@ -3662,6 +3666,10 @@
       </div>
     </div>
   </div>
+
+  <h2>type G</h2>
+
+
 </body>
 <script>
   $(function () {

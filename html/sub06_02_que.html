@@ -1675,54 +1675,6 @@
 </body>
 <script>
   $(function () {
-
-    // 캘린더
-    var dateFormat = "y.mm.dd",
-      from = $("#from")
-      .datepicker({
-        defaultDate: "+1w",
-        changeMonth: false,
-        numberOfMonths: 1,
-        dateFormat: "y.mm.dd",
-        showOn: "button",
-        buttonImage: "../images/common/ico_calendar.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
-      })
-      .on("change", function () {
-        to.datepicker("option", "minDate", getDate(this));
-      }),
-      to = $("#to").datepicker({
-        defaultDate: "+1w",
-        changeMonth: false,
-        numberOfMonths: 1,
-        dateFormat: "y.mm.dd",
-        showOn: "button",
-        buttonImage: "../images/common/ico_calendar.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
-
-      })
-      .on("change", function () {
-        from.datepicker("option", "maxDate", getDate(this));
-      });
-
-    function getDate(element) {
-      var date;
-      try {
-        date = $.datepicker.parseDate(dateFormat, element.value);
-      } catch (error) {
-        date = null;
-      }
-
-      return date;
-    }
-    $(".ui-datepicker-trigger").removeAttr("title");
-
     // 문제지 체크박스
     let chkBtn = $('.chk-acc input[type="checkbox"]');
     let btmBar = $('.fix-btm-bar');

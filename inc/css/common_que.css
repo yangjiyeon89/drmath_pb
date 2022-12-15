@@ -746,7 +746,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type .btn-wrap { padding: 14px 0; border-top: 1px solid #dddddd; background-color: #f9f6ff; }
 
-.pop-wrap.answer-sheet-type .btn-wrap span { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 62px; height: 40px; margin-right: 15px; font-weight: 600; border: 1px solid #dbcbf3; border-radius: 6px; background-color: #fff; }
+.pop-wrap.answer-sheet-type .btn-wrap span { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 62px; height: 40px; margin-right: 15px; font-weight: 600; border: 1px solid #dbcbf3; border-radius: 6px; background-color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .pop-wrap.answer-sheet-type .answer-cnt { width: 410px; border: 1px solid #dddddd; }
 
@@ -778,11 +778,13 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type .name-wrap { padding: 0 20px; }
 
-.pop-wrap.answer-sheet-type .name-wrap em { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 60px; height: 35px; font-weight: 600; border-radius: 5px; }
+.pop-wrap.answer-sheet-type .name-wrap label { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 60px; height: 35px; padding: 0; font-weight: 600; border-radius: 5px; }
 
-.pop-wrap.answer-sheet-type .name-wrap em.blue { margin-left: 30px; color: #247bf1; border: 1px solid #247bf1; }
+.pop-wrap.answer-sheet-type .name-wrap label.blue { margin-left: 30px; color: #247bf1; border: 1px solid #247bf1; }
 
-.pop-wrap.answer-sheet-type .name-wrap em.red { margin-left: 10px; color: #f13e26; border: 1px solid #f13e26; }
+.pop-wrap.answer-sheet-type .name-wrap label.red { margin-left: 10px; color: #f13e26; border: 1px solid #f13e26; }
+
+.pop-wrap.answer-sheet-type .name-wrap label::before { display: none; }
 
 .pop-wrap.answer-sheet-type .sheet-swiper { padding-right: 24px; }
 
@@ -796,15 +798,17 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type .sheet-list .check-wrap { width: calc(100% - 70px); display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap i { width: 38px; height: 38px; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer + label::before { background: url(../../images/common/ico_answer.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap i.answer { background: url(../../images/common/ico_answer.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer:checked + label::before { background: url(../../images/common/ico_answer_chk.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap i.answer.chk { background: url(../../images/common/ico_answer_chk.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong { margin-left: 32px; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap i.wrong { margin-left: 32px; background: url(../../images/common/ico_wrong.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong + label::before { background: url(../../images/common/ico_wrong.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap i.wrong.chk { background: url(../../images/common/ico_wrong_chk.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong:checked + label::before { background: url(../../images/common/ico_wrong_chk.png) no-repeat; }
+
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap label::before { width: 38px; height: 38px; }
 
 .pop-wrap.answer-sheet-type .swiper-button-next, .pop-wrap.answer-sheet-type .swiper-button-prev { width: 32px; height: 32px; margin-top: -36px; background: url(../../images/common/ico_arrow_b_type02.png) no-repeat; }
 

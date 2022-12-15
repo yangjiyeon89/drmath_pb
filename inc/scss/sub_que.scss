@@ -553,10 +553,10 @@
           width: 9%;
         }
         &:nth-child(4) {
-          width: 50%;
+          width: 54%;
         }
         &:nth-child(5) {
-          width: 9%;
+          width: 5%;
         }
         &:nth-child(6) {
           width: 5%;
@@ -613,6 +613,18 @@
       .tit-wrap {
         padding-left: 20px;
         justify-content: flex-start;
+      }
+    }
+    .tab-list-type01 {
+      .chk-acc {
+        span {
+          &:nth-child(4) {
+            width: 58%;
+          }
+          &:nth-child(7) {
+            width: 5%;
+          }
+        }
       }
     }
   }
