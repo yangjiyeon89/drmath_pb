@@ -857,4 +857,6 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .ui-sortable-helper { border: 1px solid #dddddd; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: #fff; }
 
 @media (max-width: 1280px) { .acc-tab-wrap .scroll-inner { height: 569px; }
-  .pop-wrap.answer-sheet-type .scroll-inner { height: 442px; } }
+  .pop-wrap.answer-sheet-type .scroll-inner { height: 442px; }
+  .pop-wrap.answer-sheet-type.type02 .content-wrap { height: 531px; }
+  .pop-wrap.answer-sheet-type.type02 .scroll-inner { height: 592px; } }
