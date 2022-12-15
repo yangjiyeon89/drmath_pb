@@ -493,6 +493,14 @@ i {
 								ul {
 									margin-top: 15px;
 									ol {
+										display: flex;
+										flex-direction: row;
+										margin-bottom: 10px;
+										word-break: break-all;
+										em {
+											padding-top: 3px;
+											margin-right: 5px;
+										}
 										& + ol {
 											margin-top: 15px;
 										}
@@ -520,13 +528,16 @@ i {
 										margin-top: 7px;
 									}
 								}
-								.btn-que {
+								.btn-similar-que {
 									flex-shrink: 0;
 									width: 36px;
 									height: 36px;
 									border: 1px solid $color-line-type02;
 									border-radius: 5px;
-									background: url(../../images/sub/ic_btn_que.png) center center no-repeat;
+									background: #fff url(../../images/sub/ic_btn_que.png) center center no-repeat;
+									&.active {
+										border: 1px solid $color-main-purple;
+									}
 								}
 							}
 							em {
@@ -539,11 +550,6 @@ i {
 							&.active {
 								border: 2px solid $color-main-purple;
 								background-color: #fcfaff;
-								.que-bottom {
-									.btn-que {
-										border: 1px solid $color-main-purple;
-									}
-								}
 							}
 						}
 					}
@@ -1091,6 +1097,13 @@ i {
 											.tooltip-wrap {
 												padding: 5px 0;
 												margin-right: 5px;
+												.tooltip {
+													left: -130px;
+													text-align: center;
+													&::before {
+														left: 188px;
+													}
+												}
 											}
 											.toggle-wrap {
 												@include content-center;
@@ -1324,7 +1337,6 @@ i {
 						display: flex;
 						flex-direction: row;
 						margin-bottom: 10px;
-						white-space: wrap;
 						word-break: break-all;
 					}
 					em {

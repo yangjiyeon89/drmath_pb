@@ -226,6 +226,18 @@ $(function () {
 
   _btn.on('click', btnClickFunc);
 
+  // 유사 문항 버튼 active
+  let _viewBtn = $('.view-que-list .btn-similar-que');
+
+  function viewBtnClickFunc(){
+    let _this = $(this);
+    if(!_this.hasClass('active')) {
+      _this.parents('.view-que-list').find('.btn-similar-que').removeClass('active');
+      _this.addClass('active');
+    };
+  }
+
+  _viewBtn.on('click', viewBtnClickFunc);
 
 
   // popup
