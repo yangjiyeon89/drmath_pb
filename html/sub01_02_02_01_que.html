@@ -56,7 +56,7 @@
                 </div>
               </div>
             </div>
-            <div class="view-que-list scroll-inner">
+            <div class="view-que-list scroll-inner" style="display: -webkit-box;-webkit-box-orient:vertical">
               <div class="view-que">
                 <div class="que-top">
                   <div class="title">
@@ -537,14 +537,35 @@
 
     $('.col').on('click', function(){
       let _idx = $(this).index();
+      
       $('.view-que-list').animate({scrollTop : arr[_idx]}, 400);
       
       let _this = $(this);
       if(!_this.hasClass('active')) {
         _this.parents('.test.ui-sortable').find('.col').removeClass('active');
         _this.addClass('active');
+        $('.view-que').removeClass('active');
+        $('.view-que').eq(_idx).addClass('active');
       };
+      
     })
+
+    // $( "#table-1" ).sortable({
+    //   handle: '.dragHandle',
+
+    //   start: function(event, ui) {
+    //     position = ui.placeholder.index() - 1;
+    //     cnt = $('.view-que').eq(position);
+    //   },
+    //   change: function(event, ui) {
+    //     _idx = _idx = Number($(".ui-sortable > div:not(.ui-sortable-helper)").index(ui.placeholder));        
+
+    //     cnt.before($('.view-que').eq(_idx));
+
+    //     console.log($('.view-que').eq(_idx))
+    //   }
+    // });
+    // $( "#table-1" ).disableSelection();
   })
 </script>
 </html>

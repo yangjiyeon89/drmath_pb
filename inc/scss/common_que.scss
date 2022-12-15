@@ -2115,6 +2115,132 @@ input[type="checkbox"] {
       }
     }
   }
+  &.wrong-sheet-type {
+    .pop-inner {
+      width: 680px;
+    }
+    .pop-content {
+      padding: 30px;
+    }
+    table {
+      border-top: 1px solid $color-sub33;
+      th, td {
+        border-bottom: 1px solid $color-box;
+      }
+      th {
+        padding-left: 20px;
+        font-weight: 600;
+      }
+      td {
+        padding: 10px 0;
+        text-align: center;
+      }
+      tr {
+        &:first-child {
+          th {
+            padding-top: 30px;
+            vertical-align: top;
+          }
+        }
+        &:last-child {          
+          td {
+            padding: 20px 0;
+            @include font(18px, 600);
+            background-color: $color-box-type02;
+            em {
+              color: $color-main-purple;
+              @include font(18px, 600);              
+            }
+          }
+        }
+      }
+    }
+    .btn-wrap {
+      justify-content: space-between;
+      .btn-line {
+        font-weight: 500;
+        border: 1px solid $color-line-type02;
+        border-radius: 5px;
+        cursor: pointer;
+        &.active {          
+          border: 1px solid #dbcbf3;
+          background-color: #ebe3ff;
+        }
+      }
+      &.flex-type {
+        .btn-line {
+          width: 86px;height: 40px;
+          &.active {
+            color: $color-main-purple;
+            font-weight: 600;
+          }
+        }
+      }
+      &.wrap-type {
+        flex-wrap: wrap;
+        gap: 10px;
+        .btn-line {
+          flex-direction: column;
+          width: 230px;height: 69px;
+          &.active {
+            .tit {
+              color: $color-main-purple;
+            }
+          }
+        }
+        .tit {
+          @include font(18px, 600);
+        }
+        .txt {
+          @include font(14px, 500);
+        }
+      }
+    }
+    .box {
+      padding: 5px 0;
+      border-radius: 5px;
+      background-color: #f6f6f6;
+      .select-btn {
+        width: 80px;
+      }
+      .select-list {
+        a {
+          text-align: left;
+        }
+      }
+      .txt {
+        margin-left: 6px;
+        button {
+          position: relative;
+          top: 5px;
+          width: 20px;height: 20px;
+          margin: 0 10px 0 5px;
+          background: url(../../images/common/ico_delete_type02.png) no-repeat;
+        }
+      }
+    }
+    .toggle-wrap {
+      padding: 10px 0 5px;
+      text-align: left;
+      span {
+        position: relative;
+        top: -10px;
+        margin-left: 6px;
+        color: #a8a8a8;
+        font-weight: 700;
+      }
+      .toggle-btn {
+        display: inline-block;
+        &.on {
+          border: 1px solid $color-main-purple;
+          & + span {
+            color: $color-main-purple;
+          }
+        }
+      }
+    }
+    
+  }
 }
 .ui-sortable-helper {
   border: 1px solid $color-line-type02;

@@ -854,6 +854,64 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type.type02 .btn-wrap { padding: 10px 20px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
+.pop-wrap.wrong-sheet-type .pop-inner { width: 680px; }
+
+.pop-wrap.wrong-sheet-type .pop-content { padding: 30px; }
+
+.pop-wrap.wrong-sheet-type table { border-top: 1px solid #333333; }
+
+.pop-wrap.wrong-sheet-type table th, .pop-wrap.wrong-sheet-type table td { border-bottom: 1px solid #e0e0e0; }
+
+.pop-wrap.wrong-sheet-type table th { padding-left: 20px; font-weight: 600; }
+
+.pop-wrap.wrong-sheet-type table td { padding: 10px 0; text-align: center; }
+
+.pop-wrap.wrong-sheet-type table tr:first-child th { padding-top: 30px; vertical-align: top; }
+
+.pop-wrap.wrong-sheet-type table tr:last-child td { padding: 20px 0; font-size: 18px; font-weight: 600; background-color: #f6f6f6; }
+
+.pop-wrap.wrong-sheet-type table tr:last-child td em { color: #5a14be; font-size: 18px; font-weight: 600; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap .btn-line { font-weight: 500; border: 1px solid #dddddd; border-radius: 5px; cursor: pointer; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap .btn-line.active { border: 1px solid #dbcbf3; background-color: #ebe3ff; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.flex-type .btn-line { width: 86px; height: 40px; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.flex-type .btn-line.active { color: #5a14be; font-weight: 600; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.wrap-type { -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 10px; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.wrap-type .btn-line { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 230px; height: 69px; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.wrap-type .btn-line.active .tit { color: #5a14be; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.wrap-type .tit { font-size: 18px; font-weight: 600; }
+
+.pop-wrap.wrong-sheet-type .btn-wrap.wrap-type .txt { font-size: 14px; font-weight: 500; }
+
+.pop-wrap.wrong-sheet-type .box { padding: 5px 0; border-radius: 5px; background-color: #f6f6f6; }
+
+.pop-wrap.wrong-sheet-type .box .select-btn { width: 80px; }
+
+.pop-wrap.wrong-sheet-type .box .select-list a { text-align: left; }
+
+.pop-wrap.wrong-sheet-type .box .txt { margin-left: 6px; }
+
+.pop-wrap.wrong-sheet-type .box .txt button { position: relative; top: 5px; width: 20px; height: 20px; margin: 0 10px 0 5px; background: url(../../images/common/ico_delete_type02.png) no-repeat; }
+
+.pop-wrap.wrong-sheet-type .toggle-wrap { padding: 10px 0 5px; text-align: left; }
+
+.pop-wrap.wrong-sheet-type .toggle-wrap span { position: relative; top: -10px; margin-left: 6px; color: #a8a8a8; font-weight: 700; }
+
+.pop-wrap.wrong-sheet-type .toggle-wrap .toggle-btn { display: inline-block; }
+
+.pop-wrap.wrong-sheet-type .toggle-wrap .toggle-btn.on { border: 1px solid #5a14be; }
+
+.pop-wrap.wrong-sheet-type .toggle-wrap .toggle-btn.on + span { color: #5a14be; }
+
 .ui-sortable-helper { border: 1px solid #dddddd; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: #fff; }
 
 @media (max-width: 1280px) { .acc-tab-wrap .scroll-inner { height: 569px; }
