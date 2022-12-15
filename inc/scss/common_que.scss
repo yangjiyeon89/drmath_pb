@@ -1996,29 +1996,31 @@ input[type="checkbox"] {
         width: calc(100% - 70px);
         @include content-center-center;
         .answer {
-          & + label::before {
+          & + label {
             background: url(../../images/common/ico_answer.png) no-repeat;
           }
           &:checked {
-            & + label::before {
+            & + label {
               background: url(../../images/common/ico_answer_chk.png) no-repeat;
             }
           }
         }
         .wrong {
-          margin-left: 32px;
-          & + label::before {
+          & + label {
+            margin-left: 32px;
             background: url(../../images/common/ico_wrong.png) no-repeat;
           }
           &:checked {
-            & + label::before {
+            & + label {
               background: url(../../images/common/ico_wrong_chk.png) no-repeat;
             }
           }
         }
         label {
+          width: 38px;height: 38px;
+          padding: 0;
           &::before {
-            width: 38px;height: 38px;
+            display: none;
           }
         }
       }

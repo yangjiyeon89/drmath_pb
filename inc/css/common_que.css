@@ -798,17 +798,17 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type .sheet-list .check-wrap { width: calc(100% - 70px); display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer + label::before { background: url(../../images/common/ico_answer.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer + label { background: url(../../images/common/ico_answer.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer:checked + label::before { background: url(../../images/common/ico_answer_chk.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .answer:checked + label { background: url(../../images/common/ico_answer_chk.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong { margin-left: 32px; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong + label { margin-left: 32px; background: url(../../images/common/ico_wrong.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong + label::before { background: url(../../images/common/ico_wrong.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong:checked + label { background: url(../../images/common/ico_wrong_chk.png) no-repeat; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap .wrong:checked + label::before { background: url(../../images/common/ico_wrong_chk.png) no-repeat; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap label { width: 38px; height: 38px; padding: 0; }
 
-.pop-wrap.answer-sheet-type .sheet-list .check-wrap label::before { width: 38px; height: 38px; }
+.pop-wrap.answer-sheet-type .sheet-list .check-wrap label::before { display: none; }
 
 .pop-wrap.answer-sheet-type .swiper-button-next, .pop-wrap.answer-sheet-type .swiper-button-prev { width: 32px; height: 32px; margin-top: -36px; background: url(../../images/common/ico_arrow_b_type02.png) no-repeat; }
 

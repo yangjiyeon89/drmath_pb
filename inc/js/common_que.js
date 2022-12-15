@@ -265,12 +265,22 @@ $(function () {
   function checkFunc() {
     let _this = $(this);
 
-    if (_this.prop('checked')) {
-      _this.parents('table').find('input[type=checkbox]').prop('checked', true);
-      _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', true);
+    if(_this.parents('div').hasClass('sheet-cnt')){
+      let chkNum = _this.data('chk');
+
+      if (_this.prop('checked')) {
+        _this.parents('.chk-acc').find("input[data-chk='" + chkNum + "']").prop('checked', true);
+      } else {
+        _this.parents('.chk-acc').find("input[data-chk='" + chkNum + "']").prop('checked', false);
+      }
     } else {
-      _this.parents('table').find('input[type=checkbox]').prop('checked', false);
-      _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', false);
+      if (_this.prop('checked')) {
+        _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', false);
+      }
     }
   }
 
