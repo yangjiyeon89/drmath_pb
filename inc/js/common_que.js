@@ -205,9 +205,26 @@ $(function () {
     });
   });
 
+  
+  // button active
+  let _btnMul = $('.btn-wrap.multi .btn-line');
 
+  _btnMul.click(function(){
+    $(this).toggleClass('active');
+    btnClickFunc.return(false);
+  });
 
+  let _btn = $('.btn-wrap .btn-line');
 
+  function btnClickFunc(){
+    let _this = $(this);
+    if(!_this.hasClass('active')) {
+      _this.parents('.btn-wrap').find('.btn-line').removeClass('active');
+      _this.addClass('active');
+    };
+  }
+
+  _btn.on('click', btnClickFunc);
 
 
 

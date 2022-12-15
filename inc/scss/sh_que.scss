@@ -2,6 +2,16 @@
 @import "_mixin.scss";
 @import "_setting.scss";
 @import url(../css/font.css);
+/* icon */
+i {
+	&.change {
+		background: url(../../images/sub/ic-change.png) no-repeat;
+		background-size: 18px !important;
+		background-size: contain;
+	}
+}
+
+
 /* range slider */
 .range-bar {
 	background:$color-line-type02;
@@ -27,6 +37,8 @@
 		height: 4px;
 	}	
 }
+
+
 /* btn-step */
 .btn-step {
 	&.next {
@@ -85,6 +97,8 @@
     }
   }
 }
+
+
 /* que-badge */
 .que-badge {
 	@include content-center-center;
@@ -112,10 +126,13 @@
 		color: #666666;
 	}
 }
+
+
 /* que */
 .full-pop-que {
 	width: 100%;
 	height: 100%;
+	min-height: 100vh;
 	background-color: #f8f8f8;
 	@media (max-width: 1280px) {
 		height: 760px;
@@ -751,6 +768,7 @@
 							}
 						}
 						.opt-wrap {
+							position: relative;
 							width: 100%;
 							.form-txt-error {
 								display: block;
@@ -775,7 +793,11 @@
 							.btn-line {
 								flex-shrink: 0;
 								width: 84px;
-								
+							}
+							.input-line {
+								width: 84px;
+								border-radius: 3px;
+								text-align: center;
 							}
 						}
 						.range-wrap {
@@ -1001,6 +1023,133 @@
 					}
 					
 				}
+				.opt-wrap {
+					@include layout-justify-start;
+					flex-direction: column;
+					background-color: #fff;
+					border: 1px solid $color-line-type02;
+					border-top: 0;
+					border-bottom-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+					padding: 15px 30px 20px 30px;
+					.top-tit {
+						@include layout-justify-center;
+						width: 100%;
+						margin-bottom: 10px;
+						span {
+							@include font(20px, 600);
+						}
+					}
+					.line-box-wrap {
+						@include layout-justify-start;
+						flex-direction: row;
+						width: 100%;
+						gap: 10px;
+						.line-box {
+							width: calc(100% / 3);
+							border: 1px solid $color-line-type02;
+							border-radius: 5px;
+							box-sizing: border-box;
+							.scroll-inner {
+								position: relative;
+								height: 684px;
+								@media (max-width: 1280px) {
+									height: 489px;
+								}
+								.chk-box {
+									.tit {
+										padding: 10px 20px;
+										background-color: $color-box-type02;
+									}
+									.chk-list {
+										padding: 0 20px;
+										li {
+											padding: 15px 0; 
+											label {
+												font-size: 16px;
+												&::before {
+													width: 20px;
+													height: 20px;
+												}
+											}
+										}
+									}
+								}
+								.box {
+									padding: 20px;
+									& + .box {
+										border-top: 1px solid $color-line-type02;
+									}
+									.title-wrap {
+										@include layout-justify-center;
+										margin-bottom: 17px;
+										.title {
+											@include font(20px, 700);
+										}
+										.right-area {
+											@include content-center;
+											.tooltip-wrap {
+												padding: 5px 0;
+												margin-right: 5px;
+											}
+											.toggle-wrap {
+												@include content-center;
+												.tit {
+													@include font(16px, 700);
+													margin-right: 10px;
+													line-height: 29px;
+													&.on {
+														color: $color-main-purple;
+													}
+												}
+												.toggle-btn {
+													margin-right: 5px;
+												}
+											}
+										}
+									}
+									.btn-wrap {
+										@include layout-center-center;
+										gap: 8px;
+										.btn-line {
+											flex-grow: 1;
+										}
+									}
+									.gray-box {
+										@include layout-center-center;
+										width: 100%;
+										height: 50px;
+										background-color: $color-box-type02;
+										border-radius: 5px;
+										.que-num {
+											@include layout-center;
+											margin-right: 20px;
+											.btn-delete {
+												width: 20px;
+												height: 20px;
+												background: url(../../images/common/ico_delete_type02.png) no-repeat;
+												background-size: contain;
+												margin-left: 5px;
+											}
+										}
+										.num-box {
+											.select-wrap {
+												margin-right: 5px;
+												.select-btn {
+													width: 80px;
+												}	
+											}
+										}
+										.total-num {
+											@include font(20px, 700);
+											color: $color-main-purple;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 		.step-btn-wrap {
@@ -1017,6 +1166,8 @@
 		}
 	}
 }
+
+
 /* popup has-check */
 .pop-wrap {
 	&.alert-type {
@@ -1026,6 +1177,16 @@
 				label {
 					font-size: 16px;
 				}
+			}
+		}
+	}
+}
+/* pop-wrap alert-type change */
+.pop-wrap {
+	&.alert-type {
+		&.change {
+			.pop-inner {
+				width: 400px;
 			}
 		}
 	}
