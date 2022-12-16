@@ -589,6 +589,7 @@
     }
     .tbody {
       position: relative;
+      overflow: hidden;
     }
     .fix-btm-bar {
       display: none;
@@ -626,6 +627,109 @@
           }
         }
       }
+    }
+  }
+}
+// 교재
+.sub08-01 {
+  .tab-wrap {
+    overflow: hidden;
+  }
+  .tab-top {
+    @include layout-justify-center;
+    .pop-btn {
+      position: relative;
+      top: 1px;
+      width: 198px;
+      padding: 10px 0 9px;
+      margin-right: 6px;
+      font-weight: 600;
+      border: 1px solid $color-line-type02;
+      border-radius: 5px;
+      background-color: #fff;
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+  .tab-list-type02 {
+    .inner {
+      margin-top: 10px;
+    }
+    .chk-acc {
+      li {
+        padding: 0 32px 0 26px;
+      }
+      .scroll-inner {
+        height: 695px;
+      }
+    }
+    .title-btn-wrap {
+      padding: 0 20px;
+      justify-content: space-between;
+      .chk-wrap {
+        label {
+          @include content-center-center;
+          width: 60px;height: 35px;
+          padding: 0;
+          font-weight: 600;
+          border-radius: 5px;
+          &.blue {
+            margin-left: 30px;
+            color: #247bf1;
+            border: 1px solid #247bf1;
+          }
+          &.red {
+            margin-left: 10px;
+            color: #f13e26;
+            border: 1px solid #f13e26;
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    li {
+      .btn-wrap {
+        margin-top: 0;
+      }
+      .chk-wrap {
+        label {
+          display: inline-flex;
+          width: 38px;height: 38px;
+          padding: 0;
+          &::before {
+            display: none;
+          }
+        }
+        .answer {
+          & + label {
+            background: url(../../images/common/ico_answer.png) no-repeat;
+          }
+          &:checked {
+            & + label {
+              background: url(../../images/common/ico_answer_chk.png) no-repeat;
+            }
+          }
+        }
+        .wrong {
+          & + label {
+            margin-left: 32px;
+            background: url(../../images/common/ico_wrong.png) no-repeat;
+          }
+          &:checked {
+            & + label {
+              background: url(../../images/common/ico_wrong_chk.png) no-repeat;
+            }
+          }
+        }
+      }      
+    }
+  }
+  .tooltip-wrap {
+    .tooltip.type02 {
+      left: 0;
     }
   }
 }
@@ -700,6 +804,17 @@
       }
       .fix-btm-bar {
         bottom: 0;
+      }
+    }
+  }
+
+  //교재
+  .sub08-01 {
+    .tab-list-type02 {
+      .chk-acc {
+        .scroll-inner {
+          height: 503px;
+        }
       }
     }
   }
