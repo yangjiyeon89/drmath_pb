@@ -89,7 +89,13 @@ $(function () {
       $('.nav-wrap').addClass('on');
       _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
       _gnbMenuLink.eq(1).find('.depth2').find('li').eq(3).find('a').addClass('on');
-      break;
+        break;
+      case 'page10_01':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(2).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        break;
     }
   }
 
