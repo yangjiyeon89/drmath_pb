@@ -291,6 +291,24 @@ body {
         }
       }
     }
+    &.hover02 {
+      position: relative;
+      padding-left: 48px;
+      &::before {
+        @include virtual-selector;
+        position: absolute;
+        left: 20px;
+        width: 18px;height: 18px;
+        background: url(../../images/common/ico_pen_type06.png) no-repeat;
+      }
+      &:hover {
+        color: #fff;
+        background: $color-main-purple;
+        &::before {
+          background: url(../../images/common/ico_pen_type06_on.png) no-repeat;
+        }
+      }
+    }
   }
   &.type03 {
     height: 44px;
@@ -430,30 +448,30 @@ body {
     background-color: $color-main-purple;
   }
 }
-
 .print {
 	background: url(../../images/common/ico_print.png);
 	background-size: 14px 13px !important;
 	background-size: contain;
 }
-
 .launch {
 	background: url(../../images/common/ico_launch.png);
 	background-size: 14px 14px !important;
 	background-size: contain;
 }
-
 .gallery {
 	background: url(../../images/common/ico_gallery_off.png);
 	background-size: 14px 14px !important;
 	background-size: contain;
 }
-
 .list {
 	background: url(../../images/common/ico_list_off.png);
 	background-size: 14px 11px !important;
 	background-size: contain;
-
+}
+.stu {
+	background: url(../../images/common/ico_stu.png);
+	background-size: 12px 14px !important;
+	background-size: contain;
 }
 
 [class^='tab-menu-'] {
@@ -571,6 +589,9 @@ body {
       }
     }
   }
+}
+.tab-menu-type05 {
+  
 }
 
 .tab-wrap {
@@ -1092,7 +1113,7 @@ input[type="checkbox"] {
           & + span {
             margin-left: 5px;
           }
-        } 
+        }
       }
     }  
   }
@@ -1159,6 +1180,10 @@ input[type="checkbox"] {
         & + span {
           margin-left: 5px;
         }
+      }
+      .name {
+        padding: 0 9px;
+        color: $color-sub33;
       }
       &::before {
         left: 50%;
