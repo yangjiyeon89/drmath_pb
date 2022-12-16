@@ -591,7 +591,29 @@ body {
   }
 }
 .tab-menu-type05 {
-  
+  width: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid $color-line-type02;
+  &.scroll-inner {
+    height: 758px;
+  }
+  li {
+    width: 100%;
+    div {
+      padding: 15px 20px;
+      cursor: pointer;
+      &.active {
+        padding: 14px 19px;
+        border: 1px solid $color-main-purple;
+      }
+    }
+  }
+  .tit {
+    display: block;
+    padding: 9px 20px 8px;
+    background-color: $color-box-type02;
+  }
 }
 
 .tab-wrap {
@@ -1118,6 +1140,67 @@ input[type="checkbox"] {
     }  
   }
 }
+.tab-list-type02 {
+  .inner {
+    display: flex;
+    width: 1020px;
+  }
+  .contents {
+    width: calc(100% - 250px);
+  }
+  .table {
+    height: 100%;
+    border: 1px solid $color-line-type02;
+    border-left: 0;
+    box-sizing: border-box;
+    .scroll-inner {
+      height: 678px;
+    }
+    li {
+      @include layout-justify-center;
+      height: 64px;
+      padding: 0 20px 0 26px;
+      border-bottom: 1px solid $color-line-type02;
+      &.title {
+        padding-left: 18px;
+        justify-content: flex-start;
+        em {
+          padding: 8px 16px;
+          border-radius: 18px;
+          background-color: $color-box-type02;
+          & + em {
+            margin-left: 6px;
+          }
+        }
+      }
+      .tit {
+        @include font(18px, 600);
+        margin-right: 20px;
+      }
+    }
+    .num {
+      display: inline-block;
+      width: 67px;
+      color: $color-main-purple;
+    }
+    .btn-wrap {
+      margin-top: 20px;
+      .hover {
+        padding-left: 44px;
+        margin-right: 10px;
+        &::before {
+          left: 20px;
+        }
+      }
+    }
+  }
+  .tooltip-wrap {
+    .tooltip {
+      top: 47px;left: 82px;
+    }
+  }
+  
+}
 
 .tooltip-wrap {
   position: relative;
@@ -1182,7 +1265,6 @@ input[type="checkbox"] {
         }
       }
       .name {
-        padding: 0 9px;
         color: $color-sub33;
       }
       &::before {
@@ -1191,6 +1273,10 @@ input[type="checkbox"] {
         width: 11px;height: 9px;
         transform: translateX(-50%);
         background: url(../../images/common/ico_arrow_tooltip_type02.png) no-repeat;
+      }
+      &.fix-w {
+        width: 130px;
+        box-sizing: border-box
       }
     }
   }
