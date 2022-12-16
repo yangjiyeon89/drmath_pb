@@ -306,6 +306,18 @@
 
 .sub08-01 .tooltip-wrap .tooltip.type02 { left: 0; }
 
+.sub10-que .container .inner { margin-top: 70px; padding: 0 20px 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sub10-que .tab-top { border-left: 1px solid #dddddd; border-right: 1px solid #dddddd; }
+
+.sub10-que .defalut-view { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; height: 759px; border: 1px solid #dddddd; border-top: 0; }
+
+.sub10-que .defalut-view .txt-box { margin-top: 25px; font-size: 18px; text-align: center; line-height: 1.5; }
+
+.sub10-que .defalut-view .txt-box em { color: #5a14be; font-weight: 600; }
+
+.sub10-que .defalut-view .btn-icon { margin: 25px auto 0; }
+
 @media (max-width: 1280px) { .login { padding-top: 0; }
   .login .login-wrap { width: 100%; height: 100vh; }
   .login .left-img { width: 500px; }

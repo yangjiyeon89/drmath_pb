@@ -132,6 +132,8 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .btn-book.active { background: url(../../images/common/ico_bookmark_on.png); }
 
+.btn-form { height: 40px; padding: 0 15px; color: #5a14be; font-size: 14px; border: 1px solid #5a14be; border-radius: 5px; }
+
 .preview { background: url(../../images/common/ico_preview.png); background-size: 14px !important; background-size: contain; }
 
 .replace { background: url(../../images/common/ico_replace.png); background-size: 14px 12px  !important; background-size: contain; }
@@ -177,6 +179,8 @@ body { font-family: 'Pretendard', sans-serif; }
 .list { background: url(../../images/common/ico_list_off.png); background-size: 14px 11px !important; background-size: contain; }
 
 .stu { background: url(../../images/common/ico_stu.png); background-size: 12px 14px !important; background-size: contain; }
+
+.download { background: url(../../images/common/ico_download_type02.png); background-size: 18px !important; background-size: contain; }
 
 [class^='tab-menu-'] { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -225,6 +229,14 @@ body { font-family: 'Pretendard', sans-serif; }
 .tab-menu-type05 li div.active { padding: 14px 19px; border: 1px solid #5a14be; }
 
 .tab-menu-type05 .tit { display: block; padding: 9px 20px 8px; background-color: #f6f6f6; }
+
+.tab-menu-type06 { display: -webkit-box; display: -ms-flexbox; display: flex; border: 1px solid #dddddd; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.tab-menu-type06 li { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 46px; border-radius: 6px; }
+
+.tab-menu-type06 li.active { -webkit-box-shadow: 0 0 0 1px #5a14be; box-shadow: 0 0 0 1px #5a14be; }
+
+.tab-menu-type06 li.active a { color: #5a14be; font-weight: 600; }
 
 .tab-wrap { position: relative; }
 
@@ -298,6 +310,8 @@ input[type="text"]::placeholder, input[type="number"]::placeholder, input[type="
 
 input[type="text"]:focus, input[type="number"]:focus, input[type="password"]:focus { outline-style: solid; }
 
+input[type="text"].w150, input[type="number"].w150, input[type="password"].w150 { width: 150px; }
+
 input[type="radio"], input[type="checkbox"] { border: 0; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; }
 
 input[type="radio"] + label, input[type="checkbox"] + label { position: relative; }
@@ -341,6 +355,8 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .select-btn::after { position: absolute; right: 15px; top: 50%; content: ""; display: block; clear: both; width: 13px; height: 7px; margin-top: -4px; background: url(../../images/common/select_arrow.png) no-repeat; background-size: contain; }
 
 .select-btn.active::after { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
+
+.select-btn.w90 { width: 90px; }
 
 .select-list { display: none; overflow-y: overlay; position: absolute; top: 100%; width: 100%; margin-top: -4px; background: #fff; border: 1px solid #dddddd; border-top: 0; border-radius: 0 0 6px 6px; -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 1; }
 
@@ -600,6 +616,30 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .table-wrap .txt-only { width: 87px; margin-left: 15px; text-align: center; }
 
+.table-wrap.type02 { margin-top: 20px; }
+
+.table-wrap.type02 .form-txt-chk { display: block; text-align: right; }
+
+.table-wrap.type02 table { width: 100%; margin-top: 10px; border-top: 1px solid #333333; border-bottom: 1px solid #333333; }
+
+.table-wrap.type02 tr:last-child th, .table-wrap.type02 tr:last-child td { border-bottom: 0; }
+
+.table-wrap.type02 th, .table-wrap.type02 td { height: 60px; border-bottom: 1px solid #dddddd; }
+
+.table-wrap.type02 th { font-weight: 600; text-align: center; border-right: 1px solid #dddddd; background-color: #f6f6f6; }
+
+.table-wrap.type02 th .req { top: -10px; margin-right: 0; margin-left: 5px; }
+
+.table-wrap.type02 td { padding-left: 20px; }
+
+.table-wrap.type02 .req { position: relative; top: -4px; display: inline-block; width: 3px; height: 3px; margin-right: 2px; border-radius: 100%; background-color: #fc3812; }
+
+.table-wrap.type02 .select-wrap + .select-wrap { margin-left: 6px; }
+
+.table-wrap.type02 .select-list li { height: auto; padding: 0; border-bottom: 0; }
+
+.table-wrap.type02 .select-list a { width: 100%; }
+
 .pop-wrap { display: none; position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; }
 
 .pop-wrap .pop-inner { position: relative; overflow: hidden; border-radius: 10px; background-color: #fff; }
@@ -613,6 +653,18 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap .pop-footer button { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 50px; font-size: 18px; background-color: #e6e6e6; }
 
 .pop-wrap .pop-footer button:last-child { color: #fff; font-weight: 500; background-color: #5a14be; }
+
+.pop-wrap .file-area { padding: 12px 0 7px; text-align: center; border: 1px solid #dddddd; background-color: #f6f6f6; }
+
+.pop-wrap .file-area span { display: block; color: #999; font-size: 14px; }
+
+.pop-wrap .file-area .file-box { display: inline-block; height: 27px; margin-top: 16px; }
+
+.pop-wrap .file-area label { padding: 8px 14px 8px 33px; background: #fff url(../../images/common/ico_flie.png) no-repeat left 16px center; background-size: 14px 12px; }
+
+.pop-wrap input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.pop-wrap .form-txt-chk { display: block; margin-top: 8px; padding-left: 22px; text-indent: -22px; }
 
 .pop-wrap.table-type .pop-inner { width: 600px; }
 
@@ -760,18 +812,6 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.paper-type .pop-content .pop-btn, .pop-wrap.paper-type .pop-content .file-area label { height: 36px; color: #666666; font-size: 14px; border: 1px solid #dddddd; border-radius: 3px; }
 
-.pop-wrap.paper-type .pop-content .file-area { padding: 12px 0 7px; text-align: center; border: 1px solid #dddddd; background-color: #f6f6f6; }
-
-.pop-wrap.paper-type .pop-content .file-area span { display: block; color: #999; font-size: 14px; }
-
-.pop-wrap.paper-type .pop-content .file-area .file-box { display: inline-block; height: 27px; margin-top: 16px; }
-
-.pop-wrap.paper-type .pop-content .file-area label { padding: 8px 14px 8px 33px; background: #fff url(../../images/common/ico_flie.png) no-repeat left 16px center; background-size: 14px 12px; }
-
-.pop-wrap.paper-type .pop-content input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-
-.pop-wrap.paper-type .pop-content .form-txt-chk { display: block; margin-top: 8px; padding-left: 22px; text-indent: -22px; }
-
 .pop-wrap.table-type02 .pop-inner { width: 680px; }
 
 .pop-wrap.table-type02 .input-radio-type01 { margin-bottom: 10px; }
@@ -902,7 +942,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type.type02 .td { width: calc(100% - 70px); padding-right: 34px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.pop-wrap.answer-sheet-type.type02 .sheet-list .td { padding-left: 20px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+.pop-wrap.answer-sheet-type.type02 .sheet-list .td { padding-left: 20px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; cursor: pointer; }
 
 .pop-wrap.answer-sheet-type.type02 .sheet-list .td span { width: 184px; }
 

@@ -733,6 +733,40 @@
     }
   }
 }
+// 운영관리
+.sub10-que {
+  .container {
+    .inner {
+      margin-top: 70px;
+      padding: 0 20px 30px;
+      box-sizing: border-box;
+    }
+  }
+  .tab-top {
+    border-left: 1px solid $color-line-type02;
+    border-right: 1px solid $color-line-type02;
+  }
+  .defalut-view {
+    @include layout-center-center;
+    flex-direction: column;
+    height: 759px;
+    border: 1px solid $color-line-type02;
+    border-top: 0;
+    .txt-box {
+      margin-top: 25px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.5;
+      em {
+        color: $color-main-purple;
+        font-weight: 600;
+      }
+    }
+    .btn-icon {
+      margin: 25px auto 0;
+    }
+  }
+}
 
 
 @media (max-width: 1280px) {

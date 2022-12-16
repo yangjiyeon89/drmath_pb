@@ -346,7 +346,6 @@ body {
   background: #7e7e7e url(../../images/common/ico_arrow_step.png) no-repeat left 20px center;
   background-size: 18px 8px;
 }
-
 .btn-book {
   width: 14px;
   height: 20px;
@@ -357,6 +356,14 @@ body {
   &.active {
     background: url(../../images/common/ico_bookmark_on.png);
   }
+}
+.btn-form {
+  height: 40px;
+  padding: 0 15px;
+  color: $color-main-purple;
+  font-size: 14px;
+  border: 1px solid $color-main-purple;
+  border-radius: 5px;
 }
 
 .preview {
@@ -471,6 +478,11 @@ body {
 .stu {
 	background: url(../../images/common/ico_stu.png);
 	background-size: 12px 14px !important;
+	background-size: contain;
+}
+.download {
+  background: url(../../images/common/ico_download_type02.png);
+	background-size: 18px !important;
 	background-size: contain;
 }
 
@@ -613,6 +625,25 @@ body {
     display: block;
     padding: 9px 20px 8px;
     background-color: $color-box-type02;
+  }
+}
+.tab-menu-type06 {
+  display: flex;
+  border: 1px solid $color-line-type02;
+  border-radius: 6px;
+  box-sizing: border-box;
+  li {
+    @include content-center-center;
+    flex: 1;
+    height: 46px;
+    border-radius: 6px;
+    &.active {
+      box-shadow: 0 0 0 1px #5a14be;
+      a {
+        color: $color-main-purple;
+        font-weight: 600;
+      }
+    }
   }
 }
 
@@ -772,6 +803,9 @@ input[type="text"], input[type="number"], input[type="password"] {
   &:focus {
     outline-style: solid;
   }
+  &.w150 {
+    width: 150px;
+  }
 }
 input[type="radio"], input[type="checkbox"] {
   @include inputnone;
@@ -897,6 +931,9 @@ input[type="checkbox"] {
     &::after {
       transform: rotate(-180deg);
     }
+  }
+  &.w90 {
+    width: 90px;
   }
 }
 .select-list {
@@ -1519,6 +1556,66 @@ input[type="checkbox"] {
     margin-left: 15px;
     text-align: center;
   }
+  &.type02 {
+    margin-top: 20px;
+    .form-txt-chk {
+      display: block;
+      text-align: right;
+    }
+    table {
+      width: 100%;
+      margin-top: 10px;
+      border-top: 1px solid $color-sub33;
+      border-bottom: 1px solid $color-sub33;
+    }
+    tr:last-child {
+      th, td {
+        border-bottom: 0;
+      }
+    }
+    th, td {
+      height: 60px;
+      border-bottom: 1px solid $color-line-type02;
+    }
+    th {
+      font-weight: 600;
+      text-align: center;
+      border-right: 1px solid $color-line-type02;
+      background-color: $color-box-type02;
+      .req {
+        top: -10px;
+        margin-right: 0;
+        margin-left: 5px;
+      }
+    }
+    td {
+      padding-left: 20px;
+    }
+    .req {
+      position: relative;
+      top: -4px;
+      display: inline-block;
+      width: 3px;height: 3px;
+      margin-right: 2px;
+      border-radius: 100%;
+      background-color: $color-font-red;
+    }
+    .select-wrap {
+      & + .select-wrap {
+        margin-left: 6px;
+      }
+    }
+    .select-list {
+      li {
+        height: auto;
+        padding: 0;
+        border-bottom: 0;
+      }
+      a {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .pop-wrap {
@@ -1558,6 +1655,43 @@ input[type="checkbox"] {
         background-color: $color-main-purple;
       }
     }
+  }
+  .file-area {
+    padding: 12px 0 7px;
+    text-align: center;
+    border: 1px solid $color-line-type02;
+    background-color: $color-box-type02;
+    span {
+      display: block;
+      color: #999;
+      font-size: 14px;
+    }
+    .file-box {
+      display: inline-block;
+      height: 27px;
+      margin-top: 16px;
+    }
+    label {
+      padding: 8px 14px 8px 33px;
+      background: #fff url(../../images/common/ico_flie.png) no-repeat left 16px center;
+      background-size: 14px 12px;
+    }
+  }
+  input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+  }
+  .form-txt-chk {
+    display: block;
+    margin-top: 8px;
+    padding-left: 22px;
+    text-indent: -22px;
   }
   &.table-type {
     .pop-inner {
@@ -1889,43 +2023,6 @@ input[type="checkbox"] {
         border: 1px solid $color-line-type02;
         border-radius: 3px;
       }
-      .file-area {
-        padding: 12px 0 7px;
-        text-align: center;
-        border: 1px solid $color-line-type02;
-        background-color: $color-box-type02;
-        span {
-          display: block;
-          color: #999;
-          font-size: 14px;
-        }
-        .file-box {
-          display: inline-block;
-          height: 27px;
-          margin-top: 16px;
-        }
-        label {
-          padding: 8px 14px 8px 33px;
-          background: #fff url(../../images/common/ico_flie.png) no-repeat left 16px center;
-          background-size: 14px 12px;
-        }
-      }
-      input[type="file"] {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip:rect(0,0,0,0);
-        border: 0;
-      }
-      .form-txt-chk {
-        display: block;
-        margin-top: 8px;
-        padding-left: 22px;
-        text-indent: -22px;
-      }
     }
   }
   &.table-type02 {
@@ -2222,6 +2319,7 @@ input[type="checkbox"] {
         .td {
           padding-left: 20px;
           justify-content: flex-start;
+          cursor: pointer;
           span {
             width: 184px;
           }
