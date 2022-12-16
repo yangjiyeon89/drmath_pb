@@ -84,6 +84,12 @@ $(function () {
         _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
+      case 'page06_04':
+      _gnbMenuLink.eq(1).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(3).find('a').addClass('on');
+      break;
     }
   }
 
@@ -137,22 +143,14 @@ $(function () {
         _this.parents('.contents').find('.content').removeClass('on');
         _this.parents('.contents').find('.content').eq(_idx).addClass('on');
       }
-    } else if(_this.parents('ul').hasClass('ui-tab-type02')){
-      let _idx = $(this).data('idx');
-
-      if (!_this.hasClass('active')) {
-        _this.parents('li').siblings('li').find(tabBtn).removeClass('active');
-        _this.siblings().removeClass('active');
-        _this.addClass('active');
-        _cnt.removeClass('on');
-        _cnt.eq(_idx).addClass('on');
-      }
     } else {
       if (!_this.hasClass('active')) {
         _this.siblings().removeClass('active');
         _this.addClass('active');
         _cnt.removeClass('on');
         _cnt.eq(_idx).addClass('on');
+
+        console.log(_idx)
       }
     }
   }

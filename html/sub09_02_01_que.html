@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/guide.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="full-pop-que">
+    <div class="full-pop-wrap">
+      <div class="pop-header">
+        <div class="title"><span class="txt">분석표 만들기</span></div>
+        <button type="button" class="pop-btn"></button>
+      </div>
+      <div class="pop-content">
+        <div class="view-box-wrap">
+          <div class="view-box scroll-inner">
+            <ul class="que-setting-list sub09-01">
+              <li>
+                <span class="tit">분석기간</span>
+                <div class="opt-wrap">
+                  <div class="input-radio-type01">
+                    <input type="radio" id="radio01_01" name="radio01" class="rdo-menu" data-toggle=".ui-rdo-01">
+                    <label for="radio01_01">월 선택</label>
+                    <input type="radio" id="radio01_02" name="radio01" class="rdo-menu" data-toggle=".ui-rdo-02">
+                    <label for="radio01_02">기간 설정</label>
+                  </div>
+                  <div class="select-wrap rdo-cnt ui-rdo-01">
+                    <button type="button" class="select-btn">월을 선택해주세요.</button>
+                    <ul class="select-list">
+                      <li>
+                        <a href="javascript:;">1월</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">2월</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">3월</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="date-wrap rdo-cnt ui-rdo-02">
+                    <div class="date-box">
+                      <input type="text" id="from" name="from" autocomplete="off">
+                    </div>
+                    <span>~</span>
+                    <div class="date-box">
+                      <input type="text" id="to" name="to" autocomplete="off">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="a-center">
+                <span class="tit">분석범위</span>
+                <div class="opt-wrap">
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-line">기본</button>
+                    <button type="button" class="btn-line">일일</button>
+                    <button type="button" class="btn-line">주간</button>
+                    <button type="button" class="btn-line">입학</button>
+                    <button type="button" class="btn-line">연습</button>
+                    <button type="button" class="btn-line">숙제</button>
+                    <button type="button" class="btn-line">내신대비</button>
+                    <button type="button" class="btn-line">모의고사</button>
+                    <button type="button" class="btn-line">수능대비</button>
+                    <button type="button" class="btn-line">오답</button>
+                  </div>
+                </div>
+              </li>
+              <li class="a-center">
+                <span class="tit">분석 영역</span>
+                <div class="opt-wrap">
+                  <div class="btn-wrap type02">
+                    <button type="button" class="btn-line">주별</button>
+                    <button type="button" class="btn-line">단원별</button>
+                    <button type="button" class="btn-line">난이도별</button>
+                    <button type="button" class="btn-line">영역별</button>
+                    <button type="button" class="btn-line">학습내역</button>
+                    <button type="button" class="btn-line">단원별</button>
+                  </div>
+                </div>
+              </li>
+              <li class="a-center">
+                <span class="tit">타이틀</span>
+                <div class="opt-wrap">
+                  <input class="ip-tit" type="text">
+                </div>
+              </li>
+              <li>
+                <span class="tit">표지 템플릿</span>
+                <div class="opt-wrap">
+                  <div class="swiper template-swiper">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../images/sub/template_temp.jpg" alt="">
+                          <button type="button" class="btn-star"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+					          <div class="swiper-button-prev"></div>
+                  </div>
+                  <div class="btn-color-wrap">
+                    <button type="button" class="btn-color type01"></button>
+                    <button type="button" class="btn-color type02"></button>
+                    <button type="button" class="btn-color type03"></button>
+                    <button type="button" class="btn-color type04"></button>
+                    <button type="button" class="btn-color type05"></button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span class="tit">코멘트</span>
+                <div class="opt-wrap">
+                  <textarea name="" id="" cols="" rows="6" placeholder="내용을 입력해주세요."></textarea>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="view-box">
+            <div class="preview-box">
+              <div class="tit">
+                <i class="preview-file"></i>
+                <span>문제지 미리보기</span>
+              </div>
+              <div class="cnt">
+                <div class="img-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="step-btn-wrap single">
+        <button type="button" class="btn-step end">생성</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function(){
+    let templateSwiper = new Swiper(".template-swiper .swiper-container", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      // loop: true,
+      slideToClickedSlide: true,
+      navigation: {
+        nextEl: ".template-swiper .swiper-button-next",
+        prevEl: ".template-swiper .swiper-button-prev",
+      },
+      on: {
+        slideChange: function () {
+          $('.swiper-slide').removeClass('active');
+          $('.swiper-slide').eq(this.realIndex).addClass('active');
+        }
+      }
+    });
+
+    let slideActing = $('.template-swiper .swiper-slide');
+
+    slideActing.on('click', function(){
+      let _this = $(this);
+
+      _this.toggleClass('on');
+    })
+
+    // 라디오 버튼
+    let rdoBtn = $('.opt-wrap input[type="radio"]')
+
+    rdoBtn.on('click', function(evt) {
+      $(this).toggleClass('on');
+      var sel = this.getAttribute('data-toggle');
+      $('.rdo-cnt').removeClass('on').filter(sel).addClass('on');
+    });
+
+  });
+
+  $(function () {
+    var dateFormat = "y.mm.dd",
+      from = $("#from")
+      .datepicker({
+        defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "y.mm.dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+      })
+      .on("change", function () {
+        to.datepicker("option", "minDate", getDate(this));
+      }),
+      to = $("#to").datepicker({
+        defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "y.mm.dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+
+      })
+      .on("change", function () {
+        from.datepicker("option", "maxDate", getDate(this));
+      });
+
+    function getDate(element) {
+      var date;
+      try {
+        date = $.datepicker.parseDate(dateFormat, element.value);
+      } catch (error) {
+        date = null;
+      }
+
+      return date;
+    }
+    $(".ui-datepicker-trigger").removeAttr("title");
+
+  })
+</script>
+</html>

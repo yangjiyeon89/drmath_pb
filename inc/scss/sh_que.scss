@@ -2,14 +2,30 @@
 @import "_mixin.scss";
 @import "_setting.scss";
 @import url(../css/font.css);
-/* icon */
+//아이콘
 i {
 	&.change {
 		background: url(../../images/sub/ic-change.png) no-repeat;
 		background-size: 18px !important;
 		background-size: contain;
 	}
+	&.chart {
+		background: url(../../images/common/ico_chart.png) no-repeat;
+		background-size: 14px !important;
+		width: 14px; height: 15px;
+	}
+	&.graph {
+		background: url(../../images/common/ico_graph.png) no-repeat;
+		background-size: 14px !important;
+		width: 14px; height: 15px;
+	}
+	&.ico_chart_type02 {
+		background: url(../../images/common/ico_chart_type02.png) no-repeat;
+		background-size: 18px !important;
+	}
 }
+
+
 
 
 /* range slider */
@@ -37,8 +53,6 @@ i {
 		height: 4px;
 	}	
 }
-
-
 /* btn-step */
 .btn-step {
 	&.next {
@@ -98,7 +112,6 @@ i {
   }
 }
 
-
 /* que-badge */
 .que-badge {
 	@include content-center-center;
@@ -126,8 +139,6 @@ i {
 		color: #666666;
 	}
 }
-
-
 /* que */
 .full-pop-que {
 	width: 100%;
@@ -154,6 +165,9 @@ i {
 			.title {
 				@include layout-center;
 				gap: 30px;
+				.txt {
+					@include font(20px, 700);
+				}
 				li {
 					position: relative;
 					@include font(14px, 400);
@@ -757,7 +771,6 @@ i {
 							}
 						}
 						.tit {
-							@include content-center;
 							width: 92px;
 							flex-shrink: 0;
 							@include font(16px, 700);
@@ -804,6 +817,11 @@ i {
 								width: 84px;
 								border-radius: 3px;
 								text-align: center;
+							}
+							&.type02 {
+								.btn-line {
+									width: 147px;
+								}
 							}
 						}
 						.range-wrap {
@@ -897,6 +915,44 @@ i {
 								display: none;
 							}
 						}
+						textarea {
+							width: 100%;
+							padding: 16px;
+							border: 1px solid $color-line-type02;
+							border-radius: 6px;
+							resize: none;
+							box-sizing: border-box;
+						}
+						//분석표 만들기
+						&.sub09-01 {
+							.tit {
+								padding: 0;
+							}
+							.select-wrap {
+								width: 170px;
+								.select-btn {
+									width: 170px;
+								}
+							}
+							.rdo-cnt {
+								margin-top: 13px;
+								display: none;
+								&.on {
+									display: block;
+								}
+							}
+							.ip-tit {
+								width: 100%;
+							}
+							> li {
+								&:nth-child(1) {
+									padding: 25px 0;
+								}
+								&.a-center {
+									align-items: center;
+								}
+							}
+						}
 					}
 					.preview-box {
 						.tit {
@@ -914,6 +970,10 @@ i {
 								background-size: contain;
 								margin-right: 13px;
 							}
+						}
+						.cnt {
+							margin: 0 50px;
+							border: 1px solid $color-line-type02;
 						}
 						.img-box {
 							width: 100%;
@@ -1179,31 +1239,6 @@ i {
 		}
 	}
 }
-
-
-/* popup has-check */
-.pop-wrap {
-	&.alert-type {
-		&.has-check {
-			.check-wrap {
-				padding-bottom: 50px;
-				label {
-					font-size: 16px;
-				}
-			}
-		}
-	}
-}
-/* pop-wrap alert-type change */
-.pop-wrap {
-	&.alert-type {
-		&.change {
-			.pop-inner {
-				width: 400px;
-			}
-		}
-	}
-}
 /* que-preview-wrap */
 .que-preview-wrap {
 	position: absolute;
@@ -1357,6 +1392,150 @@ i {
 			em {
 				font-weight: 600;
 				color: #000;
+			}
+		}
+	}
+}
+
+
+//수업진행 분석표
+.sub09-01 {
+	.detail-cnt {
+		&.tab-list-type01 {
+			.tab-top {
+				position: relative;
+				margin-bottom: 15px;
+				.btn-icon {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			.table {
+				span {
+					&:nth-child(1) {
+						width: 5%;
+						&.tag-type01 {
+							width: auto;
+							padding: 4px 10px 3px;
+							margin:0 10px;
+							font-size: 12px;
+						}
+					}
+					&:nth-child(2) {
+						width: 8%;
+					}
+					&:nth-child(3) {
+						width: 60%;
+					}
+					&:nth-child(4) {
+						width: 10%;
+					}
+					&:nth-child(5) {
+						width: 7%;
+					} 
+					&:nth-child(6) {
+						width: 7%;
+					}
+				}
+				.no-data {
+					width: 100%;
+					height: 100%;
+					@include layout-center-center;
+					flex-direction: column;
+					margin-top: -20px;
+					.txt {
+						@include font(18px, 700);
+						text-align: center;
+						line-height: 28px;
+						margin: 20px 0 10px 0;
+						em {
+							@include font(18px, 700);
+							color: $color-main-purple;
+						}
+					}
+				}
+			}
+			.scroll-inner {
+				position: relative;
+				height: 701px;
+				@media (max-width: 1280px) {
+					height: 510px;
+				}
+			}
+		}
+	}
+}
+// 팝업
+.pop-wrap {
+	&.alert-type {
+		&.change {
+			.pop-inner {
+				width: 400px;
+			}
+		}
+		&.has-check {
+			.check-wrap {
+				padding-bottom: 50px;
+				label {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	//수업진행 분석표 상세 팝업
+	&.table-detail-pop {
+		.pop-inner {
+			width: 600px;
+		}
+		.pop-content {
+			padding: 0 30px 30px 30px;
+			.tit {
+				display: block;
+				@include font(16px, 600);
+			}
+		}
+		.detail-box {
+			@include layout-justify-center;
+			border-top: 1px solid $color-line-type02;
+			padding: 15px 20px;
+			&:first-child {
+				border-top: 1px solid #000;
+			}
+			.tit {
+				.desc { 
+					@include font(14px, 400);
+					color: $color-font66;
+				}
+			}
+			.toggle-wrap {
+				@include content-center;
+				.label {
+					@include font(16px, 600);
+					display: inline-block;
+					margin-left: 5px;
+				}
+			}
+		}
+		.textarea-box {
+			display: flex;
+			flex-direction: row;
+			border-top: 1px solid $color-line-type02;
+			border-bottom: 1px solid #000;
+			padding: 10px 10px 10px 0;
+			.tit {
+				width: 125px;
+				flex-shrink: 0;
+				padding: 5px 0 0 20px;
+				box-sizing: border-box;
+			}
+			textarea {
+				width: 100%;
+				padding: 16px;
+				border: 1px solid $color-line-type02;
+				border-radius: 6px;
+				resize: none;
+				box-sizing: border-box;
 			}
 		}
 	}
