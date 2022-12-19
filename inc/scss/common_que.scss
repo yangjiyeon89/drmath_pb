@@ -831,11 +831,17 @@ input[type="text"], input[type="number"], input[type="password"] {
   &.w150 {
     width: 150px;
   }
+  &.w182 {
+    width: 182px;
+  }
   &.w186 {
     width: 186px;
   }
   &.w190 {
     width: 190px;
+  }
+  &.wfull {
+    width: 100%;
   }
 }
 input[type="radio"], input[type="checkbox"] {
@@ -963,11 +969,17 @@ input[type="checkbox"] {
       transform: rotate(-180deg);
     }
   }
+  &.w82 {
+    width: 82px;
+  }
   &.w90 {
     width: 90px;
   }
   &.w138 {
     width: 138px;
+  }
+  &.w152 {
+    width: 152px;
   }
 }
 .select-list {
@@ -1626,8 +1638,8 @@ input[type="checkbox"] {
       border-bottom: 1px solid $color-line-type02;
     }
     th {
+      padding-left: 20px;
       font-weight: 600;
-      text-align: center;
       border-right: 1px solid $color-line-type02;
       background-color: $color-box-type02;
       .req {
@@ -2624,10 +2636,110 @@ input[type="checkbox"] {
       width: 600px;
     }
     .pop-content {
-      @include layout-justify-center;
+      @include layout-justify-start;
       padding: 0 30px 30px;
       > div {
+        overflow: hidden;
         width: 265px;
+        border: 1px solid $color-line-type02;
+        border-radius: 6px;
+      }
+      .left-cnt {
+        .scroll-inner {
+          height: 334px;
+          padding: 18px 20px;
+        }
+      }
+      .stu-list {
+        .scroll-inner {
+          height: 116px;
+          padding: 10px 20px;
+        }
+        .select {
+          display: block;
+          width: 100%;
+          padding: 10px 16px 9px;
+          text-align: left;
+          border: 1px solid $color-line-type02;
+          border-radius: 6px;
+          & + .select {
+            margin-top: 6px;
+          }
+        }
+      }
+      .tit {
+        display: block;
+        padding: 11px 0 10px;
+        font-weight: 600;
+        text-align: center;
+        border-bottom: 1px solid $color-line-type02;
+        background-color: $color-box-type02;
+      }
+      .cnt-list {
+        .cnt {
+          display: block;
+          padding: 14px 0;
+          color: $color-main-purple;
+          @include font(18px, 600);
+          text-align: center;
+          border: 1px solid $color-main-purple;
+          border-radius: 6px;
+          & + .cnt {
+            margin-top: 10px;
+          }
+        }
+      }
+      .box {
+        &:first-child {
+          border-bottom: 1px solid $color-line-type02;
+          .txt {
+            height: 116px;
+          }
+        }
+        .txt {
+          @include layout-center-center;
+          height: 183px;
+          text-align: center;
+          color: #999;
+        }
+      }
+      .search-box {
+        width: 100%;
+        padding: 10px 20px 0;
+        margin: auto;
+        box-sizing: border-box;
+        input[type="text"] {
+          background-color: $color-box-type02;
+        }
+        .btn-search {
+          right: 30px;
+          margin-top: -6px;
+        }
+      }
+      .select-wrap {
+        display: block;
+        .scroll-inner {
+          height: 183px;
+          padding: 10px 20px;
+          box-sizing: border-box;
+        }
+        .select-stu {
+          @include layout-justify-center;
+          padding: 10px 12px 9px 16px;
+          color: $color-main-purple;
+          font-weight: 600;
+          border: 1px solid #dbcbf3;
+          border-radius: 6px;
+          background-color: #ebe3ff;
+          & + .select-stu {
+            margin-top: 6px;
+          }
+          .del {
+            width: 20px;height: 20px;
+            border-radius: 100%;
+            background: url(../../images/common/ico_delete_type04.png) no-repeat;
+          }
+        }
       }
     }
   }

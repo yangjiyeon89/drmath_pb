@@ -412,7 +412,10 @@ $(function () {
     let _this = $(this);
     let _txt = $(this).text();
 
-    _this.parents('.box').next('.box').find('.select-wrap').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>')
+    _this.parents('.box').next('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+  })
+  $(document).on('click', '.select-stu .del', function(){
+    $(this).parents('.select-stu').remove();
   })
   
 });
