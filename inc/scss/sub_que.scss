@@ -855,9 +855,21 @@
   .table-type {
     .pop-inner {
       width: 450px;
-      td {
-        padding: 11px 20px;
+      th {
+        padding-left: 20px;
+        text-align: left;
       }
+      td {
+        position: relative;
+        height: 60px;
+        padding: 11px 20px;
+        box-sizing: border-box;
+      }
+    }
+    .btn-form {
+      position: absolute;
+      right: 20px;top: 10px;
+      font-size: 16px;
     }
   }
   .tab-list-type01 {
@@ -1040,7 +1052,7 @@
     .tab-list-type01 {
       .chk-acc {
         .scroll-inner {
-          height: 377px;
+          height: 400px;
         }
       }
     }

@@ -364,7 +364,11 @@
 
 .sub10-que .table-type .pop-inner { width: 450px; }
 
-.sub10-que .table-type .pop-inner td { padding: 11px 20px; }
+.sub10-que .table-type .pop-inner th { padding-left: 20px; text-align: left; }
+
+.sub10-que .table-type .pop-inner td { position: relative; height: 60px; padding: 11px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sub10-que .table-type .btn-form { position: absolute; right: 20px; top: 10px; font-size: 16px; }
 
 .sub10-que .tab-list-type01 .chk-acc .scroll-inner { height: 566px; }
 
@@ -419,4 +423,4 @@
   .sub10-que .defalut-view { height: 570px; }
   .sub10-que .container .inner { padding: 0 20px; }
   .sub10-que .form-type .scroll-inner { height: 466px; }
-  .sub10-que .tab-list-type01 .chk-acc .scroll-inner { height: 377px; } }
+  .sub10-que .tab-list-type01 .chk-acc .scroll-inner { height: 400px; } }
