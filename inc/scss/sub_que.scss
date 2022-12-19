@@ -736,6 +736,7 @@
 // 운영관리
 .sub10-que {
   .container {
+    overflow: hidden;
     .inner {
       margin-top: 70px;
       padding: 0 20px 30px;
@@ -850,14 +851,27 @@
       }
     }
   }
-}
-// 원관리
-.sub10-01 {
+  //선생님 등록 팝업
+  .table-type {
+    .pop-inner {
+      width: 450px;
+      td {
+        padding: 11px 20px;
+      }
+    }
+  }
   .tab-list-type01 {
     .chk-acc {
       .scroll-inner {
         height: 566px;
       }
+    }
+  }
+}
+// 학생관리
+.sub10-01 {
+  .tab-list-type01 {
+    .chk-acc {
       span {
         &:nth-child(1) {
           width: 6%;
@@ -888,6 +902,36 @@
         }
         &:nth-child(10) {
           width: 10%;
+        }
+      }
+    }
+  }
+}
+// 선생님관리
+.sub10-02 {
+  .tab-list-type01 {
+    .chk-acc {
+      span {
+        &:nth-child(1) {
+          width: 6%;
+        }
+        &:nth-child(2) {
+          width: 9%;
+        }
+        &:nth-child(3) {
+          width: 28%;
+        }
+        &:nth-child(4) {
+          width: 13%;
+        }
+        &:nth-child(5) {
+          width: 15%;
+        }
+        &:nth-child(6) {
+          width: 18%;
+        }
+        &:nth-child(7) {
+          width: 11%;
         }
       }
     }
@@ -992,11 +1036,6 @@
       .scroll-inner {
         height: 466px;
       }
-    }
-  }
-  .sub10-01 {
-    .container {
-      overflow: hidden;
     }
     .tab-list-type01 {
       .chk-acc {

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="page10_01 sub10-que">
+    <div class="header">
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">수업준비</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">맞춤문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재연동</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">AI 기출 마스터</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">수업진행</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">학습현황</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재</a>
+                </li>
+                <li>
+                  <a href="javascript:;">분석표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">운영관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">원 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">출결 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">결제 관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">회원권 결제</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 결제</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="javascirpt:;"><span>가이드</span></a>
+            <a href="javascirpt:;"><span>고객센터</span></a>
+            <a href="javascirpt:;"><span>김천재님</span></a>
+            <a href="javascirpt:;"><span>로그아웃</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container sub10-02">
+      <div class="inner">
+        <div class="tab-wrap">
+          <ul class="tab-menu-type01">
+            <li class="ui-tab-btn">
+              <a href="javascript:;">학생 관리</a>
+            </li>
+            <li class="ui-tab-btn active">
+              <a href="javascript:;">선생님 관리</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">클래스 관리</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">앱 관리</a>
+            </li>
+          </ul>
+          <div class="contents on">
+            <div class="tab-list-type01">
+              <div class="tab-top">
+                <div class="left-wrap">
+                  <div class="select-wrap">
+                    <button type="button" class="select-btn w90">전체</button>
+                    <ul class="select-list">
+                      <li>
+                        <a href="javascript:;">이름</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">상태</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">연락처</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="search-box">
+                    <input type="text" placeholder="검색" class="search">
+                    <button type="button" class="btn-search"></button>
+                  </div>
+                </div>
+                <div class="button-wrap">
+                  <button type="button" class="btn-icon type04 pop-btn" data-pop="add-pop"><i class="add-type04"></i> 등록</button>
+                  <button type="button" class="btn-icon type04"><i class="delete"></i> 삭제</button>
+                </div>
+              </div>
+              <div class="table chk-acc">
+                <div class="fix-head">
+                  <span>
+                    <input type="checkbox" id="chk100_01" class="allCheck">
+                    <label for="chk100_01"></label>
+                  </span>
+                  <span>이름</span>
+                  <span>클래스명</span>
+                  <span>인원</span>
+                  <span>로그인 정보</span>
+                  <span>연락처</span>
+                  <span>상세 정보</span>
+                </div>
+                <div class="tbody">
+                  <div class="scroll-inner">
+                    <div class="test">
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_02">
+                          <label for="chk100_02"></label>
+                        </span>
+                        <span>김천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>11</span>
+                        <span>Chunjae_1</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_03">
+                          <label for="chk100_03"></label>
+                        </span>
+                        <span>이천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>11</span>
+                        <span>Chunjae_2</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_04">
+                          <label for="chk100_04"></label>
+                        </span>
+                        <span>정천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>17</span>
+                        <span>Chunjae_3</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_05">
+                          <label for="chk100_05"></label>
+                        </span>
+                        <span>유천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>10</span>
+                        <span>Chunjae_4</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_06">
+                          <label for="chk100_06"></label>
+                        </span>
+                        <span>김천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>-</span>
+                        <span>Chunjae_5</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_07">
+                          <label for="chk100_07"></label>
+                        </span>
+                        <span>이천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>-</span>
+                        <span>Chunjae_6</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_08">
+                          <label for="chk100_08"></label>
+                        </span>
+                        <span>정천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>-</span>
+                        <span>Chunjae_7</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_09">
+                          <label for="chk100_09"></label>
+                        </span>
+                        <span>유천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>-</span>
+                        <span>Chunjae_8</span>
+                        <span>미등록</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                      <div class="col">
+                        <span>
+                          <input type="checkbox" id="chk100_10">
+                          <label for="chk100_10"></label>
+                        </span>
+                        <span>김천재</span>
+                        <span class="tit">겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강, 겨울특강, 여름특강, 겨울특강, 여름특강, 여름특강, 겨울특강</span>
+                        <span>-</span>
+                        <span>Chunjae_9</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="paging-wrap">
+              <a href="javascript:;" class="first"></a>
+              <a href="javascript:;" class="prev"></a>
+              <a href="javascript:;" class="page active"><span>1</span></a>
+              <a href="javascript:;" class="page"><span>2</span></a>
+              <a href="javascript:;" class="page"><span>3</span></a>
+              <a href="javascript:;" class="page"><span>4</span></a>
+              <a href="javascript:;" class="page"><span>5</span></a>
+              <a href="javascript:;" class="next"></a>
+              <a href="javascript:;" class="last"></a>
+            </div>
+          </div>
+          <div class="contents">
+            [ sub10_02_que] 탭으로 구현
+          </div>
+          <div class="contents">
+            [ sub10_03_que] 탭으로 구현
+          </div>
+          <div class="contents">
+            [ sub10_04_que] 탭으로 구현
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dim"></div>
+    <!-- 학생 등록 팝업 -->
+    <div class="pop-wrap add-type" data-pop="add-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <div class="tab-wrap">
+            <ul class="tab-menu-type06">
+              <li class="ui-tab-btn active">
+                <a href="javascript:;">일괄</a>
+              </li>
+              <li class="ui-tab-btn">
+                <a href="javascript:;">개별</a>
+              </li>
+            </ul>
+            <div class="contents on">
+              <!-- 파일 첨부 전 -->
+              <div class="file-wrap">
+                <div class="file-area">
+                  <div class="row">
+                    <span class="txt">파일 끌어놓기 또는 첨부로 학생 명단을 추가하세요.</span>
+                    <div class="file-box">
+                      <label for="file">파일 첨부</label>
+                      <input type="file" id="file">
+                    </div>
+                  </div>
+                  <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt=""> 최대 00Mb까지 등록이 가능합니다.</span>
+                </div>
+                <button type="button" class="btn-icon type02"><i class="download"></i> 파일 다운로드</button>
+              </div>
+  
+              <!-- 파일 첨부 후 -->
+              <div class="file-wrap">
+                <div class="file-area">
+                  <div class="row">
+                    <span class="txt">통계반.xls</span>
+                    <div class="file-box">
+                      <label for="file">파일 첨부</label>
+                      <input type="file" id="file">
+                    </div>
+                  </div>
+                </div>
+                <!-- 성공 -->
+                <div class="file-state success">
+                  <i></i>
+                  <span><img src="../images/common/ico_success.png" alt="">등록 성공</span>
+                </div>
+                <!-- 실패 -->
+                <div class="file-state fail">
+                  <i></i>
+                  <span><img src="../images/common/ico_fail.png" alt="">등록 실패</span>
+                  <div class="fail-list">
+                    <span class="tit">등록 실패 내역</span>
+                    <div class="cnt">
+                      <span>1) 김천재 2) 이천재 …</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="table-wrap type02">
+                <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
+                <div class="scroll-inner">
+                  <table>
+                    <colgroup>
+                      <col width="20%">
+                      <col width="*">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>이름<em class="req"></em></th>
+                        <td>
+                          <input type="text" maxlength="10" class="w150">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학년<em class="req"></em></th>
+                        <td>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">초</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">중</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">고</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">1학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">2학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">3학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">4학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">5학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">6학년</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>상태<em class="req"></em></th>
+                        <td>
+                          <div class="input-radio-type01">
+                            <input type="radio" id="radio101_01" name="radio101" checked>
+                            <label for="radio101_01">재원</label>
+                            <input type="radio" id="radio101_02" name="radio101">
+                            <label for="radio101_02">휴원</label>
+                            <input type="radio" id="radio101_03" name="radio101">
+                            <label for="radio101_03">퇴원</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 연락처</th>
+                        <td>
+                          <input type="number" placeholder="숫자만 입력" class="w190">
+                          <button type="button" class="btn-form type02">중복체크</button>
+                          <span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">등록된 번호입니다.</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학부모 연락처</th>
+                        <td>
+                          <input type="number" placeholder="숫자만 입력" class="w190">
+                          <button type="button" class="btn-form type02">중복체크</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 앱 ID</th>
+                        <td>
+                          <span class="fix-txt">S+숫자 6자리 임의 생성</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학부모 앱 ID</th>
+                        <td>
+                          <span class="fix-txt">S+숫자 6자리 임의 생성</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학교</th>
+                        <td>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">시/도</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">시/도</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">구/군</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">구/군</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn">학교 선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">학교 선택</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <input type="text" class="w135">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 이메일</th>
+                        <td>
+                          <input type="text" placeholder="abc123" class="w88">
+                          <span>@</span>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w138">daum.net</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">naver.com</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">gmail.com</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">daum.net</a>
+                              </li>                
+                              <li>
+                                <a href="javascript:;">nate.com</a>
+                              </li>                
+                            </ul>
+                          </div>
+                          <input type="text" placeholder="직접입력" class="w186">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>등록</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 실패 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">등록에 실패한 학생은 제외하고 등록합니다.<br>진행할까요?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 중복체크 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">연락처 중복 체크를 진행해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 필수값 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">필수값을 빠짐 없이 입력해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 중복번호 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">등록된 번호입니다.<br>형제 연결 또는 번호를 재입력해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>형제 연결</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 형제연결 팝업 -->
+    <div class="pop-wrap search-type">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>형제 연결</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="left-cnt">
+            <span class="tit">연결된 학생</span>          
+            <div class="cnt-list">
+              <div class="scroll-inner">
+                <span class="cnt">초3 김두산</span>
+                <span class="cnt">초4 김삼성</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-cnt">
+            <div class="box">
+              <div class="search-box">
+                <input type="text" placeholder="학생 이름 + Enter">
+                <button type="button" class="btn-search"></button>
+              </div>
+              <!-- 검색 전 -->
+              <!-- <span class="txt">학생 이름으로 검색해 주세요.</span> -->
+              <!-- 검색 후 -->
+              <div class="stu-list">
+                <div class="scroll-inner">
+                  <button type="button" class="select">초3 김한화</button>
+                  <button type="button" class="select">초6 김한화</button>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <span class="tit">선택된 학생</span>
+              <!-- 검색 전 -->
+              <!-- <span class="txt">학생을 선택해 주세요.</span> -->
+              <!-- 검색 후 -->
+              <div class="select-wrap">
+                <div class="scroll-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>저장</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 변경이력 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">변경 이력이 없습니다.<br>저장하시겠습니까?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>저장</button>
+        </div>
+      </div>
+    </div>
+
+    <!--  학생 상세 정보 팝업 -->
+    <div class="pop-wrap form-type" data-pop="detail-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>학생 상세 정보</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="table-wrap type02">
+            <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
+            <div class="scroll-inner">
+              <table>
+                <colgroup>
+                  <col width="18%">
+                  <col width="*">
+                  <col width="18%">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>이름<em class="req"></em></th>
+                    <td>
+                      <input type="text" maxlength="10" class="wfull">
+                    </td>
+                    <th>학년<em class="req"></em></th>
+                    <td>
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w82">고등</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">초등</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">중등</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">고등</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w82">2학년</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">1학년</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">2학년</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">3학년</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>상태<em class="req"></em></th>
+                    <td colspan="3">
+                      <div class="input-radio-type01">
+                        <input type="radio" id="radio102_01" name="radio102" checked>
+                        <label for="radio102_01">재원</label>
+                        <input type="radio" id="radio102_02" name="radio102">
+                        <label for="radio102_02">휴원</label>
+                        <input type="radio" id="radio102_03" name="radio102">
+                        <label for="radio102_03">퇴원</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학생 연락처</th>
+                    <td>
+                      <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>학생 앱 ID</th>
+                    <td>
+                      <span class="fix-txt">S123456</span>
+                      <button type="button" class="btn-form type02">비밀번호초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학부모 연락처</th>
+                    <td>
+                      <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>학부모 앱 ID</th>
+                    <td>
+                      <span class="fix-txt">S123456</span>
+                      <button type="button" class="btn-form type02">비밀번호초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학교</th>
+                    <td colspan="3">
+                      <input type="text" class="w182" value="천재고등학교">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학생 이메일</th>
+                    <td colspan="3">
+                      <input type="text" placeholder="abc123" class="w88">
+                      <span>@</span>
+                      <input type="text" class="w135">
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w152">직접입력</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">naver.com</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">gmail.com</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">daum.net</a>
+                          </li>                
+                          <li>
+                            <a href="javascript:;">nate.com</a>
+                          </li>                
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>집 주소</th>
+                    <td colspan="3" class="address">
+                      <input type="text" class="w135">
+                      <button type="button" class="btn-form type02">우편번호</button>
+                      <input type="text" class="wfull">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>집 전화</th>
+                    <td>
+                      <input type="text" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>생년월일</th>
+                    <td>
+                      <div class="date-box">
+                        <input type="text" id="datepicker">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>수업 시작일</th>
+                    <td colspan="3">
+                      <div class="date-box start">
+                        <input type="text" id="datepicker02">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>비고</th>
+                    <td colspan="3">
+                      <textarea name="" id="" cols="30" rows="10">2012-이번 주 상담 예약</textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>등록</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+    });
+    $( "#datepicker02" ).datepicker({
+      defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+    });
+  } );
+</script>
+</html>

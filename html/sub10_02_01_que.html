@@ -102,10 +102,10 @@
       <div class="inner">
         <div class="tab-wrap">
           <ul class="tab-menu-type01">
-            <li class="ui-tab-btn active">
+            <li class="ui-tab-btn">
               <a href="javascript:;">학생 관리</a>
             </li>
-            <li class="ui-tab-btn">
+            <li class="ui-tab-btn active">
               <a href="javascript:;">선생님 관리</a>
             </li>
             <li class="ui-tab-btn">
@@ -117,9 +117,9 @@
           </ul>
           <div class="contents on">
             <div class="defalut-view">
-              <img src="../images/sub/sub10_01_img.png" alt="">
+              <img src="../images/sub/sub10_02_img.png" alt="">
               <div class="txt-box">
-                <span class="txt">등록된 학생이 없습니다.<br><em>학생 등록</em> 후 편리하게 관리할 수 있습니다.</span>
+                <span class="txt">아직 등록 전입니다.<br><em>선생님을 등록</em>해 주세요.</span>
                 <button type="button" class="btn-icon type02 pop-btn" data-pop="add-pop"><i class="add"></i> 등록 바로가기</button>
               </div>
             </div>
@@ -138,228 +138,45 @@
     </div>
     <div class="dim"></div>
 
-		<!-- 학생 등록 팝업 -->
-		<div class="pop-wrap add-type" data-pop="add-pop">
+		<!-- 선생님 등록 팝업 -->
+		<div class="pop-wrap table-type" data-pop="add-pop">
 			<div class="pop-inner">
-				<div class="pop-content">
+				<div class="pop-header">
+					<span>선생님 등록하기</span>
 					<button type="button" class="pop-close"></button>
-					<div class="tab-wrap">
-						<ul class="tab-menu-type06">
-							<li class="ui-tab-btn active">
-								<a href="javascript:;">일괄</a>
-							</li>
-							<li class="ui-tab-btn">
-								<a href="javascript:;">개별</a>
-							</li>
-						</ul>
-						<div class="contents on">
-							<!-- 파일 첨부 전 -->
-							<div class="file-wrap">
-								<div class="file-area">
-									<div class="row">
-										<span class="txt">파일 끌어놓기 또는 첨부로 학생 명단을 추가하세요.</span>
-										<div class="file-box">
-											<label for="file">파일 첨부</label>
-											<input type="file" id="file">
-										</div>
-									</div>
-									<span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt=""> 최대 00Mb까지 등록이 가능합니다.</span>
-								</div>
-								<button type="button" class="btn-icon type02"><i class="download"></i> 파일 다운로드</button>
-							</div>
-	
-							<!-- 파일 첨부 후 -->
-							<div class="file-wrap">
-								<div class="file-area">
-									<div class="row">
-										<span class="txt">통계반.xls</span>
-										<div class="file-box">
-											<label for="file">파일 첨부</label>
-											<input type="file" id="file">
-										</div>
-									</div>
-								</div>
-								<!-- 성공 -->
-								<div class="file-state success">
-									<i></i>
-									<span><img src="../images/common/ico_success.png" alt="">등록 성공</span>
-								</div>
-								<!-- 실패 -->
-								<div class="file-state fail">
-									<i></i>
-									<span><img src="../images/common/ico_fail.png" alt="">등록 실패</span>
-									<div class="fail-list">
-										<span class="tit">등록 실패 내역</span>
-										<div class="cnt">
-											<span>1) 김천재 2) 이천재 …</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="contents">
-							<div class="table-wrap type02">
-								<span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
-								<div class="scroll-inner">
-									<table>
-										<colgroup>
-											<col width="20%">
-											<col width="*">
-										</colgroup>
-										<tbody>
-											<tr>
-												<th>이름<em class="req"></em></th>
-												<td>
-													<input type="text" maxlength="10" class="w150">
-												</td>
-											</tr>
-											<tr>
-												<th>학년<em class="req"></em></th>
-												<td>
-													<div class="select-wrap">
-														<button type="button" class="select-btn w90">선택</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">초</a>
-															</li>
-															<li>
-																<a href="javascript:;">중</a>
-															</li>
-															<li>
-																<a href="javascript:;">고</a>
-															</li>
-														</ul>
-													</div>
-													<div class="select-wrap">
-														<button type="button" class="select-btn w90">선택</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">1학년</a>
-															</li>
-															<li>
-																<a href="javascript:;">2학년</a>
-															</li>
-															<li>
-																<a href="javascript:;">3학년</a>
-															</li>
-															<li>
-																<a href="javascript:;">4학년</a>
-															</li>
-															<li>
-																<a href="javascript:;">5학년</a>
-															</li>
-															<li>
-																<a href="javascript:;">6학년</a>
-															</li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th>상태<em class="req"></em></th>
-												<td>
-													<div class="input-radio-type01">
-														<input type="radio" id="radio101_01" name="radio101" checked>
-														<label for="radio101_01">재원</label>
-														<input type="radio" id="radio101_02" name="radio101">
-														<label for="radio101_02">휴원</label>
-														<input type="radio" id="radio101_03" name="radio101">
-														<label for="radio101_03">퇴원</label>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<th>학생 연락처</th>
-												<td>
-													<input type="number" placeholder="숫자만 입력" class="w190">
-													<button type="button" class="btn-form type02">중복체크</button>
-													<span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">등록된 번호입니다.</span>
-												</td>
-											</tr>
-											<tr>
-												<th>학부모 연락처</th>
-												<td>
-													<input type="number" placeholder="숫자만 입력" class="w190">
-													<button type="button" class="btn-form type02">중복체크</button>
-												</td>
-											</tr>
-											<tr>
-												<th>학생 앱 ID</th>
-												<td>
-													<span class="fix-txt">S+숫자 6자리 임의 생성</span>
-												</td>
-											</tr>
-											<tr>
-												<th>학부모 앱 ID</th>
-												<td>
-													<span class="fix-txt">S+숫자 6자리 임의 생성</span>
-												</td>
-											</tr>
-											<tr>
-												<th>학교</th>
-												<td>
-													<div class="select-wrap">
-														<button type="button" class="select-btn w90">시/도</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">시/도</a>
-															</li>
-														</ul>
-													</div>
-													<div class="select-wrap">
-														<button type="button" class="select-btn w90">구/군</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">구/군</a>
-															</li>
-														</ul>
-													</div>
-													<div class="select-wrap">
-														<button type="button" class="select-btn">학교 선택</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">학교 선택</a>
-															</li>
-														</ul>
-													</div>
-													<input type="text" class="w135">
-												</td>
-											</tr>
-											<tr>
-												<th>학생 이메일</th>
-												<td>
-													<input type="text" placeholder="abc123" class="w88">
-													<span>@</span>
-													<div class="select-wrap">
-														<button type="button" class="select-btn w138">daum.net</button>
-														<ul class="select-list">
-															<li>
-																<a href="javascript:;">naver.com</a>
-															</li>
-															<li>
-																<a href="javascript:;">gmail.com</a>
-															</li>
-															<li>
-																<a href="javascript:;">daum.net</a>
-															</li>                
-															<li>
-																<a href="javascript:;">nate.com</a>
-															</li>                
-														</ul>
-													</div>
-													<input type="text" placeholder="직접입력" class="w186">
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
+				</div>
+				<div class="pop-content">
+					<table>
+						<colgroup>
+							<col width="18%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>선생님명</th>
+								<td>
+									<input type="text" placeholder="이름 입력" class="wfull">
+								</td>
+							</tr>
+							<tr>
+								<th>로그인 ID</th>
+								<td>
+									<input type="text" placeholder="영문+숫자, 20자 이하" class="wfull">
+									<span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">초기 비밀번호 0000</span>
+								</td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td>
+									<input type="text" placeholder="01012345676" class="wfull">
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="pop-footer">
 					<button>취소</button>
-					<button>등록</button>
+					<button>저장</button>
 				</div>
 			</div>
 		</div>

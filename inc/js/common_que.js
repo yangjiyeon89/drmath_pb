@@ -416,6 +416,13 @@ $(function () {
   })
   $(document).on('click', '.select-stu .del', function(){
     $(this).parents('.select-stu').remove();
+  });
+
+  // tablist 글자 숨김
+  $('.cnt-btn').on('click', function(){
+    let hiddenCnt = $(this).parents('.hidden-cnt');
+
+    hiddenCnt.toggleClass('on');
   })
   
 });
