@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container sub10-01">
       <div class="inner">
         <div class="tab-wrap">
           <ul class="tab-menu-type01">
@@ -120,378 +120,197 @@
               <div class="tab-top">
                 <div class="left-wrap">
                   <div class="select-wrap">
-                    <button type="button" class="select-btn">학년 전체</button>
+                    <button type="button" class="select-btn w90">전체</button>
                     <ul class="select-list">
                       <li>
-                        <a href="javascript:;">학년 전체</a>
+                        <a href="javascript:;">이름</a>
                       </li>
                       <li>
-                        <a href="javascript:;">중1</a>
+                        <a href="javascript:;">학년</a>
                       </li>
                       <li>
-                        <a href="javascript:;">중2</a>
+                        <a href="javascript:;">상태</a>
                       </li>
                       <li>
-                        <a href="javascript:;">중3</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">고1</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">고2</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">고3</a>
+                        <a href="javascript:;">연락처</a>
                       </li>
                     </ul>
                   </div>
-                  <div class="select-wrap">
-                    <button type="button" class="select-btn">분류 전체</button>
-                    <ul class="select-list">
-                      <li>
-                        <a href="javascript:;">분류 전체</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">중간대비</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">기말대비</a>
-                      </li>
-                    </ul>
+                  <div class="search-box">
+                    <input type="text" placeholder="검색" class="search">
+                    <button type="button" class="btn-search"></button>
                   </div>
                 </div>
-                <div class="search-box">
-                  <input type="text" placeholder="문제지명 검색" class="search" maxlength="15">
-                  <button type="button" class="btn-search"></button>
+                <div class="button-wrap">
+                  <button type="button" class="btn-icon type04 pop-btn" data-pop="add-pop"><i class="add-type04"></i> 등록</button>
+                  <button type="button" class="btn-icon type04"><i class="delete"></i> 삭제</button>
                 </div>
               </div>
-              <div class="table">
+              <div class="table chk-acc">
                 <div class="fix-head">
+                  <span>
+                    <input type="checkbox" id="chk100_01" class="allCheck">
+                    <label for="chk100_01"></label>
+                  </span>
+                  <span>구분</span>
+                  <span>
+                    이름
+                    <div class="filter-wrap">
+                      <button class="up"></button>
+                      <button class="down"></button>
+                    </div>
+                  </span>
                   <span>학년</span>
-                  <span>분류</span>
-                  <span>문제지명</span>
-                  <span>난이도</span>
-                  <span>문제수</span>
-                  <span>미리보기</span>
-                  <span>배포하기</span>
+                  <span>
+                    상태
+                    <div class="filter-wrap">
+                      <button class="up"></button>
+                      <button class="down"></button>
+                    </div>
+                  </span>
+                  <span>로그인 정보</span>
+                  <span>연락처</span>
+                  <span>학부모 로그인 정보</span>
+                  <span>연락처</span>
+                  <span>상세 정보</span>
                 </div>
                 <div class="tbody">
                   <div class="scroll-inner">
                     <div class="test">
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">하</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_02">
+                          <label for="chk100_02"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i class="launch"></i>배포하기</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>30</span>
+                        <span>김*재</span>
+                        <span>고2</span>
+                        <span>재원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">중</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_03">
+                          <label for="chk100_03"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>3명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>29</span>
+                        <span>이*재</span>
+                        <span>고1</span>
+                        <span>재원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">상</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_04">
+                          <label for="chk100_04"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>28</span>
+                        <span>정*재</span>
+                        <span>고3</span>
+                        <span>재원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>기말대비</span>
-                        <span>2학기 (일차방정식 ~ 좌표평면과 그래프)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">하</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_05">
+                          <label for="chk100_05"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i class="launch"></i>배포하기</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>27</span>
+                        <span>유*재</span>
+                        <span>고1</span>
+                        <span>퇴원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">하</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_06">
+                          <label for="chk100_06"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>3명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>26</span>
+                        <span>김*재</span>
+                        <span>고3</span>
+                        <span>재원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">중</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_07">
+                          <label for="chk100_07"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>25</span>
+                        <span>이*재</span>
+                        <span>고2</span>
+                        <span>퇴원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">상</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_08">
+                          <label for="chk100_08"></label>
                         </span>
-                        <span>30문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>24</span>
+                        <span>정*재</span>
+                        <span>고1</span>
+                        <span>재원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>기말대비</span>
-                        <span>2학기 (일차방정식 ~ 좌표평면과 그래프)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">하</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_09">
+                          <label for="chk100_09"></label>
                         </span>
-                        <span>20문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w pop-btn" data-pop="launch-pop"><i class="launch"></i>배포하기</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>23</span>
+                        <span>유*재</span>
+                        <span>고3</span>
+                        <span>퇴원</span>
+                        <span>s11111</span>
+                        <span>미등록</span>
+                        <span>p11111</span>
+                        <span>미등록</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
-                        <span>초1</span>
-                        <span>중간대비</span>
-                        <span>1학기 (소인수분해 ~ 문자의 사용과 식의 계산)</span>
                         <span>
-                          <div class="tooltip-wrap">
-                            <button type="button" class="txt-tip">하</button>
-                            <div class="tooltip type02">
-                              <span class="level">최상</span>
-                              <span class="level">상</span>
-                              <span class="level">중</span>
-                              <span class="level">하</span>
-                              <span class="level">최하</span>
-                            </div>
-                          </div>
+                          <input type="checkbox" id="chk100_10">
+                          <label for="chk100_10"></label>
                         </span>
-                        <span>20문제</span>
-                        <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="preview-pop"><i class="preview"></i></button></span>
-                        <span><button type="button" class="btn-icon fix-w"><i class="people"></i>3명</button></span>
-                        <span>
-                          <button type="button" class="btn-dot">
-                            <ul class="open-select-list" style="display: none;">
-                              <li>
-                                <a href="javascript:;" class="active">인쇄하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">수정하기</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;">다운로드</a>
-                              </li>
-                            </ul>
-                          </button>
-                        </span>
+                        <span>22</span>
+                        <span>김*재</span>
+                        <span>고2</span>
+                        <span>퇴원</span>
+                        <span>s11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span>p11111</span>
+                        <span>010-XXXX-XXXX</span>
+                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
                       </div>
                     </div>
                   </div>
@@ -523,420 +342,292 @@
       </div>
     </div>
     <div class="dim"></div>
-    <!-- 미리보기 팝업 -->
-		<div class="pop-wrap table-type" data-pop="preview-pop">
-			<div class="pop-inner">
-				<div class="pop-header">
-					<span>미리보기</span>
-					<button type="button" class="pop-close"></button>
-				</div>
-				<div class="pop-content">
-					<img src="../images/sub/sample-testpaper.jpg" alt="샘플시험지">
-				</div>
-				<div class="pop-footer">
-					<button>닫기</button>
-				</div>
-			</div>
-		</div>
+    <!-- 학생 등록 팝업 -->
+    <div class="pop-wrap add-type" data-pop="add-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <div class="tab-wrap">
+            <ul class="tab-menu-type06">
+              <li class="ui-tab-btn active">
+                <a href="javascript:;">일괄</a>
+              </li>
+              <li class="ui-tab-btn">
+                <a href="javascript:;">개별</a>
+              </li>
+            </ul>
+            <div class="contents on">
+              <!-- 파일 첨부 전 -->
+              <div class="file-wrap">
+                <div class="file-area">
+                  <div class="row">
+                    <span class="txt">파일 끌어놓기 또는 첨부로 학생 명단을 추가하세요.</span>
+                    <div class="file-box">
+                      <label for="file">파일 첨부</label>
+                      <input type="file" id="file">
+                    </div>
+                  </div>
+                  <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt=""> 최대 00Mb까지 등록이 가능합니다.</span>
+                </div>
+                <button type="button" class="btn-icon type02"><i class="download"></i> 파일 다운로드</button>
+              </div>
+  
+              <!-- 파일 첨부 후 -->
+              <div class="file-wrap">
+                <div class="file-area">
+                  <div class="row">
+                    <span class="txt">통계반.xls</span>
+                    <div class="file-box">
+                      <label for="file">파일 첨부</label>
+                      <input type="file" id="file">
+                    </div>
+                  </div>
+                </div>
+                <!-- 성공 -->
+                <div class="file-state success">
+                  <i></i>
+                  <span><img src="../images/common/ico_success.png" alt="">등록 성공</span>
+                </div>
+                <!-- 실패 -->
+                <div class="file-state fail">
+                  <i></i>
+                  <span><img src="../images/common/ico_fail.png" alt="">등록 실패</span>
+                  <div class="fail-list">
+                    <span class="tit">등록 실패 내역</span>
+                    <div class="cnt">
+                      <span>1) 김천재 2) 이천재 …</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contents">
+              <div class="table-wrap type02">
+                <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
+                <div class="scroll-inner">
+                  <table>
+                    <colgroup>
+                      <col width="20%">
+                      <col width="*">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>이름<em class="req"></em></th>
+                        <td>
+                          <input type="text" maxlength="10" class="w150">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학년<em class="req"></em></th>
+                        <td>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">초</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">중</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">고</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">1학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">2학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">3학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">4학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">5학년</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">6학년</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>상태<em class="req"></em></th>
+                        <td>
+                          <div class="input-radio-type01">
+                            <input type="radio" id="radio101_01" name="radio101" checked>
+                            <label for="radio101_01">재원</label>
+                            <input type="radio" id="radio101_02" name="radio101">
+                            <label for="radio101_02">휴원</label>
+                            <input type="radio" id="radio101_03" name="radio101">
+                            <label for="radio101_03">퇴원</label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 연락처</th>
+                        <td>
+                          <input type="number" placeholder="숫자만 입력" class="w190">
+                          <button type="button" class="btn-form type02">중복체크</button>
+                          <span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">등록된 번호입니다.</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학부모 연락처</th>
+                        <td>
+                          <input type="number" placeholder="숫자만 입력" class="w190">
+                          <button type="button" class="btn-form type02">중복체크</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 앱 ID</th>
+                        <td>
+                          <span class="fix-txt">S+숫자 6자리 임의 생성</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학부모 앱 ID</th>
+                        <td>
+                          <span class="fix-txt">S+숫자 6자리 임의 생성</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학교</th>
+                        <td>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">시/도</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">시/도</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w90">구/군</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">구/군</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn">학교 선택</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">학교 선택</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <input type="text" class="w135">
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>학생 이메일</th>
+                        <td>
+                          <input type="text" placeholder="abc123" class="w88">
+                          <span>@</span>
+                          <div class="select-wrap">
+                            <button type="button" class="select-btn w138">daum.net</button>
+                            <ul class="select-list">
+                              <li>
+                                <a href="javascript:;">naver.com</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">gmail.com</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">daum.net</a>
+                              </li>                
+                              <li>
+                                <a href="javascript:;">nate.com</a>
+                              </li>                
+                            </ul>
+                          </div>
+                          <input type="text" placeholder="직접입력" class="w186">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>등록</button>
+        </div>
+      </div>
+    </div>
 
-    <!-- 배포하기 팝업 -->
-		<div class="pop-wrap check-type" data-pop="launch-pop">
-			<div class="pop-inner">
-				<div class="pop-header">
-					<span>중1 – 도형의 성질</span>
-					<button type="button" class="pop-close"></button>
-				</div>
-				<div class="pop-content">
-					<div class="left-cnt">
-						<div class="search-box">
-							<input type="text" placeholder="이름 검색" class="search">
-							<button type="button" class="btn-search"></button>
-						</div>
-						<div class="tab-wrap">
-							<ul class="tab-menu-type03">
-								<li class="ui-tab-btn active">
-									<a href="javascript:;">클래스</a>
-								</li>
-								<li class="ui-tab-btn">
-									<a href="javascript:;">학년</a>
-								</li>
-							</ul>
-							<div class="contents on">
-								<div class="scroll-inner">
-									<div class="check-wrap">
-										<div class="chk-acc" data-index="1">
-											<div class="acc-btn active">
-												<span>매쓰반</span>
-												<em>4명</em>
-												<input type="checkbox" id="chk02_01" class="allCheck">
-												<label for="chk02_01"></label>
-											</div>
-											<ul class="cnt" style="display:block;">
-												<li>
-													<input type="checkbox" id="chk02_02" name="chk02_02">
-													<label for="chk02_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk02_03" name="chk02_03">
-													<label for="chk02_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk02_04" name="chk02_04">
-													<label for="chk02_04">도우너</label>
-												</li>
-												<li class="select">
-													<input type="checkbox" id="chk02_05" name="chk02_05">
-													<label for="chk02_05">유또치</label>
-												</li>
-											</ul>
-										</div>
-										<div class="chk-acc" data-index="2">
-											<div class="acc-btn">
-												<span>닥터반</span>
-												<em>3명</em>
-												<input type="checkbox" id="chk03_01" class="allCheck">
-												<label for="chk03_01"></label>
-											</div>
-											<ul class="cnt">
-												<li>
-													<input type="checkbox" id="chk03_02" name="chk03_02">
-													<label for="chk03_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk03_03" name="chk03_03">
-													<label for="chk03_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk03_04" name="chk03_04">
-													<label for="chk03_04">도우너</label>
-												</li>
-											</ul>
-										</div>
-										<div class="chk-acc" data-index="3">
-											<div class="acc-btn">
-												<span>천재반</span>
-												<em>7명</em>
-												<input type="checkbox" id="chk04_01" class="allCheck">
-												<label for="chk04_01"></label>
-											</div>
-											<ul class="cnt">
-												<li>
-													<input type="checkbox" id="chk04_02" name="chk04_02">
-													<label for="chk04_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_03" name="chk04_03">
-													<label for="chk04_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_04" name="chk04_04">
-													<label for="chk04_04">도우너</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_05" name="chk04_05">
-													<label for="chk04_05">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_06" name="chk04_06">
-													<label for="chk04_06">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_07" name="chk04_07">
-													<label for="chk04_07">도우너</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk04_08" name="chk04_08">
-													<label for="chk04_08">도우너</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-	
-							</div>
-							<div class="contents">
-								<div class="scroll-inner">
-									<div class="check-wrap">
-										<div class="chk-acc type02" data-index="4">
-											<div class="acc-btn active">
-												<span>초1</span>
-												<em>4명</em>
-												<input type="checkbox" id="chk05_01" class="allCheck">
-												<label for="chk05_01"></label>
-											</div>
-											<ul class="cnt" style="display:block;">
-												<li>
-													<input type="checkbox" id="chk05_02" name="chk05_02">
-													<label for="chk05_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk05_03" name="chk05_03">
-													<label for="chk05_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk05_04" name="chk05_04">
-													<label for="chk05_04">도우너</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk05_05" name="chk05_05">
-													<label for="chk05_05">유또치</label>
-												</li>
-											</ul>
-										</div>
-										<div class="chk-acc type02" data-index="5">
-											<div class="acc-btn">
-												<span>초2</span>
-												<em>3명</em>
-												<input type="checkbox" id="chk06_01" class="allCheck">
-												<label for="chk06_01"></label>
-											</div>
-											<ul class="cnt">
-												<li>
-													<input type="checkbox" id="chk06_02" name="chk06_02">
-													<label for="chk06_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk06_03" name="chk06_03">
-													<label for="chk06_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk06_04" name="chk06_04">
-													<label for="chk06_04">도우너</label>
-												</li>
-											</ul>
-										</div>
-										<div class="chk-acc type02" data-index="6">
-											<div class="acc-btn">
-												<span>초3</span>
-												<em>7명</em>
-												<input type="checkbox" id="chk08_01" class="allCheck">
-												<label for="chk08_01"></label>
-											</div>
-											<ul class="cnt">
-												<li>
-													<input type="checkbox" id="chk08_02" name="chk14_02">
-													<label for="chk08_02">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_03" name="chk14_03">
-													<label for="chk08_03">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_04" name="chk14_04">
-													<label for="chk08_04">도우너</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_05" name="chk14_05">
-													<label for="chk08_05">고희동</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_06" name="chk14_06">
-													<label for="chk08_06">김둘리</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_07" name="chk14_07">
-													<label for="chk08_07">도우너</label>
-												</li>
-												<li>
-													<input type="checkbox" id="chk08_08" name="chk14_08">
-													<label for="chk08_08">도우너</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="right-cnt">
-						<div class="top-txt">
-							<span>선택된 학생</span>
-							<em>3명</em>
-						</div>
-						<div class="check-wrap">
-							<div class="scroll-inner">
-								<div class="chk-acc" data-index="1">
-									<div class="acc-btn active">
-										<span>매쓰반</span>
-										<em>4명</em>
-										<input type="checkbox" id="chk09_01" class="allCheck">
-										<label for="chk09_01"></label>
-									</div>
-									<ul class="cnt" style="display:block;">
-										<li>
-											<input type="checkbox" id="chk09_02" name="chk02_02">
-											<label for="chk09_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk09_03" name="chk02_03">
-											<label for="chk09_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk09_04" name="chk02_04">
-											<label for="chk09_04">도우너</label>
-										</li>
-										<li  class="select">
-											<input type="checkbox" id="chk09_05" name="chk02_05">
-											<label for="chk09_05">유또치</label>
-										</li>
-									</ul>
-								</div>
-								<div class="chk-acc" data-index="2">
-									<div class="acc-btn active">
-										<span>닥터반</span>
-										<em>3명</em>
-										<input type="checkbox" id="chk10_01" class="allCheck">
-										<label for="chk10_01"></label>
-									</div>
-									<ul class="cnt" style="display:block;">
-										<li>
-											<input type="checkbox" id="chk10_02" name="chk03_02">
-											<label for="chk10_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk10_03" name="chk03_03">
-											<label for="chk10_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk10_04" name="chk03_04">
-											<label for="chk10_04">도우너</label>
-										</li>
-									</ul>
-								</div>
-								<div class="chk-acc" data-index="3">
-									<div class="acc-btn active">
-										<span>천재반</span>
-										<em>7명</em>
-										<input type="checkbox" id="chk11_01" class="allCheck">
-										<label for="chk11_01"></label>
-									</div>
-									<ul class="cnt" style="display:block;">
-										<li>
-											<input type="checkbox" id="chk11_02" name="chk04_02">
-											<label for="chk11_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_03" name="chk04_03">
-											<label for="chk11_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_04" name="chk04_04">
-											<label for="chk11_04">도우너</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_05" name="chk04_05">
-											<label for="chk11_05">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_06" name="chk04_06">
-											<label for="chk11_06">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_07" name="chk04_07">
-											<label for="chk11_07">도우너</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk11_08" name="chk04_08">
-											<label for="chk11_08">도우너</label>
-										</li>
-									</ul>
-								</div>
-								<div class="chk-acc type02" data-index="4">
-									<div class="acc-btn active">
-										<span>초1</span>
-										<em>4명</em>
-										<input type="checkbox" id="chk12_01" class="allCheck">
-										<label for="chk12_01"></label>
-									</div>
-									<ul class="cnt" style="display:block;">
-										<li>
-											<input type="checkbox" id="chk12_02" name="chk05_02">
-											<label for="chk12_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk12_03" name="chk05_03">
-											<label for="chk12_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk12_04" name="chk05_04">
-											<label for="chk12_04">도우너</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk12_05" name="chk05_05">
-											<label for="chk12_05">유또치</label>
-										</li>
-									</ul>
-								</div>
-								<div class="chk-acc type02" data-index="5">
-									<div class="acc-btn">
-										<span>초2</span>
-										<em>3명</em>
-										<input type="checkbox" id="chk13_01" class="allCheck">
-										<label for="chk13_01"></label>
-									</div>
-									<ul class="cnt">
-										<li>
-											<input type="checkbox" id="chk13_02" name="chk06_02">
-											<label for="chk13_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk13_03" name="chk06_03">
-											<label for="chk13_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk13_04" name="chk06_04">
-											<label for="chk13_04">도우너</label>
-										</li>
-									</ul>
-								</div>
-								<div class="chk-acc type02" data-index="6">
-									<div class="acc-btn">
-										<span>초3</span>
-										<em>7명</em>
-										<input type="checkbox" id="chk14_01" class="allCheck">
-										<label for="chk14_01"></label>
-									</div>
-									<ul class="cnt">
-										<li>
-											<input type="checkbox" id="chk14_02" name="chk14_02">
-											<label for="chk14_02">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_03" name="chk14_03">
-											<label for="chk14_03">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_04" name="chk14_04">
-											<label for="chk14_04">도우너</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_05" name="chk14_05">
-											<label for="chk14_05">고희동</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_06" name="chk14_06">
-											<label for="chk14_06">김둘리</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_07" name="chk14_07">
-											<label for="chk14_07">도우너</label>
-										</li>
-										<li>
-											<input type="checkbox" id="chk14_08" name="chk14_08">
-											<label for="chk14_08">도우너</label>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="pop-footer">
-					<button>완료</button>
-				</div>
-			</div>
-		</div>
+    <!-- 실패 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">등록에 실패한 학생은 제외하고 등록합니다.<br>진행할까요?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
 
+    <!-- 중복체크 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">연락처 중복 체크를 진행해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 필수값 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">필수값을 빠짐 없이 입력해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 중복번호 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">등록된 번호입니다.<br>형제 연결 또는 번호를 재입력해 주세요.
+            </span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>형제 연결</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

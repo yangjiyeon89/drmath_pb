@@ -745,6 +745,21 @@
   .tab-top {
     border-left: 1px solid $color-line-type02;
     border-right: 1px solid $color-line-type02;
+    .button-wrap {
+      button {
+        display: inline-flex;
+        & + button {
+          margin-left: 6px;
+        }
+      }
+    }
+    .select-wrap {
+      margin-left: 0;
+    }
+  }
+  .search-box {
+    display: inline-block;
+    margin-left: 6px;
   }
   .defalut-view {
     @include layout-center-center;
@@ -767,7 +782,48 @@
     }
   }
 }
-
+// 원관리
+.sub10-01 {
+  .tab-list-type01 {
+    .chk-acc {
+      .scroll-inner {
+        height: 566px;
+      }
+      span {
+        &:nth-child(1) {
+          width: 6%;
+        }
+        &:nth-child(2) {
+          width: 4%;
+        }
+        &:nth-child(3) {
+          width: 10%;
+        }
+        &:nth-child(4) {
+          width: 6%;
+        }
+        &:nth-child(5) {
+          width: 10%;
+        }
+        &:nth-child(6) {
+          width: 10%;
+        }
+        &:nth-child(7) {
+          width: 16%;
+        }
+        &:nth-child(8) {
+          width: 12%;
+        }
+        &:nth-child(9) {
+          width: 16%;
+        }
+        &:nth-child(10) {
+          width: 10%;
+        }
+      }
+    }
+  } 
+}
 
 @media (max-width: 1280px) {
   
@@ -848,6 +904,30 @@
       .chk-acc {
         .scroll-inner {
           height: 503px;
+        }
+      }
+    }
+  }
+
+  //원관리
+  .sub10-que {
+    .defalut-view {
+      height: 570px;
+    }
+    .container {
+      .inner {
+        padding: 0 20px;
+      }
+    }
+  }
+  .sub10-01 {
+    .container {
+      overflow: hidden;
+    }
+    .tab-list-type01 {
+      .chk-acc {
+        .scroll-inner {
+          height: 377px;
         }
       }
     }

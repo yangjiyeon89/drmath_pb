@@ -322,6 +322,10 @@ body {
       margin-right: 3px;
     }
   }
+  &.type04 {
+    height: 40px;
+    padding: 0 14px 0 12px;
+  }
   &.fix-w {
     width: 97px;
   }
@@ -411,6 +415,11 @@ body {
   background-size: 14px 13px !important;
   background-size: contain;
 }
+.add-type04 {
+  background: url(../../images/common/ico_add_type06.png);
+  background-size: 13px !important;
+  background-size: contain;
+}
 .search {
   background: url(../../images/common/ico_search_w.png);
   background-size: 15px 13px !important;
@@ -483,6 +492,16 @@ body {
 .download {
   background: url(../../images/common/ico_download_type02.png);
 	background-size: 18px !important;
+	background-size: contain;
+}
+.view {
+  background: url(../../images/common/ico_view.png);
+	background-size: 14px 12px !important;
+	background-size: contain;
+}
+.delete {
+  background: url(../../images/common/ico_delete_type03.png);
+	background-size: 13px !important;
 	background-size: contain;
 }
 
@@ -803,8 +822,20 @@ input[type="text"], input[type="number"], input[type="password"] {
   &:focus {
     outline-style: solid;
   }
+  &.w88 {
+    width: 88px;
+  }
+  &.w135 {
+    width: 135px;
+  }
   &.w150 {
     width: 150px;
+  }
+  &.w186 {
+    width: 186px;
+  }
+  &.w190 {
+    width: 190px;
   }
 }
 input[type="radio"], input[type="checkbox"] {
@@ -911,7 +942,7 @@ input[type="checkbox"] {
 .select-btn {
   position: relative;
   @include layout-center;
-  width: 110px;height: 41px;
+  width: 110px;height: 40px;
   padding: 12px;
   border: 1px solid $color-line-type02;
   border-radius: 6px;
@@ -934,6 +965,9 @@ input[type="checkbox"] {
   }
   &.w90 {
     width: 90px;
+  }
+  &.w138 {
+    width: 138px;
   }
 }
 .select-list {
@@ -1332,8 +1366,18 @@ input[type="checkbox"] {
       margin-left: 6px;
     }
   }
-  .col {
-    
+  .filter-wrap {
+    margin-left: 12px;
+    button {
+      display: block;
+      width: 17px;height: 12px;
+      background: url(../../images/common/ico_arrow_bg_w.png) no-repeat;
+      &.down {
+        position: relative;
+        top: -1px;
+        transform: rotate(-180deg);
+      }
+    }
   }
   .table {
     border: 1px solid $color-line-type02;
@@ -1567,6 +1611,10 @@ input[type="checkbox"] {
       margin-top: 10px;
       border-top: 1px solid $color-sub33;
       border-bottom: 1px solid $color-sub33;
+      .form-txt-chk {
+        display: inline-block;
+        margin-left: 6px;
+      }
     }
     tr:last-child {
       th, td {
@@ -1590,6 +1638,9 @@ input[type="checkbox"] {
     }
     td {
       padding-left: 20px;
+      span {
+        margin: 0 6px;
+      }
     }
     .req {
       position: relative;
@@ -1604,6 +1655,9 @@ input[type="checkbox"] {
       & + .select-wrap {
         margin-left: 6px;
       }
+      & + input {
+        margin-left: 6px;
+      }
     }
     .select-list {
       li {
@@ -1614,6 +1668,20 @@ input[type="checkbox"] {
       a {
         width: 100%;
       }
+    }
+    .btn-form {
+      display: inline-block;
+      margin-left: 6px;
+    }
+    
+    .fix-txt {
+      color: $color-main-purple;
+    }
+    .btm-txt {
+      display: block;
+      margin: 20px 0 25px;
+      text-align: center;
+      color: $color-main-purple;
     }
   }
 }
@@ -2455,7 +2523,113 @@ input[type="checkbox"] {
         }
       }
     }
-    
+  }
+  &.add-type {
+    .table-wrap {
+      .scroll-inner {
+        height: auto;
+      }
+    }
+    .pop-inner {
+      width: 680px;
+    }
+    .pop-content {
+      padding: 64px 30px 30px;
+      .btn-icon {
+        margin: 17px auto 0;
+      }
+    }
+    .tab-menu-type06 {
+      margin-bottom: 24px;
+    }
+    .file-area {
+      padding: 20px;
+      background-color: #f4f4f4;
+      border: 0;
+      border-radius:6px;
+      .row {
+        @include layout-justify-center;
+        .txt {
+          width: 468px;
+          padding: 10px;
+          font-size: 16px;
+          text-align: left;
+          border: 1px solid $color-line-type02;
+          border-radius: 5px;
+          box-sizing: border-box;
+          background-color: #fff;
+        }
+      }
+      .file-box {
+        margin-top: 12px;
+        label {
+          padding: 11px 14px 10px 33px;
+          border: 1px solid $color-line-type02;
+          border-radius: 5px;
+          background: #fff url(../../images/common/ico_add_type02.png) no-repeat left 16px center;
+        }
+      }
+      .form-txt-chk {
+        color: $color-sub33;
+        text-align: left;
+      }
+    }
+    .file-state {
+      > span {
+        display: block;
+        margin-top: 16px;
+        text-align: center;
+        @include font(20px, 600);
+        img {
+          position: relative;
+          top: -2px;
+          margin-right: 10px;
+        }
+      }
+      &.success {
+        > span {
+          color: #247bf1;
+        }
+        
+      }
+      &.fail {
+        > span {
+          color: $color-font-red; 
+        }
+      }
+      .fail-list {
+        margin-top: 20px;
+        border: 1px solid $color-line-type02;
+        border-radius: 6px;
+        overflow: hidden;
+        .tit {
+          display: block;
+          padding: 11px 20px;
+          font-weight: 600;
+          background-color: #f4f4f4;
+        }
+        .cnt {
+          min-height: 87px;
+          padding: 15px 20px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .table-wrap {
+      margin-bottom: 30px;
+    }
+  }
+  &.search-type {
+    .pop-inner {
+      width: 600px;
+    }
+    .pop-content {
+      @include layout-justify-center;
+      padding: 0 30px 30px;
+      > div {
+        width: 265px;
+      }
+    }
   }
 }
 .ui-sortable-helper {
@@ -2484,6 +2658,19 @@ input[type="checkbox"] {
         }
         .scroll-inner {
           height: 592px;
+        }
+      }
+    }
+    &.add-type {
+      .table-wrap {
+        margin-right: -15px;
+        margin-bottom: -30px;
+        .scroll-inner {
+          height: 400px;
+          padding: 0 15px 30px 0;
+        }
+        .form-txt-chk {
+          padding-right: 15px;
         }
       }
     }

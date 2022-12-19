@@ -407,5 +407,12 @@ $(function () {
     },
   });
 
+  // 형제 연결
+  $('.stu-list button').on('click', function(){
+    let _this = $(this);
+    let _txt = $(this).text();
+
+    _this.parents('.box').next('.box').find('.select-wrap').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>')
+  })
   
 });
