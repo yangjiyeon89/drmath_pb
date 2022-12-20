@@ -981,6 +981,9 @@ input[type="checkbox"] {
   &.w152 {
     width: 152px;
   }
+  &.wfull {
+    width: 100%;
+  }
 }
 .select-list {
   display: none;
@@ -1799,6 +1802,23 @@ input[type="checkbox"] {
     margin-top: 8px;
     padding-left: 22px;
     text-indent: -22px;
+  }
+  .select-stu {
+    @include layout-justify-center;
+    padding: 10px 12px 9px 16px;
+    color: $color-main-purple;
+    font-weight: 600;
+    border: 1px solid #dbcbf3;
+    border-radius: 6px;
+    background-color: #ebe3ff;
+    & + .select-stu {
+      margin-top: 6px;
+    }
+    .del {
+      width: 20px;height: 20px;
+      border-radius: 100%;
+      background: url(../../images/common/ico_delete_type04.png) no-repeat;
+    }
   }
   &.table-type {
     .pop-inner {
@@ -2750,23 +2770,7 @@ input[type="checkbox"] {
           padding: 10px 20px;
           box-sizing: border-box;
         }
-        .select-stu {
-          @include layout-justify-center;
-          padding: 10px 12px 9px 16px;
-          color: $color-main-purple;
-          font-weight: 600;
-          border: 1px solid #dbcbf3;
-          border-radius: 6px;
-          background-color: #ebe3ff;
-          & + .select-stu {
-            margin-top: 6px;
-          }
-          .del {
-            width: 20px;height: 20px;
-            border-radius: 100%;
-            background: url(../../images/common/ico_delete_type04.png) no-repeat;
-          }
-        }
+        
       }
     }
   }

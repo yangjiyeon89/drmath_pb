@@ -384,6 +384,8 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .select-btn.w152 { width: 152px; }
 
+.select-btn.wfull { width: 100%; }
+
 .select-list { display: none; overflow-y: overlay; position: absolute; top: 100%; width: 100%; margin-top: -4px; background: #fff; border: 1px solid #dddddd; border-top: 0; border-radius: 0 0 6px 6px; -webkit-box-sizing: border-box; box-sizing: border-box; z-index: 1; }
 
 .select-list a { display: block; padding: 9px 12px; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -719,6 +721,12 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 .pop-wrap .form-txt-chk { display: block; margin-top: 8px; padding-left: 22px; text-indent: -22px; }
+
+.pop-wrap .select-stu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 12px 9px 16px; color: #5a14be; font-weight: 600; border: 1px solid #dbcbf3; border-radius: 6px; background-color: #ebe3ff; }
+
+.pop-wrap .select-stu + .select-stu { margin-top: 6px; }
+
+.pop-wrap .select-stu .del { width: 20px; height: 20px; border-radius: 100%; background: url(../../images/common/ico_delete_type04.png) no-repeat; }
 
 .pop-wrap.table-type .pop-inner { width: 600px; }
 
@@ -1133,12 +1141,6 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .pop-wrap.search-type .pop-content .select-wrap { display: block; }
 
 .pop-wrap.search-type .pop-content .select-wrap .scroll-inner { height: 183px; padding: 10px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.pop-wrap.search-type .pop-content .select-wrap .select-stu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 12px 9px 16px; color: #5a14be; font-weight: 600; border: 1px solid #dbcbf3; border-radius: 6px; background-color: #ebe3ff; }
-
-.pop-wrap.search-type .pop-content .select-wrap .select-stu + .select-stu { margin-top: 6px; }
-
-.pop-wrap.search-type .pop-content .select-wrap .select-stu .del { width: 20px; height: 20px; border-radius: 100%; background: url(../../images/common/ico_delete_type04.png) no-repeat; }
 
 .ui-sortable-helper { border: 1px solid #dddddd; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); background-color: #fff; }
 

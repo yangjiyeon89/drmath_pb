@@ -879,6 +879,195 @@
       }
     }
   }
+
+  //클래스 등록 팝업
+  .add-type {
+    .pop-inner {
+      width: 1002px;
+    }
+    .pop-content {
+      padding: 64px 30px 20px;
+    }
+    .table-wrap {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .form-txt-chk {
+      margin-top: 0;
+    }
+    .add-content {
+      margin-top: 10px;
+      border-top: 1px solid $color-sub33;
+      border-bottom: 1px solid $color-sub33;
+      .tit {
+        font-weight: 600;        
+      }
+      .class {
+        @include layout-center;
+        padding: 10px 0 10px 20px;
+        border-bottom: 1px solid $color-line-type02;
+        .tit {
+          margin-right: 20px;
+          
+        }
+      }
+      .select-area {
+        @include layout-justify-start;
+        height: 487px;
+      }
+      .col {
+        width: 240px;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        &:last-child {
+          width: 220px;
+          padding-right: 0;
+          border-right: 0;
+        }
+        > .tit {
+          em {
+            position: relative;
+            top: -12px;left: 5px;
+            display: inline-block;
+            width: 3px;height: 3px;
+            border-radius: 100%;
+            background-color: $color-font-red;
+          }
+        }
+      }
+      .search-box {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        input[type='text'] {
+          background-color: $color-box-type02;
+        }
+      }
+      .none-txt {
+        display: block;
+        margin-top: 10px;
+        padding: 13px 10px 12px;
+        color: #999;
+        border: 1px solid $color-line-type02;
+        border-radius: 6px;
+      }
+      .stu-list {
+        margin-top: 10px;
+        border: 1px solid $color-line-type02;
+        border-radius: 6px;
+        box-sizing: border-box;
+        .scroll-inner {
+          height: 130px;
+          padding: 5px 20px;
+          box-sizing: border-box;
+        }
+        .select {
+          display: block;
+          padding: 6px 0;
+        }
+      }
+      .select-wrap {
+        display: block;
+        margin-top: 0;
+        .scroll-inner {
+          height: 238px;
+          padding: 0;
+        }
+        .select-stu {
+          margin-top: 10px;
+        }
+        &.type02 {          
+          .scroll-inner {
+            height: 273px;
+            
+          }
+        }
+      }
+      .btn-wrap {
+        overflow: hidden;
+        margin: 10px 0;
+        height: 40px;
+        border: 1px solid $color-line-type02;
+        border-radius: 5px;
+        .btn-line {
+          flex: 1;
+          height: 100%;
+          cursor: pointer;
+          & + .btn-line {
+            border-left: 1px solid $color-line-type02;
+          }
+          &.active {
+            color: $color-main-purple;
+            font-weight: 600;
+            background-color: #ebe3ff;
+          }
+        }
+      }
+      .search-wrap {
+        @include layout-justify-center;
+        margin-top: 10px;
+        .select-btn {
+          width: 70px;
+          &::after {
+            right: 5px;
+          }
+        }
+        .search-box {
+          width: 118px;
+          margin-top: 0;
+        }
+      }
+      .tab-wrap {
+        margin-top: 10px;
+        border: 1px solid $color-line-type02;
+        border-radius: 6px;
+        .scroll-inner {
+          height: 300px;
+          padding: 0 10px 10px;
+        }
+        .tit {
+          display: block;
+          margin-top: 17px;
+          font-weight: 500;
+          em {
+            display: inline-block;
+            margin-left: 3px;
+            color: $color-main-purple;
+          }
+        }
+        .btn-wrap {
+          margin-bottom: 0;
+          flex-wrap: wrap;
+          height: auto;
+          border-bottom: 0;
+          .btn-line {
+            flex: auto;
+            width: 33.333333%;
+            height: 40px;
+            border-bottom: 1px solid $color-line-type02;
+            &:nth-child(3n + 1){
+              border-left: 0;
+            }
+          }
+        }
+      }
+      .tab-menu-type03 {
+        padding: 10px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $color-line-type02;
+        li {
+          height: auto;
+          padding-left: 0;
+          border-bottom: 0;
+          a {
+            width: 89px;
+          }
+        }
+      } 
+    }
+  }
 }
 // 학생관리
 .sub10-01 {

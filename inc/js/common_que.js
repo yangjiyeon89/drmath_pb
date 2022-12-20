@@ -412,7 +412,13 @@ $(function () {
     let _this = $(this);
     let _txt = $(this).text();
 
-    _this.parents('.box').next('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+    if(_this.parents('div').hasClass('box')){
+      _this.parents('.box').next('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+    } else if(_this.parents('div').hasClass('col')){
+      _this.parents('.col').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+    }
+
+    
   })
   $(document).on('click', '.select-stu .del', function(){
     $(this).parents('.select-stu').remove();
