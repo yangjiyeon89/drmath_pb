@@ -307,11 +307,11 @@ $(function () {
       }
     } else {
       if (_this.prop('checked')) {
-        _this.parents('table').find('input[type=checkbox]').prop('checked', true);
-        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', true);
+        _this.parents('table').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', true);
+        _this.parents('.chk-acc').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', true);
       } else {
-        _this.parents('table').find('input[type=checkbox]').prop('checked', false);
-        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', false);
+        _this.parents('table').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', false);
+        _this.parents('.chk-acc').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', false);
       }
     }
   }
