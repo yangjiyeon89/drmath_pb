@@ -498,6 +498,18 @@
 
 .sub10-03 .tab-list-type01 .chk-acc span:nth-child(6) { width: 10%; }
 
+.sub10-04 .toggle-btn { overflow: inherit; border: 0; border-radius: 0; }
+
+.sub10-04 .toggle-btn .checkbox:checked + .knobs::before { left: 26px; }
+
+.sub10-04 .toggle-btn .checkbox:checked + .knobs::after { content: '공개'; }
+
+.sub10-04 .toggle-btn .checkbox:checked + .knobs + .layer { border-color: #5a14be; }
+
+.sub10-04 .toggle-btn .knobs::after { content: '비공개'; display: block; clear: both; position: absolute; left: 60px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.sub10-04 .toggle-btn .layer { border: 1px solid #dddddd; border-radius: 13.5px; }
+
 @media (max-width: 1280px) { .login { padding-top: 0; }
   .login .login-wrap { width: 100%; height: 100vh; }
   .login .left-img { width: 500px; }

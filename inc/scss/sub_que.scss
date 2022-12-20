@@ -1165,6 +1165,40 @@
     }
   }
 }
+// 앱관리
+.sub10-04 {
+  .toggle-btn {
+    overflow: inherit;
+    border: 0;
+    border-radius: 0;
+    .checkbox {
+      &:checked + .knobs::before {
+        left: 26px;
+      }
+      &:checked + .knobs::after {
+        content: '공개';
+      }
+      &:checked + .knobs + .layer {
+        border-color: $color-main-purple;
+      }
+    }
+    .knobs {
+      &::after {
+        content: '비공개';
+        display: block;
+        clear: both;
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .layer {
+      border: 1px solid $color-line-type02;
+      border-radius: 13.5px;
+    }
+  }
+}
 
 @media (max-width: 1280px) {
   
