@@ -190,6 +190,8 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .delete { background: url(../../images/common/ico_delete_type03.png); background-size: 13px !important; background-size: contain; }
 
+.delete-type02 { background: url(../../images/common/ico_delete_type05.png); background-size: 13px 14px !important; background-size: contain; }
+
 [class^='tab-menu-'] { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 [class^='tab-menu-'] li a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 16px; font-weight: 500; -webkit-box-sizing: border-box; box-sizing: border-box; }

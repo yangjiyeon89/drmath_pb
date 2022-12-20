@@ -504,6 +504,11 @@ body {
 	background-size: 13px !important;
 	background-size: contain;
 }
+.delete-type02 {
+  background: url(../../images/common/ico_delete_type05.png);
+	background-size: 13px 14px !important;
+	background-size: contain;
+}
 
 [class^='tab-menu-'] {
   @include content-center;
