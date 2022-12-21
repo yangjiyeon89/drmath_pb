@@ -849,6 +849,9 @@ input[type="text"], input[type="number"], input[type="password"] {
   &:focus {
     outline-style: solid;
   }
+  &.w60 {
+    width: 60px;
+  }
   &.w88 {
     width: 88px;
   }
@@ -901,6 +904,42 @@ input[type="radio"], input[type="checkbox"] {
       &::before {
         background: url(../../images/common/input_radio_chk.png) no-repeat;
         background-size: contain;
+      }
+    }
+  }
+}
+.input-radio-type02 {
+  input[type="radio"] {
+    & + label {
+      @include layout-center-center;
+      width: 420px;
+      height: 60px;
+      margin-right: 10px;
+      color: $color-font66;
+      font-weight: 500;
+      background-color: #f7f7f7;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      span {
+        position: relative;
+        font-size: 16px;
+      }
+    }
+    &:checked + label {
+      color: $color-main-purple;
+      background-color: #f5f1ff;
+      span {
+        &::before {
+          @include virtual-selector;
+          position: absolute;
+          left: -26px;top: 50%;
+          width: 14px;height: 11px;
+          margin-top: -6px;
+          background: url(../../images/common/input_radio_chk02.png) no-repeat;
+          background-size: contain;
+        }
       }
     }
   }
@@ -1823,6 +1862,139 @@ input[type="checkbox"] {
       margin: 20px 0 25px;
       text-align: center;
       color: $color-main-purple;
+    }
+  }
+  &.type03 {
+    overflow: hidden;
+    border: 1px solid $color-box;
+    border-right: 0;
+    border-radius: 5px;
+    table {
+      width: 100%;
+    }
+    tr:last-child {
+      th, td {
+        border-bottom: 0;
+      }
+    }
+    th, td {
+      text-align: center;
+      border-bottom: 1px solid $color-box;
+      border-right: 1px solid $color-box;
+    }
+    th {
+      height: 60px;
+      font-weight: 600;
+      background-color: $color-box-type02;
+    }
+    td {
+      padding: 15px 0;
+      span {
+        font-size: 18px;
+      }
+      em {
+        color: #999;
+      }
+    }
+    [type="text"] {
+      text-align: center;
+    }
+    .txt {
+      margin-left: 5px;
+      font-weight: 500;
+    }
+    .price {
+      @include content-justify-center;
+      width: 154px;height: 40px;
+      margin: 0 5px 0 12px;
+      padding: 0 10px 0 15px;
+      color: $color-main-purple;
+      @include font(20px, 600);
+      border-radius: 20px;
+      background-color: #f5f1ff;
+      box-sizing: border-box;
+      em {
+        @include font(18px, 400);
+      }
+      &.center {
+        margin: 0;
+        justify-content: center;
+      }
+    }
+    .form-txt-chk {
+      display: block;
+      margin-top: 15px;
+      color: #999;
+      font-size: 14px;
+    }
+    .chk-area {
+      margin-bottom: 10px;
+      .title {
+        display: block;
+        margin-top: 10px;
+        font-size: 24px;
+        em {
+          color: $color-sub33;
+          font-weight: 600;
+        }
+        img {
+          position: relative;
+          top: -10px;
+        }
+      }
+    }
+    .radio-wrap {
+      @include layout-center-center;
+      margin-top: 20px;
+      .form-txt-chk {
+        margin-top: 8px;
+      }
+    }
+    .txt-box-wrap {
+      padding: 27px 0;
+    }
+    .txt-box {
+      @include content-center;
+      .c-gray {
+        margin-right: 20px;
+        color: #999;
+        @include font(16px, 500);
+      }
+      .num {
+        font-size: 28px;
+      }
+      .txt {
+        @include font(20px, 600);
+      }
+      &.total {
+        margin-left: 100px;
+        .num {
+          color: $color-main-purple;
+          font-weight: 600;
+        }
+        .txt {
+          color: $color-main-purple;
+        }        
+      }
+      & + .txt-box {
+        position: relative;
+        margin-left: 70px;
+        &::before {
+          position: absolute;
+          top: 50%;left: -43px;
+          margin-top: -1px;
+          @include virtual-selector;
+          width: 16px;height: 2px;
+          background-color: $color-sub33;
+        }
+        &.total {
+          &::before {
+            width: 20px;height: 11px;
+            margin-top: -5px;
+            background: url(../../images/common/ico_bar.png) no-repeat;
+          }
+        }
+      }
     }
   }
 }
