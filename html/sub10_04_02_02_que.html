@@ -145,7 +145,7 @@
               </div>
               <div class="content">[ sub10_04_01_que] 탭으로 구현</div>
               <div class="content on">
-                <div class="content-inner style02">
+                <div class="content-inner style03">
                   <div class="class-list-wrap">
                     <div class="select-wrap">
                       <button type="button" class="select-btn wfull">클래스</button>
@@ -395,7 +395,7 @@
                             <span>영상시간</span>
                             <span>노출 여부</span>
                           </div>
-                          <div class="scroll-inner">
+                          <div class="scroll-inner type02">
                             <div class="tbody">
                               <div class="col">
                                 <span>1</span>
@@ -515,262 +515,25 @@
     </div>
     <div class="dim"></div>
 
-    <!-- 등록 팝업 -->
-    <div class="pop-wrap add-type" data-pop="add-pop">
+    <!-- 동영상 팝업 -->
+    <div class="pop-wrap video-type" data-pop="video-pop">
       <div class="pop-inner">
-        <div class="pop-content">
+        <div class="pop-header">
+          <span>학습동영상</span>
           <button type="button" class="pop-close"></button>
-          <div class="table-wrap type02">
-            <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
-            <div class="add-content">
-              <div class="class">
-                <span class="tit">클래스명</span>
-                <input type="text" class="wfull" placeholder="천재고등학교" maxlength="50">
-              </div>
-              <div class="select-area">
-                <div class="col">
-                  <span class="tit">담당 선생님 선택<em></em></span>
-                  <div class="search-box">
-                    <input type="text" placeholder="검색" class="wfull">
-                    <button type="button" class="btn-search"></button>
-                  </div>
-                  <!-- 검색 전 -->
-                  <span class="none-txt">선생님을 검색해 주세요.</span>
-                  <!-- 검색 후 -->
-                  <div class="stu-list" style="display: none;">
-                    <div class="scroll-inner">
-                      <button type="button" class="select">박천재</button>
-                      <button type="button" class="select">오천재</button>
-                      <button type="button" class="select">박천재</button>
-                      <button type="button" class="select">이천재</button>
-                    </div>
-                  </div>
-                  <!-- 검색 전 -->
-                  <span class="none-txt">선생님을 선택해 주세요.</span>
-                  <!-- 검색 후 -->
-                  <div class="select-wrap" style="display: none;">
-                    <div class="scroll-inner"></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="tit">보조 선생님 선택</span>
-                  <div class="search-box">
-                    <input type="text" placeholder="검색">
-                    <button type="button" class="btn-search"></button>
-                  </div>
-                  <!-- 검색 전 -->
-                  <span class="none-txt" style="display: none;">선생님을 검색해 주세요.</span>
-                  <!-- 검색 후 -->
-                  <div class="stu-list">
-                    <div class="scroll-inner">
-                      <button type="button" class="select">박천재</button>
-                      <button type="button" class="select">오천재</button>
-                      <button type="button" class="select">박천재</button>
-                      <button type="button" class="select">이천재</button>
-                    </div>
-                  </div>
-                  <!-- 검색 전 -->
-                  <span class="none-txt" style="display: none;">선생님을 선택해 주세요.</span>
-                  <!-- 검색 후 -->
-                  <div class="select-wrap">
-                    <div class="scroll-inner"></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="tit">대상 학년 선택</span>
-                  <div class="btn-wrap">
-                    <div class="btn-line active">
-                      <span class="txt">초</span>
-                    </div>
-                    <div class="btn-line">
-                      <span class="txt">중</span>
-                    </div>
-                    <div class="btn-line">
-                      <span class="txt">고</span>
-                    </div>
-                  </div>
-                  <div class="select-wrap">
-                    <button type="button" class="select-btn wfull">선택</button>
-                    <ul class="select-list">
-                      <li>
-                        <a href="javascript:;">1학년</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">2학년</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">3학년</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">4학년</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">5학년</a>
-                      </li>
-                      <li>
-                        <a href="javascript:;">6학년</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- 선택 전 -->
-                  <span class="none-txt">대상 학년을 선택해 주세요.</span>
-                  <!-- 선택 후 -->
-                  <div class="select-wrap type02">
-                    <div class="scroll-inner">
-                      <span class="select-stu">1학년<button type="button" class="del"></button></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <span class="tit">학생 선택</span>
-                  <div class="search-wrap">
-                    <div class="select-wrap">
-                      <button type="button" class="select-btn">선택</button>
-                      <ul class="select-list">
-                        <li>
-                          <a href="javascript:;">전체</a>
-                        </li>
-                        <li>
-                          <a href="javascript:;">학교급</a>
-                        </li>
-                        <li>
-                          <a href="javascript:;">이름</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="search-box">
-                      <input type="text" placeholder="검색">
-                      <button type="button" class="btn-search"></button>
-                    </div>
-                  </div>
-                  <div class="tab-wrap">
-                    <ul class="tab-menu-type03">
-                      <li class="ui-tab-btn">
-                        <a href="javascript:;">클래스</a>
-                      </li>
-                      <li class="ui-tab-btn active">
-                        <a href="javascript:;">학년</a>
-                      </li>
-                    </ul>
-                    <div class="contents">
-                      <div class="scroll-inner">
-                        <div class="box">
-                          <span class="tit">매쓰반<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line active">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">4</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">5</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">6</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="box">
-                          <span class="tit">닥터반<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="box">
-                          <span class="tit">천재반<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="contents on">
-                      <div class="scroll-inner">
-                        <div class="box">
-                          <span class="tit">초등<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line active">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">4</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">5</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">6</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="box">
-                          <span class="tit">중등<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="box">
-                          <span class="tit">고등<em>4명</em></span>
-                          <div class="btn-wrap">
-                            <div class="btn-line">
-                              <span class="txt">1</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">2</span>
-                            </div>
-                            <div class="btn-line">
-                              <span class="txt">3</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="pop-content">
+          <span class="title">
+            동영상명
+            <em>개념인트로</em>
+          </span>
+          <div class="video-cnt">
+            <!-- 비디오 영역 -->
+            <img src="../images/sub/sample_video.png" alt="">
           </div>
         </div>
         <div class="pop-footer">
           <button>취소</button>
-          <button>저장</button>
         </div>
       </div>
     </div>

@@ -39,7 +39,7 @@ body {
   top: 0;left: 0;
   width: 100%;height: 100vh;
   background-color: rgba(0,0,0,0.5);
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -692,7 +692,6 @@ body {
   }
 }
 .acc-tab-wrap {
-  
   .contents {
     width: 200px;
   }
@@ -1547,6 +1546,79 @@ input[type="checkbox"] {
   }
   & + .paging-wrap {
     margin-top: 15px;
+  }
+}
+
+.acc-table-type {
+  .table {
+    .scroll-inner {
+      height: 567px;
+    }
+    span {
+      padding: 23px 0;
+      &:nth-child(1) {
+        width: 50%;
+      }
+      &:nth-child(2) {
+        width: 20%;
+      }
+      &:nth-child(3) {
+        width: 30%;
+      }
+    }
+    .hidden-cnt {
+      em {
+        padding: 0 200px 0 40px;
+        cursor: pointer;
+      }
+      .cnt-btn {
+        right: 160px;
+      }
+      &.on {
+        em {
+          padding: 0 200px 0 40px;
+          color: $color-main-purple;
+        }
+      }
+    }
+  }
+  .acc-btn-wrap {
+    display: flex;
+    border-bottom: 1px solid $color-line-type02;
+    &.active {
+      border-bottom: 0;
+      border: 1px solid $color-main-purple;
+      border-bottom: 0;
+      box-sizing: border-box;
+      & + .cnt {
+        border: 1px solid $color-main-purple;
+        border-top: 0;
+        box-sizing: border-box;
+      }
+      span {
+        padding: 22px 0 23px;
+      }
+      em {
+        padding: 0 200px 0 39px !important;
+        color: $color-main-purple;
+      }
+    }
+  }
+  .cnt {
+    display: none;
+    padding: 10px 0;
+    background-color: #fcfaff;
+  }
+  .cnt-row {
+    display: flex;
+    width: 100%;    
+    span {
+      padding: 10px 0;
+    }
+    .name {
+      justify-content: flex-start;
+      padding-left: 80px;
+    }
   }
 }
 

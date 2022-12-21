@@ -149,14 +149,22 @@ $(function () {
         _this.parents('.contents').find('.content').removeClass('on');
         _this.parents('.contents').find('.content').eq(_idx).addClass('on');
       }
+    } else if(_this.parents('ul').hasClass('ui-tab-type02')){
+      let _idx = $(this).data('idx');
+
+      if (!_this.hasClass('active')) {
+        _this.parents('li').siblings('li').find(tabBtn).removeClass('active');
+        _this.siblings().removeClass('active');
+        _this.addClass('active');
+        _cnt.removeClass('on');
+        _cnt.eq(_idx).addClass('on');
+      }
     } else {
       if (!_this.hasClass('active')) {
         _this.siblings().removeClass('active');
         _this.addClass('active');
         _cnt.removeClass('on');
         _cnt.eq(_idx).addClass('on');
-
-        console.log(_idx)
       }
     }
   }

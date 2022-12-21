@@ -1068,6 +1068,29 @@
       } 
     }
   }
+  //학습동영상 팝업
+  .video-type {
+    .pop-inner {
+      width: 800px;
+    }
+    .pop-content {
+      padding: 10px 30px 40px;
+      .title {
+        display: block;
+        margin-bottom: 20px;
+        color: #999;
+        font-size: 18px;
+        em {
+          padding-left: 6px;
+          color: $color-main-purple;
+          font-weight: 600;
+        }
+      }
+      .video-cnt {
+        width: 100%;
+      }
+    }
+  }
 }
 // 학생관리
 .sub10-01 {
@@ -1222,6 +1245,9 @@
     &.style02 {
       padding: 20px;
     }
+    &.style03 {
+      padding: 20px 20px 16px;
+    }
   }
   .add-cnt {
     width: 590px;
@@ -1334,17 +1360,24 @@
   .video-cnt-wrap {
     width: 979px;
     .row {
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       > .tit {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
         @include font(18px, 600);
+      }
+      &:last-child {
+        margin-bottom: 0;
       }
     }
     .table-wrap {
       margin-top: 0;
       table {
+        margin-top: 0;
         border: 1px solid $color-line-type02;
+        th, td {
+          height: 59px;
+        }
       }
       .btn-icon {
         position: relative;
@@ -1352,9 +1385,55 @@
         display: inline-flex;
         margin-left: 6px;
       }
+      .select-btn {
+        width: 100px;
+        &::after {
+          right: 9px;
+        }
+      }
+      .select-wrap:nth-child(4) {
+        .select-btn {
+          width: 160px;
+        }
+      }
     }
     .tab-list-type01 {
       width: 100%;
+      .scroll-inner {
+        height: 148px;
+        border-bottom: 1px solid $color-line-type02;
+      }
+      .table {
+        span {
+          padding: 11px 0;
+          &:nth-child(1) {
+            width: 7%;
+          }
+          &:nth-child(2) {
+            width: 55%;
+          }
+          &:nth-child(3) {
+            width: 21%;
+          }
+          &:nth-child(4) {
+            width: 17%;
+          }
+          &.tit {
+            padding-left: 30px;
+          }
+        }
+        button {
+          width: 28px;height: 28px;
+          margin-right: 10px;
+          background: url(../../images/common/ico_video.png) no-repeat;
+        }
+        .col:last-child {
+          border-bottom: 0;
+        }
+      }
+      .toggle-wrap {
+        margin-left: -60px;
+      }
     }
   }
 }
@@ -1481,6 +1560,22 @@
     }
     .defalut-view {
       height: 448px;
+    }
+    .video-cnt-wrap {
+      .tab-list-type01 {
+        .scroll-inner {
+          height: 100px;
+          &.type02 {
+            height: 50px;
+          }
+        }
+      }
+      .row {
+        margin-bottom: 11px;
+        & > .tit {
+          margin-bottom: 3px;
+        }
+      }
     }
   }
 }

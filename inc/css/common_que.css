@@ -18,7 +18,7 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .scroll-inner::-webkit-scrollbar-track { background-color: transparent; }
 
-.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5); z-index: 2; }
+.dim { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5); z-index: 3; }
 
 .header .inner { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -621,6 +621,40 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .tab-list-type01 .table.chk-acc span:nth-child(7) { width: 15%; }
 
 .tab-list-type01 + .paging-wrap { margin-top: 15px; }
+
+.acc-table-type .table .scroll-inner { height: 567px; }
+
+.acc-table-type .table span { padding: 23px 0; }
+
+.acc-table-type .table span:nth-child(1) { width: 50%; }
+
+.acc-table-type .table span:nth-child(2) { width: 20%; }
+
+.acc-table-type .table span:nth-child(3) { width: 30%; }
+
+.acc-table-type .table .hidden-cnt em { padding: 0 200px 0 40px; cursor: pointer; }
+
+.acc-table-type .table .hidden-cnt .cnt-btn { right: 160px; }
+
+.acc-table-type .table .hidden-cnt.on em { padding: 0 200px 0 40px; color: #5a14be; }
+
+.acc-table-type .acc-btn-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #dddddd; }
+
+.acc-table-type .acc-btn-wrap.active { border-bottom: 0; border: 1px solid #5a14be; border-bottom: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.acc-table-type .acc-btn-wrap.active + .cnt { border: 1px solid #5a14be; border-top: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.acc-table-type .acc-btn-wrap.active span { padding: 22px 0 23px; }
+
+.acc-table-type .acc-btn-wrap.active em { padding: 0 200px 0 39px !important; color: #5a14be; }
+
+.acc-table-type .cnt { display: none; padding: 10px 0; background-color: #fcfaff; }
+
+.acc-table-type .cnt-row { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
+
+.acc-table-type .cnt-row span { padding: 10px 0; }
+
+.acc-table-type .cnt-row .name { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding-left: 80px; }
 
 .table-wrap .inner { width: 1019px; border: 1px solid #dddddd; border-top: 0; border-right: 0; }
 
