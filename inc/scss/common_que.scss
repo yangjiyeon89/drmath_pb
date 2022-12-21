@@ -509,6 +509,11 @@ body {
 	background-size: 13px 14px !important;
 	background-size: contain;
 }
+.search-type02 {
+  background: url(../../images/common/ico_search.png);
+	background-size: 14px 15px !important;
+	background-size: contain;
+}
 
 [class^='tab-menu-'] {
   @include content-center;

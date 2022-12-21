@@ -129,141 +129,61 @@
             <div class="tab-wrap">
               <div class="tab-top">
                 <ul class="tab-menu-type02">
-                  <li class="ui-tab-btn active">
+                  <li class="ui-tab-btn">
                     <a href="javascript:;">학부모</a>
                   </li>
-                  <li class="ui-tab-btn">
+                  <li class="ui-tab-btn active">
                     <a href="javascript:;">학생</a>
                   </li>
                 </ul>
-                <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">공지사항을 등록할 수 있습니다.</span>
+                <div class="input-radio-type01">
+                  <input type="radio" id="radio01_01" name="radio01" checked>
+                  <label for="radio01_01">학습 동영상 관리</label>
+                  <input type="radio" id="radio01_02" name="radio01">
+                  <label for="radio01_02">학생 앱 정답 공개 설정</label>
+                </div>
               </div>
+              <div class="content">[ sub10_04_01_que] 탭으로 구현</div>
               <div class="content on">
-                <div class="content-inner">
-                  <div class="add-cnt">
-                    <div class="tit-wrap">
-                      <span>등록하기</span>
-                      <div class="toggle-wrap">
-                        <div class="toggle-btn">
-                          <input type="checkbox" class="checkbox">
-                          <div class="knobs"></div>
-                          <div class="layer"></div>
-                        </div>
-                      </div>
+                <div class="content-inner style02">
+                  <div class="class-list-wrap">
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn wfull">클래스</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">클래스</a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="cnt-wrap">
-                      <input type="text" placeholder="공지사항 제목을 입력해주세요." class="wfull">
-                      <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
-                      <button type="button" class="btn-default">등록</button>
+                    <div class="class-list">
+                      <div class="tit">
+                        <span>수강생</span>
+                        <em>0명</em>
+                      </div>
+                      <div class="class-cnt">
+                        <!-- 선택 전 -->
+                        <span class="txt">클래스를 선택해 주세요.</span>
+                        <!-- 선택 후 -->
+                        <!-- <div class="list-area">
+                          <div class="scroll-inner">
+                            <a href="javascript:;">김닥터 <em>초2</em></a>
+                            <a href="javascript:;">정매쓰 <em>초3</em></a>
+                            <a href="javascript:;">현기준 <em>초3</em></a>
+                            <a href="javascript:;">전적대 <em>초2</em></a>
+                            <a href="javascript:;">이학부 <em>초3</em></a>
+                          </div>
+                        </div> -->
+                      </div>
                     </div>
                   </div>
-                  <div class="list-cnt tab-list-type01">
-                    <div class="table chk-acc">
-                      <div class="fix-head">
-                        <span>
-                          <input type="checkbox" id="chk100_01" class="allCheck">
-                          <label for="chk100_01"></label>
-                        </span>
-                        <span>제목</span>
-                        <span>등록일</span>
-                        <span>공개 여부</span>
-                      </div>
-                      <div class="tbody">
-                        <div class="col">
-                          <span class="">
-                            <input type="checkbox" id="chk100_02">
-                            <label for="chk100_02"></label>
-                          </span>
-                          <span>휴원안내</span>
-                          <span>2021. 12. 31</span>
-                          <span>
-                            <div class="toggle-wrap">
-                              <div class="toggle-btn">
-                                <input type="checkbox" id="chk100_03" class="checkbox" checked>
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="col">
-                          <span class="">
-                            <input type="checkbox" id="chk100_02">
-                            <label for="chk100_02"></label>
-                          </span>
-                          <span>방학 안내</span>
-                          <span>2023.01.22</span>
-                          <span>
-                            <div class="toggle-wrap">
-                              <div class="toggle-btn">
-                                <input type="checkbox" id="chk100_03" class="checkbox">
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="col">
-                          <span class="">
-                            <input type="checkbox" id="chk100_02">
-                            <label for="chk100_02"></label>
-                          </span>
-                          <span>특강 신청 안내</span>
-                          <span>2024.01.26</span>
-                          <span>
-                            <div class="toggle-wrap">
-                              <div class="toggle-btn">
-                                <input type="checkbox" id="chk100_03" class="checkbox">
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="col">
-                          <span class="">
-                            <input type="checkbox" id="chk100_02">
-                            <label for="chk100_02"></label>
-                          </span>
-                          <span>방학 안내</span>
-                          <span>2026.12.31</span>
-                          <span>
-                            <div class="toggle-wrap">
-                              <div class="toggle-btn">
-                                <input type="checkbox" id="chk100_03" class="checkbox" checked>
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                        <div class="col">
-                          <span class="">
-                            <input type="checkbox" id="chk100_02">
-                            <label for="chk100_02"></label>
-                          </span>
-                          <span>특강 신청 안내</span>
-                          <span>2028.12.23</span>
-                          <span>
-                            <div class="toggle-wrap">
-                              <div class="toggle-btn">
-                                <input type="checkbox" id="chk100_03" class="checkbox" checked>
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btm-cnt">
-                      <button type="button" class="btn-icon"><i class="delete-type02"></i>삭제</button>
-                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최근 5개까지 보여집니다.</span>
+                  <div class="defalut-view">
+                    <img src="../images/sub/sub10_04_img.png" alt="">
+                    <div class="txt-box">
+                      <span class="txt">학생에게 제공될 학습<br><em>동영상</em>을 <em>관리</em>할 수 있습니다.</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="content">[ sub10_04_02_01_que] 탭으로 구현</div>
             </div>
           </div>
           
