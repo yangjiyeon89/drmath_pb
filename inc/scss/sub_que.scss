@@ -1248,6 +1248,9 @@
     &.style03 {
       padding: 20px 20px 16px;
     }
+    &.style04 {
+      padding: 20px 0 0 0;
+    }
   }
   .add-cnt {
     width: 590px;
@@ -1436,6 +1439,79 @@
       }
     }
   }
+  .setting-cnt {
+    width: 100%;
+    .title {
+      display: block;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      @include font(18px, 600);
+    }
+  }
+  .acc-table-type {
+    width: 100%;
+    .inner {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .table {
+      border-right: 0;
+      border-left: 0;
+      .scroll-inner {
+        height: 567px;
+      }
+      .fix-head {
+        span {
+          padding: 0;
+          height: 40px;
+        }
+      }
+      span {
+        padding: 23px 0;
+        &:nth-child(1) {
+          width: 50%;
+        }
+        &:nth-child(2) {
+          width: 20%;
+        }
+        &:nth-child(3) {
+          width: 30%;
+        }
+      }
+      .hidden-cnt {
+        em {
+          padding: 0 200px 0 40px;
+          cursor: pointer;
+        }
+        .cnt-btn {
+          right: 160px;
+        }
+        &.on {
+          em {
+            padding: 0 200px 0 40px;
+            color: $color-main-purple;
+          }
+        }
+      }
+      .row:last-child {
+        .acc-btn-wrap {
+          border-bottom: 0;
+        }
+      }
+    }
+    .cnt-row {
+      display: flex;
+      width: 100%;    
+      span {
+        padding: 10px 0;
+      }
+      .name {
+        justify-content: flex-start;
+        padding-left: 80px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1574,6 +1650,16 @@
         margin-bottom: 11px;
         & > .tit {
           margin-bottom: 3px;
+        }
+      }
+    }
+    .acc-table-type {
+      .inner {
+        padding: 0;
+      }
+      .table {
+        .scroll-inner {
+          height: 379px;
         }
       }
     }
