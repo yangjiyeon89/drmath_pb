@@ -369,6 +369,19 @@ body {
   border: 1px solid $color-main-purple;
   border-radius: 5px;
 }
+.btn-size-s {
+  width: 59px;
+  height: 24px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+  background-color: $color-main-purple;
+  &.type02 {
+    color: $color-main-purple;
+    border: 1px solid $color-main-purple;;
+    background-color: #fff;
+  }
+}
 
 .preview {
   background: url(../../images/common/ico_preview.png);
@@ -512,6 +525,11 @@ body {
 .search-type02 {
   background: url(../../images/common/ico_search.png);
 	background-size: 14px 15px !important;
+	background-size: contain;
+}
+.check {
+  background: url(../../images/common/ico_chk.png);
+	background-size: 18px !important;
 	background-size: contain;
 }
 
@@ -1381,26 +1399,25 @@ input[type="checkbox"] {
     }
   }
 }
-
+.filter-wrap {
+  margin-left: 12px;
+  button {
+    display: block;
+    width: 17px;height: 12px;
+    background: url(../../images/common/ico_arrow_bg_w.png) no-repeat;
+    &.down {
+      position: relative;
+      top: -1px;
+      transform: rotate(-180deg);
+    }
+  }
+}
 .tab-list-type01 {
   .tab-top {
     @include layout-justify-center;
     padding: 25px 20px;
     .select-wrap {
       margin-left: 6px;
-    }
-  }
-  .filter-wrap {
-    margin-left: 12px;
-    button {
-      display: block;
-      width: 17px;height: 12px;
-      background: url(../../images/common/ico_arrow_bg_w.png) no-repeat;
-      &.down {
-        position: relative;
-        top: -1px;
-        transform: rotate(-180deg);
-      }
     }
   }
   .table {

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="page12_01 sub12-que">
+    <div class="header">
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">수업준비</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">맞춤문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재연동</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">AI 기출 마스터</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">수업진행</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">학습현황</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재</a>
+                </li>
+                <li>
+                  <a href="javascript:;">분석표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">운영관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">원 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">출결 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">결제 관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">회원권 결제</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 결제</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="javascirpt:;"><span>가이드</span></a>
+            <a href="javascirpt:;"><span>고객센터</span></a>
+            <a href="javascirpt:;"><span>김천재님</span></a>
+            <a href="javascirpt:;"><span>로그아웃</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container sub12-01">
+      <div class="inner">
+        <div class="calendar-list-cnt">
+          <div class="list-cnt">
+            <div class="tab-wrap acc-tab-wrap">
+              <ul class="tab-menu-type04">
+                <li class="ui-tab-btn active">
+                  <a href="javascript:;">클래스</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">학년</a>
+                </li>
+              </ul>
+              <div class="contents on">
+                <div class="scroll-inner">
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap active">
+                      <span>매쓰반</span>
+                      <em>4명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt" style="display: block;">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap">
+                      <span>닥터반</span>
+                      <em>3명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap">
+                      <span>천재반</span>
+                      <em>7명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="contents">
+                <div class="scroll-inner">
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap">
+                      <span>초1</span>
+                      <em>4명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap">
+                      <span>초2</span>
+                      <em>6명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="acc-cnt">
+                    <div class="acc-btn-wrap">
+                      <span>초3</span>
+                      <em>8명</em>
+                      <button type="button" class="acc-btn"></button>
+                    </div>
+                    <ul class="cnt">
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                      <li class="active">
+                        <span>고희동</span>
+                        <em class="on"></em>
+                      </li>
+                      <li>
+                        <span>김둘리</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>도우너</span>
+                        <em></em>
+                      </li>
+                      <li>
+                        <span>유또치</span>
+                        <em class="on"></em>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-wrap tab-list-type01">
+            <div class="table-top">
+              <div class="month">
+                <button type="button" class="prev"></button>
+                <span class="txt">2022.09</span>
+                <button type="button" class="next"></button>
+              </div>
+              <div class="btn-wrap">
+                <button type="button" class="btn-icon type02 pop-btn" data-pop="download-pop"><i class="download"></i> 다운로드</button>
+                <button type="button" class="btn-icon type02 pop-btn" data-pop="pop01"><i class="check"></i> 일괄출결</button>
+              </div>
+            </div>
+            <div class="table">
+              <div class="fix-head">
+                <span class="date-prev">
+                  <button type="button"></button>
+                </span>
+                <span>
+                  <em class="num">16</em>
+                  <em class="txt">금</em>
+                </span>
+                <span>
+                  <em class="num">17</em>
+                  <em class="txt blue">토</em>
+                </span>
+                <span>
+                  <em class="num">18</em>
+                  <em class="txt red">일</em>
+                </span>
+                <span>
+                  <em class="num">19</em>
+                  <em class="txt">월</em>
+                </span>
+                <span>
+                  <em class="num">20</em>
+                  <em class="txt">화</em>
+                </span>
+                <span>
+                  <em class="num">21</em>
+                  <em class="txt">수</em>
+                </span>
+                <span>
+                  <em class="num">22</em>
+                  <em class="txt">목</em>
+                </span>
+                <span>
+                  <em class="num">23</em>
+                  <em class="txt">금</em>
+                </span>
+                <span>
+                  <em class="num">24</em>
+                  <em class="txt blue">토</em>
+                </span>
+                <span>
+                  <em class="num">25</em>
+                  <em class="txt red">일</em>
+                </span>
+                <span>
+                  <em class="num">26</em>
+                  <em class="txt">월</em>
+                </span>
+                <span>
+                  <em class="num">27</em>
+                  <em class="txt">화</em>
+                </span>
+                <span>
+                  <em class="num">28</em>
+                  <em class="txt">수</em>
+                </span>
+                <span class="date-next">
+                  <button type="button"></button>
+                </span>
+              </div>
+              <div class="tbody">
+                <div class="scroll-inner">
+                  <div class="col">
+                    <span class="name">김천재</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">이천재</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">정천재</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">유천재</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">김매쓰</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">이춘식</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">김혜지</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">오영택</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">이춘식</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">김혜지</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                  <div class="col">
+                    <span class="name">오영택</span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="none"></span>
+                    <span class="none"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="chk"></span>
+                    <span class="btn-wrap">
+                      <button type="button" class="btn-size-s">등원</button>
+                      <button type="button" class="btn-size-s type02">하원</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dim"></div>
+
+    <!-- 일괄출결 팝업 -->
+    <div class="pop-wrap chk-type" data-pop="pop01">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>등 · 하원 관리</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="top-cnt">
+            <div class="input-chk">
+              <input type="checkbox" id="chk01_01" checked="">
+              <label for="chk01_01">학부모 앱 푸시 전송</label>
+            </div>
+            <div class="table-wrap type02">
+              <table>
+                <colgroup>
+                  <col width="18%">
+                  <col width="*">
+                  <col width="18%">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>일자</th>
+                    <td>
+                      <input type="text" value="2022년 9월 26일" class="wfull">
+                    </td>
+                    <th>시간</th>
+                    <td>
+                      <div class="num-box">
+                        <input type="number" value="15">
+                        <div class="filter-wrap">
+                          <button class="up"></button>
+                          <button class="down"></button>
+                        </div>
+                      </div>
+                      <div class="num-box">
+                        <input type="number" value="48">
+                        <div class="filter-wrap">
+                          <button class="up"></button>
+                          <button class="down"></button>
+                        </div>
+                      </div>                      
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="list-cnt">
+            <div class="chk-acc">
+              <div class="all-chk">
+                <input type="checkbox" id="chk100_01" class="allCheck">
+                <label for="chk100_01">전체</label>
+              </div>
+              <ul class="chk-list scroll-inner">
+                <li>
+                  <input type="checkbox" id="chk100_02" checked="">
+                  <label for="chk100_02">김천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_03" checked="">
+                  <label for="chk100_03">이천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_04">
+                  <label for="chk100_04">유천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_05">
+                  <label for="chk100_05">정천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_06">
+                  <label for="chk100_06">장천재</label>
+                </li>
+              </ul>
+              <button>등원 처리</button>
+            </div>
+            <div class="chk-acc">
+              <div class="all-chk">
+                <input type="checkbox" id="chk100_07" class="allCheck">
+                <label for="chk100_07">전체</label>
+              </div>
+              <ul class="chk-list scroll-inner">
+                <li>
+                  <input type="checkbox" id="chk100_08" checked="">
+                  <label for="chk100_08">김천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_09" checked="">
+                  <label for="chk100_09">이천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_10">
+                  <label for="chk100_10">유천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_11">
+                  <label for="chk100_11">정천재</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="chk100_12">
+                  <label for="chk100_12">장천재</label>
+                </li>
+              </ul>
+              <button>하원 처리</button>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 다운로드 팝업 -->
+    <div class="pop-wrap table-type" data-pop="download-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>출석 내역 다운로드</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <table>
+            <colgroup>
+              <col width="22%">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>대상</th>
+                <td class="txt">매쓰반</td>
+              </tr>
+              <tr>
+                <th>선택</th>
+                <td>
+                  <div class="select-wrap">
+                    <button type="button" class="select-btn">22년 9월</button>
+                    <ul class="select-list" style="display: none;">
+                      <li>
+                        <a href="javascript:;">22년 9월</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
