@@ -57,3 +57,6 @@
 .sub13-que .payment-wrap .btn-line.active.card span::before { background: url(../../images/common/ico_card_on.png) no-repeat; }
 
 .sub13-que .payment-wrap .btn-line.active.cash span::before { background: url(../../images/common/ico_cash_on.png) no-repeat; }
+
+@media (max-width: 1280px) { .sub13-que { overflow: hidden; }
+  .sub13-que .container .inner { padding-bottom: 0; } }

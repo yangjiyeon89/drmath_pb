@@ -140,3 +140,14 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  .sub13-que {
+    overflow: hidden;
+    .container {
+      .inner {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
