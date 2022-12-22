@@ -101,6 +101,7 @@ $(function () {
       $('.nav-wrap').addClass('on');
       _gnbMenuLink.eq(2).find('.depth2').addClass('on');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
+      break;
       case 'page12_01':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       $('.nav-wrap').addClass('on');
