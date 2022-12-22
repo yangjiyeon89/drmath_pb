@@ -1837,7 +1837,55 @@
     }
   }
 }
-
+//인원 추가
+.sub14 {
+  .scroll-inner {
+    overflow: inherit;
+  }
+  .table-wrap {
+    overflow: inherit;
+    td {
+      height: 60px;
+      padding: 0;
+      box-sizing: border-box;
+      .font-c {
+        color: $color-main-purple;
+        font-size: 16px;
+      }
+    }
+    .date {
+      width: auto;
+      height: auto;
+      padding: 7px 30px;
+      @include font(16px, 500);
+    }
+    .select-list {
+      li {
+        height: auto;
+        padding: 0;
+        a {
+          width: 100%;
+          padding-left: 22px;
+          text-align: left;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+    .form-txt-chk {
+      margin-top: 2px;
+    }
+    .txt-box:nth-child(1) {
+      .num {
+        margin-left: 20px;
+      }
+      .txt:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+  }
+}
 
 @media (max-width: 1280px) {  
   // 로그인
@@ -2000,6 +2048,12 @@
     }
     .loading {
       height: 560px;
+    }
+  }
+  //인원추가
+  .sub14 {
+    .scroll-inner {
+      overflow: overlay;
     }
   }
 }
