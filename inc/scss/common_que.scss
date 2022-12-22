@@ -77,6 +77,7 @@ body {
   }
   .nav {
     @include layout-center;
+    margin-left: 100px;
     li {
       > a {
         position: relative;
@@ -98,7 +99,7 @@ body {
       }
       &:nth-child(2) {
         .depth2 {
-          padding-left: 22%;
+          padding-left: 26%;
         }
       }
       &:nth-child(3) {
@@ -108,7 +109,7 @@ body {
       }
       &:nth-child(4) {
         .depth2 {
-          padding-left: 40%;
+          padding-left: 17%;
         }
       }
     }
@@ -120,7 +121,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    padding-left: 17%;
+    padding-left: 21%;
     background-color: #f5f1ff;
     box-sizing: border-box;
     li {

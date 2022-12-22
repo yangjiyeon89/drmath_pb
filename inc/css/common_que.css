@@ -30,7 +30,7 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .header .logo a img { width: 100%; }
 
-.header .nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.header .nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 100px; }
 
 .header .nav li > a { position: relative; font-size: 18px; font-weight: 700; }
 
@@ -40,13 +40,13 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .header .nav li + li { margin-left: 45px; }
 
-.header .nav li:nth-child(2) .depth2 { padding-left: 22%; }
+.header .nav li:nth-child(2) .depth2 { padding-left: 26%; }
 
 .header .nav li:nth-child(3) .depth2 { padding-left: 32%; }
 
-.header .nav li:nth-child(4) .depth2 { padding-left: 40%; }
+.header .nav li:nth-child(4) .depth2 { padding-left: 17%; }
 
-.header .depth2 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 100%; left: 0; width: 100%; padding-left: 17%; background-color: #f5f1ff; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.header .depth2 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: none; position: absolute; top: 100%; left: 0; width: 100%; padding-left: 21%; background-color: #f5f1ff; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .header .depth2 li { width: 120px; text-align: center; }
 
