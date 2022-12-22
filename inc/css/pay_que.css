@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/** Computes a CSS calc function that betweens a value from A to B over viewport-width A to viewport-width B. Requires a media query to cap the value at B. vw 단위를 활용하여 미디어쿼리 분기의 중간 상태값을 계산해주는 SASS 함수. 간격이나 폰트사이즈에 적용하면 자연스러운 반응형 사이즈 처리가 가능 함. 참고사이트 http://dohoons.com/blog/1364 */
+/** Read the article: http://sassbreak.com/viewport-relative-headings-with-sass px 를 vw 로 자동으로 바꿔 줌. max-breakpoint 를 설정하면 미디어쿼리 브레이크 포인트가 됨. 그래서 미디어쿼리 브레이크 포인트에 맞춰 px 가 vw 로 변환됨. 100% 보다 더 크게 적용 하고 싶으면 return 부분을 수정하면됨. 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/ */
+@import url(../css/font.css);
+.sub13-que .content-wrap { margin: 70px 20px 0; padding: 40px 30px 20px; border: 1px solid #dddddd; border-top: 2px solid #5a14be; }
+
+.sub13-que .title-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px 0 10px; }
+
+.sub13-que .title-wrap .sub-tit { margin: 0; }
+
+.sub13-que .title { font-size: 28px; font-weight: 700; }
+
+.sub13-que .sub-tit { display: block; margin: 40px 0 20px; font-size: 18px; font-weight: 600; }
+
+.sub13-que .sub-tit em { color: #999; font-size: 14px; font-weight: 400; }
+
+.sub13-que .coupon { position: relative; padding: 11px 24px 11px 52px; color: #fff; font-weight: 600; border-radius: 5px; background-color: #8d4aec; }
+
+.sub13-que .coupon::before { position: absolute; left: 16px; top: 10px; content: ""; display: block; clear: both; width: 27px; height: 20px; background: url(../../images/common/ico_coupon.png) no-repeat; }
+
+.sub13-que .btn-default { margin: 20px auto 0; }
+
+.sub13-que .price-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
+
+.sub13-que .price-wrap .box { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 19px 26px 19px 20px; border: 1px solid #dddddd; border-radius: 5px; background-color: #f6f6f6; }
+
+.sub13-que .price-wrap .box .txt { font-weight: 600; }
+
+.sub13-que .price-wrap .box .price { color: #737373; }
+
+.sub13-que .price-wrap .box .price em { margin-right: 5px; color: #333333; font-size: 18px; font-weight: 700; }
+
+.sub13-que .payment-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 14px; padding: 16px 0; border: 1px solid #dddddd; border-radius: 5px; background-color: #f6f6f6; }
+
+.sub13-que .payment-wrap .btn-line { padding: 23px 36px 23px 0; font-weight: 600; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #fff; }
+
+.sub13-que .payment-wrap .btn-line.card { padding-left: 73px; }
+
+.sub13-que .payment-wrap .btn-line.cash { padding-left: 67px; }

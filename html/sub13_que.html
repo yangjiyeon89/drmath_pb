@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
-  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <link rel="stylesheet" href="../inc/css/pay_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -110,11 +110,148 @@
     </div>
     <div class="container sub13-01">
       <div class="inner">
-        
+        <div class="content-wrap">
+          <span class="title">온라인 사용권</span>
+          <div class="section sec01">
+            <div class="title-wrap">
+              <span class="sub-tit">가입비 결제 <em>가입시 최초 1회만 결제합니다.</em></span>
+              <button type="button" class="coupon">쿠폰</button>
+            </div>
+            <div class="price-wrap">
+              <div class="box">
+                <span class="txt">할인금액</span>
+                <span class="price"><em>0</em>원</span>
+              </div>
+              <div class="box">
+                <span class="txt">금액</span>
+                <span class="price"><em>500,000</em>원</span>
+              </div>
+            </div>
+          </div>
+          <div class="section sec02">
+            <span class="sub-tit">사용권 결제</span>
+            <div class="table-wrap type03">
+              <table>
+                <colgroup>
+                  <col width="6%">
+                  <col width="29%">
+                  <col width="*">
+                  <col width="*">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>선택</th>
+                    <th>사용기간 <em>(10명 기준)</em></th>
+                    <th>사용인원</th>
+                    <th>추가 인원과금</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="input-radio-type01">
+                      <input type="radio" id="radio200_01" name="radio200" checked="">
+                      <label for="radio200_01"></label>
+                    </td>
+                    <td>
+                      <span>1개월</span>
+                      <span class="price"><em>￦</em>150,000</span>
+                      <em>(30일)</em>
+                    </td>
+                    <td rowspan="3">
+                      <input type="text" value="10" class="w60">
+                      <span class="txt">명</span>
+                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 10명입니다.</span>
+                    </td>
+                    <td rowspan="3">
+                      <span class="price center">15,000</span>
+                      <span class="txt">원</span>
+                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">11명 부터는 인당 5,500원이 적용됩니다.</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="input-radio-type01">
+                      <input type="radio" id="radio200_02" name="radio200" checked="">
+                      <label for="radio200_02"></label>
+                    </td>
+                    <td>
+                      <span>6개월</span>
+                      <span class="price"><em>￦</em>120,000</span>
+                      <em>(180일)</em>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="input-radio-type01">
+                      <input type="radio" id="radio200_03" name="radio200" checked="">
+                      <label for="radio200_03"></label>
+                    </td>
+                    <td>
+                      <span>12개월</span>
+                      <span class="price"><em>￦</em>100,000</span>
+                      <em>(360일)</em>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <div class="chk-area">
+                        <span class="title">
+                          <img src="../images/common/tit_deco.png" alt="">
+                          <em>12개월</em>
+                          결제 혜택
+                        </span>
+                        <div class="radio-wrap">
+                          <div class="input-radio-type02">
+                            <input type="radio" id="radio300_01" name="radio300">
+                            <label for="radio300_01"><span>가입비 면제(50만원 혜택)</span></label>
+                            <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">11명 부터는 인당 5,500원이 적용됩니다.</span>
+                          </div>
+                          <div class="input-radio-type02">
+                            <input type="radio" id="radio300_02" name="radio300" checked="">
+                            <label for="radio300_02"><span>인원 10명 추가(66만원 혜택)</span></label>
+                            <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">기본인원(10명) 외 10명의 인원 추가!</span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="txt-box-wrap">
+                      <div class="txt-box">
+                        <span class="c-gray">결제금액</span>
+                        <span class="num">650,000</span>
+                        <span class="txt">원</span>
+                      </div>
+                      <div class="txt-box">
+                        <span class="c-gray">할인금액</span>
+                        <span class="num">0</span>
+                        <span class="txt">원</span>
+                      </div>
+                      <div class="txt-box total">
+                        <span class="c-gray">총 결제금액</span>
+                        <span class="num">650,000</span>
+                        <span class="txt">원</span>
+                      </div>
+                    </td>
+                  </tr>      
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="section sec03">
+            <span class="sub-tit">결제정보</span>
+            <div class="payment-wrap btn-wrap">
+              <div class="btn-line card">
+                <span>신용카드</span>
+              </div>
+              <div class="btn-line cash">
+                <span>가상계좌(무통장입금)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn-default">결제하기</button>
       </div>
     </div>
     <div class="dim"></div>
-
   </div>
 </body>
 </html>

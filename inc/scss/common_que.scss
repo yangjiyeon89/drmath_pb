@@ -1900,6 +1900,11 @@ input[type="checkbox"] {
     [type="text"] {
       text-align: center;
     }
+    .input-radio-type01 {
+      [type="radio"] + label {
+        padding-left: 20px;
+      }
+    }
     .txt {
       margin-left: 5px;
       font-weight: 500;

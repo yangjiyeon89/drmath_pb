@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import url(../css/font.css);
+
+//결제관리
+.sub13-que {
+  .content-wrap {
+    margin: 70px 20px 0;
+    padding:40px 30px 20px;
+    border: 1px solid $color-line-type02;
+    border-top: 2px solid $color-main-purple;
+  }
+  .title-wrap {
+    @include layout-justify-center;
+    margin: 30px 0 10px;
+    .sub-tit {
+      margin: 0;
+    }
+  }
+  .title {
+    @include font(28px, 700);
+  }
+  .sub-tit {
+    display: block;
+    margin: 40px 0 20px;
+    @include font(18px, 600);
+    em {
+      color: #999;
+      @include font(14px, 400)
+    }
+  }
+  .coupon {
+    position: relative;
+    padding: 11px 24px 11px 52px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #8d4aec;
+    &::before {
+      position: absolute;
+      left: 16px;top: 10px;
+      @include virtual-selector;
+      width: 27px;height: 20px;
+      background: url(../../images/common/ico_coupon.png) no-repeat;
+    }
+  }
+  .btn-default {
+    margin: 20px auto 0;
+  }
+  .price-wrap {
+    @include layout-center;
+    gap: 10px;
+    .box {
+      flex: 1;
+      @include content-justify-center;
+      padding: 19px 26px 19px 20px;
+      border: 1px solid $color-line-type02;
+      border-radius: 5px;
+      background-color: $color-box-type02;
+      .txt {
+        font-weight: 600;
+      }
+      .price {
+        color: #737373;
+        em {
+          margin-right: 5px;
+          color: $color-sub33;
+          @include font(18px, 700);
+        }
+      }
+    }
+  }
+  .payment-wrap {
+    @include layout-center-center;
+    gap: 14px;
+    padding: 16px 0;
+    border: 1px solid $color-line-type02;
+    border-radius: 5px;
+    background-color: $color-box-type02;
+    .btn-line {
+      padding: 23px 36px 23px 0;
+      font-weight: 600;
+      border: 1px solid $color-box;
+      border-radius: 5px;
+      background-color: #fff;
+      &.card {
+        padding-left: 73px;
+      }
+      &.cash {
+        padding-left: 67px;
+      }
+    }
+  }
+}
