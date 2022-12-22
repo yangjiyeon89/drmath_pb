@@ -96,13 +96,11 @@ $(function () {
       _gnbMenuLink.eq(2).find('.depth2').addClass('on');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
-<<<<<<< HEAD
       case 'page10_02':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       $('.nav-wrap').addClass('on');
-      _gnbMenuLink.eq(2).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(2).find('.depth2').addClass('on');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
-=======
       case 'page12_01':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       $('.nav-wrap').addClass('on');
@@ -114,7 +112,6 @@ $(function () {
       $('.nav-wrap').addClass('on');
       _gnbMenuLink.eq(3).find('.depth2').addClass('on');
       _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('on');
->>>>>>> yangz
         break;
     }
   }
