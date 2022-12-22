@@ -5,6 +5,11 @@
 
 //결제관리
 .sub13-que {
+  .container {
+    .inner {
+      padding-bottom: 20px;
+    }
+  }
   .content-wrap {
     margin: 70px 20px 0;
     padding:40px 30px 20px;
@@ -74,21 +79,63 @@
   .payment-wrap {
     @include layout-center-center;
     gap: 14px;
-    padding: 16px 0;
+    padding: 14px 0;
     border: 1px solid $color-line-type02;
     border-radius: 5px;
     background-color: $color-box-type02;
     .btn-line {
-      padding: 23px 36px 23px 0;
+      position: relative;
+      padding: 20px 36px 20px 0;
       font-weight: 600;
       border: 1px solid $color-box;
       border-radius: 5px;
       background-color: #fff;
+      cursor: pointer;
+      span {
+        position: relative;
+        &::before {
+          position: absolute;
+          left: 0;
+          @include virtual-selector;
+        }
+      }
       &.card {
-        padding-left: 73px;
+        padding-left: 41px;
+        span {
+          padding-left: 32px;
+          &::before {            
+            width: 25px;height: 18px;
+            background: url(../../images/common/ico_card.png) no-repeat;
+          }
+        }
       }
       &.cash {
-        padding-left: 67px;
+        padding-left: 37px;
+        span {
+          padding-left: 30px;
+          &::before {
+            width: 23px;height: 19px;
+            background: url(../../images/common/ico_cash.png) no-repeat;
+          }
+        }
+      }
+      &.active {
+        color: $color-main-purple;
+        border-color: $color-main-purple;
+        &.card {
+          span {
+            &::before {
+              background: url(../../images/common/ico_card_on.png) no-repeat;
+            }
+          }
+        }
+        &.cash {
+          span {
+            &::before {
+              background: url(../../images/common/ico_cash_on.png) no-repeat;
+            }
+          }
+        }
       }
     }
   }
