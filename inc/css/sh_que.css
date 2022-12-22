@@ -1766,6 +1766,9 @@ i.message {
   background-color: #ebe3ff;
   color: #5a14be;
 }
+.sub10-02 .cnt-wrap .msg-cnt .top .name-group .name.active .btn-del {
+  background: url(../../images/common/ico_delete_type04.png) no-repeat;
+}
 .sub10-02 .cnt-wrap .msg-cnt .top .name-group .name .btn-del {
   width: 20px;
   height: 20px;

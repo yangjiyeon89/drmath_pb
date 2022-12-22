@@ -1663,6 +1663,9 @@ i {
 							border: 1px solid #dbcbf3;
 							background-color: #ebe3ff;
 							color: $color-main-purple;
+							.btn-del {
+								background: url(../../images/common/ico_delete_type04.png) no-repeat;
+							}
 						}
 						.btn-del {
 							width: 20px;
