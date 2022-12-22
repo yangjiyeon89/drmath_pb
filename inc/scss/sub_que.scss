@@ -1929,6 +1929,13 @@
   }
   //온라인사용권
   .sub13-que {
+    .container {
+      .inner {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .sub13-que {
     .scroll-inner {
       height: 559px;
       box-sizing: border-box;
