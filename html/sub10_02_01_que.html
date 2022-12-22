@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="page10_01 sub10-que">
+    <div class="header">
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">수업준비</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">맞춤문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재연동</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">AI 기출 마스터</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">수업진행</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">학습현황</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재</a>
+                </li>
+                <li>
+                  <a href="javascript:;">분석표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">운영관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">원 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">출결 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">결제 관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">회원권 결제</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 결제</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="javascirpt:;"><span>가이드</span></a>
+            <a href="javascirpt:;"><span>고객센터</span></a>
+            <a href="javascirpt:;"><span>김천재님</span></a>
+            <a href="javascirpt:;"><span>로그아웃</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="inner">
+        <div class="tab-wrap">
+          <ul class="tab-menu-type01">
+            <li class="ui-tab-btn">
+              <a href="javascript:;">학생 관리</a>
+            </li>
+            <li class="ui-tab-btn active">
+              <a href="javascript:;">선생님 관리</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">클래스 관리</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">앱 관리</a>
+            </li>
+          </ul>
+					<div class="contents">
+            [ sub10_01_01_que] 탭으로 구현
+          </div>
+          <div class="contents on">
+            <div class="defalut-view">
+              <img src="../images/sub/sub10_02_img.png" alt="">
+              <div class="txt-box">
+                <span class="txt">아직 등록 전입니다.<br><em>선생님을 등록</em>해 주세요.</span>
+                <button type="button" class="btn-icon type02 pop-btn" data-pop="add-pop"><i class="add"></i> 등록 바로가기</button>
+              </div>
+            </div>
+          </div>
+          <div class="contents">
+            [ sub10_03_que] 탭으로 구현
+          </div>
+          <div class="contents">
+            [ sub10_04_01_que] 탭으로 구현
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dim"></div>
+
+		<!-- 선생님 등록 팝업 -->
+		<div class="pop-wrap table-type" data-pop="add-pop">
+			<div class="pop-inner">
+				<div class="pop-header">
+					<span>선생님 등록하기</span>
+					<button type="button" class="pop-close"></button>
+				</div>
+				<div class="pop-content">
+					<table>
+						<colgroup>
+							<col width="26%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>선생님명</th>
+								<td>
+									<input type="text" placeholder="이름 입력" class="wfull" maxlength="10">
+								</td>
+							</tr>
+							<tr>
+								<th>로그인 ID</th>
+								<td>
+									<input type="text" placeholder="영문+숫자, 20자 이하" class="wfull" maxlength="20">
+									<span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">초기 비밀번호 0000</span>
+								</td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td>
+									<input type="text" placeholder="01012345676" class="wfull">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pop-footer">
+					<button>취소</button>
+					<button>저장</button>
+				</div>
+			</div>
+		</div>
+
+  </div>
+</body>
+</html>
