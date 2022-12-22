@@ -116,7 +116,7 @@
           <div class="section sec01">
             <div class="title-wrap">
               <span class="sub-tit">가입비 결제 <em>가입시 최초 1회만 결제합니다.</em></span>
-              <button type="button" class="coupon">쿠폰</button>
+              <button type="button" data-pop="coupon-pop" class="coupon pop-btn">쿠폰</button>
             </div>
             <div class="price-wrap">
               <div class="box">
@@ -253,6 +253,57 @@
       </div>
     </div>
     <div class="dim"></div>
+
+    <!-- 쿠폰적용 팝업 -->
+    <div class="pop-wrap table-type coupon-pop" data-pop="coupon-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>쿠폰적용</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <table>
+            <colgroup>
+              <col width="22%">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>쿠폰번호</th>
+                <td>
+                  <div class="input-wrap">
+                    <input type="number" name="" id="">
+                    <span>-</span>
+                    <input type="number" name="" id="">
+                    <span>-</span>
+                    <input type="number" name="" id="">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">문의전화: 1661-8550(문의사항이 있을 경우 연락주세요.)</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>적용</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 사용기간 얼럿 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">아직 사용기간이 <em>30일</em> 남아 있습니다.<br>사용기간 만료 후 결제해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
