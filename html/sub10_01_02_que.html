@@ -7,6 +7,7 @@
   <title>닥터매쓰</title>
   <link rel="stylesheet" href="../inc/css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
   <link rel="stylesheet" href="../inc/css/sub_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -190,7 +191,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -205,7 +206,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -220,7 +221,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -235,7 +236,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -250,7 +251,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -265,7 +266,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -280,7 +281,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -295,7 +296,7 @@
                         <span>미등록</span>
                         <span>p11111</span>
                         <span>미등록</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                       <div class="col">
                         <span>
@@ -310,7 +311,7 @@
                         <span>010-XXXX-XXXX</span>
                         <span>p11111</span>
                         <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon"><i class="view"></i>보기</button></span>
+                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                       </div>
                     </div>
                   </div>
@@ -330,13 +331,13 @@
             </div>
           </div>
           <div class="contents">
-            [ sub10_02_que] 탭으로 구현
+            [ sub10_02_01_que] 탭으로 구현
           </div>
           <div class="contents">
             [ sub10_03_que] 탭으로 구현
           </div>
           <div class="contents">
-            [ sub10_04_que] 탭으로 구현
+            [ sub10_04_01_que] 탭으로 구현
           </div>
         </div>
       </div>
@@ -619,8 +620,7 @@
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
           <img src="../images/common/ico_pop.png" alt="">
-          <span class="txt">등록된 번호입니다.<br>형제 연결 또는 번호를 재입력해 주세요.
-            </span>
+          <span class="txt">등록된 번호입니다.<br>형제 연결 또는 번호를 재입력해 주세요.</span>
         </div>
         <div class="pop-footer">
           <button>취소</button>
@@ -628,6 +628,268 @@
         </div>
       </div>
     </div>
+
+    <!-- 형제연결 팝업 -->
+    <div class="pop-wrap search-type">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>형제 연결</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="left-cnt">
+            <span class="tit">연결된 학생</span>          
+            <div class="cnt-list">
+              <div class="scroll-inner">
+                <span class="cnt">초3 김두산</span>
+                <span class="cnt">초4 김삼성</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-cnt">
+            <div class="box">
+              <div class="search-box">
+                <input type="text" placeholder="학생 이름 + Enter">
+                <button type="button" class="btn-search"></button>
+              </div>
+              <!-- 검색 전 -->
+              <!-- <span class="txt">학생 이름으로 검색해 주세요.</span> -->
+              <!-- 검색 후 -->
+              <div class="stu-list">
+                <div class="scroll-inner">
+                  <button type="button" class="select">초3 김한화</button>
+                  <button type="button" class="select">초6 김한화</button>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <span class="tit">선택된 학생</span>
+              <!-- 검색 전 -->
+              <!-- <span class="txt">학생을 선택해 주세요.</span> -->
+              <!-- 검색 후 -->
+              <div class="select-wrap">
+                <div class="scroll-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>저장</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 변경이력 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">변경 이력이 없습니다.<br>저장하시겠습니까?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>저장</button>
+        </div>
+      </div>
+    </div>
+
+    <!--  학생 상세 정보 팝업 -->
+    <div class="pop-wrap form-type" data-pop="detail-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>학생 상세 정보</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="table-wrap type02">
+            <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
+            <div class="scroll-inner">
+              <table>
+                <colgroup>
+                  <col width="18%">
+                  <col width="*">
+                  <col width="18%">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>이름<em class="req"></em></th>
+                    <td>
+                      <input type="text" maxlength="10" class="wfull">
+                    </td>
+                    <th>학년<em class="req"></em></th>
+                    <td>
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w82">고등</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">초등</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">중등</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">고등</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w82">2학년</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">1학년</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">2학년</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">3학년</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>상태<em class="req"></em></th>
+                    <td colspan="3">
+                      <div class="input-radio-type01">
+                        <input type="radio" id="radio102_01" name="radio102" checked>
+                        <label for="radio102_01">재원</label>
+                        <input type="radio" id="radio102_02" name="radio102">
+                        <label for="radio102_02">휴원</label>
+                        <input type="radio" id="radio102_03" name="radio102">
+                        <label for="radio102_03">퇴원</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학생 연락처</th>
+                    <td>
+                      <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>학생 앱 ID</th>
+                    <td>
+                      <span class="fix-txt">S123456</span>
+                      <button type="button" class="btn-form type02">비밀번호초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학부모 연락처</th>
+                    <td>
+                      <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>학부모 앱 ID</th>
+                    <td>
+                      <span class="fix-txt">S123456</span>
+                      <button type="button" class="btn-form type02">비밀번호초기화</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학교</th>
+                    <td colspan="3">
+                      <input type="text" class="w182" value="천재고등학교">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학생 이메일</th>
+                    <td colspan="3">
+                      <input type="text" placeholder="abc123" class="w88">
+                      <span>@</span>
+                      <input type="text" class="w135">
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn w152">직접입력</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">naver.com</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">gmail.com</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">daum.net</a>
+                          </li>                
+                          <li>
+                            <a href="javascript:;">nate.com</a>
+                          </li>                
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>집 주소</th>
+                    <td colspan="3" class="address">
+                      <input type="text" class="w135">
+                      <button type="button" class="btn-form type02">우편번호</button>
+                      <input type="text" class="wfull">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>집 전화</th>
+                    <td>
+                      <input type="text" class="wfull" value="010-XXXX-XXXX">
+                    </td>
+                    <th>생년월일</th>
+                    <td>
+                      <div class="date-box">
+                        <input type="text" id="datepicker">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>수업 시작일</th>
+                    <td colspan="3">
+                      <div class="date-box start">
+                        <input type="text" id="datepicker02">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>비고</th>
+                    <td colspan="3">
+                      <textarea name="" id="" cols="30" rows="10">2012-이번 주 상담 예약</textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>등록</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+    });
+    $( "#datepicker02" ).datepicker({
+      defaultDate: "+1w",
+        changeMonth: false,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/common/ico_calendar.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
+    });
+  } );
+</script>
 </html>

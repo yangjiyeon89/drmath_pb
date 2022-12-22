@@ -9,92 +9,112 @@ $(function () {
       case 'sub01_03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
       case 'sub01_04_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
       case 'sub02_01_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
       case 'sub02_02_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
       case 'sub02_03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
       case 'sub03_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break; 
       case 'sub03_02':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
       case 'sub03_03':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
       case 'sub03_04':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
       case 'page04_01':
         _gnbMenuLink.eq(0).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(3).find('a').addClass('on');
         break;      
       case 'page06_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(1).find('.depth2').addClass('on');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
       case 'page06_02':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(1).find('.depth2').addClass('on');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('on');
         break;
       case 'page06_03':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+        _gnbMenuLink.eq(1).find('.depth2').addClass('on');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('on');
         break;
       case 'page06_04':
       _gnbMenuLink.eq(1).find('> a').addClass('active');
       $('.nav-wrap').addClass('on');
-      _gnbMenuLink.eq(1).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(1).find('.depth2').addClass('on');
       _gnbMenuLink.eq(1).find('.depth2').find('li').eq(3).find('a').addClass('on');
         break;
       case 'page10_01':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       $('.nav-wrap').addClass('on');
-      _gnbMenuLink.eq(2).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(2).find('.depth2').addClass('on');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        break;
+<<<<<<< HEAD
+      case 'page10_02':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(2).find('.depth2').css('display', 'flex');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
+=======
+      case 'page12_01':
+      _gnbMenuLink.eq(2).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(2).find('.depth2').addClass('on');
+      _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        break;
+      case 'page13_01':
+      _gnbMenuLink.eq(3).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(3).find('.depth2').addClass('on');
+      _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('on');
+>>>>>>> yangz
         break;
     }
   }
@@ -149,14 +169,22 @@ $(function () {
         _this.parents('.contents').find('.content').removeClass('on');
         _this.parents('.contents').find('.content').eq(_idx).addClass('on');
       }
+    } else if(_this.parents('ul').hasClass('ui-tab-type02')){
+      let _idx = $(this).data('idx');
+
+      if (!_this.hasClass('active')) {
+        _this.parents('li').siblings('li').find(tabBtn).removeClass('active');
+        _this.siblings().removeClass('active');
+        _this.addClass('active');
+        _cnt.removeClass('on');
+        _cnt.eq(_idx).addClass('on');
+      }
     } else {
       if (!_this.hasClass('active')) {
         _this.siblings().removeClass('active');
         _this.addClass('active');
         _cnt.removeClass('on');
         _cnt.eq(_idx).addClass('on');
-
-        console.log(_idx)
       }
     }
   }
@@ -307,11 +335,11 @@ $(function () {
       }
     } else {
       if (_this.prop('checked')) {
-        _this.parents('table').find('input[type=checkbox]').prop('checked', true);
-        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', true);
+        _this.parents('table').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', true);
+        _this.parents('.chk-acc').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', true);
       } else {
-        _this.parents('table').find('input[type=checkbox]').prop('checked', false);
-        _this.parents('.chk-acc').find('input[type=checkbox]').prop('checked', false);
+        _this.parents('table').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', false);
+        _this.parents('.chk-acc').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', false);
       }
     }
   }
@@ -412,7 +440,23 @@ $(function () {
     let _this = $(this);
     let _txt = $(this).text();
 
-    _this.parents('.box').next('.box').find('.select-wrap').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>')
+    if(_this.parents('div').hasClass('box')){
+      _this.parents('.box').next('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+    } else if(_this.parents('div').hasClass('col')){
+      _this.parents('.col').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+    }
+
+    
+  })
+  $(document).on('click', '.select-stu .del', function(){
+    $(this).parents('.select-stu').remove();
+  });
+
+  // tablist 글자 숨김
+  $('.cnt-btn').on('click', function(){
+    let hiddenCnt = $(this).parents('.hidden-cnt');
+
+    hiddenCnt.toggleClass('on');
   })
   
 });

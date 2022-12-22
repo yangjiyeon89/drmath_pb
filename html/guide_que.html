@@ -16,6 +16,9 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../inc/js/common_que.js"></script>
+  <style>
+    
+  </style>
 </head>
 
 <body class="guide que-wrap">
@@ -152,13 +155,16 @@
   <button type="button" class="btn-icon"><i class="paper-type02"></i>풀이지</button>
   <button type="button" class="btn-icon"><i class="people"></i>5명</button>
   <button type="button" class="btn-icon"><i class="view"></i>보기</button>
+  <button type="button" class="btn-icon"><i class="delete-type02"></i>삭제</button>
   <button type="button" class="btn-icon type02"><i class="add"></i> 맞춤 문제지 만들기</button>
   <button type="button" class="btn-icon type02"><i class="download"></i> 파일 다운로드</button>
   <button type="button" class="btn-icon type02 hover">전체 오답문제지 생성</button>
   <button type="button" class="btn-icon type02 hover02">숙제내기</button>
+  <button type="button" class="btn-icon type02"><i class="check"></i> 일괄출결</button>
   <button type="button" class="btn-icon type03"><i class="search"></i> 검색하기</button>
   <button type="button" class="btn-icon type04"><i class="add-type04"></i> 등록</button>
   <button type="button" class="btn-icon type04"><i class="delete"></i> 삭제</button>
+  <button type="button" class="btn-icon type04"><i class="search-type02"></i>검색</button>
   <button type="button" class="btn-icon fix-s"><i class="preview"></i></button>
   <button type="button" class="btn-icon fix-s"><i class="print"></i></button>
   <button type="button" class="btn-icon fix-s"><i class="pen-type02"></i></button>
@@ -166,6 +172,8 @@
   <button type="button" class="btn-icon fix-s bg-gray" disabled><i class="pen-type04"></i></button>
   <button type="button" class="btn-arrow"></button>
   <button type="button" class="btn-form type02">중복체크</button>
+  <button type="button" class="btn-size-s">등원</button>
+  <button type="button" class="btn-size-s type02">하원</button>
   
   
 
@@ -549,6 +557,13 @@
     <label for="radio01_02">수준별 기출</label>
   </div>
   <br>
+  <div class="input-radio-type02">
+    <input type="radio" id="radio01_01" name="radio01">
+    <label for="radio01_01">지역별 기출</label>
+    <input type="radio" id="radio01_02" name="radio01" checked>
+    <label for="radio01_02">수준별 기출</label>
+  </div>
+  <br>
   <input type="checkbox" id="chk01_01" checked>
   <label for="chk01_01">로그인 유지</label>
   <input type="checkbox" id="chk01_02">
@@ -711,153 +726,153 @@
           </div>
           <div class="tbody">
             <div class="scroll-inner">
-              <div class="test">
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_02">
-                    <label for="chk100_02"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>박만구</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_03">
-                    <label for="chk100_03"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>비상교육</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_04">
-                    <label for="chk100_04"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>아이스크림</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_05">
-                    <label for="chk100_05"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_06">
-                    <label for="chk100_06"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>박만구</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_07">
-                    <label for="chk100_07"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>비상교육</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_08">
-                    <label for="chk100_08"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>아이스크림</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_09">
-                    <label for="chk100_09"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_10">
-                    <label for="chk100_10"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>박만구</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_11">
-                    <label for="chk100_11"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학</span>
-                  <span>초판</span>
-                  <span>비상교육</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_12">
-                    <label for="chk100_12"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>아이스크림</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                </div>
-                <div class="col">
-                  <span>
-                    <input type="checkbox" id="chk100_13">
-                    <label for="chk100_13"></label>
-                  </span>
-                  <span>초 1-1</span>
-                  <span class="tit">초등 수학 익힘</span>
-                  <span>초판</span>
-                  <span>천재교과서</span>
-                  <span>XXX</span>
-                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_02">
+                  <label for="chk100_02"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="hidden-cnt">
+                  <em class="txt">초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학초등수학</em>
+                  <button type="button" class="cnt-btn"></button>
+                </span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
               </div>
-
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_03">
+                  <label for="chk100_03"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_04">
+                  <label for="chk100_04"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_05">
+                  <label for="chk100_05"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_06">
+                  <label for="chk100_06"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_07">
+                  <label for="chk100_07"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_08">
+                  <label for="chk100_08"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_09">
+                  <label for="chk100_09"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_10">
+                  <label for="chk100_10"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>박만구</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_11">
+                  <label for="chk100_11"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학</span>
+                <span>초판</span>
+                <span>비상교육</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_12">
+                  <label for="chk100_12"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>아이스크림</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+              </div>
+              <div class="col">
+                <span>
+                  <input type="checkbox" id="chk100_13">
+                  <label for="chk100_13"></label>
+                </span>
+                <span>초 1-1</span>
+                <span class="tit">초등 수학 익힘</span>
+                <span>초판</span>
+                <span>천재교과서</span>
+                <span>XXX</span>
+                <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+              </div>
             </div>
           </div>
         </div>
@@ -1254,7 +1269,7 @@
             </div>
             <div class="tbody">
               <div class="scroll-inner">
-                <div class="test" id="table-1">
+                <div id="table-1">
                   <div class="col">
                     <a href="javascirpt:;">
                       <span class="dragHandle"><img src="../images/common/ico_move_type02.png" alt=""></span>
@@ -1730,105 +1745,102 @@
             </div>
             <div class="tbody">
               <div class="scroll-inner">
-                <div class="test">
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>박만구</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>비상교육</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>아이스크림</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>박만구</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>비상교육</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>아이스크림</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>박만구</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학</span>
-                    <span>초판</span>
-                    <span>비상교육</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>아이스크림</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
-                  </div>
-                  <div class="col">
-                    <span>초 1-1</span>
-                    <span class="tit">초등 수학 익힘</span>
-                    <span>초판</span>
-                    <span>천재교과서</span>
-                    <span>XXX</span>
-                    <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
-                  </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
                 </div>
-                
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>박만구</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학</span>
+                  <span>초판</span>
+                  <span>비상교육</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>아이스크림</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="replace-type02"></i>연동하기</button></span>
+                </div>
+                <div class="col">
+                  <span>초 1-1</span>
+                  <span class="tit">초등 수학 익힘</span>
+                  <span>초판</span>
+                  <span>천재교과서</span>
+                  <span>XXX</span>
+                  <span><button type="button" class="btn-icon fix-w"><i class="people"></i>5명</button></span>
+                </div>
               </div>
             </div>
           </div>
@@ -2496,6 +2508,107 @@
     </div>
   </div>
 
+  <h2>type D</h2>
+  <div class="tab-wrap tab-list-type01 acc-table-type">
+    <div class="inner">
+      <div class="table">
+        <div class="fix-head">            
+          <span>클래스명</span>
+          <span>채점 전 정답 및 해설 공개</span>
+          <span>채점 후 정답 및 해설 공개</span>
+        </div>
+        <div class="tbody">
+          <div class="scroll-inner">
+            <div class="row chk-acc">
+              <div class="sheet-cnt acc-btn-wrap">
+                <span class="hidden-cnt">
+                  <em class="txt acc-btn">겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강겨울특강, 여름특강</em>
+                  <button type="button" class="cnt-btn"></button>
+                </span>
+                <span>
+                  <input type="checkbox" id="chk300_01" class="allCheck" data-chk="1">
+                  <label for="chk300_01"></label>
+                </span>
+                <span>
+                  <input type="checkbox" id="chk301_01" class="allCheck" data-chk="2">
+                  <label for="chk301_01"></label>
+                </span>                
+              </div>
+              <div class="cnt">
+                <div class="cnt-row">
+                  <span class="name">김닥터</span>
+                  <span>
+                    <input type="checkbox" id="chk300_02" data-chk="1">
+                    <label for="chk300_02"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_02" data-chk="2">
+                    <label for="chk301_02"></label>
+                  </span>
+                </div>
+                <div class="cnt-row">
+                  <span class="name">정매쓰</span>
+                  <span>
+                    <input type="checkbox" id="chk300_03" data-chk="1">
+                    <label for="chk300_03"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_03" data-chk="2">
+                    <label for="chk301_03"></label>
+                  </span>
+                </div>
+                <div class="cnt-row">
+                  <span class="name">현기준</span>
+                  <span>
+                    <input type="checkbox" id="chk300_04" data-chk="1">
+                    <label for="chk300_04"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_04" data-chk="2">
+                    <label for="chk301_04"></label>
+                  </span>
+                </div>
+                <div class="cnt-row">
+                  <span class="name">전적대</span>
+                  <span>
+                    <input type="checkbox" id="chk300_05" data-chk="1">
+                    <label for="chk300_05"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_05" data-chk="2">
+                    <label for="chk301_05"></label>
+                  </span>
+                </div>
+                <div class="cnt-row">
+                  <span class="name">이학부</span>
+                  <span>
+                    <input type="checkbox" id="chk300_06" data-chk="1">
+                    <label for="chk300_06"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_06" data-chk="2">
+                    <label for="chk301_06"></label>
+                  </span>
+                </div>
+                <div class="cnt-row">
+                  <span class="name">김매쓰</span>
+                  <span>
+                    <input type="checkbox" id="chk300_07" data-chk="1">
+                    <label for="chk300_07"></label>
+                  </span>
+                  <span>
+                    <input type="checkbox" id="chk301_07" data-chk="2">
+                    <label for="chk301_07"></label>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <h1>Table</h1>
   <h2>type A</h2>
   <div class="table-wrap type01">
@@ -2805,6 +2918,113 @@
       </tbody>
     </table>
     <em class="btm-txt">더보기 처리 혹은 앱 마이페이지에서 본인 입력 논의중</em>
+  </div>
+
+  <h2>type C</h2>
+  <div class="table-wrap type03">
+    <table>
+      <colgroup>
+        <col width="6%">
+        <col width="29%">
+        <col width="*">
+        <col width="*">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>선택</th>
+          <th>사용기간 <em>(10명 기준)</em></th>
+          <th>사용인원</th>
+          <th>추가 인원과금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="input-radio-type01">
+            <input type="radio" id="radio200_01" name="radio200" checked="">
+            <label for="radio200_01"></label>
+          </td>
+          <td>
+            <span>1개월</span>
+            <span class="price"><em>￦</em>150,000</span>
+            <em>(30일)</em>
+          </td>
+          <td rowspan="3">
+            <input type="text" value="10" class="w60">
+            <span class="txt">명</span>
+            <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 10명입니다.</span>
+          </td>
+          <td rowspan="3">
+            <span class="price center">15,000</span>
+            <span class="txt">원</span>
+            <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">11명 부터는 인당 5,500원이 적용됩니다.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="input-radio-type01">
+            <input type="radio" id="radio200_02" name="radio200" checked="">
+            <label for="radio200_02"></label>
+          </td>
+          <td>
+            <span>6개월</span>
+            <span class="price"><em>￦</em>120,000</span>
+            <em>(180일)</em>
+          </td>
+        </tr>
+        <tr>
+          <td class="input-radio-type01">
+            <input type="radio" id="radio200_03" name="radio200" checked="">
+            <label for="radio200_03"></label>
+          </td>
+          <td>
+            <span>12개월</span>
+            <span class="price"><em>￦</em>100,000</span>
+            <em>(360일)</em>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="chk-area">
+              <span class="title">
+                <img src="../images/common/tit_deco.png" alt="">
+                <em>12개월</em>
+                결제 혜택
+              </span>
+              <div class="radio-wrap">
+                <div class="input-radio-type02">
+                  <input type="radio" id="radio300_01" name="radio300">
+                  <label for="radio300_01"><span>가입비 면제(50만원 혜택)</span></label>
+                  <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">11명 부터는 인당 5,500원이 적용됩니다.</span>
+                </div>
+                <div class="input-radio-type02">
+                  <input type="radio" id="radio300_02" name="radio300" checked="">
+                  <label for="radio300_02"><span>인원 10명 추가(66만원 혜택)</span></label>
+                  <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">기본인원(10명) 외 10명의 인원 추가!</span>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" class="txt-box-wrap">
+            <div class="txt-box">
+              <span class="c-gray">결제금액</span>
+              <span class="num">650,000</span>
+              <span class="txt">원</span>
+            </div>
+            <div class="txt-box">
+              <span class="c-gray">할인금액</span>
+              <span class="num">0</span>
+              <span class="txt">원</span>
+            </div>
+            <div class="txt-box total">
+              <span class="c-gray">총 결제금액</span>
+              <span class="num">650,000</span>
+              <span class="txt">원</span>
+            </div>
+          </td>
+        </tr>      
+      </tbody>
+    </table>
   </div>
 
 
@@ -5001,31 +5221,44 @@
       </div>
       <div class="pop-content">
         <div class="left-cnt">
-          <span class="tit">연결된 학생</span>
+          <span class="tit">연결된 학생</span>          
           <div class="cnt-list">
-            <span class="cnt">초3 김두산</span>
-            <span class="cnt">초4 김삼성</span>
+            <div class="scroll-inner">
+              <span class="cnt">초3 김두산</span>
+              <span class="cnt">초4 김삼성</span>
+            </div>
           </div>
         </div>
         <div class="right-cnt">
           <div class="box">
             <div class="search-box">
-              <input type="text" placeholder="이름 검색" class="search">
+              <input type="text" placeholder="학생 이름 + Enter">
               <button type="button" class="btn-search"></button>
             </div>
             <!-- 검색 전 -->
-            <span class="txt">학생 이름으로 검색해 주세요.</span>
+            <!-- <span class="txt">학생 이름으로 검색해 주세요.</span> -->
             <!-- 검색 후 -->
             <div class="stu-list">
-              <button type="button" class="select">초3 김한화</button>
-              <button type="button" class="select">초6 김한화</button>
+              <div class="scroll-inner">
+                <button type="button" class="select">초3 김한화</button>
+                <button type="button" class="select">초6 김한화</button>
+              </div>
             </div>
           </div>
           <div class="box">
             <span class="tit">선택된 학생</span>
-            <div class="select-wrap"></div>
+            <!-- 검색 전 -->
+            <!-- <span class="txt">학생을 선택해 주세요.</span> -->
+            <!-- 검색 후 -->
+            <div class="select-wrap">
+              <div class="scroll-inner"></div>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="pop-footer">
+        <button>취소</button>
+        <button>저장</button>
       </div>
     </div>
   </div>
