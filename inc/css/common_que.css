@@ -756,7 +756,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .table-wrap.type03 table { width: 100%; }
 
-.table-wrap.type03 tr:last-child th, .table-wrap.type03 tr:last-child td { border-bottom: 0; }
+.table-wrap.type03 tbody tr:last-child th, .table-wrap.type03 tbody tr:last-child td { border-bottom: 0; }
 
 .table-wrap.type03 th, .table-wrap.type03 td { text-align: center; border-bottom: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; }
 

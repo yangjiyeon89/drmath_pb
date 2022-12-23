@@ -2062,6 +2062,23 @@
   .paging-wrap {
     margin-top: 20px;
   }
+  .info-txt {
+    margin-top: 55px;
+    .form-txt-chk {
+      display: block;
+      em {
+        display: block;
+        padding-left: 20px;
+        color: #999;
+      }
+      & + .form-txt-chk {
+        margin-top: 20px;
+      }
+    }
+    & + .table-top {
+      margin-top: 25px;
+    }
+  }
 }
 
 
