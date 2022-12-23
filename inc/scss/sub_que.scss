@@ -1773,6 +1773,314 @@
     }
   }
 }
+//결제관리
+.sub13-que {
+  [class^='form-txt-'] {
+    img {
+      top: 0;
+    }
+  }
+  // 쿠폰적용 팝업
+  .coupon-pop {
+    .pop-inner {
+      width: 560px;
+    }
+    table {
+      tr:last-child {
+        th {
+          padding-top: 0;
+          vertical-align: middle;
+        }
+      }
+      td {
+        padding: 10px 20px;
+        [type="number"] {
+          width: 100px;
+        }
+        span {
+          margin: 0 6px;
+        }
+      }
+    }
+    .form-txt-chk {
+      margin-top: 14px;
+      text-align: center;
+    }
+  }
+  .loading {
+    position: relative;
+    height: 740px;
+    .cnt {
+      position: absolute;
+      top: 50%;left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      display: block;
+      margin: auto;
+      &:nth-child(1) {
+        margin-bottom: 38px;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+    }
+    .tit {
+      margin: 24px 0 20px;
+      color: $color-main-purple;
+      font-size: 40px;
+    }
+    .txt {
+      color: #999;
+      font-size: 18px;
+    }
+  }
+  //결제내역정보
+  .table-top {
+    @include layout-justify-center;
+    margin: 40px 0 20px;
+    .txt {
+      position: relative;
+      padding: 0 28px 0 13px;
+      margin-right: 28px;
+      font-size: 20px;
+      .num {
+        color: $color-main-purple;
+        @include font(24px, 600);
+      }
+      .font-g {
+        color: #999;
+        font-size: 16px;
+      }
+      &::before {
+        position: absolute;
+        left: 0;top: 50%;
+        @include virtual-selector;
+        width: 3px;height: 3px;
+        margin-top: -2px;
+        border-radius: 100%;
+        background-color: $color-sub33;
+      }
+      &::after {
+        position: absolute;
+        right: 0;top: 50%;
+        @include virtual-selector;
+        width: 1px;height: 18px;
+        margin-top: -9px;
+        background-color: $color-line-type02;
+      }
+      & + .txt {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    .search-box {
+      @include layout-center;
+      width: auto;
+      .select-btn {
+        width: 128px;
+      }
+      .btn-icon {
+        width: 40px;height: 40px;
+        margin-left: 6px;
+        border-radius: 6px;
+        i {
+          width: 20px;height: 21px;
+          background-size: 20px !important;
+        }
+      }
+    }
+  }
+  //영수증 팝업
+  .receipt-type {
+    .pop-inner {
+      width: 415px;
+    }
+    .pop-content {
+      padding: 0 30px 30px;
+    }
+    .row {
+      padding: 20px 0;
+      border-bottom: 1px solid #e1e1e1;
+      &:nth-child(1) {
+        padding-top: 10px;
+      }
+    }
+    .col {
+      @include layout-justify-center;
+      & + .col {
+        margin-top: 20px;
+      }
+    }
+    .font-18 {
+      @include font(18px, 600);
+    }
+    .font-g {
+      color: #999;
+    }
+    .tit {
+      font-weight: 600;
+    }
+    em {
+      margin-right: 5px;
+      color: $color-main-purple;
+      @include font(24px, 600);
+    }
+  }
+  // 상세보기 팝업
+  .detail-type {
+    .pop-inner {
+      width: 800px;
+    }
+    .pop-content {
+      padding: 10px 30px 30px;
+    }
+    .info-box {
+      font-size: 14px;
+      .tit {
+        display: inline-block;
+        width: 57px;
+        color: #999;
+      }
+      li + li {
+        margin-top: 5px;
+      }
+    }
+    table {
+      margin-top: 20px;
+      width: 100%;
+      border-top: 1px solid $color-line-type02;
+      border-left: 1px solid $color-line-type02;
+      th, td {
+        text-align: center;
+        border-bottom: 1px solid $color-line-type02;
+        border-right: 1px solid $color-line-type02;
+      }
+      th {
+        height: 40px;
+        font-weight: 600;
+        background-color: $color-box-type02;
+      }
+      td {
+        height: 60px;
+      }
+      .total {
+        background-color: #f5f1ff;
+        td {
+          @include font(18px, 600);
+          padding-left: 23px;
+          text-align: left;
+          &.num {
+            padding-left: 0;
+            color: $color-main-purple;
+            text-align: center;
+          }
+        }
+        
+      }
+    }
+  }
+}
+//인원 추가
+.sub14 {
+  .scroll-inner {
+    overflow: inherit;
+  }
+  .table-wrap {
+    overflow: inherit;
+    td {
+      height: 60px;
+      padding: 0;
+      box-sizing: border-box;
+      .font-c {
+        color: $color-main-purple;
+        font-size: 16px;
+      }
+    }
+    .date {
+      width: auto;
+      height: auto;
+      padding: 7px 30px;
+      @include font(16px, 500);
+    }
+    .select-list {
+      li {
+        height: auto;
+        padding: 0;
+        a {
+          width: 100%;
+          padding-left: 22px;
+          text-align: left;
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+    .form-txt-chk {
+      margin-top: 2px;
+    }
+    .txt-box:nth-child(1) {
+      .num {
+        margin-left: 20px;
+      }
+      .txt:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+//기간연장
+.sub15 {
+  .table-wrap {
+    .radio-wrap {
+      margin: 15px 0;
+    }
+    .chk-area {
+      margin-bottom: 0;
+    }
+  }
+}
+//결제내역 정보, 교재사용권내역
+.sub17 {
+  .table-wrap {
+    th {
+      border-bottom: 1px solid $color-line-type02 !important;
+    }
+    td {
+      height: 60px;
+      padding: 0;
+    }
+    .btn-icon {
+      padding: 0 15px;
+      margin: auto;
+      border-radius: 6px;
+    }
+  }
+  .paging-wrap {
+    margin-top: 20px;
+  }
+  .info-txt {
+    margin-top: 55px;
+    .form-txt-chk {
+      display: block;
+      em {
+        display: block;
+        padding-left: 20px;
+        color: #999;
+      }
+      & + .form-txt-chk {
+        margin-top: 20px;
+      }
+    }
+    & + .table-top {
+      margin-top: 25px;
+    }
+  }
+}
+
 
 @media (max-width: 1280px) {  
   // 로그인
@@ -1932,6 +2240,15 @@
     .scroll-inner {
       height: 559px;
       box-sizing: border-box;
+    }
+    .loading {
+      height: 560px;
+    }
+  }
+  //인원추가
+  .sub14 {
+    .scroll-inner {
+      overflow: overlay;
     }
   }
 }

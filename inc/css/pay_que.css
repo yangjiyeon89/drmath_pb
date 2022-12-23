@@ -6,7 +6,9 @@
 
 .sub13-que .content-wrap { margin: 70px 20px 0; padding: 40px 30px 20px; border: 1px solid #dddddd; border-top: 2px solid #5a14be; }
 
-.sub13-que .title-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px 0 10px; }
+.sub13-que .sec01 .sub-tit { margin-top: 50px; }
+
+.sub13-que .title-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 35px 0 10px; }
 
 .sub13-que .title-wrap .sub-tit { margin: 0; }
 
