@@ -114,6 +114,12 @@ $(function () {
       _gnbMenuLink.eq(3).find('.depth2').addClass('on');
       _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('on');
         break;
+      case 'page16_01':
+      _gnbMenuLink.eq(3).find('> a').addClass('active');
+      $('.nav-wrap').addClass('on');
+      _gnbMenuLink.eq(3).find('.depth2').addClass('on');
+      _gnbMenuLink.eq(3).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        break;
     }
   }
 
