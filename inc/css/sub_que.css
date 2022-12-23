@@ -816,6 +816,72 @@
 
 .sub13-que .loading .txt { color: #999; font-size: 18px; }
 
+.sub13-que .table-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 40px 0 20px; }
+
+.sub13-que .table-top .txt { position: relative; padding: 0 28px 0 13px; margin-right: 28px; font-size: 20px; }
+
+.sub13-que .table-top .txt .num { color: #5a14be; font-size: 24px; font-weight: 600; }
+
+.sub13-que .table-top .txt .font-g { color: #999; font-size: 16px; }
+
+.sub13-que .table-top .txt::before { position: absolute; left: 0; top: 50%; content: ""; display: block; clear: both; width: 3px; height: 3px; margin-top: -2px; border-radius: 100%; background-color: #333333; }
+
+.sub13-que .table-top .txt::after { position: absolute; right: 0; top: 50%; content: ""; display: block; clear: both; width: 1px; height: 18px; margin-top: -9px; background-color: #dddddd; }
+
+.sub13-que .table-top .txt + .txt::after { display: none; }
+
+.sub13-que .table-top .search-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: auto; }
+
+.sub13-que .table-top .search-box .select-btn { width: 128px; }
+
+.sub13-que .table-top .search-box .btn-icon { width: 40px; height: 40px; margin-left: 6px; border-radius: 6px; }
+
+.sub13-que .table-top .search-box .btn-icon i { width: 20px; height: 21px; background-size: 20px !important; }
+
+.sub13-que .receipt-type .pop-inner { width: 415px; }
+
+.sub13-que .receipt-type .pop-content { padding: 0 30px 30px; }
+
+.sub13-que .receipt-type .row { padding: 20px 0; border-bottom: 1px solid #e1e1e1; }
+
+.sub13-que .receipt-type .row:nth-child(1) { padding-top: 10px; }
+
+.sub13-que .receipt-type .col { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.sub13-que .receipt-type .col + .col { margin-top: 20px; }
+
+.sub13-que .receipt-type .font-18 { font-size: 18px; font-weight: 600; }
+
+.sub13-que .receipt-type .font-g { color: #999; }
+
+.sub13-que .receipt-type .tit { font-weight: 600; }
+
+.sub13-que .receipt-type em { margin-right: 5px; color: #5a14be; font-size: 24px; font-weight: 600; }
+
+.sub13-que .detail-type .pop-inner { width: 800px; }
+
+.sub13-que .detail-type .pop-content { padding: 10px 30px 30px; }
+
+.sub13-que .detail-type .info-box { font-size: 14px; }
+
+.sub13-que .detail-type .info-box .tit { display: inline-block; width: 57px; color: #999; }
+
+.sub13-que .detail-type .info-box li + li { margin-top: 5px; }
+
+.sub13-que .detail-type table { margin-top: 20px; width: 100%; border-top: 1px solid #dddddd; border-left: 1px solid #dddddd; }
+
+.sub13-que .detail-type table th, .sub13-que .detail-type table td { text-align: center; border-bottom: 1px solid #dddddd; border-right: 1px solid #dddddd; }
+
+.sub13-que .detail-type table th { height: 40px; font-weight: 600; background-color: #f6f6f6; }
+
+.sub13-que .detail-type table td { height: 60px; }
+
+.sub13-que .detail-type table .total { background-color: #f5f1ff; }
+
+.sub13-que .detail-type table .total td { font-size: 18px; font-weight: 600; padding-left: 23px; text-align: left; }
+
+.sub13-que .detail-type table .total td.num { padding-left: 0; color: #5a14be; text-align: center; }
+
 .sub14 .scroll-inner { overflow: inherit; }
 
 .sub14 .table-wrap { overflow: inherit; }
@@ -837,6 +903,18 @@
 .sub14 .table-wrap .txt-box:nth-child(1) .num { margin-left: 20px; }
 
 .sub14 .table-wrap .txt-box:nth-child(1) .txt:nth-child(2) { margin-left: 0; }
+
+.sub15 .table-wrap .radio-wrap { margin: 15px 0; }
+
+.sub15 .table-wrap .chk-area { margin-bottom: 0; }
+
+.sub17 .table-wrap th { border-bottom: 1px solid #dddddd !important; }
+
+.sub17 .table-wrap td { height: 60px; padding: 0; }
+
+.sub17 .table-wrap .btn-icon { padding: 0 15px; margin: auto; border-radius: 6px; }
+
+.sub17 .paging-wrap { margin-top: 20px; }
 
 @media (max-width: 1280px) { .login { padding-top: 0; }
   .login .login-wrap { width: 100%; height: 100vh; }
