@@ -758,9 +758,7 @@
 
 .sub12-que .chk-type .table-wrap .num-box { position: relative; display: inline-block; }
 
-.sub12-que .chk-type .table-wrap .num-box input { width: 68px; }
-
-.sub12-que .chk-type .table-wrap .num-box .filter-wrap { position: absolute; top: 9px; right: 6px; }
+.sub12-que .chk-type .table-wrap .num-box + .num-box { margin-left: 4px; }
 
 .sub12-que .chk-type .list-cnt { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 10px 0; }
 
@@ -787,6 +785,16 @@
 .sub12-que .table-type table td { padding: 0 14px; }
 
 .sub12-que .table-type table td.txt { padding-left: 20px; }
+
+.sub12-que .ui-widget.ui-widget-content { display: block; width: 65px; height: 40px; margin: 0; border-radius: 6px; border: 1px solid #dddddd; }
+
+.sub12-que .ui-widget.ui-widget-content input { width: 100%; height: 100%; margin: 0; padding: 0 10px !important; font-family: 'Pretendard'; font-weight: 500; -webkit-box-sizing: border-box; box-sizing: border-box; outline: none; }
+
+.sub12-que .ui-spinner a.ui-spinner-button { position: absolute; right: 6px; width: 17px; height: 12px; background: url(../../images/common/ico_arrow_bg_w.png) no-repeat center; background-size: cover; border: 0; }
+
+.sub12-que .ui-spinner a.ui-spinner-button.ui-spinner-up { top: 9px; }
+
+.sub12-que .ui-spinner a.ui-spinner-button.ui-spinner-down { bottom: 9px; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
 .sub13-que [class^='form-txt-'] img { top: 0; }
 

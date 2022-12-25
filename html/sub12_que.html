@@ -637,20 +637,14 @@
                     </td>
                     <th>시간</th>
                     <td>
+                      <!-- s: 20221216 수정 -->
                       <div class="num-box">
-                        <input type="number" value="15">
-                        <div class="filter-wrap">
-                          <button class="up"></button>
-                          <button class="down"></button>
-                        </div>
+                        <input class="ui-spinner" name="" value="15">
                       </div>
                       <div class="num-box">
-                        <input type="number" value="48">
-                        <div class="filter-wrap">
-                          <button class="up"></button>
-                          <button class="down"></button>
-                        </div>
-                      </div>                      
+                        <input class="ui-spinner" name="" value="48">
+                      </div>
+                      <!-- e: 20221216 수정 -->   
                     </td>
                   </tr>
                 </tbody>
@@ -765,4 +759,15 @@
     </div>
   </div>
 </body>
+<script>
+  $(function() {
+    let spinner = $(".ui-spinner").spinner({
+      min: 1,
+      max: 99,
+    });
+    let infoBtn = $(".btn-info-wrap .btn-info").click(function(){
+      $(this).siblings('.tooltip').toggleClass('active');
+    });
+  });
+</script>
 </html>
