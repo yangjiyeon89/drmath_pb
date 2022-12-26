@@ -1268,6 +1268,7 @@
     padding: 30px 30px 20px;
     input[type="text"] {
       padding: 0 20px;
+      height: 46px;
     }
     textarea {
       width: 100%;
@@ -1282,12 +1283,15 @@
     .btn-default {
       margin: 6px auto 0;
     }
+    .btn-wrap {
+      gap: 9px;
+    }
   }
   .tab-list-type01 {
     width: 590px;
     .chk-acc {
       span {
-        padding: 19px 0;
+        padding: 13px 0;
         &:nth-child(1) {
           width: 12%;
         }
@@ -1304,9 +1308,24 @@
     }
     .tbody {
       border-bottom: 0;
+      span {
+        padding: 18px 0;
+      }
     }
     .toggle-wrap {
       margin-left: -40px;
+    }
+    .table-top {
+      @include layout-justify-center;
+      margin-bottom: 10px;
+      .select-wrap {
+        & + .select-wrap {
+          margin-left: 6px;
+        }
+      }
+    }
+    .paging-wrap {
+      margin-top: 20px;
     }
   }
   .btm-cnt {
