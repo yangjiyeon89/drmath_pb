@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <link rel="stylesheet" href="../inc/css/pay_que.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="page16_01 sub16-que">
+    <div class="header">
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">수업준비</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">맞춤문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재연동</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">AI 기출 마스터</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">수업진행</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">학습현황</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문제지</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재</a>
+                </li>
+                <li>
+                  <a href="javascript:;">분석표</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">운영관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">원 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">문자 관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">출결 관리</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">결제 관리</a>
+              <ul class="depth2">
+                <li>
+                  <a href="javascript:;">온라인 사용권</a>
+                </li>
+                <li>
+                  <a href="javascript:;">인원 추가</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기간 연장</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 주문</a>
+                </li>
+                <li>
+                  <a href="javascript:;">결제내역 정보</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재사용권내역</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="javascirpt:;"><span>가이드</span></a>
+            <a href="javascirpt:;"><span>고객센터</span></a>
+            <a href="javascirpt:;"><span>김천재님</span></a>
+            <a href="javascirpt:;"><span>로그아웃</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container sub16-01">
+      <div class="inner">
+        <div class="content-wrap scroll-inner">
+          <span class="title">교재 주문</span>
+          <div class="title-wrap">
+            <span class="sub-title">유형 선택 <em>주문하실 교재 유형을 선택해 주세요.</em></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col width="12%">
+                <col width="*">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>과정</th>
+                  <td>
+                    <div class="chk-group">
+                      <input type="checkbox" id="chk01_01" checked="">
+                      <label for="chk01_01">초1</label>
+                      <input type="checkbox" id="chk01_02">
+                      <label for="chk01_02">초2</label>
+                      <input type="checkbox" id="chk01_03">
+                      <label for="chk01_03">초3</label>
+                      <input type="checkbox" id="chk01_04">
+                      <label for="chk01_04">초4</label>
+                      <input type="checkbox" id="chk01_05">
+                      <label for="chk01_05">초5</label>
+                      <input type="checkbox" id="chk01_06">
+                      <label for="chk01_06">초6</label>
+                    </div>
+                    <div class="chk-group">
+                      <input type="checkbox" id="chk01_07">
+                      <label for="chk01_07">중1</label>
+                      <input type="checkbox" id="chk01_08">
+                      <label for="chk01_08">중2</label>
+                      <input type="checkbox" id="chk01_09">
+                      <label for="chk01_09">중3</label>
+                    </div>
+                    <div class="chk-group">
+                      <input type="checkbox" id="chk01_11">
+                      <label for="chk01_11">고1</label>
+                      <input type="checkbox" id="chk01_12">
+                      <label for="chk01_12">고2</label>
+                      <input type="checkbox" id="chk01_13">
+                      <label for="chk01_13">고3</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>교재구분</th>
+                  <td>
+                    <div class="chk-group">
+                      <input type="checkbox" id="chk02_01" checked="">
+                      <label for="chk02_01">월교재(학기분권형)</label>
+                      <input type="checkbox" id="chk02_02">
+                      <label for="chk02_02">학기용</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>유형</th>
+                  <td>
+                    <div class="chk-group">
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_01" checked="">
+                        <label for="chk03_01">개념</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_02">
+                        <label for="chk03_02">기본 유형</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_03">
+                        <label for="chk03_03">응용 유형</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_04">
+                        <label for="chk03_04">심화 유형</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)수학리더(개념)수학리더(개념)수학리더(개념)수학리더(개념)수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chk-group">
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_05" checked="">
+                        <label for="chk03_05">초상위</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chk-tooltip-box">
+                        <input type="checkbox" id="chk03_06">
+                        <label for="chk03_06">연산</label>
+                        <div class="tooltip-wrap">
+                          <button type="button" class="btn-tip type02"></button>
+                          <div class="tooltip">
+                            <ul>
+                              <li>- 수학리더(개념)</li>
+                              <li>- 우등생해법</li>
+                              <li>- 체크체크</li>
+                              <li>- 개념해결의법칙</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>사용구분</th>
+                  <td>
+                    <div class="chk-group">
+                      <input type="checkbox" id="chk04_01" checked="">
+                      <label for="chk04_01">학생용</label>
+                      <input type="checkbox" id="chk04_02">
+                      <label for="chk04_02">교사용</label>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="title-wrap">
+            <span>총 <span class="num">0</span>건의 교재가 검색되었습니다.</span>
+          </div>
+          <!--S: 221226 추가 (검색결과 없을 시)-->
+          <div class="prod-list no-data">
+            <img src="../images/sub/ico_prod_no_data.png" alt="">
+            <span class="txt">총 <em>0</em>건의 교재가 검색되었습니다.</span>
+          </div>
+          <!--E: 221226 추가 (검색결과 없을 시)-->
+          <div class="btn-wrap">
+            <button type="button" class="btn-default-type02">일괄담기</button>
+          </div>
+        </div>
+        <div class="prod-buy-cnt">
+          <div class="title-wrap">
+            <span class="title">장바구니</span>
+            <div class="tooltip-wrap">
+              <button type="button" class="btn-tip"></button>
+              <div class="tooltip">
+                <div class="tit"><img src="../images/sub/ico_alarm.png" alt="">알림</div>
+                <ul>
+                  <li>+ 주문하기 완료 후에는 삭제가 불가능합니다.</li>
+                  <li>+ 장바구니에 담아놓은 상품은 7일간만 보관됩니다.</li>
+                  <li>+ 주문일로부터 배송까지 최소 5일 정도의 시간이 소요됩니다. (영업일 기준)</li>
+                  <li>+ 교재 구매비가 10만원 미만일 경우 4,000원의 배송비가 발생합니다. (10만원 이상 시 무료)</li>
+                  <li>+ 교재별 최소 주문수량은 1권부터 가능합니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="cart-list scroll-inner">
+            <li class="item">
+              <div class="img-box">
+                <img src="../images/sub/sample_book1.jpg" alt="">
+              </div>
+              <div class="prod-info">
+                <div class="prod-class">초4 / 교사용</div>
+                <div class="prod-name">닥터개념 초 4-1_상 (교사용)</div>
+                <div class="prod-price">11,000원</div>
+                <div class="prod-counter">
+                  <input class="ui-spinner" name="" value="1">
+                </div>
+              </div>
+              <button type="button" class="del"></button>
+            </li>
+            <li class="item">
+              <div class="img-box">
+                <img src="../images/sub/sample_book1.jpg" alt="">
+              </div>
+              <div class="prod-info">
+                <div class="prod-class">초4 / 교사용</div>
+                <div class="prod-name">닥터개념 초 4-1_상 (교사용)</div>
+                <div class="prod-price">11,000원</div>
+                <div class="prod-counter">
+                  <input class="ui-spinner" name="" value="1">
+                </div>
+              </div>
+              <button type="button" class="del"></button>
+            </li>
+            <li class="item">
+              <div class="img-box">
+                <img src="../images/sub/sample_book1.jpg" alt="">
+              </div>
+              <div class="prod-info">
+                <div class="prod-class">초4 / 교사용</div>
+                <div class="prod-name">닥터개념 초 4-1_상 (교사용)</div>
+                <div class="prod-price">11,000원</div>
+                <div class="prod-counter">
+                  <input class="ui-spinner" name="" value="1">
+                </div>
+              </div>
+              <button type="button" class="del"></button>
+            </li>
+            <li class="item">
+              <div class="img-box">
+                <img src="../images/sub/sample_book1.jpg" alt="">
+              </div>
+              <div class="prod-info">
+                <div class="prod-class">초4 / 교사용</div>
+                <div class="prod-name">닥터개념 초 4-1_상 (교사용)</div>
+                <div class="prod-price">11,000원</div>
+                <div class="prod-counter">
+                  <input class="ui-spinner" name="" value="1">
+                </div>
+              </div>
+              <button type="button" class="del"></button>
+            </li>
+          </ul>
+          <div class="order-cnt">
+            <div class="del-btn-wrap">
+              <button type="button" class="btn-line">장바구니 비우기</button>
+            </div>
+            <div class="order-box-wrap">
+              <div class="box">
+                <p class="col">장바구니 수량<span class="val">1권</span></p>
+                <p class="col">배송비<span class="val">4,000원</span></p>
+              </div>
+              <div class="box">
+                <div class="toggle-wrap">
+                  <span class="tit">닥터매쓰 교재사용권</span>
+                  <span class="toggle-txt on">전액사용</span>
+                  <div class="toggle-btn">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+                <div class="input-wrap">
+                  <input type="number" value="0"> <span>원</span>
+                  <p class="desc">사용 가능 <span class="num">99,999</span>원</p>
+                </div>
+              </div>
+              <div class="box row">
+                <span class="total-tit">총 결제금액</span>
+                <span class="total-price"><em>15,000</em>원</span>
+              </div>
+              <div class="btn-wrap">
+                <button type="button" class="btn-default pop-btn" data-pop="cart-pop">주문하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dim"></div>
+    <!-- 장바구니 팝업 (1) -->
+    <div class="pop-wrap alert-type" data-pop="cart-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">장바구니에 담을 교재를<br> 선택해 주세요.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 장바구니 팝업 (2) -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">장바구니에 교재가 없습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 장바구니 팝업 (3) -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">수량을 0 이하로는 할 수 없습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function() {
+    let spinner = $(".ui-spinner").spinner({
+      min: 1,
+      max: 99,
+    });
+    let infoBtn = $(".btn-info-wrap .btn-info").click(function(){
+      $(this).siblings('.tooltip').toggleClass('active');
+    });
+  });
+</script>
+</html>
