@@ -1257,7 +1257,7 @@ i {
 	transform: translateX(-50%);
 	width: 793px;
 	background-color: #fff;
-	z-index: 2;
+	z-index: 4;
 	padding: 35px 40px;
 	box-sizing: border-box;
 	overflow-y: auto;
@@ -1410,7 +1410,7 @@ i {
 // 팝업
 .pop-wrap {
 	&.alert-type {
-		&.change {
+		&.w400 {
 			.pop-inner {
 				width: 400px;
 			}
@@ -2055,6 +2055,9 @@ i {
 		}
 	}
 	.sub16-01 {
+		.content-wrap {
+			width: 100%;
+		}
 		.inner {
 			@include layout-justify-start;
 			padding-bottom: 20px;
@@ -2199,6 +2202,17 @@ i {
 				}
 				&:nth-child(4n) {
 					margin-right: 0;
+				}
+			}
+			&.no-data {
+				@include layout-center-center;
+				flex-direction: column;
+				padding: 120px 0;
+				.txt {
+					margin-top: 18px;
+					em {
+						color: $color-main-purple;
+					}
 				}
 			}
 		}
