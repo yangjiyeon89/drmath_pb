@@ -1268,6 +1268,7 @@
     padding: 30px 30px 20px;
     input[type="text"] {
       padding: 0 20px;
+      height: 46px;
     }
     textarea {
       width: 100%;
@@ -1282,12 +1283,15 @@
     .btn-default {
       margin: 6px auto 0;
     }
+    .btn-wrap {
+      gap: 9px;
+    }
   }
   .tab-list-type01 {
     width: 590px;
     .chk-acc {
       span {
-        padding: 19px 0;
+        padding: 13px 0;
         &:nth-child(1) {
           width: 12%;
         }
@@ -1304,9 +1308,24 @@
     }
     .tbody {
       border-bottom: 0;
+      span {
+        padding: 18px 0;
+      }
     }
     .toggle-wrap {
       margin-left: -40px;
+    }
+    .table-top {
+      @include layout-justify-center;
+      margin-bottom: 10px;
+      .select-wrap {
+        & + .select-wrap {
+          margin-left: 6px;
+        }
+      }
+    }
+    .paging-wrap {
+      margin-top: 20px;
     }
   }
   .btm-cnt {
@@ -1698,12 +1717,8 @@
       .num-box {
         position: relative;
         display: inline-block;
-        input {
-          width: 68px;
-        }
-        .filter-wrap {
-          position: absolute;
-          top: 9px;right: 6px;
+        & + .num-box {
+          margin-left: 4px;
         }
       }
     }
@@ -1769,6 +1784,40 @@
         &.txt {
           padding-left: 20px;
         }
+      }
+    }
+  }
+  .ui-widget.ui-widget-content {
+    display: block;
+    width: 65px;
+    height: 40px;
+    margin: 0;
+    border-radius: 6px;
+    border: 1px solid $color-line-type02;
+    input {
+      width: 100%;
+      height: 100%;
+      margin: 0;padding: 0 10px !important;
+      font-family: 'Pretendard';
+      font-weight: 500;
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+  .ui-spinner {
+    a.ui-spinner-button {
+      position: absolute;
+      right: 6px;
+      width: 17px;height: 12px;
+      background: url(../../images/common/ico_arrow_bg_w.png) no-repeat center;
+      background-size: cover;
+      border: 0;
+      &.ui-spinner-up {
+        top: 9px;
+      }
+      &.ui-spinner-down {
+        bottom: 9px;
+        transform: rotate(-180deg);
       }
     }
   }
