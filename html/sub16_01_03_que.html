@@ -95,6 +95,8 @@
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
                 </div>
+
+                <input type="text" id="slideInput">
               </div>
             </div>
           </div>
@@ -122,9 +124,27 @@
         nextEl: ".book-page-swiper .swiper-button-next",
         prevEl: ".book-page-swiper .swiper-button-prev",
       },
+      on: {
+        slideChange: function () {
+          let txt = $('.swiper-pagination-current').text();
+          console.log(txt);
+
+          $('#slideInput').attr('value', txt)
+          
+
+        }
+      }
     });
+
+    $('#slideInput').change(function(){
+      let num = $('#slideInput').val();
+      PageSwiper.slideTo(num - 1, 100, false);
+      BookSwiper.slideTo(num - 1, 100, false);
+    });
+
     BookSwiper.controller.control = PageSwiper;
     PageSwiper.controller.control = BookSwiper;
+
   });
 </script>
 </html>
