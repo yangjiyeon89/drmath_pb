@@ -118,6 +118,25 @@
           </ul>
           <div class="contents on">
             <div class="tab-list-type01">
+              <!-- s: 20221230 추가 -->
+              <div class="tab-link btn-wrap">
+                <a href="javascript:;" class="btn-line">
+                  <span>총 수강생 n명</span>                  
+                </a>
+                <a href="javascript:;" class="active btn-line">
+                  <span>재원 0명</span>                  
+                </a>
+                <a href="javascript:;" class="btn-line">
+                  <span>휴원 0명</span>                  
+                </a>
+                <a href="javascript:;" class="btn-line">
+                  <span>퇴원 0명</span>                  
+                </a>
+                <a href="javascript:;" class="btn-line">
+                  <span>예비수강생 0명</span>                  
+                </a>
+              </div>
+              <!-- e: 20221230 추가 -->
               <div class="tab-top">
                 <div class="left-wrap">
                   <div class="select-wrap">
@@ -143,8 +162,10 @@
                   </div>
                 </div>
                 <div class="button-wrap">
+                  <!-- s: 20221230 수정 -->
                   <button type="button" class="btn-icon type04 pop-btn" data-pop="add-pop"><i class="add-type04"></i> 등록</button>
-                  <button type="button" class="btn-icon type04"><i class="delete"></i> 삭제</button>
+                  <!-- <button type="button" class="btn-icon type04"><i class="delete"></i> 삭제</button> -->
+                  <!-- e: 20221230 수정 -->
                 </div>
               </div>
               <div class="table chk-acc">
@@ -175,147 +196,251 @@
                   <span>연락처</span>
                   <span>상세 정보</span>
                 </div>
-                <div class="tbody">
-                  <div class="scroll-inner">
-                    <div class="test">
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_02">
-                          <label for="chk100_02"></label>
-                        </span>
-                        <span>30</span>
-                        <span>김*재</span>
-                        <span>고2</span>
-                        <span>재원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_03">
-                          <label for="chk100_03"></label>
-                        </span>
-                        <span>29</span>
-                        <span>이*재</span>
-                        <span>고1</span>
-                        <span>재원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_04">
-                          <label for="chk100_04"></label>
-                        </span>
-                        <span>28</span>
-                        <span>정*재</span>
-                        <span>고3</span>
-                        <span>재원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_05">
-                          <label for="chk100_05"></label>
-                        </span>
-                        <span>27</span>
-                        <span>유*재</span>
-                        <span>고1</span>
-                        <span>퇴원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_06">
-                          <label for="chk100_06"></label>
-                        </span>
-                        <span>26</span>
-                        <span>김*재</span>
-                        <span>고3</span>
-                        <span>재원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_07">
-                          <label for="chk100_07"></label>
-                        </span>
-                        <span>25</span>
-                        <span>이*재</span>
-                        <span>고2</span>
-                        <span>퇴원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_08">
-                          <label for="chk100_08"></label>
-                        </span>
-                        <span>24</span>
-                        <span>정*재</span>
-                        <span>고1</span>
-                        <span>재원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_09">
-                          <label for="chk100_09"></label>
-                        </span>
-                        <span>23</span>
-                        <span>유*재</span>
-                        <span>고3</span>
-                        <span>퇴원</span>
-                        <span>s11111</span>
-                        <span>미등록</span>
-                        <span>p11111</span>
-                        <span>미등록</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                      <div class="col">
-                        <span>
-                          <input type="checkbox" id="chk100_10">
-                          <label for="chk100_10"></label>
-                        </span>
-                        <span>22</span>
-                        <span>김*재</span>
-                        <span>고2</span>
-                        <span>퇴원</span>
-                        <span>s11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span>p11111</span>
-                        <span>010-XXXX-XXXX</span>
-                        <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
-                      </div>
-                    </div>
+                <!-- s: 20221230 수정 -->
+                <!-- 태블릿에서는 5줄 -->
+                <div class="tbody">                  
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_02">
+                      <label for="chk100_02"></label>
+                    </span>
+                    <span>30</span>
+                    <span>김*재</span>
+                    <span>고2</span>
+                    <span>
+                      재원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_03">
+                      <label for="chk100_03"></label>
+                    </span>
+                    <span>29</span>
+                    <span>이*재</span>
+                    <span>고1</span>
+                    <span>
+                      재원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_04">
+                      <label for="chk100_04"></label>
+                    </span>
+                    <span>28</span>
+                    <span>정*재</span>
+                    <span>고3</span>
+                    <span>
+                      재원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_05">
+                      <label for="chk100_05"></label>
+                    </span>
+                    <span>27</span>
+                    <span>유*재</span>
+                    <span>고1</span>
+                    <span>
+                      퇴원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_06">
+                      <label for="chk100_06"></label>
+                    </span>
+                    <span>26</span>
+                    <span>김*재</span>
+                    <span>고3</span>
+                    <span>
+                      재원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_07">
+                      <label for="chk100_07"></label>
+                    </span>
+                    <span>25</span>
+                    <span>이*재</span>
+                    <span>고2</span>
+                    <span>
+                      퇴원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_08">
+                      <label for="chk100_08"></label>
+                    </span>
+                    <span>24</span>
+                    <span>정*재</span>
+                    <span>고1</span>
+                    <span>
+                      재원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span>p11111</span>
+                    <span>010-XXXX-XXXX</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
+                  </div>
+                  <div class="col">
+                    <span>
+                      <input type="checkbox" id="chk100_09">
+                      <label for="chk100_09"></label>
+                    </span>
+                    <span>23</span>
+                    <span>유*재</span>
+                    <span>고3</span>
+                    <span>
+                      퇴원
+                      <button type="button" class="btn-dot">
+                        <ul class="open-select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;" class="active">휴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">퇴원</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">예비</a>
+                          </li>
+                        </ul>
+                      </button>
+                    </span>
+                    <span>s11111</span>
+                    <span>미등록</span>
+                    <span>p11111</span>
+                    <span>미등록</span>
+                    <span><button type="button" class="btn-icon pop-btn" data-pop="detail-pop"><i class="view"></i>보기</button></span>
                   </div>
                 </div>
+                <!-- e: 20221230 수정 -->
               </div>
             </div>
             <div class="paging-wrap">
@@ -370,7 +495,9 @@
                   </div>
                   <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt=""> 최대 00Mb까지 등록이 가능합니다.</span>
                 </div>
-                <button type="button" class="btn-icon type02"><i class="download"></i> 파일 다운로드</button>
+                <!-- s: 20221230 수정 -->
+                <button type="button" class="btn-icon type02 bg-c"><i class="download-type02"></i> 파일 다운로드</button>
+                <!-- e: 20221230 수정 -->
               </div>
   
               <!-- 파일 첨부 후 -->
@@ -392,7 +519,9 @@
                 <!-- 실패 -->
                 <div class="file-state fail">
                   <i></i>
-                  <span><img src="../images/common/ico_fail.png" alt="">등록 실패</span>
+                  <!-- s: 20221230 수정 -->
+                  <span><img src="../images/common/ico_fail.png" alt="">등록 실패 00건 (다시 등록해 주세요.)</span>
+                  <!-- e: 20221230 수정 -->
                   <div class="fail-list">
                     <span class="tit">등록 실패 내역</span>
                     <div class="cnt">
@@ -557,6 +686,7 @@
                       </tr>
                     </tbody>
                   </table>
+                  <p class="btm-txt">더보기 처리 혹은 앱 마이페이지에서 본인 입력 논의중</p>
                 </div>
               </div>
             </div>
@@ -629,6 +759,23 @@
       </div>
     </div>
 
+    <!-- s: 20221230 추가 -->
+    <!-- 재원상태 변경 얼럿 팝업 -->
+    <div class="pop-wrap alert-type">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">기존에 저장된 학생입니다.<br>재원 상태로 바꾸시겠습니까?</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- e: 20221230 추가 -->
+
     <!-- 형제연결 팝업 -->
     <div class="pop-wrap search-type">
       <div class="pop-inner">
@@ -636,7 +783,8 @@
           <span>형제 연결</span>
           <button type="button" class="pop-close"></button>
         </div>
-        <div class="pop-content">
+        <!-- s: 20221230 수정 -->
+        <div class="pop-content box">
           <div class="left-cnt">
             <span class="tit">연결된 학생</span>          
             <div class="cnt-list">
@@ -647,32 +795,16 @@
             </div>
           </div>
           <div class="right-cnt">
-            <div class="box">
-              <div class="search-box">
-                <input type="text" placeholder="학생 이름 + Enter">
-                <button type="button" class="btn-search"></button>
-              </div>
-              <!-- 검색 전 -->
-              <!-- <span class="txt">학생 이름으로 검색해 주세요.</span> -->
-              <!-- 검색 후 -->
-              <div class="stu-list">
-                <div class="scroll-inner">
-                  <button type="button" class="select">초3 김한화</button>
-                  <button type="button" class="select">초6 김한화</button>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <span class="tit">선택된 학생</span>
-              <!-- 검색 전 -->
-              <!-- <span class="txt">학생을 선택해 주세요.</span> -->
-              <!-- 검색 후 -->
-              <div class="select-wrap">
-                <div class="scroll-inner"></div>
-              </div>
+            <span class="tit">선택된 학생</span>
+            <!-- 검색 전 -->
+            <!-- <span class="txt">학생을 선택해 주세요.</span> -->
+            <!-- 검색 후 -->
+            <div class="select-wrap">
+              <div class="scroll-inner"></div>
             </div>
           </div>
         </div>
+        <!-- e: 20221230 수정 -->
         <div class="pop-footer">
           <button>취소</button>
           <button>저장</button>
@@ -751,6 +883,7 @@
                       </div>
                     </td>
                   </tr>
+                  <!-- s: 20221230 수정 -->
                   <tr>
                     <th>상태<em class="req"></em></th>
                     <td colspan="3">
@@ -761,6 +894,8 @@
                         <label for="radio102_02">휴원</label>
                         <input type="radio" id="radio102_03" name="radio102">
                         <label for="radio102_03">퇴원</label>
+                        <input type="radio" id="radio102_04" name="radio102">
+                        <label for="radio102_04">예비</label>
                       </div>
                     </td>
                   </tr>
@@ -769,23 +904,24 @@
                     <td>
                       <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
                     </td>
-                    <th>학생 앱 ID</th>
-                    <td>
-                      <span class="fix-txt">S123456</span>
-                      <button type="button" class="btn-form type02">비밀번호초기화</button>
-                    </td>
-                  </tr>
-                  <tr>
                     <th>학부모 연락처</th>
                     <td>
                       <input type="text" placeholder="숫자만 입력" class="wfull" value="010-XXXX-XXXX">
                     </td>
+                  </tr>
+                  <tr>
+                    <th>학생 앱 ID</th>
+                    <td>
+                      <span class="fix-txt">S123456</span>
+                      <button type="button" class="btn-form type02">비밀번호초기화</button>
+                    </td>                    
                     <th>학부모 앱 ID</th>
                     <td>
                       <span class="fix-txt">S123456</span>
                       <button type="button" class="btn-form type02">비밀번호초기화</button>
                     </td>
                   </tr>
+                  <!-- e: 20221230 수정 -->
                   <tr>
                     <th>학교</th>
                     <td colspan="3">
@@ -856,16 +992,18 @@
             </div>
           </div>
         </div>
+        <!-- s: 20221230 수정 -->
         <div class="pop-footer">
           <button>취소</button>
-          <button>등록</button>
+          <button>저장</button>
         </div>
+        <!-- e: 20221230 수정 -->
       </div>
     </div>
   </div>
 </body>
 <script>
-  $( function() {
+  $(function() {
     $( "#datepicker" ).datepicker({
       defaultDate: "+1w",
         changeMonth: false,
@@ -890,6 +1028,8 @@
         monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
         dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"]
     });
-  } );
+
+    $()
+  });
 </script>
 </html>

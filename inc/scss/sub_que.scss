@@ -743,6 +743,26 @@
       box-sizing: border-box;
     }
   }
+  .tab-link {
+    padding: 44px 20px 0;
+    border-left: 1px solid $color-line-type02;
+    border-right: 1px solid $color-line-type02;
+    a {
+      display: inline-block;
+      padding: 0 14px;
+      &:first-child {
+        padding-left: 0;
+      }
+      & + a {
+        border-left: 1px solid $color-line-type02;
+      }
+      &:hover, &.active {
+        span {
+          border-bottom: 2px solid $color-main-purple;
+        }
+      }
+    }
+  }
   .tab-top {
     border-left: 1px solid $color-line-type02;
     border-right: 1px solid $color-line-type02;
@@ -780,6 +800,45 @@
     }
     .btn-icon {
       margin: 25px auto 0;
+    }
+  }
+  //학생 등록 팝업
+  .add-type {
+    .tab-menu-type06 {
+      li {
+        a {
+          padding-left: 22px;
+          background: url(../../images/common/ico_person01.png) no-repeat;
+          background-position: left center;
+        }
+        &:last-child {
+          a {
+            background: url(../../images/common/ico_person02.png) no-repeat;
+          }
+          &.active {
+            a {
+              background: url(../../images/common/ico_person02_on.png) no-repeat;
+            }
+          }
+        }
+        &.active {
+          a {
+            background: url(../../images/common/ico_person01_on.png) no-repeat;
+          }
+        }
+      }
+    }
+    .table-wrap.type02 {
+      th {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+    .table-wrap.type02 {
+      margin-bottom: 0;
+      .btm-txt {
+        margin-bottom: 0;
+      }
     }
   }
   // 학생 상세 정보 팝업
@@ -881,7 +940,7 @@
   }
 
   //클래스 등록 팝업
-  .add-type {
+  .add-type.wide-w {
     .pop-inner {
       width: 1002px;
     }
@@ -1095,6 +1154,9 @@
 // 학생관리
 .sub10-01 {
   .tab-list-type01 {
+    .tbody {
+      border-bottom: 0;
+    }
     .chk-acc {
       span {
         &:nth-child(1) {
@@ -1128,6 +1190,13 @@
           width: 10%;
         }
       }
+    }
+    .btn-dot {
+      margin-left: 20px;
+    }
+    .open-select-list {
+      width: 70px;
+      top: -3px;right: -70px;
     }
   }
 }
