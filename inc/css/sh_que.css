@@ -65,6 +65,14 @@ i.book-type02 {
   height: 23px;
   margin-right: 15px;
 }
+i.list {
+  display: inline-block;
+  background: url(../../images/common/ico_list_type02.png) no-repeat;
+  background-size: 17px !important;
+  width: 17px;
+  height: 14px;
+  margin-right: 10px;
+}
 
 /* range slider */
 .range-bar {
@@ -2812,20 +2820,80 @@ i.book-type02 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px 0;
+  padding: 40px 30px;
   box-sizing: border-box;
 }
 .sub16-que .full-pop-wrap .book-info-wrap {
   width: 400px;
   border: 1px solid #dddddd;
+  background: #fff;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .tit-wrap {
+  border-bottom: 1px solid #dddddd;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .tit-wrap .tit-box {
+  border-left: 2px solid #5a14be;
+  padding-left: 18px;
+  color: #5a14be;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .tit-wrap .tit-box em {
+  color: #999;
+  margin: 0 5px;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .tit-wrap .tit-box .txt {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap {
+  padding: 30px;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .scroll-inner {
+  height: 529px;
+}
+@media (max-width: 1280px) {
+  .sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .scroll-inner {
+    height: 340px;
+  }
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .tit {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .idx-list {
+  padding-right: 10px;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .idx-list li {
+  margin-top: 15px;
+}
+.sub16-que .full-pop-wrap .book-info-wrap .idx-wrap .idx-list li:nth-child(1) {
+  margin-top: 20px;
 }
 .sub16-que .full-pop-wrap .book-preview-swiper {
   width: 710px;
 }
+.sub16-que .full-pop-wrap .book-preview-swiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
 .sub16-que .full-pop-wrap .book-preview-swiper .img-box {
+  display: flex;
+  align-items: center;
   width: 600px;
   margin: 0 auto;
+  border: 1px solid #dddddd;
   box-sizing: border-box;
+}
+@media (max-width: 1280px) {
+  .sub16-que .full-pop-wrap .book-preview-swiper .img-box {
+    width: 460px;
+  }
 }
 .sub16-que .full-pop-wrap .book-preview-swiper .img-box img {
   width: 100%;
@@ -2842,7 +2910,37 @@ i.book-type02 {
 .sub16-que .full-pop-wrap .book-preview-swiper .swiper-button-prev:after, .sub16-que .full-pop-wrap .book-preview-swiper .swiper-rtl .swiper-button-next:after, .sub16-que .full-pop-wrap .book-preview-swiper .swiper-button-next:after, .sub16-que .full-pop-wrap .book-preview-swiper .swiper-rtl .swiper-button-prev:after {
   display: none;
 }
-.sub16-que .full-pop-wrap .book-page-swiper {
+.sub16-que .full-pop-wrap .book-paging-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100px;
+  height: 70px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #dddddd;
+}
+.sub16-que .full-pop-wrap .book-page-swiper {
+  width: 150px;
+  height: 30px;
+}
+.sub16-que .full-pop-wrap .book-page-swiper .swiper-pagination-fraction {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  bottom: 3px;
+  z-index: 1;
+}
+.sub16-que .full-pop-wrap .book-page-swiper .swiper-button-next, .sub16-que .full-pop-wrap .book-page-swiper .swiper-button-prev {
+  width: 10px;
+  height: 17px;
+  background: url(../../images/common/ico_arrow_book_paging.png) no-repeat;
+  background-size: contain;
+  top: 100%;
+  z-index: 2;
+}
+.sub16-que .full-pop-wrap .book-page-swiper .swiper-button-next {
+  transform: rotate(-180deg);
+}
+.sub16-que .full-pop-wrap .book-page-swiper .swiper-button-prev:after, .sub16-que .full-pop-wrap .book-page-swiper .swiper-rtl .swiper-button-next:after, .sub16-que .full-pop-wrap .book-page-swiper .swiper-button-next:after, .sub16-que .full-pop-wrap .book-page-swiper .swiper-rtl .swiper-button-prev:after {
+  display: none;
 }
