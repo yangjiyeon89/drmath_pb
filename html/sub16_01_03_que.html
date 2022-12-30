@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="sub16-que">
+    <div class="full-pop-wrap">
+      <div class="pop-header">
+        <div class="inner">
+          <span class="title">
+            <i class="book-type02"></i>교재 미리보기
+          </span>
+          <button type="button" class="pop-btn"></button>
+        </div>
+      </div>
+      <div class="pop-content">
+        <div class="scroll-inner">
+          <div class="view-box-wrap">
+            <div class="inner">
+              <div class="swiper book-preview-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="../images/sub/sample_book9.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="../images/sub/sample_book7.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="../images/sub/sample-testpaper.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="../images/sub/sample_book9.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <img src="../images/sub/sample_book7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="book-info-wrap">
+                <div class="tit-wrap">
+                  <div class="tit-box">
+                    <p>월교재(학기분권형) <em>/</em> 초2 <em>/</em> 개념 <em>/</em> 학생용</p>
+                    <p class="txt">닥터개념 중 3-1</p>
+                  </div>  
+                </div>
+                <div class="idx-wrap">
+                  <span class="tit"><i class="list"></i>교재목차</span>
+                  <ul class="idx-list">
+                    <li>1. 제곱근의 뜻과 성질</li>
+                    <li>2. 무리수와 실수</li>
+                    <li>3. 근호를 포함한 식의 계산</li>
+                    <li>4. 다항식의 곱셈</li>
+                    <li>5. 인수분해 공식</li>
+                    <li>6. 인수분해 공식의 활용</li>
+                    <li>7. 이차방정식의 풀이</li>
+                    <li>8. 근의 공식과 이차방정식의 활용</li>
+                    <li>9. 이차함수의 그래프</li>
+                  </ul>
+                </div>
+
+                <div class="swiper book-page-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function(){
+    const BookSwiper = new Swiper('.book-preview-swiper', {
+      navigation: {
+        nextEl: ".book-preview-swiper .swiper-button-next",
+        prevEl: ".book-preview-swiper .swiper-button-prev",
+      },
+    });
+
+    const PageSwiper = new Swiper('.book-page-swiper', {
+      pagination: {
+        el: ".book-page-swiper .swiper-pagination",
+        type: "fraction",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".book-page-swiper .swiper-button-next",
+        prevEl: ".book-page-swiper .swiper-button-prev",
+      },
+    });
+    BookSwiper.controller.control = PageSwiper;
+    PageSwiper.controller.control = BookSwiper;
+  });
+</script>
+</html>
