@@ -310,6 +310,10 @@ body {
         }
       }
     }
+    &.bg-c {
+      color: #fff;
+      background-color: $color-main-purple;
+    }
   }
   &.type03 {
     height: 44px;
@@ -506,6 +510,11 @@ body {
 .download {
   background: url(../../images/common/ico_download_type02.png);
 	background-size: 18px !important;
+	background-size: contain;
+}
+.download-type02 {
+  background: url(../../images/common/ico_download.png);
+	background-size: 15px 14px !important;
 	background-size: contain;
 }
 .view {
@@ -2926,8 +2935,6 @@ input[type="checkbox"] {
       > span {
         display: block;
         margin-top: 16px;
-        text-align: center;
-        @include font(20px, 600);
         img {
           position: relative;
           top: -2px;
@@ -2954,7 +2961,7 @@ input[type="checkbox"] {
           display: block;
           padding: 11px 20px;
           font-weight: 600;
-          background-color: #f4f4f4;
+          border-bottom: 1px solid $color-line-type02;
         }
         .cnt {
           min-height: 87px;
@@ -2986,23 +2993,6 @@ input[type="checkbox"] {
           padding: 18px 20px;
         }
       }
-      .stu-list {
-        .scroll-inner {
-          height: 116px;
-          padding: 10px 20px;
-        }
-        .select {
-          display: block;
-          width: 100%;
-          padding: 10px 16px 9px;
-          text-align: left;
-          border: 1px solid $color-line-type02;
-          border-radius: 6px;
-          & + .select {
-            margin-top: 6px;
-          }
-        }
-      }
       .tit {
         display: block;
         padding: 11px 0 10px;
@@ -3025,16 +3015,10 @@ input[type="checkbox"] {
           }
         }
       }
-      .box {
-        &:first-child {
-          border-bottom: 1px solid $color-line-type02;
-          .txt {
-            height: 116px;
-          }
-        }
+      .right-cnt {
         .txt {
           @include layout-center-center;
-          height: 183px;
+          height: 370px;
           text-align: center;
           color: #999;
         }
@@ -3055,8 +3039,8 @@ input[type="checkbox"] {
       .select-wrap {
         display: block;
         .scroll-inner {
-          height: 183px;
-          padding: 10px 20px;
+          height: 370px;
+          padding: 18px 20px;
           box-sizing: border-box;
         }
         

@@ -464,12 +464,12 @@ $(function () {
   });
 
   // 형제 연결
-  $('.stu-list button').on('click', function(){
+  $('.cnt-list span').on('click', function(){
     let _this = $(this);
     let _txt = $(this).text();
 
     if(_this.parents('div').hasClass('box')){
-      _this.parents('.box').next('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
+      _this.parents('.box').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
     } else if(_this.parents('div').hasClass('col')){
       _this.parents('.col').find('.select-wrap .scroll-inner').append('<span class="select-stu">' + _txt + '<button type="button" class="del"></button></span>');
     }
