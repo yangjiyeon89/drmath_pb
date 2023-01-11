@@ -796,15 +796,13 @@
 
 .sub12-que .chk-type .pop-content { padding: 0 30px 30px; }
 
-.sub12-que .chk-type .input-chk { display: inline-block; margin-left: 10px; }
+.sub12-que .chk-type .input-chk { margin-top: 6px; text-align: right; }
 
 .sub12-que .chk-type .input-chk label { font-size: 16px; }
 
-.sub12-que .chk-type .table-wrap { margin-top: 0; }
+.sub12-que .chk-type .table-wrap table { table-layout: fixed; }
 
-.sub12-que .chk-type .table-wrap table { table-layout: fixed; margin-top: 0; }
-
-.sub12-que .chk-type .table-wrap th, .sub12-que .chk-type .table-wrap td { height: 60px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sub12-que .chk-type .table-wrap th, .sub12-que .chk-type .table-wrap td { height: auto; }
 
 .sub12-que .chk-type .table-wrap th { padding-left: 0; text-align: center; }
 
@@ -812,9 +810,9 @@
 
 .sub12-que .chk-type .table-wrap .num-box { position: relative; display: inline-block; }
 
-.sub12-que .chk-type .table-wrap .num-box + .num-box { margin-left: 8px; }
+.sub12-que .chk-type .table-wrap .num-box input { width: 68px; }
 
-.sub12-que .chk-type .table-wrap .time-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.sub12-que .chk-type .table-wrap .num-box .filter-wrap { position: absolute; top: 9px; right: 6px; }
 
 .sub12-que .chk-type .list-cnt { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 10px 0; }
 
@@ -831,6 +829,18 @@
 .sub12-que .chk-type .list-cnt .all-chk { padding: 17px 30px 12px; }
 
 .sub12-que .chk-type .list-cnt .chk-list li + li { margin-top: 20px; }
+
+.sub12-que .chk-type.type02 .input-chk { display: inline-block; margin-left: 10px; }
+
+.sub12-que .chk-type.type02 .table-wrap { margin-top: 0; }
+
+.sub12-que .chk-type.type02 .table-wrap table { margin-top: 0; }
+
+.sub12-que .chk-type.type02 .table-wrap th, .sub12-que .chk-type.type02 .table-wrap td { height: 60px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sub12-que .chk-type.type02 .num-box + .num-box { margin-left: 8px; }
+
+.sub12-que .chk-type.type02 .time-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .sub12-que .table-type .pop-inner { width: 500px; }
 
