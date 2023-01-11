@@ -343,17 +343,32 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>선생님명</th>
+								<th>
+                  선생님명
+                  <em class="req"></em>
+                </th>
 								<td>
 									<input type="text" placeholder="이름 입력" class="wfull" maxlength="10">
 								</td>
 							</tr>
 							<tr>
-								<th>로그인 ID</th>
-								<td>
-									<input type="text" placeholder="영문+숫자, 20자 이하" class="wfull" maxlength="20">
-									<span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">초기 비밀번호 0000</span>
+								<th>
+                  로그인 ID
+                  <em class="req"></em>
+                </th>
+                <!-- s: 20230111 수정 -->
+								<td class="chk-box">
+                  <div>
+                    <input type="text" placeholder="영문+숫자, 20자 이하" class="wfull" maxlength="20">
+                    <!-- <span class="form-txt-chk"><img src="../images/common/ico_check01.png" alt="">중복된 아이디입니다.</span> -->
+                    <span class="form-txt-chk type-color05"><img src="../images/common/ico_check06.png" alt="">사용가능합니다.</span>
+                  </div>
+                  <div>
+                    <button type="button" class="btn-form type02">중복 확인</button>
+                    <span class="form-txt-chk type-color03">초기 비밀번호:0000</span>
+                  </div>
 								</td>
+                <!-- e: 20230111 수정 -->
 							</tr>
 							<tr>
 								<th>연락처</th>

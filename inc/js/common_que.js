@@ -353,6 +353,7 @@ $(function () {
   function checkFunc() {
     let _this = $(this);
 
+
     if(_this.parents('div').hasClass('sheet-cnt')){
       let chkNum = _this.data('chk');
 
@@ -379,16 +380,17 @@ $(function () {
     let _name = $(this).attr('name');
 
     if (_this.prop('checked')) {
-
+      
       $(".right-cnt .chk-acc[data-index='" + _idx + "']").show();
       $(".right-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").prop('checked', true);
       $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('.cnt').show();
       _this.attr('disabled', true);
-
+      selectCnt.find('.cnt').css('height','auto');
       if (_this.hasClass('allCheck')) {
         $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').show();
         $(".right-cnt .chk-acc[data-index='" + _idx + "']").find('li').find('input').prop('checked', true);
         _this.parents('.chk-acc').find('input').attr('disabled', true);
+        
       } else {
         selectCnt.find("input:checkbox[name='" + _name + "']").parents('li').show();
         selectCnt.find("input:checkbox[name='" + _name + "']").prop('checked', true);
@@ -401,6 +403,7 @@ $(function () {
     let chkCnt = $('.left-cnt .chk-acc');
     let _name = $(this).attr('name');
     let _idx = $(this).parents('.chk-acc').data('index');
+
 
     if (!_this.prop('checked')) {
       $(".left-cnt .chk-acc[data-index='" + _idx + "']").find(".allCheck").prop('checked', false);

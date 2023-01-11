@@ -386,11 +386,23 @@
 
 .sub10-que .form-type table .address .wfull { margin-top: 10px; }
 
-.sub10-que .table-type .pop-inner { width: 450px; }
+.sub10-que .table-type .pop-inner { width: 510px; }
 
 .sub10-que .table-type .pop-inner th { padding-left: 20px; text-align: left; }
 
-.sub10-que .table-type .pop-inner td { position: relative; height: 60px; padding: 11px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sub10-que .table-type .pop-inner th .req { position: relative; top: -10px; display: inline-block; width: 3px; height: 3px; margin-left: 2px; border-radius: 100%; background-color: #fc3812; }
+
+.sub10-que .table-type .pop-inner td { position: relative; padding: 10px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sub10-que .table-type .pop-inner td.chk-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.sub10-que .table-type .pop-inner td.chk-box div:nth-child(1) { width: 174px; }
+
+.sub10-que .table-type .pop-inner td.chk-box div:nth-child(2) { width: 108px; }
+
+.sub10-que .table-type .pop-inner td.chk-box div:nth-child(2) .btn-form { position: relative; width: 100%; right: 0; top: 0; }
+
+.sub10-que .table-type .pop-inner td.chk-box .form-txt-chk { margin-top: 4px; }
 
 .sub10-que .table-type .btn-form { position: absolute; right: 20px; top: 10px; font-size: 16px; }
 
@@ -784,13 +796,15 @@
 
 .sub12-que .chk-type .pop-content { padding: 0 30px 30px; }
 
-.sub12-que .chk-type .input-chk { margin-top: 6px; text-align: right; }
+.sub12-que .chk-type .input-chk { display: inline-block; margin-left: 10px; }
 
 .sub12-que .chk-type .input-chk label { font-size: 16px; }
 
-.sub12-que .chk-type .table-wrap table { table-layout: fixed; }
+.sub12-que .chk-type .table-wrap { margin-top: 0; }
 
-.sub12-que .chk-type .table-wrap th, .sub12-que .chk-type .table-wrap td { height: auto; }
+.sub12-que .chk-type .table-wrap table { table-layout: fixed; margin-top: 0; }
+
+.sub12-que .chk-type .table-wrap th, .sub12-que .chk-type .table-wrap td { height: 60px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .sub12-que .chk-type .table-wrap th { padding-left: 0; text-align: center; }
 
@@ -798,7 +812,9 @@
 
 .sub12-que .chk-type .table-wrap .num-box { position: relative; display: inline-block; }
 
-.sub12-que .chk-type .table-wrap .num-box + .num-box { margin-left: 4px; }
+.sub12-que .chk-type .table-wrap .num-box + .num-box { margin-left: 8px; }
+
+.sub12-que .chk-type .table-wrap .time-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .sub12-que .chk-type .list-cnt { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 10px 0; }
 

@@ -542,6 +542,16 @@ body {
 	background-size: 18px !important;
 	background-size: contain;
 }
+.closed {
+  background: url(../../images/common/ico_closed.png);
+	background-size: 14px 12px !important;
+	background-size: contain;
+}
+.discharge {
+  background: url(../../images/common/ico_discharge.png);
+	background-size: 11px 12px !important;
+	background-size: contain;
+}
 
 [class^='tab-menu-'] {
   @include content-center;
@@ -1268,6 +1278,9 @@ input[type="checkbox"] {
   }
   &.type-color04 {
     color: $color-sub33;
+  }
+  &.type-color05 {
+    color: #247bf1;
   }
 }
 

@@ -204,6 +204,10 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .check { background: url(../../images/common/ico_chk.png); background-size: 18px !important; background-size: contain; }
 
+.closed { background: url(../../images/common/ico_closed.png); background-size: 14px 12px !important; background-size: contain; }
+
+.discharge { background: url(../../images/common/ico_discharge.png); background-size: 11px 12px !important; background-size: contain; }
+
 [class^='tab-menu-'] { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 [class^='tab-menu-'] li a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 16px; font-weight: 500; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -495,6 +499,8 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 .form-txt-chk.type-color03 { color: #5a14be; }
 
 .form-txt-chk.type-color04 { color: #333333; }
+
+.form-txt-chk.type-color05 { color: #247bf1; }
 
 [class^='tag-'] { padding: 4px 10px 3px; font-size: 12px; font-weight: 700; border-radius: 10px; }
 
