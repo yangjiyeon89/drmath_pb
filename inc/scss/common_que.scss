@@ -2272,6 +2272,9 @@ input[type="checkbox"] {
                 left: inherit;
                 right: 0;
               }
+              em {
+                color: $color-font66;
+              }
             }
           }
         }
@@ -2369,14 +2372,12 @@ input[type="checkbox"] {
       .select label {
         color: #999;
       }
-      .type02 {
-        .acc-btn {
-          border-bottom: 1px solid #d8d8d8;
-          background-color: #fff;
-        }
-        .cnt {
-          border-bottom: 1px solid #d8d8d8;
-        }
+      .acc-btn {
+        border-bottom: 1px solid #d8d8d8;
+        background-color: #fff;
+      }
+      .cnt {
+        border-bottom: 1px solid #d8d8d8;
       }
     }
     .pop-footer {

@@ -338,6 +338,12 @@
 
 .sub10-que .defalut-view .btn-icon { margin: 25px auto 0; }
 
+.sub10-que .fix-btm-bar { display: none; position: absolute; bottom: 107px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.sub10-que .fix-btm-bar span { padding: 0; width: auto !important; }
+
+.sub10-que .fix-btm-bar.on { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
 .sub10-que .add-type .tab-menu-type06 li a { padding-left: 22px; background: url(../../images/common/ico_person01.png) no-repeat; background-position: left center; }
 
 .sub10-que .add-type .tab-menu-type06 li:last-child a { background: url(../../images/common/ico_person02.png) no-repeat; }
@@ -1018,6 +1024,7 @@
   .sub10-que .container .inner { padding: 0 20px; }
   .sub10-que .form-type .scroll-inner { height: 466px; }
   .sub10-que .tab-list-type01 .chk-acc .scroll-inner { height: 400px; }
+  .sub10-que .fix-btm-bar { bottom: 259px; }
   .sub10-04 .cnt-wrap textarea { height: 230px; }
   .sub10-04 .class-list .class-cnt { height: 349px; }
   .sub10-04 .defalut-view { height: 448px; }

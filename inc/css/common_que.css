@@ -928,6 +928,8 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.check-type .chk-acc .cnt li input[type="checkbox"] + label::before { left: inherit; right: 0; }
 
+.pop-wrap.check-type .chk-acc .cnt li input[type="checkbox"] + label em { color: #666666; }
+
 .pop-wrap.check-type .acc-btn { position: relative; padding: 15px 30px 15px 20px; cursor: pointer; }
 
 .pop-wrap.check-type .acc-btn label { display: none; position: absolute; right: 20px; top: 24px; }
@@ -968,9 +970,9 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.check-type .right-cnt .select label { color: #999; }
 
-.pop-wrap.check-type .right-cnt .type02 .acc-btn { border-bottom: 1px solid #d8d8d8; background-color: #fff; }
+.pop-wrap.check-type .right-cnt .acc-btn { border-bottom: 1px solid #d8d8d8; background-color: #fff; }
 
-.pop-wrap.check-type .right-cnt .type02 .cnt { border-bottom: 1px solid #d8d8d8; }
+.pop-wrap.check-type .right-cnt .cnt { border-bottom: 1px solid #d8d8d8; }
 
 .pop-wrap.check-type .pop-footer button { border-radius: 0 0 10px 10px; }
 

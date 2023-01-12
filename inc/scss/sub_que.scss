@@ -802,6 +802,19 @@
       margin: 25px auto 0;
     }
   }
+  .fix-btm-bar {
+    display: none;
+    position: absolute;
+    bottom: 107px;left: 50%;
+    transform: translateX(-50%);
+    span {
+      padding: 0;
+      width: auto !important;
+    }
+    &.on {
+      display: inline-flex;
+    }
+  }
   //학생 등록 팝업
   .add-type {
     .tab-menu-type06 {
@@ -2356,6 +2369,9 @@
           height: 400px;
         }
       }
+    }
+    .fix-btm-bar {
+      bottom: 259px;
     }
   }
   //앱관리
