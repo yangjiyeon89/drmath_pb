@@ -1780,6 +1780,12 @@
             top: 50%;left: 50%;
             margin-top: -8px;
             margin-left: -5px;
+            &:hover {
+              filter: invert(12%) sepia(78%) saturate(6712%) hue-rotate(267deg) brightness(77%) contrast(101%);
+            }
+          }
+          &:hover {
+            border-color: $color-main-purple;
           }
         }
         &.date-prev {
@@ -1835,6 +1841,11 @@
         .filter-wrap {
           position: absolute;
           top: 9px;right: 6px;
+          button {
+            &:hover{
+              filter:contrast(0.8);
+            }
+          }
         }
       }
     }
@@ -1960,6 +1971,9 @@
       &.ui-spinner-down {
         bottom: 9px;
         transform: rotate(-180deg);
+      }
+      &:hover {
+        filter:contrast(0.8);
       }
     }
   }
