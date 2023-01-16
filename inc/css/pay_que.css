@@ -22,6 +22,8 @@
 
 .sub13-que .coupon::before { position: absolute; left: 16px; top: 10px; content: ""; display: block; clear: both; width: 27px; height: 20px; background: url(../../images/common/ico_coupon.png) no-repeat; }
 
+.sub13-que .coupon:hover { background-color: #5a14be; }
+
 .sub13-que .btn-default { margin: 20px auto 0; }
 
 .sub13-que .price-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }

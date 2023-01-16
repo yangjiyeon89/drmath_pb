@@ -150,6 +150,9 @@
         color: $color-main-purple;
         border: 1px solid $color-main-purple;
         border-radius: 5px;
+        &:hover {
+          background-color: $color-hover-type02;
+        }
       }
     }
     input[type="text"] {

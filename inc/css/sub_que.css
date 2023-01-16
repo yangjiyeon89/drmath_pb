@@ -62,6 +62,8 @@
 
 .mypage-que table td .pop-btn { width: 150px; height: 40px; color: #5a14be; border: 1px solid #5a14be; border-radius: 5px; }
 
+.mypage-que table td .pop-btn:hover { background-color: #f5f1ff; }
+
 .mypage-que table input[type="text"] { width: 164px; }
 
 .mypage-que table .tel-form button, .mypage-que table .tel-form input { width: 88px; }

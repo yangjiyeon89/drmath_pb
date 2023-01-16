@@ -54,6 +54,9 @@
       width: 27px;height: 20px;
       background: url(../../images/common/ico_coupon.png) no-repeat;
     }
+    &:hover {
+      background-color: $color-main-purple;
+    }
   }
   .btn-default {
     margin: 20px auto 0;
