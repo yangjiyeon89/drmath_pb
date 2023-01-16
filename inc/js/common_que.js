@@ -489,5 +489,13 @@ $(function () {
 
     hiddenCnt.toggleClass('on');
   })
+
+  // btn img
+  $('.btn-icon.type02').on('mouseover', function(){
+    $(this).find('i').addClass('hover');
+  })
+  $('.btn-icon.type02').on('mouseleave', function(){
+    $(this).find('i').removeClass('hover');
+  })
   
 });
