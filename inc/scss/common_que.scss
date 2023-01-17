@@ -1189,9 +1189,13 @@ input[type="checkbox"] {
 		right: 0px;
 		top: 24px;
 		background: #fff;
+    display: none;
 		z-index: 1;
 	}
   
+  &.active .open-select-list {
+    display: block;
+  }
 }
 
 .ui-widget.ui-widget-content {

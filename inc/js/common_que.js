@@ -267,12 +267,43 @@ $(function () {
   selectCnt.on('click', selectUI);
 
 
-  //dot버튼 클릭시 select toggle
+  //dot버튼 클릭시 open-select-list 열기
+
+  let dotBtn = $('.btn-dot');
+
   $(function () {
-    $(".btn-dot").click(function () {
-      $(this).find(".open-select-list").toggle();
+    
+    dotBtn.on('click', function () {
+      let _this = $(this);
+      let _position = _this.parents('span').position().top;
+      
+      console.log(this);
+
+      if(!_this.hasClass('active')) {
+        dotBtn.removeClass('active');
+        _this.addClass('active');
+        // _this.parents('.test').find('.btn-dot').removeClass('active');
+        // _this.addClass('active');
+      } else {
+        _this.removeClass('active');
+      }
+      console.log(_position)
+      if(_position > 700) {
+        _this.find('.open-select-list').css('top', '-125px');
+      }
     });
+
+
+
+
   });
+
+  
+  
+  
+  
+
+
 
   //북마크 버튼
   $(function () {
