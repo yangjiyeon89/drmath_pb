@@ -5,9 +5,12 @@
 //아이콘
 i {
 	&.change {
-		background: url(../../images/sub/ic-change.png) no-repeat;
+		background: url(../../images/common/ico_change.png) no-repeat;
 		background-size: 18px !important;
 		background-size: contain;
+		&.hover {
+			background: url(../../images/common/ico_change_hover.png) no-repeat;
+		}
 	}
 	&.chart {
 		background: url(../../images/common/ico_chart.png) no-repeat;
@@ -22,10 +25,16 @@ i {
 	&.ico_chart_type02 {
 		background: url(../../images/common/ico_chart_type02.png) no-repeat;
 		background-size: 18px !important;
+		&.hover {
+			background: url(../../images/common/ico_chart_type02_hover.png) no-repeat;
+		}
 	}
 	&.message {
 		background: url(../../images/common/ico_message.png) no-repeat;
 		background-size: 18px !important;
+		&.hover {
+			background: url(../../images/common/ico_message_hover.png) no-repeat;
+		}
 	}
 	&.preview-type02 {
 		background: url(../../images/common/ico_preview_type02.png) no-repeat;
@@ -46,7 +55,7 @@ i {
 		width: 28px; height: 23px;
 		margin-right: 15px;
 	}
-	&.list {
+	&.list-type02 {
 		display: inline-block;
 		background: url(../../images/common/ico_list_type02.png) no-repeat;
 		background-size: 17px !important;
@@ -54,7 +63,7 @@ i {
 		margin-right: 10px;
 	}
 }
-/* range slider */
+// range slider
 .range-bar {
 	background:$color-line-type02;
 	border: none !important;
@@ -79,19 +88,26 @@ i {
 		height: 4px;
 	}	
 }
-/* btn-step */
+
+// btn-step
 .btn-step {
 	&.next {
 		background: $color-main-purple url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
 		padding-left: 0;
 		padding-right: 30px;
+		&:hover {
+			background: $color-hover url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
+		}
 	}
 	&.end {
 		background: $color-main-purple;
 		padding-left: 0;
+		&:hover {
+			background: $color-hover;
+		}
 	}
 }
-/* btn-line */
+// btn-line
 .btn-line {
 	height: 40px;
 	color: $color-sub33;
@@ -105,7 +121,7 @@ i {
 		border: 1px solid #dbcbf3;
 	}
 }
-/* btn-star */
+// btn-star
 .btn-star {
 	width: 16px;
 	height: 15px;
@@ -115,7 +131,7 @@ i {
 		background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
 	}
 }
-/* btn-icon type04 (ej_que.scss) */
+// btn-icon type04 (ej_que.scss)
 .btn-icon {
   &.type04 {
 		background-color: #fff;
@@ -137,7 +153,8 @@ i {
     }
   }
 }
-/* que-badge */
+
+// que-badge
 .que-badge {
 	@include content-center-center;
 	min-width: 45px;
@@ -164,7 +181,7 @@ i {
 		color: #666666;
 	}
 }
-/* que */
+// que
 .full-pop-que {
 	width: 100%;
 	height: 100%;
@@ -513,12 +530,18 @@ i {
 										height: 21px;
 										background: url(../../images/sub/ic_btn_error.png) no-repeat;
 										background-size: contain;
+										&:hover {
+											background: url(../../images/sub/ic_btn_error_hover.png) no-repeat;
+										}
 									}
 									.btn-delete {
 										width: 17px;
 										height: 20px;
 										background: url(../../images/sub/ic_btn_delete.png) no-repeat;
 										background-size: contain;
+										&:hover {
+											background: url(../../images/sub/ic_btn_delete_hover.png) no-repeat;
+										}
 									}
 								}
 							
@@ -559,6 +582,7 @@ i {
 											@include font(12px, 600);
 											line-height: 24px;
 											margin-right: 5px;
+											background-color: #fff;
 										}		
 									}
 									.chapter {
@@ -796,6 +820,8 @@ i {
 							}
 						}
 						.tit {
+							display: flex;
+							align-items: center;
 							width: 92px;
 							flex-shrink: 0;
 							@include font(16px, 700);
@@ -1264,7 +1290,7 @@ i {
 		}
 	}
 }
-/* que-preview-wrap */
+// que-preview-wrap
 .que-preview-wrap {
 	position: absolute;
 	left: 50%;
@@ -1421,6 +1447,7 @@ i {
 		}
 	}
 }
+
 // 팝업
 .pop-wrap {
 	&.alert-type {
@@ -1495,7 +1522,6 @@ i {
 		}
 	}
 }
-
 //수업진행 > 분석표
 .sub09-01 {
 	.detail-cnt {
@@ -1564,7 +1590,6 @@ i {
 		}
 	}
 }
-
 //운영관리 > 문자관리
 .sub10-02 {
 	.top-cnt {
@@ -1639,6 +1664,9 @@ i {
 					background: url(../../images/common/ico_setting.png) no-repeat;
 					background-size: contain;
 					margin-right: 20px;
+					&:hover {
+						background: url(../../images/common/ico_setting_hover.png) no-repeat;
+					}
 				}
 				.tit {
 					@include font(16px, 600);
@@ -1744,7 +1772,7 @@ i {
 				.swiper-slide {
 					width: auto;
 				}
-				.msg-tit {
+				.btn-msg-tit {
 					@include content-center-center;
 					padding: 0 23px;
 					height: 30px;
@@ -1754,6 +1782,11 @@ i {
 					background-color: #fff;
 					@include font(14px, 400);
 					cursor: pointer;
+					&.active {
+						border: 1px solid #dbcbf3;
+						background-color: #ebe3ff;
+						color: #5a14be;
+					}
 				}
 				.swiper-button-next, .swiper-button-prev {
 					top: 30px;
@@ -1882,6 +1915,7 @@ i {
 					}
 					.cnt {
 						padding: 0;
+						border-bottom: 0;
 						li {
 							background-color: #ebe3ff;
 							border: 1px solid #dbcbf3;
@@ -2036,7 +2070,6 @@ i {
 		}
 	}
 }
-
 //결제관리 > 교재 주문
 .sub16-que {
 	.content-wrap {
@@ -2241,6 +2274,9 @@ i {
 			border-radius: 25px;
 			background-color: $color-main-purple;
 			color: #fff;
+			&:hover {
+				background-color: $color-hover;
+			}
 		}
 		.prod-buy-cnt {
 			width: 280px;
@@ -2382,19 +2418,71 @@ i {
 			.prod-counter{
 				display: inline-block; 
 				vertical-align: top;
-				.ui-widget.ui-widget-content {margin-left:0;margin-top:0;border-radius:0;}
-				.ui-widget.ui-widget-content.ui-spinner {border: none;}
-				.ui-spinner {position: relative; display: block; width: 22px; padding: 0 24px; vertical-align: top; border: none; background-color: #fff;}
-				.ui-spinner .ui-spinner-input {width:22px; height: 22px; margin: 0; padding: 0; border: 1px solid #ddd; font-size: 14px; vertical-align: top; text-align: center; color: #000; line-height: 20px; }
-				.ui-spinner .ui-spinner-input:focus {outline:0;}
-				.ui-spinner a.ui-spinner-button {width: 24px; height: 24px; display: block; border: 1px solid #ddd; cursor: pointer; top: 0; right: 0; bottom: inherit; background-color:#fff;}
-				.ui-spinner .ui-spinner-button:before {content: ''; display: block; width: 24px; height: 24px; background: url('../../images/common/ico_spinner_down.png') center center no-repeat; }
-				.ui-spinner .ui-spinner-button.ui-spinner-down {left: 0; border-right: none; right: auto;}
-				.ui-spinner .ui-spinner-button.ui-spinner-up:before {background-image: url('../../images/common/ico_spinner_up.png');}
+				.ui-widget.ui-widget-content {
+					margin-left: 0;
+					margin-top: 0;
+					border-radius: 0;
+				}
+				.ui-widget.ui-widget-content.ui-spinner {
+					border: none;
+				}
+				.ui-spinner {
+					position: relative;
+					display: block;
+					width: 22px; 
+					padding: 0 24px;
+					border: none; 
+					background-color: #fff;
+				}
+				.ui-spinner .ui-spinner-input {
+					width:22px;
+					height: 22px;
+					margin: 0;
+					padding: 0;
+					border: 1px solid #ddd;
+					font-size: 14px;
+					vertical-align: top; 
+					text-align: center; 
+					color: #000; 
+					line-height: 20px; 
+				}
+				.ui-spinner .ui-spinner-input:focus {
+					outline: 0;
+				}
+				.ui-spinner a.ui-spinner-button {
+					width: 24px;
+					height: 24px;
+					display: block; 
+					border: 1px solid #ddd; 
+					cursor: pointer; 
+					top: 0; 
+					right: 0; 
+					bottom: inherit; 
+					background-color:#fff;
+					&:hover {
+						background-color:#f5f1ff;
+					}
+				}
+				.ui-spinner .ui-spinner-button:before {
+					@include virtual-selector; 
+					width: 22px; 
+					height: 22px; 
+					background: url('../../images/common/ico_spinner_down.png') center center no-repeat; 
+				}
+				.ui-spinner .ui-spinner-button.ui-spinner-down {
+					left: 0; 
+					border-right: none; 
+					right: auto;
+				}
+				.ui-spinner .ui-spinner-button.ui-spinner-up:before {
+					background-image: url('../../images/common/ico_spinner_up.png');
+				}
+				.ui-spinner .ui-button .ui-icon{
+					background: none;
+				}
 				// .ui-spinner .ui-state-disabled, .ui-spinner input[type="text"][disabled]{opacity: .7;}
 				// .ui-spinner .ui-spinner-button.ui-state-disabled{opacity: .7; background-color: #fafafa;}
 				// .ui-spinner .ui-spinner-button.ui-state-disabled:before{opacity: .3}
-				.ui-spinner .ui-button .ui-icon{background: none;}
 			}
 			.tooltip-wrap {
 				.tooltip {

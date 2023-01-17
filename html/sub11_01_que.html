@@ -197,27 +197,29 @@
                   <div class="swiper msg-template-swiper">
                     <div class="swiper-container">
                       <div class="swiper-wrapper">
+                        <!-- S: 230117 button 수정 -->
                         <div class="swiper-slide">
-                          <span class="msg-tit">등원 문자</span>
+                          <button class="btn-msg-tit active">등원 문자</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">하원 문자</span>
+                          <button class="btn-msg-tit">하원 문자</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">납부 안내</span>
+                          <button class="btn-msg-tit">납부 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">테스트 결과 안내</span>
+                          <button class="btn-msg-tit">테스트 결과 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">상담 일정 안내</span>
+                          <button class="btn-msg-tit">상담 일정 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">중간고사 안내</span>
+                          <button class="btn-msg-tit">중간고사 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <span class="msg-tit">기말고사 안내</span>
+                          <button class="btn-msg-tit">기말고사 안내</button>
                         </div>
+                        <!-- E: 230117 button 수정 -->
                       </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -764,7 +766,9 @@
               <div class="editor-cnt">
                 <input type="text" placeholder="제목 (최대 15자 이내)">
                 <div class="textarea-box">
-                  <textarea name="" id="" cols="" rows="" placeholder=""></textarea>
+                  <!-- S: 230117 클래스 추가 -->
+                  <textarea class="scroll-inner" cols="" rows="" placeholder=""></textarea>
+                  <!-- E: 230117 클래스 추가 -->
                   <span class="limit-txt">
                     <em>0</em>byte / 200byte
                   </span>
@@ -794,19 +798,30 @@
       }
     });
 
-    // button active
+    // S: 230117 button active 추가
     let _nameBtn = $('.top .name');
+    let _tempBtn = $('.msg-template-swiper .btn-msg-tit');
 
-    function viewBtnClickFunc(){
+    function nameBtnClickFunc(){
       let _this = $(this);
       if(!_this.hasClass('active')) {
         _this.parents('.top').find('.name').removeClass('active');
         _this.addClass('active');
       };
     }
+    
+    function tempBtnClickFunc(){
+      let _this = $(this);
+      if(!_this.hasClass('active')) {
+        _this.parents('.msg-template-swiper').find('.btn-msg-tit').removeClass('active');
+        _this.addClass('active');
+      };
+    }
 
-    _nameBtn.on('click', viewBtnClickFunc);
-
+    _nameBtn.on('click', nameBtnClickFunc);
+    _tempBtn.on('click', tempBtnClickFunc);
+    // E: 230117 button active 추가
+   
     _starBtn = $('.tpl-list .btn-star');
     _starBtn.click(function(){
       $(this).toggleClass('active');

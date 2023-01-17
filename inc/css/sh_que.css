@@ -19,9 +19,12 @@
 	*/
 @import url(../css/font.css);
 i.change {
-  background: url(../../images/sub/ic-change.png) no-repeat;
+  background: url(../../images/common/ico_change.png) no-repeat;
   background-size: 18px !important;
   background-size: contain;
+}
+i.change.hover {
+  background: url(../../images/common/ico_change_hover.png) no-repeat;
 }
 i.chart {
   background: url(../../images/common/ico_chart.png) no-repeat;
@@ -39,9 +42,15 @@ i.ico_chart_type02 {
   background: url(../../images/common/ico_chart_type02.png) no-repeat;
   background-size: 18px !important;
 }
+i.ico_chart_type02.hover {
+  background: url(../../images/common/ico_chart_type02_hover.png) no-repeat;
+}
 i.message {
   background: url(../../images/common/ico_message.png) no-repeat;
   background-size: 18px !important;
+}
+i.message.hover {
+  background: url(../../images/common/ico_message_hover.png) no-repeat;
 }
 i.preview-type02 {
   background: url(../../images/common/ico_preview_type02.png) no-repeat;
@@ -65,7 +74,7 @@ i.book-type02 {
   height: 23px;
   margin-right: 15px;
 }
-i.list {
+i.list-type02 {
   display: inline-block;
   background: url(../../images/common/ico_list_type02.png) no-repeat;
   background-size: 17px !important;
@@ -74,7 +83,6 @@ i.list {
   margin-right: 10px;
 }
 
-/* range slider */
 .range-bar {
   background: #dddddd;
   border: none !important;
@@ -100,18 +108,22 @@ i.list {
   height: 4px;
 }
 
-/* btn-step */
 .btn-step.next {
   background: #5a14be url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
   padding-left: 0;
   padding-right: 30px;
 }
+.btn-step.next:hover {
+  background: #470a9f url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
+}
 .btn-step.end {
   background: #5a14be;
   padding-left: 0;
 }
+.btn-step.end:hover {
+  background: #470a9f;
+}
 
-/* btn-line */
 .btn-line {
   height: 40px;
   color: #333333;
@@ -128,7 +140,6 @@ i.list {
   border: 1px solid #dbcbf3;
 }
 
-/* btn-star */
 .btn-star {
   width: 16px;
   height: 15px;
@@ -139,7 +150,6 @@ i.list {
   background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
 }
 
-/* btn-icon type04 (ej_que.scss) */
 .btn-icon.type04 {
   background-color: #fff;
 }
@@ -160,7 +170,6 @@ i.list {
   margin-right: 5px;
 }
 
-/* que-badge */
 .que-badge {
   display: inline-flex;
   justify-content: center;
@@ -191,7 +200,6 @@ i.list {
   color: #666666;
 }
 
-/* que */
 .full-pop-que {
   width: 100%;
   height: 100%;
@@ -582,11 +590,17 @@ i.list {
   background: url(../../images/sub/ic_btn_error.png) no-repeat;
   background-size: contain;
 }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .btn-error:hover {
+  background: url(../../images/sub/ic_btn_error_hover.png) no-repeat;
+}
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .btn-delete {
   width: 17px;
   height: 20px;
   background: url(../../images/sub/ic_btn_delete.png) no-repeat;
   background-size: contain;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .btn-delete:hover {
+  background: url(../../images/sub/ic_btn_delete_hover.png) no-repeat;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-content {
   padding: 20px 0;
@@ -629,6 +643,7 @@ i.list {
   font-weight: 600;
   line-height: 24px;
   margin-right: 5px;
+  background-color: #fff;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .que-info .chapter {
   font-size: 14px;
@@ -872,6 +887,8 @@ i.list {
   border-top: 0;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .tit {
+  display: flex;
+  align-items: center;
   width: 92px;
   flex-shrink: 0;
   font-size: 16px;
@@ -1353,7 +1370,6 @@ i.list {
   z-index: 0;
 }
 
-/* que-preview-wrap */
 .que-preview-wrap {
   position: absolute;
   left: 50%;
@@ -1744,6 +1760,9 @@ i.list {
   background-size: contain;
   margin-right: 20px;
 }
+.sub10-02 .cnt-wrap .msg-cnt .top .btn-setting:hover {
+  background: url(../../images/common/ico_setting_hover.png) no-repeat;
+}
 .sub10-02 .cnt-wrap .msg-cnt .top .tit {
   font-size: 16px;
   font-weight: 600;
@@ -1857,7 +1876,7 @@ i.list {
 .sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .swiper-slide {
   width: auto;
 }
-.sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .msg-tit {
+.sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .btn-msg-tit {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1870,6 +1889,11 @@ i.list {
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
+}
+.sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .btn-msg-tit.active {
+  border: 1px solid #dbcbf3;
+  background-color: #ebe3ff;
+  color: #5a14be;
 }
 .sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .swiper-button-next, .sub10-02 .cnt-wrap .msg-cnt .msg-template-swiper .swiper-button-prev {
   top: 30px;
@@ -1981,6 +2005,7 @@ i.list {
 }
 .page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt {
   padding: 0;
+  border-bottom: 0;
 }
 .page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt li {
   background-color: #ebe3ff;
@@ -2339,6 +2364,9 @@ i.list {
   background-color: #5a14be;
   color: #fff;
 }
+.sub16-que .sub16-01 .btn-default-type02:hover {
+  background-color: #470a9f;
+}
 .sub16-que .sub16-01 .prod-buy-cnt {
   width: 280px;
   border: 1px solid #dddddd;
@@ -2509,7 +2537,6 @@ i.list {
   display: block;
   width: 22px;
   padding: 0 24px;
-  vertical-align: top;
   border: none;
   background-color: #fff;
 }
@@ -2539,11 +2566,15 @@ i.list {
   bottom: inherit;
   background-color: #fff;
 }
+.sub16-que .sub16-01 .prod-buy-cnt .prod-counter .ui-spinner a.ui-spinner-button:hover {
+  background-color: #f5f1ff;
+}
 .sub16-que .sub16-01 .prod-buy-cnt .prod-counter .ui-spinner .ui-spinner-button:before {
   content: "";
   display: block;
-  width: 24px;
-  height: 24px;
+  clear: both;
+  width: 22px;
+  height: 22px;
   background: url("../../images/common/ico_spinner_down.png") center center no-repeat;
 }
 .sub16-que .sub16-01 .prod-buy-cnt .prod-counter .ui-spinner .ui-spinner-button.ui-spinner-down {
