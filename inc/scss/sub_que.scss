@@ -677,15 +677,22 @@
           padding: 0;
           font-weight: 600;
           border-radius: 5px;
+          cursor: pointer;
           &.blue {
             margin-left: 30px;
             color: #247bf1;
             border: 1px solid #247bf1;
+            &:hover {
+              background-color: #f1f7ff;
+            }
           }
           &.red {
             margin-left: 10px;
             color: #f13e26;
             border: 1px solid #f13e26;
+            &:hover {
+              background-color: #fff2f0;
+            }
           }
           &::before {
             display: none;
@@ -702,6 +709,7 @@
           display: inline-flex;
           width: 38px;height: 38px;
           padding: 0;
+          cursor: pointer;
           &::before {
             display: none;
           }
@@ -944,9 +952,13 @@
         }
       }
       td {
-        position: relative;        
+        position: relative;
         padding: 10px 20px;
+        height: auto;
         box-sizing: border-box;
+        &.h60 {
+          height: 60px;
+        }
         &.chk-box {
           @include layout-justify-start;
           div {
@@ -1870,10 +1882,16 @@
           font-weight: 700;
           text-align: center;
           background-color: $color-main-purple;
+          &:hover {
+            background-color: $color-hover;
+          }
         }
         &:last-child {
           button {
-            background-color: #9c9c9c;
+            background-color: $color-btn-gray;
+            &:hover {
+              background-color: $color-btn-hover;
+            }
           }
         }
       }
@@ -2457,6 +2475,15 @@
   .sub14 {
     .scroll-inner {
       overflow: overlay;
+    }
+  }
+}
+
+// common
+.filter-wrap {
+  button {
+    &:hover{
+      filter:contrast(0.8);
     }
   }
 }
