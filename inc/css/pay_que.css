@@ -73,6 +73,9 @@
   height: 20px;
   background: url(../../images/common/ico_coupon.png) no-repeat;
 }
+.sub13-que .coupon:hover {
+  background-color: #5a14be;
+}
 .sub13-que .btn-default {
   margin: 20px auto 0;
 }
@@ -165,63 +168,11 @@
   background: url(../../images/common/ico_cash_on.png) no-repeat;
 }
 
-.sub13-que .content-wrap { margin: 70px 20px 0; padding: 40px 30px 20px; border: 1px solid #dddddd; border-top: 2px solid #5a14be; }
-
-.sub13-que .sec01 .sub-tit { margin-top: 50px; }
-
-.sub13-que .title-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 35px 0 10px; }
-
-.sub13-que .title-wrap .sub-tit { margin: 0; }
-
-.sub13-que .title { font-size: 28px; font-weight: 700; }
-
-.sub13-que .sub-tit { display: block; margin: 40px 0 20px; font-size: 18px; font-weight: 600; }
-
-.sub13-que .sub-tit em { color: #999; font-size: 14px; font-weight: 400; }
-
-.sub13-que .coupon { position: relative; padding: 11px 24px 11px 52px; color: #fff; font-weight: 600; border-radius: 5px; background-color: #8d4aec; }
-
-.sub13-que .coupon::before { position: absolute; left: 16px; top: 10px; content: ""; display: block; clear: both; width: 27px; height: 20px; background: url(../../images/common/ico_coupon.png) no-repeat; }
-
-.sub13-que .coupon:hover { background-color: #5a14be; }
-
-.sub13-que .btn-default { margin: 20px auto 0; }
-
-.sub13-que .price-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
-
-.sub13-que .price-wrap .box { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 19px 26px 19px 20px; border: 1px solid #dddddd; border-radius: 5px; background-color: #f6f6f6; }
-
-.sub13-que .price-wrap .box .txt { font-weight: 600; }
-
-.sub13-que .price-wrap .box .price { color: #737373; }
-
-.sub13-que .price-wrap .box .price em { margin-right: 5px; color: #333333; font-size: 18px; font-weight: 700; }
-
-.sub13-que .payment-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 14px; padding: 14px 0; border: 1px solid #dddddd; border-radius: 5px; background-color: #f6f6f6; }
-
-.sub13-que .payment-wrap .btn-line { position: relative; padding: 20px 36px 20px 0; font-weight: 600; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #fff; cursor: pointer; }
-
-.sub13-que .payment-wrap .btn-line span { position: relative; }
-
-.sub13-que .payment-wrap .btn-line span::before { position: absolute; left: 0; content: ""; display: block; clear: both; }
-
-.sub13-que .payment-wrap .btn-line.card { padding-left: 41px; }
-
-.sub13-que .payment-wrap .btn-line.card span { padding-left: 32px; }
-
-.sub13-que .payment-wrap .btn-line.card span::before { width: 25px; height: 18px; background: url(../../images/common/ico_card.png) no-repeat; }
-
-.sub13-que .payment-wrap .btn-line.cash { padding-left: 37px; }
-
-.sub13-que .payment-wrap .btn-line.cash span { padding-left: 30px; }
-
-.sub13-que .payment-wrap .btn-line.cash span::before { width: 23px; height: 19px; background: url(../../images/common/ico_cash.png) no-repeat; }
-
-.sub13-que .payment-wrap .btn-line.active { color: #5a14be; border-color: #5a14be; }
-
-.sub13-que .payment-wrap .btn-line.active.card span::before { background: url(../../images/common/ico_card_on.png) no-repeat; }
-
-.sub13-que .payment-wrap .btn-line.active.cash span::before { background: url(../../images/common/ico_cash_on.png) no-repeat; }
-
-@media (max-width: 1280px) { .sub13-que { overflow: hidden; }
-  .sub13-que .container .inner { padding-bottom: 0; } }
+@media (max-width: 1280px) {
+  .sub13-que {
+    overflow: hidden;
+  }
+  .sub13-que .container .inner {
+    padding-bottom: 0;
+  }
+}
