@@ -556,21 +556,46 @@
           width: 9%;
         }
         &:nth-child(4) {
-          width: 54%;
+          width: 49%;
         }
         &:nth-child(5) {
-          width: 5%;
+          width: 6%;
         }
         &:nth-child(6) {
-          width: 5%;
+          width: 6%;
         }
         &:nth-child(7) {
           width: 9%;
         }
         &:nth-child(8) {
-          width: 5%;
+          width: 9%;
+          .btn-icon {
+            width: 69px;
+          }
+        }
+        .box {
+          position: relative;
+          width: 69px;height: 36px;
+          color: $color-main-purple;
+          font-size: 14px;
+          border: 1px solid $color-line-type02;
+          border-radius: 3px;
+          &.gray {
+            color: #929292;
+            background-color: $color-table;
+          }
         }
       }
+      .chk {
+        .pen-type02 {
+          filter: invert(16%) sepia(79%) saturate(5381%) hue-rotate(253deg) brightness(76%) contrast(111%);
+        }
+        .graph {
+          width: 14px;height: 14px;
+          background: url(../../images/common/ico_graph_type02_on.png);
+        }
+      }
+      
       .tooltip {
         width: 408px;
         left: -194px;
@@ -622,11 +647,38 @@
     .tab-list-type01 {
       .chk-acc {
         span {
-          &:nth-child(4) {
-            width: 58%;
-          }
           &:nth-child(7) {
-            width: 5%;
+            width: 10%;
+            .btn-icon {
+              width: 69px;
+            }
+          }
+          &:nth-child(8) {
+            width: 6%;
+            .btn-icon {
+              width: 36px;
+            }
+          }          
+          .box {
+            em {
+              position: absolute;
+              color: $color-sub33;
+              font-size: 11px;
+              &:nth-child(1) {
+                top: 6px;left: 6px;
+                &::after {
+                  position: absolute;
+                  bottom: -15px;right: -2px;
+                  @include virtual-selector;
+                  width: 1px;height: 33px;
+                  background-color: $color-line-type02;
+                  transform: rotate(54deg);
+                }
+              }
+              &:nth-child(2) {
+                bottom: 6px;right: 6px;
+              }
+            }
           }
         }
       }

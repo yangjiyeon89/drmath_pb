@@ -585,6 +585,11 @@ body {
 	background-size: 11px 12px !important;
 	background-size: contain;
 }
+.graph {
+  background: url(../../images/common/ico_graph_type02.png);
+	background-size: 14px 14px !important;
+	background-size: contain;
+}
 
 [class^='tab-menu-'] {
   @include content-center;
