@@ -232,6 +232,12 @@ body { font-family: 'Pretendard', sans-serif; }
 
 .graph { background: url(../../images/common/ico_graph_type02.png); background-size: 14px 14px !important; background-size: contain; }
 
+.spare { background: url(../../images/common/ico_spare.png); background-size: 14px 12px !important; background-size: contain; }
+
+.person01 { background: url(../../images/common/ico_person02.png); background-size: 12px 15px !important; background-size: contain; }
+
+.person02 { background: url(../../images/common/ico_person01.png); background-size: 17px 15px !important; background-size: contain; }
+
 [class^='tab-menu-'] { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 [class^='tab-menu-'] li a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 16px; font-weight: 500; -webkit-box-sizing: border-box; box-sizing: border-box; }

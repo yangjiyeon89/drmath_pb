@@ -372,13 +372,13 @@
 
 .sub10-que .fix-btm-bar.on { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 
-.sub10-que .add-type .tab-menu-type06 li a { padding-left: 22px; background: url(../../images/common/ico_person01.png) no-repeat; background-position: left center; }
+.sub10-que .add-type .tab-menu-type06 li a { padding-left: 22px; background: url(../../images/common/ico_person02.png) no-repeat; background-position: left center; }
 
-.sub10-que .add-type .tab-menu-type06 li:last-child a { background: url(../../images/common/ico_person02.png) no-repeat; }
+.sub10-que .add-type .tab-menu-type06 li.style02 a { background: url(../../images/common/ico_person01.png) no-repeat; }
 
-.sub10-que .add-type .tab-menu-type06 li:last-child.active a { background: url(../../images/common/ico_person02_on.png) no-repeat; }
+.sub10-que .add-type .tab-menu-type06 li.style02.active a { background: url(../../images/common/ico_person01_on.png) no-repeat; }
 
-.sub10-que .add-type .tab-menu-type06 li.active a { background: url(../../images/common/ico_person01_on.png) no-repeat; }
+.sub10-que .add-type .tab-menu-type06 li.active a { background: url(../../images/common/ico_person02_on.png) no-repeat; }
 
 .sub10-que .add-type .table-wrap.type02 th { padding-left: 0; text-align: center; }
 
@@ -452,9 +452,11 @@
 
 .sub10-que .add-type.wide-w .form-txt-chk { margin-top: 0; }
 
+.sub10-que .add-type.wide-w .form-txt-chk.type02 { margin-top: 16px; text-align: center; }
+
 .sub10-que .add-type.wide-w .add-content { margin-top: 10px; border-top: 1px solid #333333; border-bottom: 1px solid #333333; }
 
-.sub10-que .add-type.wide-w .add-content .tit { font-weight: 600; }
+.sub10-que .add-type.wide-w .add-content .tit { font-weight: 600; white-space: nowrap; }
 
 .sub10-que .add-type.wide-w .add-content .class { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 10px 0 10px 20px; border-bottom: 1px solid #dddddd; }
 
@@ -464,7 +466,7 @@
 
 .sub10-que .add-type.wide-w .add-content .col { width: 240px; height: 100%; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.sub10-que .add-type.wide-w .add-content .col:last-child { width: 220px; padding-right: 0; border-right: 0; }
+.sub10-que .add-type.wide-w .add-content .col:last-child { width: 460px; padding-right: 0; border-right: 0; }
 
 .sub10-que .add-type.wide-w .add-content .col > .tit em { position: relative; top: -12px; left: 5px; display: inline-block; width: 3px; height: 3px; border-radius: 100%; background-color: #fc3812; }
 
@@ -474,11 +476,15 @@
 
 .sub10-que .add-type.wide-w .add-content .none-txt { display: block; margin-top: 10px; padding: 13px 10px 12px; color: #999; border: 1px solid #dddddd; border-radius: 6px; }
 
-.sub10-que .add-type.wide-w .add-content .stu-list { margin-top: 10px; border: 1px solid #dddddd; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sub10-que .add-type.wide-w .add-content .stu-list { margin-top: 10px; }
 
-.sub10-que .add-type.wide-w .add-content .stu-list .scroll-inner { height: 130px; padding: 5px 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.sub10-que .add-type.wide-w .add-content .stu-list .scroll-inner { height: 380px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; }
 
-.sub10-que .add-type.wide-w .add-content .stu-list .select { display: block; padding: 6px 0; }
+.sub10-que .add-type.wide-w .add-content .stu-list .select { display: block; width: 100%; padding: 13px 10px 12px; text-align: left; border: 1px solid #dddddd; border-radius: 6px; }
+
+.sub10-que .add-type.wide-w .add-content .stu-list .select.btn-line { height: auto; }
+
+.sub10-que .add-type.wide-w .add-content .stu-list .select + .select { margin-top: 10px; }
 
 .sub10-que .add-type.wide-w .add-content .select-wrap { display: block; margin-top: 0; }
 
@@ -524,6 +530,80 @@
 
 .sub10-que .add-type.wide-w .add-content .tab-menu-type03 li a { width: 89px; }
 
+.sub10-que .add-type.wide-w .grade { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; }
+
+.sub10-que .add-type.wide-w .grade .btn-wrap { width: 148px; margin: 0; margin-right: 7px; }
+
+.sub10-que .add-type.wide-w .grade .select-wrap { width: 90px; }
+
+.sub10-que .add-type.wide-w .check-type { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.sub10-que .add-type.wide-w .check-type > div { width: 200px; }
+
+.sub10-que .add-type.wide-w .check-type .left-cnt .scroll-inner { height: 300px; padding: 0; }
+
+.sub10-que .add-type.wide-w .check-type .left-cnt .tab-wrap { margin-top: 0; }
+
+.sub10-que .add-type.wide-w .check-type .left-cnt .tab-wrap::after { content: ""; display: block; clear: both; position: absolute; top: 50%; right: -26px; width: 11px; height: 18px; margin-top: -9px; background: url(../../images/common/ico_arrow_c_type02.png) no-repeat; }
+
+.sub10-que .add-type.wide-w .check-type .search-box { width: 100%; margin-bottom: 10px; }
+
+.sub10-que .add-type.wide-w .check-type .tab-menu-type03 { width: 100%; padding: 10px; border-radius: 5px 5px 0 0; }
+
+.sub10-que .add-type.wide-w .check-type .tab-menu-type03 li a { width: 90px; }
+
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt { display: none; padding: 0 30px 0 40px; background-color: #f6f6f6; }
+
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li { display: block; height: auto; border-bottom: 0; padding: 10px 0; }
+
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type="checkbox"] + label { display: block; width: 100%; padding-left: 0; font-size: 16px; }
+
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type="checkbox"] + label::before { left: inherit; right: 0; }
+
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type="checkbox"] + label em { color: #666666; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn { position: relative; padding: 15px 30px 15px 20px; cursor: pointer; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn label { display: none; position: absolute; right: 20px; top: 24px; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn.active label { display: inline; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn.active span::before { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn.active em { position: relative; top: inherit; right: inherit; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn span { position: relative; padding-left: 25px; font-weight: 600; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn span::before { position: absolute; left: 0; top: 50%; content: ""; display: block; clear: both; width: 7px; height: 11px; margin-top: -5px; background: url(../../images/common/ico_arrow_acc.png) no-repeat; }
+
+.sub10-que .add-type.wide-w .check-type .acc-btn em { position: absolute; right: 30px; top: 15px; color: #5a14be; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt { position: relative; right: inherit; display: block; margin-top: 10px; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .none-txt { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; padding: 0; margin: 0; border: 0; color: #333333; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .check-wrap { width: 100%; overflow: hidden; border: 1px solid #d8d8d8; border-radius: 6px; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .scroll-inner { height: 417px; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .acc-btn label { display: block; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .acc-btn em { position: relative; top: inherit; right: inherit; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .cnt { padding: 0 29px 0 46px; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .cnt li { display: none; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .chk-acc { display: none; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt input[type="checkbox"]:checked + label::before { width: 20px; height: 20px; margin-top: -10px; background: url(../../images/common/ico_delete_type02.png) no-repeat; background-size: contain; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .select label { color: #999; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .acc-btn { border-bottom: 1px solid #d8d8d8; background-color: #fff; }
+
+.sub10-que .add-type.wide-w .check-type .right-cnt .cnt { border-bottom: 1px solid #d8d8d8; }
+
 .sub10-que .video-type .pop-inner { width: 800px; }
 
 .sub10-que .video-type .pop-content { padding: 10px 30px 40px; }
@@ -533,6 +613,12 @@
 .sub10-que .video-type .pop-content .title em { padding-left: 6px; color: #5a14be; font-weight: 600; }
 
 .sub10-que .video-type .pop-content .video-cnt { width: 100%; }
+
+.sub10-que .btm-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin-top: 10px; }
+
+.sub10-que .btm-wrap .button-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin-left: 196px; }
+
+.sub10-que .btm-wrap .button-wrap button + button { margin-left: 10px; }
 
 .sub10-01 .tab-list-type01 .tbody { border-bottom: 0; }
 
@@ -1067,6 +1153,9 @@
   .sub10-que .form-type .scroll-inner { height: 466px; }
   .sub10-que .tab-list-type01 .chk-acc .scroll-inner { height: 400px; }
   .sub10-que .fix-btm-bar { bottom: 259px; }
+  .sub10-que .add-type.wide-w .add-content .select-area { height: 419px; }
+  .sub10-que .add-type.wide-w .check-type .left-cnt .scroll-inner { height: 232px; }
+  .sub10-que .add-type.wide-w .check-type .right-cnt .scroll-inner { height: 319px; }
   .sub10-04 .cnt-wrap textarea { height: 230px; }
   .sub10-04 .class-list .class-cnt { height: 349px; }
   .sub10-04 .defalut-view { height: 448px; }

@@ -884,22 +884,22 @@
       li {
         a {
           padding-left: 22px;
-          background: url(../../images/common/ico_person01.png) no-repeat;
+          background: url(../../images/common/ico_person02.png) no-repeat;
           background-position: left center;
         }
-        &:last-child {
+        &.style02{
           a {
-            background: url(../../images/common/ico_person02.png) no-repeat;
+            background: url(../../images/common/ico_person01.png) no-repeat;
           }
           &.active {
             a {
-              background: url(../../images/common/ico_person02_on.png) no-repeat;
+              background: url(../../images/common/ico_person01_on.png) no-repeat;
             }
           }
         }
         &.active {
           a {
-            background: url(../../images/common/ico_person01_on.png) no-repeat;
+            background: url(../../images/common/ico_person02_on.png) no-repeat;
           }
         }
       }
@@ -1045,7 +1045,6 @@
       }
     }
   }
-
   //클래스 등록 팝업
   .add-type.wide-w {
     .pop-inner {
@@ -1060,13 +1059,18 @@
     }
     .form-txt-chk {
       margin-top: 0;
+      &.type02 {
+        margin-top: 16px;
+        text-align: center;
+      }
     }
     .add-content {
       margin-top: 10px;
       border-top: 1px solid $color-sub33;
       border-bottom: 1px solid $color-sub33;
       .tit {
-        font-weight: 600;        
+        font-weight: 600;
+        white-space: nowrap;
       }
       .class {
         @include layout-center;
@@ -1087,7 +1091,7 @@
         padding: 20px;
         box-sizing: border-box;
         &:last-child {
-          width: 220px;
+          width: 460px;
           padding-right: 0;
           border-right: 0;
         }
@@ -1120,17 +1124,24 @@
       }
       .stu-list {
         margin-top: 10px;
-        border: 1px solid $color-line-type02;
-        border-radius: 6px;
-        box-sizing: border-box;
         .scroll-inner {
-          height: 130px;
-          padding: 5px 20px;
+          height: 380px;          
           box-sizing: border-box;
+          border: 0;
         }
         .select {
           display: block;
-          padding: 6px 0;
+          width: 100%;
+          padding: 13px 10px 12px;
+          text-align: left;
+          border: 1px solid $color-line-type02;
+          border-radius: 6px;
+          &.btn-line {
+            height: auto;
+          }
+          & + .select {
+            margin-top: 10px;
+          }
         }
       }
       .select-wrap {
@@ -1233,6 +1244,184 @@
         }
       } 
     }
+    .grade {
+      @include layout-center;
+      width: 100%;
+      .btn-wrap {
+        width: 148px;
+        margin: 0;
+        margin-right: 7px;
+      }
+      .select-wrap {
+        width: 90px;
+      }
+    }
+    .check-type {
+      @include layout-justify-start;
+      & > div {
+        width: 200px;
+      }
+      .left-cnt {
+        .scroll-inner {
+          height: 300px;
+          padding: 0;
+        }
+        .tab-wrap {
+          margin-top: 0;
+          &::after {
+            @include virtual-selector;
+            position: absolute;
+            top: 50%;right: -26px;
+            width: 11px;height: 18px;
+            margin-top: -9px;
+            background: url(../../images/common/ico_arrow_c_type02.png) no-repeat;
+          }
+        }
+      }
+      .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .tab-menu-type03 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        li {
+          a {
+            width:90px;
+          }
+        }
+      }
+      .chk-acc {
+        .cnt {
+          display: none;
+          padding: 0 30px 0 40px;
+          background-color: #f6f6f6;
+          li {
+            display: block;
+            height: auto;
+            border-bottom: 0;
+            padding: 10px 0;
+            input[type="checkbox"] {
+              & + label {
+                display: block;
+                width: 100%;
+                padding-left: 0;
+                font-size: 16px;
+                &::before {
+                  left: inherit;
+                  right: 0;
+                }
+                em {
+                  color: $color-font66;
+                }
+              }
+            }
+          }
+        }
+      }
+      .acc-btn {
+        position: relative;
+        padding: 15px 30px 15px 20px;
+        cursor: pointer;
+        label {
+          display: none;
+          position: absolute;
+          right: 20px;
+          top: 24px;
+        }
+        &.active {
+          label {
+            display: inline;
+          }
+          span::before {
+            transform: rotate(90deg);
+          }
+          em {
+            position: relative;
+            top: inherit;
+            right: inherit;
+          }
+        }
+        span {
+          position: relative;
+          padding-left: 25px;
+          font-weight: 600;
+          &::before {
+            position: absolute;
+            left: 0;top: 50%;
+            @include virtual-selector;
+            width: 7px;height: 11px;
+            margin-top: -5px;
+            background: url(../../images/common/ico_arrow_acc.png) no-repeat;
+          }
+        }
+        em {
+          position: absolute;
+          right: 30px;
+          top: 15px;
+          color: $color-main-purple;
+        }
+      }
+      .right-cnt {
+        position: relative;
+        right: inherit;
+        display: block;
+        margin-top: 10px;
+        .none-txt {
+          @include layout-center-center;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          border: 0;
+          color: $color-sub33;
+        }
+        .check-wrap {
+          width: 100%;
+          overflow: hidden;
+          border: 1px solid #d8d8d8;
+          border-radius: 6px;
+        }
+        .scroll-inner {
+          height: 417px;
+        }
+        .acc-btn {
+          label {
+            display: block;
+          }
+          em {
+            position: relative;
+            top: inherit;right: inherit;
+          }
+        }
+        .cnt {
+          padding: 0 29px 0 46px;
+          li {
+            display: none;
+          }
+        }
+        .chk-acc {
+          display: none;
+        }
+        input[type="checkbox"]:checked + label::before {
+          width: 20px;height: 20px;
+          margin-top: -10px;
+          background: url(../../images/common/ico_delete_type02.png) no-repeat;
+          background-size: contain;
+        }
+        .select label {
+          color: #999;
+        }
+        .acc-btn {
+          border-bottom: 1px solid #d8d8d8;
+          background-color: #fff;
+        }
+        .cnt {
+          border-bottom: 1px solid #d8d8d8;
+        }
+      }
+    }
+    
   }
   //학습동영상 팝업
   .video-type {
@@ -1254,6 +1443,18 @@
       }
       .video-cnt {
         width: 100%;
+      }
+    }
+  }
+  .btm-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    .button-wrap {
+      display: flex;
+      margin-left: 196px;
+      button + button {
+        margin-left: 10px;
       }
     }
   }
@@ -2459,6 +2660,25 @@
     }
     .fix-btm-bar {
       bottom: 259px;
+    }
+    .add-type.wide-w {
+      .add-content {
+        .select-area {
+          height: 419px;
+        }
+      }
+      .check-type {
+        .left-cnt {
+          .scroll-inner {
+            height: 232px;
+          }
+        }
+        .right-cnt {
+          .scroll-inner {
+            height: 319px;
+          }
+        }
+      }
     }
   }
   //앱관리
