@@ -1,0 +1,418 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import url(../css/font.css);
+
+// common
+#wrap {
+  min-width: 1280px;
+}
+.inner {
+  padding: 0 50px;
+}
+.container {
+  padding-top: 50px;
+}
+.contents, .content {
+  display: none;
+  &.on {
+    display: block;
+  }
+}
+.contents {
+  padding: 40px 0;
+}
+.content {
+  padding: 40px 0;
+}
+.pop-close {
+  position: absolute;
+  top: 50px;right: 50px;
+  padding-top: 20px;
+  color: #d9caff;
+  font-size: 13px;
+  background: url('http://image.test.hbedu.co.kr/DRM/admin/master/btn_close.png') no-repeat 50% 0;
+}
+input {
+  &[type="text"] {
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+  }
+  &[type="checkbox"] {
+    & + label {
+      padding-left: 30px;
+      margin-right: 20px;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_chk.png') no-repeat 0 50%;
+    }
+    &:checked + label {
+      color: #7959c8;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_chk_on.png') no-repeat 0 50%;
+    }
+  } 
+  &[type="radio"] {
+    & + label {
+      padding-left: 30px;
+      margin-right: 20px;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_radio.png') no-repeat 0 50%;
+    }
+    &:checked + label {
+      color: #7959c8;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_radio_on.png') no-repeat 0 50%;
+    }
+  }
+}
+select {
+  border-color: #ededed;
+  padding: 5px 50px 5px 5px;
+  background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_select_arr.png') no-repeat 88% 55% #fff;
+}
+.btn-wrap {
+  margin-top: 10px;
+  text-align: center;
+  button {
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #7959c8;
+    &:last-child {
+      background-color: #6a6a6a;
+    }
+  }
+}
+.paging-wrap {
+  margin-top: 40px;
+  @include layout-center-center;
+  a {
+    @include content-center-center;
+    width: 30px;height: 30px;
+    border: 1px solid #e0e0e0;
+  }
+  .first {
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_first.png') no-repeat 50% 50%;
+  }
+  .last {
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_end.png') no-repeat 50% 50%;
+  }
+  .prev {
+    margin-right: 10px;
+    border-left: 0;
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_prev.png') no-repeat 50% 50%;
+  }
+  .next {
+    margin-left: 10px;
+    border-right: 0;
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_next.png') no-repeat 50% 50%;
+  }
+  .page {
+    border: 0;
+    &.active {
+      color: #7959c8;
+      border: 1px solid #7959c8;
+    }
+  }
+}
+
+// header
+.header-top {
+  border-bottom: 1px solid #ededed;
+  .inner {
+    padding-right: 15px;
+    text-align: right;
+  }
+  a {
+    display: inline-block;
+    padding: 9px 0 9px 17px;
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_logout.png') no-repeat 0% 50%;
+    color: #999;
+    font-size: 14px;
+  }
+}
+.nav-wrap {
+  position: relative;
+  .inner {
+    @include layout-center;
+    padding-right: 0;
+  }
+  .nav {
+    display: flex;
+    margin-left: 40px;
+    font-size: 18px;
+    & > li {
+      & > a {
+        display: block;
+        margin: 0 15px 15px;
+        padding: 25px 12px 10px;
+      }
+      &:hover {
+        & > a {
+          color: #7959c8;
+          border-bottom: 1px solid #7959c8;
+        }
+      }
+      &.on {
+        & > a {
+          color: #7959c8;
+          border-bottom: 1px solid #7959c8;
+        }
+      }
+    }
+  }
+  .all-menu, .depth2 {
+    display: none;
+  }
+  .all-menu-wrap {
+    position: absolute;
+    right: 0;top: 0;
+    width: 90px;
+    text-align: center;
+    border-left: 1px solid #ededed;
+    > button {
+      padding-top: 45px;
+      padding-bottom: 7px;
+      color: #808080;
+      font-size: 13px;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_allmenu.png') no-repeat 50% 16px;
+
+    }
+  }
+  .depth2 {
+    position: absolute;
+    left: 0;right: 0;
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid #ededed;
+    &.on {
+      display: flex;
+    }
+    .tit {
+      width: 200px;
+      padding: 40px 0;
+      color: #6346a5;
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      border-right: 1px solid #ededed;
+    }
+    ul {
+      @include layout-center;
+      width: 100%;
+      padding-left: 50px;
+      li {
+        a {
+          display: inline-block;
+          padding: 9px 15px;
+          font-size: 18px;
+          &:hover {
+            background-color: #e6e6e6;
+          }
+          &.on {
+            background-color: #e6e6e6;
+          }
+        }
+        & + li {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+.local-nav {
+  background-color: #7959c8;
+  .inner {
+    @include layout-center;
+    & > div {
+      position: relative;
+    }
+  }
+  .home {
+    display: block;
+    width: 50px;height: 45px;
+    border-left: 1px solid #9077cf;
+    border-right: 1px solid #9077cf;
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_home.png') no-repeat 50% 50%;
+  }
+  .select-btn {
+    width: 220px;
+    height: 45px;
+    padding: 0 20px;
+    color: #fff;
+    text-align: left;
+    border-right: 1px solid #9077cf;
+    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/bg_menu_on.png') no-repeat 190px 50%;
+    &.active {
+      color: #7959c8;
+      border: 1px solid #7354c3;
+      border-bottom: 0;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_arr_up.png') no-repeat 190px 50% #eee7ff;
+    }
+  }
+  ul {
+    display: none;
+    position: absolute;
+    left: 0;right: 0;
+    border: 1px solid #7354c3;
+    border-top: 0;
+    background-color: #fff;
+    a {
+      display: block;
+      padding: 14px 20px;
+      &:hover {
+        color: #7354c3;
+      }
+    }
+  }
+}
+.all-menu {
+  position: fixed;
+  top: 0;right: 0;bottom: 0;left: 0;
+  padding: 50px;
+  text-align: left;
+  background-color: #7959c8;
+  z-index: 20;
+  ul {
+    display: inline-grid;
+    width: 180px;
+    & + ul {
+      margin-left: 80px;
+    }
+  }
+  li {
+    &:first-child {
+      padding: 8px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d0bdff;
+      a {
+        padding: 0;
+        color: #fff;
+        font-size: 21px;
+        background: none;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+    &.on {
+      a {
+        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 4px 15px;
+      margin: 5px 0;
+      color: #e7ddff;
+      font-size: 17px;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50%;
+      &.on {
+        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+      }
+      &:hover {
+        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+      }
+    }
+  }
+}
+
+// content
+.tab-menu {
+  display: flex;
+  border-bottom: 1px solid #7959c8;
+  li {
+    position: relative;
+    top: 1px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    &.active {
+      left: -1px;
+      border: 1px solid #7959c8;
+      border-bottom: 1px solid #fff;
+      a {
+        color: #7959c8;
+      }
+    }
+    a {
+      display: block;
+      padding: 16px 0;
+      color: #999;
+    }
+    & + li {
+      border-left: 0;
+    }
+  }
+  &.type02 {
+    border: 0;
+    li {
+      border: 0;
+      background-color: #ededed;
+      &.active {
+        
+        background-color: #7959c8;
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+.search-wrap {
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  table {
+    width: 100%;
+    th, td {
+      padding: 7px 15px;
+    }
+    th {
+      font-weight: 600;
+    }
+  }
+}
+.list-table {
+  .table-top {
+    @include layout-justify-center;
+    margin-bottom: 10px;
+    .total {
+      padding-left: 20px;
+      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_result.png') no-repeat 0% 50%;
+      em {
+        color: #7959c8;
+        font-weight: 600;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 3px;
+      background-color: #7959c8;
+    }
+  }
+  table {
+    width: 100%;
+    border-top: 2px solid #7959c8;
+    border-bottom: 1px solid #909090;
+    th, td {
+      text-align: center;
+    }
+    th {
+      padding: 16px 0;
+      color: #7959c8;
+      font-weight: 600;
+      border-bottom: 1px solid #909090;
+    }
+    td {
+      padding: 8px 0;
+    }
+    .pop-btn {
+      color: #7959c8;
+      border-bottom: 1px solid #7959c8;
+    }
+  }
+}
