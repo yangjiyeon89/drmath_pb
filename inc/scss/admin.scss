@@ -377,6 +377,15 @@ select {
 }
 
 // content
+.sub-tit {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  em {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 .tab-menu {
   display: flex;
   border-bottom: 1px solid #7959c8;

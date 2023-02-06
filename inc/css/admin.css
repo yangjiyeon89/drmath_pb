@@ -154,6 +154,10 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .all-menu li a:hover { background: url("../../images/admin/all_dot_01.png") no-repeat 7px 50% #694ab3; }
 
+.sub-tit { margin-bottom: 20px; font-size: 20px; font-weight: 700; }
+
+.sub-tit em { font-size: 18px; font-weight: 400; }
+
 .tab-menu { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #7959c8; }
 
 .tab-menu li { position: relative; top: 1px; width: 150px; text-align: center; border: 1px solid #ccc; border-bottom: 0; }
