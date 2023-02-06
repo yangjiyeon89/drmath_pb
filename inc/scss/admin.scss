@@ -496,6 +496,7 @@ select {
     width: 100%;
     border-top: 2px solid #7959c8;
     border-bottom: 1px solid #909090;
+    table-layout: fixed;
     th, td {
       text-align: center;
     }
@@ -511,6 +512,15 @@ select {
     .pop-btn {
       color: #7959c8;
       border-bottom: 1px solid #7959c8;
+    }
+    .title {
+      @include text-overflow;
+      padding-left: 20px;
+      text-align: left;
+      a, button, span {
+        color: #7959c8;
+        border-bottom: 1px solid #7959c8;
+      }
     }
   }
   input[type="checkbox"] + label {
