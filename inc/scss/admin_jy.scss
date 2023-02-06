@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import url(../css/font.css);
+
+.table-top {
+  select {
+    margin-left: 10px;
+  }
+}
+
