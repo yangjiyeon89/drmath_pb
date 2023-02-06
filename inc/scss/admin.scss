@@ -108,10 +108,10 @@ select {
 
 // components
 .btn-txt, a.btn-txt {
-  @include layout-center-center;
+  @include content-center-center;
   border-radius: 5px;
   padding: 0 17px;
-  height: 36px;
+  height: 30px;
   color: #666666;
   font-size: 14px;
   border: 1px solid #d1d1d1;
