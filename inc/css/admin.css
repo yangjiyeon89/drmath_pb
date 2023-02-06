@@ -34,8 +34,6 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .btn-wrap button:last-child, .btn-wrap a:last-child { background-color: #7959c8; }
 
-.btn-wrap a { position: relative; top: -1px; }
-
 .paging-wrap { margin-top: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .paging-wrap a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 30px; height: 30px; border: 1px solid #e0e0e0; }
