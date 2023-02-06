@@ -13,31 +13,37 @@
     max-width: 80%;
   }
 }
+.date-wrap {
+  display: inline-block;
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+.g-btn {
+  background-color: #6a6a6a !important;
+}
+
+.radio-wrap.type02 {
+  display: inline-block;
+  margin-left: 5px;
+  input[type="radio"] + label {
+    padding: 5px 10px;
+    margin: 0;
+    background: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  input[type="radio"]:checked + label {
+    color: #fff;
+    background-color: #7959c8;
+  }
+}
 .view-table {
   th, td {
     height: 60px;
     box-sizing: border-box;
-  }
-  .date-wrap {
-    display: inline-block;
-    input[type="text"] {
-      width: 100%;
-    }
-  }
-  .radio-wrap.type02 {
-    display: inline-block;
-    margin-left: 5px;
-    label {
-      padding: 5px 10px;
-      margin: 0;
-      background: none;
-      border: 1px solid #ddd;
-      cursor: pointer;
-    }
-    input[type="radio"]:checked + label {
-      color: #fff;
-      background-color: #7959c8;
-    }
   }
   input[type="text"] {
     width: 90%;
