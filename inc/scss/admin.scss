@@ -106,6 +106,18 @@ select {
   }
 }
 
+// components
+.btn-txt, a.btn-txt {
+  @include layout-center-center;
+  border-radius: 5px;
+  padding: 0 17px;
+  height: 36px;
+  color: #666666;
+  font-size: 14px;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+}
+
 //popup
 .dim {
   display: none;
@@ -382,10 +394,7 @@ select {
   font-size: 20px;
   font-weight: 700;
   em {
-    display: inline-block;
-    margin-left: 10px;
-    color: #666;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
   }
 }
@@ -489,17 +498,4 @@ select {
       border-bottom: 1px solid #7959c8;
     }
   }
-}
-.datepicker-wrap {
-  position: relative;
-  display: inline-block;
-  .ui-datepicker-trigger {
-   position: absolute;
-   right: 10px;
-   top: 50%;
-   transform: translateY(-50%); 
-  }
-}
-.ui-datepicker-year {
-  padding: 5px;
 }
