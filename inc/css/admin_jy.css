@@ -5,5 +5,3 @@
 .table-top select { margin-left: 10px; }
 
 .list-table input { max-width: 80%; }
-
-.list-table .scroll-inner { overflow: overlay; height: 330px; }

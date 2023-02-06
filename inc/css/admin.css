@@ -196,6 +196,8 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .search-wrap table th { font-weight: 600; }
 
+.list-table .scroll-inner { overflow: overlay; height: 330px; }
+
 .list-table .table-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10px; }
 
 .list-table .table-top .total { padding-left: 20px; background: url("../../images/admin/ico_result.png") no-repeat 0% 50%; }
