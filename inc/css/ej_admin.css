@@ -18,16 +18,15 @@
 	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
 	*/
 @import url(../css/font.css);
-.btn-txt.pop-btn,
-a.btn-txt.pop-btn {
-  color: #666666;
-  border: 1px solid #d1d1d1;
-}
-
 .table-top select {
   margin-left: 10px;
 }
 
+.list-table table .btn-txt.pop-btn,
+.list-table table a.btn-txt.pop-btn {
+  color: #666666;
+  border: 1px solid #d1d1d1;
+}
 .list-table table button a {
   color: #7959c8;
   border-bottom: 1px solid #7959c8;
