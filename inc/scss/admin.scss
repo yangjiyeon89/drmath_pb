@@ -503,6 +503,7 @@ select {
     overflow: overlay;
     height: 330px;
     padding-right: 20px;
+    padding-bottom: 1px;
   }
   .table-top {
     @include layout-justify-center;
