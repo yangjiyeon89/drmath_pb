@@ -30,7 +30,7 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .btn-wrap { margin-top: 10px; text-align: center; }
 
-.btn-wrap button, .btn-wrap a { padding: 5px 20px; color: #fff; border-radius: 5px; background-color: #6a6a6a; }
+.btn-wrap button, .btn-wrap a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 5px 20px; height: 34px; color: #fff; border-radius: 5px; background-color: #6a6a6a; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .btn-wrap button:last-child, .btn-wrap a:last-child { background-color: #7959c8; }
 
@@ -204,7 +204,7 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .list-table .table-top .total em { color: #7959c8; font-weight: 600; }
 
-.list-table .table-top a { display: inline-block; padding: 5px 10px; color: #fff; font-size: 14px; border-radius: 3px; background-color: #7959c8; }
+.list-table .table-top .down { display: inline-block; padding: 5px 10px; color: #fff; font-size: 14px; border-radius: 3px; background-color: #7959c8; }
 
 .list-table table { width: 100%; border-top: 2px solid #7959c8; border-bottom: 1px solid #909090; table-layout: fixed; }
 

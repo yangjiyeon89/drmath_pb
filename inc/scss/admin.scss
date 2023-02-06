@@ -64,10 +64,13 @@ select {
   margin-top: 10px;
   text-align: center;
   button, a {
+    @include content-center;
     padding: 5px 20px;
+    height: 34px;
     color: #fff;
     border-radius: 5px;
     background-color: #6a6a6a;
+    box-sizing: border-box;
     &:last-child {
       background-color: #7959c8;
     }
@@ -490,7 +493,7 @@ select {
         font-weight: 600;
       }
     }
-    a {
+    .down {
       display: inline-block;
       padding: 5px 10px;
       color: #fff;
