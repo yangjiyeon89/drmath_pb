@@ -156,7 +156,7 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .sub-tit { margin-bottom: 20px; font-size: 20px; font-weight: 700; }
 
-.sub-tit em { font-size: 16px; font-weight: 400; }
+.sub-tit em { display: inline-block; margin-left: 10px; color: #666; font-size: 14px; font-weight: 400; }
 
 .tab-menu { display: -webkit-box; display: -ms-flexbox; display: flex; border-bottom: 1px solid #7959c8; }
 
@@ -205,3 +205,9 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 .list-table table td { padding: 8px 0; }
 
 .list-table table .pop-btn { color: #7959c8; border-bottom: 1px solid #7959c8; }
+
+.datepicker-wrap { position: relative; display: inline-block; }
+
+.datepicker-wrap .ui-datepicker-trigger { position: absolute; right: 10px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.ui-datepicker-year { padding: 5px; }
