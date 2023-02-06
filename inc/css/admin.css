@@ -30,9 +30,9 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .btn-wrap { margin-top: 10px; text-align: center; }
 
-.btn-wrap button, .btn-wrap a { padding: 5px 20px; color: #fff; border-radius: 5px; background-color: #7959c8; }
+.btn-wrap button, .btn-wrap a { padding: 5px 20px; color: #fff; border-radius: 5px; background-color: #6a6a6a; }
 
-.btn-wrap button:last-child, .btn-wrap a:last-child { background-color: #6a6a6a; }
+.btn-wrap button:last-child, .btn-wrap a:last-child { background-color: #7959c8; }
 
 .paging-wrap { margin-top: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
