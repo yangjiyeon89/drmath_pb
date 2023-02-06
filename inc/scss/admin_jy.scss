@@ -8,4 +8,13 @@
     margin-left: 10px;
   }
 }
+.list-table {
+  input {
+    max-width: 80%;
+  }
+  .scroll-inner {
+    overflow: overlay;
+    height: 330px;
+  }
+}
 
