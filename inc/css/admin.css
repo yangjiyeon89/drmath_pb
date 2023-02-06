@@ -102,6 +102,8 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .nav-wrap .all-menu, .nav-wrap .depth2 { display: none; }
 
+.nav-wrap .all-menu { -webkit-transform: none; transform: none; }
+
 .nav-wrap .all-menu-wrap { position: absolute; right: 0; top: 0; width: 90px; text-align: center; border-left: 1px solid #ededed; }
 
 .nav-wrap .all-menu-wrap > button { padding-top: 45px; padding-bottom: 7px; color: #808080; font-size: 13px; background: url("../../images/admin/ico_allmenu.png") no-repeat 50% 16px; }
@@ -193,6 +195,8 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 .search-wrap table th, .search-wrap table td { padding: 7px 15px; }
 
 .search-wrap table th { font-weight: 600; }
+
+.list-table .scroll-inner { overflow: overlay; height: 330px; }
 
 .list-table .table-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10px; }
 

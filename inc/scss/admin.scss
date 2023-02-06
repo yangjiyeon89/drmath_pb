@@ -246,6 +246,9 @@ select {
   .all-menu, .depth2 {
     display: none;
   }
+  .all-menu {
+    transform: none;
+  }
   .all-menu-wrap {
     position: absolute;
     right: 0;top: 0;
@@ -472,6 +475,10 @@ select {
   }
 }
 .list-table {
+  .scroll-inner {
+    overflow: overlay;
+    height: 330px;
+  }
   .table-top {
     @include layout-justify-center;
     margin-bottom: 10px;
