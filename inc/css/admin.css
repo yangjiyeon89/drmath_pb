@@ -211,3 +211,5 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 .list-table table td { padding: 8px 0; }
 
 .list-table table .pop-btn { color: #7959c8; border-bottom: 1px solid #7959c8; }
+
+.list-table input[type="checkbox"] + label { margin: 0; padding-left: 20px; }

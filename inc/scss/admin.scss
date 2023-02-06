@@ -510,4 +510,8 @@ select {
       border-bottom: 1px solid #7959c8;
     }
   }
+  input[type="checkbox"] + label {
+    margin: 0;
+    padding-left: 20px;
+  }
 }
