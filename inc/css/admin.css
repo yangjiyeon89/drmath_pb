@@ -30,10 +30,12 @@
   padding-top: 50px;
 }
 
-.contents, .content {
+.contents,
+.content {
   display: none;
 }
-.contents.on, .content.on {
+.contents.on,
+.content.on {
   display: block;
 }
 
@@ -79,7 +81,8 @@ select {
   margin-top: 10px;
   text-align: center;
 }
-.btn-wrap button, .btn-wrap a {
+.btn-wrap button,
+.btn-wrap a {
   display: inline-flex;
   align-items: center;
   padding: 5px 20px;
@@ -89,10 +92,14 @@ select {
   background-color: #6a6a6a;
   box-sizing: border-box;
 }
-.btn-wrap button:last-child, .btn-wrap a:last-child {
+.btn-wrap button:last-child,
+.btn-wrap a:last-child {
   background-color: #7959c8;
 }
 
+.table-bottom {
+  clear: both;
+}
 .table-bottom .btn-wrap {
   float: right;
   margin-top: -30px;
@@ -148,7 +155,8 @@ select {
   border: 1px solid #7959c8;
 }
 
-.btn-txt, a.btn-txt {
+.btn-txt,
+a.btn-txt {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +167,12 @@ select {
   font-size: 14px;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
+}
+
+.btn-txt.pop-btn,
+a.btn-txt.pop-btn {
+  color: #666666;
+  border: 1px solid #d1d1d1;
 }
 
 .dim {
@@ -226,7 +240,8 @@ select {
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
-.test-pop .info th, .test-pop .info td {
+.test-pop .info th,
+.test-pop .info td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
@@ -291,7 +306,8 @@ select {
   color: #7959c8;
   border-bottom: 1px solid #7959c8;
 }
-.nav-wrap .all-menu, .nav-wrap .depth2 {
+.nav-wrap .all-menu,
+.nav-wrap .depth2 {
   display: none;
 }
 .nav-wrap .all-menu {
@@ -519,7 +535,8 @@ select {
 .search-wrap table {
   width: 100%;
 }
-.search-wrap table th, .search-wrap table td {
+.search-wrap table th,
+.search-wrap table td {
   padding: 7px 15px;
 }
 .search-wrap table th {
@@ -558,7 +575,8 @@ select {
   border-bottom: 1px solid #909090;
   table-layout: fixed;
 }
-.list-table table th, .list-table table td {
+.list-table table th,
+.list-table table td {
   text-align: center;
 }
 .list-table table th {
@@ -574,6 +592,10 @@ select {
   color: #7959c8;
   border-bottom: 1px solid #7959c8;
 }
+.list-table table button a {
+  color: #7959c8;
+  border-bottom: 1px solid #7959c8;
+}
 .list-table table .title {
   overflow: hidden;
   white-space: nowrap;
@@ -583,7 +605,9 @@ select {
   padding-left: 20px;
   text-align: left;
 }
-.list-table table .title a, .list-table table .title button, .list-table table .title span {
+.list-table table .title a,
+.list-table table .title button,
+.list-table table .title span {
   color: #7959c8;
   border-bottom: 1px solid #7959c8;
 }
@@ -598,7 +622,8 @@ select {
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
-.view-table th, .view-table td {
+.view-table th,
+.view-table td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }

@@ -6,6 +6,8 @@
 
 .list-table input { max-width: 80%; }
 
+.list-table.type02 td { height: 46px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 .date-wrap { display: inline-block; }
 
 .date-wrap input[type="text"] { width: 100%; }
