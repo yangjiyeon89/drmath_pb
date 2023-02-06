@@ -36,29 +36,29 @@ input {
     & + label {
       padding-left: 30px;
       margin-right: 20px;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_chk.png') no-repeat 0 50%;
+      background: url('../../images/admin/ty_chk.png') no-repeat 0 50%;
     }
     &:checked + label {
       color: #7959c8;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_chk_on.png') no-repeat 0 50%;
+      background: url('../../images/admin/ty_chk_on.png') no-repeat 0 50%;
     }
   } 
   &[type="radio"] {
     & + label {
       padding-left: 30px;
       margin-right: 20px;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_radio.png') no-repeat 0 50%;
+      background: url('../../images/admin/ty_radio.png') no-repeat 0 50%;
     }
     &:checked + label {
       color: #7959c8;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ty_radio_on.png') no-repeat 0 50%;
+      background: url('../../images/admin/ty_radio_on.png') no-repeat 0 50%;
     }
   }
 }
 select {
   border-color: #ededed;
   padding: 5px 50px 5px 5px;
-  background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_select_arr.png') no-repeat 88% 55% #fff;
+  background: url('../../images/admin/ico_select_arr.png') no-repeat 88% 55% #fff;
 }
 .btn-wrap {
   margin-top: 10px;
@@ -82,20 +82,20 @@ select {
     border: 1px solid #e0e0e0;
   }
   .first {
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_first.png') no-repeat 50% 50%;
+    background: url('../../images/admin/ico_page_first.png') no-repeat 50% 50%;
   }
   .last {
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_end.png') no-repeat 50% 50%;
+    background: url('../../images/admin/ico_page_end.png') no-repeat 50% 50%;
   }
   .prev {
     margin-right: 10px;
     border-left: 0;
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_prev.png') no-repeat 50% 50%;
+    background: url('../../images/admin/ico_page_prev.png') no-repeat 50% 50%;
   }
   .next {
     margin-left: 10px;
     border-right: 0;
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_page_next.png') no-repeat 50% 50%;
+    background: url('../../images/admin/ico_page_next.png') no-repeat 50% 50%;
   }
   .page {
     border: 0;
@@ -128,7 +128,7 @@ select {
   padding-top: 20px;
   color: #d9caff;
   font-size: 13px;
-  background: url('http://image.test.hbedu.co.kr/DRM/admin/master/btn_close.png') no-repeat 50% 0;
+  background: url('../../images/admin/btn_close.png') no-repeat 50% 0;
   &.ico {
     width: 18px;height: 18px;
     top: 20px;right: 20px;
@@ -184,7 +184,7 @@ select {
   a {
     display: inline-block;
     padding: 9px 0 9px 17px;
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_logout.png') no-repeat 0% 50%;
+    background: url('../../images/admin/ico_logout.png') no-repeat 0% 50%;
     color: #999;
     font-size: 14px;
   }
@@ -233,7 +233,7 @@ select {
       padding-bottom: 7px;
       color: #808080;
       font-size: 13px;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_allmenu.png') no-repeat 50% 16px;
+      background: url('../../images/admin/ico_allmenu.png') no-repeat 50% 16px;
 
     }
   }
@@ -291,7 +291,7 @@ select {
     width: 50px;height: 45px;
     border-left: 1px solid #9077cf;
     border-right: 1px solid #9077cf;
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_home.png') no-repeat 50% 50%;
+    background: url('../../images/admin/ico_home.png') no-repeat 50% 50%;
   }
   .select-btn {
     width: 220px;
@@ -300,12 +300,12 @@ select {
     color: #fff;
     text-align: left;
     border-right: 1px solid #9077cf;
-    background: url('http://image.test.hbedu.co.kr/DRM/admin/master/bg_menu_on.png') no-repeat 190px 50%;
+    background: url('../../images/admin/bg_menu_on.png') no-repeat 190px 50%;
     &.active {
       color: #7959c8;
       border: 1px solid #7354c3;
       border-bottom: 0;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/ico_arr_up.png') no-repeat 190px 50% #eee7ff;
+      background: url('../../images/admin/ico_arr_up.png') no-repeat 190px 50% #eee7ff;
     }
   }
   ul {
@@ -355,7 +355,7 @@ select {
     }
     &.on {
       a {
-        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+        background: url('../../images/admin/all_dot_01.png') no-repeat 7px 50% #694ab3;
       }
     }
     a {
@@ -364,12 +364,12 @@ select {
       margin: 5px 0;
       color: #e7ddff;
       font-size: 17px;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50%;
+      background: url('../../images/admin/all_dot_01.png') no-repeat 7px 50%;
       &.on {
-        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+        background: url('../../images/admin/all_dot_01.png') no-repeat 7px 50% #694ab3;
       }
       &:hover {
-        background: url('http://image.test.hbedu.co.kr/DRM/admin/master/all_dot_01.png') no-repeat 7px 50% #694ab3;
+        background: url('../../images/admin/all_dot_01.png') no-repeat 7px 50% #694ab3;
       }
     }
   }
@@ -440,7 +440,7 @@ select {
     margin-bottom: 10px;
     .total {
       padding-left: 20px;
-      background: url('http://image.test.hbedu.co.kr/DRM/admin/common/ico_result.png') no-repeat 0% 50%;
+      background: url('../../images/admin/ico_result.png') no-repeat 0% 50%;
       em {
         color: #7959c8;
         font-weight: 600;
