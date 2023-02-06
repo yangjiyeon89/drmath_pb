@@ -3,16 +3,6 @@
 @import "_setting.scss";
 @import url(../css/font.css);
 
-.admin08 {
-  .btn-wrap {
-    button {
-      &:last-child {
-        background-color: #7959c8;
-      }
-      background-color: #6a6a6a;
-    }
-  }
-}
 .table-top {
   select {
     margin-left: 10px;
@@ -55,7 +45,9 @@
   .btn-wrap {
     margin-bottom: 40px;
     a {
-      display: inline-block;
+      @include content-center;
+      height: 34px;
+      box-sizing: border-box;
       &:first-child {
         background-color: #6a6a6a;
       }
