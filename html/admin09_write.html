@@ -192,9 +192,9 @@
 				<div class="answer-table">
 					<div class="title-wrap">
 						<p class="tit">답변등록</p>
-						<button type="button" class="pop-btn">미리보기</button>
+						<button type="button" class="pop-btn" data-pop="preview-pop">미리보기</button>
 					</div>
-					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<textarea name="" id="" cols="30" rows="10" placeholder="텍스트 입력"></textarea>
 				</div>
 				<div class="btn-wrap">
 					<a href="javascript:;">답변 등록</a>
@@ -204,5 +204,14 @@
 		</div>
 	</div>
 	<div class="dim"></div>
+	<div class="pop-wrap preview-pop" data-pop="preview-pop">
+		<div class="pop-inner">
+			<div class="pop-header">1:1문의 메일 답변 미리보기</div>
+			<div class="pop-content">
+				메일 미리보기
+			</div>
+			<button type="button" class="pop-close ico"></button>
+		</div>
+	</div>
 </body>
 </html>

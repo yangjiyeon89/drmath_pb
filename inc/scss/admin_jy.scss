@@ -18,6 +18,7 @@
       box-sizing: border-box;
     }
   }
+  
 }
 .date-wrap {
   display: inline-block;
@@ -103,8 +104,11 @@
       margin-top: 10px;
     }
   }
+  .cnt {
+    padding: 20px;
+    line-height: 1.5;
+  }
 }
-
 .filebox {
   input[type="file"] {
     position: absolute;
@@ -127,5 +131,31 @@
     height: 36px;
   }
 }
-
+.answer-table {
+  margin-top: 40px;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+  .title-wrap {
+    @include layout-justify-center;
+    padding: 10px;
+  }
+  button {
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #7959c8;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+}
+.preview-pop {
+  width: 60%;
+}
 
