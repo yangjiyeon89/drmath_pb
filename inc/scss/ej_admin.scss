@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+@import "_setting.scss";
+@import url(../css/font.css);
+
+.list-table .table-top .total {
+  padding-right: 10px;
+}
