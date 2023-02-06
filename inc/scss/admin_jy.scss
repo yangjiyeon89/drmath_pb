@@ -3,6 +3,16 @@
 @import "_setting.scss";
 @import url(../css/font.css);
 
+.admin08 {
+  .btn-wrap {
+    button {
+      &:last-child {
+        background-color: #7959c8;
+      }
+      background-color: #6a6a6a;
+    }
+  }
+}
 .table-top {
   select {
     margin-left: 10px;
@@ -12,6 +22,106 @@
   input {
     max-width: 80%;
   }
-  
 }
+.view-table {
+  th, td {
+    height: 60px;
+    box-sizing: border-box;
+  }
+  .date-wrap {
+    display: inline-block;
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+  .radio-wrap.type02 {
+    display: inline-block;
+    margin-left: 5px;
+    label {
+      padding: 5px 10px;
+      margin: 0;
+      background: none;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+    input[type="radio"]:checked + label {
+      color: #fff;
+      background-color: #7959c8;
+    }
+  }
+  input[type="text"] {
+    width: 90%;
+  }
+  .btn-wrap {
+    margin-bottom: 40px;
+    a {
+      display: inline-block;
+      &:first-child {
+        background-color: #6a6a6a;
+      }
+    }
+    .c-btn {
+      background-color: #7959c8;
+    }
+  }
+  .file-name {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #7959c8;
+    border-bottom: 1px solid #7959c8;
+  }
+  .img-box {
+    display: inherit;
+    min-width: 300px;
+    width: auto;
+    border: 1px solid #ddd;
+    .img-area {
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+      width: 100%;      
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .txt {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      border-top: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+    & + .filebox {
+      margin-top: 10px;
+    }
+  }
+}
+
+.filebox {
+  input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+  }
+  input {
+    padding: 5px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+  }
+  label {
+    position: relative;
+    top: -1px;
+    height: 36px;
+  }
+}
+
 
