@@ -76,6 +76,27 @@ select {
     }
   }
 }
+
+.table-bottom {
+  .btn-wrap {
+    float: right;
+    margin-top: -30px;
+    
+    button {
+      display: inline-block;
+      padding: 5px 10px;
+      color: #fff;
+      height: auto;
+      font-size: 14px;
+      border-radius: 3px;
+      background-color: $color-font6a;
+    }
+
+    button.purple {
+      background-color: #7959c8;
+    }
+  }
+}
 .paging-wrap {
   margin-top: 40px;
   @include layout-center-center;
@@ -115,7 +136,7 @@ select {
   border-radius: 5px;
   padding: 0 17px;
   height: 30px;
-  color: #666666;
+  color: $color-font66;
   font-size: 14px;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
@@ -538,6 +559,7 @@ select {
     padding-left: 20px;
   }
 }
+
 .view-table {
   table {
     margin-top: 10px;

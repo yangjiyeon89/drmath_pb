@@ -13,6 +13,14 @@ $(function () {
         _allMenuLink.find('ul').eq(1).find('li').eq(1).addClass('on')
         break;
     }
+
+    switch (_afterStr[0]) {
+      case 'admin03_01':
+        _gnbMenuLink.eq(0).addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(0).find('li').eq(1).addClass('on')
+        break;
+    }
   }
 
   function menuUI() {
