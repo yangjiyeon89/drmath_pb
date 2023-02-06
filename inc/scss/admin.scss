@@ -502,6 +502,7 @@ select {
   .scroll-inner {
     overflow: overlay;
     height: 330px;
+    padding-right: 20px;
   }
   .table-top {
     @include layout-justify-center;

@@ -12,6 +12,12 @@
   input {
     max-width: 80%;
   }
+  &.type02 {
+    td {
+      height: 60px;
+      box-sizing: border-box;
+    }
+  }
 }
 .date-wrap {
   display: inline-block;
