@@ -128,7 +128,7 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .local-nav .select-btn.active { color: #7959c8; border: 1px solid #7354c3; border-bottom: 0; background: url("../../images/admin/ico_arr_up.png") no-repeat 190px 50% #eee7ff; }
 
-.local-nav ul { display: none; position: absolute; left: 0; right: 0; border: 1px solid #7354c3; border-top: 0; background-color: #fff; }
+.local-nav ul { display: none; position: absolute; left: 0; right: 0; border: 1px solid #7354c3; border-top: 0; background-color: #fff; z-index: 5; }
 
 .local-nav ul a { display: block; padding: 14px 20px; }
 
