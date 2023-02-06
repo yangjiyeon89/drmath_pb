@@ -315,6 +315,7 @@ select {
     border: 1px solid #7354c3;
     border-top: 0;
     background-color: #fff;
+    z-index: 5;
     a {
       display: block;
       padding: 14px 20px;
@@ -376,6 +377,15 @@ select {
 }
 
 // content
+.sub-tit {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  em {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 .tab-menu {
   display: flex;
   border-bottom: 1px solid #7959c8;
