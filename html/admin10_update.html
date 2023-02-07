@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>닥터매쓰</title>
+	<link rel="stylesheet" href="../inc/css/reset.css">
+	<link rel="stylesheet" href="../inc/css/admin.css">
+	<link rel="stylesheet" href="../inc/css/admin_jy.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script src="../inc/js/admin.js"></script>
+</head>
+<body>
+	<div id="wrap" class="admin10">
+		<div class="header">
+			<div class="header-top">
+				<div class="inner">
+					<a href="javascript:;">로그아웃</a>
+				</div>
+			</div>
+			<div class="nav-wrap">
+				<div class="inner">
+					<div class="logo">
+						<a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+					</div>
+					<ul class="nav">
+						<li class="active">
+							<a href="javascript:;">학습관리</a>
+							<div class="depth2">
+								<p class="tit">학습관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">교재 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">추천 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">기출 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">교재 VOD 검수</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">부가관리</a>
+							<div class="depth2">
+								<p class="tit">부가관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">메인 관리</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">커뮤니티</a>
+							<div class="depth2">
+								<p class="tit">커뮤니티</p>
+								<ul>
+									<li>
+										<a href="javascript:;">1:1 문의</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용 후기</a>
+									</li>
+									<li>
+										<a href="javascript:;">업데이트 소식</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="all-menu-wrap">
+						<button type="button" class="pop-btn" data-pop="menu">전체메뉴</button>
+						<div class="all-menu pop-wrap" data-pop="menu">
+							<button type="button" class="pop-close">닫기</button>
+							<ul>
+								<li>
+									<a href="javascript:;">학습관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">추천 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">기출 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 VOD 검수</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">부가관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">메인 관리</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">커뮤니티</a>
+								</li>
+								<li>
+									<a href="javascript:;">1:1 문의</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용 후기</a>
+								</li>
+								<li>
+									<a href="javascript:;">업데이트 소식</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="local-nav">
+				<div class="inner">
+					<a href="javascript:;" class="home"></a>
+					<div class="depth01">
+						<button type="button" class="select-btn">커뮤니티</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">학습관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">부가관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">커뮤니티</a>
+							</li>
+						</ul>
+					</div>
+					<div class="depth02">
+						<button type="button" class="select-btn">사용 후기</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">1:1 문의</a>
+							</li>
+							<li>
+								<a href="javascript:;">사용 후기</a>
+							</li>
+							<li>
+								<a href="javascript:;">업데이트 소식</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="inner">
+				<div class="view-table">
+					<table>
+						<colgroup>
+							<col width="10%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>구분</th>
+								<td>
+									<input type="radio" id="radio01_01" name="cate" checked>
+									<label for="radio01_01">원장님</label>
+									<input type="radio" id="radio01_02" name="cate">
+									<label for="radio01_02">선생님</label>
+									<input type="radio" id="radio01_03" name="cate">
+									<label for="radio01_03">학부모</label>
+									<input type="radio" id="radio01_04" name="cate">
+									<label for="radio01_04">학생</label>
+								</td>
+							</tr>
+							<tr>
+								<th>이름</th>
+								<td>
+									<input type="text" value="김천재 원장님">
+								</td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td>
+									<input type="text" value="맞춤 문제지 사용으로 학생들 오답율이 현저히 줄었습니다.">
+								</td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td class="editor">
+									<div>안녕하세요. 가산동 해법 공부방 원장 김천재 입니다.
+										닥터매쓰 문제은행 플랫폼 사용 후기를 전달드리려 합니다.
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>첨부 이미지(메인)</th>
+								<td>
+									<div class="filebox bs3-primary">
+										<input type="text" class="upload-name" value="이미지파일(jpg, png, bmp 등)만 등록 가능합니다 / 최대 5MB까지 첨부 가능 / 최대 첨부 개수: 1개" disabled="disabled">			
+										<label for="ex_filename" class="btn-txt">파일찾기</label> 
+										<input type="file" id="ex_filename" class="upload-hidden">
+									</div>
+									<div class="file-txt"><span>파일첨부</span><button type="button" class="btn-delete"></button></div>
+								</td>
+							</tr>
+							<tr>
+								<th>첨부 이미지(썸네일)</th>
+								<td>
+									<div class="filebox bs3-primary">
+										<input type="text" class="upload-name" value="이미지파일(jpg, png, bmp 등)만 등록 가능합니다 / 최대 5MB까지 첨부 가능 / 최대 첨부 개수: 1개" disabled="disabled">			
+										<label for="ex_filename02" class="btn-txt">파일찾기</label> 
+										<input type="file" id="ex_filename02" class="upload-hidden">
+									</div>
+									<div class="file-txt"><span>파일첨부</span><button type="button" class="btn-delete"></button></div>
+								</td>
+							</tr>
+							<tr>
+								<th>노출여부</th>
+								<td>
+									<input type="radio" id="radio02_01" name="show" checked>
+									<label for="radio02_01">노출</label>
+									<input type="radio" id="radio02_02" name="show">
+									<label for="radio02_02">미노출</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn-wrap">
+						<a href="javascript:;" class="pop-btn" data-pop="cancel-pop">목록</a>
+						<a href="javascript:;" class="pop-btn" data-pop="save-pop" >저장</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+	<!-- 목록 얼럿 -->
+	<div class="pop-wrap alert-pop" data-pop="cancel-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<span class="txt">작성 중인 내용이 있습니다.<br>목록으로 돌아가시겠습니까?</span>
+		</div>
+	</div>
+	<!-- 저장 얼럿 -->
+	<div class="pop-wrap alert-pop" data-pop="save-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<span class="txt">전체 항목을 입력/등록<br>해주세요.</span>
+		</div>
+	</div>
+	<div class="pop-wrap alert-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<span class="txt">저장되었습니다.</span>
+		</div>
+	</div>
+	<!-- 파일 얼럿 -->
+	<div class="pop-wrap alert-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<span class="txt">파일은 최대<br>1개까지 노출 가능합니다.</span>
+		</div>
+	</div>	
+</body>
+<script>
+  $(function () {
+		// 파일 선택
+		$(document).ready(function(){
+			var fileTarget = $('.filebox .upload-hidden');
+
+				fileTarget.on('change', function(){
+						if(window.FileReader){
+								var filename = $(this)[0].files[0].name;
+						} else {
+								var filename = $(this).val().split('/').pop().split('\\').pop();
+						}
+
+						$(this).siblings('.upload-name').val(filename);
+				});
+		}); 
+  })
+</script>
+</html>
