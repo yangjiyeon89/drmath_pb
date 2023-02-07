@@ -18,7 +18,10 @@
       box-sizing: border-box;
     }
   }
-  
+  .btn-txt.pop-btn {
+    color: #666;
+    border-bottom-color: #d1d1d1;
+  }
 }
 .date-wrap {
   display: inline-block;
@@ -184,4 +187,27 @@
 .preview-pop {
   width: 60%;
 }
-
+.search-wrap.type02 {
+  @include layout-center;
+  justify-content: end;
+  margin-bottom: 40px;
+  background-color: #fff;
+  select + select {
+    margin-left: 10px;
+  }
+  .search-box {
+    position: relative;
+    margin-left: 10px;    
+    input {
+      padding-right: 70px;
+      box-sizing: border-box;
+    }
+    button {
+      position: absolute;
+      right: 10px;top: 50%;
+      padding-left: 23px;
+      background: url('../../images/admin/ico_search.png') no-repeat 0% 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

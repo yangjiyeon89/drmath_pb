@@ -206,3 +206,13 @@
 .answer-table textarea { width: 100%; padding: 10px; resize: none; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; border-top: 1px solid #ddd; }
 
 .preview-pop { width: 60%; }
+
+.search-wrap.type02 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end; margin-bottom: 40px; background-color: #fff; }
+
+.search-wrap.type02 select + select { margin-left: 10px; }
+
+.search-wrap.type02 .search-box { position: relative; margin-left: 10px; }
+
+.search-wrap.type02 .search-box input { padding-right: 70px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.search-wrap.type02 .search-box button { position: absolute; right: 10px; top: 50%; padding-left: 23px; background: url("../../images/admin/ico_search.png") no-repeat 0% 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
