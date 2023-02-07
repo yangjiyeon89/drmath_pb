@@ -8,9 +8,16 @@ $(function () {
 
     switch (_afterStr[0]) {
       case 'admin01':
-        _gnbMenuLink.eq(0).addClass('on');
-        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(0).find('li').eq(1).addClass('on')
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(1).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin02':
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(2).addClass('on')
         break;
     }
     switch (_afterStr[0]) {

@@ -48,7 +48,7 @@
   padding: 20px;
 }
 .upload-pop .scroll-inner {
-  height: 700px;
+  max-height: 700px;
   overflow-y: auto;
 }
 .upload-pop table {
@@ -66,6 +66,13 @@
 }
 .upload-pop.type02 {
   width: 700px;
+}
+.upload-pop.type02 .tit {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.upload-pop .txt-center th, .upload-pop .txt-center td {
+  text-align: center;
 }
 
 .answer-pop {
@@ -128,4 +135,8 @@ input[type=file] {
   height: 34px;
   border: 1px solid #ededed;
   font-size: 14px;
+}
+
+.table-bottom .btn-txt {
+  border: 0;
 }

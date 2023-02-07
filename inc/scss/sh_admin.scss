@@ -2,6 +2,7 @@
 @import "_mixin.scss";
 @import "_setting.scss";
 @import url(../css/font.css);
+
 .list-table {
   .table-top {
     select {
@@ -36,7 +37,7 @@
     padding: 20px;
   }
   .scroll-inner {
-    height: 700px;
+    max-height: 700px;
     overflow-y: auto;
   }
   table {
@@ -54,6 +55,15 @@
   }
   &.type02 {
     width: 700px;
+    .tit {
+      font-size: 20px; 
+      margin-bottom: 10px;
+    }
+  }
+  .txt-center {
+    th, td {
+      text-align: center;
+    }
   }
 }
 .answer-pop {
@@ -116,5 +126,10 @@ input[type="file"]{
     height: 34px;
     border: 1px solid #ededed;
     font-size: 14px;
+  }
+}
+.table-bottom {
+  .btn-txt {
+    border: 0;
   }
 }
