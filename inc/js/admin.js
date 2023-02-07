@@ -7,6 +7,13 @@ $(function () {
       _allMenuLink = $('.all-menu');
 
     switch (_afterStr[0]) {
+      case 'admin01':
+        _gnbMenuLink.eq(0).addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(0).find('li').eq(0).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
       case 'admin08':
         _gnbMenuLink.eq(1).addClass('on');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
