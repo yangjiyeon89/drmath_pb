@@ -54,6 +54,11 @@
   background-image: none;
 }
 
+.alert-pop .btn-wrap {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
 .ques-reg-pop {
   width: 50%;
 }
@@ -101,4 +106,40 @@
   width: 100%;
   height: 100%;
   background-color: red;
+}
+
+.upload-pop {
+  width: 500px;
+}
+.upload-pop .pop-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.upload-pop .scroll-inner {
+  max-height: 700px;
+  overflow-y: auto;
+}
+.upload-pop table {
+  margin-top: 10px;
+  width: 100%;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.upload-pop table th {
+  background-color: #f3f3f3;
+}
+.upload-pop table th, .upload-pop table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.upload-pop.type02 {
+  width: 700px;
+}
+.upload-pop.type02 .tit {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.upload-pop .txt-center th, .upload-pop .txt-center td {
+  text-align: center;
 }
