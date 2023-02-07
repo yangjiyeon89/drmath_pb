@@ -174,12 +174,6 @@ a.btn-txt {
   box-sizing: border-box;
 }
 
-.btn-txt.pop-btn,
-a.btn-txt.pop-btn {
-  color: $color-font66;
-  border: 1px solid #d1d1d1;
-}
-
 //popup
 .dim {
   display: none;
@@ -691,11 +685,10 @@ a.btn-txt.pop-btn {
       border-bottom: 1px solid #7959c8;
     }
 
-    button {
-      a {
-        color: #7959c8;
-        border-bottom: 1px solid #7959c8;
-      }
+    .btn-txt.pop-btn,
+    a.btn-txt.pop-btn {
+      color: $color-font66;
+      border: 1px solid #d1d1d1;
     }
 
     .title {

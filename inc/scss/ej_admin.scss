@@ -8,21 +8,110 @@
     margin-left: 10px;
   }
 }
-.list-table {
-  table {
-    
 
-    .btn-txt.pop-btn,
-    a.btn-txt.pop-btn {
-      color: $color-font66;
-      border: 1px solid #d1d1d1;
+
+//파일 업로드
+.filebox {
+  .file_upload {
+    color: #7959c8;
+    border-bottom: 1px solid #7959c8;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  input {
+    padding: 5px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+  }
+
+  label {
+    position: relative;
+    top: -1px;
+    height: 36px;
+  }
+}
+
+//팝업
+
+.pop-wrap {
+  .btn-wrap {
+    .pop-close {
+      position: initial;
+      font-size: 16px;
+      background-image: none;
+    }
+  }
+}
+
+.ques-reg-pop {
+  width: 50%;
+
+  .info {
+    padding: 20px;
+
+    .view-table {
+      margin-top: 10px;
+      width: 100%;
+      border-bottom: 1px solid #333;
+
+      select {
+        width: 130px;
+      }
     }
 
-    button {
-      a {
-        color: #7959c8;
-        border-bottom: 1px solid #7959c8;
-      }
+    th {
+      background-color: #f3f3f3;
+    }
+  }
+}
+
+.video-pop {
+  width: 60%;
+
+  .pop-content {
+    padding: 20px;
+  }
+
+  .info {
+    .view-table {
+      margin-top: 10px;
+      width: 100%;
+      border-bottom: 1px solid #333;
+    }
+
+    th {
+      background-color: #f3f3f3;
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      resize: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  .preview {
+    padding: 20px;
+    height: 500px;
+
+    >div {
+      width: 100%;
+      height: 100%;
+      background-color: red;
     }
   }
 }

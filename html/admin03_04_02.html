@@ -8,6 +8,7 @@
 	<title>닥터매쓰</title>
 	<link rel="stylesheet" href="../inc/css/reset.css">
 	<link rel="stylesheet" href="../inc/css/admin.css">
+	<link rel="stylesheet" href="../inc/css/ej_admin.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-	<div id="wrap" class="admin03_04_02">
+	<div id="wrap" class="admin03">
 		<div class="header">
 			<div class="header-top">
 				<div class="inner">
@@ -28,6 +29,9 @@
 						<a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
 					</div>
 					<ul class="nav">
+						<li>
+              <a href="javascript:;">고객관리</a>
+            </li>
 						<li class="active">
 							<a href="javascript:;">학습관리</a>
 							<div class="depth2">
@@ -136,7 +140,7 @@
 						</ul>
 					</div>
 					<div class="depth02">
-						<button type="button" class="select-btn">교재 등록</button>
+						<button type="button" class="select-btn">기출 문제지 등록</button>
 						<ul class="select-list">
 							<li>
 								<a href="javascript:;">교재 등록</a>
@@ -330,7 +334,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -377,7 +381,10 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<div class="filebox bs3-primary">
+														<label for="ex_filename" class="file_upload">진행중</label>
+														<input type="file" id="ex_filename" class="upload-hidden">
+													</div>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -394,7 +401,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -426,7 +433,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -443,7 +450,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -460,7 +467,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -477,7 +484,7 @@
 												</td>
 												<td>YYYY.MM.DD</td>
 												<td>
-													<button type="button" class="pop-btn">완료</button>
+													<button type="button" class="pop-btn" data-pop="com-test-pop">완료</button>
 												</td>
 												<td>홍길동</td>
 												<td>YYYY.MM.DD</td>
@@ -573,6 +580,73 @@
 			<button type="button" class="pop-close ico"></button>
 		</div>
 	</div>
+
+	<div class="pop-wrap test-pop" data-pop="com-test-pop">
+		<div class="pop-inner">
+			<div class="pop-header">시험지 상세</div>
+			<div class="pop-content">
+				<div class="info">
+					<p class="tit">시험지 정보</p>
+					<table>
+						<colgroup>
+							<col width="30%">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>학교명</th>
+								<td>서울중학교</td>
+							</tr>
+							<tr>
+								<th>지역</th>
+								<td>서울</td>
+							</tr>
+							<tr>
+								<th>학교급</th>
+								<td>중등</td>
+							</tr>
+							<tr>
+								<th>기출년도</th>
+								<td>2022</td>
+							</tr>
+							<tr>
+								<th>출판사/교과서</th>
+								<td>천재교과서</td>
+							</tr>
+							<tr>
+								<th>학년</th>
+								<td>1학년</td>
+							</tr>
+							<tr>
+								<th>학기</th>
+								<td>1학기</td>
+							</tr>
+							<tr>
+								<th>시험종류</th>
+								<td>중간고사</td>
+							</tr>
+							<tr>
+								<th>총 문제 수</th>
+								<td>22</td>
+							</tr>
+							<tr>
+								<th>상태</th>
+								<td>완료</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btn-wrap">
+						<a href="javascript:;">재등록</a>
+					</div>
+				</div>
+				<div class="preview">
+					<div></div>
+				</div>
+			</div>
+			<button type="button" class="pop-close ico"></button>
+		</div>
+	</div>
+
 	<div class="pop-wrap alert-pop" data-pop="delete-pop">
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>

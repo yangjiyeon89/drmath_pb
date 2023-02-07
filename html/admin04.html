@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="../inc/css/admin.css">
+  <link rel="stylesheet" href="../inc/css/ej_admin.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="../inc/js/admin.js"></script>
+</head>
+
+<body>
+  <div id="wrap" class="admin04">
+    <div class="header">
+      <div class="header-top">
+        <div class="inner">
+          <a href="javascript:;">로그아웃</a>
+        </div>
+      </div>
+      <div class="nav-wrap">
+        <div class="inner">
+          <div class="logo">
+            <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="javascript:;">고객관리</a>
+            </li>
+            <li class="active">
+              <a href="javascript:;">학습관리</a>
+              <div class="depth2">
+                <p class="tit">학습관리</p>
+                <ul>
+                  <li>
+                    <a href="javascript:;">교재 등록</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">추천 문제지 등록</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">기출 문제지 등록</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">교재 VOD 검수</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:;">부가관리</a>
+              <div class="depth2">
+                <p class="tit">부가관리</p>
+                <ul>
+                  <li>
+                    <a href="javascript:;">메인 관리</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="javascript:;">커뮤니티</a>
+              <div class="depth2">
+                <p class="tit">커뮤니티</p>
+                <ul>
+                  <li>
+                    <a href="javascript:;">사용 후기</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">업데이트 소식</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="all-menu-wrap">
+            <button type="button" class="pop-btn" data-pop="menu">전체메뉴</button>
+            <div class="all-menu pop-wrap" data-pop="menu">
+              <button type="button" class="pop-close">닫기</button>
+              <ul>
+                <li>
+                  <a href="javascript:;">학습관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 등록</a>
+                </li>
+                <li>
+                  <a href="javascript:;">추천 문제지 등록</a>
+                </li>
+                <li>
+                  <a href="javascript:;">기출 문제지 등록</a>
+                </li>
+                <li>
+                  <a href="javascript:;">교재 VOD 검수</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="javascript:;">부가관리</a>
+                </li>
+                <li>
+                  <a href="javascript:;">메인 관리</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="javascript:;">커뮤니티</a>
+                </li>
+                <li>
+                  <a href="javascript:;">사용 후기</a>
+                </li>
+                <li>
+                  <a href="javascript:;">업데이트 소식</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="local-nav">
+        <div class="inner">
+          <a href="javascript:;" class="home"></a>
+          <div class="depth01">
+            <button type="button" class="select-btn">학습관리</button>
+            <ul class="select-list">
+              <li>
+                <a href="javascript:;">학습관리</a>
+              </li>
+              <li>
+                <a href="javascript:;">부가관리</a>
+              </li>
+              <li>
+                <a href="javascript:;">커뮤니티</a>
+              </li>
+            </ul>
+          </div>
+          <div class="depth02">
+            <button type="button" class="select-btn">교재 VOD 검수</button>
+            <ul class="select-list">
+              <li>
+                <a href="javascript:;">교재 등록</a>
+              </li>
+              <li>
+                <a href="javascript:;">추천 문제지 등록</a>
+              </li>
+              <li>
+                <a href="javascript:;">기출 문제지 등록</a>
+              </li>
+              <li>
+                <a href="javascript:;">교재 VOD 검수</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="inner">
+        <div class="tab-wrap">
+
+          <div class="contents on">
+            <div class="search-wrap">
+              <table>
+                <colgroup>
+                  <col width="10%">
+                  <col width="*">
+                  <col width="10%">
+                  <col width="*">
+                  <col width="10%">
+                  <col width="*">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>년도</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                      </select>
+                    </td>
+                    <th>교재</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">중1-1 수학: 체크체크(개념)</option>
+                        <option value="">중1-1 수학: 체크체크(개념)</option>
+                      </select>
+                    </td>
+                    <th>검수여부</th>
+                    <td>
+                      <input type="radio" id="radio01_01" name="grade">
+                      <label for="radio01_01">Y</label>
+                      <input type="radio" id="radio01_02" name="grade">
+                      <label for="radio01_02">N</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>학교급</th>
+                    <td>
+                      <input type="checkbox" id="chk01_01">
+                      <label for="chk01_01">초등</label>
+                      <input type="checkbox" id="chk01_02">
+                      <label for="chk01_02">중등</label>
+                      <input type="checkbox" id="chk01_03">
+                      <label for="chk01_03">고등</label>
+                    </td>
+                    <th>학년</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">1학년</option>
+                        <option value="">2학년</option>
+                        <option value="">3학년</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>키워드 검색</th>
+                    <td colspan="5">
+                      <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="">문제지명</option>
+                      </select>
+                      <input type="text">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-wrap">
+              <button type="button">초기화</button>
+              <button>검색</button>
+            </div>
+            <div class="list-table">
+              <div class="table-top">
+                <div>
+                  <span class="total">검색자료수: <em>00</em>건</span>
+                </div>
+              </div>
+              <div class="scroll-inner">
+                <table>
+                  <colgroup>
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="5%">
+                    <col width="*">
+                    <col width="5%">
+                    <col width="10%">
+                    <col width="6%">
+                    <col width="10%">
+                    <col width="8%">
+                    <col width="10%">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>중단원</th>
+                      <th>소단원</th>
+                      <th>강의순서</th>
+                      <th>강의명</th>
+                      <th>강의시간</th>
+                      <th>비고</th>
+                      <th>교재범위</th>
+                      <th>업로드일</th>
+                      <th>영상보기</th>
+                      <th>강의검수유무</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">소수와 합성수(1)-소수와 합성수</td>
+                      <td>27</td>
+                      <td class="title">강의시간이 다름</td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_01" name="grade">
+                        <label for="radio02_01">Y</label>
+                        <input type="radio" id="radio02_02" name="grade">
+                        <label for="radio02_02">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">최소 공배수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>11~14</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_03" name="grade">
+                        <label for="radio02_03">Y</label>
+                        <input type="radio" id="radio02_04" name="grade">
+                        <label for="radio02_04">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">최대 공약수의 활용</td>
+                      <td>27</td>
+                      <td class="title">강의명이 다름</td>
+                      <td>18~20</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_05" name="grade">
+                        <label for="radio02_05">Y</label>
+                        <input type="radio" id="radio02_06" name="grade">
+                        <label for="radio02_06">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">정수와 유리수(1)-유리수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_07" name="grade">
+                        <label for="radio02_07">Y</label>
+                        <input type="radio" id="radio02_08" name="grade">
+                        <label for="radio02_08">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">소수와 합성수(1)-소수와 합성수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_09" name="grade">
+                        <label for="radio02_09">Y</label>
+                        <input type="radio" id="radio02_10" name="grade">
+                        <label for="radio02_10">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">소수와 합성수(1)-소수와 합성수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_11" name="grade">
+                        <label for="radio02_11">Y</label>
+                        <input type="radio" id="radio02_12" name="grade">
+                        <label for="radio02_12">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">소수와 합성수(1)-소수와 합성수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_11" name="grade">
+                        <label for="radio02_11">Y</label>
+                        <input type="radio" id="radio02_12" name="grade">
+                        <label for="radio02_12">N</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>소인수분해</td>
+                      <td>소수와 합성수</td>
+                      <td>1</td>
+                      <td class="title">소수와 합성수(1)-소수와 합성수</td>
+                      <td>27</td>
+                      <td class="title"></td>
+                      <td>8~10</td>
+                      <td>2020-07-21</td>
+                      <td><button type="button" class="btn-txt pop-btn" data-pop="video-pop">영상보기</button></td>
+                      <td>
+                        <input type="radio" id="radio02_11" name="grade">
+                        <label for="radio02_11">Y</label>
+                        <input type="radio" id="radio02_12" name="grade">
+                        <label for="radio02_12">N</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="paging-wrap">
+              <a href="javascript:;" class="first"></a>
+              <a href="javascript:;" class="prev"></a>
+              <a href="javascript:;" class="page active"><span>1</span></a>
+              <a href="javascript:;" class="page"><span>2</span></a>
+              <a href="javascript:;" class="page"><span>3</span></a>
+              <a href="javascript:;" class="page"><span>4</span></a>
+              <a href="javascript:;" class="page"><span>5</span></a>
+              <a href="javascript:;" class="next"></a>
+              <a href="javascript:;" class="last"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dim"></div>
+  <!-- 영상 보기 팝업 -->
+  <div class="pop-wrap video-pop" data-pop="video-pop">
+    <div class="pop-inner">
+      <div class="pop-header">교재 VOD</div>
+      <div class="pop-content">
+        <div class="info">
+
+          <div class="view-table">
+            <table>
+              <colgroup>
+                <col width="10%">
+                <col width="*">
+                <col width="10%">
+                <col width="*">
+                <col width="10%">
+                <col width="*">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>교재</th>
+                  <td>[내신 기본] 중1-1 수학: 체크체크(개념)</td>
+                  <th>강의순서</th>
+                  <td>1</td>
+                  <th rowspan="3">비고</th>
+                  <td rowspan="3"><textarea name="" id="" cols="30" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                  <th>강의명</th>
+                  <td>소수와 합성수 (1) – 소수와 합성수</td>
+                  <th>강의시간</th>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <th>교재범위</th>
+                  <td>8~10</td>
+                  <th>업로드일</th>
+                  <td>2018-12-13</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="preview">
+            <div></div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <button type="button" class="pop-close">닫기</button>
+          <button type="button">저장</button>
+        </div>
+      </div>
+      <button type="button" class="pop-close ico"></button>
+    </div>
+  </div>
+  <!-- 저장 얼럿 -->
+  <!-- <div class="pop-wrap alert-pop" data-pop="save-pop">
+    <div class="pop-content">
+      <button type="button" class="pop-close ico"></button>
+      <span class="txt">저장되었습니다.</span>
+    </div>
+  </div> -->
+
+
+</body>
+
+</html>
