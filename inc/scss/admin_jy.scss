@@ -211,3 +211,77 @@
     }
   }
 }
+.pop-wrap {
+  .btn-wrap {
+    .pop-close, .pop-close02 {
+      position: inherit;
+      width: auto;
+      font-size: 16px;
+      filter: none;
+      background-image: none;
+    }
+  }
+}
+.info-pop {
+  .pop-inner {
+    width: 600px;
+  }
+  .pop-content {
+    padding:0 30px 30px;
+    .tit {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+  table {
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }  
+  th,td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }  
+  th {
+    background-color: #f3f3f3;
+  }
+  
+  input[type="text"] {
+    width: 60px;
+  }
+  .reset {
+    padding: 3px 10px;
+    margin-left: 10px;
+    color: #fff;    
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #666;
+  }
+}
+.inner-pop {
+  z-index: 30;
+}
+.dim02 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 25;
+}
+.pop-close02 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  right: 20px;
+  padding-top: 0;
+  color: #d9caff;
+  font-size: 13px;
+  background: url('../../images/admin/btn_close.png') no-repeat 50% 0;
+  filter: invert(71%) sepia(88%) saturate(0%) hue-rotate(12deg) brightness(104%) contrast(96%);
+}
