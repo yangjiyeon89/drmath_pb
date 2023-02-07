@@ -275,6 +275,16 @@ a.btn-txt.pop-btn {
   .pop-close {
     filter: invert(71%) sepia(88%) saturate(0%) hue-rotate(12deg) brightness(104%) contrast(96%);
   }
+  .btn-wrap {
+    margin-top: 15px;
+    font-size: 16px;
+    .pop-close {
+      position: inherit;
+      filter: none;
+      font-size: 16px;
+      background-image: none;
+    }
+  }
 }
 
 

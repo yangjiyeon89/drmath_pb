@@ -92,6 +92,10 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .alert-pop .pop-close { -webkit-filter: invert(71%) sepia(88%) saturate(0%) hue-rotate(12deg) brightness(104%) contrast(96%); filter: invert(71%) sepia(88%) saturate(0%) hue-rotate(12deg) brightness(104%) contrast(96%); }
 
+.alert-pop .btn-wrap { margin-top: 15px; font-size: 16px; }
+
+.alert-pop .btn-wrap .pop-close { position: inherit; -webkit-filter: none; filter: none; font-size: 16px; background-image: none; }
+
 .header-top { border-bottom: 1px solid #ededed; }
 
 .header-top .inner { padding-right: 15px; text-align: right; }
