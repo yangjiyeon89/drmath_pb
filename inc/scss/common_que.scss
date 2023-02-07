@@ -3142,6 +3142,70 @@ input[type="checkbox"] {
       }
     }
   }
+  &.list-type {
+    .pop-inner {
+      width: 700px;
+    }
+    .pop-header {
+      .sub-txt {
+        display: block;
+        margin-top: 15px;
+        @include font(16px, 400);
+        img {
+          position: relative;
+          top: -1px;
+          margin-right: 3px;
+        }
+        em {
+          color: $color-main-purple;
+        }
+      }
+    }
+    .pop-content {
+      padding: 15px 30px 30px;
+      ul {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: $color-box-type02;
+      }
+      li {
+        position: relative;
+        padding-left: 25px;
+        line-height: 1.6;
+        em {
+          color: $color-main-purple;
+        }
+        & + li {
+          margin-top: 10px;
+        }
+      }
+      .num {
+        position: absolute;
+        left: 0;top: 3px;
+        display: block;
+        width: 19px;height: 19px;
+        padding-top: 2px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 100%;
+        box-sizing: border-box;
+        background-color: #b89ce0;
+      }
+      .chk-form {
+        margin-top: 20px;
+        text-align: center;
+        label {
+          font-size: 16px;
+        }
+        em {
+          color: $color-main-purple;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 .ui-sortable-helper {
   border: 1px solid $color-line-type02;

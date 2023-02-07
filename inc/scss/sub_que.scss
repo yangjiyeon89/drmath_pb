@@ -340,6 +340,58 @@
       }
     }
   }
+  input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+    & + label {
+      display: block;
+      width: 50px;
+      padding: 3px 0;
+      margin: 10px auto 0;
+      color: #fff;
+      text-align: center;
+      background-color: $color-font66;
+      cursor: pointer;
+      border-radius: 3px;
+      &:hover {
+        background-color: $color-main-purple;
+      }
+    }
+  }
+  .btm-area {
+    @include layout-justify-center;
+    margin-top: 20px;
+    .btn-default {
+      margin: 0;
+    }
+    .txt-box {
+      span {
+        img {
+          position: relative;
+          top: -2px;
+          margin-right: 6px;
+        }
+      }
+      button {
+        margin-left: 5px;
+        padding: 5px 8px;
+        color: $color-main-purple;
+        font-size: 14px;
+        border: 1px solid rgba(90,20,190,0.2);
+        border-radius: 3px;
+        &:hover {
+          color: #fff;
+          background-color: $color-main-purple;
+        }
+      }
+    }
+  }
 }
 // 기출문제지
 .sub04-que {
@@ -2589,6 +2641,9 @@
   }
   //회원정보
   .mypage-que {
+    .tab-wrap {
+      padding: 20px 20px 0;
+    }
     .contents {
       padding: 30px 30px 16px;
     }

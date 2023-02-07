@@ -184,6 +184,8 @@
                           <div class="txt">
                             <span class="tit">해당 영역에 이미지를 드래그 앤 드롭 해주세요.</span>
                             <span class="txt">가로 400 X 세로 150 이상 JPG 확장자를 권장합니다.</span>
+                            <input type="file" id="file-input">
+                            <label for="file-input">업로드</label>
                           </div>
                         </div>
                       </div>
@@ -193,7 +195,14 @@
                 </tbody>
               </table>
             </div>
-            <button type="button" class="btn-default">수정하기</button>
+            <div class="btm-area">
+              <div class="txt-box">
+                <span><img src="../images/common/ico_check03.png" alt="">닥터매쓰를 더 이상 사용하지 않는다면</span>
+                <button type="button" class="pop-btn" data-pop="secession-pop">회원탈퇴 바로가기</button>
+              </div>
+              <button type="button" class="btn-default">수정하기</button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -289,6 +298,47 @@
         </div>
         <div class="pop-footer">
           <button>닫기</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 회원 탈퇴 팝업 -->
+    <div class="pop-wrap list-type" data-pop="secession-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>회원탈퇴</span>
+          <span class="sub-txt"><img src="../images/common/ico_check03.png" alt="">회원탈퇴를 신청하기 전에 안내 사항을 <em>꼭 확인</em>해주세요. </span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <ul>
+            <li>
+              <span class="num">1</span>
+              <span class="txt">사용하고 계신 아이디(계정)는 탈퇴할 경우 30일 내 동일한 아이디(계정)로 재가입 및<br>사용이 불가합니다.<br><em>탈퇴한 아이디(계정)는 30일 내 본인과 타인 모두 재가입 및 사용이 불가</em>하오니<br>신중하게 선택하시기 바랍니다.</span>
+            </li>
+            <li>
+              <span class="num">2</span>
+              <span class="txt">탈퇴 후 회원정보 및 서비스 이용기록은 모두 삭제됩니다.<br>회원정보 및 학원/교사 정보, 수강생 정보, 클래스 정보, 출제 및 학습 기록은 모두 삭제되며, <br><em>삭제된 데이터는 복구되지 않습니다. </em><br>삭제되는 내용을 확인하시고 필요한 데이터는 미리 백업을 해주세요.</span>
+            </li>
+            <li>
+              <span class="num">3</span>
+              <span class="txt">탈퇴 시 <em>30일 이후 동일 계정으로 재가입하여도 회원정보 및 서비스 이용기록이 
+                모두 삭제되었기에 신규 가입비가 발생</em>하오니 이 점 반드시 숙지 바랍니다.</span>
+            </li>
+            
+            <li>
+              <span class="num">4</span>
+              <span class="txt"><em>탈퇴 신청 시 구매한 사용권의 잔여 기간이 남아있을 시 즉시 탈퇴가 불가합니다.</em><br>사용권 잔여 기간 만료 후 자동탈퇴 신청이 가능하며, 기간 만료 전까지 탈퇴신청을<br>철회 할 수 있습니다.<br>탈퇴 처리가 완료 된 후에는 철회가 불가하며, 탈퇴 완료 내용은 e-mail로 전달드립니다.</span>
+            </li>
+          </ul>
+          <div class="chk-form">
+            <input type="checkbox" id="chk02_01" checked="">
+            <label for="chk02_01">위 유의사항을 모두 확인하였고 <em>회원탈퇴</em>에 <em>동의</em>합니다.</label>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>탈퇴하기</button>
         </div>
       </div>
     </div>
