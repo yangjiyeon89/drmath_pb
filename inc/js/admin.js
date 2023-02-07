@@ -41,6 +41,13 @@ $(function () {
         _allMenuLink.find('ul').eq(2).find('li').eq(2).addClass('on')
         break;
     }
+    switch (_afterStr[0]) {
+      case 'admin11':
+        _gnbMenuLink.eq(2).addClass('on');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(2).find('li').eq(3).addClass('on')
+        break;
+    }
 
     
   }

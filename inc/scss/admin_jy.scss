@@ -110,6 +110,10 @@
   }
   .editor {
     height: auto;
+    overflow: hidden;
+    .scroll-inner {
+      height: 400px;
+    }
   }
   .file-txt {
     margin-top: 10px;

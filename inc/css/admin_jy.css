@@ -46,7 +46,9 @@
 
 .view-table .cnt { padding: 20px; line-height: 1.5; }
 
-.view-table .editor { height: auto; }
+.view-table .editor { height: auto; overflow: hidden; }
+
+.view-table .editor .scroll-inner { height: 400px; }
 
 .view-table .file-txt { margin-top: 10px; }
 

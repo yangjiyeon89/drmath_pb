@@ -33,6 +33,10 @@
   padding: 40px 0;
 }
 
+.scroll-inner {
+  overflow: overlay;
+}
+
 input {
   &[type="text"] {
     padding: 5px;
@@ -631,7 +635,6 @@ a.btn-txt.pop-btn {
 
 .list-table {
   .scroll-inner {
-    overflow: overlay;
     height: 330px;
     padding-right: 10px;
     padding-bottom: 1px;

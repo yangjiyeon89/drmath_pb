@@ -16,6 +16,8 @@
 
 .content { padding: 40px 0; }
 
+.scroll-inner { overflow: overlay; }
+
 input[type="text"] { padding: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ededed; }
 
 input[type="checkbox"] + label { padding-left: 30px; margin-right: 20px; background: url("../../images/admin/ty_chk.png") no-repeat 0 50%; }
@@ -210,7 +212,7 @@ select { border-color: #ededed; padding: 5px 50px 5px 5px; background: url("../.
 
 .search-wrap table th { font-weight: 600; }
 
-.list-table .scroll-inner { overflow: overlay; height: 330px; padding-right: 10px; padding-bottom: 1px; }
+.list-table .scroll-inner { height: 330px; padding-right: 10px; padding-bottom: 1px; }
 
 .list-table .table-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10px; }
 
