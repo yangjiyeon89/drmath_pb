@@ -188,44 +188,20 @@
               <div class="type-box">
                 <div class="box">
                   <div class="title-wrap">
-                    <span class="tit-text">난이도 구성</span>
+                    <span class="tit-text">문제 수<em>최대 100문제</em></span>
                   </div>
                   <div class="btn-wrap">
-                    <button type="button" class="btn-line">최하</button>
-                    <button type="button" class="btn-line">하</button>
-                    <button type="button" class="btn-line">중</button>
-                    <button type="button" class="btn-line">상</button>
-                    <button type="button" class="btn-line">최상</button>
+                    <button type="button" class="btn-line">10</button>
+                    <button type="button" class="btn-line">15</button>
+                    <button type="button" class="btn-line">20</button>
+                    <button type="button" class="btn-line">30</button>
+                    <button type="button" class="btn-line">50</button>
                   </div>
-                  <div class="range-wrap">
-                    <div class="range" style="width: 20%;">
-                      <span class="bar"></span>
-                      <span class="tit">최하<br>20%</span>
-                      <span>4문제</span>
-                    </div>
-                    <div class="range" style="width: 20%;">
-                      <span class="bar"></span>
-                      <span class="tit">하<br>20%</span>
-                      <span>4문제</span>
-                    </div>
-                    <div class="range" style="width: 20%;">
-                      <span class="bar"></span>
-                      <span class="tit">중<br>20%</span>
-                      <span>4문제</span>
-                    </div>
-                    <div class="range" style="width: 20%;">
-                      <span class="bar"></span>
-                      <span class="tit">상<br>20%</span>
-                      <span>4문제</span>
-                    </div>
-                    <div class="range" style="width: 20%;">
-                      <span class="bar"></span>
-                      <span class="tit">최상<br>20%</span>
-                      <span>4문제</span>
-                    </div>
+                  <div class="gray-box">
+                    <span class="desc">* 5의 배수로 입력해주세요.</span>
+                    <span class="num">총 <input type="text" value="20"> 문제</span>
                   </div>
                 </div>
-                
                 <div class="box">
                   <div class="title-wrap">
                     <span class="tit-text">문제 형태</span>
@@ -254,19 +230,26 @@
                 </div>
                 <div class="box">
                   <div class="title-wrap">
-                    <span class="tit-text">문제 수</span>
+                    <span class="tit-text">난이도 구성</span>
                   </div>
-                  <div class="btn-wrap">
-                    <button type="button" class="btn-line">10</button>
-                    <button type="button" class="btn-line">15</button>
-                    <button type="button" class="btn-line">20</button>
-                    <button type="button" class="btn-line">30</button>
-                    <button type="button" class="btn-line">50</button>
+                  <div class="btn-wrap multi">
+                    <button type="button" class="btn-line type02 color01">최하</button>
+                    <button type="button" class="btn-line type02 color02">하</button>
+                    <button type="button" class="btn-line type02 color03">중</button>
+                    <button type="button" class="btn-line type02 color04">상</button>
+                    <button type="button" class="btn-line type02 color05">최상</button>
                   </div>
-                  <div class="gray-box">
-                    <span>최대 100문제</span>
-                    <span class="num">총 <input type="text" value="20"> 문제</span>
-                  </div>
+              </div>
+              <div class="box">
+                <div class="title-wrap">
+                  <span class="tit-text">난이도 분포 
+                    <button type="button" class="btn-icon fix-s pop-btn" data-pop="que-range-pop"><i class="setting-type02"></i></button>
+                  </span>
+                </div>
+                <div class="range-wrap">
+                  <span class="range color02" style="width: 20%;">하(4)</span>
+                  <span class="range color03" style="width: 40%;">중(8)</span>
+                  <span class="range color04" style="width: 40%;">상(8)</span>
                 </div>
               </div>
             </div>
@@ -280,9 +263,9 @@
         <button type="button" class="btn-step next">STEP 2</button>
       </div>
     </div>
-    <div class="dim" style="display: none;"></div>
+    <div class="dim"></div>
     <!-- 변경사항 저장 팝업 -->
-    <div class="pop-wrap alert-type" data-pop="que-alert-pop" style="display: none;">
+    <div class="pop-wrap alert-type" data-pop="que-alert-pop">
       <div class="pop-inner">
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
@@ -292,6 +275,23 @@
         <div class="pop-footer">
           <button>취소</button>
           <button>닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- 난이도 분포 설정 팝업 -->
+    <div class="pop-wrap range-type" data-pop="que-range-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>난이도 분포 설정</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <span class="txt">난이도 영역을 클릭 & 드래그하여 난이도 분포를 조절하세요.</span>
+        
+        </div>
+        <div class="pop-footer">
+          <button>기본값 복원</button>
+          <button>저장하기</button>
         </div>
       </div>
     </div>

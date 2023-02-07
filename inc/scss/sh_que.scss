@@ -22,6 +22,11 @@ i {
 		background-size: 14px !important;
 		width: 14px; height: 15px;
 	}
+	&.setting-type02 {
+		background: url(../../images/common/ico_setting_type02.png) no-repeat;
+		background-size: 15px !important;
+		width: 15px; height: 16px;
+	}
 	&.ico_chart_type02 {
 		background: url(../../images/common/ico_chart_type02.png) no-repeat;
 		background-size: 18px !important;
@@ -119,6 +124,18 @@ i {
 		color: $color-main-purple;
 		@include font(16px, 600);
 		border: 1px solid #dbcbf3;
+		//color 
+		&.color01 { background-color: #50acfb; }
+		&.color02 { background-color: #4876e3; }
+		&.color03 { background-color: #28c398; }
+		&.color04 { background-color: #ff9314; }
+		&.color05 { background-color: #fc5a28; }
+	}
+	&.type02 {
+		&.active {
+			color: #fff;
+			border: 1px solid transparent;
+		}
 	}
 }
 // btn-star
@@ -348,8 +365,16 @@ i {
 									@include layout-justify-center;
 									margin-bottom: 17px;
 									.tit-text {
+										@include content-center;
 										@include font(20px, 700);
 										color: $color-sub33;
+										.btn-icon { 
+											margin-left: 10px;
+										}
+										em {
+											@include font(16px, 400);
+											margin-left: 10px;
+										}
 									}
 									.right-area {
 										@include content-center-center;
@@ -382,60 +407,21 @@ i {
 									@include layout-center-center;
 									flex-direction: row;
 									gap: 2px;
-									margin-top:28px;
+									border-radius: 5px;
+									overflow: hidden;
 									.range {
+										@include content-center-center;
 										flex-grow: 1;
+										height: 40px;
+										@include font(16px, 600);
 										text-align: center;
-										.bar {
-											display: block;
-											width: 100%;
-											height: 5px;
-										}
-										.tit {
-											display: block;
-											@include font(16px, 700);
-											padding: 15px 0;
-										}
-										&:nth-child(1) {
-											.bar {
-												background-color: #50acfb;
-											}
-											.tit {
-												color: #50acfb;
-											}
-										}
-										&:nth-child(2) {
-											.bar {
-												background-color: #4b70c9;
-											}
-											.tit {
-												color: #4b70c9;
-											}
-										}
-										&:nth-child(3) {
-											.bar {
-												background-color: #1b9372;
-											}
-											.tit {
-												color: #1b9372;
-											}
-										}
-										&:nth-child(4) {
-											.bar {
-												background-color: #ff9314;
-											}
-											.tit {
-												color: #ff9314;
-											}
-										}
-										&:nth-child(5) {
-											.bar {
-												background-color: #fc5a28;
-											}
-											.tit {
-												color: #fc5a28;
-											}
-										}
+										color: #fff;
+										//color 
+										&.color01 { background-color: #50acfb; }
+										&.color02 { background-color: #4876e3; }
+										&.color03 { background-color: #28c398; }
+										&.color04 { background-color: #ff9314; }
+										&.color05 { background-color: #fc5a28; }
 									}
 								}
 								.gray-box {
@@ -445,6 +431,9 @@ i {
 									height: 50px;
 									border-radius: 5px;
 									padding: 0 15px;
+									.desc {
+										font-size: 14px;
+									}
 									.num {
 										@include font(16px, 600);
 										input {
@@ -1287,6 +1276,22 @@ i {
 		/* 레이어 팝업으로 인한 z-index 추가 */
 		.toggle-btn {
 			z-index: 0;
+		}
+	}
+	//230217 난이도 분포 설정 팝업 추가
+	.pop-wrap {
+		&.range-type {
+			.pop-inner {
+				width: 540px;
+				box-sizing: border-box;
+			}
+			.pop-header {
+				display: block;
+			}
+			.pop-content {
+				@include layout-center-center;
+				padding: 20px 60px 50px;
+			}
 		}
 	}
 }
