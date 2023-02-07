@@ -10,7 +10,7 @@
 
 .date-wrap { display: inline-block; }
 
-.date-wrap input[type="text"] { width: 100%; }
+.date-wrap input[type="text"] { width: 100% !important; }
 
 .g-btn { background-color: #6a6a6a !important; }
 
