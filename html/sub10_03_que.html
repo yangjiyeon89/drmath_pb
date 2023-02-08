@@ -800,6 +800,517 @@
         </div>
       </div>
     </div>
+
+    <!-- s: 20230208 추가 -->
+    <!-- 보기 팝업 -->
+    <div class="pop-wrap add-type wide-w" data-pop="detail-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <div class="table-wrap type02">
+            <span class="form-txt-chk"><em class="req"></em> 은 필수 입력입니다.</span>
+            <div class="add-content">
+              <div class="class">
+                <span class="tit">클래스명</span>
+                <input type="text" class="wfull" placeholder="천재고등학교" maxlength="50">
+              </div>
+              <!-- s: 20230203 추가 -->
+              <div class="class">
+                <span class="tit">대상 학년</span>
+                <div class="grade">
+                  <div class="btn-wrap">
+                    <div class="btn-line active">
+                      <span class="txt">초</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">중</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">고</span>
+                    </div>
+                  </div>
+                  <div class="select-wrap">
+                    <button type="button" class="select-btn wfull">선택</button>
+                    <ul class="select-list" style="display: none;">
+                      <li>
+                        <a href="javascript:;">1학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">2학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">3학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">4학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">5학년</a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">6학년</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- e: 20230203 추가 -->              
+              <div class="select-area">
+                <div class="col">
+                  <span class="tit">담당 선생님 선택<em></em></span>
+                  <div class="search-box">
+                    <input type="text" placeholder="검색" class="wfull">
+                    <button type="button" class="btn-search"></button>
+                  </div>
+                  <!-- 검색 전 -->
+                  <span class="none-txt">선생님을 검색해 주세요.</span>
+                  <!-- 검색 후 -->
+                  <!-- s: 20230203 수정 -->
+                  <div class="stu-list" style="display: none;">
+                    <div class="scroll-inner btn-wrap">
+                      <button type="button" class="select btn-line">박천재 선생님</button>
+                      <button type="button" class="select btn-line">오천재 선생님</button>
+                      <button type="button" class="select btn-line">박천재 선생님</button>
+                      <button type="button" class="select btn-line">이천재 선생님</button>
+                    </div>
+                  </div>
+                  <!-- e: 20230203 수정 -->
+                  <!-- 검색 전 -->
+                  <span class="none-txt">선생님을 선택해 주세요.</span>
+                  <!-- 검색 후 -->
+                  <div class="select-wrap" style="display: none;">
+                    <div class="scroll-inner"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <span class="tit">보조 선생님 선택</span>
+                  <div class="search-box">
+                    <input type="text" placeholder="검색">
+                    <button type="button" class="btn-search"></button>
+                  </div>
+                  <!-- 검색 전 -->
+                  <span class="none-txt" style="display: none;">선생님을 검색해 주세요.</span>
+                  <!-- 검색 후 -->
+                  <!-- s: 20230203 수정 -->
+                  <div class="stu-list">
+                    <div class="scroll-inner btn-wrap">
+                      <button type="button" class="select btn-line">박천재 선생님</button>
+                      <button type="button" class="select btn-line">오천재 선생님</button>
+                      <button type="button" class="select btn-line">박천재 선생님</button>
+                      <button type="button" class="select btn-line">이천재 선생님</button>
+                    </div>
+                  </div>
+                  <!-- e: 20230203 수정 -->
+                  <!-- 검색 전 -->
+                  <span class="none-txt" style="display: none;">선생님을 선택해 주세요.</span>
+                  <!-- 검색 후 -->
+                  <div class="select-wrap">
+                    <div class="scroll-inner"></div>
+                  </div>
+                </div>
+                <!-- s: 20230203 수정 -->
+                <div class="col">
+                  <span class="tit">학생 선택</span>
+                  <div class="check-type">
+                    <div class="left-cnt">
+                      <div class="search-box">
+                        <input type="text" placeholder="검색">
+                        <button type="button" class="btn-search"></button>
+                      </div>
+                      <div class="tab-wrap">
+                        <ul class="tab-menu-type03">
+                          <li class="ui-tab-btn active">
+                            <a href="javascript:;">클래스</a>
+                          </li>
+                          <li class="ui-tab-btn">
+                            <a href="javascript:;">학년</a>
+                          </li>
+                        </ul>
+                        <div class="contents on">
+                          <div class="scroll-inner">
+                            <div class="check-wrap">
+                              <div class="chk-acc" data-index="1">
+                                <div class="acc-btn active">
+                                  <span>매쓰반</span>
+                                  <em>4명</em>
+                                  <input type="checkbox" id="chk02_01" class="allCheck">
+                                  <label for="chk02_01"></label>
+                                </div>
+                                <ul class="cnt" style="display: block; height: 154px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                  <li>
+                                    <input type="checkbox" id="chk02_02" name="chk02_02">
+                                    <label for="chk02_02">고희동 <em>(닥터반)</em></label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk02_03" name="chk02_03">
+                                    <label for="chk02_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk02_04" name="chk02_04">
+                                    <label for="chk02_04">도우너</label>
+                                  </li>
+                                  <li class="select">
+                                    <input type="checkbox" id="chk02_05" name="chk02_05">
+                                    <label for="chk02_05">유또치</label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="chk-acc" data-index="2">
+                                <div class="acc-btn">
+                                  <span>닥터반</span>
+                                  <em>3명</em>
+                                  <input type="checkbox" id="chk03_01" class="allCheck">
+                                  <label for="chk03_01"></label>
+                                </div>
+                                <ul class="cnt">
+                                  <li>
+                                    <input type="checkbox" id="chk03_02" name="chk03_02">
+                                    <label for="chk03_02">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk03_03" name="chk03_03">
+                                    <label for="chk03_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk03_04" name="chk03_04">
+                                    <label for="chk03_04">도우너</label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="chk-acc" data-index="3">
+                                <div class="acc-btn">
+                                  <span>천재반</span>
+                                  <em>7명</em>
+                                  <input type="checkbox" id="chk04_01" class="allCheck">
+                                  <label for="chk04_01"></label>
+                                </div>
+                                <ul class="cnt">
+                                  <li>
+                                    <input type="checkbox" id="chk04_02" name="chk04_02">
+                                    <label for="chk04_02">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_03" name="chk04_03">
+                                    <label for="chk04_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_04" name="chk04_04">
+                                    <label for="chk04_04">도우너</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_05" name="chk04_05">
+                                    <label for="chk04_05">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_06" name="chk04_06">
+                                    <label for="chk04_06">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_07" name="chk04_07">
+                                    <label for="chk04_07">도우너</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk04_08" name="chk04_08">
+                                    <label for="chk04_08">도우너</label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+            
+                        </div>
+                        <div class="contents">
+                          <div class="scroll-inner">
+                            <div class="check-wrap">
+                              <div class="chk-acc type02" data-index="4">
+                                <div class="acc-btn active">
+                                  <span>초1</span>
+                                  <em>4명</em>
+                                  <input type="checkbox" id="chk05_01" class="allCheck">
+                                  <label for="chk05_01"></label>
+                                </div>
+                                <ul class="cnt" style="display:block;">
+                                  <li>
+                                    <input type="checkbox" id="chk05_02" name="chk05_02">
+                                    <label for="chk05_02">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk05_03" name="chk05_03">
+                                    <label for="chk05_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk05_04" name="chk05_04">
+                                    <label for="chk05_04">도우너</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk05_05" name="chk05_05">
+                                    <label for="chk05_05">유또치</label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="chk-acc type02" data-index="5">
+                                <div class="acc-btn">
+                                  <span>초2</span>
+                                  <em>3명</em>
+                                  <input type="checkbox" id="chk06_01" class="allCheck">
+                                  <label for="chk06_01"></label>
+                                </div>
+                                <ul class="cnt">
+                                  <li>
+                                    <input type="checkbox" id="chk06_02" name="chk06_02">
+                                    <label for="chk06_02">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk06_03" name="chk06_03">
+                                    <label for="chk06_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk06_04" name="chk06_04">
+                                    <label for="chk06_04">도우너</label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="chk-acc type02" data-index="6">
+                                <div class="acc-btn">
+                                  <span>초3</span>
+                                  <em>7명</em>
+                                  <input type="checkbox" id="chk08_01" class="allCheck">
+                                  <label for="chk08_01"></label>
+                                </div>
+                                <ul class="cnt">
+                                  <li>
+                                    <input type="checkbox" id="chk08_02" name="chk14_02">
+                                    <label for="chk08_02">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_03" name="chk14_03">
+                                    <label for="chk08_03">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_04" name="chk14_04">
+                                    <label for="chk08_04">도우너</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_05" name="chk14_05">
+                                    <label for="chk08_05">고희동</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_06" name="chk14_06">
+                                    <label for="chk08_06">김둘리</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_07" name="chk14_07">
+                                    <label for="chk08_07">도우너</label>
+                                  </li>
+                                  <li>
+                                    <input type="checkbox" id="chk08_08" name="chk14_08">
+                                    <label for="chk08_08">도우너</label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-cnt">
+                      <div class="check-wrap">
+                        <div class="scroll-inner">
+                          <!-- s: 선택 전 -->
+                          <span class="none-txt">학생을 선택해 주세요.</span>
+                          <!-- e: 선택 전 -->
+                          <div class="chk-acc" data-index="1">
+                            <div class="acc-btn active">
+                              <span>매쓰반</span>
+                              <em>4명</em>
+                              <input type="checkbox" id="chk09_01" class="allCheck">
+                              <label for="chk09_01"></label>
+                            </div>
+                            <ul class="cnt" style="display: block; height: auto;">
+                              <li style="display: list-item;">
+                                <input type="checkbox" id="chk09_02" name="chk02_02">
+                                <label for="chk09_02">고희동 <em>(닥터반)</em></label>
+                              </li>
+                              <li style="display: list-item;">
+                                <input type="checkbox" id="chk09_03" name="chk02_03">
+                                <label for="chk09_03">김둘리</label>
+                              </li>
+                              <li style="display: list-item;">
+                                <input type="checkbox" id="chk09_04" name="chk02_04">
+                                <label for="chk09_04">도우너</label>
+                              </li>
+                              <li class="select" style="display: list-item;">
+                                <input type="checkbox" id="chk09_05" name="chk02_05">
+                                <label for="chk09_05">유또치</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="chk-acc" data-index="2">
+                            <div class="acc-btn active">
+                              <span>닥터반</span>
+                              <em>3명</em>
+                              <input type="checkbox" id="chk10_01" class="allCheck">
+                              <label for="chk10_01"></label>
+                            </div>
+                            <ul class="cnt" style="display: block; height: auto;">
+                              <li>
+                                <input type="checkbox" id="chk10_02" name="chk03_02">
+                                <label for="chk10_02">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk10_03" name="chk03_03">
+                                <label for="chk10_03">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk10_04" name="chk03_04">
+                                <label for="chk10_04">도우너</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="chk-acc" data-index="3">
+                            <div class="acc-btn active">
+                              <span>천재반</span>
+                              <em>7명</em>
+                              <input type="checkbox" id="chk11_01" class="allCheck">
+                              <label for="chk11_01"></label>
+                            </div>
+                            <ul class="cnt" style="display: block; height: auto;">
+                              <li>
+                                <input type="checkbox" id="chk11_02" name="chk04_02">
+                                <label for="chk11_02">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_03" name="chk04_03">
+                                <label for="chk11_03">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_04" name="chk04_04">
+                                <label for="chk11_04">도우너</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_05" name="chk04_05">
+                                <label for="chk11_05">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_06" name="chk04_06">
+                                <label for="chk11_06">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_07" name="chk04_07">
+                                <label for="chk11_07">도우너</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk11_08" name="chk04_08">
+                                <label for="chk11_08">도우너</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="chk-acc type02" data-index="4">
+                            <div class="acc-btn active">
+                              <span>초1</span>
+                              <em>4명</em>
+                              <input type="checkbox" id="chk12_01" class="allCheck">
+                              <label for="chk12_01"></label>
+                            </div>
+                            <ul class="cnt" style="display: block; height: auto;">
+                              <li>
+                                <input type="checkbox" id="chk12_02" name="chk05_02">
+                                <label for="chk12_02">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk12_03" name="chk05_03">
+                                <label for="chk12_03">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk12_04" name="chk05_04">
+                                <label for="chk12_04">도우너</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk12_05" name="chk05_05">
+                                <label for="chk12_05">유또치</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="chk-acc type02" data-index="5">
+                            <div class="acc-btn">
+                              <span>초2</span>
+                              <em>3명</em>
+                              <input type="checkbox" id="chk13_01" class="allCheck">
+                              <label for="chk13_01"></label>
+                            </div>
+                            <ul class="cnt" style="height: auto;">
+                              <li>
+                                <input type="checkbox" id="chk13_02" name="chk06_02">
+                                <label for="chk13_02">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk13_03" name="chk06_03">
+                                <label for="chk13_03">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk13_04" name="chk06_04">
+                                <label for="chk13_04">도우너</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="chk-acc type02" data-index="6">
+                            <div class="acc-btn">
+                              <span>초3</span>
+                              <em>7명</em>
+                              <input type="checkbox" id="chk14_01" class="allCheck">
+                              <label for="chk14_01"></label>
+                            </div>
+                            <ul class="cnt" style="height: auto;">
+                              <li>
+                                <input type="checkbox" id="chk14_02" name="chk14_02">
+                                <label for="chk14_02">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_03" name="chk14_03">
+                                <label for="chk14_03">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_04" name="chk14_04">
+                                <label for="chk14_04">도우너</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_05" name="chk14_05">
+                                <label for="chk14_05">고희동</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_06" name="chk14_06">
+                                <label for="chk14_06">김둘리</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_07" name="chk14_07">
+                                <label for="chk14_07">도우너</label>
+                              </li>
+                              <li>
+                                <input type="checkbox" id="chk14_08" name="chk14_08">
+                                <label for="chk14_08">도우너</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- e: 20230203 수정 -->
+              </div>
+            </div>
+            <!-- s: 20230203 추가 -->
+            <span class="form-txt-chk type02">* 담당 선생님을 선택해 주세요.</span>
+            <!-- e: 20230203 추가 -->
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>저장</button>
+        </div>
+      </div>
+    </div>
+    <!-- e: 20230208 추가 -->
   </div>
 </body>
 </html>
