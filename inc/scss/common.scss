@@ -665,8 +665,13 @@ input[type="checkbox"] {
       span {
         @include content-center;
         @include font(24px,700);
+        display: inline-block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         img {
-          margin-left: 10px;
+          margin-right: 10px;
         }
       }
     }

@@ -324,12 +324,6 @@ input[type=text].w392, input[type=number].w392 {
 input[type=text].full, input[type=number].full {
   width: 100%;
 }
-input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder {
-  color: #999;
-}
-input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder {
-  color: #999;
-}
 input[type=text]::placeholder, input[type=number]::placeholder {
   color: #999;
 }
@@ -738,9 +732,14 @@ input[type=checkbox]:checked + label::before {
   align-items: center;
   font-size: 24px;
   font-weight: 700;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list-thum-type01 li .tit span img {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .list-thum-type02 li {
