@@ -67,6 +67,20 @@ $(function () {
         _gnbMenuLink.eq(0).addClass('on');
         break;
     }
+    switch (_afterStr[0]) {
+      case 'admin13':
+        _gnbMenuLink.eq(3).addClass('on');
+        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(3).find('li').eq(4).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin14':
+        _gnbMenuLink.eq(3).addClass('on');
+        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(4).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(3).find('li').eq(5).addClass('on')
+        break;
+    }
 
     
   }

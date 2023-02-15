@@ -119,6 +119,7 @@
     }
   }
   .file-txt {
+    display: inline-block;
     margin-top: 10px;
     span {
       color: #7959c8;
@@ -135,6 +136,13 @@
       background: url("../../images/admin/btn_close.png") no-repeat center;
       background-size: 6px;
       filter: invert(42%) sepia(1%) saturate(0%) hue-rotate(57deg) brightness(90%) contrast(86%);
+    }
+  }
+  .file-down {
+    color: #7959c8;
+    border-bottom: 1px solid #7959c8;
+    & + .file-down {
+      margin-left: 10px;
     }
   }
 }

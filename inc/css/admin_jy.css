@@ -52,11 +52,15 @@
 
 .view-table .editor .scroll-inner { height: 400px; padding-right: 20px; }
 
-.view-table .file-txt { margin-top: 10px; }
+.view-table .file-txt { display: inline-block; margin-top: 10px; }
 
 .view-table .file-txt span { color: #7959c8; font-size: 14px; border-bottom: 1px solid #7959c8; }
 
 .view-table .file-txt button { position: relative; top: -5px; margin-left: 5px; padding: 5px; border: 1px solid #666; border-radius: 100%; background: url("../../images/admin/btn_close.png") no-repeat center; background-size: 6px; -webkit-filter: invert(42%) sepia(1%) saturate(0%) hue-rotate(57deg) brightness(90%) contrast(86%); filter: invert(42%) sepia(1%) saturate(0%) hue-rotate(57deg) brightness(90%) contrast(86%); }
+
+.view-table .file-down { color: #7959c8; border-bottom: 1px solid #7959c8; }
+
+.view-table .file-down + .file-down { margin-left: 10px; }
 
 .filebox input[type="file"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
