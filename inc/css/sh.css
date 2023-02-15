@@ -232,6 +232,10 @@
 .fee-cnt01 .msg-txt + .btn-wrap {
   margin: 30px 0 70px 0;
 }
+.fee-cnt01 .msg-txt.type02 {
+  font-size: 20px;
+  font-weight: 500;
+}
 .fee-cnt01 .btn-icon-pen {
   color: #fff;
 }
