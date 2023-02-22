@@ -1037,3 +1037,214 @@
     transform: scale(0.5);
   }
 }
+.pop-wrap.member-type {
+  width: 800px;
+  background-color: #fff;
+}
+.pop-wrap.member-type .pop-header {
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: #5a14be;
+}
+.pop-wrap.member-type .pop-header .tit {
+  font-size: 24px;
+  font-weight: 700;
+}
+.pop-wrap.member-type .pop-header .pop-close {
+  background: url(../../images/common/ico_close_w.png) no-repeat;
+  background-size: contain;
+}
+.pop-wrap.member-type .pop-content {
+  padding: 30px 10px 30px 30px;
+}
+.pop-wrap.member-type .pop-content .privacy_date_sel {
+  display: inline-block;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #20154d;
+  margin-bottom: 15px;
+}
+.pop-wrap.member-type .pop-content .privacy_date_sel select {
+  background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
+  background-size: 1.62rem auto;
+  font-size: 15px;
+  width: 380px;
+  height: 40px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #20154d;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 0 45px 0 15px;
+}
+.pop-wrap.member-type .pop-content .privacy_date_sel select option {
+  padding-right: 10px;
+}
+.pop-wrap.member-type .pop-content .scroll-inner {
+  height: 660px;
+  overflow-y: auto;
+}
+
+
+/* 230222 개인정보처리방침 & 이용약관 css 추가 */
+.rule {
+  padding: 0;
+  position: relative;
+}
+
+.rule .rule_title {
+  padding: 24px 30px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #7e57c6;
+}
+
+.rule .rule_box {
+  height: 700px;
+  padding: 30px;
+  overflow: auto;
+}
+
+.rule .privacy_date_sel {
+  position: relative;
+  left: 20px;
+  top: 15px;
+  display: inline-block;
+  height: 2.6rem;
+  border-radius: 5rem;
+  background-color: #20154d;
+}
+
+.rule .privacy_date_sel select {
+  font-size: 0.8rem;
+  background: url(../img/popup/ico_select.png) no-repeat 97% center #20154d;
+  background-size: 1.62rem auto;
+  font-size: 15px;
+  height: 2.6rem;
+  color: #fff;
+  border-radius: 5rem;
+  background-color: #20154d;
+  -webkit-appearance: none;
+  padding-left: 1rem;
+  padding-right: 40px;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.rule_box .privacy_info {
+  margin-bottom: 30px;
+}
+
+.rule_box .privacy_info .privacy_sub {
+  margin-bottom: 10px;
+}
+
+.rule_box .privacy_info table {
+  margin-bottom: 20px;
+}
+
+.rule_box .privacy_info ul {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.rule_box .privacy_info ol {
+  margin-bottom: 10px;
+}
+
+.rule_box .privacy_info ol > li {
+  padding-left: 15px;
+}
+
+.rule_box .privacy_info ol > li .first_letter {
+  margin-right: 8px;
+}
+
+.rule_box .privacy_info ol > li > ul > li {
+  margin-left: 15px;
+}
+
+.rule_box .privacy_info table th {
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  color: #222;
+  background: #f6f6f6;
+}
+
+.rule_box .privacy_info table td {
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #808080;
+  text-align: center;
+}
+
+.rule_box .privacy_info table td.text_left {
+  text-align: left;
+}
+
+.rule_box .privacy_info table tr td:first-child {
+  border: 1px solid #ccc;
+}
+
+.rule_box {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #808080;
+}
+
+.rule_box b {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 19px;
+  color: #000;
+}
+
+
+.rule_box .num {
+  color: #000;
+}
+
+.rule_box .sub {
+  padding-left: 15px;
+}
+
+.rule_box table {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+.rule_box table tr th {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-width: 0 1px 1px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #999;
+}
+
+.rule_box table tr th.top {
+  color: #666;
+  background-color: #e6e6e6;
+}
+
+.rule_box table tr td {
+  padding: 20px;
+  border: 1px solid #efefef;
+  border-width: 0 1px 1px 0;
+}
+
+.rule_box table tr td:first-child {
+  border-left: 1px solid #efefef;
+}
