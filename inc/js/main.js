@@ -71,8 +71,10 @@ $(function(){
   });
 
   // sec02 swiper
+  // 230220 수정 요청으로 slidesPerGroup 추가
   const sec02Swiper = new Swiper('.sec02-swiper', {
     slidesPerView: 4,
+    slidesPerGroup: 4,
     pagination: {
       el: ".sec02-swiper .swiper-pagination",
       clickable: true,
@@ -84,9 +86,11 @@ $(function(){
     breakpoints: {
       1770: {
         slidesPerView: 6,
+        slidesPerGroup: 6,
       },
       1200: {
         slidesPerView: 4,
+        slidesPerGroup: 4,
       },
     }
   });
