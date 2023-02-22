@@ -250,7 +250,7 @@
 		flex-direction: row;
 		gap: 40px;
 		border-top: 1px solid $color-line;
-		padding: 30px 0 50px 0;
+		padding: 30px 0 20px 0;
 		margin-top: 30px;
 		.box {
 			text-align: center;
@@ -294,8 +294,14 @@
 		@include font(16px, 400);
 		color: $color-sub33;
 		line-height: 1.5;
+		margin-top: 50px;
 		img {
 			margin-right: 7px;
 		}
+	}
+	.txt-right {
+		display: block;
+		width: 480px;
+		text-align: right;
 	}
 }
