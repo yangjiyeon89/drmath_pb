@@ -58,7 +58,7 @@
 
 .main-section {
   position: relative;
-  height: 500px;
+  height: 465px;
   background-color: $color-main-purple;
   .inner {
     width: 1360px;
@@ -96,8 +96,8 @@
     }
     .img-box {
       position: relative;
-      left: -35px;
-      bottom: -40px;
+      left: 0;
+      bottom: 0;
     }
   }
   .pagination {
@@ -119,6 +119,9 @@
     .swiper-pagination-bullet:hover, .swiper-pagination-bullet.swiper-pagination-bullet-active {
       background-color: #fff;
     }
+  }
+  .tab-img {
+    display: none;
   }
 }
 .sec01 {
@@ -243,15 +246,15 @@
   }
   .right-cnt {
     position: relative;
-    padding: 160px 84px 50px;
+    padding: 104px 84px 50px;
     color: #fff;
     background-color: $color-main-green;
     box-sizing: border-box;
     .deco {
       position: absolute;
-      bottom: 133px;left: 0;
+      top: 215px;left: -26px;
       display: inline-block;
-      padding-left: 123px;
+      padding-left: 173px;
       font-family: 'Montserrat';
       font-weight: 700;
       transform: rotate(-90deg);
@@ -259,7 +262,7 @@
         @include virtual-selector;
         position: absolute;
         left: 0;top: 50%;
-        width: 109px;height: 3px;
+        width: 159px;height: 3px;
         margin-top: -2px;
         background-color: #fff;
       }
@@ -275,7 +278,7 @@
         font-size: 22px;
       }
       a {
-        margin-top: 49px;
+        margin-top: 106px;
       }
     }
   }
@@ -880,18 +883,19 @@
 }
 @media (max-width: 1360px){
   .main-section {
+    height: 390px;
     .inner {
       width: 1060px;
       padding-left: 15px;
     }
-    .swiper-slide {
-      .img-box {
-        left: -142px;
-        bottom: -140px;
-        img {
-          width: 518px;
-        }
-      }
+    .pagination {
+      top: 60px;
+    }
+    .tab-img {
+      display: block;
+    }
+    .pc-img {
+      display: none;
     }
   }
   .sec01 {
@@ -911,10 +915,20 @@
       }
     }
     .right-cnt {
-      padding: 143px 0 56px 30px;
+      padding: 49px 0 56px 30px;
       .deco {
-        bottom: 140px;
-        left: -56px;
+        padding-left: 213px;
+        bottom: 185px;
+        top: inherit;
+        left: -100px;
+        &::before {
+          width: 199px;
+        }
+      }
+      .text-box {
+        a {
+          margin-top: 143px;
+        }
       }
     }
   }
