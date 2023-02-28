@@ -192,13 +192,22 @@
       }
     });
 
-    let slideActing = $('.template-swiper .swiper-slide');
+    /*let slideActing = $('.template-swiper .swiper-slide');
 
     slideActing.on('click', function(){
       let _this = $(this);
 
       _this.toggleClass('on');
-    })
+    })*/
+    
+    //230228 즐겨찾기 버튼 active 추가
+    _starBtn = $('.swiper-slide .btn-star');
+
+    _starBtn.click(function(){
+      let _this = $(this);
+      _this.toggleClass('active');
+      _this.parents('.swiper-slide').toggleClass('on');
+    });
 
     // 라디오 버튼
     let rdoBtn = $('.opt-wrap input[type="radio"]')
