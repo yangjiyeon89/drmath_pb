@@ -35,6 +35,13 @@ $(function () {
         break;
     }
     switch (_afterStr[0]) {
+      case 'admin07':
+        _gnbMenuLink.eq(2).addClass('on');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(2).find('li').eq(2).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
       case 'admin08':
         _gnbMenuLink.eq(2).addClass('on');
         _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('on');
