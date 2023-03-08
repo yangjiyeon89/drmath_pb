@@ -89,31 +89,6 @@ i.list-type02 {
   margin-right: 10px;
 }
 
-.range-bar {
-  background: #dddddd;
-  border: none !important;
-  width: 100%;
-  height: 4px;
-  margin: 30px 20px !important;
-  border-radius: 0 !important;
-  position: relative;
-}
-.range-bar .ui-slider-handle {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: -12px;
-  margin-left: 0;
-  background: url(../../images/sub/range-handle.png) no-repeat;
-  background-size: contain;
-  outline: none;
-  transform: translateX(-50%);
-}
-.range-bar .ui-slider-range {
-  background-color: #5a14be;
-  height: 4px;
-}
-
 .btn-step.next {
   background: #5a14be url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
   padding-left: 0;
@@ -1027,9 +1002,6 @@ i.list-type02 {
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.on {
   border: 1px solid #5a14be;
 }
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide.on .btn-star {
-  background: url(../../images/sub/ic-btn-star-on.png) no-repeat center center;
-}
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list .template-swiper .swiper-container .swiper-slide .btn-star {
   position: absolute;
   right: 6px;
@@ -1389,8 +1361,11 @@ i.list-type02 {
 .full-pop-que .full-pop-wrap .toggle-btn {
   z-index: 0;
 }
+.full-pop-que .pop-wrap.range-type {
+  width: 580px;
+  height: 346px;
+}
 .full-pop-que .pop-wrap.range-type .pop-inner {
-  width: 540px;
   box-sizing: border-box;
 }
 .full-pop-que .pop-wrap.range-type .pop-header {
@@ -1400,7 +1375,71 @@ i.list-type02 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 60px 50px;
+  flex-direction: column;
+  padding: 0px 30px 50px;
+}
+.full-pop-que .pop-wrap .range-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  padding: 20px 25px 15px;
+  margin-top: 40px;
+}
+.full-pop-que .pop-wrap .range-wrap .range {
+  width: 70px;
+  text-align: center;
+}
+.full-pop-que .pop-wrap .range-wrap .range input {
+  width: 70px;
+  text-align: center;
+  padding: 0;
+}
+.full-pop-que .pop-wrap .range-wrap .range input[type=number]::-webkit-outer-spin-button,
+.full-pop-que .pop-wrap .range-wrap .range input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.full-pop-que .pop-wrap .range-wrap .range span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.full-pop-que .pop-wrap .range-wrap .range.total span {
+  color: #5a14be;
+}
+.full-pop-que .pop-wrap .range-wrap .range.total span.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 0;
+}
+.full-pop-que .pop-wrap .range-wrap .range.fail input {
+  border: 2px solid #ff3b00;
+}
+.full-pop-que .pop-wrap .range-wrap .range.fail .num {
+  color: #ff3b00;
+}
+.full-pop-que .pop-wrap .range-wrap .color01 {
+  color: #50acfb;
+}
+.full-pop-que .pop-wrap .range-wrap .color02 {
+  color: #4876e3;
+}
+.full-pop-que .pop-wrap .range-wrap .color03 {
+  color: #28c398;
+}
+.full-pop-que .pop-wrap .range-wrap .color04 {
+  color: #ff9314;
+}
+.full-pop-que .pop-wrap .range-wrap .color05 {
+  color: #fc5a28;
 }
 
 .que-preview-wrap {
@@ -1408,11 +1447,11 @@ i.list-type02 {
   left: 50%;
   transform: translateX(-50%);
   width: 793px;
+  height: 1121px;
   background-color: #fff;
   z-index: 4;
   padding: 35px 40px;
   box-sizing: border-box;
-  overflow-y: auto;
 }
 .que-preview-wrap .que-top {
   border-bottom: 1px solid #dddddd;
@@ -1507,6 +1546,8 @@ i.list-type02 {
   align-items: flex-start;
   gap: 60px;
   position: relative;
+  width: 100%;
+  height: 880px;
 }
 .que-preview-wrap .que-cnt::after {
   content: "";
@@ -1549,6 +1590,7 @@ i.list-type02 {
   font-size: 14px;
   font-weight: 500;
   color: #000;
+  margin-top: 10px;
 }
 .que-preview-wrap .que-cnt .problem-cnt .problem-wrap .problem-txt {
   line-height: 24px;
