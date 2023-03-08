@@ -2204,45 +2204,25 @@ input[type="checkbox"] {
   &.table-type {
     .pop-inner {
       width: 600px;
-    }    
+    }  
+    .btn-wrap {
+      height: 45px;
+    }  
     .pop-content {
-      padding: 0 30px 30px;
+      padding: 0 27px 40px;
     }
     &.preview-pop {
-      .pop-inner {
-        width: 680px;
-      }
+      
       .pop-content {
-        height: 700px;
-        padding: 0 70px 40px;
+        height: 650px;
 
         .paper-wrap {
+          width: 100%;
           height: 100%;
-        }
-
-        .swiper-button-next, .swiper-button-prev {
-          top: 50%;
-          width: 32px;
-          height: 32px;
-          border-radius: 16px;
-          background: #4a4a4a url(../../images/common/ico_arrow_w_lg.png) no-repeat center;
-          background-size: 9px 14px;
-          &:hover {
-            background-color: $color-main-purple;
-          }
-        }
-
-        .swiper-button-next {
-          right: 20px;
-        }
-
-        .swiper-button-prev {
-          transform: rotate(-180deg);
-          left: 20px;
-        }
-
-        .swiper-button-prev:after, .swiper-button-next:after {
-          content: none;
+          overflow-x: hidden;
+          overflow-y: auto;
+          word-break: break-all;
+          margin-bottom: 10px;
         }
       }
     }
@@ -2841,6 +2821,7 @@ input[type="checkbox"] {
       }
       .sheet-cnt {
         width: calc(100% - 499px);
+        width: 600px;
         .scroll-inner {
           border-left: 1px solid $color-line-type02;
         }
