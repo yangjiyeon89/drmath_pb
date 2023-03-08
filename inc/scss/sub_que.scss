@@ -1984,6 +1984,9 @@
   .month {
     @include layout-center;
     margin-right: 140px;
+    input {
+      @include inputnone;
+    }
     button {
       position: relative;
       width: 32px;height: 32px;
@@ -2010,8 +2013,11 @@
       }
     }
     .txt {
-      margin: 0 25px;
+      margin: 0 78px;
       @include font(24px, 600);
+      img {
+        margin-left: 12px;
+      }
     }
   }
   .tab-list-type01 {

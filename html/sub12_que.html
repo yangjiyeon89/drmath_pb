@@ -308,7 +308,7 @@
             <div class="table-top">
               <div class="month">
                 <button type="button" class="prev"></button>
-                <span class="txt">2022.09</span>
+                <span class="txt">2022.09<input type="text" id="datepicker"></span>
                 <button type="button" class="next"></button>
               </div>
               <div class="btn-wrap">
@@ -844,6 +844,13 @@
     });
     let infoBtn = $(".btn-info-wrap .btn-info").click(function(){
       $(this).siblings('.tooltip').toggleClass('active');
+    });
+
+    $( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonImage: "../images/common/ico_calendar_type03.png",
+      buttonImageOnly: true,
+      buttonText: "Select date"
     });
   });
 </script>

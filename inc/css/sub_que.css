@@ -872,6 +872,8 @@
 
 .sub12-01 .month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 140px; }
 
+.sub12-01 .month input { border: 0; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; }
+
 .sub12-01 .month button { position: relative; width: 32px; height: 32px; border-radius: 100%; background-color: #4a4a4a; }
 
 .sub12-01 .month button:hover { background-color: #5a14be; }
@@ -880,7 +882,9 @@
 
 .sub12-01 .month button.prev::after { margin-top: -7px; margin-left: -6px; -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
 
-.sub12-01 .month .txt { margin: 0 25px; font-size: 24px; font-weight: 600; }
+.sub12-01 .month .txt { margin: 0 78px; font-size: 24px; font-weight: 600; }
+
+.sub12-01 .month .txt img { margin-left: 12px; }
 
 .sub12-01 .tab-list-type01 { width: 1020px; }
 
