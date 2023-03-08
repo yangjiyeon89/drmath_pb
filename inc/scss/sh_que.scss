@@ -69,6 +69,32 @@ i {
 	}
 }
 
+// range slider
+.range-bar {
+	background:$color-line-type02;
+	border: none !important;
+	width: 100%;
+	height: 4px;
+	margin: 30px 20px !important;
+	border-radius: 0 !important;
+	position: relative;
+	.ui-slider-handle{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: -12px;
+		margin-left: 0;
+		background: url(../../images/sub/range-handle.png) no-repeat;
+		background-size: contain;
+		outline: none;
+		transform: translateX(-50%);
+	}
+	.ui-slider-range {
+		background-color: $color-main-purple;
+		height: 4px;
+	}	
+}
+
 // btn-step
 .btn-step {
 	&.next {
@@ -1322,8 +1348,10 @@ i {
 		}
 	}
 }
-// que-preview-wrap
+// 문제지 템플릿
 .que-preview-wrap {
+	@include layout-justify-center;
+	flex-direction: column;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -1331,14 +1359,16 @@ i {
 	height: 1121px;
 	background-color: #fff;
 	z-index: 4;
-	padding: 35px 40px;
+	padding: 30px 40px;
 	box-sizing: border-box;
 	.que-top {
+		width: 100%;
 		border-bottom: 1px solid $color-line-type02;
-		.tit-wrap {
+		box-sizing: border-box;
+		.top-wrap {
 			@include layout-justify-start;
 			margin-bottom: 50px;
-			.left-area {
+			.tit-area {
 				@include layout-justify-start;
 				.badge {
 					@include content-center-center;
@@ -1404,13 +1434,24 @@ i {
 				@include font(16px, 500);
 			}
 		}
+		//230308 템플릿 작업 중
+		// &.type02 {
+		// 	.top-wrap {
+		// 		@include layout-center-center;
+		// 		background-color: #eee7f8;
+		// 		border-top: 2px solid $color-main-purple;
+		// 		margin-bottom: 0;
+		// 		padding: 50px 0; 
+		// 	}
+		// }
 	}
 	.que-cnt {
 		@include layout-justify-start;
 		gap: 60px;
 		position: relative;
 		width: 100%;
-		height: 880px;
+		height: 100%;
+		box-sizing: border-box;
 		&::after {
 			@include virtual-selector;
 			position: absolute;
@@ -1470,9 +1511,11 @@ i {
 		}
 	}
 	.que-bottom {
+		width: 100%;
 		border-top: 1px solid $color-line-type02;
 		padding-top: 10px;
 		text-align: right;
+		box-sizing: border-box;
 		span {
 			color: #747474;
 			em {
@@ -1933,48 +1976,59 @@ i {
 				.search-box {
 					margin-left: 0;
 				}
-				.right-cnt {
-					.scroll-inner {
-						height: 406px;
-						padding: 7px 24px 17px 24px;
-						box-sizing: border-box;
-					}
-					.desc {
-						width: 100%;
-						height: 100%;
-						@include layout-center-center;
-						color: $color-font66;
-					}
-					.chk-acc {
-						margin-top: 10px;
-					}
+				.chk-acc {
 					.cnt {
-						padding: 0;
-						border-bottom: 0;
-						li {
-							background-color: #ebe3ff;
-							border: 1px solid #dbcbf3;
-							border-radius: 6px;
-							padding: 10px 19px;
-							margin-top: 10px;
-							label {
-								@include font(16px, 600);
-								color: $color-main-purple;
-							}
-							input[type="checkbox"]:checked + label::before {
-								width: 20px;height: 20px;
-								margin-top: -10px;
-								background: url(../../images/common/ico_delete_type04.png) no-repeat;
-								background-size: contain;
-							}
-						}
-					}
-					.type02 {
-						.cnt {
-							border-bottom: 0;
+						.name {
+							display: block;
+							width: 53px;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
 						}
 					}
 				}
+				// .right-cnt {
+				// 	.scroll-inner {
+				// 		height: 406px;
+				// 		padding: 7px 24px 17px 24px;
+				// 		box-sizing: border-box;
+				// 	}
+				// 	.desc {
+				// 		width: 100%;
+				// 		height: 100%;
+				// 		@include layout-center-center;
+				// 		color: $color-font66;
+				// 	}
+				// 	.chk-acc {
+				// 		margin-top: 10px;
+				// 	}
+				// 	.cnt {
+				// 		padding: 0;
+				// 		border-bottom: 0;
+				// 		li {
+				// 			background-color: #ebe3ff;
+				// 			border: 1px solid #dbcbf3;
+				// 			border-radius: 6px;
+				// 			padding: 10px 19px;
+				// 			margin-top: 10px;
+				// 			label {
+				// 				@include font(16px, 600);
+				// 				color: $color-main-purple;
+				// 			}
+				// 			input[type="checkbox"]:checked + label::before {
+				// 				width: 20px;height: 20px;
+				// 				margin-top: -10px;
+				// 				background: url(../../images/common/ico_delete_type04.png) no-repeat;
+				// 				background-size: contain;
+				// 			}
+				// 		}
+				// 	}
+				// 	.type02 {
+				// 		.cnt {
+				// 			border-bottom: 0;
+				// 		}
+				// 	}
+				// }
 			}
 			.pop-footer {
 				button {

@@ -89,6 +89,31 @@ i.list-type02 {
   margin-right: 10px;
 }
 
+.range-bar {
+  background: #dddddd;
+  border: none !important;
+  width: 100%;
+  height: 4px;
+  margin: 30px 20px !important;
+  border-radius: 0 !important;
+  position: relative;
+}
+.range-bar .ui-slider-handle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -12px;
+  margin-left: 0;
+  background: url(../../images/sub/range-handle.png) no-repeat;
+  background-size: contain;
+  outline: none;
+  transform: translateX(-50%);
+}
+.range-bar .ui-slider-range {
+  background-color: #5a14be;
+  height: 4px;
+}
+
 .btn-step.next {
   background: #5a14be url(../../images/common/ico_arrow_step_next.png) no-repeat right 20px center;
   padding-left: 0;
@@ -1443,6 +1468,10 @@ i.list-type02 {
 }
 
 .que-preview-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1450,24 +1479,26 @@ i.list-type02 {
   height: 1121px;
   background-color: #fff;
   z-index: 4;
-  padding: 35px 40px;
+  padding: 30px 40px;
   box-sizing: border-box;
 }
 .que-preview-wrap .que-top {
+  width: 100%;
   border-bottom: 1px solid #dddddd;
+  box-sizing: border-box;
 }
-.que-preview-wrap .que-top .tit-wrap {
+.que-preview-wrap .que-top .top-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 50px;
 }
-.que-preview-wrap .que-top .tit-wrap .left-area {
+.que-preview-wrap .que-top .top-wrap .tit-area {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.que-preview-wrap .que-top .tit-wrap .left-area .badge {
+.que-preview-wrap .que-top .top-wrap .tit-area .badge {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1481,16 +1512,16 @@ i.list-type02 {
   flex-shrink: 0;
   margin-right: 10px;
 }
-.que-preview-wrap .que-top .tit-wrap .left-area .tit .txt {
+.que-preview-wrap .que-top .top-wrap .tit-area .tit .txt {
   font-size: 34px;
   font-weight: 700;
 }
-.que-preview-wrap .que-top .tit-wrap .left-area .tit .txt em {
+.que-preview-wrap .que-top .top-wrap .tit-area .tit .txt em {
   font-size: 34px;
   font-weight: 700;
   color: #5a14be;
 }
-.que-preview-wrap .que-top .tit-wrap .left-area .tit .desc {
+.que-preview-wrap .que-top .top-wrap .tit-area .tit .desc {
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
@@ -1547,7 +1578,8 @@ i.list-type02 {
   gap: 60px;
   position: relative;
   width: 100%;
-  height: 880px;
+  height: 100%;
+  box-sizing: border-box;
 }
 .que-preview-wrap .que-cnt::after {
   content: "";
@@ -1610,9 +1642,11 @@ i.list-type02 {
   margin-right: 5px;
 }
 .que-preview-wrap .que-bottom {
+  width: 100%;
   border-top: 1px solid #dddddd;
   padding-top: 10px;
   text-align: right;
+  box-sizing: border-box;
 }
 .que-preview-wrap .que-bottom span {
   color: #747474;
@@ -2062,47 +2096,12 @@ i.list-type02 {
 .page10_02 .pop-wrap.check-type .pop-content .search-box {
   margin-left: 0;
 }
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .scroll-inner {
-  height: 406px;
-  padding: 7px 24px 17px 24px;
-  box-sizing: border-box;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .desc {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #666666;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .chk-acc {
-  margin-top: 10px;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt {
-  padding: 0;
-  border-bottom: 0;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt li {
-  background-color: #ebe3ff;
-  border: 1px solid #dbcbf3;
-  border-radius: 6px;
-  padding: 10px 19px;
-  margin-top: 10px;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt li label {
-  font-size: 16px;
-  font-weight: 600;
-  color: #5a14be;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .cnt li input[type=checkbox]:checked + label::before {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  background: url(../../images/common/ico_delete_type04.png) no-repeat;
-  background-size: contain;
-}
-.page10_02 .pop-wrap.check-type .pop-content .right-cnt .type02 .cnt {
-  border-bottom: 0;
+.page10_02 .pop-wrap.check-type .pop-content .chk-acc .cnt .name {
+  display: block;
+  width: 53px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .page10_02 .pop-wrap.check-type .pop-footer button:nth-child(1) {
   border-radius: 0 0 0 10px;
