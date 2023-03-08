@@ -2029,10 +2029,13 @@
         height: 693px;
       }
       span {
-        width: 6%;
+        width: 80px;
         padding: 6px 0;
-        &:first-child, &:last-child {
-          width: 11%;
+        &:first-child {
+          width: 103px;
+        }
+        &:last-child {
+          width: 107px;
         }
       }
       .name {
@@ -2222,6 +2225,9 @@
     }
     //등원하원 팝업
     &.type02 {
+      .pop-inner {
+        width: 400px;
+      }
       .input-chk {
         display: inline-block;
         margin-left: 10px;
@@ -2234,6 +2240,10 @@
         th, td {
           height: 60px;
           box-sizing: border-box;
+        }
+        th {
+          padding-left:16px;
+          text-align: left;
         }
       }
       .num-box {
