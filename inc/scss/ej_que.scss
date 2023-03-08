@@ -436,9 +436,9 @@
   &.table-type {
     .btn-icon {
       &.pop-top-btn {
-        float: right;
-        margin-right: 26px;
-        margin-bottom: 10px;
+        position: absolute;
+        right: 30px;
+        top: 70px;
       }
     }
   }
