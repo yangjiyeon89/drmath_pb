@@ -1811,14 +1811,14 @@
   .video-cnt-wrap {
     width: 979px;
     .row {
-      margin-bottom: 22px;
+      margin-bottom: 30px;
       > .tit {
         display: block;
         margin-bottom: 7px;
         @include font(18px, 600);
       }
-      &:last-child {
-        margin-bottom: 0;
+      &:nth-child(2) {
+        margin-bottom: 20px;
       }
     }
     .table-wrap {
@@ -1851,26 +1851,37 @@
     .tab-list-type01 {
       width: 100%;
       .scroll-inner {
-        height: 148px;
+        height: 418px;
         border-bottom: 1px solid $color-line-type02;
       }
       .table {
+        .fix-head {
+          span {
+            padding: 13px 0;
+          }
+        }
         span {
-          padding: 11px 0;
+          padding: 18px 0;
           &:nth-child(1) {
-            width: 7%;
+            width: 8%;
           }
           &:nth-child(2) {
-            width: 55%;
+            width: 18%;
           }
           &:nth-child(3) {
-            width: 21%;
+            width: 18%;
           }
           &:nth-child(4) {
-            width: 17%;
+            width: 18%;
+          }
+          &:nth-child(5) {
+            width: 21%;
+          }
+          &:nth-child(6) {
+            width: 16%;
           }
           &.tit {
-            padding-left: 30px;
+            padding-left: 20px;
           }
         }
         button {
@@ -2770,16 +2781,16 @@
     .video-cnt-wrap {
       .tab-list-type01 {
         .scroll-inner {
-          height: 100px;
+          height: 255px;
           &.type02 {
             height: 50px;
           }
         }
       }
       .row {
-        margin-bottom: 11px;
-        & > .tit {
-          margin-bottom: 3px;
+        margin-bottom: 15px;
+        &:nth-child(2) {
+          margin-bottom: 15px;
         }
       }
     }

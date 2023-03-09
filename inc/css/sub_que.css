@@ -784,11 +784,11 @@
 
 .sub10-04 .video-cnt-wrap { width: 979px; }
 
-.sub10-04 .video-cnt-wrap .row { margin-bottom: 22px; }
+.sub10-04 .video-cnt-wrap .row { margin-bottom: 30px; }
 
 .sub10-04 .video-cnt-wrap .row > .tit { display: block; margin-bottom: 7px; font-size: 18px; font-weight: 600; }
 
-.sub10-04 .video-cnt-wrap .row:last-child { margin-bottom: 0; }
+.sub10-04 .video-cnt-wrap .row:nth-child(2) { margin-bottom: 20px; }
 
 .sub10-04 .video-cnt-wrap .table-wrap { margin-top: 0; }
 
@@ -806,19 +806,25 @@
 
 .sub10-04 .video-cnt-wrap .tab-list-type01 { width: 100%; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .scroll-inner { height: 148px; border-bottom: 1px solid #dddddd; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .scroll-inner { height: 418px; border-bottom: 1px solid #dddddd; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span { padding: 11px 0; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table .fix-head span { padding: 13px 0; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(1) { width: 7%; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span { padding: 18px 0; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(2) { width: 55%; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(1) { width: 8%; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(3) { width: 21%; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(2) { width: 18%; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(4) { width: 17%; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(3) { width: 18%; }
 
-.sub10-04 .video-cnt-wrap .tab-list-type01 .table span.tit { padding-left: 30px; }
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(4) { width: 18%; }
+
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(5) { width: 21%; }
+
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span:nth-child(6) { width: 16%; }
+
+.sub10-04 .video-cnt-wrap .tab-list-type01 .table span.tit { padding-left: 20px; }
 
 .sub10-04 .video-cnt-wrap .tab-list-type01 .table button { width: 28px; height: 28px; margin-right: 10px; background: url(../../images/common/ico_video.png) no-repeat; }
 
@@ -1186,10 +1192,10 @@
   .sub10-04 .cnt-wrap textarea { height: 230px; }
   .sub10-04 .class-list .class-cnt { height: 349px; }
   .sub10-04 .defalut-view { height: 448px; }
-  .sub10-04 .video-cnt-wrap .tab-list-type01 .scroll-inner { height: 100px; }
+  .sub10-04 .video-cnt-wrap .tab-list-type01 .scroll-inner { height: 255px; }
   .sub10-04 .video-cnt-wrap .tab-list-type01 .scroll-inner.type02 { height: 50px; }
-  .sub10-04 .video-cnt-wrap .row { margin-bottom: 11px; }
-  .sub10-04 .video-cnt-wrap .row > .tit { margin-bottom: 3px; }
+  .sub10-04 .video-cnt-wrap .row { margin-bottom: 15px; }
+  .sub10-04 .video-cnt-wrap .row:nth-child(2) { margin-bottom: 15px; }
   .sub10-04 .acc-table-type .inner { padding: 0; }
   .sub10-04 .acc-table-type .table .scroll-inner { height: 379px; }
   .sub12-01 .tab-list-type01 .table .scroll-inner { height: 501px; }
