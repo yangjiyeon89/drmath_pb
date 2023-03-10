@@ -111,23 +111,20 @@
             </li>
           </ul>
           <div class="contents on">
-            <div class="top-cnt">
-              <button type="button" class="btn-icon type02 pop-btn" data-pop="check-pop"><i class="message"></i>수신자</button>
-              <div class="search-box">
-                <input type="text" placeholder="휴대폰 번호 또는 이름으로 검색 + ENTER" class="search">
-                <button type="button" class="btn-search"></button>
-              </div>
-            </div>
-            <div class="cnt-wrap">
-              <div class="msg-cnt">
+            <!-- 230309 .top-cnt 삭제 -->
+            <!-- S: 230309 UI 변경으로 인한 마크업 수정 -->
+            <div class="msg-wrap">
+              <div class="left-cnt">
                 <div class="top acc-tab-wrap">
-                  <span class="tit">수신자 목록</span>
+                  <div class="receiver-add">
+                    수신자<em>nn</em>명
+                    <button type="button" class="btn-add pop-btn" data-pop="check-pop"></button>
+                  </div>
                   <div class="name-group acc-cnt">
                     <div class="acc-btn-wrap">
                       <span class="name active">김천재<button type="button" class="btn-del"></button></span>
                       <span class="name">김닥터<button type="button" class="btn-del"></button></span>
                       <span class="name">김천재<button type="button" class="btn-del"></button></span>
-                      <span class="name">김닥터<button type="button" class="btn-del"></button></span>
                       <button type="button" class="acc-btn"></button>
                     </div>
                     <div class="cnt">
@@ -144,15 +141,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="rdo-group">
-                  <span class="tit">지난 발송 내역</span>
-                  <div class="input-radio-type01">
-                    <input type="radio" id="radio01_01" name="radio01">
-                    <label for="radio01_01">학부모</label>
-                    <input type="radio" id="radio01_02" name="radio01" checked="">
-                    <label for="radio01_02">학생</label>
-                  </div>
-                </div>
+                <div class="tit">지난 발송 내역</div>
                 <div class="scroll-inner">
                   <ul class="msg-list">
                     <li>
@@ -166,7 +155,7 @@
                     <li>
                       <span class="date">2022.09.26&nbsp;&nbsp;19:50&nbsp;&nbsp;</span>
                       <span>발송완료</span>
-                      <p class="txt">
+                      <p class="txt type02">
                         안녕하세요. 닥터매쓰입니다.<br>
                         김천재 학생 19:47 등원하였습니다.<br>
                         안녕하세요. 닥터매쓰입니다.<br>
@@ -184,40 +173,98 @@
                     <li>
                       <span class="date">2022.09.26&nbsp;&nbsp;19:50&nbsp;&nbsp;</span>
                       <span>발송완료</span>
-                      <p class="txt">
+                      <p class="txt type02">
                         안녕하세요. 닥터매쓰입니다.
                       </p>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="msg-cnt">
-                <div class="top">
-                  <span class="tit">탬플릿 선택</span>
-                  <div class="swiper msg-template-swiper">
+              <div class="right-cnt">
+                <div class="top-template">
+                  <div class="swiper template-swiper">
                     <div class="swiper-container">
                       <div class="swiper-wrapper">
-                        <!-- S: 230117 button 수정 -->
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit active">등원 문자</button>
+                          <button class="btn-msg-tit active">등원 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit">하원 문자</button>
+                          <button class="btn-msg-tit">하원 안내</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">시험 안내</button>
                         </div>
                         <div class="swiper-slide">
                           <button class="btn-msg-tit">납부 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit">테스트 결과 안내</button>
+                          <button class="btn-msg-tit">방학 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit">상담 일정 안내</button>
+                          <button class="btn-msg-tit">등원 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit">중간고사 안내</button>
+                          <button class="btn-msg-tit">하원 안내</button>
                         </div>
                         <div class="swiper-slide">
-                          <button class="btn-msg-tit">기말고사 안내</button>
+                          <button class="btn-msg-tit">시험 안내</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">납부 안내</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">방학 안내</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <button type="button" class="btn-setting pop-btn" data-pop="radio-pop"></button>
+                </div>
+                <div class="top">
+                  <div class="swiper name-swiper">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <!-- S: 230117 button 수정 -->
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit active">학원명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학원명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학원명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학원명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학원명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
+                        </div>
+                        <div class="swiper-slide">
+                          <button class="btn-msg-tit">학생명</button>
                         </div>
                         <!-- E: 230117 button 수정 -->
                       </div>
@@ -225,7 +272,6 @@
                     <div class="swiper-button-next"></div>
 					          <div class="swiper-button-prev"></div>
                   </div>
-                  <button type="button" class="btn-setting pop-btn" data-pop="radio-pop"></button>
                 </div>
                 <div class="txt-wrap">
                   <p class="txt scroll-inner">
@@ -297,18 +343,17 @@
         <div class="pop-header">
           <button type="button" class="pop-close"></button>
         </div>
-        <div class="top-chk-wrap">
-          <input type="checkbox" id="chk01_01">
-          <label for="chk01_01">전체</label>
-          <input type="checkbox" id="chk01_02" checked="">
-          <label for="chk01_02">학부모</label>
-          <input type="checkbox" id="chk01_03">
-          <label for="chk01_03">학생</label>
-        </div>
+        <!--<div class="input-radio-type01">
+          <input type="radio" id="radio02_01" name="radio02" checked="">
+          <label for="radio02_01">학부모</label>
+          <input type="radio" id="radio02_02" name="radio02">
+          <label for="radio02_02">학생</label>
+        </div>-->
         <div class="pop-content">
+          <!-- S: 230309 UI 변경으로 인한 마크업 수정 -->
           <div class="left-cnt">
             <div class="search-box">
-              <input type="text" placeholder="이름 검색" class="search">
+              <input type="text" placeholder="이름 또는 연락처 + Enter" class="search">
               <button type="button" class="btn-search"></button>
             </div>
             <div class="tab-wrap">
@@ -322,6 +367,11 @@
               </ul>
               <div class="contents on">
                 <div class="scroll-inner">
+                  <!-- S: 검색 결과 없음 -->
+                  <!--<div class="no-data">
+                    <p>검색결과가 없습니다.</p>
+                  </div>-->
+                  <!-- E: 검색 결과 없음 -->
                   <div class="check-wrap">
                     <div class="chk-acc" data-index="1">
                       <div class="acc-btn active">
@@ -330,22 +380,42 @@
                         <input type="checkbox" id="chk02_01" class="allCheck">
                         <label for="chk02_01"></label>
                       </div>
-                      <ul class="cnt" style="display:block;">
+                      <ul class="cnt" style="display: block;">
                         <li>
                           <input type="checkbox" id="chk02_02" name="chk02_02">
-                          <label for="chk02_02">고희동</label>
+                          <label for="chk02_02"> 
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk02_03" name="chk02_03">
-                          <label for="chk02_03">김둘리</label>
+                          <label for="chk02_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk02_04" name="chk02_04">
-                          <label for="chk02_04">도우너</label>
+                          <label for="chk02_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li class="select">
                           <input type="checkbox" id="chk02_05" name="chk02_05">
-                          <label for="chk02_05">유또치</label>
+                          <label for="chk02_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                       </ul>
                     </div>
@@ -359,15 +429,30 @@
                       <ul class="cnt">
                         <li>
                           <input type="checkbox" id="chk03_02" name="chk03_02">
-                          <label for="chk03_02">고희동</label>
+                          <label for="chk03_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk03_03" name="chk03_03">
-                          <label for="chk03_03">김둘리</label>
+                          <label for="chk03_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk03_04" name="chk03_04">
-                          <label for="chk03_04">도우너</label>
+                          <label for="chk03_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                       </ul>
                     </div>
@@ -381,31 +466,66 @@
                       <ul class="cnt">
                         <li>
                           <input type="checkbox" id="chk04_02" name="chk04_02">
-                          <label for="chk04_02">고희동</label>
+                          <label for="chk04_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_03" name="chk04_03">
-                          <label for="chk04_03">김둘리</label>
+                          <label for="chk04_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_04" name="chk04_04">
-                          <label for="chk04_04">도우너</label>
+                          <label for="chk04_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_05" name="chk04_05">
-                          <label for="chk04_05">고희동</label>
+                          <label for="chk04_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_06" name="chk04_06">
-                          <label for="chk04_06">김둘리</label>
+                          <label for="chk04_06">
+                            <div class="user-info">
+                              <span class="name">고희동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_07" name="chk04_07">
-                          <label for="chk04_07">도우너</label>
+                          <label for="chk04_07">
+                            <div class="user-info">
+                              <span class="name">김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk04_08" name="chk04_08">
-                          <label for="chk04_08">도우너</label>
+                          <label for="chk04_08">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                       </ul>
                     </div>
@@ -414,6 +534,11 @@
               </div>
               <div class="contents">
                 <div class="scroll-inner">
+                  <!-- S: 검색 결과 없음 -->
+                  <!--<div class="no-data">
+                    <p>검색결과가 없습니다.</p>
+                  </div>-->
+                  <!-- E: 검색 결과 없음 -->
                   <div class="check-wrap">
                     <div class="chk-acc type02" data-index="4">
                       <div class="acc-btn active">
@@ -425,19 +550,39 @@
                       <ul class="cnt" style="display:block;">
                         <li>
                           <input type="checkbox" id="chk05_02" name="chk05_02">
-                          <label for="chk05_02">고희동</label>
+                          <label for="chk05_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk05_03" name="chk05_03">
-                          <label for="chk05_03">김둘리</label>
+                          <label for="chk05_03">
+                            <div class="user-info">
+                              <span class="name">김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk05_04" name="chk05_04">
-                          <label for="chk05_04">도우너</label>
+                          <label for="chk05_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk05_05" name="chk05_05">
-                          <label for="chk05_05">유또치</label>
+                          <label for="chk05_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                       </ul>
                     </div>
@@ -451,53 +596,30 @@
                       <ul class="cnt">
                         <li>
                           <input type="checkbox" id="chk06_02" name="chk06_02">
-                          <label for="chk06_02">고희동</label>
+                          <label for="chk06_02">
+                            <div class="user-info">
+                              <span class="name">고희동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk06_03" name="chk06_03">
-                          <label for="chk06_03">김둘리</label>
+                          <label for="chk06_03">
+                            <div class="user-info">
+                              <span class="name">김또치치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                         <li>
                           <input type="checkbox" id="chk06_04" name="chk06_04">
-                          <label for="chk06_04">도우너</label>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="chk-acc type02" data-index="6">
-                      <div class="acc-btn">
-                        <span>초3</span>
-                        <em>7명</em>
-                        <input type="checkbox" id="chk08_01" class="allCheck">
-                        <label for="chk08_01"></label>
-                      </div>
-                      <ul class="cnt">
-                        <li>
-                          <input type="checkbox" id="chk08_02" name="chk14_02">
-                          <label for="chk08_02">고희동</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_03" name="chk14_03">
-                          <label for="chk08_03">김둘리</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_04" name="chk14_04">
-                          <label for="chk08_04">도우너</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_05" name="chk14_05">
-                          <label for="chk08_05">고희동</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_06" name="chk14_06">
-                          <label for="chk08_06">김둘리</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_07" name="chk14_07">
-                          <label for="chk08_07">도우너</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" id="chk08_08" name="chk14_08">
-                          <label for="chk08_08">도우너</label>
+                          <label for="chk06_04">
+                            <div class="user-info">
+                              <span class="name">도우너도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
                         </li>
                       </ul>
                     </div>
@@ -509,150 +631,254 @@
           <div class="right-cnt">
             <div class="check-wrap">
               <div class="scroll-inner">
-                <!-- S:선택 전 -->
-                <!--<p class="desc">수신자를 선택해주세요.</p>-->
-                <!-- E:선택 전-->
-                <!-- S:선택 후 -->
+                <!-- S: 수신자 선택 전 -->
+                <!-- <div class="no-data">
+                  <p>수신자를 선택해주세요.</p>
+                </div> -->
+                <!-- E: 수신자 선택 전-->
                 <div class="chk-acc" data-index="1">
+                  <div class="acc-btn active">
+                    <span>매쓰반</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk09_01" class="allCheck">
+                    <label for="chk09_01"></label>
+                  </div>
                   <ul class="cnt" style="display:block;">
                     <li>
                       <input type="checkbox" id="chk09_02" name="chk02_02">
-                      <label for="chk09_02">고희동</label>
+                      <label for="chk09_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk09_03" name="chk02_03">
-                      <label for="chk09_03">김둘리</label>
+                      <label for="chk09_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk09_04" name="chk02_04">
-                      <label for="chk09_04">도우너</label>
+                      <label for="chk09_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
-                    <li class="select">
+                    <li>
                       <input type="checkbox" id="chk09_05" name="chk02_05">
-                      <label for="chk09_05">유또치</label>
+                      <label for="chk09_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                   </ul>
                 </div>
                 <div class="chk-acc" data-index="2">
+                  <div class="acc-btn active">
+                    <span>닥터반</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk10_01" class="allCheck">
+                    <label for="chk10_01"></label>
+                  </div>
                   <ul class="cnt" style="display:block;">
                     <li>
                       <input type="checkbox" id="chk10_02" name="chk03_02">
-                      <label for="chk10_02">고희동</label>
+                      <label for="chk10_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk10_03" name="chk03_03">
-                      <label for="chk10_03">김둘리</label>
+                      <label for="chk10_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk10_04" name="chk03_04">
-                      <label for="chk10_04">도우너</label>
+                      <label for="chk10_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                   </ul>
                 </div>
                 <div class="chk-acc" data-index="3">
+                  <div class="acc-btn active">
+                    <span>천재반</span>
+                    <em>7명</em>
+                    <input type="checkbox" id="chk11_01" class="allCheck">
+                    <label for="chk11_01"></label>
+                  </div>
                   <ul class="cnt" style="display:block;">
                     <li>
                       <input type="checkbox" id="chk11_02" name="chk04_02">
-                      <label for="chk11_02">고희동</label>
+                      <label for="chk11_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_03" name="chk04_03">
-                      <label for="chk11_03">김둘리</label>
+                      <label for="chk11_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_04" name="chk04_04">
-                      <label for="chk11_04">도우너</label>
+                      <label for="chk11_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_05" name="chk04_05">
-                      <label for="chk11_05">고희동</label>
+                      <label for="chk11_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_06" name="chk04_06">
-                      <label for="chk11_06">김둘리</label>
+                      <label for="chk11_06">
+                        <div class="user-info">
+                          <span class="name">고희동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_07" name="chk04_07">
-                      <label for="chk11_07">도우너</label>
+                      <label for="chk11_07">
+                        <div class="user-info">
+                          <span class="name">김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk11_08" name="chk04_08">
-                      <label for="chk11_08">도우너</label>
+                      <label for="chk11_08">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                   </ul>
                 </div>
                 <div class="chk-acc type02" data-index="4">
+                  <div class="acc-btn active">
+                    <span>초1</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk12_01" class="allCheck">
+                    <label for="chk12_01"></label>
+                  </div>
                   <ul class="cnt" style="display:block;">
                     <li>
                       <input type="checkbox" id="chk12_02" name="chk05_02">
-                      <label for="chk12_02">고희동</label>
+                      <label for="chk12_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk12_03" name="chk05_03">
-                      <label for="chk12_03">김둘리</label>
+                      <label for="chk12_03">
+                        <div class="user-info">
+                          <span class="name">김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk12_04" name="chk05_04">
-                      <label for="chk12_04">도우너</label>
+                      <label for="chk12_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk12_05" name="chk05_05">
-                      <label for="chk12_05">유또치</label>
+                      <label for="chk12_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                   </ul>
                 </div>
                 <div class="chk-acc type02" data-index="5">
+                  <div class="acc-btn">
+                    <span>초2</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk13_01" class="allCheck">
+                    <label for="chk13_01"></label>
+                  </div>
                   <ul class="cnt">
                     <li>
                       <input type="checkbox" id="chk13_02" name="chk06_02">
-                      <label for="chk13_02">고희동</label>
+                      <label for="chk13_02">
+                        <div class="user-info">
+                          <span class="name">고희동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk13_03" name="chk06_03">
-                      <label for="chk13_03">김둘리</label>
+                      <label for="chk13_03">
+                        <div class="user-info">
+                          <span class="name">김또치치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                     <li>
                       <input type="checkbox" id="chk13_04" name="chk06_04">
-                      <label for="chk13_04">도우너</label>
+                      <label for="chk13_04">
+                        <div class="user-info">
+                          <span class="name">도우너도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
                     </li>
                   </ul>
                 </div>
-                <div class="chk-acc type02" data-index="6">
-                  <ul class="cnt">
-                    <li>
-                      <input type="checkbox" id="chk14_02" name="chk14_02">
-                      <label for="chk14_02">고희동</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_03" name="chk14_03">
-                      <label for="chk14_03">김둘리</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_04" name="chk14_04">
-                      <label for="chk14_04">도우너</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_05" name="chk14_05">
-                      <label for="chk14_05">고희동</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_06" name="chk14_06">
-                      <label for="chk14_06">김둘리</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_07" name="chk14_07">
-                      <label for="chk14_07">도우너</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="chk14_08" name="chk14_08">
-                      <label for="chk14_08">도우너</label>
-                    </li>
-                  </ul>
-                </div>
-                 <!-- E:선택 후 -->
               </div>
             </div>
           </div>
+           <!-- S: 230309 UI 변경으로 인한 마크업 수정 -->
         </div>
         <div class="pop-footer">
           <button>취소</button>
@@ -684,73 +910,101 @@
           <div class="tab-wrap">
             <ul class="tab-menu-type06">
               <li class="ui-tab-btn active">
-                <a href="javascript:;">탬플릿 선택</a>
+                <a href="javascript:;">템플릿 선택</a>
               </li>
               <li class="ui-tab-btn">
-                <a href="javascript:;">탬플릿 추가</a>
+                <a href="javascript:;">템플릿 추가</a>
               </li>
             </ul>
             <div class="contents on">
               <div class="cnt-wrap">
                 <div class="left-cnt">
                   <div class="search-box">
-                    <input type="text" placeholder="검색" class="search">
+                    <input type="text" placeholder="제목 또는 내용 검색" class="search">
                     <button type="button" class="btn-search"></button>
                   </div>
                   <div class="scroll-inner">
+                    <!-- S: 230309 btn-wrap 추가 -->
                     <ul class="tpl-list">
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_01" name="radio02">
                           <label for="radio02_01">등원문자</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_02" name="radio02">
                           <label for="radio02_02">하원문자</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
-                      <li class="item has-badge">
+                      <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_03" name="radio02">
-                          <label for="radio02_03">
-                            <span class="badge">기본</span>납부안내
-                          </label>
+                          <label for="radio02_03">납부안내</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_04" name="radio02">
                           <label for="radio02_04">테스트 결과 안내</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_05" name="radio02">
                           <label for="radio02_05">상담 일정 안내</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_06" name="radio02">
                           <label for="radio02_06">중간고사 안내</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                       <li class="item">
                         <div class="input-radio-type01">
                           <input type="radio" id="radio02_07" name="radio02">
                           <label for="radio02_07">기말고사 안내</label>
                         </div>
-                        <button type="button" class="btn-star"></button>
+                        <div class="btn-wrap">
+                          <button type="button" class="btn-icon fix-s"><i class="delete-type06"></i></button>
+                          <button type="button" class="btn-icon fix-s"><i class="pen-type07"></i></button>
+                          <button type="button" class="btn-icon fix-s star"><i class="star"></i></button>
+                        </div>
                       </li>
                     </ul>
+                    <!-- E: 230309 btn-wrap 추가 -->
                   </div>
                 </div>
                 <div class="right-cnt">
@@ -766,6 +1020,57 @@
               <div class="editor-cnt">
                 <input type="text" placeholder="제목 (최대 15자 이내)">
                 <div class="textarea-box">
+                  <!-- S: 230309 swiper 추가 -->
+                  <div class="top">
+                    <div class="swiper name-swiper">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit active">학원명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학원명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학원명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학원명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학원명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                          <div class="swiper-slide">
+                            <button class="btn-msg-tit">학생명</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                  <!-- E: 230309 swiper 추가 -->
                   <!-- S: 230117 클래스 추가 -->
                   <textarea class="scroll-inner" cols="" rows="" placeholder=""></textarea>
                   <!-- E: 230117 클래스 추가 -->
@@ -788,24 +1093,45 @@
 </body>
 <script>
   $(function(){
-    // swiper
-    let msgTemplateSwiper = new Swiper(".msg-template-swiper .swiper-container", {
+    // S: 230309 swiper 추가
+    let msgTemplateSwiper = new Swiper(".template-swiper .swiper-container", {
       slidesPerView: 'auto',
       spaceBetween: 10,
       navigation: {
-        nextEl: ".msg-template-swiper .swiper-button-next",
-        prevEl: ".msg-template-swiper .swiper-button-prev",
+        nextEl: ".template-swiper .swiper-button-next",
+        prevEl: ".template-swiper .swiper-button-prev",
       }
     });
+    // E: 230309 swiper 추가
+    
+    // S: 230309 swiper 수정
+    let msgNameSwiper = new Swiper(".name-swiper .swiper-container", {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".name-swiper .swiper-button-next",
+        prevEl: ".name-swiper .swiper-button-prev",
+      }
+    });
+    // E: 230309 swiper 수정
 
-    // S: 230117 button active 추가
-    let _nameBtn = $('.top .name');
-    let _tempBtn = $('.msg-template-swiper .btn-msg-tit');
+    // S: 230309 button active 수정
+    let _receiverBtn = $('.top .name');
+    let _nameBtn = $('.name-swiper .btn-msg-tit');
+    let _tempBtn = $('.template-swiper .btn-msg-tit');
+
+    function receiverBtnClickFunc(){
+      let _this = $(this);
+      if(!_this.hasClass('active')) {
+        _this.parents('.top').find('.name').removeClass('active');
+        _this.addClass('active');
+      };
+    }
 
     function nameBtnClickFunc(){
       let _this = $(this);
       if(!_this.hasClass('active')) {
-        _this.parents('.top').find('.name').removeClass('active');
+        _this.parents('.name-swiper').find('.btn-msg-tit').removeClass('active');
         _this.addClass('active');
       };
     }
@@ -813,19 +1139,22 @@
     function tempBtnClickFunc(){
       let _this = $(this);
       if(!_this.hasClass('active')) {
-        _this.parents('.msg-template-swiper').find('.btn-msg-tit').removeClass('active');
+        _this.parents('.template-swiper').find('.btn-msg-tit').removeClass('active');
         _this.addClass('active');
       };
     }
 
+    _receiverBtn.on('click', receiverBtnClickFunc);
     _nameBtn.on('click', nameBtnClickFunc);
     _tempBtn.on('click', tempBtnClickFunc);
-    // E: 230117 button active 추가
+    // E: 230309 button active 수정
    
-    _starBtn = $('.tpl-list .btn-star');
+    // S: 230309 button active 수정
+    _starBtn = $('.tpl-list .btn-icon.star');
     _starBtn.click(function(){
-      $(this).toggleClass('active');
+      $(this).children('i').toggleClass('active');
     });
+    // E: 230309 button active 수정
   })
 </script>
 </html>
