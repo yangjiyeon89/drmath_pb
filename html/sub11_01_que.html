@@ -1022,7 +1022,7 @@
                 <div class="textarea-box">
                   <!-- S: 230309 swiper 추가 -->
                   <div class="top">
-                    <div class="swiper name-swiper">
+                    <div class="swiper name-swiper02">
                       <div class="swiper-container">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
@@ -1094,7 +1094,7 @@
 <script>
   $(function(){
     // S: 230309 swiper 추가
-    let msgTemplateSwiper = new Swiper(".template-swiper .swiper-container", {
+    let msgTplSwiper = new Swiper(".template-swiper .swiper-container", {
       slidesPerView: 'auto',
       spaceBetween: 10,
       navigation: {
@@ -1115,10 +1115,20 @@
     });
     // E: 230309 swiper 수정
 
-    // S: 230309 button active 수정
-    let _receiverBtn = $('.top .name');
-    let _nameBtn = $('.name-swiper .btn-msg-tit');
-    let _tempBtn = $('.template-swiper .btn-msg-tit');
+    // S: 230310 swiper 추가
+      let msgNameSwiper02 = new Swiper(".name-swiper02 .swiper-container", {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".name-swiper02 .swiper-button-next",
+        prevEl: ".name-swiper02 .swiper-button-prev",
+      }
+    });
+    // E: 230310 swiper 추가
+
+    // S: 230310 button active 수정
+    let _nameBtn = $('.top .name');
+    let _tplBtn = $('.swiper .btn-msg-tit');
 
     function receiverBtnClickFunc(){
       let _this = $(this);
@@ -1131,23 +1141,14 @@
     function nameBtnClickFunc(){
       let _this = $(this);
       if(!_this.hasClass('active')) {
-        _this.parents('.name-swiper').find('.btn-msg-tit').removeClass('active');
-        _this.addClass('active');
-      };
-    }
-    
-    function tempBtnClickFunc(){
-      let _this = $(this);
-      if(!_this.hasClass('active')) {
-        _this.parents('.template-swiper').find('.btn-msg-tit').removeClass('active');
+        _this.parents('.swiper').find('.btn-msg-tit').removeClass('active');
         _this.addClass('active');
       };
     }
 
-    _receiverBtn.on('click', receiverBtnClickFunc);
-    _nameBtn.on('click', nameBtnClickFunc);
-    _tempBtn.on('click', tempBtnClickFunc);
-    // E: 230309 button active 수정
+    _nameBtn.on('click', receiverBtnClickFunc);
+    _tplBtn.on('click', nameBtnClickFunc);
+    // E: 230310 button active 수정
    
     // S: 230309 button active 수정
     _starBtn = $('.tpl-list .btn-icon.star');
