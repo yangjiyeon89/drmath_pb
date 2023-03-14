@@ -1776,7 +1776,93 @@ i {
 				}
 			}
 		}
-
+		// 템플릿 07
+		&.top-type07 {
+			.top-wrap {
+				margin: 23px 60px 35px 0;
+				.tit-area {
+					width: 100%;
+					.tit {
+						flex: auto;
+						margin-top: 26px;
+						.desc {
+							font-size: 26px;
+						}
+					}
+				}
+				.txt {
+					@include font(49px, 800);
+				}
+			}
+			.grade-area {
+				width: 240px;
+				padding: 30px;
+				margin-right: 30px;
+				color: $color-main-purple;
+				text-align: right;
+				border-radius: 0 19px 19px 0;
+				background-color: #eee7f8;
+				.sub-txt {
+					display: block;
+					@include font(28px, 600);
+				}
+				.grade {
+					@include font(56px, 800);
+				}
+			}
+			.info-wrap {
+				width: calc(100% - 120px);
+				margin: 0 auto;
+				padding-bottom: 20px;
+				@include font(24px, 500);
+				border-bottom: 4px solid #3d3d3d;
+			}
+		}
+		// 템플릿 08
+		&.top-type08 {
+			width: calc(100% - 120px);
+			img {
+				width: 109px;height: 26px;
+			}
+			.top-wrap {
+				margin: 35px 0 40px;
+				.tit-area {
+					padding-left: 40px;
+					border-left: 3px solid $color-main-purple;
+					flex-direction: column;
+					.desc {						
+						font-size: 26px;
+					}
+				}
+			}
+			.sub-txt {
+				color: $color-main-purple;
+				@include font(29px, 600);
+			}
+			.tit {
+				.txt {
+					margin-top: 4px;
+					@include font(52px, 800);
+					em {
+						font-weight: 800;
+					}
+				}
+			}
+			.info-wrap {
+				@include font(23px, 500);
+				.info {
+					span {
+						padding: 0;
+						&::before {
+							display: none;
+						}
+						& + span {
+							padding-left: 4px;
+						}
+					}
+				}
+			}
+		}
 	}
 	.que-cnt {
 		@include layout-justify-start;
