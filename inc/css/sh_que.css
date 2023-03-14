@@ -862,6 +862,26 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .que-preview-wrap .cnt-multiple .problem-cnt .problem-wrap .problem-txt { margin-bottom: 0; }
 
+.que-preview-wrap .cnt-table { display: block; }
+
+.que-preview-wrap .cnt-table::after { display: none; }
+
+.que-preview-wrap .cnt-table table { width: 515px; border: 1px solid #c6c4c9; border-right: 0; border-bottom: 0; }
+
+.que-preview-wrap .cnt-table table th, .que-preview-wrap .cnt-table table td { text-align: center; border-right: 1px solid #c6c4c9; border-bottom: 1px solid #c6c4c9; }
+
+.que-preview-wrap .cnt-table table th.bd-n, .que-preview-wrap .cnt-table table td.bd-n { border-right: 0; }
+
+.que-preview-wrap .cnt-table table thead th { padding: 21px 0; font-size: 26px; font-weight: 800; background-color: #f3f3f3; }
+
+.que-preview-wrap .cnt-table table tbody th, .que-preview-wrap .cnt-table table tbody td { padding: 16px 0; }
+
+.que-preview-wrap .cnt-table table tbody th { color: #5a14be; font-size: 22px; font-weight: 800; }
+
+.que-preview-wrap .cnt-table table tbody td { font-size: 22px; font-weight: 400; }
+
+.que-preview-wrap .cnt-table table tbody td.fz-s { font-size: 11px; }
+
 .que-preview-wrap .cnt-answer .problem-cnt { min-height: 103px; height: auto; margin-bottom: 50px; }
 
 .que-preview-wrap .cnt-answer .problem-cnt .problem-wrap { margin-top: 0; margin-bottom: 30px; }

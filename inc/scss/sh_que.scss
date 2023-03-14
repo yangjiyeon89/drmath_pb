@@ -1991,6 +1991,49 @@ i {
 			}
 		}
 	}
+	//빠른정답
+	.cnt-table {
+		display: block;
+		&::after {
+			display: none;
+		}
+		table {
+			width: 515px;			
+			border: 1px solid #c6c4c9;
+			border-right: 0;
+			border-bottom: 0;
+			th, td {
+				text-align: center;
+				border-right: 1px solid #c6c4c9;
+				border-bottom: 1px solid #c6c4c9;
+				&.bd-n {
+					border-right: 0;
+				}
+			}
+			thead {
+				th {
+					padding: 21px 0;
+					@include font(26px, 800);
+					background-color: #f3f3f3;
+				}
+			}
+			tbody {
+				th, td {
+					padding: 16px 0;
+				}
+				th {
+					color: $color-main-purple;
+					@include font(22px, 800);
+				}
+				td {
+					@include font(22px, 400);
+					&.fz-s {
+						font-size: 11px;
+					}
+				}
+			}
+		}
+	}
 	//정답
 	.cnt-answer {
 		.problem-cnt {
