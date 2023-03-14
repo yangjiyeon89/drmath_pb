@@ -1576,12 +1576,41 @@ i {
 			}
 		}
 	}
+	// 2문항 템플릿
+	.cnt-type02 {
+		.problem-cnt {
+			min-height: 1112px;
+			height: auto;
+			margin-bottom: 112px;
+		}
+	}
 	// 4문항 템플릿
 	.cnt-type04 {
 		.problem-cnt {
 			min-height: 500px;
 			height: auto;
 			margin-bottom: 112px;
+		}
+	}
+	// 6문항 템플릿
+	.cnt-type06 {
+		.problem-cnt {
+			min-height: 360px;
+			height: auto;
+			margin-bottom: 48px;
+		}
+	}
+	// 다문항 템플릿
+	.cnt-multiple {
+		.problem-cnt {
+			min-height: 98px;
+			height: auto;
+			margin-bottom: 55px;
+			.problem-wrap {
+				.problem-txt {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 

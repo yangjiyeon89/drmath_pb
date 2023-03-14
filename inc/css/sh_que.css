@@ -698,7 +698,15 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .que-preview-wrap .que-bottom span em { font-weight: 600; color: #000; }
 
+.que-preview-wrap .cnt-type02 .problem-cnt { min-height: 1112px; height: auto; margin-bottom: 112px; }
+
 .que-preview-wrap .cnt-type04 .problem-cnt { min-height: 500px; height: auto; margin-bottom: 112px; }
+
+.que-preview-wrap .cnt-type06 .problem-cnt { min-height: 360px; height: auto; margin-bottom: 48px; }
+
+.que-preview-wrap .cnt-multiple .problem-cnt { min-height: 98px; height: auto; margin-bottom: 55px; }
+
+.que-preview-wrap .cnt-multiple .problem-cnt .problem-wrap .problem-txt { margin-bottom: 0; }
 
 .que-preview-wrap.page-type { padding-bottom: 40px; }
 
