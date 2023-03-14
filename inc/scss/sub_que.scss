@@ -2080,6 +2080,7 @@
         }
       }
       .none {
+        cursor: pointer;
         &::after {
           width: 15px;height: 15px;
           background: url(../../images/common/ico_x.png) no-repeat;

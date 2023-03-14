@@ -918,6 +918,8 @@
 
 .sub12-01 .tab-list-type01 .table .chk::after { width: 16px; height: 16px; background: url(../../images/common/ico_circle.png) no-repeat; }
 
+.sub12-01 .tab-list-type01 .table .none { cursor: pointer; }
+
 .sub12-01 .tab-list-type01 .table .none::after { width: 15px; height: 15px; background: url(../../images/common/ico_x.png) no-repeat; }
 
 .sub12-01 .tab-list-type01 .fix-head { height: 70px; background-color: #f7f7f7; }
