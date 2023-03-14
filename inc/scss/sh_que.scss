@@ -1357,13 +1357,12 @@ i {
 	height: 1625px;
 	background-color: #fff;
 	z-index: 4;
-	padding: 0 60px 30px;
+	padding-bottom: 30px;
 	box-sizing: border-box;
 	.que-top {
 		position: relative;
 		z-index: 1;
 		width: 100%;
-		border-bottom: 1px solid $color-line-type02;
 		box-sizing: border-box;
 		.top-wrap {
 			@include layout-justify-start;
@@ -1431,6 +1430,7 @@ i {
 		}
 		// 템플릿01
 		&.top-type01 {
+			width: calc(100% - 120px);
 			padding-top: 40px;
 			border-bottom: 0;
 			.info-wrap {
@@ -1781,11 +1781,12 @@ i {
 	.que-cnt {
 		@include layout-justify-start;
 		position: relative;
-		width: 100%;
+		width: calc(100% - 120px);
 		height: 100%;
 		margin-top: -1px;
 		padding: 30px 0;
 		box-sizing: border-box;
+		border-top: 1px solid $color-line-type02;
 		&::after {
 			@include virtual-selector;
 			position: absolute;
@@ -1847,7 +1848,7 @@ i {
 	}
 	.que-bottom {
 		position: relative;
-		width: 100%;
+		width: calc(100% - 120px);
 		border-top: 1px solid $color-line-type02;
 		padding-top: 20px;
 		text-align: center;
@@ -1907,7 +1908,7 @@ i {
 
 	// 다음페이지
 	&.page-type {
-		padding-bottom: 40px;
+		padding: 0 60px 40px;
 		.que-top {
 			padding: 45px 0 20px;
 			font-size: 20px;
@@ -1930,6 +1931,9 @@ i {
 			.txt {
 				padding-left: 10px;
 			}
+		}
+		.que-cnt {
+			width: 100%;
 		}
 		.que-bottom {
 			text-align: right;
