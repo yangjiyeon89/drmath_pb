@@ -194,30 +194,8 @@ i {
 
 // que-badge
 .que-badge {
-	@include content-center-center;
-	min-width: 45px;
-	height: 26px;
-	padding: 0 13px;
-	border-radius: 13px;
-	box-sizing: border-box;
-	@include font(12px, 500);
-	line-height: 26px;
-	&.yellow {
-		background-color: #fff6dc;
-		color: #bb7b00;
-	}
-	&.green {
-		background-color: #bfebdf;
-		color: #1b9372;
-	}
-	&.blue {
-		background-color: #d8e1f7;
-		color: #4b70c9;
-	}
-	&.gray {
-		background-color: #e8e8e8;
-		color: #666666;
-	}
+	color: $color-main-purple;
+	@include font(23px, 500);
 }
 // que
 .full-pop-que {
@@ -1372,14 +1350,14 @@ i {
 .que-preview-wrap {
 	@include layout-justify-center;
 	flex-direction: column;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 793px;
-	height: 1121px;
+	width: 1149px;
+	height: 1625px;
 	background-color: #fff;
 	z-index: 4;
-	padding: 30px 40px;
+	padding: 0 60px 30px;
 	box-sizing: border-box;
 	.que-top {
 		width: 100%;
@@ -1403,9 +1381,7 @@ i {
 				}
 				.tit {
 					.txt {
-						@include font(34px, 700);
 						em {
-							@include font(34px, 700);
 							color: $color-main-purple;
 						}
 					}
@@ -1426,15 +1402,14 @@ i {
 				span {
 					display: inline-block;
 					padding: 0 10px;
-					@include font(16px, 500);
 					position: relative;
 					&::before {
 						@include virtual-selector;
 						position: absolute;
-						top: 2px;
+						top: 4px;
 						right: -2px;
 						width: 2px;
-						height: 15px;
+						height: 21px;
 						background-color: #c4c4c4;
 					}
 					&:nth-child(1) {
@@ -1444,33 +1419,81 @@ i {
 						&::before {
 							display: none;
 						}
-						color: $color-font66;
 					}
 				}
 			}
 			.name {
 				display: inline-block;
 				width: 170px;
-				@include font(16px, 500);
 			}
 		}
-		//230308 템플릿 작업 중
-		// &.type02 {
-		// 	.top-wrap {
-		// 		@include layout-center-center;
-		// 		background-color: #eee7f8;
-		// 		border-top: 2px solid $color-main-purple;
-		// 		margin-bottom: 0;
-		// 		padding: 50px 0; 
-		// 	}
-		// }
+		// 템플릿01
+		&.top-type01 {
+			padding-top: 40px;
+			border-bottom: 0;
+			.info-wrap {
+				margin-bottom: 20px;
+				@include font(24px, 500);
+				.date {
+					color: #999;
+				}
+				.name {
+					width: 250px;
+				}
+				.info {
+					span {
+						padding: 0 15px;
+						&:nth-child(2) {
+							&::before {
+								display: none;
+							}
+						}
+						&:last-child {
+							padding: 0 0 0 5px;
+						}
+					}
+				}
+			}
+			.top-wrap {
+				@include layout-center-center;
+				background-color: #eee7f8;
+				border-top: 5px solid $color-main-purple;
+				margin-bottom: 0;
+				padding: 41px 0;
+				.badge {
+					width: 121px;
+					height: 47px;
+					margin-right: 21px;
+					color: $color-main-purple;
+					font-size: 22px;
+					border-radius: 15px;
+					background-color: #fff;
+					border: 1px solid $color-main-purple;
+				}
+				.tit {
+					text-align: center;					
+					.txt {
+						@include font(40px, 700);	
+						em {
+							font-weight: 700;
+						}
+					}
+					.desc {
+						color: #845ac1;
+						font-size: 26px;
+					}
+				}
+				
+			}
+		}
+
 	}
 	.que-cnt {
 		@include layout-justify-start;
-		gap: 60px;
 		position: relative;
 		width: 100%;
 		height: 100%;
+		padding: 30px 0;
 		box-sizing: border-box;
 		&::after {
 			@include virtual-selector;
@@ -1484,7 +1507,8 @@ i {
 		}
 		.layout {
 			width: 50%;
-			padding-top: 40px;
+			padding: 0 30px;
+			box-sizing: border-box;
 		}
 		.problem-cnt {
 			margin-bottom: 100px;
@@ -1498,20 +1522,20 @@ i {
 			}
 			.num {
 				display: inline-block;
-				margin-right: 20px;
-				@include font(28px, 700);
+				margin-right: 14px;
+				@include font(40px, 700);
 				color: $color-main-purple;
 			}
 			.problem-wrap {
 				display: flex;
 				flex-direction: row;
-				@include font(14px, 500);
+				@include font(20px, 500);
 				color: #000;
 				margin-top: 10px;
 				.problem-txt {
-					line-height: 24px;
-					margin-bottom: 20px;
-					white-space: wrap;
+					line-height: 1.5;
+					margin-bottom: 30px;
+					white-space: pre-wrap;
 					word-break: break-all;
 				}
 				.choice-list {
@@ -1522,8 +1546,8 @@ i {
 						word-break: break-all;
 					}
 					em {
-						font-size: 11px;
-						padding-top: 3px;
+						font-size: 13px;
+						padding-top: 6px;
 						margin-right: 5px;
 					}
 				}
@@ -1531,16 +1555,68 @@ i {
 		}
 	}
 	.que-bottom {
+		position: relative;
 		width: 100%;
 		border-top: 1px solid $color-line-type02;
-		padding-top: 10px;
-		text-align: right;
+		padding-top: 20px;
+		text-align: center;
 		box-sizing: border-box;
+		img {
+			width: 121px;
+			height: 29px;
+		}
 		span {
+			position: absolute;
+			top: 27px;
+			right: 0;
 			color: #747474;
 			em {
 				font-weight: 600;
 				color: #000;
+			}
+		}
+	}
+	// 4문항 템플릿
+	.cnt-type04 {
+		.problem-cnt {
+			min-height: 500px;
+			height: auto;
+			margin-bottom: 112px;
+		}
+	}
+
+	// 다음페이지
+	&.page-type {
+		padding-bottom: 40px;
+		.que-top {
+			padding: 45px 0 20px;
+			font-size: 20px;
+			border-bottom: 3px solid $color-main-purple;
+			.tit {
+				position: relative;
+				padding-right: 20px;
+				color: $color-main-purple;
+				font-weight: 700;
+				&::after {
+					position: absolute;
+					right: 0;top: 50%;
+					@include virtual-selector;
+					width: 7px;height: 7px;
+					margin-top: -4px;
+					border-radius: 100%;
+					background-color: $color-main-purple;
+				}
+			}
+			.txt {
+				padding-left: 10px;
+			}
+		}
+		.que-bottom {
+			text-align: right;
+			span {
+				position: relative;
+				top: inherit;
+				right: inherit;
 			}
 		}
 	}
