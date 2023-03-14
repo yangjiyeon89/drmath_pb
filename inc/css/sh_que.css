@@ -454,11 +454,11 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list.sub09-01 > li.a-center { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .tit { display: block; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 50px 20px 50px; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box > .tit { display: block; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 30px 50px 20px 50px; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .tit span { font-size: 20px; font-weight: 600; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box > .tit span { font-size: 20px; font-weight: 600; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .tit .preview-file { display: inline-block; width: 20px; height: 22px; background: url(../../images/sub/ic-preview-file.png) no-repeat; background-size: contain; margin-right: 13px; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box > .tit .preview-file { display: inline-block; width: 20px; height: 22px; background: url(../../images/sub/ic-preview-file.png) no-repeat; background-size: contain; margin-right: 13px; }
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .cnt { margin: 0 50px; border: 1px solid #dddddd; }
 
