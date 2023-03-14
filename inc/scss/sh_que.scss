@@ -353,7 +353,8 @@ i {
 							}
 							.box {
 								padding: 25px 0;
-								.btn-wrap {
+								.btn-wrap,
+								.step-wrap {
 									@include layout-center-center;
 									gap: 8px;
 									.btn-line {
