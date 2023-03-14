@@ -1991,6 +1991,44 @@ i {
 			}
 		}
 	}
+	//정답
+	.cnt-answer {
+		.problem-cnt {
+			min-height: 103px;
+			height: auto;
+			margin-bottom: 50px;
+			.problem-wrap {
+				margin-top: 0;
+				margin-bottom: 30px;
+				.problem-txt {
+					margin-bottom: 0;
+				}
+			}
+			.num {
+				font-size: 32px;
+			}
+			.problem-txt {
+				font-size: 18px;
+			}
+		}
+		.answer-wrap {
+			text-align: right;
+			em {
+				@include content-center-center;
+				width: 29px;height: 29px;
+				margin-right: 20px;
+				color: #fff;
+				border-radius: 10px;
+				background-color: #474747;
+			}
+			span {
+				font-size: 18px;
+				&.fz-s {
+					font-size: 11px;
+				}
+			}
+		}
+	}
 
 	// 다음페이지
 	&.page-type {
