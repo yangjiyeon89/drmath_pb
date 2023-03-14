@@ -462,11 +462,13 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .cnt { margin: 0 50px; border: 1px solid #dddddd; }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box { width: 100%; height: calc(824px - 93px); text-align: center; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box { position: relative; width: 100%; height: calc(824px - 93px); }
 
 @media (max-width: 1280px) { .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box { height: calc(630px - 93px); } }
 
-.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box img { width: 100%; height: 100%; -o-object-fit: contain; object-fit: contain; }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box .que-preview-wrap { position: absolute; top: -62%; left: -44%; -webkit-transform: scale(0.44); transform: scale(0.44); }
+
+@media (max-width: 1280px) { .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box .que-preview-wrap { top: -102%; -webkit-transform: scale(0.32); transform: scale(0.32); } }
 
 .full-pop-que .full-pop-wrap .pop-content.cnt02 .top-box { position: relative; }
 
