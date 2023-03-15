@@ -825,6 +825,14 @@ i {
 									z-index: 2;
 								}
 							}
+							&.pd-n {
+								padding-top: 0;
+							}
+						}
+						.tooltip-txt {
+							display: block;
+							margin-bottom: 15px;
+							font-size: 14px;
 						}
 						.opt-wrap {
 							position: relative;
@@ -863,6 +871,11 @@ i {
 									width: 147px;
 								}
 							}
+							.form-txt-error {
+								width: 100%;
+								margin-top: 0;
+								text-align: right;
+							}
 						}
 						.range-wrap {
 							@include layout-center;
@@ -878,7 +891,7 @@ i {
 							.check-group {
 								display: inline-block;
 								width: 150px;
-								margin-bottom: 20px;
+								// margin-bottom: 20px;
 								label {
 									font-size: 16px;
 								}
@@ -889,9 +902,11 @@ i {
 							gap: 10px;
 							margin-top: 10px;
 							.btn-color {
-								width: 20px;
-								height: 20px;
-								border-radius: 10px;
+								position: relative;
+								width: 25px;
+								height: 25px;
+								border-radius: 100%;
+								border: 0;
 								&.type01 {
 									background-color: #e84a1f;
 								}
@@ -902,10 +917,23 @@ i {
 									background-color: #8abc04;
 								}
 								&.type04 {
-									background-color: #04b6bc;
+									background-color: #209ceb;
 								}
 								&.type05 {
 									background-color: #828282;
+								}
+								&.type06 {
+									background-color: $color-main-purple;
+								}
+								&.active {
+									&::after {
+										position: absolute;
+										top: 50%;left: 50%;
+										@include virtual-selector;
+										width: 11px;height: 8px;
+										background: url(../../images/common/ico_chk_w.png) no-repeat;
+										transform: translate(-50%, -50%);
+									}
 								}
 							}
 						}
@@ -1024,6 +1052,7 @@ i {
 								top: -62%;
 								left: -44%;
 								transform: scale(0.44);
+								border: 1px solid $color-line-type02;
 								@media (max-width: 1280px) {
 									top: -102%;
 									transform: scale(0.32);
@@ -2078,7 +2107,6 @@ i {
 			}
 		}
 	}
-
 	// 다음페이지
 	&.page-type {
 		padding: 0 60px 40px;
@@ -2114,6 +2142,733 @@ i {
 				position: relative;
 				top: inherit;
 				right: inherit;
+			}
+		}
+	}
+	// 빨강 템플릿
+	&.color-type01 {
+		.que-badge-group {
+			color: #e84a1f;
+		}
+		.que-badge {
+			color: #e84a1f;
+		}
+		.que-cnt {
+			.problem-cnt {
+				.num {
+					color: #e84a1f;
+				}
+			}
+		}
+		.que-top {
+			border-color: #e84a1f;
+			.tit {
+				&::after {
+					background-color: #e84a1f;
+				}
+			}
+			.top-wrap {
+				.tit-area {
+					.tit {
+						.txt {
+							em {
+								color: #e84a1f;
+							}
+						}
+					}
+					
+				}
+			}
+			&.top-type01 {
+				.top-wrap {
+					border-color: #e84a1f;
+					background-color: #f5e7e4;
+					.tit {
+						.desc {
+							color: #e38971;
+						}
+					}
+				}
+				.badge {
+					color: #e84a1f;
+					border-color: #e84a1f;					
+				}
+			}
+			&.top-type02 {
+				.left-wrap {
+					background-color: #e84a1f;
+					.date {
+						color: #fba28a;
+					}
+				}
+				.badge {
+					color: #e84a1f;
+					border-color: #e84a1f;
+					background-color: #f5e7e4;
+				}
+			}
+			&.top-type03 {
+				.top-wrap {
+					.grade {
+						background-color: #e84a1f;
+					}
+					.tit-area {
+						.tit {
+							.desc {
+								color: #e84a1f;
+							}
+						}
+					}
+				}
+				.info-wrap {
+					background-color: #6f1801;
+					.tit {
+						background-color: #97280a;
+					}
+					.info {
+						span {
+							&::before {
+								background-color: #f58c6f;
+							}
+						}
+					}
+				}
+			}
+			&.top-type04 {
+				.grade {
+					color: #e84a1f;
+				}
+				.top-wrap {
+					.tit-area {
+						.badge {
+							background-color: #e84a1f;
+						}
+					}
+				}
+			}
+			&.top-type05 {
+				.logo-area {
+					span {
+						background-color: #e84a1f;
+					}
+				}
+				.grade {
+					color: #e84a1f;
+				}
+			}
+			&.top-type06 {
+				.top-wrap {
+					.badge {
+						background-color: #e84a1f;
+					}
+				}
+			}
+			&.top-type07 {
+				.grade-area {
+					color: #e84a1f;
+					background-color: #f5e7e4;
+				}
+			}
+			&.top-type08 {
+				.sub-txt {
+					color: #e84a1f;
+				}
+				.top-wrap {
+					.tit-area {
+						border-color: #e84a1f;
+					}
+				}
+			}
+		}
+		&.page-type {
+			.que-top {
+				.tit {
+					color: #e84a1f;
+				}
+			}
+		}
+	}
+	// 노랑 템플릿
+	&.color-type02 {
+		.que-badge-group {
+			color: #f0bf14;
+		}
+		.que-badge {
+			color: #f0bf14;
+		}
+		.que-cnt {
+			.problem-cnt {
+				.num {
+					color: #f0bf14;
+				}
+			}
+		}
+		.que-top {
+			border-color: #f0bf14;
+			.tit {
+				&::after {
+					background-color: #f0bf14;
+				}
+			}
+			.top-wrap {
+				.tit-area {
+					.tit {
+						.txt {
+							em {
+								color: #f0bf14;
+							}
+						}
+					}
+					
+				}
+			}
+			&.top-type01 {
+				.top-wrap {
+					border-color: #f0bf14;
+					background-color: #f9f5e6;
+					.tit {
+						.desc {
+							color: #f5db7f;
+						}
+					}
+				}
+				.badge {
+					color: #f0bf14;
+					border-color: #f0bf14;					
+				}
+			}
+			&.top-type02 {
+				.left-wrap {
+					background-color: #f0bf14;
+					.date {
+						color: #fbe28c;
+					}
+				}
+				.badge {
+					color: #f0bf14;
+					border-color: #f0bf14;
+					background-color: #f9f5e6;
+				}
+			}
+			&.top-type03 {
+				.top-wrap {
+					.grade {
+						background-color: #f0bf14;
+					}
+					.tit-area {
+						.tit {
+							.desc {
+								color: #f0bf14;
+							}
+						}
+					}
+				}
+				.info-wrap {
+					background-color: #826501;
+					.tit {
+						background-color: #9f7f11;
+					}
+					.info {
+						span {
+							&::before {
+								background-color: #fbe28c;
+							}
+						}
+					}
+				}
+			}
+			&.top-type04 {
+				.grade {
+					color: #f0bf14;
+				}
+				.top-wrap {
+					.tit-area {
+						.badge {
+							background-color: #f0bf14;
+						}
+					}
+				}
+			}
+			&.top-type05 {
+				.logo-area {
+					span {
+						background-color: #f0bf14;
+					}
+				}
+				.grade {
+					color: #f0bf14;
+				}
+				.que-top {
+					border-color: #f0bf14;
+				}
+			}
+			&.top-type06 {
+				.top-wrap {
+					.badge {
+						background-color: #f0bf14;
+					}
+				}
+			}
+			&.top-type07 {
+				.grade-area {
+					color: #f0bf14;
+					background-color: #f9f5e6;
+				}
+			}
+			&.top-type08 {
+				.sub-txt {
+					color: #f0bf14;
+				}
+				.top-wrap {
+					.tit-area {
+						border-color: #f0bf14;
+					}
+				}
+			}
+		}
+		&.page-type {
+			.que-top {
+				.tit {
+					color: #f0bf14;
+				}
+			}
+		}
+	}
+	// 연두 템플릿
+	&.color-type03 {
+		.que-badge-group {
+			color: #8abc04;
+		}
+		.que-badge {
+			color: #8abc04;
+		}
+		.que-cnt {
+			.problem-cnt {
+				.num {
+					color: #8abc04;
+				}
+			}
+		}
+		.que-top {
+			border-color: #8abc04;
+			.tit {
+				&::after {
+					background-color: #8abc04;
+				}
+			}
+			.top-wrap {
+				.tit-area {
+					.tit {
+						.txt {
+							em {
+								color: #8abc04;
+							}
+						}
+					}
+					
+				}
+			}
+			&.top-type01 {
+				.top-wrap {
+					border-color: #8abc04;
+					background-color: #f4fae4;
+					.tit {
+						.desc {
+							color: #c3e569;
+						}
+					}
+				}
+				.badge {
+					color: #8abc04;
+					border-color: #8abc04;					
+				}
+			}
+			&.top-type02 {
+				.left-wrap {
+					background-color: #8abc04;
+					.date {
+						color: #d8f980;
+					}
+				}
+				.badge {
+					color: #8abc04;
+					border-color: #8abc04;
+					background-color: #f4fae4;
+				}
+			}
+			&.top-type03 {
+				.top-wrap {
+					.grade {
+						background-color: #8abc04;
+					}
+					.tit-area {
+						.tit {
+							.desc {
+								color: #8abc04;
+							}
+						}
+					}
+				}
+				.info-wrap {
+					background-color: #608400;
+					.tit {
+						background-color: #759d09;
+					}
+					.info {
+						span {
+							&::before {
+								background-color: #d8f980;
+							}
+						}
+					}
+				}
+			}
+			&.top-type04 {
+				.grade {
+					color: #8abc04;
+				}
+				.top-wrap {
+					.tit-area {
+						.badge {
+							background-color: #8abc04;
+						}
+					}
+				}
+			}
+			&.top-type05 {
+				.logo-area {
+					span {
+						background-color: #8abc04;
+					}
+				}
+				.grade {
+					color: #8abc04;
+				}
+				.que-top {
+					border-color: #8abc04;
+				}
+			}
+			&.top-type06 {
+				.top-wrap {
+					.badge {
+						background-color: #8abc04;
+					}
+				}
+			}
+			&.top-type07 {
+				.grade-area {
+					color: #8abc04;
+					background-color: #f4fae4;
+				}
+			}
+			&.top-type08 {
+				.sub-txt {
+					color: #8abc04;
+				}
+				.top-wrap {
+					.tit-area {
+						border-color: #8abc04;
+					}
+				}
+			}
+		}
+		&.page-type {
+			.que-top {
+				.tit {
+					color: #8abc04;
+				}
+			}
+		}
+	}
+	// 파랑 템플릿
+	&.color-type04 {
+		.que-badge-group {
+			color: #209ceb;
+		}
+		.que-badge {
+			color: #209ceb;
+		}
+		.que-cnt {
+			.problem-cnt {
+				.num {
+					color: #209ceb;
+				}
+			}
+		}
+		.que-top {
+			border-color: #209ceb;
+			.tit {
+				&::after {
+					background-color: #209ceb;
+				}
+			}
+			.top-wrap {
+				.tit-area {
+					.tit {
+						.txt {
+							em {
+								color: #209ceb;
+							}
+						}
+					}
+					
+				}
+			}
+			&.top-type01 {
+				.top-wrap {
+					border-color: #209ceb;
+					background-color: #e4f3fd;
+					.tit {
+						.desc {
+							color: #69b6e7;
+						}
+					}
+				}
+				.badge {
+					color: #209ceb;
+					border-color: #209ceb;					
+				}
+			}
+			&.top-type02 {
+				.left-wrap {
+					background-color: #209ceb;
+					.date {
+						color: #7ecafa;
+					}
+				}
+				.badge {
+					color: #209ceb;
+					border-color: #209ceb;
+					background-color: #e4f3fd;
+				}
+			}
+			&.top-type03 {
+				.top-wrap {
+					.grade {
+						background-color: #209ceb;
+					}
+					.tit-area {
+						.tit {
+							.desc {
+								color: #209ceb;
+							}
+						}
+					}
+				}
+				.info-wrap {
+					background-color: #025489;
+					.tit {
+						background-color: #14679c;
+					}
+					.info {
+						span {
+							&::before {
+								background-color: #7ecafa;
+							}
+						}
+					}
+				}
+			}
+			&.top-type04 {
+				.grade {
+					color: #209ceb;
+				}
+				.top-wrap {
+					.tit-area {
+						.badge {
+							background-color: #209ceb;
+						}
+					}
+				}
+			}
+			&.top-type05 {
+				.logo-area {
+					span {
+						background-color: #209ceb;
+					}
+				}
+				.grade {
+					color: #209ceb;
+				}
+				.que-top {
+					border-color: #209ceb;
+				}
+			}
+			&.top-type06 {
+				.top-wrap {
+					.badge {
+						background-color: #209ceb;
+					}
+				}
+			}
+			&.top-type07 {
+				.grade-area {
+					color: #209ceb;
+					background-color: #e4f3fd;
+				}
+			}
+			&.top-type08 {
+				.sub-txt {
+					color: #209ceb;
+				}
+				.top-wrap {
+					.tit-area {
+						border-color: #209ceb;
+					}
+				}
+			}
+		}
+		&.page-type {
+			.que-top {
+				.tit {
+					color: #209ceb;
+				}
+			}
+		}
+	}
+	// 회색 템플릿
+	&.color-type05 {
+		.que-badge-group {
+			color: #828282;
+		}
+		.que-badge {
+			color: #828282;
+		}
+		.que-cnt {
+			.problem-cnt {
+				.num {
+					color: #828282;
+				}
+			}
+		}
+		.que-top {
+			border-color: #828282;
+			.tit {
+				&::after {
+					background-color: #828282;
+				}
+			}
+			.top-wrap {
+				.tit-area {
+					.tit {
+						.txt {
+							em {
+								color: #828282;
+							}
+						}
+					}
+					
+				}
+			}
+			&.top-type01 {
+				.top-wrap {
+					border-color: #828282;
+					background-color: #e9e7e7;
+					.tit {
+						.desc {
+							color: #969798;
+						}
+					}
+				}
+				.badge {
+					color: #828282;
+					border-color: #828282;					
+				}
+			}
+			&.top-type02 {
+				.left-wrap {
+					background-color: #828282;
+					.date {
+						color: #cccecf;
+					}
+				}
+				.badge {
+					color: #828282;
+					border-color: #828282;
+					background-color: #e9e7e7;
+				}
+			}
+			&.top-type03 {
+				.top-wrap {
+					.grade {
+						background-color: #828282;
+					}
+					.tit-area {
+						.tit {
+							.desc {
+								color: #828282;
+							}
+						}
+					}
+				}
+				.info-wrap {
+					background-color: #3f3f3f;
+					.tit {
+						background-color: #5e5e5e;
+					}
+					.info {
+						span {
+							&::before {
+								background-color: #c4c6c7;
+							}
+						}
+					}
+				}
+			}
+			&.top-type04 {
+				.grade {
+					color: #828282;
+				}
+				.top-wrap {
+					.tit-area {
+						.badge {
+							background-color: #828282;
+						}
+					}
+				}
+			}
+			&.top-type05 {
+				.logo-area {
+					span {
+						background-color: #828282;
+					}
+				}
+				.grade {
+					color: #828282;
+				}
+				.que-top {
+					border-color: #828282;
+				}
+			}
+			&.top-type06 {
+				.top-wrap {
+					.badge {
+						background-color: #828282;
+					}
+				}
+			}
+			&.top-type07 {
+				.grade-area {
+					color: #828282;
+					background-color: #e9e7e7;
+				}
+			}
+			&.top-type08 {
+				.sub-txt {
+					color: #828282;
+				}
+				.top-wrap {
+					.tit-area {
+						border-color: #828282;
+					}
+				}
+			}
+		}
+		&.page-type {
+			.que-top {
+				.tit {
+					color: #828282;
+				}
 			}
 		}
 	}
