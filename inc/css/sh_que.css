@@ -268,6 +268,16 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que.active { border: 2px solid #5a14be; background-color: #fcfaff; }
 
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-badge { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-width: 45px; height: 26px; padding: 0 13px; border-radius: 13px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 12px; font-weight: 500; line-height: 26px; }
+
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-badge.yellow { background-color: #fff6dc; color: #bb7b00; }
+
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-badge.green { background-color: #bfebdf; color: #1b9372; }
+
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-badge.blue { background-color: #d8e1f7; color: #4b70c9; }
+
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-badge.gray { background-color: #e8e8e8; color: #666666; }
+
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-bottom { width: 100%; height: 56px; border-top: 1px solid #dddddd; padding: 0 30px; -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-bottom .que-badge-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 20px; }
@@ -864,15 +874,23 @@ i.pen-type07 { width: 11px; height: 14px; background: url(../../images/common/ic
 
 .que-preview-wrap .que-bottom span em { font-weight: 600; color: #000; }
 
+.que-preview-wrap .cnt-type01 .problem-cnt { min-height: 1112px; height: auto; margin-bottom: 112px; }
+
 .que-preview-wrap .cnt-type02 .problem-cnt { min-height: 1112px; height: auto; margin-bottom: 112px; }
 
 .que-preview-wrap .cnt-type04 .problem-cnt { min-height: 500px; height: auto; margin-bottom: 112px; }
 
+.que-preview-wrap .cnt-type04.layout01::after { display: none; }
+
 .que-preview-wrap .cnt-type06 .problem-cnt { min-height: 360px; height: auto; margin-bottom: 48px; }
+
+.que-preview-wrap .cnt-type06.layout01::after { display: none; }
 
 .que-preview-wrap .cnt-multiple .problem-cnt { min-height: 98px; height: auto; margin-bottom: 55px; }
 
 .que-preview-wrap .cnt-multiple .problem-cnt .problem-wrap .problem-txt { margin-bottom: 0; }
+
+.que-preview-wrap .cnt-multiple.layout01::after { display: none; }
 
 .que-preview-wrap .cnt-table { display: block; }
 

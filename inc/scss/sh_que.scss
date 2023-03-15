@@ -603,6 +603,32 @@ i {
 								border: 2px solid $color-main-purple;
 								background-color: #fcfaff;
 							}
+							.que-badge {
+								@include content-center-center;
+								min-width: 45px;
+								height: 26px;
+								padding: 0 13px;
+								border-radius: 13px;
+								box-sizing: border-box;
+								@include font(12px, 500);
+								line-height: 26px;
+								&.yellow {
+									background-color: #fff6dc;
+									color: #bb7b00;
+								}
+								&.green {
+									background-color: #bfebdf;
+									color: #1b9372;
+								}
+								&.blue {
+									background-color: #d8e1f7;
+									color: #4b70c9;
+								}
+								&.gray {
+									background-color: #e8e8e8;
+									color: #666666;
+								}
+							}
 						}
 					}
 					.view-bottom {
@@ -1989,6 +2015,17 @@ i {
 			}
 		}
 	}
+	// 1문항 템플릿
+	.cnt-type01 {
+		.problem-cnt {
+			min-height: 1112px;
+			height: auto;
+			margin-bottom: 112px;
+		}
+		.layout {
+
+		}
+	}
 	// 2문항 템플릿
 	.cnt-type02 {
 		.problem-cnt {
@@ -2004,6 +2041,11 @@ i {
 			height: auto;
 			margin-bottom: 112px;
 		}
+		&.layout01 {
+			&::after {
+				display: none;
+			}
+		}
 	}
 	// 6문항 템플릿
 	.cnt-type06 {
@@ -2011,6 +2053,11 @@ i {
 			min-height: 360px;
 			height: auto;
 			margin-bottom: 48px;
+		}
+		&.layout01 {
+			&::after {
+				display: none;
+			}
 		}
 	}
 	// 다문항 템플릿
@@ -2023,6 +2070,11 @@ i {
 				.problem-txt {
 					margin-bottom: 0;
 				}
+			}
+		}
+		&.layout01 {
+			&::after {
+				display: none;
 			}
 		}
 	}
