@@ -349,6 +349,7 @@ i {
 							box-sizing: border-box;
 							padding: 0 30px;
 							@media (max-width: 1280px) {
+								overflow-y: auto;
 								height: calc(630px - 52px);
 							}
 							.box {
@@ -449,6 +450,20 @@ i {
 									border-top: 1px solid $color-line-type02;
 								}
 							}
+						}
+						.unit-box::-webkit-scrollbar,
+						.type-box::-webkit-scrollbar {
+							width: 28px;
+						}
+						.unit-box::-webkit-scrollbar-thumb,
+						.type-box::-webkit-scrollbar-thumb {
+							background-color: #cfcfcf;
+							border: 10px solid #fff;
+							border-radius: 35px;  
+						}
+						.unit-box::-webkit-scrollbar-track,
+						.type-box::-webkit-scrollbar-track {
+							background-color: transparent;
 						}
 					}
 				}
@@ -644,11 +659,37 @@ i {
 							.que-badge-wrap {
 								@include layout-center-center;
 								gap: 5px;
-								.que-badge {
+								/*.que-badge {
 									min-width: 24px;
 									height: 24px;
 									border-radius: 12px;
 									padding: 0;
+								}*/
+								.que-badge {
+									@include content-center-center;
+									min-width: 45px;
+									height: 26px;
+									padding: 0 13px;
+									border-radius: 13px;
+									box-sizing: border-box;
+									@include font(12px, 500);
+									line-height: 26px;
+									&.yellow {
+										background-color: #fff6dc;
+										color: #bb7b00;
+									}
+									&.green {
+										background-color: #bfebdf;
+										color: #1b9372;
+									}
+									&.blue {
+										background-color: #d8e1f7;
+										color: #4b70c9;
+									}
+									&.gray {
+										background-color: #e8e8e8;
+										color: #666666;
+									}
 								}
 								.num {
 									@include font(16px, 500);
@@ -2022,9 +2063,9 @@ i {
 			height: auto;
 			margin-bottom: 112px;
 		}
-		.layout {
+		// .layout {
 
-		}
+		// }
 	}
 	// 2문항 템플릿
 	.cnt-type02 {
@@ -3591,11 +3632,11 @@ i {
 							}
 							.btn-wrap {
 								gap: 5px;
-								.btn-icon {
-									&.star {
+								// .btn-icon {
+								// 	&.star {
 										
-									}
-								}
+								// 	}
+								// }
 							}
 						}
 					}
