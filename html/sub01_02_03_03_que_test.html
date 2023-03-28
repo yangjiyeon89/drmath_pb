@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div class="dim" style="display: block;"></div>
+  <!-- 시작페이지 -->
+  <!-- 
+    색상별 클래스
+    보라 = class 없음
+    빨강 = color-type01
+    노랑 = color-type02
+    연두 = color-type03
+    파랑 = color-type04
+    회색 = color-type05    
+  -->
+  <div class="que-preview-wrap color-type01">
+    <!-- 타이틀 -->
+    <!-- 타이틀 템플릿01 -->
+    <div class="que-top top-type01">
+      <div class="info-wrap">
+        <span class="date">2022.12.13</span>
+        <div class="info">
+          <span>20문제</span>
+          <span>김천재 선생님</span>
+          <span class="name">이름: </span>
+        </div>        
+      </div>
+      <div class="top-wrap">
+        <div class="tit-area">
+          <span class="badge">수능대비</span>
+          <div class="tit">
+            <p class="txt"><em>중1</em> 점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 타이틀 템플릿02 -->
+    <div class="que-top top-type02" style="display: none;">
+      <div class="left-wrap">
+        <span class="date">2022.12.13</span>
+        <div class="grade">중1</div>
+        <div class="info">
+          <span>20문제</span>
+          <span>김천재 선생님</span>
+        </div>
+      </div>
+      <div class="tit-wrap">        
+        <div class="tit-area">
+          <span class="badge">수능대비</span>
+          <div class="tit">
+            <p class="txt">점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+        <div class="right-area">
+          <img src="../images/common/logo.png" alt="닥터매쓰">
+          <span class="name">이름:</span>
+        </div>
+      </div>
+    </div>
+    <!-- 타이틀 템플릿03 -->
+    <div class="que-top top-type03" style="display: none;">
+      <div class="info-wrap">
+        <span class="tit">수능대비</span>
+        <div class="info">
+          <span class="date">2022.12.13</span>
+          <span>20문제</span>
+          <span>김천재 선생님</span>
+        </div>        
+      </div>
+      <div class="top-wrap">
+        <div class="tit-area">
+          <span class="grade">중1</span>
+          <div class="tit">
+            <p class="txt">점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+        <span class="name">이름: </span>
+      </div>      
+    </div>
+    <!-- 타이틀 템플릿04 -->
+    <div class="que-top top-type04" style="display: none;">      
+      <div class="top-wrap">
+        <div class="tit-area">
+          <span class="grade">중1</span>
+          <div class="tit">
+            <p class="txt">점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+          <span class="badge">수능대비</span>
+        </div>
+      </div>
+      <div class="info-wrap">
+        <span class="name">이름: </span>
+        <div class="info">
+          <span class="date">2022.12.13</span>
+          <span>20문제</span>
+          <span>김천재 선생님</span>
+        </div>        
+      </div>
+    </div>
+    <!-- 타이틀 템플릿05 -->
+    <div class="que-top top-type05" style="display: none;">
+      <div class="logo-area">
+        <span>수능대비</span>
+        <img src="../images/common/logo.png" alt="닥터매쓰">
+      </div>  
+      <div class="top-wrap">
+        <div class="tit-area">
+          <span class="grade">중1</span>
+          <div class="tit">
+            <p class="txt">점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+        <div class="info-wrap">          
+          <div class="info">
+            <span class="date">2022.12.13</span>
+            <span>20문제</span>
+            <span>김천재 선생님</span>
+          </div>
+          <span class="name">이름: </span>
+        </div>
+      </div>      
+    </div>
+    <!-- 타이틀 템플릿06 -->
+    <div class="que-top top-type06" style="display: none;">
+      <div class="top-wrap">
+        <span class="badge">수능대비</span>
+        <div class="tit-area">
+          <div class="tit">
+            <p class="txt"><em>중1</em> 점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+        <div class="info-wrap">          
+          <div class="info">
+            <span>20문제</span>
+            <span>김천재 선생님</span>
+            <span class="name">이름: </span>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- 타이틀 템플릿07 -->
+    <div class="que-top top-type07" style="display: none;">      
+      <div class="top-wrap">
+        <div class="tit-area">
+          <div class="grade-area">
+            <span class="sub-txt">기말고사 대비</span>
+            <span class="grade">중1</span>
+          </div>
+          <div class="tit">
+            <p class="txt">점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+          <img src="../images/common/logo.png" alt="닥터매쓰">
+        </div>
+      </div>
+      <div class="info-wrap">
+        <div class="info">
+          <span>20문제</span>
+          <span>김천재 선생님</span>
+          <span class="name">이름: </span>
+        </div>
+        <span class="date">2022.12.13</span>
+      </div>
+    </div>
+    <!-- 타이틀 템플릿08 -->
+    <div class="que-top top-type08" style="display: none;">
+      <div class="top-wrap">
+        <div class="tit-area">
+          <span class="sub-txt">기말고사 대비</span>
+          <div class="tit">
+            <p class="txt"><em>중1</em> 점, 직선, 평면의 위치 관계</p>
+            <span class="desc">다각형~부채꼴의 호의 길이와 넓이</span>
+          </div>
+        </div>
+        <img src="../images/common/logo.png" alt="닥터매쓰">
+      </div>
+      <div class="info-wrap">
+        <span class="name">이름: </span>
+        <div class="info">
+          <span class="date">2022.12.13 /</span>
+          <span>20문제 /</span>
+          <span>김천재 선생님</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 문제지 -->
+
+    <!-- 2단 -->
+    <!-- 4분할 타입 -->
+    <div class="que-cnt cnt-type04">
+      <div class="layout type-one">
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">01</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">02</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)22x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">03</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오. 다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)22x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">04</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="que-bottom">
+      <img src="../images/common/logo.png" alt="닥터매쓰">
+      <span><em>1</em> / 1</span>
+    </div>
+  </div>
+
+  <!-- 다음페이지 -->
+  <div class="que-preview-wrap page-type color-type01">
+    <div class="que-top">
+      <div class="page-title">
+        <span class="tit">수능대비</span>
+        <span class="txt">점, 직선, 평면의 위치 관계</span>
+      </div>
+    </div>
+
+
+    <!-- 2단 -->
+    <!-- 6분할 타입 -->
+    <div class="que-cnt cnt-type06">
+      <div class="layout type-one">
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">07</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">08</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">09</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">10</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">11</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="problem-cnt">
+          <div class="que-badge-group">
+            <span class="que-badge">문제유형</span>
+            <em>/</em>
+            <span class="que-badge">난이도</span>
+            <em>/</em>
+            <span class="que-badge">출제율</span>
+          </div>
+          <div class="problem-wrap">
+            <span class="num">12</span>
+            <div>
+              <p class="problem-txt">다음 등식이 x에 대한 항등식일  때, 상수 a, b, c의 값을 구하시오.</p>
+              <ul class="choice-list">
+                <ol><em>①</em><span>2x2−7x+3=ax(x+1)+b(x+1)(x−1)+cx(x−1)</span></ol>
+                <ol><em>②</em><span>x+2=a(x−1)(x+2)+bx(x+2)+cx(x−1)</span></ol>
+                <ol><em>③</em><span>x2−x−6=ax(x+1)+b(x+1)+cx(x+3)</span></ol>
+                <ol><em>④</em><span>3x2−ax+1=bx(x−2)+c(x−1)2</span></ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="que-bottom">
+      <span><em>1</em> / 1</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1986,9 +1986,20 @@ i {
 			background-color: $color-line-type02;
 		}
 		.layout {
+			display: flex;
+			flex-wrap: wrap;
 			width: 50%;
 			padding: 0 30px;
 			box-sizing: border-box;
+			&.type-one {
+				width: 100%;
+				padding: 0;
+				.problem-cnt {
+					width: calc(50% - 2px);
+					padding: 0 30px;
+					box-sizing: border-box;
+				}
+			}
 		}
 		.problem-cnt {
 			margin-bottom: 100px;
@@ -2087,6 +2098,22 @@ i {
 				display: none;
 			}
 		}
+		.type-one {
+			.problem-cnt {
+				&:nth-child(1) {
+					order: 1;
+				}
+				&:nth-child(2) {
+					order: 3;
+				}
+				&:nth-child(3) {
+					order: 2;
+				}
+				&:nth-child(4) {
+					order: 4;
+				}
+			}
+		}
 	}
 	// 6문항 템플릿
 	.cnt-type06 {
@@ -2098,6 +2125,28 @@ i {
 		&.layout01 {
 			&::after {
 				display: none;
+			}
+		}
+		.type-one {
+			.problem-cnt {
+				&:nth-child(1) {
+					order: 1;
+				}
+				&:nth-child(2) {
+					order: 3;
+				}
+				&:nth-child(3) {
+					order: 5;
+				}
+				&:nth-child(4) {
+					order: 2;
+				}
+				&:nth-child(5) {
+					order: 4;
+				}
+				&:nth-child(6) {
+					order: 6;
+				}
 			}
 		}
 	}
