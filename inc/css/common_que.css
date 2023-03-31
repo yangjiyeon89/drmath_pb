@@ -1178,7 +1178,7 @@ input[type="checkbox"]:checked + label::before { background: url(../../images/co
 
 .pop-wrap.answer-sheet-type.type02 .sheet-cnt { width: calc(100% - 499px); width: 600px; }
 
-.pop-wrap.answer-sheet-type.type02 .sheet-cnt .scroll-inner { border-left: 1px solid #dddddd; }
+.pop-wrap.answer-sheet-type.type02 .sheet-cnt .scroll-inner { position: -webkit-sticky; position: sticky; top: 0; border-left: 1px solid #dddddd; }
 
 .pop-wrap.answer-sheet-type.type02 .answer-cnt { width: 499px; }
 

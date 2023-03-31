@@ -2827,6 +2827,8 @@ input[type="checkbox"] {
         width: calc(100% - 499px);
         width: 600px;
         .scroll-inner {
+          position: sticky;
+          top: 0;
           border-left: 1px solid $color-line-type02;
         }
       }
