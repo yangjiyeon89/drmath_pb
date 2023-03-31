@@ -2689,6 +2689,10 @@ input[type="checkbox"] {
     .sheet-cnt {
       width: calc(100% - 410px);
       border-bottom: 1px solid $color-line-type02;
+      .swiper-wrapper {
+        position: sticky;
+        top: 0;
+      }
     }
     .tit-wrap, .name-wrap {
       @include layout-center;
