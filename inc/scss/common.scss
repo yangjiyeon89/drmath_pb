@@ -639,12 +639,27 @@ input[type="checkbox"] {
       padding: 30px 20px;
       font-weight: 500;
       .chk-box {
+        position: relative;
         & + .chk-box {
           margin-top: 20px;
         }
       }
       em {
         color: $color-main-purple;
+      }
+      button {
+        position: absolute;
+        right: 0;top: -4px;
+        padding-right: 15px;
+        &::before {
+          position: absolute;
+          top: 50%;right: 0;
+          @include virtual-selector;
+          width: 7px;height: 11px;
+          margin-top: -5px;
+          background: url(../../images/common/ico_arrow_c.png) no-repeat; 
+          background-size: contain;
+        }
       }
     }
   }
