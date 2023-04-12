@@ -416,6 +416,9 @@ input[type="checkbox"] {
       }
     }
   }
+  &.scroll-type {
+    height: 214px;
+  }
 }
 [class^='form-txt-'] {
   margin-left: 2px;
