@@ -192,7 +192,6 @@
 														<em class="time-txt">03:00</em>
 													</div>
 													<button type="button" class="btn-line-type01">인증 확인</button>
-
 												</div>
 												<span class="form-txt-error"><img src="../images/common/ico_check01.png" alt="">인증번호가 정확하지 않습니다.
 													다시 확인해 주세요</span>
@@ -200,20 +199,42 @@
 										</div>
 									</div>
 								</div>
-
 							</div>
 							<div class="text-box">
 								<textarea name="" id="" cols="30" rows="12" placeholder="문의 내용을 입력해주세요. (500자 이내)"></textarea>
 							</div>
 							<div class="line"></div>
-
+							<!-- S: 20230404 :: 추가 -->
+							<div class="table-tit">
+								<span class="tit">개인정보 수집 및 이용 안내 동의</span>
+							</div>
+							<div class="table-form type02">
+								<table>
+									<tbody>
+										<tr>
+											<th>
+												<input type="checkbox" id="chk02_all" class="allCheck">
+												<label for="chk02_all">전체 동의 합니다.</label>
+											</th>
+										</tr>
+										<tr>
+											<td>
+												<div class="chk-box">
+													<input type="checkbox" id="chk02_02">
+													<label for="chk02_02"></label>
+													<a href="javascript:;">개인정보 수집 및 이용 안내<em>(필수)</em></a>
+													<button class="pop-btn" data-pop="pop01" type="button">상세보기</button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- e: 20230404 :: 추가 -->
 							<div class="btn-wrap">
 								<button type="button" class="btn-default-type02 pop-btn" data-pop="cancle-pop">취소</button>
 								<button type="button" class="btn-default-type01 pop-btn" data-pop="ask-pop">등록</button>
 							</div>
-
-
-
 						</div>
 					</div>
 				</div>
@@ -246,6 +267,21 @@
 			</div>
 		</div>
 		<div class="dim"></div>
+		<!-- S: 230414:: 서비스 약관 동의 팝업 -->
+		<div class="pop-wrap content-type" data-pop="pop01">
+			<div class="pop-header">
+				<span class="tit">개인 정보 수집 및 이용 안내</span>
+				<button type="button" class="pop-close"></button>
+			</div>
+			<div class="pop-content">
+				<div class="scroll-inner"></div>
+			</div>
+			<div class="pop-footer">
+				<button>확인</button>
+			</div>
+		</div>
+		<!-- E: 230414:: 서비스 약관 동의 팝업 -->
+
 		<!-- 등록여부 팝업 -->
 		<div class="pop-wrap alert-type" data-pop="ask-pop">
 			<div class="pop-content">
