@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub.css">
+  <link rel="stylesheet" href="../inc/css/sh_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="full-pop-que">
+    <div class="full-pop-wrap">
+      <div class="pop-header">
+        <ul class="title">
+          <li class="active"><img src="../images/sub/ico_step_active.jpg" alt="">STEP 1 단원선택</li>
+          <li>STEP 2 문힝편집</li>
+          <li>STEP 3 문제지 설정</li>
+        </ul>
+        <button type="button" class="pop-btn" data-pop="que-alert-pop"></button>
+      </div>
+      <div class="pop-content">
+        <div class="tab-wrap tab-list-type01">
+          <ul class="tab-menu-type01">
+            <li class="ui-tab-btn active">
+              <a href="javascript:;">단원/유형별</a>
+            </li>
+            <li class="ui-tab-btn">
+              <a href="javascript:;">교재별</a>
+            </li>
+          </ul>
+          <div class="contents on">
+            <div class="unit-box-wrap">
+              <div class="unit-box">
+                <div class="tab-top">
+                  <div class="left-wrap">
+                    <ul class="tab-menu-type02">
+                      <li class="ui-tab-btn active">
+                        <a href="javascript:;">초</a>
+                      </li>
+                      <li class="ui-tab-btn">
+                        <a href="javascript:;">중</a>
+                      </li>
+                      <li class="ui-tab-btn">
+                        <a href="javascript:;">고</a>
+                      </li>
+                    </ul>
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn">1학년</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">1학년</a>
+                          <a href="javascript:;">2학년</a>
+                          <a href="javascript:;">3학년</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="search-box">
+                    <input type="text" placeholder="키워드 검색" class="search">
+                    <button type="button" class="btn-search"></button>
+                  </div>
+                </div>
+                <div class="content on">
+                  <div class="unit-cnt scroll-inner">
+                    <ul>
+                      <li>
+                        <div class="check-group title">
+                          <div class="title-chk">
+                            <input type="checkbox" id="chk01_01" class="que-allCheck depth01">
+                            <label for="chk01_01">
+                              <button type="button" class="dep-btn active">초 1-1</button>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="depth02">
+                          <div class="check-group">
+                            <input type="checkbox" id="chk01_02" class="que-allCheck depth01">
+                            <label for="chk01_02">
+                              <button type="button" class="dep-btn active">자연수의 성질
+                                <span class="num">(123)</span>
+                              </button>
+                            </label>
+                          </div>
+                          <div class="depth03">
+                            <div class="check-group">
+                              <input type="checkbox" id="chk01_03" class="que-allCheck depth01">
+                              <label for="chk01_03">
+                                <button type="button" class="dep-btn active">소인수분해
+                                  <span class="num">(15)</span>
+                                </button>
+                              </label>
+                            </div>
+                            <div class="depth04">
+                              <div class="check-group">
+                                <input type="checkbox" id="chk01_04" class="que-allCheck depth01">
+                                <label for="chk01_04">
+                                  <button type="button" class="dep-btn active">거듭제곱</button>
+                                </label>
+                              </div>
+                              <div class="depth05">
+                                <div class="check-group">
+                                  <input type="checkbox" id="chk01_05">
+                                  <label for="chk01_05">
+                                    <span>거듭제곱으로 표현</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="check-group">
+                                <input type="checkbox" id="chk01_06">
+                                <label for="chk01_06">
+                                  <span>소수와 합성수</span>
+                                </label>
+                              </div>
+                              <div class="check-group">
+                                <input type="checkbox" id="chk01_07">
+                                <label for="chk01_07">
+                                  <span>소인수분해</span>
+                                </label>
+                              </div>
+                              <div class="check-group">
+                                <input type="checkbox" id="chk01_08">
+                                <label for="chk01_08">
+                                  <span>소인수분해를 이용하여 약수 구하기</span>
+                                </label>
+                              </div>
+                              <div class="check-group">
+                                <input type="checkbox" id="chk01_09">
+                                <label for="chk01_09">
+                                  <span>최대공약수와 최소공배수</span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="check-group">
+                            <input type="checkbox" id="chk01_10">
+                            <label for="chk01_10">
+                              <span>정수와 유리수
+                                <span class="num">(10)</span>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="check-group">
+                            <input type="checkbox" id="chk01_11">
+                            <label for="chk01_11">
+                              <span>문자와 식</span>
+                            </label>
+                          </div>
+                          <div class="check-group">
+                            <input type="checkbox" id="chk01_12">
+                            <label for="chk01_12">
+                              <span>일차방정식</span>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="check-group title">
+                          <div class="title-chk">
+                            <input type="checkbox" id="chk02_01" class="que-allCheck depth01">
+                            <label for="chk02_01">
+                              <button type="button" class="dep-btn">초 1-2</button>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="unit-cnt">
+                    탭 컨텐츠 (2)
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="unit-cnt">
+                    탭 컨텐츠 (3)
+                  </div>
+                </div>
+              </div>
+              <div class="type-box">
+                <div class="box">
+                  <div class="title-wrap">
+                    <span class="tit-text">문제 수<em>최대 100문제</em></span>
+                  </div>
+                  <div class="btn-wrap">
+                    <button type="button" class="btn-line">10</button>
+                    <button type="button" class="btn-line">15</button>
+                    <button type="button" class="btn-line">20</button>
+                    <button type="button" class="btn-line">30</button>
+                    <button type="button" class="btn-line">50</button>
+                  </div>
+                  <div class="gray-box">
+                    <span class="desc">* 5의 배수로 입력해주세요.</span>
+                    <span class="num">총 <input type="text" value="20"> 문제</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-wrap">
+                    <span class="tit-text">문제 형태</span>
+                    <div class="right-area">
+                      <div class="tooltip-wrap">
+                        <button type="button" class="btn-tip"></button>
+                        <div class="tooltip">
+                          <span>학생이 학생앱에 답을 입력하면,<br>자동으로 채점이 이루어지는 기능입니다.</span>
+                        </div>
+                      </div>
+                      <div class="toggle-wrap">
+                        <span class="tit on">자동채점 ON</span>
+                        <div class="toggle-btn">
+                          <input type="checkbox" class="checkbox">
+                          <div class="knobs"></div>
+                          <div class="layer"></div>
+                        </div>
+                      </div>
+                    </div>   
+                  </div>
+                  <div class="btn-wrap multi">
+                    <button type="button" class="btn-line">객관식</button>
+                    <button type="button" class="btn-line">주관식</button>
+                    <button type="button" class="btn-line">서술형</button>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="title-wrap">
+                    <span class="tit-text">난이도 구성</span>
+                  </div>
+                  <div class="btn-wrap multi">
+                    <button type="button" class="btn-line type02 color01">최하</button>
+                    <button type="button" class="btn-line type02 color02">하</button>
+                    <button type="button" class="btn-line type02 color03">중</button>
+                    <button type="button" class="btn-line type02 color04">상</button>
+                    <button type="button" class="btn-line type02 color05">최상</button>
+                  </div>
+              </div>
+              <div class="box">
+                <div class="title-wrap">
+                  <span class="tit-text">난이도 분포 
+                    <button type="button" class="btn-icon fix-s pop-btn" data-pop="que-range-pop"><i class="setting-type02"></i></button>
+                  </span>
+                </div>
+                <div class="range-wrap">
+                  <span class="range color02" style="width: 20%;">하(4)</span>
+                  <span class="range color03" style="width: 40%;">중(8)</span>
+                  <span class="range color04" style="width: 40%;">상(8)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contents">
+            탭 컨텐츠 (2)
+          </div>
+        </div>
+      </div>
+      <div class="step-btn-wrap single">
+        <button type="button" class="btn-step next">STEP 2</button>
+      </div>
+    </div>
+    <div class="dim"></div>
+    <!-- 변경사항 저장 팝업 -->
+    <div class="pop-wrap alert-type" data-pop="que-alert-pop">
+      <div class="pop-inner">
+        <div class="pop-content">
+          <button type="button" class="pop-close"></button>
+          <img src="../images/common/ico_pop.png" alt="">
+          <span class="txt">페이지 이동 시 변경사항이<br>저장되지 않습니다.</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- 난이도 분포 설정 팝업 -->
+    <div class="pop-wrap range-type" data-pop="que-range-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>난이도 분포 설정</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <span class="txt">난이도 영역을 클릭 & 드래그하여 난이도 분포를 조절하세요.</span>
+        
+        </div>
+        <div class="pop-footer">
+          <button>기본값 복원</button>
+          <button>저장하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function () {
+    // depth
+    let depBtn = $('.dep-btn');
+
+    function depFunc(){
+      let _this = $(this);
+
+      if(!_this.hasClass('active')){
+        _this.addClass('active');
+        _this.parents('.check-group').next('div').stop().slideUp('fast');
+
+      } else {
+        _this.removeClass('active');
+        _this.parents('.check-group').next('div').stop().slideDown('fast');
+      }
+
+      _this.parents('.check-group').toggleClass('on');
+    }
+
+    depBtn.on('click', depFunc);
+
+
+    // que-checkbox
+    let queChkAll = $('.que-allCheck');
+
+    function queCheckFunc(){
+      let _this = $(this);
+
+      if(_this.prop('checked')){
+        _this.parents().next('ul').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents().next('ul').find('input[type=checkbox]').prop('checked', false);
+      }
+
+      if(_this.prop('checked') && _this.hasClass('depth01')) {
+        _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('.check-group').next('div').find('input[type=checkbox]').prop('checked', false);
+      }
+
+      if(_this.prop('checked')){
+        _this.parents('table').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('table').find('input[type=checkbox]').prop('checked', false);
+      }
+
+    }
+
+    queChkAll.on('click', queCheckFunc)
+  });
+</script>
+</html>
