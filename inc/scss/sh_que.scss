@@ -1125,6 +1125,17 @@ i {
 									transform: scale(0.32);
 								}
 							}
+							.report-wrap {
+								position: absolute;
+								top: -62%;
+								left: -44%;
+								transform: scale(0.44);
+								border: 1px solid $color-line-type02;
+								@media (max-width: 1280px) {
+									top: -102%;
+									transform: scale(0.32);
+								}
+							}
 						}
 					}
 					

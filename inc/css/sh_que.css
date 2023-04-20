@@ -1230,6 +1230,19 @@ i.pen-type07 {
     transform: scale(0.32);
   }
 }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box .report-wrap {
+  position: absolute;
+  top: -62%;
+  left: -44%;
+  transform: scale(0.44);
+  border: 1px solid #dddddd;
+}
+@media (max-width: 1280px) {
+  .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .preview-box .img-box .report-wrap {
+    top: -102%;
+    transform: scale(0.32);
+  }
+}
 .full-pop-que .full-pop-wrap .pop-content.cnt02 .top-box {
   position: relative;
 }
