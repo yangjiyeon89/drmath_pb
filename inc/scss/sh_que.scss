@@ -3067,9 +3067,9 @@ i {
 	height: 1625px;
 	z-index: 4;
 	box-sizing: border-box;
-	font-family: 'S-CoreDream', sans-serif;
 	//표지
 	.cover-cnt {
+		position: relative;
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -3081,6 +3081,7 @@ i {
 		//표지 템플릿01
 		&.type01 {
 			background: url(../../images/sub/report_cover_01_01.png) no-repeat #fff;
+			font-family: 'S-CoreDream', sans-serif;
 			.inner {
 				padding: 100px 50px;
 			}
@@ -3095,6 +3096,7 @@ i {
 			.tit {
 				@include font(90px, 600);
 				padding: 50px 0;
+				color: #212121;
 			}
 			.txt {
 				@include font(24px, 500);
@@ -3103,10 +3105,11 @@ i {
 					position: relative;
 					@include font(24px, 500);
 					margin-right: 50px;
+					line-height: 2;
 					&::before {
 						@include virtual-selector;
 						position: absolute;
-						top: 2px;
+						top: 12px;
 						right: -25px;
 						width: 1px;
 						height: 24px;
@@ -3118,6 +3121,7 @@ i {
 		//표지 템플릿02
 		&.type02 {
 			background: url(../../images/sub/report_cover_02_01.png) no-repeat #fff;
+			font-family: 'S-CoreDream', sans-serif;
 			.logo {
 				width: 100%;
 				text-align: right;
@@ -3135,6 +3139,7 @@ i {
 			.tit {
 				@include font(90px, 600);
 				padding: 50px 0;
+				color: #212121;
 			}
 			.txt {
 				.color-txt {
@@ -3151,18 +3156,154 @@ i {
 		//표지 템플릿03
 		&.type03 {
 			background: url(../../images/sub/report_cover_03_01.png) no-repeat #fff;
+			.inner {
+				padding: 70px 80px;
+			}
+			.title-wrap {
+				text-align: center;
+				margin-top: 140px;
+			}
+			.color-txt {
+				@include font(24px, 500);
+				color: #5a14be;
+			}
+			.tit {
+				@include font(80px, 700);
+				padding: 30px 0 80px 0;
+			}
+			.txt {
+				@include font(24px, 500);
+				line-height: 2;
+				em {
+					display: inline-block;
+					position: relative;
+					@include font(24px, 500);
+					margin-right: 50px;
+					&::before {
+						@include virtual-selector;
+						position: absolute;
+						top: 12px;
+						right: -25px;
+						width: 1px;
+						height: 24px;
+						background-color: #000;
+					}
+				}
+			}
 		}
 		//표지 템플릿04
 		&.type04 {
 			background: url(../../images/sub/report_cover_04_01.png) no-repeat #fff;
+			.logo {
+				position: absolute;
+				left: 80px;
+				bottom: 100px;
+			}
+			.title-wrap {
+				color: #fff;
+				padding: 135px 570px 0 120px;
+				box-sizing: border-box
+			}
+			.top-txt {
+				@include font(18px, 500);
+				margin-bottom: 10px;
+			}
+			.tit {
+				@include font(50px, 600);
+				margin-bottom: 80px;
+			}
+			.txt {
+				span {
+					display: block;
+					@include font(28px, 600);
+					margin-bottom: 40px;
+					line-height: 1.4;
+					em {
+						display: block;
+						@include font(24px, 500);
+					}
+				}
+			}
 		}
 		//표지 템플릿05
 		&.type05 {
 			background: url(../../images/sub/report_cover_05_01.png) no-repeat #fff;
+			.inner {
+				padding-top: 300px;
+			}
+			.title-wrap {
+				width: 100%;
+				padding: 0 150px;
+				box-sizing: border-box;
+			}
+			.logo {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 110px;
+			}
+			.tit {
+				@include font(90px, 700);
+				color: #000;
+				margin-bottom: 370px;
+				text-align: center;
+			}
+			.txt {
+				@include font(24px, 500);
+				span {
+					display: block;
+					margin-bottom: 20px;
+					line-height: 1.4;
+					em {
+						display: block;
+						@include font(18px, 700);
+					}
+				}
+			}
+			.color-txt {
+				display: block;
+				margin-bottom: 20px;
+				@include font(24px, 700);
+				color: #5a14be;
+			}
 		}
 		//표지 템플릿06
 		&.type06 {
 			background: url(../../images/sub/report_cover_06_01.png) no-repeat #fff;
+			.inner {
+				padding: 70px 80px;
+			}
+			.title-wrap {
+				text-align: center;
+				margin-top: 140px;
+			}
+			.color-txt {
+				@include font(24px, 700);
+				color: #5a14be;
+			}
+			.tit {
+				@include font(70px, 700);
+				padding: 30px 0 80px 0;
+			}
+			.txt {
+				@include font(24px, 500);
+				em {
+					display: inline-block;
+					position: relative;
+					@include font(24px, 500);
+					margin-right: 50px;
+					line-height: 2;
+					&::before {
+						@include virtual-selector;
+						position: absolute;
+						top: 12px;
+						right: -25px;
+						width: 1px;
+						height: 24px;
+						background-color: #000;
+					}
+				}
+			}
 		}
 	}
 	&.page-type {
@@ -3185,15 +3326,24 @@ i {
 			}
 			&.type03 {
 				background: url(../../images/sub/report_cover_03_02.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #e84a1f; }
+				}	
 			}
 			&.type04 {
 				background: url(../../images/sub/report_cover_04_02.png) no-repeat #fff;
 			}
 			&.type05 {
 				background: url(../../images/sub/report_cover_05_02.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #e84a1f; }
+				}	
 			}
 			&.type06 {
 				background: url(../../images/sub/report_cover_06_02.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #e84a1f; }
+				}	
 			}
 		}
 	}
@@ -3214,15 +3364,24 @@ i {
 			}
 			&.type03 {
 				background: url(../../images/sub/report_cover_03_03.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #f0bf14; }
+				}	
 			}
 			&.type04 {
 				background: url(../../images/sub/report_cover_04_03.png) no-repeat #fff;
 			}
 			&.type05 {
 				background: url(../../images/sub/report_cover_05_03.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #f0bf14; }
+				}	
 			}
 			&.type06 {
 				background: url(../../images/sub/report_cover_06_03.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #f0bf14; }
+				}	
 			}
 		}
 	}
@@ -3243,15 +3402,24 @@ i {
 			}
 			&.type03 {
 				background: url(../../images/sub/report_cover_03_04.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #8abc04; }
+				}	
 			}
 			&.type04 {
 				background: url(../../images/sub/report_cover_04_04.png) no-repeat #fff;
 			}
 			&.type05 {
 				background: url(../../images/sub/report_cover_05_04.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #8abc04; }
+				}	
 			}
 			&.type06 {
 				background: url(../../images/sub/report_cover_06_04.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #8abc04; }
+				}
 			}
 		}
 	}
@@ -3272,15 +3440,24 @@ i {
 			}
 			&.type03 {
 				background: url(../../images/sub/report_cover_03_05.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #209ceb; }
+				}	
 			}
 			&.type04 {
 				background: url(../../images/sub/report_cover_04_05.png) no-repeat #fff;
 			}
 			&.type05 {
 				background: url(../../images/sub/report_cover_05_05.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #209ceb; }
+				}	
 			}
 			&.type06 {
 				background: url(../../images/sub/report_cover_06_05.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #209ceb; }
+				}
 			}
 		}
 	}
@@ -3301,15 +3478,24 @@ i {
 			}
 			&.type03 {
 				background: url(../../images/sub/report_cover_03_06.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #828282; }
+				}	
 			}
 			&.type04 {
 				background: url(../../images/sub/report_cover_04_06.png) no-repeat #fff;
 			}
 			&.type05 {
 				background: url(../../images/sub/report_cover_05_06.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #828282; }
+				}
 			}
 			&.type06 {
 				background: url(../../images/sub/report_cover_06_06.png) no-repeat #fff;
+				.title-wrap {
+					.color-txt { color: #828282; }
+				}	
 			}
 		}
 	}
