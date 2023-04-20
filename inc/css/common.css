@@ -30,6 +30,36 @@ html {
   min-width: 1200px;
 }
 
+.container .wing-menu {
+  position: fixed;
+  top: 190px;
+  right: 160px;
+  z-index: 9;
+}
+.container .wing-menu::before {
+  content: "";
+  display: block;
+  width: 112px;
+  height: 69px;
+  background: url(../../images/common/ico_quick.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+}
+.container .wing-menu a {
+  display: block;
+  width: 169px;
+  background: #ff3f68;
+  border-radius: 36px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 19px 0 13px;
+}
+
 .inner {
   width: 1240px;
   margin: auto;
@@ -323,6 +353,12 @@ input[type=text].w392, input[type=number].w392 {
 }
 input[type=text].full, input[type=number].full {
   width: 100%;
+}
+input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder {
+  color: #999;
+}
+input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder {
+  color: #999;
 }
 input[type=text]::placeholder, input[type=number]::placeholder {
   color: #999;
@@ -1109,21 +1145,33 @@ input[type=checkbox]:checked + label::before {
 }
 .header .btn-wrap a {
   display: inline-block;
-  padding: 16px 30px 14px 25px;
   font-weight: 700;
   border-radius: 25px;
-  background-color: #fff047;
 }
-.header .btn-wrap a + a {
-  margin-left: 10px;
+.header .btn-wrap a:nth-child(1) {
+  background-color: #ff3f68;
+  padding: 10px 5px 5px 10px;
+  border-radius: 100%;
+}
+.header .btn-wrap a:nth-child(1) img {
+  margin-right: 0;
+}
+.header .btn-wrap a:nth-child(2) {
+  background-color: #fff047;
+  padding: 16px 30px 14px 25px;
+}
+.header .btn-wrap a:nth-child(3) {
+  background-color: #ec761f;
   padding: 16px 21px 16px 25px;
   color: #fff;
-  background-color: #ec761f;
 }
-.header .btn-wrap a + a img {
+.header .btn-wrap a:nth-child(3) img {
   width: 14px;
   height: 15px;
   margin-right: 8px;
+}
+.header .btn-wrap a + a {
+  margin-left: 10px;
 }
 .header .btn-wrap a img {
   margin-right: 10px;
