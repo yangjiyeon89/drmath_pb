@@ -17,7 +17,7 @@
 <body>
   <div class="dim" style="display: block;"></div>
   <!-- 
-    색상별 클래스
+    색상별 클래스 .report-wrap에 추가해주세요
     보라 = class 없음
     빨강 = color-type01
     노랑 = color-type02
@@ -42,7 +42,7 @@
       </div>
     </div>
     <!-- 표지 템플릿02 -->
-    <div class="cover-cnt type02">
+    <div class="cover-cnt type02" style="display: none;">
       <div class="inner">
         <p class="logo"><img src="../images/common/logo.png" alt="닥터매쓰"></p>
         <div class="title-wrap">
@@ -57,7 +57,7 @@
       </div>
     </div>
     <!-- 표지 템플릿03 -->
-    <div class="cover-cnt type03">
+    <div class="cover-cnt type03" style="display: none;">
       <div class="inner">
         <p class="logo"><img src="../images/common/logo.png" alt="닥터매쓰"></p>
         <div class="title-wrap">
@@ -71,7 +71,7 @@
       </div>
     </div>
     <!-- 표지 템플릿04 -->
-    <div class="cover-cnt type04">
+    <div class="cover-cnt type04" style="display: none;">
       <div class="inner">
         <p class="logo"><img src="../images/common/logo.png" alt="닥터매쓰"></p>
         <div class="title-wrap">
@@ -86,7 +86,7 @@
       </div>
     </div>
     <!-- 표지 템플릿05 -->
-    <div class="cover-cnt type05">
+    <div class="cover-cnt type05" style="display: none;">
       <div class="inner">
         <p class="logo"><img src="../images/common/logo.png" alt="닥터매쓰"></p>
         <div class="title-wrap">
@@ -101,7 +101,7 @@
       </div>
     </div>
     <!-- 표지 템플릿06 -->
-    <div class="cover-cnt type06">
+    <div class="cover-cnt type06" style="display: none;">
       <div class="inner">
         <p class="logo"><img src="../images/common/logo.png" alt="닥터매쓰"></p>
         <div class="title-wrap">
@@ -115,9 +115,528 @@
       </div>
     </div>
   </div>
-
   <!-- 내지 -->
-  <div class="report-wrap page-type" style="display:none;">
+  <div class="report-wrap">
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <div class="top-title">
+          <span>닥터매쓰 결과 상세 분석표</span>
+        </div>
+        <p class="color-title">분석표 요약</p>
+        <div class="justify-box">
+          <div class="row-box">
+            <div class="table-wrap">
+              <table>
+                <colgroup>
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                  <col width="20%">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>문제지수</th>
+                    <th>문항수</th>
+                    <th>정답수</th>
+                    <th>오답수</th>
+                    <th class="color">등급</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>15</td>
+                    <td>78</td>
+                    <td>58</td>
+                    <td>20</td>
+                    <td class="color">2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="range-wrap">
+              <p class="title">예상 백분위</p>
+              <div class="center-box">
+                <div class="range-bar"></div>
+                <span class="grade">4등급</span>
+              </div>
+              <p class="desc">* 전국 학생들의 점수 분포에서 <em>김천재 학생</em>의 상대적 위치를 나태내는 유도점수를 의미합니다.</p>
+            </div>
+          </div>
+          <div class="chart-wrap">
+          </div>
+        </div>
+        <p class="color-title">월별 분석</p>
+        <div class="justify-box">
+          <div class="chart-wrap">
+            <div class="chart-title">등급</div>
+          </div>
+          <div class="chart-wrap">
+            <div class="chart-title">문항 수</div>
+          </div>
+          <div class="chart-wrap">
+            <div class="chart-title">정답률</div>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>01</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title">주차별 분석</p>
+        <div class="justify-box col-type">
+          <div class="chart-wrap">
+            <div class="color-title-bar">등급</div>
+          </div>
+          <div class="chart-wrap">
+            <div class="color-title-bar">문항수</div>
+          </div>
+          <div class="chart-wrap">
+            <div class="color-title-bar">정답률</div>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>02</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title">난이도별 분석</p>
+        <div class="justify-box col-type">
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>문항난이도</th>
+                  <th>문항수</th>
+                  <th>정답수</th>
+                  <th>내 평균</th>
+                  <th>학급 평균</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>최상</th>
+                  <td>25</td>
+                  <td>15</td>
+                  <td class="color">60%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th>상</th>
+                  <td>25</td>
+                  <td>15</td>
+                  <td class="color">70%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th>중</th>
+                  <td>25</td>
+                  <td>15</td>
+                  <td class="color">70%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th>하</th>
+                  <td>25</td>
+                  <td>15</td>
+                  <td class="color">70%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th>최하</th>
+                  <td>25</td>
+                  <td>15</td>
+                  <td class="color">70%</td>
+                  <td>70%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="chart-wrap">
+
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>03</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title">단원별 분석</p>
+        <div class="justify-box col-type">
+          <p class="sub-title"><em>김천재</em> 학생의 학습단원은 총 <em>5개</em>입니다.</p>
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col width="20%">
+                <col width="*">
+                <col width="20%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>성취도</th>
+                  <th>유형명</th>
+                  <th>정답/출제</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="icon-wrap">
+                      <span class="icon type01"></span>
+                      <span>우수</span>
+                    </div>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>지수법칙의 종합</li>
+                      <li>지수법칙을 이용한 실생활 문제</li>
+                      <li>지수법칙의 응용</li>
+                    </ul>
+                  </td>
+                  <td class="bold">12/12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="icon-wrap">
+                      <span class="icon type02"></span>
+                      <span>취약</span>
+                    </div>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>일차식의 덧셈과 뺄셈</li>
+                      <li>이차식의 덧셈과 뺄셈</li>
+                      <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+                    </ul>
+                  </td>
+                  <td class="bold">9/15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <colgroup>
+                <col width="20%">
+                <col width="*">
+                <col width="20%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>성취도</th>
+                  <th>유형명</th>
+                  <th>정답/출제</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="icon-wrap">
+                      <span class="icon type01"></span>
+                      <span>우수</span>
+                    </div>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>지수법칙의 종합</li>
+                      <li>지수법칙을 이용한 실생활 문제</li>
+                      <li>지수법칙의 응용</li>
+                    </ul>
+                  </td>
+                  <td class="bold">12/12</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="icon-wrap">
+                      <span class="icon type02"></span>
+                      <span>취약</span>
+                    </div>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>일차식의 덧셈과 뺄셈</li>
+                      <li>이차식의 덧셈과 뺄셈</li>
+                      <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+                    </ul>
+                  </td>
+                  <td class="bold">9/15</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>04</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title">행동 영역별 분석</p>
+        <div class="justify-box col-type">
+          <div class="chart-wrap">
+
+          </div>
+          <div class="table-wrap">
+            <div class="border-title">행동 영역별 분석</div>
+            <div class="desc">
+              <p class="bold">계산력은 <span class="color">70%</span>, 이해력은 <span class="color">63%</span>, 추론력은 <span class="color">0%</span>, 해결력은 <span class="color">100%</span>로 나타났습니다.</p>
+              <p>(계산력, 이해력) 영역은 수학 학습의 기본이므로 충분한 보충학습으로  (계산력, 이해력) 영역의 문제를 잘 해결할 수 있도록 합니다.</p>
+            </div>
+            <table>
+              <colgroup>
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+                <col width="20%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>계산</th>
+                  <th>이해</th>
+                  <th>추론</th>
+                  <th>해결</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>학습문항수</th>
+                  <td>10</td>
+                  <td>19</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <th>정답수</th>
+                  <td>10</td>
+                  <td>19</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <th>학습문항수</th>
+                  <td class="color">10%</td>
+                  <td class="color">30%</td>
+                  <td class="color">50%</td>
+                  <td class="color">70%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>05</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title mb30">AI 학습 추천
+          <span class="desc">* 학생에게 필요한 약유형을 분석하여 AI 학습 추천을 해줍니다</span>
+        </p>
+        <div class="justify-box col-type">
+          <div class="color-box">
+            <div class="title">1순위 : 식의 계산</div>
+            <ul>
+              <li>일차식의 덧셈과 뺄셈</li>
+              <li>이차식의 덧셈과 뺄셈</li>
+              <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+            </ul>
+            <span class="desc">해당 하는 단원을 점검하여 기본 개념을 확실히 다져야 다음 단원의 학습을 어려움 없이 이어나갈 수 있습니다.</span>
+          </div>
+          <div class="color-box">
+            <div class="title">2순위 : 식의 계산</div>
+            <ul>
+              <li>일차식의 덧셈과 뺄셈</li>
+              <li>이차식의 덧셈과 뺄셈</li>
+              <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+            </ul>
+            <span class="desc">해당 하는 단원을 점검하여 기본 개념을 확실히 다져야 다음 단원의 학습을 어려움 없이 이어나갈 수 있습니다.</span>
+          </div>
+          <div class="color-box">
+            <div class="title">3순위 : 식의 계산</div>
+            <ul>
+              <li>일차식의 덧셈과 뺄셈</li>
+              <li>이차식의 덧셈과 뺄셈</li>
+              <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+            </ul>
+            <span class="desc">해당 하는 단원을 점검하여 기본 개념을 확실히 다져야 다음 단원의 학습을 어려움 없이 이어나갈 수 있습니다.</span>
+          </div>
+          <div class="color-box">
+            <div class="title">4순위 : 식의 계산</div>
+            <ul>
+              <li>일차식의 덧셈과 뺄셈</li>
+              <li>이차식의 덧셈과 뺄셈</li>
+              <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+            </ul>
+            <span class="desc">해당 하는 단원을 점검하여 기본 개념을 확실히 다져야 다음 단원의 학습을 어려움 없이 이어나갈 수 있습니다.</span>
+          </div>
+          <div class="color-box">
+            <div class="title">5순위 : 식의 계산</div>
+            <ul>
+              <li>일차식의 덧셈과 뺄셈</li>
+              <li>이차식의 덧셈과 뺄셈</li>
+              <li>여러 가지 괄호가 있는 다항식의 덧셈과 뺄셈</li>
+            </ul>
+            <span class="desc">해당 하는 단원을 점검하여 기본 개념을 확실히 다져야 다음 단원의 학습을 어려움 없이 이어나갈 수 있습니다.</span>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>06</span>
+      </div>
+    </div>
+    <div class="page-cnt">
+      <div class="header">
+        <p class="date">2023.04.20 ~ 2023.10.20</p>
+        <p class="tit">
+          <span>Math. Examination. Report</span>
+          <span class="info">
+            <span>가산초등학교</span>
+            <span>6학년</span>
+            <span>매쓰반</span>
+            <span>김천재</span>
+          </span>
+        </p>
+      </div>
+      <div class="report-cnt">
+        <p class="color-title">총평</p>
+        <div class="comment-wrap">
+          <p class="sub-title"><em>김천재</em> 학생의 학습 분석 총평입니다.</p>
+          <div class="scroll-inner">
+            <p>안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.</p>
+          </div>
+        </div>
+        <p class="color-title">코멘트</p>
+        <div class="comment-wrap">
+          <p class="sub-title"><em>김천재</em> 학생의 학습 분석 총평입니다.</p>
+          <div class="scroll-inner">
+            <p>안녕하세요. 김천재 학생의 우수 학습 단원은 4. 두 수의 크기 비교하기, 6. 짝수와 홀수, 5. 여러 개의 수의 크기 비교하기이고, 정답률이 높은 영역은 수와 연산,
+              행동 영역은 해결입니다.자신이 부족한 부분이 어디인지를 파악하는 것이 중요합니다.
+              그 부분을 다시 짚고 다음 단원을 공부할 수 있도록 도와주세요.</p>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <span>07</span>
+      </div>
+    </div>
   </div>
 </body>
+<script>
+  $(function(){
+    $(".range-bar").slider({
+      range: "min",
+      value: 80,
+    });
+    $(".range-bar").slider("disable");
+  });
+</script>
 </html>

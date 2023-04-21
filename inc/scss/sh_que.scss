@@ -3317,11 +3317,319 @@ i {
 			}
 		}
 	}
-	&.page-type {
+	//내지
+	.page-cnt {
+		position: relative;
+		width: 100%;
+		height: 100%;
 		background-color: #fff;
+		font-family: 'S-CoreDream', sans-serif;
+		.header {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			height: 95px;
+			background-color: #5a14be;
+			padding: 0 50px;
+			box-sizing: border-box;
+			color: #fff;
+			.date {
+				@include font(14px, 400);
+				text-align: right;
+				margin-bottom: 10px;
+			}
+			.tit {
+				@include layout-justify-center;
+				@include font(20px, 500);
+				.info {
+					span {
+						position: relative;
+						margin-left: 30px;
+						&::before {
+							@include virtual-selector;
+							position: absolute;
+							top: 5px;
+							left: -16px;
+							width: 1px;
+							height: 20px;
+							background-color: #fff;
+						}
+						&:nth-child(1) {
+							&::before {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.report-cnt {
+			padding: 70px 50px;
+			box-sizing: border-box;
+			.top-title {
+				padding-bottom: 30px;
+				border-bottom: 1px solid #212121;
+				margin-bottom: 70px;
+				span {
+					@include font(40px, 600);
+				}
+			}
+			.color-title {
+				position: relative;
+				@include font(28px, 600);
+				color: #5a14be;
+				padding-left: 26px;
+				margin-bottom: 60px;
+				&::before {
+					@include virtual-selector;
+					position: absolute;
+					top: 2px;
+					left: 0;
+					width: 6px;
+					height: 28px;
+					background-color: #5a14be;
+					border-radius: 3px;
+				}
+				.desc {
+					display: block;
+					@include font(18px, 500);
+					color: #000;
+					margin-top: 10px;
+				}
+				&.mb30 {
+					margin-bottom: 30px;
+				}
+			}
+			.color-title-bar {
+				@include layout-justify-center;
+				width: 100%;
+				height: 54px;
+				background-color: #f2efff;
+				@include font(24px, 600);
+				padding: 0 30px;
+				box-sizing: border-box;
+			}
+			.sub-title {
+				@include font(22px, 500);
+				em {
+					font-weight: 600;
+				}
+			}
+			.justify-box {
+				@include layout-justify-start;
+				gap: 30px;
+				&.col-type {
+					flex-direction: column;
+					> div {
+						width: 100%;
+					}
+				}
+			}
+			.row-box {
+				width: 650px;
+			}
+			.table-wrap {
+				table {
+					width: 100%;
+					border-bottom: 1px solid #ebebeb;
+					tr {
+						border-top: 1px solid #ebebeb;
+					}
+					th, td {
+						padding: 24px 0;
+						text-align: center;
+						border-left: 1px solid #ebebeb;
+						@include font(20px, 500);
+						&:nth-child(1) {
+							border-left: 0;
+						}
+						&.color {
+							color: #5a14be;
+							font-weight: 600;
+						}
+						&.bold {
+							font-weight: 600;
+						}
+					}
+					th {
+						background-color: #f2efff;
+					}
+					li {
+						position: relative;
+						height: 40px;
+						border-bottom: 0;
+						@include font(18px, 500);
+						padding-left: 50px;
+						&::before {
+							@include virtual-selector;
+							position: absolute;
+							width: 5px;
+							height: 5px;
+							top: 18px;
+							left: 30px;
+							background-color: #000;
+						}
+					}
+				}
+				.icon-wrap {
+					@include layout-center-center;
+					flex-direction: column;
+					@include font(18px, 500);
+					gap: 10px;
+					.icon {
+						display: block;
+						width: 69px;
+						height: 64px;
+						background-size: contain;
+						&.type01 {
+							background-image: url(../../images/sub/ico_memo_type01.png);
+						}
+						&.type02 {
+							background-image: url(../../images/sub/ico_memo_type02.png);
+						}
+					}
+				}
+				.border-title {
+					@include content-center-center;
+					width: auto;
+					padding: 0 30px;
+					height: 46px;
+					border-radius: 23px;
+					border: 2px solid #5a14be;
+					@include font(22px, 600);
+					color: #5a14be;
+				}
+				.desc {
+					@include font(16px, 400);
+					line-height: 1.8;
+					margin: 30px 0 40px 0;
+					.bold {
+						font-weight: 600;
+					}
+					.color {
+						color: #5a14be;
+					}
+				}
+			}
+			.range-wrap {
+				margin: 40px 0 70px 0;
+				.center-box {
+					@include layout-center-center;
+					gap: 20px;
+				}
+				.title {
+					@include font(22px, 500);
+				}
+				.desc {
+					@include font(14px, 400);
+					em {
+						font-weight: 600;
+					}
+				}
+				.grade {
+					@include font(20px, 600);
+					color: #5a14be;
+				}
+				// range slider
+				.range-bar {
+					background:$color-line-type02;
+					border: none !important;
+					width: 100%;
+					height: 16px;
+					margin: 30px 0 !important;
+					border-radius: 8px !important;
+					position: relative;
+					.ui-slider-handle{
+						position: absolute;
+						width: 52px;
+						height: 52px;
+						top: -17px;
+						margin-left: 0;
+						background: url(../../images/common/range_handle_type02.png) center no-repeat;
+						background-size: contain;
+						outline: none;
+						transform: translateX(-50%);
+					}
+					.ui-slider-range {
+						background-image: linear-gradient(to right, #8c6cf7 , #5f27c2);
+						height: 16px;
+						border-radius: 8px !important;
+					}	
+				}
+			}
+			.chart-wrap {
+				.chart-title {
+					@include content-center-center;
+					border: 1px solid #5a14be;
+					@include font(18px, 500);
+					color: #5a14be;
+					padding: 0 20px;
+					height: 32px;
+					border-radius: 16px;
+				}
+			}
+			.color-box {
+				background-color: #f6f6f6;
+				.title {
+					@include layout-center;
+					width: 100%;
+					height: 50px;
+					background-color: #5a14be;
+					@include font(24px, 500);
+					color: #fff;
+					box-sizing: border-box;
+					padding: 0 24px;
+				}
+				.desc {
+					display: block;
+					padding: 0 50px 20px 50px;
+					@include font(18px, 500);
+				}
+				ul {
+					padding: 20px 50px 0 50px;
+					li {
+						position: relative;
+						@include font(18px, 500);
+						padding-left: 20px;
+						margin-bottom: 15px;
+						&::before {
+							@include virtual-selector;
+							position: absolute;
+							width: 5px;
+							height: 5px;
+							top: 7px;
+							left: 0;
+							background-color: #000;
+						}
+					}
+				}
+			}
+			.comment-wrap {
+				margin-bottom: 70px;
+				.scroll-inner {
+					height: 400px;
+					background-color: #f7f7f7;
+					padding: 30px 20px;
+					margin-top: 20px;
+					p {
+						@include font(14px, 400);
+						line-height: 1.7;
+					}
+				}
+			}
+		}
+		.paging {
+			position: absolute;
+			bottom: 60px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include font(20px, 600);
+		}
 	}
 	// 빨강 템플릿
 	&.color-type01 {
+		// 표지
 		.cover-cnt {
 			&.type01 {
 				background: url(../../images/sub/report_cover_01_02.png) no-repeat #fff;
@@ -3357,9 +3665,71 @@ i {
 				}	
 			}
 		}
+		// 내지
+		.page-cnt {
+			.header {
+				background-color: #e84a1f;
+			}
+			.report-cnt {
+				.color-title {
+					color: #e84a1f;
+					&::before { background-color: #e84a1f; }
+				}
+				.table-wrap {
+					th { background-color: #ffefeb; }
+					td, th {
+						&.color { color: #e84a1f; }
+					}
+					.icon-wrap {
+						.icon {
+							&.type01 {
+								background-image: url(../../images/sub/ico_memo_type01_01.png);
+							}
+							&.type02 {
+								background-image: url(../../images/sub/ico_memo_type02_01.png);
+							}
+						}
+					}
+					.border-title {
+						border: 2px solid #e84a1f;
+						color: #e84a1f;
+					}
+					.desc {
+						.color {
+							color: #e84a1f;
+						}
+					}
+				}
+				.range-wrap {
+					.grade {
+						color: #e84a1f;
+					}
+					.range-bar {
+						.ui-slider-range {
+							background-image: linear-gradient(to right, #fd8e71 , #e84a1f);
+						}	
+					}
+				}
+				.chart-wrap {
+					.chart-title {
+						border: 1px solid #e84a1f;
+						color: #e84a1f;
+					}
+				}
+				.color-title-bar {
+					background-color: #ffefeb;
+				}
+				.color-box {
+					.title {
+						background-color: #e84a1f;
+					}
+				}
+			}
+		}
 	}
 	// 노랑 템플릿
 	&.color-type02 {
+		//표지
 		.cover-cnt {
 			&.type01 {
 				background: url(../../images/sub/report_cover_01_03.png) no-repeat #fff;
@@ -3395,9 +3765,71 @@ i {
 				}	
 			}
 		}
+		// 내지
+		.page-cnt {
+			.header {
+				background-color: #f0bf14;
+			}
+			.report-cnt {
+				.color-title {
+					color: #f0bf14;
+					&::before { background-color: #f0bf14; }
+				}
+				.table-wrap {
+					th { background-color: #fff9e1; }
+					td, th {
+						&.color { color: #f0bf14; }
+					}
+					.icon-wrap {
+						.icon {
+							&.type01 {
+								background-image: url(../../images/sub/ico_memo_type01_02.png);
+							}
+							&.type02 {
+								background-image: url(../../images/sub/ico_memo_type02_02.png);
+							}
+						}
+					}
+					.border-title {
+						border: 2px solid #f0bf14;
+						color: #f0bf14;
+					}
+					.desc {
+						.color {
+							color: #f0bf14;
+						}
+					}
+				}
+				.range-wrap {
+					.grade {
+						color: #f0bf14;
+					}
+					.range-bar {
+						.ui-slider-range {
+							background-image: linear-gradient(to right, #fce9ac , #f0bf14);
+						}	
+					}
+				}
+				.chart-wrap {
+					.chart-title {
+						border: 1px solid #f0bf14;
+						color: #f0bf14;
+					}
+				}
+				.color-title-bar {
+					background-color: #fff9e1;
+				}
+				.color-box {
+					.title {
+						background-color: #f0bf14;
+					}
+				}
+			}
+		}
 	}
 	// 연두 템플릿
 	&.color-type03 {
+		//표지
 		.cover-cnt {
 			&.type01 {
 				background: url(../../images/sub/report_cover_01_04.png) no-repeat #fff;
@@ -3433,9 +3865,71 @@ i {
 				}
 			}
 		}
+		// 내지
+		.page-cnt {
+			.header {
+				background-color: #8abc04;
+			}
+			.report-cnt {
+				.color-title {
+					color: #8abc04;
+					&::before { background-color: #8abc04; }
+				}
+				.table-wrap {
+					th { background-color: #e8f0d3; }
+					td, th {
+						&.color { color: #8abc04; }
+					}
+					.icon-wrap {
+						.icon {
+							&.type01 {
+								background-image: url(../../images/sub/ico_memo_type01_03.png);
+							}
+							&.type02 {
+								background-image: url(../../images/sub/ico_memo_type02_03.png);
+							}
+						}
+					}
+					.border-title {
+						border: 2px solid #8abc04;
+						color: #8abc04;
+					}
+					.desc {
+						.color {
+							color: #8abc04;
+						}
+					}
+				}
+				.range-wrap {
+					.grade {
+						color: #8abc04;
+					}
+					.range-bar {
+						.ui-slider-range {
+							background-image: linear-gradient(to right, #c1dc80 , #8abc04);
+						}	
+					}
+				}
+				.chart-wrap {
+					.chart-title {
+						border: 1px solid #8abc04;
+						color: #8abc04;
+					}
+				}
+				.color-title-bar {
+					background-color: #e8f0d3;
+				}
+				.color-box {
+					.title {
+						background-color: #8abc04;
+					}
+				}
+			}
+		}
 	}
 	// 파랑 템플릿
 	&.color-type04 {
+		// 표지
 		.cover-cnt {
 			&.type01 {
 				background: url(../../images/sub/report_cover_01_05.png) no-repeat #fff;
@@ -3471,9 +3965,71 @@ i {
 				}
 			}
 		}
+		// 내지
+		.page-cnt {
+			.header {
+				background-color: #209ceb;
+			}
+			.report-cnt {
+				.color-title {
+					color: #209ceb;
+					&::before { background-color: #209ceb; }
+				}
+				.table-wrap {
+					th { background-color: #e1efff; }
+					td, th {
+						&.color { color: #209ceb; }
+					}
+					.icon-wrap {
+						.icon {
+							&.type01 {
+								background-image: url(../../images/sub/ico_memo_type01_04.png);
+							}
+							&.type02 {
+								background-image: url(../../images/sub/ico_memo_type02_04.png);
+							}
+						}
+					}
+					.border-title {
+						border: 2px solid #209ceb;
+						color: #209ceb;
+					}
+					.desc {
+						.color {
+							color: #209ceb;
+						}
+					}
+				}
+				.range-wrap {
+					.grade {
+						color: #209ceb;
+					}
+					.range-bar {
+						.ui-slider-range {
+							background-image: linear-gradient(to right, #9ad5fd , #209ceb);
+						}	
+					}
+				}
+				.chart-wrap {
+					.chart-title {
+						border: 1px solid #209ceb;
+						color: #209ceb;
+					}
+				}
+				.color-title-bar {
+					background-color: #e1efff;
+				}
+				.color-box {
+					.title {
+						background-color: #209ceb;
+					}
+				}
+			}
+		}
 	}
 	// 회색 템플릿
 	&.color-type05 {
+		// 표지
 		.cover-cnt {
 			&.type01 {
 				background: url(../../images/sub/report_cover_01_06.png) no-repeat #fff;
@@ -3507,6 +4063,67 @@ i {
 				.title-wrap {
 					.color-txt { color: #828282; }
 				}	
+			}
+		}
+		// 내지
+		.page-cnt {
+			.header {
+				background-color: #828282;
+			}
+			.report-cnt {
+				.color-title {
+					color: #828282;
+					&::before { background-color: #828282; }
+				}
+				.table-wrap {
+					th { background-color: #eaeaea; }
+					td, th {
+						&.color { color: #828282; }
+					}
+					.icon-wrap {
+						.icon {
+							&.type01 {
+								background-image: url(../../images/sub/ico_memo_type01_05.png);
+							}
+							&.type02 {
+								background-image: url(../../images/sub/ico_memo_type02_05.png);
+							}
+						}
+					}
+					.border-title {
+						border: 2px solid #828282;
+						color: #828282;
+					}
+					.desc {
+						.color {
+							color: #828282;
+						}
+					}
+				}
+				.range-wrap {
+					.grade {
+						color: #828282;
+					}
+					.range-bar {
+						.ui-slider-range {
+							background-image: linear-gradient(to right, #b4b4b4 , #828282);
+						}	
+					}
+				}
+				.chart-wrap {
+					.chart-title {
+						border: 1px solid #828282;
+						color: #828282;
+					}
+				}
+				.color-title-bar {
+					background-color: #eaeaea;
+				}
+				.color-box {
+					.title {
+						background-color: #828282;
+					}
+				}
 			}
 		}
 	}
