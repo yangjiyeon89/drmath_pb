@@ -3450,6 +3450,9 @@ i.pen-type07 {
   height: 16px;
   border-radius: 8px !important;
 }
+.report-wrap .page-cnt .report-cnt .chart-wrap {
+  margin: 0 auto;
+}
 .report-wrap .page-cnt .report-cnt .chart-wrap .chart-title {
   display: inline-flex;
   justify-content: center;
@@ -3461,6 +3464,7 @@ i.pen-type07 {
   padding: 0 20px;
   height: 32px;
   border-radius: 16px;
+  box-sizing: border-box;
 }
 .report-wrap .page-cnt .report-cnt .color-box {
   background-color: #f6f6f6;

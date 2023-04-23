@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
   <script src="../inc/js/common_que.js"></script>
 </head>
 <body>
@@ -176,6 +177,7 @@
             </div>
           </div>
           <div class="chart-wrap">
+            <canvas id="answerChart" style="width:230px;height:230px;"></canvas>
           </div>
         </div>
         <p class="color-title">월별 분석</p>
@@ -637,6 +639,77 @@
       value: 80,
     });
     $(".range-bar").slider("disable");
+
+    // 정답률 차트
+    function answerChartRender(){
+      let doughnutCanvas = document.getElementById("answerChart").getContext('2d');
+      let gradient = doughnutCanvas.createLinearGradient(0, 0, 170, 0);
+      gradient.addColorStop(0, 'rgba(140, 108, 247, 1)');
+      gradient.addColorStop(1, 'rgba(95, 39, 194, 1)');
+      let value = 80;
+      let data = {
+        labels: ['정답률'],
+        datasets: [
+          {
+            label: 'dataSet',
+            data: [value, 100 - value],
+            backgroundColor: [ gradient , '#f4f4f4']
+          }
+        ]
+      }
+      new Chart(doughnutCanvas, {
+        type: 'doughnut',
+        data: data,
+        options:{
+          responsive: true,
+          cutout: '83%',
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              enabled: false,
+            },
+          },
+          hover: {
+            mode: null
+          },
+        },
+        plugins: [{
+          afterDraw: function(chart) {
+            let width = chart.width
+            let height = chart.height
+            let ctx = chart.ctx;
+            console.log(ctx);
+
+            ctx.restore();
+
+            var text = chart.config.data.datasets[0].data[0] + "%",
+              fontSize = 50;
+            ctx.font = "bold " + fontSize + "px S-CoreDream";
+            ctx.fillStyle = "#5a14be";
+            textX = Math.round((width - ctx.measureText(text).width) / 2);
+            textY = height / 1.5;
+
+            ctx.fillText(text, textX, textY);
+
+            var text2 = chart.config.data.labels[0],
+              fontSize2 = 24;
+            ctx.font = "bold " + fontSize2 + "px S-CoreDream";
+            ctx.fillStyle = "#000";
+            textX = Math.round((width - ctx.measureText(text2).width) / 2);
+            textY = height / 2.4;
+ 
+            ctx.fillText(text2, textX, textY);
+
+            ctx.save();
+          }
+        }]
+      });
+    };
+    $(document).ready(function(){
+      answerChartRender();
+    })
   });
 </script>
 </html>

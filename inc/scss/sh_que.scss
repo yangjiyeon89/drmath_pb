@@ -3559,6 +3559,7 @@ i {
 				}
 			}
 			.chart-wrap {
+				margin: 0 auto;
 				.chart-title {
 					@include content-center-center;
 					border: 1px solid #5a14be;
@@ -3567,6 +3568,7 @@ i {
 					padding: 0 20px;
 					height: 32px;
 					border-radius: 16px;
+					box-sizing: border-box;
 				}
 			}
 			.color-box {
