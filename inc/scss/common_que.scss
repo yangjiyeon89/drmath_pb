@@ -1388,6 +1388,8 @@ input[type="checkbox"] {
   .inner {
     display: flex;
     width: 1020px;
+    position: sticky;
+    top: 0;
   }
   .contents {
     width: calc(100% - 250px);
