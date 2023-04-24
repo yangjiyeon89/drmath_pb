@@ -702,8 +702,9 @@
 .sub08-01 .tab-top .pop-btn {
   position: relative;
   top: 1px;
-  width: 198px;
-  padding: 10px 0 9px;
+  max-width: 530px;
+  width: auto;
+  padding: 10px 11px 9px;
   margin-right: 6px;
   font-weight: 600;
   border: 1px solid #dddddd;
