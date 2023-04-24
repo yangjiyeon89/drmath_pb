@@ -176,20 +176,23 @@
               <p class="desc">* 전국 학생들의 점수 분포에서 <em>김천재 학생</em>의 상대적 위치를 나태내는 유도점수를 의미합니다.</p>
             </div>
           </div>
-          <div class="chart-wrap">
+          <div class="chart-wrap center">
             <canvas id="answerChart" style="width:230px;height:230px;"></canvas>
           </div>
         </div>
         <p class="color-title">월별 분석</p>
         <div class="justify-box">
           <div class="chart-wrap">
-            <div class="chart-title">등급</div>
+            <div class="chart-title">등급</div> 
+            <canvas id="monthGradeChart" width="320" height="400"></canvas>
           </div>
           <div class="chart-wrap">
             <div class="chart-title">문항 수</div>
+            <canvas id="monthExamChart" width="320" height="400"></canvas>
           </div>
           <div class="chart-wrap">
             <div class="chart-title">정답률</div>
+            <canvas id="monthAnswerChart" width="320" height="400"></canvas>
           </div>
         </div>
       </div>
@@ -215,12 +218,15 @@
         <div class="justify-box col-type">
           <div class="chart-wrap">
             <div class="color-title-bar">등급</div>
+            <canvas id="weekGradeChart" height="90"></canvas>
           </div>
           <div class="chart-wrap">
             <div class="color-title-bar">문항수</div>
+            <canvas id="weekExamChart" height="90"></canvas>
           </div>
           <div class="chart-wrap">
             <div class="color-title-bar">정답률</div>
+            <canvas id="weekAnswerChart" height="90"></canvas>
           </div>
         </div>
       </div>
@@ -301,8 +307,8 @@
               </tbody>
             </table>
           </div>
-          <div class="chart-wrap">
-
+          <div class="chart-wrap mt100">
+            <canvas id="levelChart" height="130"></canvas>
           </div>
         </div>
       </div>
@@ -449,8 +455,8 @@
       <div class="report-cnt">
         <p class="color-title">행동 영역별 분석</p>
         <div class="justify-box col-type">
-          <div class="chart-wrap">
-
+          <div class="chart-wrap center">
+            <canvas id="actionChart" height="200"></canvas>
           </div>
           <div class="table-wrap">
             <div class="border-title">행동 영역별 분석</div>
@@ -640,20 +646,28 @@
     });
     $(".range-bar").slider("disable");
 
+    //컬러 타입
+    let color01 = "#5a14be";
+    let color02 = "#e84a1f";
+    let color03 = "#f0bf14";
+    let color04 = "#8abc04";
+    let color05 = "#209ceb";
+    let color06 = "#828282";
+
     // 정답률 차트
     function answerChartRender(){
       let doughnutCanvas = document.getElementById("answerChart").getContext('2d');
-      let gradient = doughnutCanvas.createLinearGradient(0, 0, 170, 0);
-      gradient.addColorStop(0, 'rgba(140, 108, 247, 1)');
-      gradient.addColorStop(1, 'rgba(95, 39, 194, 1)');
-      let value = 80;
+      //let gradient = doughnutCanvas.createLinearGradient(0, 0, 170, 0);
+      //gradient.addColorStop(0, 'rgba(140, 108, 247, 1)');
+      //gradient.addColorStop(1, 'rgba(95, 39, 194, 1)');
+      let value = 50;
       let data = {
         labels: ['정답률'],
         datasets: [
           {
             label: 'dataSet',
             data: [value, 100 - value],
-            backgroundColor: [ gradient , '#f4f4f4']
+            backgroundColor: [color01 , '#f4f4f4']
           }
         ]
       }
@@ -707,8 +721,672 @@
         }]
       });
     };
+
+    //월별 등급 차트
+    function monthGradeChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 6; i++){
+        array1.push(i + "월");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("monthGradeChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            borderColor: "#e5e5e5",
+            stack: 'combined',
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //월별 문항 수 차트
+    function monthExamChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 2; i++){
+        array1.push(i + "월");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("monthExamChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            borderColor: "#e5e5e5",
+            stack: 'combined',
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //월별 정답률 차트
+    function monthAnswerChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 4; i++){
+        array1.push(i + "월");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("monthAnswerChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            borderColor: "#e5e5e5",
+            stack: 'combined',
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //주차별 등급 차트
+    function weekGradeChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 6; i++){
+        array1.push(i + "주차");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("weekGradeChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            borderColor: "#e5e5e5",
+            stack: 'combined',
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            },
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //주차별 문항 수 차트
+    function weekExamChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 12; i++){
+        array1.push(i + "주차");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("weekExamChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            borderColor: "#e5e5e5",
+            stack: 'combined',
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //주차별 정답률 차트
+    function weekAnswerChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 30; i++){
+        array1.push(i + "주차");
+        let mathRandom = Math.floor(Math.random() * 101);
+        array2.push(mathRandom)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("weekAnswerChart");
+      const data = {
+        labels : array1,
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array2,
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //난이도별 분석 차트
+    function levelChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 5; i++){
+        let mathRandom = Math.floor(Math.random() * 101);
+        let mathRandom2 = Math.floor(Math.random() * 101);
+        array1.push(mathRandom);
+        array2.push(mathRandom2);
+      }
+      let analysisTableByWeekCanvas = document.getElementById("levelChart");
+      const data = {
+        labels : ['최상','상','중','하','최하'],
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array1,
+            type: 'bar',
+            barThickness: 30,
+            borderRadius: 6,
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            borderColor: color01,
+            type: 'line',
+            pointRadius: 4,
+            pointBackgroundColor: color01,
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'bottom',
+              align : 'center',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+                padding: 40
+              },
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              },
+              grid: {
+                display: false
+              }
+            },
+            y: {
+              stacked: true,
+              ticks: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    //행동 영역별 분석
+    function actionChartRender(){
+      let array1 = [];
+      let array2 = [];
+      for(let i = 1 ; i <= 4; i++){
+        let mathRandom = Math.floor(Math.random() * 101);
+        let mathRandom2 = Math.floor(Math.random() * 101);
+        array1.push(mathRandom)
+        array2.push(mathRandom2)
+      }
+      let analysisTableByWeekCanvas = document.getElementById("actionChart");
+      const data = {
+        labels : ['계산','해결','이해','추론'],
+        datasets: [
+          {
+            label: "학급 평균",
+            data: array1,
+            type: 'radar',
+            backgroundColor: 'rgba(90, 20, 190, 0.2)',
+            borderColor: color01,
+            borderWidth: 2,
+            pointRadius: 0
+          },
+          {
+            label: "김천재 학생",
+            data: array2,
+            type: 'radar',
+            backgroundColor: '#ededed',
+            pointRadius: 0
+          }
+        ]
+      }
+      new Chart(analysisTableByWeekCanvas, {
+        data: data,
+        options: {
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 50,
+              bottom: 80
+            }
+          },
+          plugins:{
+            title: {
+              display: false,
+            },
+            legend: {
+              position: 'top',
+              align : 'end',
+              labels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 14,
+                },
+                color: "#000",
+              },
+            }
+          },
+          scales: {
+            r: {
+              min: 0,
+              max: 100,
+              pointLabels: {
+                font: {
+                  family: "S-CoreDream",
+                  size: 20,
+                },
+                color : "#000"             
+              },
+              ticks: {
+                display: false,
+              },
+            },
+          }
+        },
+        plugins: [{
+          afterDraw: function(chart) {
+            let width = chart.width
+            let height = chart.height
+            let ctx = chart.ctx;
+            console.log(ctx);
+
+            ctx.restore();
+
+            let textXPos = [495, 155, 495, 815];
+            let textYPos = [50, 352, 650, 352];
+            for (let i = 0; i < chart.config.data.datasets[0].data.length; i++) {
+              var text = chart.config.data.datasets[0].data[i] + "%",
+                fontSize = 38;
+              ctx.font = "bold " + fontSize + "px S-CoreDream";
+              ctx.fillStyle = color01;
+              textX = textXPos[i];
+              textY = textYPos[i];
+
+              ctx.fillText(text, textX, textY);
+            }
+
+            ctx.save();
+          }
+        }]
+      });
+    }
+
     $(document).ready(function(){
       answerChartRender();
+      monthGradeChartRender();
+      monthExamChartRender();
+      monthAnswerChartRender();
+      weekGradeChartRender();
+      weekExamChartRender();
+      weekAnswerChartRender();
+      levelChartRender();
+      actionChartRender();
     })
   });
 </script>
