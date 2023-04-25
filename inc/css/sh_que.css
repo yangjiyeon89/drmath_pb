@@ -3293,6 +3293,19 @@ i.pen-type07 {
 .report-wrap .page-cnt .report-cnt .sub-title em {
   font-weight: 600;
 }
+.report-wrap .page-cnt .report-cnt .border-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 30px;
+  height: 46px;
+  border-radius: 23px;
+  border: 2px solid #5a14be;
+  font-size: 22px;
+  font-weight: 600;
+  color: #5a14be;
+}
 .report-wrap .page-cnt .report-cnt .justify-box {
   display: flex;
   justify-content: space-between;
@@ -3374,19 +3387,6 @@ i.pen-type07 {
 }
 .report-wrap .page-cnt .report-cnt .table-wrap .icon-wrap .icon.type02 {
   background-image: url(../../images/sub/ico_memo_type02.png);
-}
-.report-wrap .page-cnt .report-cnt .table-wrap .border-title {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  padding: 0 30px;
-  height: 46px;
-  border-radius: 23px;
-  border: 2px solid #5a14be;
-  font-size: 22px;
-  font-weight: 600;
-  color: #5a14be;
 }
 .report-wrap .page-cnt .report-cnt .table-wrap .desc {
   font-size: 16px;
