@@ -1944,6 +1944,9 @@
   background: url(../../images/common/select_arrow.png) no-repeat;
   background-size: contain;
 }
+.sub10-04 .video-acc-wrap .acc-btn.active::after {
+  transform: rotate(-180deg);
+}
 .sub10-04 .video-acc-wrap .cnt {
   display: none;
 }

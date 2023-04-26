@@ -2080,6 +2080,11 @@
         background: url(../../images/common/select_arrow.png) no-repeat;
         background-size: contain;
       }
+      &.active {
+        &::after {
+          transform: rotate(-180deg);
+        }
+      }
     }
     .cnt {
       display: none;
