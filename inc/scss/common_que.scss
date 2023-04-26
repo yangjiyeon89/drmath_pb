@@ -2276,6 +2276,12 @@ input[type="checkbox"] {
     }
   }
   &.alert-type {
+
+    &.type01 {
+      .pop-inner {
+        width: 400px;
+      }
+    }
     .pop-inner {
       width: 340px;
     }
