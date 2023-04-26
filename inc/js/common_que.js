@@ -288,8 +288,8 @@ $(function () {
         _this.removeClass('active');
       }
       console.log(_position)
-      if(_position > 700) {
-        _this.find('.open-select-list').css('top', '-125px');
+      if(_position > 710) {
+        _this.find('.open-select-list').css('top', '-85px');
       }
     });
 
