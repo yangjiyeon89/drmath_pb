@@ -305,14 +305,16 @@
           </div>
         </div>
         <div class="detail-cnt tab-list-type01">
+          <!--S: 230428:: 수정 -->
           <div class="tab-top">
-            <ul class="tab-menu-type01">
-              <li class="ui-tab-btn active">
-                <a href="javascript:;">문제지 보관함</a>
-              </li>
-            </ul>
-            <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
+            <div class="title-wrap">
+              <span class="title">매쓰반 분석표</span>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
+            </div>
           </div>
+          <!--E: 230428 :: 수정 -->
           <div class="table chk-acc">
             <div class="fix-head">
               <span>
@@ -341,8 +343,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_03">
+                      <label for="chk100_03"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -352,8 +354,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_04">
+                      <label for="chk100_04"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -363,8 +365,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_05">
+                      <label for="chk100_05"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -374,8 +376,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_06">
+                      <label for="chk100_06"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -385,8 +387,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_07">
+                      <label for="chk100_07"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -396,8 +398,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_08">
+                      <label for="chk100_08"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -407,8 +409,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_09">
+                      <label for="chk100_09"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -418,8 +420,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_10">
+                      <label for="chk100_10"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -429,8 +431,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_11">
+                      <label for="chk100_11"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -440,8 +442,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_12">
+                      <label for="chk100_12"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -451,8 +453,8 @@
                   </div>
                   <div class="col">
                     <span>
-                      <input type="checkbox" id="chk100_02">
-                      <label for="chk100_02"></label>
+                      <input type="checkbox" id="chk100_13">
+                      <label for="chk100_13"></label>
                     </span>
                     <span>22.12.16</span>
                     <span class="tit">12월 분석표</span>
@@ -461,21 +463,30 @@
                     <span><button type="button" class="btn-icon fix-s pop-btn" data-pop="table-detail-pop"><i class="graph"></i></button></span>
                   </div>
                 </div>
+                <!--S: 230428 :: 분석표 데이터 없는 경우 추가-->
+                <!--<div class="no-data type02">
+                  <img src="../images/sub/ic_table_no_data02.png" alt="">
+                  <p class="txt">
+                    <em>해당 반</em>의 <em>분석표</em>가 없습니다.
+                  </p>
+                </div>-->
+                <!--E: 230428 :: 분석표 데이터 없는 경우 추가-->
               </div>
               <div class="fix-btm-bar">
                 <a href="file" download="">
                   <img src="../images/common/ico_download.png" alt="">
                   <span>다운로드</span>
                 </a>
-                <a href="javascript:;">
-                  <img src="../images/common/ico_paper_type03.png" alt="">
-                  <span>숙제내기</span>
-                </a>
-                <a href="javascript:;">
-                  <img src="../images/common/ico_cancel.png" alt="">
-                  <span>출제취소</span>
-                </a>
+                <button type="button" class="pop-btn" data-pop="delete-pop">
+                  <img src="../images/common/ico_delete_type07.png" alt="">
+                  <span>삭제하기</span>
+                </button>
               </div>
+              <!--S: 230428 :: 체크박스 3개 초과 시 노출-->
+              <!--<div class="fix-btm-bar">
+                <p class="desc">최대 3개까지 선택 가능합니다.</p>
+              </div>-->
+              <!--E: 230428 :: 체크박스 3개 초과 시 노출-->
             </div>
           </div>
         </div>
@@ -503,7 +514,20 @@
           </div>
         </div>
         <div class="detail-box">
-          <span class="tit">문자발송(학부모)<br><span class="desc">학부모에게 분석표 문자 발송</span></span>
+          <!--S: 230428 :: 수정, 툴팁 추가-->
+          <div class="tit">
+            <div class="row-box">
+              문자발송(학부모)
+              <div class="tooltip-wrap">
+                <button type="button" class="btn-tip"></button>
+                <div class="tooltip">
+                  <span>[문자내용]<br>000 학생의 분석표가 생성되었습니다.<br>앱에서 확인해주세요.<br><br>앱 URL:</span>
+                </div>
+              </div>
+            </div>
+            <span class="desc">학부모에게 분석표 문자 발송</span>
+          </div>
+          <!--E: 230428 :: 수정, 툴팁 추가 -->
           <div class="toggle-wrap">
             <div class="toggle-btn type02">
               <input type="checkbox" class="checkbox">
@@ -514,15 +538,37 @@
           </div>
         </div>
         <div class="textarea-box">
+          <span class="tit">분석표 제목</span>
+          <div class="col">
+            <input type="text" class="ip-title" placeholder="분석표 제목을 입력해주세요.">
+            <span><img src="../images/common/ico_fail.png" alt="">최대 12자까지 입력 가능합니다.</span>
+          </div>
+        </div>
+        <div class="textarea-box">
           <span class="tit">코멘트 수정</span>
           <textarea name="" id="" cols="" rows="8" placeholder="내용을 입력해주세요. (최대 150자)"></textarea>
         </div>
       </div>
       <div class="pop-footer">
+        <button>저장하기</button><!-- 230428 :: 텍스트 수정 -->
+      </div>
+    </div>
+  </div>
+  <!-- S: 230428 :: 분석표 삭제 팝업 추가 -->
+  <div class="pop-wrap alert-type" data-pop="delete-pop">
+    <div class="pop-inner">
+      <div class="pop-content">
+        <button type="button" class="pop-close"></button>
+        <img src="../images/common/ico_pop.png" alt="">
+        <span class="txt">분석표를 삭제하시겠습니까?</span>
+      </div>
+      <div class="pop-footer">
+        <button>취소</button>
         <button>확인</button>
       </div>
     </div>
   </div>
+  <!-- E: 230428 :: 분석표 삭제 팝업 추가 -->
 </body>
 <script>
   $(function () {

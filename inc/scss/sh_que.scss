@@ -3680,6 +3680,10 @@ i {
 					color: #e84a1f;
 					&::before { background-color: #e84a1f; }
 				}
+				.border-title {
+					border: 2px solid #e84a1f;
+					color: #e84a1f;
+				}
 				.table-wrap {
 					th { background-color: #ffefeb; }
 					td, th {
@@ -3694,10 +3698,6 @@ i {
 								background-image: url(../../images/sub/ico_memo_type02_01.png);
 							}
 						}
-					}
-					.border-title {
-						border: 2px solid #e84a1f;
-						color: #e84a1f;
 					}
 					.desc {
 						.color {
@@ -3780,6 +3780,10 @@ i {
 					color: #f0bf14;
 					&::before { background-color: #f0bf14; }
 				}
+				.border-title {
+					border: 2px solid #f0bf14;
+					color: #f0bf14;
+				}
 				.table-wrap {
 					th { background-color: #fff9e1; }
 					td, th {
@@ -3794,10 +3798,6 @@ i {
 								background-image: url(../../images/sub/ico_memo_type02_02.png);
 							}
 						}
-					}
-					.border-title {
-						border: 2px solid #f0bf14;
-						color: #f0bf14;
 					}
 					.desc {
 						.color {
@@ -3880,6 +3880,10 @@ i {
 					color: #8abc04;
 					&::before { background-color: #8abc04; }
 				}
+				.border-title {
+					border: 2px solid #8abc04;
+					color: #8abc04;
+				}
 				.table-wrap {
 					th { background-color: #e8f0d3; }
 					td, th {
@@ -3894,10 +3898,6 @@ i {
 								background-image: url(../../images/sub/ico_memo_type02_03.png);
 							}
 						}
-					}
-					.border-title {
-						border: 2px solid #8abc04;
-						color: #8abc04;
 					}
 					.desc {
 						.color {
@@ -3980,6 +3980,10 @@ i {
 					color: #209ceb;
 					&::before { background-color: #209ceb; }
 				}
+				.border-title {
+					border: 2px solid #209ceb;
+					color: #209ceb;
+				}
 				.table-wrap {
 					th { background-color: #e1efff; }
 					td, th {
@@ -3994,10 +3998,6 @@ i {
 								background-image: url(../../images/sub/ico_memo_type02_04.png);
 							}
 						}
-					}
-					.border-title {
-						border: 2px solid #209ceb;
-						color: #209ceb;
 					}
 					.desc {
 						.color {
@@ -4080,6 +4080,10 @@ i {
 					color: #828282;
 					&::before { background-color: #828282; }
 				}
+				.border-title {
+					border: 2px solid #828282;
+					color: #828282;
+				}
 				.table-wrap {
 					th { background-color: #eaeaea; }
 					td, th {
@@ -4094,10 +4098,6 @@ i {
 								background-image: url(../../images/sub/ico_memo_type02_05.png);
 							}
 						}
-					}
-					.border-title {
-						border: 2px solid #828282;
-						color: #828282;
 					}
 					.desc {
 						.color {
@@ -4161,6 +4161,27 @@ i {
 			.tit {
 				display: block;
 				@include font(16px, 600);
+				&.row {
+					@include layout-center-center;
+					flex-direction: row;
+				}
+			}
+		}
+		.row-box {
+			@include layout-center;
+			flex-direction: row;
+		}
+		.tooltip-wrap {
+			.btn-tip {
+				margin-left: 10px;
+				top: 0;
+			}
+			.tooltip {
+				width: 250px;
+				height: auto;
+				padding: 20px;
+				box-sizing: border-box;
+				left: -42px;
 			}
 		}
 		.detail-box {
@@ -4172,8 +4193,10 @@ i {
 			}
 			.tit {
 				.desc { 
+					display: block;
 					@include font(14px, 400);
-					color: $color-font66;
+					color: #999;
+					margin-top: 5px;
 				}
 			}
 			.toggle-wrap {
@@ -4189,8 +4212,25 @@ i {
 			display: flex;
 			flex-direction: row;
 			border-top: 1px solid $color-line-type02;
-			border-bottom: 1px solid #000;
 			padding: 10px 10px 10px 0;
+			&:nth-last-child(1) {
+				border-bottom: 1px solid #000;
+			}
+			.col {
+				width: 100%;
+				@include layout-justify-start;
+				flex-direction: column;
+				gap: 10px;
+				span {
+					@include content-center;
+					font-size: 14px;
+					color: #fc3812;
+					gap: 5px;
+				}
+			}
+			.ip-title {
+				width: 100%;
+			}
 			.tit {
 				width: 125px;
 				flex-shrink: 0;
@@ -4247,16 +4287,14 @@ i {
 //수업진행 > 분석표
 .sub09-01 {
 	.detail-cnt {
-		&.tab-list-type01 {
-			.tab-top {
-				position: relative;
-				margin-bottom: 15px;
-				.btn-icon {
-					position: absolute;
-					top: 0;
-					right: 0;
-				}
+		.tab-top {
+			margin-bottom: 6px;
+			height:40px;
+			.title {
+				font-size: 20px;
 			}
+		}
+		&.tab-list-type01 {
 			.table {
 				span {
 					&:nth-child(1) {
@@ -4289,7 +4327,6 @@ i {
 					height: 100%;
 					@include layout-center-center;
 					flex-direction: column;
-					margin-top: -20px;
 					.txt {
 						@include font(18px, 700);
 						text-align: center;
@@ -4304,11 +4341,18 @@ i {
 			}
 			.scroll-inner {
 				position: relative;
-				height: 701px;
+				height: 721px;
 				@media (max-width: 1280px) {
-					height: 510px;
+					height: 530px;
 				}
 			}
+		}
+	}
+	.fix-btm-bar {
+		.desc {
+			font-size: 14px;
+			color: #fff;
+			margin: 10px 15px;
 		}
 	}
 }
