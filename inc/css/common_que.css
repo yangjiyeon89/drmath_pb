@@ -841,6 +841,12 @@ body {
 .tab-wrap .content.on {
   display: block;
 }
+.tab-wrap .content-last {
+  display: none;
+}
+.tab-wrap .content-last.on {
+  display: block;
+}
 
 .acc-tab-wrap .contents {
   width: 200px;

@@ -781,6 +781,12 @@ body {
       display: block;
     }
   }
+  .content-last {
+    display: none;
+    &.on {
+      display: block;
+    }
+  }
 }
 .acc-tab-wrap {
   .contents {

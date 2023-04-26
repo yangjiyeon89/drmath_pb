@@ -203,8 +203,9 @@ $(function () {
       if (!_this.hasClass('active')) {
         _this.siblings().removeClass('active');
         _this.addClass('active');
-        _this.parents('.content').find('.content-last').removeClass('on');
-        _this.parents('.content').find('.content-last').eq(_idx).addClass('on');
+        
+        _this.parents('.tab-wrap').eq(0).find('.content-last').removeClass('on');
+        _this.parents('.tab-wrap').eq(0).find('.content-last').eq(_idx).addClass('on');
       }
     } else if(_this.parents('ul').hasClass('ui-tab-type02')){
       let _idx = $(this).data('idx');
