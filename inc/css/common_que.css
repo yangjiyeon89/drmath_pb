@@ -825,6 +825,10 @@ body {
   color: #5a14be;
   font-weight: 600;
 }
+.tab-menu-type06 li a {
+  width: 100%;
+  height: 100%;
+}
 
 .tab-wrap {
   position: relative;
