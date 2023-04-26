@@ -501,57 +501,63 @@
                 <!-- e: 20230428 수정 -->
               </div>
               <div class="contents">
+                <!-- s: 20230428 수정 -->
                 <div class="table">
                   <div class="list-top">
-                    <span class="tit">미채점 학생</span>
-                    <div class="list-wrap">
-                      <em>도우너</em>
-                      <em>고희동</em>
+                    <div class="btn-wrap">
+                      <button type="button" class="btn-icon type02 hover pop-btn" data-pop="wrong-pop">전체 오답문제지 생성</button>
+                      <button type="button" class="btn-icon type02 hover02">숙제내기</button>
                     </div>
                   </div>
                   <ul class="scroll-inner">
                     <li>
-                      <div class="cnt">
-                        <em class="num">4-1</em>
-                        <span class="cnt">㉢,㉠,㉡,㉣</span>
-                      </div>
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
+                      <em class="num">4-1</em>
+                      <em class="label">틀린 학생</em>
+                      <div class="name-wrap">
+                        <span class="name">김둘리</span>
+                        <span class="name">유또치</span>
                       </div>
                     </li>
                     <li>
                       <div class="cnt">
                         <em class="num">4-2</em>
-                        <span class="cnt">10</span>
-                      </div>              
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
                       </div>
                     </li>
                     <li>
                       <div class="cnt">
                         <em class="num">4-3</em>
-                        <span class="cnt">7000,26000</span>
-                      </div>
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
                       </div>
                     </li>
                   </ul>
-                  <div class="btn-wrap">
-                    <button type="button" class="btn-icon type02 hover pop-btn" data-pop="wrong-pop">전체 오답문제지 생성</button>
-                    <button type="button" class="btn-icon type02 hover02">숙제내기</button>
+                  <div class="stu-list-slide">
+                    <span class="stu-slide-tit">미채점 학생</span>
+                    <div class="swiper stu-swiper">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">도우너</div>
+                          <div class="swiper-slide">고희동</div>
+                          <div class="swiper-slide">도우2너</div>
+                          <div class="swiper-slide">고희2동</div>
+                          <div class="swiper-slide">도우2너</div>
+                          <div class="swiper-slide">고희2동</div>
+                          <div class="swiper-slide">도우2너</div>
+                          <div class="swiper-slide">고희2동</div>
+                          <div class="swiper-slide">도우2너</div>
+                          <div class="swiper-slide">고희22동</div>
+                          <div class="swiper-slide">도2우너</div>
+                          <div class="swiper-slide">고2희동</div>
+                          <div class="swiper-slide">도2우너</div>
+                          <div class="swiper-slide">고22희동</div>
+                          <div class="swiper-slide">도22우너</div>
+                          <div class="swiper-slide">고2희동</div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
                   </div>
                 </div>
+                <!-- e: 20230428 수정 -->
               </div>
             </div>
           </div>
@@ -758,80 +764,24 @@
 </body>
 <!-- s: 20230428 추가 -->
 <script>
-  // var swiper = new Swiper(".stu-swiper .swiper-container", {
-  //   slidesPerView: 6,
-  //   spaceBetween: 10,
-  //   observer: true,
-  //   touchRatio: 0,
-  //   observeParents: true,
-  //   slidesPerView: 'auto',
-  //   watchOverflow : false,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
+  $(".stu-swiper").each(function(idx){
+    var $this = $(this);
+    $this.addClass('instance-' + idx);
 
-
-  $(window).on('load', function () {
-    slider();
-  })
-
-  function slider(){
-    $(".stu-swiper").each(function(index){
-      let $this = $(this);
-      let swiper = undefined;
-      // let slideNum =  $this.find('.swiper-slide').length //슬라이드 총 개수
-      let slideInx = 0; //현재 슬라이드 index
-        
-      //디바이스 체크
-      // let oldWChk = window.innerWidth > 768 ? 'pc' : 'mo';
-      sliderAct();
-      // $(window).on('resize', function () {
-      //   let newWChk = window.innerWidth > 768 ? 'pc' : 'mo';
-      //   if(newWChk != oldWChk){
-      //     oldWChk = newWChk;
-      //     sliderAct();
-      //   }
-      // })
-
-      function sliderAct(){
-        //슬라이드 인덱스 클래스 추가
-        $this.addClass("slider-" + index); 
-
-        //슬라이드 초기화 
-        if (swiper != undefined){ 
-            swiper.destroy();
-            swiper = undefined;
-        }
-
-        //slidesPerView 옵션 설정
-        // let viewNum = oldWChk == 'pc' ? 5 : 2;
-        //loop 옵션 체크
-        // let loopChk = slideNum > viewNum;
-
-        swiper = new Swiper('.slider-' + index + ' .swiper-container', {
-          slidesPerView: 6,
-          spaceBetween: 10,
-          observer: true,
-          touchRatio: 0,
-          observeParents: true,
-          slidesPerView: 'auto',
-          // watchOverflow : false,
-          navigation: {
-            nextEl: $('.slider-' + index + ' .swiper-button-next'),
-            prevEl: $('.slider-' + index + ' .swiper-button-prev'),
-          },
-          on: {
-            activeIndexChange: function () {
-              slideInx = this.realIndex; //현재 슬라이드 index 갱신
-            }
-          },
-        });
+    var swiper = new Swiper('.instance-' + idx + ' .swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 10,
+      observer: true,
+      touchRatio: 0,
+      observeParents: true,
+      slidesPerView: 'auto',
+      watchOverflow : true,
+      navigation: {
+        nextEl: $('.instance-' + idx + ' .swiper-button-next')[0],
+        prevEl: $('.instance-' + idx + ' .swiper-button-prev')[0],
       }
     });
-  }
-  slider();
+  });
 </script>
 <!-- e: 20230428 추가 -->
 </html>
