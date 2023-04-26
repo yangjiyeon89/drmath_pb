@@ -473,6 +473,7 @@ i {
 				@include layout-justify-start;
 				gap: 10px;
 				.view-box {
+					position: relative;
 					width: calc(50% - 5px);
 					height: 824px;
 					background-color: #fff;
@@ -968,7 +969,7 @@ i {
 							}
 							&.type02 {
 								.btn-line {
-									width: 147px;
+									width: 108px;
 								}
 							}
 							.form-txt-error {
@@ -1092,6 +1093,10 @@ i {
 						&.sub09-01 {
 							.tit {
 								padding: 0;
+								margin-top: 10px;
+								&.mt0 {
+									margin-top: 0;
+								}
 							}
 							.select-wrap {
 								width: 170px;
@@ -1102,8 +1107,13 @@ i {
 							.rdo-cnt {
 								margin-top: 13px;
 								display: none;
+								align-items: center;
+								gap: 10px;
 								&.on {
-									display: block;
+									display: flex;
+								}
+								span {
+									margin: 0;
 								}
 							}
 							.ip-tit {
@@ -1115,6 +1125,40 @@ i {
 								}
 								&.a-center {
 									align-items: center;
+								}
+							}
+							.tooltip-wrap {
+								display: inline-block;
+								width: 19px;
+								.btn-tip {
+									top: 5px;
+									margin-left: 2px;
+								}
+								.tooltip {
+									left: -50px;
+								}
+							}
+							.tit-wrap {
+								min-width: 90px;
+								.tit {
+									display: inline-flex;
+									width: auto;
+								}
+							}
+							.dsc {
+								display: block;
+								margin-top: 8px;
+								font-size: 14px;								
+							}
+							.form-txt-chk {
+								display: block;
+								margin-top: 10px;
+								position: relative;
+								padding-left: 20px;
+								line-height: 1.4;
+								img {
+									position: absolute;
+									left: 0;top: 2px;
 								}
 							}
 						}
@@ -1131,7 +1175,8 @@ i {
 								display: inline-block;
 								width: 20px;
 								height: 22px;
-								background: url(../../images/sub/ic-preview-file.png) no-repeat;
+								// background: url(../../images/sub/ic-preview-file.png) no-repeat;
+								background: url(../../images/sub/ic-preview-file_type02.png) no-repeat;
 								background-size: contain;
 								margin-right: 13px;
 							}
@@ -1164,6 +1209,7 @@ i {
 								left: -44%;
 								transform: scale(0.44);
 								border: 1px solid $color-line-type02;
+								z-index: 3;
 								@media (max-width: 1280px) {
 									top: -102%;
 									transform: scale(0.32);
@@ -1171,7 +1217,14 @@ i {
 							}
 						}
 					}
-					
+					.preview-arrow {
+						position: absolute;
+						right: -16px;top: 50%;
+						margin-top: -16px;
+						width: 32px;height: 32px;
+						background: url(../../images/common/ico_arrow_bg_c.png);
+						background-size: contain;
+					}
 				}
 			}
 			&.cnt02 {
@@ -5873,5 +5926,24 @@ i {
 				display: none;
 			}
 		}
+	}
+}
+
+// 로딩 팝업
+.loading-type {
+	.pop-inner {
+		width: 300px;height: 300px;
+		padding-top: 35px;
+		text-align: center;
+		box-sizing: border-box;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.loading-txt {
+		display: block;
+		margin-top: 13px;
+		font-size: 18px;
 	}
 }
