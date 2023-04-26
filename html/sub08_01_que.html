@@ -383,57 +383,49 @@
                 </li>
               </ul>
               <div class="contents on">
-                <div class="table">
+                <!-- s: 20230428 수정 -->
+                <div class="table">                  
                   <div class="list-top">
-                    <span class="tit">미채점 학생</span>
-                    <div class="list-wrap">
-                      <em>도우너</em>
-                      <em>고희동</em>
+                    <div class="btn-wrap">
+                      <button type="button" class="btn-icon type02 hover pop-btn" data-pop="wrong-pop">전체 오답문제지 생성</button>
+                      <button type="button" class="btn-icon type02 hover02">숙제내기</button>
                     </div>
                   </div>
                   <ul class="scroll-inner">
                     <li>
-                      <div class="cnt">
-                        <em class="num">4-1</em>
-                        <span class="cnt">㉢,㉠,㉡,㉣</span>
-                      </div>
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
+                      <em class="num">4-1</em>
+                      <em class="label">틀린 학생</em>
+                      <div class="name-wrap">
+                        <span class="name">김둘리</span>
+                        <span class="name">유또치</span>
                       </div>
                     </li>
                     <li>
                       <div class="cnt">
                         <em class="num">4-2</em>
-                        <span class="cnt">10</span>
-                      </div>              
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
                       </div>
                     </li>
                     <li>
                       <div class="cnt">
                         <em class="num">4-3</em>
-                        <span class="cnt">7000,26000</span>
-                      </div>
-                      <div class="tooltip-wrap">
-                        <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
-                        <div class="tooltip type02 fix-w">
-                          <span class="name">김둘리, 김둘리</span>
-                        </div>
                       </div>
                     </li>
                   </ul>
-                  <div class="btn-wrap">
-                    <button type="button" class="btn-icon type02 hover pop-btn" data-pop="wrong-pop">전체 오답문제지 생성</button>
-                    <button type="button" class="btn-icon type02 hover02">숙제내기</button>
+                  <div class="stu-list-slide">
+                    <span class="stu-slide-tit">미채점 학생</span>
+                    <div class="swiper stu-swiper">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">도우너</div>
+                          <div class="swiper-slide">고희동</div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
                   </div>
                 </div>
+                <!-- e: 20230428 수정 -->
               </div>
               <div class="contents">
                 <div class="table">
@@ -448,7 +440,9 @@
                     <li>
                       <div class="cnt">
                         <em class="num">4-1</em>
-                        <span class="cnt">㉢,㉠,㉡,㉣</span>
+                        <em class="cate">틀린 학생</em>
+                        <span class="name">김둘리</span>
+                        <span class="name">김</span>
                       </div>
                       <div class="tooltip-wrap">
                         <button type="button" class="btn-icon"><i class="stu"></i>틀린 학생 보기</button>
@@ -744,4 +738,21 @@
     </div>
   </div>
 </body>
+<!-- s: 20230428 추가 -->
+<script>
+  var swiper = new Swiper(".stu-swiper .swiper-container", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    observer: true,
+    touchRatio: 0,
+    observeParents: true,
+    slidesPerView: 'auto',
+    watchOverflow : false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<!-- e: 20230428 추가 -->
 </html>
