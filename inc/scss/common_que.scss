@@ -219,7 +219,7 @@ body {
   padding: 15px 20px;
   border-radius: 5px;
   background-color: rgba(0,0,0,.7);
-  a {
+  a, button {
     @include layout-center-center;
     flex-direction: column;
     width: 90px;height: 80px;

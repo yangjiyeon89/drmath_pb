@@ -305,14 +305,16 @@
           </div>
         </div>
         <div class="detail-cnt tab-list-type01">
+          <!--S: 230428 :: 수정 -->
           <div class="tab-top">
-            <ul class="tab-menu-type01">
-              <li class="ui-tab-btn active">
-                <a href="javascript:;">문제지 보관함</a>
-              </li>
-            </ul>
-            <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
+            <div class="title-wrap">
+              <span class="title">김매쓰 분석표</span>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
+            </div>
           </div>
+          <!--E: 230428 :: 수정 -->
           <div class="table chk-acc">
             <div class="fix-head">
               <span></span>
@@ -324,7 +326,7 @@
             </div>
             <div class="tbody">
               <div class="scroll-inner">
-                <div class="test no-data">
+                <div class="no-data"><!-- 230428 :: 클래스 삭제 -->
                   <img src="../images/sub/ic_table_no_data.png" alt="">
                   <p class="txt">
                     분석표가 없습니다. <br>
