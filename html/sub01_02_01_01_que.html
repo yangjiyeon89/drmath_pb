@@ -41,6 +41,7 @@
             <div class="unit-box-wrap">
               <div class="unit-box">
                 <div class="tab-top">
+                  <!-- s: 20230428 수정 -->
                   <div class="left-wrap">
                     <ul class="tab-menu-type02">
                       <li class="ui-tab-btn active">
@@ -53,7 +54,7 @@
                         <a href="javascript:;">고</a>
                       </li>
                     </ul>
-                    <div class="select-wrap">
+                    <!-- <div class="select-wrap">
                       <button type="button" class="select-btn">1학년</button>
                       <ul class="select-list">
                         <li>
@@ -62,8 +63,26 @@
                           <a href="javascript:;">3학년</a>
                         </li>
                       </ul>
-                    </div>
+                    </div> -->
                   </div>
+                  <div class="swiper sub01-swiper">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide active">1-1</div>
+                        <div class="swiper-slide">1-2</div>
+                        <div class="swiper-slide">2-1</div>
+                        <div class="swiper-slide">2-2</div>
+                        <div class="swiper-slide">고등학교고등</div>
+                        <div class="swiper-slide">고등학교고등</div>
+                        <div class="swiper-slide">고등학교고등</div>
+                        <div class="swiper-slide">고등학교고등</div>
+                        <div class="swiper-slide">고등학교고등</div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <!-- e: 20230428 수정 -->
                   <!-- 230314 :: 키워드 검색 삭제 -->
                   <!-- <div class="search-box">
                     <input type="text" placeholder="키워드 검색" class="search">
@@ -446,6 +465,35 @@
     }
 
     stepBtn.on('click', stepFunc);
+
+
+    // 230428 추가
+  
+    var swiper = new Swiper(".sub01-swiper .swiper-container", {
+      slidesPerView: 5,
+      spaceBetween: 10,
+      observer: true,
+      touchRatio: 0,
+      observeParents: true,
+      slidesPerView: 'auto',
+      watchOverflow : true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    _slideBtn = $('.sub01-swiper .swiper-slide');
+
+    _slideBtn.click(function(){
+      let _this = $(this);
+
+      if(!_this.hasClass('active')) {
+        _slideBtn.removeClass('active')
+        _this.addClass('active');
+      }
+    });
+  
   });
 </script>
 </html>

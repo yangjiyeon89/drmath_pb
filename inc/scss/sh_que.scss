@@ -403,6 +403,7 @@ i {
 											}
 										}
 									}
+									
 								}
 								.range-wrap {
 									@include layout-center-center;
@@ -497,6 +498,30 @@ i {
 								}
 							}
 						}
+						
+						.select-wrap {
+							.select-btn {
+								width: 140px;
+							}
+							& + .select-wrap {
+								margin-left: 10px;
+								.select-btn {
+									width: 130px;
+								}
+							}
+						}
+						.select-list  {
+							.disabled {
+								a {
+									color: #929292;
+									background-color: #f2f2f2;
+									&:hover {
+										color: #929292;
+										background-color: #f2f2f2;
+									}
+								}
+							}
+						}
 					}
 					.view-que-list {
 						&.scroll-inner {
@@ -574,9 +599,13 @@ i {
 								}
 							}
 							.que-bottom {
-								@include layout-justify-center;
+								display: flex;
+								justify-content: space-between;
+								align-items: flex-end;
 								.que-info {
 									.answer {
+										padding-left: 42px;
+										text-indent: -42px;
 										.label {
 											@include content-center-center;
 											width: 33px;
@@ -585,9 +614,13 @@ i {
 											border-radius: 3px;
 											@include font(12px, 600);
 											line-height: 24px;
-											margin-right: 5px;
+											margin-right: 7px;
 											background-color: #fff;
-										}		
+											text-indent: 0;
+										}
+										& + .answer {
+											margin-top: 20px;
+										}
 									}
 									.chapter {
 										@include font(14px, 400);
@@ -1499,6 +1532,55 @@ i {
 			.color03 { color: #28c398; }
 			.color04 { color: #ff9314; }
 			.color05 { color: #fc5a28; }
+		}
+	}
+	.tab-top {
+		padding: 25px 30px 25px 20px;
+	}
+	.sub01-swiper {
+		overflow: inherit;
+		width: 496px;
+		margin: 0 35px;
+		.swiper-container {
+			overflow: hidden;
+		}
+		.swiper-slide {
+			@include layout-center-center;
+			width: 91px;
+			height: 40px;
+			font-size: 14px;
+			border: 1px solid #dddddd;
+			border-radius: 6px;
+			box-sizing: border-box;
+			cursor: pointer;
+			&.active {
+				color: #5a14be;
+				font-weight: 500;
+				border-color: #dbcbf3;
+				background-color: #e7dafb;
+			}
+		}
+		.swiper-button-next, .swiper-rtl .swiper-button-prev {
+			right: -35px;
+			&::after {
+				transform: rotate(-180deg);
+			}
+		}
+		.swiper-button-prev, .swiper-rtl .swiper-button-next {
+			left: -35px;
+		}
+		.swiper-button-next, .swiper-button-prev {
+			@include layout-center-center;
+			width: 25px;
+			height: 40px;
+			border: 1px solid #ddd;
+			border-radius: 6px;
+			background-color: #f6f6f6;
+			&::after {
+				@include virtual-selector;
+				width: 9px;height: 14px;
+				background: url(../../images/common/ico_arrow_book_paging.png);
+			}
 		}
 	}
 }
