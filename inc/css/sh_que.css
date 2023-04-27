@@ -1198,6 +1198,7 @@ i.pen-type07 {
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list.sub09-01 .select-wrap .select-btn {
   width: 170px;
+  flex-shrink: 0;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .que-setting-list.sub09-01 .rdo-cnt {
   margin-top: 13px;
