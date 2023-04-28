@@ -3601,20 +3601,30 @@ i {
 					th {
 						background-color: #f2efff;
 					}
-					li {
-						position: relative;
-						height: 40px;
-						border-bottom: 0;
-						@include font(18px, 500);
-						padding-left: 50px;
-						&::before {
-							@include virtual-selector;
-							position: absolute;
-							width: 5px;
-							height: 5px;
-							top: 18px;
-							left: 30px;
-							background-color: #000;
+					ul {
+						li {
+							position: relative;
+							height: 40px;
+							border-bottom: 0;
+							@include font(18px, 500);
+							padding-left: 50px;
+							&::before {
+								@include virtual-selector;
+								position: absolute;
+								width: 5px;
+								height: 5px;
+								top: 18px;
+								left: 30px;
+								background-color: #000;
+							}
+						}
+						&.no-data {
+							@include layout-center-center;
+							li {
+								color: #999;
+								padding-left: 0;
+								&::before { display: none ; }
+							}
 						}
 					}
 				}
