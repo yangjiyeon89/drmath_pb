@@ -5958,3 +5958,21 @@ i {
 		font-size: 18px;
 	}
 }
+
+.loading-type02 {
+	.pop-inner {
+		@include layout-center-center;
+		width: 220px;height: 220px;
+		text-align: center;
+		box-sizing: border-box;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.loading-txt {
+		display: block;
+		margin-top: 13px;
+		font-size: 18px;
+	}
+}

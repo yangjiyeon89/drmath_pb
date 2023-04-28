@@ -5694,3 +5694,22 @@ i.pen-type07 {
   margin-top: 13px;
   font-size: 18px;
 }
+
+.loading-type02 .pop-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.loading-type02 .pop-inner img {
+  display: block;
+  margin: auto;
+}
+.loading-type02 .loading-txt {
+  display: block;
+  margin-top: 13px;
+  font-size: 18px;
+}
