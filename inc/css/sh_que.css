@@ -4262,6 +4262,27 @@ i.pen-type07 {
   font-weight: 700;
   color: #5a14be;
 }
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(1) {
+  width: 5%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(2) {
+  width: 8%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(3) {
+  width: 8%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(4) {
+  width: 55%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(5) {
+  width: 10%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(6) {
+  width: 7%;
+}
+.sub09-01 .detail-cnt.tab-list-type01 .table.stu-type span:nth-child(7) {
+  width: 7%;
+}
 .sub09-01 .detail-cnt.tab-list-type01 .scroll-inner {
   position: relative;
   height: 721px;

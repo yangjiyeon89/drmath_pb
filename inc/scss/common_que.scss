@@ -1884,6 +1884,13 @@ input[type="checkbox"] {
     margin-left: 15px;
     text-align: center;
   }
+  .no-data {
+    @include layout-center-center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
   &.type02 {
     margin-top: 20px;
     .form-txt-chk {
