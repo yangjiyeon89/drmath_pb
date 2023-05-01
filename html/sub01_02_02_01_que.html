@@ -594,28 +594,44 @@
 </body>
 <script>
   $(function(){
+    
+
     let _leg = $('.view-que').length;
     let arr = [];
     
+    viewListFunc();
+    
+    $("#view-que-detail-list").change(function() {
+      let _leg = $('.view-que').length;
+      let arr = [];
+      
+      viewListFunc();
+	  })
 
-    $('.col').on('click', function(){
-      let _idx = $(this).index();
+    function viewListFunc(){
+      $('.col').on('click', function(){
+      
+        let _idx = $(this).index();
 
-      for(var i = 0; i < _leg; i++){
-        arr.push($('.view-que').eq(i).offset().top - 134);
-      }
+        for(var i = 0; i < _leg; i++){
+          arr.push($('.view-que').eq(i).offset().top - 134);
+        }
+
+        console.log(arr);
+          
+        $('.view-que-list').animate({scrollTop : arr[_idx]}, 400);
         
-      $('.view-que-list').animate({scrollTop : arr[_idx]}, 400);
-      
-      let _this = $(this);
-      if(!_this.hasClass('active')) {
-        _this.parents('.test.ui-sortable').find('.col').removeClass('active');
-        _this.addClass('active');
-        $('.view-que').removeClass('active');
-        $('.view-que').eq(_idx).addClass('active');
-      };
-      
-    })
+        let _this = $(this);
+        if(!_this.hasClass('active')) {
+          _this.parents('.test.ui-sortable').find('.col').removeClass('active');
+          _this.addClass('active');
+          $('.view-que').removeClass('active');
+          $('.view-que').eq(_idx).addClass('active');
+        };
+        
+      })
+    }
+    
 
     // $( "#table-1" ).sortable({
     //   handle: '.dragHandle',
