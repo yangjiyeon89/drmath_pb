@@ -285,7 +285,7 @@ html {
     background-size: contain;
   }
 }
-input[type="text"], input[type="number"] {
+input[type="text"], input[type="number"], input[type="password"] {
   width: 166px;
   height: 40px;
   padding: 13px 15px;
@@ -653,6 +653,7 @@ input[type="checkbox"] {
       position: absolute;
       top: 36px;
       width: 100%;
+      height: 210px;
     }
     & + input {
       margin-left: 10px;
@@ -671,7 +672,7 @@ input[type="checkbox"] {
   &.type02 {
     th {
       @include font(18px, 500);
-      text-align: right;
+      // text-align: right;
     }
     td {
       padding: 30px 20px;

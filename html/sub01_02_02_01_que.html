@@ -596,13 +596,15 @@
   $(function(){
     let _leg = $('.view-que').length;
     let arr = [];
-    for(var i = 0; i < _leg; i++){
-      arr.push($('.view-que').eq(i).offset().top - 134);
-    }
+    
 
     $('.col').on('click', function(){
       let _idx = $(this).index();
-      
+
+      for(var i = 0; i < _leg; i++){
+        arr.push($('.view-que').eq(i).offset().top - 134);
+      }
+        
       $('.view-que-list').animate({scrollTop : arr[_idx]}, 400);
       
       let _this = $(this);

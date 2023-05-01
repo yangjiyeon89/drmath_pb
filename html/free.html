@@ -274,13 +274,17 @@
               </tr>
               <tr>
                 <th>비밀번호<em></em></th>
-                <td><input type="text" placeholder="10자리 이상,문자,숫자,특수문자" class="w392"></td>
+                <!-- s: 20230501 수정 -->
+                <td><input type="text" placeholder="비밀번호 8자 이상 (영문, 숫자, 특수문자 포함)" class="w392"></td>
+                <!-- e: 20230501 수정 -->
               </tr>
               <tr>
                 <th>비밀번호 재확인<em></em></th>
                 <td>
                   <div class="input-box">
-                    <input type="text" placeholder="10자리 이상,문자,숫자,특수문자" class="w392">
+                    <!-- s: 20230501 수정 -->
+                    <input type="text" placeholder="비밀번호 8자 이상 (영문, 숫자, 특수문자 포함)" class="w392">
+                    <!-- e: 20230501 수정 -->
                     <span class="form-txt-error"><img src="../images/common/ico_check01.png" alt="">비밀번호가 일치하지 않습니다. </span>
                   </div>
                 </td>
@@ -311,6 +315,7 @@
                   <div class="input-box">
                     <input type="text">
                     <button type="button" class="btn-line-type01">인증 확인</button>
+                    <span class="form-txt-check type-color03"><img src="../images/common/ico_check04.png" alt="">인증번호가 오지 않으면 입력한 정보를 확인해 주세요.</span>
                     <span class="form-txt-error"><img src="../images/common/ico_check01.png" alt="">인증번호가 정확하지 않습니다. 다시 확인해 주세요</span>
                   </div>
                 </td>
@@ -335,9 +340,11 @@
               </tr>
             </tbody>
           </table>
-          <div class="caption">
+          <!-- s: 20230501 삭제 -->
+          <!-- <div class="caption">
             <span class="form-txt-check type-color03"><img src="../images/common/ico_check04.png" alt="">인증번호가 오지 않으면 입력한 정보를 확인해 주세요.</span>
-          </div>
+          </div> -->
+          <!-- e: 20230501 삭제 -->
         </div>
         <div class="table-tit">
           <span class="tit">학원정보</span>
@@ -351,7 +358,9 @@
             <tbody>
               <tr>
                 <th>학원명<em></em></th>
-                <td><input type="text" class="w392"></td>
+                <!-- s: 20230501 수정 -->
+                <td><input type="text" class="w392" placeholder="학원명 입력"></td>
+                <!-- e: 20230501 수정 -->
               </tr>
               <tr>
                 <th>주소<em></em></th>
@@ -433,7 +442,9 @@
               <tr>
                 <th>
                   <input type="checkbox" id="chk02_all" class="allCheck">
-                  <label for="chk02_all">전체 동의 합니다.</label>
+                  <!-- s: 20230501 수정 -->
+                  <label for="chk02_all">전체 동의</label>
+                  <!-- e: 20230501 수정 -->
                 </th>
               </tr>
               <tr>

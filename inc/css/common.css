@@ -331,7 +331,7 @@ html {
   background-size: contain;
 }
 
-input[type=text], input[type=number] {
+input[type=text], input[type=number], input[type=password] {
   width: 166px;
   height: 40px;
   padding: 13px 15px;
@@ -339,31 +339,25 @@ input[type=text], input[type=number] {
   border: 1px solid #cfcfcf;
   box-sizing: border-box;
 }
-input[type=text].w88, input[type=number].w88 {
+input[type=text].w88, input[type=number].w88, input[type=password].w88 {
   width: 88px;
 }
-input[type=text].w182, input[type=number].w182 {
+input[type=text].w182, input[type=number].w182, input[type=password].w182 {
   width: 182px;
 }
-input[type=text].w264, input[type=number].w264 {
+input[type=text].w264, input[type=number].w264, input[type=password].w264 {
   width: 264px;
 }
-input[type=text].w392, input[type=number].w392 {
+input[type=text].w392, input[type=number].w392, input[type=password].w392 {
   width: 392px;
 }
-input[type=text].full, input[type=number].full {
+input[type=text].full, input[type=number].full, input[type=password].full {
   width: 100%;
 }
-input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder {
+input[type=text]::placeholder, input[type=number]::placeholder, input[type=password]::placeholder {
   color: #999;
 }
-input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder {
-  color: #999;
-}
-input[type=text]::placeholder, input[type=number]::placeholder {
-  color: #999;
-}
-input[type=text].search, input[type=number].search {
+input[type=text].search, input[type=number].search, input[type=password].search {
   width: 100%;
   padding: 13px 50px 13px 24px;
   border: 0;
@@ -725,6 +719,7 @@ input[type=checkbox]:checked + label::before {
   position: absolute;
   top: 36px;
   width: 100%;
+  height: 210px;
 }
 .table-form .select-wrap + input {
   margin-left: 10px;
@@ -742,7 +737,6 @@ input[type=checkbox]:checked + label::before {
 .table-form.type02 th {
   font-size: 18px;
   font-weight: 500;
-  text-align: right;
 }
 .table-form.type02 td {
   padding: 30px 20px;
