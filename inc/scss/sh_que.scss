@@ -603,7 +603,18 @@ i {
 								display: flex;
 								justify-content: space-between;
 								align-items: flex-end;
+								.data-answer-area {
+									& > div {
+										margin-top: 10px;
+										&:first-child {
+											margin-top: 5px;
+										}
+									}
+								}
 								.que-info {
+									display: flex;
+									align-items: flex-start;
+									margin-bottom: 10px;
 									.answer {
 										padding-left: 42px;
 										text-indent: -42px;
@@ -2098,6 +2109,16 @@ i {
 					display: block;
 					@include font(28px, 600);
 				}
+				.badge {
+					display: block;
+					width: auto;
+					height: auto;
+					margin: 0;
+					color: inherit;
+					text-align: right;
+					@include font(28px, 600);
+					background-color: transparent;
+				}
 				.grade {
 					@include font(56px, 800);
 				}
@@ -2111,7 +2132,7 @@ i {
 			}
 		}
 		// 템플릿 08
-		&.top-type08 {
+	&.top-type08 {
 			width: calc(100% - 120px);
 			img {
 				width: 109px;height: 26px;
@@ -2126,11 +2147,20 @@ i {
 						font-size: 26px;
 					}
 				}
+				.badge {
+					width: auto;
+					height: auto;
+					margin: 0;
+					color: $color-main-purple;
+					@include font(29px, 600);
+					background-color: transparent;
+				}
 			}
 			.sub-txt {
 				color: $color-main-purple;
 				@include font(29px, 600);
 			}
+			
 			.tit {
 				.txt {
 					margin-top: 4px;
@@ -2602,7 +2632,7 @@ i {
 				}
 			}
 			&.top-type08 {
-				.sub-txt {
+				.badge, .sub-txt {
 					color: #e84a1f;
 				}
 				.top-wrap {
@@ -2748,7 +2778,7 @@ i {
 				}
 			}
 			&.top-type08 {
-				.sub-txt {
+				.badge, .sub-txt {
 					color: #f0bf14;
 				}
 				.top-wrap {
@@ -2894,7 +2924,7 @@ i {
 				}
 			}
 			&.top-type08 {
-				.sub-txt {
+				.badge, .sub-txt {
 					color: #8abc04;
 				}
 				.top-wrap {
@@ -3040,7 +3070,7 @@ i {
 				}
 			}
 			&.top-type08 {
-				.sub-txt {
+				.badge, .sub-txt {
 					color: #209ceb;
 				}
 				.top-wrap {
@@ -3186,7 +3216,7 @@ i {
 				}
 			}
 			&.top-type08 {
-				.sub-txt {
+				.badge, .sub-txt {
 					color: #828282;
 				}
 				.top-wrap {
@@ -4456,15 +4486,18 @@ i {
 						width: 8%;
 					}
 					&:nth-child(3) {
-						width: 60%;
+						width: 8%;
 					}
 					&:nth-child(4) {
-						width: 10%;
+						width: 60%;
 					}
 					&:nth-child(5) {
+						width: 10%;
+					}
+					&:nth-child(6) {
 						width: 7%;
 					} 
-					&:nth-child(6) {
+					&:nth-child(7) {
 						width: 7%;
 					}
 				}

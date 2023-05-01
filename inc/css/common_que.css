@@ -1665,6 +1665,7 @@ input[type=checkbox]:checked + label::before {
 }
 .tab-list-type01 .table .fix-head, .tab-list-type01 .table .col {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .tab-list-type01 .table span {

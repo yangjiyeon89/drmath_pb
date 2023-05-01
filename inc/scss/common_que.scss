@@ -1569,7 +1569,9 @@ input[type="checkbox"] {
     background-color: $color-table;
     .fix-head, .col {
       display: flex;
+      justify-content: space-between;
       width: 100%;
+      
     }
     span {
       @include content-center-center;

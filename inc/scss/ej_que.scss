@@ -132,6 +132,10 @@
       span:nth-child(10) {
         width: 10%;
       }
+      span:last-child {
+        width: 2%;
+        padding-right: 15px;
+      }
 
       &.table-type01 {
           span:nth-child(1) {
@@ -237,14 +241,14 @@
       span:nth-child(1) {
         width: 9%;
       }
-
       span:nth-child(2) {
-        width: 54%;
+        width: 9%;
       }
 
       span:nth-child(3) {
-        width: 9%;
+        width: 45%;
       }
+
 
       span:nth-child(4) {
         width: 9%;
@@ -256,6 +260,12 @@
 
       span:nth-child(6) {
         width: 10%;
+      }
+      span:nth-child(7) {
+        width: 10%;
+      }
+      span:nth-child(8) {
+        width: 3%;
       }
     }
   }
