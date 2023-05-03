@@ -2411,7 +2411,7 @@ input[type="checkbox"] {
     }
     .acc-btn {
       position: relative;
-      padding: 15px 30px 15px 20px;
+      padding: 15px 30px 8px 20px;
       cursor: pointer;
       label {
         display: none;
@@ -2428,17 +2428,20 @@ input[type="checkbox"] {
         }
         em {
           position: relative;
-          top: inherit;
+          top: -4px;
           right: inherit;
         }
       }
       span {
         position: relative;
+        display: inline-block;
+        max-width: 100px;
         padding-left: 25px;
         font-weight: 600;
+        @include text-overflow;
         &::before {
           position: absolute;
-          left: 0;top: 50%;
+          left: 2px;top: 50%;
           @include virtual-selector;
           width: 7px;height: 11px;
           margin-top: -5px;

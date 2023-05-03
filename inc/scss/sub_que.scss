@@ -427,26 +427,26 @@
     .table {
       span {
         &:nth-child(1) {
-          width: 5%;
+          width: 8%;
         }
         &:nth-child(2) {
-          width: 5%;
+          width: 8%;
           justify-content: center;
         }
         &:nth-child(3) {
-          width: 8%;
+          width: 7%;
         }
         &:nth-child(4) {
-          width: 48%;
+          width: 42%;
         }
         &:nth-child(5) {
-          width: 5%;
+          width: 8%;
         }
         &:nth-child(6) {
           width: 5%;
         }
         &:nth-child(7) {
-          width: 8%;
+          width: 11%;
         }
         &:nth-child(8) {
           width: 8%;
@@ -733,6 +733,16 @@
     }
     .table {
       margin-top: 10px;
+    }
+    &.style01 {
+      .chk-acc {
+        span:nth-child(7) {
+          margin-right: 20px;
+          .btn-icon {
+            width: 69px;
+          }
+        }
+      }
     }
   }
   .pop-top-btn {

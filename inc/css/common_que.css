@@ -2493,7 +2493,7 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.check-type .acc-btn {
   position: relative;
-  padding: 15px 30px 15px 20px;
+  padding: 15px 30px 8px 20px;
   cursor: pointer;
 }
 .pop-wrap.check-type .acc-btn label {
@@ -2510,17 +2510,24 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.check-type .acc-btn.active em {
   position: relative;
-  top: inherit;
+  top: -4px;
   right: inherit;
 }
 .pop-wrap.check-type .acc-btn span {
   position: relative;
+  display: inline-block;
+  max-width: 100px;
   padding-left: 25px;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .pop-wrap.check-type .acc-btn span::before {
   position: absolute;
-  left: 0;
+  left: 2px;
   top: 50%;
   content: "";
   display: block;
