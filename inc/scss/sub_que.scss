@@ -427,26 +427,26 @@
     .table {
       span {
         &:nth-child(1) {
-          width: 8%;
+          width: 5%;
         }
         &:nth-child(2) {
-          width: 8%;
+          width: 5%;
           justify-content: center;
         }
         &:nth-child(3) {
-          width: 7%;
+          width: 8%;
         }
         &:nth-child(4) {
-          width: 37%;
+          width: 48%;
         }
         &:nth-child(5) {
-          width: 13%;
+          width: 5%;
         }
         &:nth-child(6) {
           width: 5%;
         }
         &:nth-child(7) {
-          width: 11%;
+          width: 8%;
         }
         &:nth-child(8) {
           width: 8%;
@@ -464,16 +464,16 @@
       }
     }
   }
-  .tbody {
-    .col {
-      > span {
-        &:nth-child(3) {
-          padding-left: 30px;
-          justify-content: flex-start;
-        }
-      }
-    }
-  }
+  // .tbody {
+  //   .col {
+  //     > span {
+  //       &:nth-child(3) {
+  //         padding-left: 30px;
+  //         justify-content: flex-start;
+  //       }
+  //     }
+  //   }
+  // }
   .tooltip {
     left: -93px;
   }
@@ -730,6 +730,9 @@
       &.on {
         display: flex;
       }
+    }
+    .table {
+      margin-top: 10px;
     }
   }
   .pop-top-btn {
