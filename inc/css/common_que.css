@@ -1229,6 +1229,10 @@ input[type=checkbox]:checked + label::before {
 .select-btn.wfull {
   width: 100%;
 }
+.select-btn.auto {
+  width: auto;
+  padding-right: 40px;
+}
 
 .select-list {
   display: none;
