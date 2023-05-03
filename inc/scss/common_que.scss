@@ -1142,6 +1142,10 @@ input[type="checkbox"] {
   &.wfull {
     width: 100%;
   }
+  &.auto {
+    width: auto;
+    padding-right: 40px;
+  }
 }
 .select-list {
   display: none;
