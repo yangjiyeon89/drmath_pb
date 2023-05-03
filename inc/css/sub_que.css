@@ -516,6 +516,24 @@
   justify-content: space-between;
   align-items: center;
 }
+.sub06-que .detail-cnt.none-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 808px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+.sub06-que .detail-cnt.none-data img {
+  display: block;
+  margin: auto;
+}
+.sub06-que .detail-cnt.none-data .none-txt {
+  display: block;
+  margin-top: 47px;
+  font-size: 18px;
+  font-weight: 700;
+}
 .sub06-que .title {
   margin-right: 170px;
   font-size: 20px;
@@ -2663,6 +2681,9 @@
   }
   .sub06-que .tab-list-type01 .fix-btm-bar {
     bottom: 0;
+  }
+  .sub06-que .detail-cnt.none-data {
+    height: 620px;
   }
   .sub08-01 .tab-list-type02 .chk-acc .scroll-inner {
     height: 503px;

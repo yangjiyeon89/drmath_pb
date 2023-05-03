@@ -553,7 +553,23 @@
     .title-wrap {
       @include layout-justify-center;
     }
+    &.none-data {
+      @include layout-center-center;
+      height: 808px;
+      text-align: center;
+      border: 1px solid #dddddd;
+      img {
+        display: block;
+        margin: auto;
+      }
+      .none-txt {
+        display: block;
+        margin-top: 47px;
+        @include font(18px, 700);
+      }
+    }
   }
+  
   .title {
     margin-right: 170px;
     @include font(20px, 700);
@@ -2844,6 +2860,9 @@
       .fix-btm-bar {
         bottom: 0;
       }
+    }
+    .detail-cnt.none-data {
+      height: 620px;
     }
   }
   //교재
