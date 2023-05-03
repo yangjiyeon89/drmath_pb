@@ -745,3 +745,70 @@ a.btn-txt {
 .ui-datepicker-year {
   padding: 5px;
 }
+
+// login
+.login {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+.login-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;left: 50%;
+  width: 670px;height: 606px;
+  border-radius: 10px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  .tit-wrap {    
+    @include layout-center-center;
+    height: 185px;
+    background: url(../../images/admin/login_bg.png) no-repeat;
+    .tit {
+      color: #fff;
+      font-size: 43px;font-weight: 700;
+    }
+  }
+  .input-form {
+    width: 400px;
+    margin: auto;
+    padding-top: 55px;
+    input {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 10px;
+      padding-left: 45px;
+      border: 1px solid #d4d4d4;
+      border-radius: 5px;
+      background: #f3f3f3;
+      box-sizing: border-box;
+      &[type="text"] {
+        background: #f3f3f3 url(../../images/admin/ico_id.png) no-repeat;
+        background-position: 20px 14px;
+      }
+      &[type="password"] {
+        background: #f3f3f3 url(../../images/admin/ico_pw.png) no-repeat;
+        background-position: 20px 16px;
+      }
+    }
+    .form-txt-chk {
+      display: block;
+      margin-top: 10px;
+      color: #5a14be;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .login-btn {
+      @include layout-center-center;
+      width: 100%;
+      height: 50px;
+      margin-top: 38px;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 5px;
+      background-color: #3dc8a2;
+    }
+  }
+}
