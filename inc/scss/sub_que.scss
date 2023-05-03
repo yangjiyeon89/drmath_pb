@@ -1537,7 +1537,8 @@
         span {          
           position: relative;
           display: inline-block;
-          max-width: 100px;
+          width: 100px;
+          margin-right: 20px;
           padding-left: 15px;
           font-weight: 600;
           @include text-overflow;

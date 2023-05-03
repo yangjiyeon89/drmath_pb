@@ -1000,14 +1000,6 @@ input[type=text], input[type=number], input[type=password] {
   outline-color: #5a14be;
   outline-width: thin;
 }
-input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=password]::-moz-placeholder {
-  color: #999;
-  font-weight: 400;
-}
-input[type=text]:-ms-input-placeholder, input[type=number]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder {
-  color: #999;
-  font-weight: 400;
-}
 input[type=text]::placeholder, input[type=number]::placeholder, input[type=password]::placeholder {
   color: #999;
   font-weight: 400;
@@ -1493,7 +1485,6 @@ input[type=checkbox]:checked + label::before {
 .tab-list-type02 .inner {
   display: flex;
   width: 1020px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -2404,12 +2395,6 @@ input[type=checkbox]:checked + label::before {
   resize: none;
   box-sizing: border-box;
 }
-.pop-wrap.table-type table textarea::-moz-placeholder {
-  color: #999999;
-}
-.pop-wrap.table-type table textarea:-ms-input-placeholder {
-  color: #999999;
-}
 .pop-wrap.table-type table textarea::placeholder {
   color: #999999;
 }
@@ -2534,7 +2519,8 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.check-type .acc-btn span {
   position: relative;
   display: inline-block;
-  max-width: 100px;
+  width: 100px;
+  margin-right: 20px;
   padding-left: 25px;
   font-weight: 600;
   overflow: hidden;
@@ -2830,7 +2816,6 @@ input[type=checkbox]:checked + label::before {
   border-bottom: 1px solid #dddddd;
 }
 .pop-wrap.answer-sheet-type .sheet-cnt .swiper-wrapper {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -2968,7 +2953,6 @@ input[type=checkbox]:checked + label::before {
   width: 600px;
 }
 .pop-wrap.answer-sheet-type.type02 .sheet-cnt .scroll-inner {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   border-left: 1px solid #dddddd;
