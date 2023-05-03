@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
   <link rel="stylesheet" href="../inc/css/sub_que.css">
-  <link rel="stylesheet" href="../inc/css/sh_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../inc/js/common_que.js"></script>
 </head>
 <body>
-  <div id="wrap" class="page06_04 sub06-que">
+  <div id="wrap" class="page06_02 sub06-que">
     <div class="header">
       <div class="nav-wrap">
         <div class="inner">
@@ -100,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="container sub09-01">
+    <div class="container sub06-02">
       <div class="inner">
         <div class="list-cnt">
           <div class="tab-wrap acc-tab-wrap">
@@ -304,20 +303,35 @@
             </div>
           </div>
         </div>
-        <!-- s: 20230504 수정 -->
         <div class="detail-cnt none-data">
           <div class="none-data-wrap">
-            <img src="../images/sub/ic_table_no_data.png" alt="">
+            <img src="../images/sub/sub07_data_none.png" alt="">
             <span class="none-txt">
-              분석표가 없습니다.<br>
-              <em>누적된 학습 데이터</em>로 <em>분석표</em>를 만들어보세요.
+              배포된 문제지가 없습니다.<br>
+              <em>문제지</em>를 <em>배포</em>해주세요.
             </span>
-            <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
           </div>
         </div>
-        <!-- e: 20230504 수정 -->
       </div>
     </div>
+    <div class="dim"></div>
   </div>
 </body>
+<script>
+  $(function () {
+    // 문제지 체크박스
+    let chkBtn = $('.chk-acc input[type="checkbox"]');
+    let btmBar = $('.fix-btm-bar');
+    chkBtn.on('click', function(){
+      let _this = $(this);
+      if (_this.prop('checked')) {
+        btmBar.addClass('on');
+      } else {
+        btmBar.removeClass('on');
+      }
+    })
+
+    
+  })
+</script>
 </html>

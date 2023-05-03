@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="../inc/css/common_que.css">
   <link rel="stylesheet" href="../inc/css/sub_que.css">
-  <link rel="stylesheet" href="../inc/css/sh_que.css">
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="../inc/js/common_que.js"></script>
 </head>
 <body>
-  <div id="wrap" class="page06_04 sub06-que">
+  <div id="wrap" class="page06_03 sub06-que">
     <div class="header">
       <div class="nav-wrap">
         <div class="inner">
@@ -100,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="container sub09-01">
+    <div class="container sub08-01">
       <div class="inner">
         <div class="list-cnt">
           <div class="tab-wrap acc-tab-wrap">
@@ -304,20 +303,235 @@
             </div>
           </div>
         </div>
-        <!-- s: 20230504 수정 -->
         <div class="detail-cnt none-data">
           <div class="none-data-wrap">
-            <img src="../images/sub/ic_table_no_data.png" alt="">
+            <img src="../images/sub/sub08_data_none.png" alt="">
             <span class="none-txt">
-              분석표가 없습니다.<br>
-              <em>누적된 학습 데이터</em>로 <em>분석표</em>를 만들어보세요.
+              연동된 교재가 없습니다.<br>
+              <em>교재</em>를 <em>연동</em>해주세요.
             </span>
-            <button type="button" class="btn-icon type02"><i class="ico_chart_type02"></i>분석표 만들기</button>
           </div>
         </div>
-        <!-- e: 20230504 수정 -->
+      </div>
+    </div>
+    <div class="dim"></div>
+
+    <!-- 교재 변경 팝업 -->
+    <div class="pop-wrap table-type02" data-pop="pop01">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>교재 변경</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <div class="input-radio-type01">
+            <input type="radio" id="radio05_01" name="radio05" checked>
+            <label for="radio05_01">시중교재</label>
+            <input type="radio" id="radio05_02" name="radio05">
+            <label for="radio05_02">교과서</label>
+            <input type="radio" id="radio05_03" name="radio05">
+            <label for="radio05_03">전용교재</label>
+          </div>
+          <div class="scroll-inner">
+            <table>
+              <colgroup>
+                <col width="10%">
+                <col width="*">
+                <col width="18%">
+                <col width="15%">
+                <col width="16%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>학년</th>
+                  <th>교재명</th>
+                  <th>판수</th>
+                  <th>출판사</th>
+                  <th>저자명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 응용 파워</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>김명숙 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 기본 라이트</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>이경민 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념쎈 – 개념북</td>
+                  <td>1판</td>
+                  <td>좋은책<br>신사고</td>
+                  <td>홍범준 외 1</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>만점왕 수학</td>
+                  <td>-</td>
+                  <td>EBS한국교육<br>방송공사</td>
+                  <td>EBS</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>최상위수학S(2015개정)</td>
+                  <td>개정판</td>
+                  <td>디딤돌</td>
+                  <td>디딤돌<br>초등수학</td>
+                </tr>
+                <tr>
+                  <td>초 1-1</td>
+                  <td>개념+유형 응용 파워</td>
+                  <td>-</td>
+                  <td>비상교육</td>
+                  <td>김명숙 외 1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pop-footer">
+          <button class="ui-close">닫기</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 오답 팝업 -->
+    <div class="pop-wrap wrong-sheet-type" data-pop="wrong-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>오답 문제지 출제하기</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <table>
+            <colgroup>
+              <col width="24%">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>문제 종류</th>
+                <td>
+                  <div class="btn-wrap wrap-type">
+                    <div class="btn-line active">
+                      <span class="tit">그대로</span>
+                      <span class="txt">틀린 오답 문제</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="tit">유사·쌍둥이문제</span>
+                      <span class="txt">같은 유형의 문제를 숫자만 교체</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="tit">변형문제</span>
+                      <span class="txt">오답문제를 변형한 문제</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="tit">유형문제</span>
+                      <span class="txt">비슷한 유형의 문제</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>오답별 문제수 </th>
+                <td>
+                  <div class="box">
+                    <span class="txt">오답 문제 3개 <button type="button" class="del"></button></span>
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn">1</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">1</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">2</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">3</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="txt">문제</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>난이도</th>
+                <td>
+                  <div class="btn-wrap flex-type">
+                    <div class="btn-line active">
+                      <span class="txt">최하</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">하</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">중</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">상</span>
+                    </div>
+                    <div class="btn-line">
+                      <span class="txt">최상</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>자동채점</th>
+                <td class="toggle-wrap">
+                  <div class="toggle-btn">
+                    <input type="checkbox" class="checkbox">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                  <span class="txt">OFF</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="total">
+                  <span class="txt">출제 총 문항 수 <em>3 문제</em></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pop-footer">
+          <button>문제지 편집</button>
+          <button>문제지 만들기</button>
+        </div>
       </div>
     </div>
   </div>
 </body>
+<!-- s: 20230428 추가 -->
+<script>
+  $(".stu-swiper").each(function(idx){
+    var $this = $(this);
+    $this.addClass('instance-' + idx);
+
+    var swiper = new Swiper('.instance-' + idx + ' .swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 10,
+      observer: true,
+      touchRatio: 0,
+      observeParents: true,
+      slidesPerView: 'auto',
+      watchOverflow : true,
+      navigation: {
+        nextEl: $('.instance-' + idx + ' .swiper-button-next')[0],
+        prevEl: $('.instance-' + idx + ' .swiper-button-prev')[0],
+      }
+    });
+  });
+</script>
+<!-- e: 20230428 추가 -->
 </html>
