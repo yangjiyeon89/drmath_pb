@@ -43,6 +43,7 @@
   padding: 70px 102px 0;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
 }
 .login .tit {
   font-size: 32px;
@@ -85,12 +86,15 @@
 }
 .login .form-txt-chk {
   display: block;
-  margin-top: 40px;
+  margin-top: 10px;
+  text-align: left;
 }
 .login .txt {
   display: block;
-  margin-top: 15px;
   font-size: 14px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 .login .form-pop .pop-inner {
   width: 560px;
@@ -2680,6 +2684,7 @@
     justify-content: center;
     width: calc(100% - 500px);
     padding: 0;
+    position: relative;
   }
   .login .input-form {
     width: 440px;

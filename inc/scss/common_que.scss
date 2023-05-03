@@ -1160,6 +1160,11 @@ input[type="checkbox"] {
   border-radius: 0 0 6px 6px;
   box-sizing: border-box;
   z-index: 1;
+  &.h180 {
+    li {
+      height: 180px;
+    }
+  }
   a {
     display: block;
     padding: 9px 12px;
@@ -1643,7 +1648,7 @@ input[type="checkbox"] {
       }
     }
     .scroll-inner {
-      height: 630px;
+      height: 600px;
     }
     .tbody {
       background-color: #fff;

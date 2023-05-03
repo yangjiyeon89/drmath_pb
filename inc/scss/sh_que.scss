@@ -267,16 +267,17 @@ i {
 						background-color: #fff;
 						.unit-box {
 							width: 800px;
-							height: calc(824px - 52px);
+							// height: calc(824px - 52px);
 							border: 1px solid #dbcbf3;
 							box-sizing: border-box;
-							overflow-y: auto;
+							// overflow-y: auto;
+
 							@media (max-width: 1280px) {
 								height: calc(630px - 52px);
 							}
 							.unit-cnt {
 								width: 100%;
-								// height: 684px;
+								height: 680px;
 								overflow-y: auto;
 								.check-group {
 									position: relative;

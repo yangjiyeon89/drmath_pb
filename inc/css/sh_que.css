@@ -299,10 +299,8 @@ i.pen-type07 {
 }
 .full-pop-que .full-pop-wrap .pop-content .tab-wrap .contents .unit-box-wrap .unit-box {
   width: 800px;
-  height: 772px;
   border: 1px solid #dbcbf3;
   box-sizing: border-box;
-  overflow-y: auto;
 }
 @media (max-width: 1280px) {
   .full-pop-que .full-pop-wrap .pop-content .tab-wrap .contents .unit-box-wrap .unit-box {
@@ -311,6 +309,7 @@ i.pen-type07 {
 }
 .full-pop-que .full-pop-wrap .pop-content .tab-wrap .contents .unit-box-wrap .unit-box .unit-cnt {
   width: 100%;
+  height: 680px;
   overflow-y: auto;
 }
 .full-pop-que .full-pop-wrap .pop-content .tab-wrap .contents .unit-box-wrap .unit-box .unit-cnt .check-group {

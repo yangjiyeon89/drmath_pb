@@ -27,7 +27,8 @@
   .right-form {
     padding: 70px 102px 0;
     text-align: center;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative;
   }
   .tit {
     @include font(32px, 600);
@@ -65,12 +66,15 @@
   }
   .form-txt-chk {
     display: block;
-    margin-top: 40px;
+    margin-top: 10px;
+    text-align: left;
   }
   .txt {
     display: block;
-    margin-top: 15px;
     font-size: 14px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
   }
   .form-pop {
     .pop-inner {
@@ -2846,6 +2850,7 @@
       justify-content: center;
       width: calc(100% - 500px);
       padding: 0;
+      position: relative;
     }
     .input-form {
       width: 440px;
