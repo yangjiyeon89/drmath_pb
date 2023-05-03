@@ -1469,7 +1469,7 @@
       .chk-acc {
         .cnt {
           display: none;
-          padding: 0 30px 0 40px;
+          padding: 0 20px 0 30px;
           background-color: #f6f6f6;
           li {
             display: block;
@@ -1496,12 +1496,12 @@
       }
       .acc-btn {
         position: relative;
-        padding: 15px 30px 15px 20px;
+        padding: 15px 20px 8px 10px;
         cursor: pointer;
         label {
           display: none;
           position: absolute;
-          right: 20px;
+          right: 10px;
           top: 24px;
         }
         &.active {
@@ -1513,17 +1513,20 @@
           }
           em {
             position: relative;
-            top: inherit;
+            top: -4px;
             right: inherit;
           }
         }
-        span {
+        span {          
           position: relative;
-          padding-left: 25px;
+          display: inline-block;
+          max-width: 100px;
+          padding-left: 15px;
           font-weight: 600;
+          @include text-overflow;
           &::before {
             position: absolute;
-            left: 0;top: 50%;
+            left: 3px;top: 50%;
             @include virtual-selector;
             width: 7px;height: 11px;
             margin-top: -5px;

@@ -1379,7 +1379,7 @@
 }
 .sub10-que .add-type.wide-w .check-type .chk-acc .cnt {
   display: none;
-  padding: 0 30px 0 40px;
+  padding: 0 20px 0 30px;
   background-color: #f6f6f6;
 }
 .sub10-que .add-type.wide-w .check-type .chk-acc .cnt li {
@@ -1403,13 +1403,13 @@
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn {
   position: relative;
-  padding: 15px 30px 15px 20px;
+  padding: 15px 20px 8px 10px;
   cursor: pointer;
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn label {
   display: none;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 24px;
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn.active label {
@@ -1420,17 +1420,24 @@
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn.active em {
   position: relative;
-  top: inherit;
+  top: -4px;
   right: inherit;
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn span {
   position: relative;
-  padding-left: 25px;
+  display: inline-block;
+  max-width: 100px;
+  padding-left: 15px;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn span::before {
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 50%;
   content: "";
   display: block;
