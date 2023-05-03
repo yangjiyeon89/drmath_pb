@@ -553,6 +553,21 @@
 .sub06-que .table-wrap .inner {
   margin-top: 12px;
 }
+.sub06-que .table-wrap .right-cnt .btn-icon {
+  width: 87px;
+}
+.sub06-que .table-wrap li .cate {
+  font-size: 14px;
+  border-radius: 11px;
+}
+.sub06-que .table-wrap li .num {
+  min-width: 55px;
+  margin: 0 20px 0 0;
+  padding: 3px 0 1px;
+  text-align: center;
+  border-radius: 11px;
+  background-color: #eaeaea;
+}
 .sub06-que .tab-list-type01 .tab-top {
   padding: 0;
 }
