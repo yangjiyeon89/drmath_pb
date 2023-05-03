@@ -1162,7 +1162,7 @@ input[type="checkbox"] {
   z-index: 1;
   &.h180 {
     li {
-    height: 180px;
+      height: 180px;
     }
   }
   a {
@@ -2439,9 +2439,6 @@ input[type="checkbox"] {
       }
       span {
         position: relative;
-        display: inline-block;
-        width: 100px;
-        margin-right: 20px;
         padding-left: 25px;
         font-weight: 600;
         &::before {
