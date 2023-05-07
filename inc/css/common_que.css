@@ -1972,7 +1972,10 @@ input[type=checkbox]:checked + label::before {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   -moz-binding: url(ellipsis.xml#ellipsis);
-  width: 170px;
+  max-width: 170px;
+}
+.table-wrap li .tit .txt.w380 {
+  max-width: 380px;
 }
 .table-wrap li .tag-type01 {
   position: relative;

@@ -576,7 +576,6 @@
   width: 69px;
   height: 36px;
   font-size: 14px;
-  border: 1px solid #dddddd;
   border-radius: 3px;
 }
 .sub06-que .table-wrap .right-cnt .box.gray {
@@ -589,8 +588,8 @@
   font-size: 13px;
 }
 .sub06-que .table-wrap .right-cnt .box em:nth-child(1) {
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 3px;
 }
 .sub06-que .table-wrap .right-cnt .box em:nth-child(1)::after {
   position: absolute;
@@ -605,8 +604,8 @@
   transform: rotate(54deg);
 }
 .sub06-que .table-wrap .right-cnt .box em:nth-child(2) {
-  bottom: 5px;
-  right: 5px;
+  bottom: 3px;
+  right: 3px;
 }
 .sub06-que .table-wrap li .cate {
   font-size: 14px;

@@ -1875,7 +1875,10 @@ input[type="checkbox"] {
         top: 2px;
         display: inline-block;
         @include text-overflow;
-        width: 170px;
+        max-width: 170px;
+        &.w380 {
+          max-width: 380px;
+        }
       }
     }
     .tag-type01 {
