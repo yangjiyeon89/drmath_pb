@@ -652,6 +652,19 @@ i.pen-type07 {
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .btn-delete:hover {
   background: url(../../images/sub/ic_btn_delete_hover.png) no-repeat;
 }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .tooltip-wrap .tooltip {
+  left: -12px;
+  width: 50px;
+  height: auto;
+  padding: 4px 0 0;
+  text-align: center;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .tooltip-wrap .tooltip::before {
+  left: 20px;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-top .btn-wrap .tooltip-wrap .tooltip span {
+  font-size: 11px;
+}
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-content {
   padding: 20px 0;
 }
@@ -678,7 +691,7 @@ i.pen-type07 {
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .data-answer-area > div {
@@ -722,14 +735,25 @@ i.pen-type07 {
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .btn-similar-que {
   flex-shrink: 0;
-  width: 36px;
+  width: 70px;
   height: 36px;
+  padding-left: 19px;
+  color: #666;
+  font-size: 14px;
   border: 1px solid #dddddd;
   border-radius: 5px;
-  background: #fff url(../../images/sub/ic_btn_que.png) center center no-repeat;
+  background: #fff url(../../images/sub/ic_btn_que.png) 14px center no-repeat;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .btn-similar-que.active {
   border: 1px solid #5a14be;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-info-last {
+  margin-top: 7px;
+}
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-info-last .chapter {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
 }
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que em {
   font-size: 12px;

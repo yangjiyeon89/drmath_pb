@@ -96,6 +96,7 @@
   border: 1px solid #ddd;
   padding: 10px;
   resize: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .video-pop .preview {

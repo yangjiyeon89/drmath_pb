@@ -96,7 +96,7 @@
   width: 7%;
 }
 .que_cont.sub01 .table span:nth-child(5) {
-  width: 35%;
+  width: 53%;
 }
 .que_cont.sub01 .table span:nth-child(5) img {
   margin: 0 10px;
@@ -108,7 +108,7 @@
   width: 7%;
 }
 .que_cont.sub01 .table span:nth-child(8) {
-  width: 6%;
+  width: 5%;
 }
 .que_cont.sub01 .table span:nth-child(9) {
   width: 8%;
@@ -117,43 +117,46 @@
   width: 10%;
 }
 .que_cont.sub01 .table span:last-child {
-  width: 2%;
+  width: 3%;
   padding-right: 15px;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(1) {
-  width: 7%;
+  width: 6%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(2) {
-  width: 7%;
+  width: 6%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(3) {
-  width: 9%;
+  width: 8%;
   padding: 0;
   justify-content: center;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(4) {
-  width: 8%;
+  width: 7%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(5) {
-  width: 35%;
+  width: 53%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(5) img {
   margin: 0 10px;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(6) {
-  width: 7%;
+  width: 5%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(7) {
-  width: 9%;
+  width: 7%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(8) {
-  width: 7%;
+  width: 5%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(9) {
   width: 7%;
 }
 .que_cont.sub01 .table.table-type01 span:nth-child(10) {
   width: 4%;
+}
+.que_cont.sub01 .table.table-type01 span:last-child {
+  width: 3%;
 }
 .que_cont.sub01 .table span.tool-type01 {
   width: auto;
@@ -187,6 +190,9 @@
 }
 .que_cont.sub02 .table span:nth-child(4) {
   width: 12%;
+}
+.que_cont.sub03 .select-list {
+  max-height: 182px;
 }
 .que_cont.sub03 .table span:nth-child(1) {
   width: 9%;
@@ -298,8 +304,7 @@
   text-align: center;
 }
 .gallery-box .book-box .book img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .gallery-box .book-box span {
   font-size: 18px;
@@ -391,4 +396,20 @@
   position: absolute;
   right: 30px;
   top: 70px;
+}
+
+.sub02-01 .tab-list-type01 .table span:nth-child(2) {
+  width: 66%;
+}
+.sub02-01 .tab-list-type01 .table span:nth-child(3) {
+  width: 6%;
+}
+.sub02-01 .tab-list-type01 .table span:nth-child(4) {
+  width: 8%;
+}
+.sub02-01 .tab-list-type01 .table span:last-child {
+  width: 12%;
+}
+.sub02-01 .select-list {
+  max-height: 110px;
 }

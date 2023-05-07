@@ -407,6 +407,12 @@
 }
 // 기출문제지
 .sub04-que {
+  .select-list {
+    max-height: 147px;
+    &.list06 {
+      max-height: 219px;
+    }
+  }
   .container {
     .inner {
       padding: 0 20px 30px;
@@ -531,6 +537,9 @@
 }
 // 수업진행
 .sub06-que {
+  .select-list {
+    max-height: 183px;
+  }
   .container {
     > .inner {
       display: flex;
@@ -594,9 +603,44 @@
     .inner {
       margin-top: 12px;
     }
+    .people-wrap {
+      font-size: 14px;
+    }
     .right-cnt {
       .btn-icon {
-        width: 87px;
+        width: 72px;
+        margin-left: 10px;
+        padding: 0;
+      }
+      .box {
+        position: relative;
+        width: 69px;height: 36px;
+        font-size: 14px;
+        border: 1px solid $color-line-type02;
+        border-radius: 3px;
+        &.gray {
+          color: #929292;
+          background-color: $color-table;
+        }
+        em {
+          position: absolute;
+          color: $color-sub33;
+          font-size: 13px;
+          &:nth-child(1) {
+            top: 5px;left: 5px;
+            &::after {
+              position: absolute;
+              bottom: -15px;right: -2px;
+              @include virtual-selector;
+              width: 1px;height: 33px;
+              background-color: $color-line-type02;
+              transform: rotate(54deg);
+            }
+          }
+          &:nth-child(2) {
+            bottom: 5px;right: 5px;
+          }
+        }
       }
     }
     li {
@@ -623,18 +667,22 @@
     }
     .txt {
       display: block;
-      margin: 10px 0;
+      margin-top: 6px;
       font-size: 14px;
       i {
         position: relative;
         top: -2px;
         @include content-center-center;
         width: 18px;height: 18px;
+        padding-top: 2px;
+        padding-right: 2px;
         margin-right: 6px;
+        margin-left: 10px;
         color: #6e6e6e;
         @include font(11px, 700);
         border-radius: 100%;
         font-style: normal;
+        box-sizing: border-box;
         background-color: $color-line-type02;
 
       }
@@ -661,13 +709,13 @@
           width: 9%;
         }
         &:nth-child(4) {
-          width: 49%;
+          width: 64%;
         }
         &:nth-child(5) {
-          width: 6%;
+          width: 7%;
         }
         &:nth-child(6) {
-          width: 6%;
+          width: 10%;
         }
         &:nth-child(7) {
           width: 9%;
@@ -759,7 +807,16 @@
     .table-wrap {
       .tit-wrap {
         padding-left: 20px;
-        justify-content: flex-start;
+      }
+      .right-cnt {        
+        &.btn-w97 {
+          .btn-icon {
+            width: 97px;
+          }
+          .box {
+            width: 97px;
+          }
+        }
       }
     }
     .tab-list-type01 {
@@ -783,7 +840,7 @@
               color: $color-sub33;
               font-size: 11px;
               &:nth-child(1) {
-                top: 6px;left: 6px;
+                top: 3px;left: 3px;
                 &::after {
                   position: absolute;
                   bottom: -15px;right: -2px;
@@ -794,7 +851,7 @@
                 }
               }
               &:nth-child(2) {
-                bottom: 6px;right: 6px;
+                bottom: 0;right: 3px;
               }
             }
           }
@@ -1072,26 +1129,41 @@
   }
   //학생 등록 팝업
   .add-type {
+    .select-wrap.school {
+      .select-btn {
+        width: 277px;
+        margin: 5px 0;
+      }
+      & + input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+      .select-list {
+        max-height: 182px;
+        margin-top: -9px;        
+      }
+    }
     .tab-menu-type06 {
       li {
         a {
           padding-left: 22px;
           background: url(../../images/common/ico_person02.png) no-repeat;
-          background-position: left center;
+          background-position: 44% center;
         }
         &.style02{
           a {
-            background: url(../../images/common/ico_person01.png) no-repeat;
+            background: url(../../images/common/ico_person01.png) no-repeat 44% center;
           }
           &.active {
             a {
-              background: url(../../images/common/ico_person01_on.png) no-repeat;
+              background: url(../../images/common/ico_person01_on.png) no-repeat 44% center;
             }
           }
         }
         &.active {
           a {
-            background: url(../../images/common/ico_person02_on.png) no-repeat;
+            background: url(../../images/common/ico_person02_on.png) no-repeat 44% center;
           }
         }
       }
@@ -1182,6 +1254,12 @@
   .table-type {
     .pop-inner {
       width: 510px;
+      tr:last-child {
+        th {
+          padding-top: 0;
+          vertical-align: middle;
+        }
+      }
       th {
         padding-left: 20px;
         text-align: left;
@@ -1538,8 +1616,8 @@
         span {          
           position: relative;
           display: inline-block;
-          width: 100px;
-          margin-right: 20px;
+          width: 90px;
+          margin-right: 10px;
           padding-left: 15px;
           font-weight: 600;
           @include text-overflow;
@@ -1591,7 +1669,7 @@
           }
         }
         .cnt {
-          padding: 0 29px 0 46px;
+          padding: 0 16px 0 26px;
           li {
             display: none;
           }

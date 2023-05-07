@@ -870,16 +870,25 @@ body {
   background-color: #fff;
 }
 .acc-tab-wrap .acc-btn-wrap {
-  padding: 16px 16px 16px 53px;
+  padding: 16px 16px 16px 30px;
   border-bottom: 1px solid #dddddd;
 }
 .acc-tab-wrap .acc-btn-wrap span {
-  padding-right: 25px;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  width: 78px;
+  margin-right: 23px;
   font-weight: 600;
   cursor: pointer;
 }
 .acc-tab-wrap .acc-btn-wrap em {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 .acc-tab-wrap .acc-btn-wrap .acc-btn {
   width: 7px;
@@ -901,7 +910,7 @@ body {
   border-bottom: 1px solid #dddddd;
 }
 .acc-tab-wrap .acc-cnt li {
-  padding: 14px 55px;
+  padding: 14px 30px;
 }
 .acc-tab-wrap .acc-cnt li.active span {
   color: #5a14be;
@@ -910,6 +919,7 @@ body {
 .acc-tab-wrap .acc-cnt li span {
   width: 75px;
   display: inline-block;
+  margin-right: 34px;
   cursor: pointer;
 }
 .acc-tab-wrap .acc-cnt li em {
@@ -1950,7 +1960,20 @@ input[type=checkbox]:checked + label::before {
 .table-wrap li .date {
   margin-right: 25px;
 }
+.table-wrap li .tit .txt {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  width: 170px;
+}
 .table-wrap li .tag-type01 {
+  position: relative;
+  top: -3px;
   margin-left: 8px;
 }
 .table-wrap li .cate {
@@ -1989,7 +2012,7 @@ input[type=checkbox]:checked + label::before {
   text-align: center;
 }
 .table-wrap .txt-only {
-  width: 87px;
+  width: 72px;
   margin-left: 15px;
   text-align: center;
 }
@@ -2741,14 +2764,19 @@ input[type=checkbox]:checked + label::before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 62px;
+  width: auto;
   height: 40px;
+  padding: 2px 12px 0;
   margin-right: 15px;
   font-weight: 600;
   border: 1px solid #dbcbf3;
   border-radius: 6px;
   background-color: #fff;
   box-sizing: border-box;
+}
+.pop-wrap.answer-sheet-type .btn-wrap span.size-s {
+  padding: 2px 6px 0;
+  font-size: 14px;
 }
 .pop-wrap.answer-sheet-type .answer-cnt {
   width: 410px;
@@ -2834,6 +2862,7 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.answer-sheet-type .name-wrap {
   padding: 0 20px;
+  justify-content: flex-end;
 }
 .pop-wrap.answer-sheet-type .name-wrap label {
   display: inline-flex;
@@ -2844,10 +2873,10 @@ input[type=checkbox]:checked + label::before {
   padding: 0;
   font-weight: 600;
   border-radius: 5px;
+  flex: none;
   cursor: pointer;
 }
 .pop-wrap.answer-sheet-type .name-wrap label.blue {
-  margin-left: 30px;
   color: #247bf1;
   border: 1px solid #247bf1;
 }
@@ -2855,7 +2884,7 @@ input[type=checkbox]:checked + label::before {
   background-color: #f1f7ff;
 }
 .pop-wrap.answer-sheet-type .name-wrap label.red {
-  margin-left: 10px;
+  margin-left: 5px;
   color: #f13e26;
   border: 1px solid #f13e26;
 }
@@ -2864,6 +2893,15 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.answer-sheet-type .name-wrap label::before {
   display: none;
+}
+.pop-wrap.answer-sheet-type .name-wrap span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  max-width: 100px;
+  flex: auto;
 }
 .pop-wrap.answer-sheet-type .sheet-swiper {
   padding-right: 24px;

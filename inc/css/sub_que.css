@@ -418,6 +418,12 @@
   background-color: #5a14be;
 }
 
+.sub04-que .select-list {
+  max-height: 147px;
+}
+.sub04-que .select-list.list06 {
+  max-height: 219px;
+}
 .sub04-que .container .inner {
   padding: 0 20px 30px;
   box-sizing: border-box;
@@ -491,6 +497,9 @@
   margin-left: 10px;
 }
 
+.sub06-que .select-list {
+  max-height: 183px;
+}
 .sub06-que .container > .inner {
   display: flex;
   width: 1240px;
@@ -554,8 +563,50 @@
 .sub06-que .table-wrap .inner {
   margin-top: 12px;
 }
+.sub06-que .table-wrap .people-wrap {
+  font-size: 14px;
+}
 .sub06-que .table-wrap .right-cnt .btn-icon {
-  width: 87px;
+  width: 72px;
+  margin-left: 10px;
+  padding: 0;
+}
+.sub06-que .table-wrap .right-cnt .box {
+  position: relative;
+  width: 69px;
+  height: 36px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+.sub06-que .table-wrap .right-cnt .box.gray {
+  color: #929292;
+  background-color: #f2f2f2;
+}
+.sub06-que .table-wrap .right-cnt .box em {
+  position: absolute;
+  color: #333333;
+  font-size: 13px;
+}
+.sub06-que .table-wrap .right-cnt .box em:nth-child(1) {
+  top: 5px;
+  left: 5px;
+}
+.sub06-que .table-wrap .right-cnt .box em:nth-child(1)::after {
+  position: absolute;
+  bottom: -15px;
+  right: -2px;
+  content: "";
+  display: block;
+  clear: both;
+  width: 1px;
+  height: 33px;
+  background-color: #dddddd;
+  transform: rotate(54deg);
+}
+.sub06-que .table-wrap .right-cnt .box em:nth-child(2) {
+  bottom: 5px;
+  right: 5px;
 }
 .sub06-que .table-wrap li .cate {
   font-size: 14px;
@@ -577,7 +628,7 @@
 }
 .sub06-que .tab-list-type01 .txt {
   display: block;
-  margin: 10px 0;
+  margin-top: 6px;
   font-size: 14px;
 }
 .sub06-que .tab-list-type01 .txt i {
@@ -588,12 +639,16 @@
   align-items: center;
   width: 18px;
   height: 18px;
+  padding-top: 2px;
+  padding-right: 2px;
   margin-right: 6px;
+  margin-left: 10px;
   color: #6e6e6e;
   font-size: 11px;
   font-weight: 700;
   border-radius: 100%;
   font-style: normal;
+  box-sizing: border-box;
   background-color: #dddddd;
 }
 .sub06-que .tab-list-type01 .select-wrap {
@@ -616,13 +671,13 @@
   width: 9%;
 }
 .sub06-que .tab-list-type01 .chk-acc span:nth-child(4) {
-  width: 49%;
+  width: 64%;
 }
 .sub06-que .tab-list-type01 .chk-acc span:nth-child(5) {
-  width: 6%;
+  width: 7%;
 }
 .sub06-que .tab-list-type01 .chk-acc span:nth-child(6) {
-  width: 6%;
+  width: 10%;
 }
 .sub06-que .tab-list-type01 .chk-acc span:nth-child(7) {
   width: 9%;
@@ -705,7 +760,12 @@
 }
 .sub06-que .sub06-student .table-wrap .tit-wrap {
   padding-left: 20px;
-  justify-content: flex-start;
+}
+.sub06-que .sub06-student .table-wrap .right-cnt.btn-w97 .btn-icon {
+  width: 97px;
+}
+.sub06-que .sub06-student .table-wrap .right-cnt.btn-w97 .box {
+  width: 97px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span:nth-child(7) {
   width: 10%;
@@ -725,8 +785,8 @@
   font-size: 11px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1) {
-  top: 6px;
-  left: 6px;
+  top: 3px;
+  left: 3px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1)::after {
   position: absolute;
@@ -741,8 +801,8 @@
   transform: rotate(54deg);
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(2) {
-  bottom: 6px;
-  right: 6px;
+  bottom: 0;
+  right: 3px;
 }
 
 .sub08-01 .tab-wrap {
@@ -993,19 +1053,32 @@
 .sub10-que .fix-btm-bar.on {
   display: inline-flex;
 }
+.sub10-que .add-type .select-wrap.school .select-btn {
+  width: 277px;
+  margin: 5px 0;
+}
+.sub10-que .add-type .select-wrap.school + input {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+.sub10-que .add-type .select-wrap.school .select-list {
+  max-height: 182px;
+  margin-top: -9px;
+}
 .sub10-que .add-type .tab-menu-type06 li a {
   padding-left: 22px;
   background: url(../../images/common/ico_person02.png) no-repeat;
-  background-position: left center;
+  background-position: 44% center;
 }
 .sub10-que .add-type .tab-menu-type06 li.style02 a {
-  background: url(../../images/common/ico_person01.png) no-repeat;
+  background: url(../../images/common/ico_person01.png) no-repeat 44% center;
 }
 .sub10-que .add-type .tab-menu-type06 li.style02.active a {
-  background: url(../../images/common/ico_person01_on.png) no-repeat;
+  background: url(../../images/common/ico_person01_on.png) no-repeat 44% center;
 }
 .sub10-que .add-type .tab-menu-type06 li.active a {
-  background: url(../../images/common/ico_person02_on.png) no-repeat;
+  background: url(../../images/common/ico_person02_on.png) no-repeat 44% center;
 }
 .sub10-que .add-type .table-wrap.type02 th {
   padding-left: 0;
@@ -1084,6 +1157,10 @@
 }
 .sub10-que .table-type .pop-inner {
   width: 510px;
+}
+.sub10-que .table-type .pop-inner tr:last-child th {
+  padding-top: 0;
+  vertical-align: middle;
 }
 .sub10-que .table-type .pop-inner th {
   padding-left: 20px;
@@ -1436,8 +1513,8 @@
 .sub10-que .add-type.wide-w .check-type .acc-btn span {
   position: relative;
   display: inline-block;
-  width: 100px;
-  margin-right: 20px;
+  width: 90px;
+  margin-right: 10px;
   padding-left: 15px;
   font-weight: 600;
   overflow: hidden;
@@ -1498,7 +1575,7 @@
   right: inherit;
 }
 .sub10-que .add-type.wide-w .check-type .right-cnt .cnt {
-  padding: 0 29px 0 46px;
+  padding: 0 16px 0 26px;
 }
 .sub10-que .add-type.wide-w .check-type .right-cnt .cnt li {
   display: none;
