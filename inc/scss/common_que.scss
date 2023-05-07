@@ -802,6 +802,9 @@ body {
   .contents {
     width: 200px;
   }
+  .none-data.left {
+    height: 760px;
+  }
   .scroll-inner {
     height: 760px;
     border: 1px solid $color-line-type02;
@@ -3352,7 +3355,7 @@ input[type="checkbox"] {
 @media (max-width: 1280px) {
   // tab
   .acc-tab-wrap {
-    .scroll-inner {
+    .scroll-inner, .none-data.left {
       height: 569px;
     }
   }

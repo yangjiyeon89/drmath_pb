@@ -694,6 +694,9 @@ i.pen-type07 {
   justify-content: flex-end;
   align-items: flex-end;
 }
+.full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .data-area {
+  width: 100%;
+}
 .full-pop-que .full-pop-wrap .pop-content .view-box-wrap .view-box .view-que-list .view-que .que-bottom .data-answer-area > div {
   margin-top: 10px;
 }

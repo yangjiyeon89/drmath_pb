@@ -619,6 +619,9 @@ i {
 								display: flex;
 								justify-content: flex-end;
 								align-items: flex-end;
+								.data-area {
+									width: 100%;
+								}
 								.data-answer-area {
 									& > div {
 										margin-top: 10px;

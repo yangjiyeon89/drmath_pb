@@ -863,6 +863,9 @@ body {
 .acc-tab-wrap .contents {
   width: 200px;
 }
+.acc-tab-wrap .none-data.left {
+  height: 760px;
+}
 .acc-tab-wrap .scroll-inner {
   height: 760px;
   border: 1px solid #dddddd;
@@ -3424,7 +3427,7 @@ input[type=checkbox]:checked + label::before {
 }
 
 @media (max-width: 1280px) {
-  .acc-tab-wrap .scroll-inner {
+  .acc-tab-wrap .scroll-inner, .acc-tab-wrap .none-data.left {
     height: 569px;
   }
   .pop-wrap.answer-sheet-type .scroll-inner {
