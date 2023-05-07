@@ -78,14 +78,25 @@
 					height: 80px;
 					padding: 0 30px;
 					cursor: pointer;
-
-
+					&::after {
+						@include virtual-selector;
+						position: absolute;
+						right: 40px;top: 50%;
+						width: 10px;height: 17px;
+						margin-top: -8px;
+						background: url(../../images/common/ico_arrow_book_paging.png) no-repeat;
+						transform: rotate(-90deg);
+					}
 					em {
 						display: inline-block;
 						margin-right: 10px;
 						color: $color-main-purple;
 					}
-
+					&.active {
+						&::after {
+							transform: rotate(90deg);
+						}
+					}
 				}
 
 				.cnt {

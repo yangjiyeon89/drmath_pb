@@ -1052,6 +1052,9 @@
 .sub10-que .fix-btm-bar.on {
   display: inline-flex;
 }
+.sub10-que .add-type .select-wrap .select-list {
+  max-height: 182px;
+}
 .sub10-que .add-type .select-wrap.school .select-btn {
   width: 277px;
   margin: 5px 0;
@@ -1062,7 +1065,6 @@
   margin-bottom: 5px;
 }
 .sub10-que .add-type .select-wrap.school .select-list {
-  max-height: 182px;
   margin-top: -9px;
 }
 .sub10-que .add-type .tab-menu-type06 li a {
@@ -1108,6 +1110,12 @@
 }
 .sub10-que .form-type .select-wrap:first-child {
   margin-left: 0;
+}
+.sub10-que .form-type .select-wrap.school .select-btn {
+  width: 277px;
+}
+.sub10-que .form-type .select-wrap .select-list {
+  max-height: 182px;
 }
 .sub10-que .form-type .date-box {
   position: relative;

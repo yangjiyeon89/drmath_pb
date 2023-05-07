@@ -58,7 +58,8 @@
 	}
 
 	.list-thum-type02 {
-		@include layout-center-center;
+		@include layout-center;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 		gap: 20px;
 		li {
@@ -116,7 +117,8 @@
 	}
 
 	.list-thum-type01 {
-		@include layout-center-center;
+		@include layout-center;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 		gap: 20px;
 		li {

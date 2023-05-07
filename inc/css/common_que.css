@@ -1268,6 +1268,7 @@ input[type=checkbox]:checked + label::before {
   border-radius: 0 0 6px 6px;
   box-sizing: border-box;
   z-index: 1;
+  transform: skew(-0.1deg);
 }
 .select-list.h180 li {
   height: 180px;

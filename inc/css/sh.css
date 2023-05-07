@@ -78,8 +78,8 @@
 }
 .user-cnt .list-thum-type02 {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -128,8 +128,8 @@
 }
 .user-cnt .list-thum-type01 {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }

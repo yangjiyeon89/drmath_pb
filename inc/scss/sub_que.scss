@@ -1128,6 +1128,11 @@
   }
   //학생 등록 팝업
   .add-type {
+    .select-wrap {
+      .select-list {
+        max-height: 182px;
+      }
+    }
     .select-wrap.school {
       .select-btn {
         width: 277px;
@@ -1139,7 +1144,6 @@
         margin-bottom: 5px;
       }
       .select-list {
-        max-height: 182px;
         margin-top: -9px;        
       }
     }
@@ -1200,6 +1204,14 @@
       margin-left: 6px;
       &:first-child {
         margin-left: 0;
+      }
+      &.school {
+        .select-btn {
+          width: 277px;
+        }
+      }
+      .select-list {
+        max-height: 182px;
       }
     }
     .date-box {

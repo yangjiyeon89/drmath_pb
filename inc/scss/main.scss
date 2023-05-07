@@ -372,6 +372,7 @@
       position: relative;
       padding-top: 40px;
       .box {
+        position: relative;
         width: 268px;height: 263px;
         padding: 67px 25px 0;
         text-align: center;
@@ -381,7 +382,8 @@
         img {
           position: absolute;
           top: 0;left: 50%;
-          transform: translateX(-50%);
+          transform: translate(-50%, -50%);
+          border-radius: 100%;
         }
         .name {
           font-size: 22px;

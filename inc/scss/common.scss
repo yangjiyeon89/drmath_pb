@@ -558,8 +558,31 @@ input[type="checkbox"] {
     td {
       text-align: center;
     }
+    .top-text-area {
+      margin-bottom: 20px;
+      text-align: right;
+      span {
+        display: inline-block;
+        margin: 0;
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        &:last-child {
+          position: relative;
+          &::before {
+            @include virtual-selector;
+            width: 1px;
+            height: 18px;
+            position: absolute;
+            top: 2px;left: 7px;
+            background-color: #666;
+          }
+        }
+      }
+    }
     .tit {
       display: block;
+      margin-bottom: 40px;
       @include font(34px, 700);
       line-height: 1.3;
       &.notice {
@@ -653,7 +676,7 @@ input[type="checkbox"] {
       position: absolute;
       top: 36px;
       width: 100%;
-      height: 210px;
+      max-height: 210px;
     }
     & + input {
       margin-left: 10px;
@@ -741,6 +764,7 @@ input[type="checkbox"] {
     }
     .tit {
       color: $color-main-purple;
+      @include text-overflow-multi(2);
       @include font(24px,700);
       line-height: 1.4;
     }
@@ -827,7 +851,7 @@ input[type="checkbox"] {
             position: absolute;
             width: 100%;
             top: 34px;
-            height: 140px;
+            max-height: 140px;
             font-size: 14px;
           }
         }

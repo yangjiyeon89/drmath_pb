@@ -1175,6 +1175,7 @@ input[type="checkbox"] {
   border-radius: 0 0 6px 6px;
   box-sizing: border-box;
   z-index: 1;
+  transform: skew(-0.1deg);
   &.h180 {
     li {
       height: 180px;

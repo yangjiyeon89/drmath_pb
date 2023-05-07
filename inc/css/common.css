@@ -626,8 +626,34 @@ input[type=checkbox]:checked + label::before {
 .table-view table td {
   text-align: center;
 }
+.table-view table .top-text-area {
+  margin-bottom: 20px;
+  text-align: right;
+}
+.table-view table .top-text-area span {
+  display: inline-block;
+  margin: 0;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.table-view table .top-text-area span:last-child {
+  position: relative;
+}
+.table-view table .top-text-area span:last-child::before {
+  content: "";
+  display: block;
+  clear: both;
+  width: 1px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  background-color: #666;
+}
 .table-view table .tit {
   display: block;
+  margin-bottom: 40px;
   font-size: 34px;
   font-weight: 700;
   line-height: 1.3;
@@ -719,7 +745,7 @@ input[type=checkbox]:checked + label::before {
   position: absolute;
   top: 36px;
   width: 100%;
-  height: 210px;
+  max-height: 210px;
 }
 .table-form .select-wrap + input {
   margin-left: 10px;
@@ -807,6 +833,13 @@ input[type=checkbox]:checked + label::before {
 }
 .list-thum-type02 li .tit {
   color: #5a14be;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
@@ -908,7 +941,7 @@ input[type=checkbox]:checked + label::before {
   position: absolute;
   width: 100%;
   top: 34px;
-  height: 140px;
+  max-height: 140px;
   font-size: 14px;
 }
 .pop-wrap.search-type .pop-content table {
