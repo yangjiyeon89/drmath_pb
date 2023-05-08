@@ -84,6 +84,18 @@
     }
   }
 
+  .none-data {
+    @include layout-center-center;
+    flex-direction: column;
+    height: 627px;
+    .none-txt {
+      margin-top: 14px;
+      @include font(18px, 600);
+    }
+    @media (max-width: 1280px) {
+      height: 435px;
+    }
+  }
 
   &.sub01 {
     .table {

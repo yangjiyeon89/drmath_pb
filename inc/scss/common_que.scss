@@ -1176,9 +1176,25 @@ input[type="checkbox"] {
   box-sizing: border-box;
   z-index: 1;
   transform: skew(-0.1deg);
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
+    // border: 10px solid #fff;
+    border-radius: 35px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
   &.h180 {
     li {
       height: 180px;
+    }
+  }
+  &.h110 {
+    li {
+      height: 110px;
     }
   }
   a {
@@ -1835,7 +1851,7 @@ input[type="checkbox"] {
     }
     .pop-btn {
       @include layout-center-center;
-      width: 183px;
+      width: 261px;
       padding: 5px 0;
       margin-left: 15px;
       font-weight: 600;
@@ -2430,7 +2446,7 @@ input[type="checkbox"] {
     .chk-acc {
       .cnt {
         display: none;
-        padding: 0 30px 0 40px;
+        padding: 0 29px 0 44px;
         background-color: #f6f6f6;
         li {
           padding: 10px 0;
@@ -2460,6 +2476,9 @@ input[type="checkbox"] {
         position: absolute;
         right: 20px;
         top: 24px;
+        &::before {
+          margin-top: -6px;
+        }
       }
       &.active {
         label {
@@ -2470,17 +2489,22 @@ input[type="checkbox"] {
         }
         em {
           position: relative;
-          top: inherit;
+          top: -1px;
           right: inherit;
         }
       }
-      span {
+      span {        
         position: relative;
+        top: 2px;
+        display: inline-block;
+        width: 100px;
+        margin-right: 20px;
         padding-left: 25px;
         font-weight: 600;
+        @include text-overflow;
         &::before {
           position: absolute;
-          left: 0;top: 50%;
+          left: 3px;top: 50%;
           @include virtual-selector;
           width: 7px;height: 11px;
           margin-top: -5px;
@@ -2526,7 +2550,7 @@ input[type="checkbox"] {
         }
       }
       .cnt {
-        padding: 0 29px 0 46px;
+        padding: 0 27px 0 46px;
         li {
           display: none;
         }
@@ -2536,7 +2560,7 @@ input[type="checkbox"] {
       }
       input[type="checkbox"]:checked + label::before {
         width: 20px;height: 20px;
-        margin-top: -10px;
+        margin-top: -7px;
         background: url(../../images/common/ico_delete_type02.png) no-repeat;
         background-size: contain;
       }

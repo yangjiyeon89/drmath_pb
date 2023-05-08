@@ -579,7 +579,7 @@ i {
 											left: -12px;
 											width: 50px;
 											height: auto;
-											padding: 4px 0 0 ;
+											padding: 3px 0 0 ;
 											text-align: center;
 											&::before {
 												left: 20px;
@@ -868,6 +868,40 @@ i {
 							a {
 								display: flex;
 								width: 100%;
+							}
+							.que-badge {
+								@include content-center-center;
+								min-width: 45px;
+								height: 26px;
+								padding: 0 13px;
+								border-radius: 13px;
+								box-sizing: border-box;
+								@include font(12px, 500);
+								line-height: 26px;
+								&.yellow {
+									background-color: #fff6dc;
+									color: #bb7b00;
+								}
+								&.green {
+									background-color: #bfebdf;
+									color: #1b9372;
+								}
+								&.blue {
+									background-color: #d8e1f7;
+									color: #4b70c9;
+								}
+								&.gray {
+									background-color: #e8e8e8;
+									color: #666666;
+								}
+								&.sky-blue {
+									background-color: #d4f4fa;
+									color: #49b7cc;
+								}
+								&.red {
+									background-color: #ffd8d8;
+									color: #f15969;
+								}
 							}
 						}
 						.dragHandle {
@@ -2162,7 +2196,7 @@ i {
 			}
 		}
 		// 템플릿 08
-	&.top-type08 {
+		&.top-type08 {
 			width: calc(100% - 120px);
 			img {
 				width: 109px;height: 26px;
@@ -2210,6 +2244,62 @@ i {
 						}
 						& + span {
 							padding-left: 4px;
+						}
+					}
+				}
+			}
+		}
+		//템플릿 09
+		&.top-type09 {
+			position: relative;
+			font-family: 'GmarketSans';
+			.deco-img {
+				position: absolute;
+				top: 41px;left: 90px;
+			}
+			.top-wrap {
+				flex-direction: column;
+				& > div {
+					width: 100%;
+					padding-left: 264px;
+					box-sizing: border-box;
+				}
+			}
+			.tit-area {				
+				background-color: #7e5bcf;
+				.sub-txt {
+					margin: 58px 0 10px;
+					color: #fff;
+					
+					@include font(23px, 500);
+				}
+			}
+			.btm-area {
+				margin-top: 17px;
+				padding-right: 60px;
+				@include layout-justify-center;
+				.tit {
+					@include font(50px, 300);
+					em {
+						color: #7e5bce;
+						font-weight: 700;
+					}
+				}
+				.info-area {
+					margin-top: -4px;
+					> div {
+						@include content-center;
+						width: 217px;height: 37px;
+						padding-left: 20px;
+						margin-left: 6px;
+						border: 1px solid #d5c0ec;
+						border-radius: 18px;
+						box-sizing: border-box;
+						img {
+							margin-right: 20px;
+						}
+						span {
+							padding-top: 5px;
 						}
 					}
 				}

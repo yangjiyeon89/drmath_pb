@@ -81,6 +81,23 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.que_cont .none-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 627px;
+}
+.que_cont .none-data .none-txt {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 1280px) {
+  .que_cont .none-data {
+    height: 435px;
+  }
+}
 .que_cont.sub01 .table span:nth-child(1) {
   width: 6%;
 }

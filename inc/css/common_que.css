@@ -1270,8 +1270,21 @@ input[type=checkbox]:checked + label::before {
   z-index: 1;
   transform: skew(-0.1deg);
 }
+.select-list::-webkit-scrollbar {
+  width: 8px;
+}
+.select-list::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+  border-radius: 35px;
+}
+.select-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 .select-list.h180 li {
   height: 180px;
+}
+.select-list.h110 li {
+  height: 110px;
 }
 .select-list a {
   display: block;
@@ -1930,7 +1943,7 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 183px;
+  width: 261px;
   padding: 5px 0;
   margin-left: 15px;
   font-weight: 600;
@@ -2528,7 +2541,7 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.check-type .chk-acc .cnt {
   display: none;
-  padding: 0 30px 0 40px;
+  padding: 0 29px 0 44px;
   background-color: #f6f6f6;
 }
 .pop-wrap.check-type .chk-acc .cnt li {
@@ -2557,6 +2570,9 @@ input[type=checkbox]:checked + label::before {
   right: 20px;
   top: 24px;
 }
+.pop-wrap.check-type .acc-btn label::before {
+  margin-top: -6px;
+}
 .pop-wrap.check-type .acc-btn.active label {
   display: inline;
 }
@@ -2565,17 +2581,26 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.check-type .acc-btn.active em {
   position: relative;
-  top: inherit;
+  top: -1px;
   right: inherit;
 }
 .pop-wrap.check-type .acc-btn span {
   position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
   padding-left: 25px;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .pop-wrap.check-type .acc-btn span::before {
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 50%;
   content: "";
   display: block;
@@ -2624,7 +2649,7 @@ input[type=checkbox]:checked + label::before {
   right: inherit;
 }
 .pop-wrap.check-type .right-cnt .cnt {
-  padding: 0 29px 0 46px;
+  padding: 0 27px 0 46px;
 }
 .pop-wrap.check-type .right-cnt .cnt li {
   display: none;
@@ -2635,7 +2660,7 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.check-type .right-cnt input[type=checkbox]:checked + label::before {
   width: 20px;
   height: 20px;
-  margin-top: -10px;
+  margin-top: -7px;
   background: url(../../images/common/ico_delete_type02.png) no-repeat;
   background-size: contain;
 }

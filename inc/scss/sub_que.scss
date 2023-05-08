@@ -582,8 +582,7 @@
         @include font(18px, 700);
       }
     }
-  }
-  
+  }  
   .title {
     margin-right: 170px;
     @include font(20px, 700);
@@ -728,13 +727,19 @@
         .box {
           position: relative;
           width: 69px;height: 36px;
-          color: $color-main-purple;
+          // color: $color-main-purple;
           font-size: 14px;
-          border: 1px solid $color-line-type02;
+          // border: 1px solid $color-line-type02;
           border-radius: 3px;
           &.gray {
-            color: #929292;
+            // color: #929292;
             background-color: $color-table;
+            button {
+              color: #929292;
+            }
+          }
+          button {
+            color: $color-main-purple;
           }
         }
       }
@@ -2970,6 +2975,20 @@
     }
   }
 }
+.tbody {
+  .none-data {
+    height: 627px;
+    margin-left: 0;
+    flex-direction: column;
+    border: 0;
+    img {
+      margin: 0;
+    }
+    .none-txt {
+      margin-top: 14px;
+    }
+  }
+}
 
 
 
@@ -3186,6 +3205,11 @@
   //common
   .none-data {
     height: 620px;
+  }
+  .tbody {
+    .none-data {
+      height: 435px;
+    } 
   }
 }
 

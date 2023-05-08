@@ -691,14 +691,17 @@
   position: relative;
   width: 69px;
   height: 36px;
-  color: #5a14be;
   font-size: 14px;
-  border: 1px solid #dddddd;
   border-radius: 3px;
 }
 .sub06-que .tab-list-type01 .chk-acc span .box.gray {
-  color: #929292;
   background-color: #f2f2f2;
+}
+.sub06-que .tab-list-type01 .chk-acc span .box.gray button {
+  color: #929292;
+}
+.sub06-que .tab-list-type01 .chk-acc span .box button {
+  color: #5a14be;
 }
 .sub06-que .tab-list-type01 .chk-acc .chk .pen-type02 {
   filter: invert(16%) sepia(79%) saturate(5381%) hue-rotate(253deg) brightness(76%) contrast(111%);
@@ -2801,6 +2804,19 @@
   margin-top: 15px;
 }
 
+.tbody .none-data {
+  height: 627px;
+  margin-left: 0;
+  flex-direction: column;
+  border: 0;
+}
+.tbody .none-data img {
+  margin: 0;
+}
+.tbody .none-data .none-txt {
+  margin-top: 14px;
+}
+
 @media (max-width: 1280px) {
   .login {
     padding-top: 0;
@@ -2929,5 +2945,8 @@
   }
   .none-data {
     height: 620px;
+  }
+  .tbody .none-data {
+    height: 435px;
   }
 }
