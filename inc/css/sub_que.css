@@ -899,6 +899,9 @@
 .sub08-01 .tab-list-type02 .table li {
   justify-content: flex-start;
 }
+.sub08-01 .tab-list-type02 .table.sheet-cnt li {
+  justify-content: space-between;
+}
 .sub08-01 .tab-list-type02 .num {
   width: 47px;
 }

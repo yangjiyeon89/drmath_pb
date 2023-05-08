@@ -1834,15 +1834,22 @@ input[type="checkbox"] {
       @include font(18px, 700);
     }
     .pop-btn {
+      @include layout-center-center;
       width: 183px;
       padding: 5px 0;
       margin-left: 15px;
       font-weight: 600;
       border: 1px solid $color-line-type02;
       border-radius: 5px;
-      background-color: #fff;
+      background-color: #fff;      
       img {
         margin-left: 10px;
+      }
+      span {
+        display: block;
+        width: 85%;
+        @include text-overflow;
+        @include font(16px, 600);
       }
     }
     .tooltip-wrap {
@@ -2945,10 +2952,15 @@ input[type="checkbox"] {
       .sheet-list {
         .td {
           padding-left: 20px;
-          justify-content: flex-start;
+          // justify-content: flex-start;
+          justify-content: flex-end;
           cursor: pointer;
           span {
             width: 184px;
+            flex: auto;
+          }
+          .wrong + label {
+            margin-right: 13px;
           }
         }
       }

@@ -1927,6 +1927,9 @@ input[type=checkbox]:checked + label::before {
   font-weight: 700;
 }
 .table-wrap .tit-wrap .pop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 183px;
   padding: 5px 0;
   margin-left: 15px;
@@ -1937,6 +1940,17 @@ input[type=checkbox]:checked + label::before {
 }
 .table-wrap .tit-wrap .pop-btn img {
   margin-left: 10px;
+}
+.table-wrap .tit-wrap .pop-btn span {
+  display: block;
+  width: 85%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  font-size: 16px;
+  font-weight: 600;
 }
 .table-wrap .tit-wrap .tooltip-wrap {
   display: inline-block;
@@ -3040,11 +3054,15 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.answer-sheet-type.type02 .sheet-list .td {
   padding-left: 20px;
-  justify-content: flex-start;
+  justify-content: flex-end;
   cursor: pointer;
 }
 .pop-wrap.answer-sheet-type.type02 .sheet-list .td span {
   width: 184px;
+  flex: auto;
+}
+.pop-wrap.answer-sheet-type.type02 .sheet-list .td .wrong + label {
+  margin-right: 13px;
 }
 .pop-wrap.answer-sheet-type.type02 .btn-wrap {
   padding: 10px 20px;

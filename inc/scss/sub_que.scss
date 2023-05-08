@@ -968,6 +968,11 @@
       li {
         justify-content: flex-start;
       }
+      &.sheet-cnt {
+        li {
+          justify-content: space-between;
+        }
+      }
     }
     .num {
       width: 47px;
