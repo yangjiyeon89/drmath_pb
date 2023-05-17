@@ -217,6 +217,7 @@
 
 
       .col {
+        position: relative;
         span {
           &:nth-child(2) {
             justify-content: center;
@@ -228,8 +229,37 @@
             padding: 13px;
           }
         }
+        .cate {
+          position: relative;
+          .txt {
+            position: relative;
+            display: inline-block;
+            width: 70px;
+            @include text-overflow;
+            cursor: pointer;
+            &:hover {
+              & + .tooltip-txt {
+                display: block;
+              }
+            }
+          }
+          .tooltip-txt {
+            display: none;
+            position: absolute;
+            top: 45px;left: 0;
+            width: 200px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            word-break: break-all;
+            z-index: 1;
+          }
+        }
       }
+      
     }
+    
   }
 
   &.sub02 {
@@ -534,11 +564,18 @@
         }
         &:nth-child(4) {
           width: 8%;
+          
         }
         &:last-child {
           width: 12%;
         }
+        &.company {
+          width: 80px;
+          word-break: break-all;
+          text-align: center;
+        }
       }
+      
     }
   }
   .select-list {

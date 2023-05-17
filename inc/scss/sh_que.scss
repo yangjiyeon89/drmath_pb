@@ -1971,6 +1971,7 @@ i {
 				margin-bottom: 14px;
 				flex-direction: column;
 				.grade {
+					flex: none;
 					@include content-center-center;
 					width: 184px;height: 143px;
 					margin-right: 35px;
@@ -2079,6 +2080,7 @@ i {
 				}
 			}
 			.top-wrap {
+				align-items: flex-end;
 				.tit-area {
 					.tit {
 						padding-left: 24px;
@@ -2092,8 +2094,9 @@ i {
 				}
 			}
 			.info-wrap {
+				flex: none;
 				flex-direction: column;
-				margin: 50px 22px 0 0;
+				margin: 0 22px 0 0;
 				@include font(23px, 500);
 				.info {
 					margin-bottom: 10px;
@@ -3379,6 +3382,12 @@ i {
 		&.type01 {
 			background: url(../../images/sub/report_cover_01_01.png) no-repeat #fff;
 			font-family: 'S-CoreDream', sans-serif;
+			.logo {
+				max-width: 130px;
+				img {
+					max-width: 100%;
+				}
+			}
 			.inner {
 				padding: 100px 50px;
 			}

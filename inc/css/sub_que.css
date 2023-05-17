@@ -545,12 +545,39 @@
   font-weight: 700;
 }
 .sub06-que .title {
-  margin-right: 170px;
+  position: relative;
+  margin-right: 90px;
   font-size: 20px;
   font-weight: 700;
 }
+.sub06-que .title .txt {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.sub06-que .title .txt:hover + .tooltip-txt {
+  display: block;
+}
+.sub06-que .title .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  z-index: 1;
+}
 .sub06-que .search-wrap {
   display: inline-block;
+  flex: none;
 }
 .sub06-que .search-wrap > div, .sub06-que .search-wrap > button {
   display: inline-block;
@@ -1061,9 +1088,21 @@
 .sub10-que .add-type .select-wrap .select-list {
   max-height: 182px;
 }
+.sub10-que .add-type .select-wrap.school {
+  display: block;
+  margin-left: 0;
+}
 .sub10-que .add-type .select-wrap.school .select-btn {
-  width: 277px;
+  display: block;
+  max-width: 475px;
+  width: 100%;
+  padding: 12px 30px 12px 12px;
   margin: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .sub10-que .add-type .select-wrap.school + input {
   width: 100%;
@@ -1117,11 +1156,30 @@
 .sub10-que .form-type .select-wrap:first-child {
   margin-left: 0;
 }
-.sub10-que .form-type .select-wrap.school .select-btn {
-  width: 277px;
-}
 .sub10-que .form-type .select-wrap .select-list {
   max-height: 182px;
+}
+.sub10-que .form-type .select-wrap.school {
+  display: block;
+  margin-left: 0;
+}
+.sub10-que .form-type .select-wrap.school .select-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 30px 12px 12px;
+  margin: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+}
+.sub10-que .form-type .select-wrap.school + input {
+  width: 100%;
+  margin-left: 0;
+}
+.sub10-que .form-type .select-wrap.school .select-list {
+  margin-top: -9px;
 }
 .sub10-que .form-type .date-box {
   position: relative;
@@ -1226,6 +1284,10 @@
 }
 .sub10-que .tab-list-type01 .chk-acc .scroll-inner {
   height: 566px;
+}
+.sub10-que .tab-list-type01 .table .col.none-data span {
+  width: 100%;
+  height: 100%;
 }
 .sub10-que .add-type.wide-w .pop-inner {
   width: 1002px;

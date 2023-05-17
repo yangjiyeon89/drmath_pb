@@ -1206,6 +1206,10 @@ input[type=checkbox]:checked + label::before {
   position: relative;
   display: inline-block;
 }
+.select-wrap.w49 {
+  width: 49%;
+  margin-top: 5px;
+}
 
 .select-btn {
   position: relative;
@@ -1241,11 +1245,17 @@ input[type=checkbox]:checked + label::before {
 .select-btn.w90 {
   width: 90px;
 }
+.select-btn.w104 {
+  width: 104px;
+}
 .select-btn.w138 {
   width: 138px;
 }
 .select-btn.w152 {
   width: 152px;
+}
+.select-btn.w50 {
+  width: 50%;
 }
 .select-btn.wfull {
   width: 100%;
@@ -1290,6 +1300,7 @@ input[type=checkbox]:checked + label::before {
   display: block;
   padding: 9px 12px;
   box-sizing: border-box;
+  word-break: break-all;
 }
 .select-list a:hover {
   background-color: #ebe3ff;
@@ -2786,6 +2797,9 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.table-type02 table td {
   padding: 20px 0;
   border-top: 1px solid #dddddd;
+}
+.pop-wrap.table-type02 table td.pointer {
+  cursor: pointer;
 }
 .pop-wrap.answer-sheet-type .pop-inner {
   width: 1210px;

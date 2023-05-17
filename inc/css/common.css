@@ -306,8 +306,9 @@ html {
 }
 .paging-wrap a.prev {
   margin-right: 18px;
-  background: url(../../images/common/ico_arrow_g.png) no-repeat;
+  background: url(../../images/common/ico_arrow_b.png) no-repeat;
   background-size: contain;
+  transform: rotate(-180deg);
 }
 .paging-wrap a.next {
   margin-left: 18px;
@@ -1013,6 +1014,15 @@ input[type=checkbox]:checked + label::before {
   width: 17px;
   height: 17px;
   background-size: contain;
+}
+.pop-wrap.alert-type .pop-content.img-cnt {
+  flex-direction: column;
+}
+.pop-wrap.alert-type .pop-content.img-cnt img {
+  padding-top: 20px;
+}
+.pop-wrap.alert-type .pop-content.img-cnt .txt {
+  padding-top: 10px;
 }
 .pop-wrap.alert-type .pop-footer {
   display: flex;

@@ -262,8 +262,9 @@ html {
     }
     &.prev {
       margin-right: 18px;
-      background: url(../../images/common/ico_arrow_g.png) no-repeat;
+      background: url(../../images/common/ico_arrow_b.png) no-repeat;
       background-size: contain;
+      transform: rotate(-180deg);
     }
     &.next {
       margin-left: 18px;
@@ -918,6 +919,15 @@ input[type="checkbox"] {
         top: 20px;right: 20px;
         width: 17px;height: 17px;
         background-size: contain;
+      }
+      &.img-cnt {
+        flex-direction: column;
+        img {
+          padding-top: 20px;
+        }
+        .txt {
+          padding-top: 10px;
+        }
       }
     }
     .pop-footer {

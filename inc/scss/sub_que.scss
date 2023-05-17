@@ -584,11 +584,35 @@
     }
   }  
   .title {
-    margin-right: 170px;
+    position: relative;
+    margin-right: 90px;
     @include font(20px, 700);
+    .txt {
+      cursor: pointer;
+      @include text-overflow-multi(2);
+      &:hover {
+        & + .tooltip-txt {
+          display: block;
+        }
+      }
+    }
+    .tooltip-txt {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fff;
+      z-index: 1;
+    }
+    
   }
   .search-wrap {
     display: inline-block;
+    flex: none;
     > div, > button {
       display: inline-block;
     }
@@ -1144,9 +1168,15 @@
       }
     }
     .select-wrap.school {
+      display: block;
+      margin-left: 0;
       .select-btn {
-        width: 277px;
+        display: block;
+        max-width: 475px;
+        width: 100%;
+        padding: 12px 30px 12px 12px;
         margin: 5px 0;
+        @include text-overflow;
       }
       & + input {
         width: 100%;
@@ -1215,15 +1245,35 @@
       &:first-child {
         margin-left: 0;
       }
-      &.school {
-        .select-btn {
-          width: 277px;
-        }
-      }
+      // &.school {
+      //   .select-btn {
+      //     width: 277px;
+      //   }
+      // }
       .select-list {
         max-height: 182px;
       }
+      &.school {
+        display: block;
+        margin-left: 0;
+        .select-btn {
+          display: block;
+          width: 100%;
+          padding: 12px 30px 12px 12px;
+          margin: 5px 0;
+          @include text-overflow;
+        }
+        & + input {
+          width: 100%;
+          margin-left: 0;
+          // margin-bottom: 5px;
+        }
+        .select-list {
+          margin-top: -9px;        
+        }
+      }
     }
+    
     .date-box {
       position: relative;
       .ui-datepicker-trigger {
@@ -1333,6 +1383,16 @@
     .chk-acc {
       .scroll-inner {
         height: 566px;
+      }
+    }
+    .table {
+      .col {
+        &.none-data {
+          span {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
     }
   }

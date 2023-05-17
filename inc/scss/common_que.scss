@@ -1117,6 +1117,10 @@ input[type="checkbox"] {
 .select-wrap {
   position: relative;
   display: inline-block;
+  &.w49 {
+    width: 49%;
+    margin-top: 5px;
+  }
 }
 .select-btn {
   position: relative;
@@ -1148,11 +1152,17 @@ input[type="checkbox"] {
   &.w90 {
     width: 90px;
   }
+  &.w104 {
+    width: 104px;
+  }
   &.w138 {
     width: 138px;
   }
   &.w152 {
     width: 152px;
+  }
+  &.w50 {
+    width: 50%;
   }
   &.wfull {
     width: 100%;
@@ -1201,6 +1211,7 @@ input[type="checkbox"] {
     display: block;
     padding: 9px 12px;
     box-sizing: border-box;
+    word-break: break-all;
     &:hover {
       background-color: #ebe3ff;
     }
@@ -2690,6 +2701,9 @@ input[type="checkbox"] {
       td {
         padding: 20px 0;
         border-top: 1px solid $color-line-type02;
+        &.pointer {
+          cursor: pointer;
+        }
       }
     }
   }

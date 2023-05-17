@@ -198,7 +198,12 @@
                 </div>
                 <!-- s: 20221230 수정 -->
                 <!-- 태블릿에서는 5줄 -->
-                <div class="tbody">                  
+                <div class="tbody">
+                  <!-- s: 20230517 추가 -->
+                  <div class="col none-data">
+                    <span>재원생이 없습니다.</span>
+                  </div>
+                  <!-- e: 20230517 추가 -->
                   <div class="col">
                     <span>
                       <input type="checkbox" id="chk100_02">
@@ -528,7 +533,7 @@
 
     <!-- s: 20230208 수정 -->
     <!-- 등록 팝업 -->
-    <div class="pop-wrap add-type" data-pop="add-pop">
+    <div class="pop-wrap add-type" data-pop="add-pop" >
       <div class="pop-inner">
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
@@ -683,8 +688,9 @@
                       <tr>
                         <th>학교</th>
                         <td>
-                          <div class="select-wrap">
-                            <button type="button" class="select-btn w90">시/도</button>
+                          <!-- s: 20230517 수정 -->
+                          <div class="select-wrap w49">
+                            <button type="button" class="select-btn wfull">시/도</button>
                             <ul class="select-list">
                               <li>
                                 <a href="javascript:;">시/도</a>
@@ -712,19 +718,20 @@
                               </li>
                             </ul>
                           </div>
-                          <div class="select-wrap">
-                            <button type="button" class="select-btn w90">구/군</button>
+                          <div class="select-wrap w49">
+                            <button type="button" class="select-btn wfull">구군구군</button>
                             <ul class="select-list">
                               <li>
                                 <a href="javascript:;">구/군</a>
                               </li>
                             </ul>
                           </div>
+                          <!-- e: 20230517 수정 -->
                           <div class="select-wrap school"><!-- 20230507 class 추가 -->
-                            <button type="button" class="select-btn">학교선택학교선택학교선택교선택</button>
+                            <button type="button" class="select-btn">이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교</button>
                             <ul class="select-list">
                               <li>
-                                <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                                <a href="javascript:;">이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교</a>
                               </li>
                               <li>
                                 <a href="javascript:;">학교선택학교선택학교선택교선택</a>
@@ -926,7 +933,7 @@
     </div>
 
     <!--  학생 상세 정보 팝업 -->
-    <div class="pop-wrap form-type" data-pop="detail-pop">
+    <div class="pop-wrap form-type" data-pop="detail-pop"  style="display: block;">
       <div class="pop-inner">
         <div class="pop-header">
           <span>학생 상세 정보</span>
@@ -1020,12 +1027,86 @@
                     </td>
                   </tr>
                   <!-- e: 20221230 수정 -->
+                  <!-- s: 20230517 추가 -->
                   <tr>
                     <th>학교</th>
                     <td colspan="3">
-                      <input type="text" class="w182" value="천재고등학교">
+                      <div class="select-wrap w49">
+                        <button type="button" class="select-btn wfull">시/도</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">시/도</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="select-wrap w49">
+                        <button type="button" class="select-btn wfull">구군구군</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">구/군</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- e: 20230517 수정 -->
+                      <!-- s: 20230517 추가 -->
+                      <div class="select-wrap school">
+                        <button type="button" class="select-btn">이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교</button>
+                        <ul class="select-list">
+                          <li>
+                            <a href="javascript:;">이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교이화여자대학교사범대학부속이화금란고등학교</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">학교선택학교선택학교선택교선택</a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <input type="text" class="w135">
                     </td>
                   </tr>
+                  <!-- e: 20230517 추가 -->
                   <tr>
                     <th>학생 이메일</th>
                     <td colspan="3">

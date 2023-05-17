@@ -2129,6 +2129,7 @@ i.pen-type07 {
   flex-direction: column;
 }
 .que-preview-wrap .que-top.top-type03 .top-wrap .grade {
+  flex: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2253,6 +2254,9 @@ i.pen-type07 {
   height: 37px;
   background-color: #333333;
 }
+.que-preview-wrap .que-top.top-type05 .top-wrap {
+  align-items: flex-end;
+}
 .que-preview-wrap .que-top.top-type05 .top-wrap .tit-area .tit {
   padding-left: 24px;
 }
@@ -2264,8 +2268,9 @@ i.pen-type07 {
   font-size: 24px;
 }
 .que-preview-wrap .que-top.top-type05 .info-wrap {
+  flex: none;
   flex-direction: column;
-  margin: 50px 22px 0 0;
+  margin: 0 22px 0 0;
   font-size: 23px;
   font-weight: 500;
 }
@@ -3232,6 +3237,12 @@ i.pen-type07 {
 .report-wrap .cover-cnt.type01 {
   background: url(../../images/sub/report_cover_01_01.png) no-repeat #fff;
   font-family: "S-CoreDream", sans-serif;
+}
+.report-wrap .cover-cnt.type01 .logo {
+  max-width: 130px;
+}
+.report-wrap .cover-cnt.type01 .logo img {
+  max-width: 100%;
 }
 .report-wrap .cover-cnt.type01 .inner {
   padding: 100px 50px;
