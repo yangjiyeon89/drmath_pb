@@ -152,6 +152,16 @@
   vertical-align: middle;
   background-color: #f7f7f7;
 }
+.serv-cnt .table-form > div .row .tr .tit em {
+  position: relative;
+  top: -11px;
+  left: 4px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #5a14be;
+}
 .serv-cnt .table-form > div .row .tr .cnt {
   width: 500px;
   padding: 10px 20px;

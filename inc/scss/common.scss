@@ -1403,6 +1403,46 @@ input[type="checkbox"] {
   }
 }
 
+.privacy-txt-wrap {
+  .scroll-inner {
+    padding: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  .tit {
+    margin-top: 20px;
+    font-weight: 500;
+    &:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+  .txt {
+    line-height: 1.5;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #ddd;
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+    th {
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}
+
 
 //홍보사이트
 @media (max-width: 1240px){

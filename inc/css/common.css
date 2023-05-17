@@ -1494,6 +1494,44 @@ input[type=checkbox]:checked + label::before {
   filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
 }
 
+.privacy-txt-wrap .scroll-inner {
+  padding: 20px;
+}
+.privacy-txt-wrap p {
+  margin-bottom: 10px;
+}
+.privacy-txt-wrap .title {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.privacy-txt-wrap .title:nth-child(1) {
+  margin-top: 0;
+}
+.privacy-txt-wrap .tit {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.privacy-txt-wrap .tit:nth-child(1) {
+  margin-top: 0;
+}
+.privacy-txt-wrap .txt {
+  line-height: 1.5;
+}
+.privacy-txt-wrap table {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.privacy-txt-wrap table th, .privacy-txt-wrap table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.privacy-txt-wrap table th {
+  text-align: center;
+  font-weight: 500;
+}
+
 @media (max-width: 1240px) {
   [class^=web-] {
     display: none !important;
