@@ -1159,3 +1159,21 @@
   height: 660px;
   overflow-y: auto;
 }
+.pop-wrap.member-type .privacy_info {
+  margin: 10px 0;
+}
+.pop-wrap.member-type .privacy_sub {
+  margin-bottom: 10px;
+}
+.pop-wrap.member-type table {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.pop-wrap.member-type table th {
+  text-align: center;
+}
+.pop-wrap.member-type table th, .pop-wrap.member-type table td {
+  padding: 5px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}

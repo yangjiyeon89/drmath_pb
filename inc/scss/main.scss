@@ -1099,5 +1099,23 @@
         overflow-y: auto;
       }
     }
+    .privacy_info {
+      margin: 10px 0;
+    }
+    .privacy_sub {
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #ddd;
+      th {
+        text-align: center;
+      }
+      th, td {
+        padding: 5px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+    }
   }
 }
