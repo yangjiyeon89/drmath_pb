@@ -547,18 +547,19 @@
 .sub06-que .title {
   position: relative;
   margin-right: 90px;
+  width: 508px;
   font-size: 20px;
   font-weight: 700;
 }
 .sub06-que .title .txt {
   cursor: pointer;
-  text-overflow: ellipsis;
-  white-space: normal;
-  word-wrap: break-word;
+  display: block;
+  width: 100%;
   overflow: hidden;
-  -webkit-line-clamp: 2;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .sub06-que .title .txt:hover + .tooltip-txt {
   display: block;
@@ -566,7 +567,7 @@
 .sub06-que .title .tooltip-txt {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 0;
   width: 100%;
   padding: 10px;
@@ -1008,11 +1009,17 @@
 
 .sub10-que .container {
   overflow: hidden;
+  position: relative;
 }
 .sub10-que .container .inner {
+  position: sticky;
+  top: 0;
   margin-top: 70px;
   padding: 0 20px 30px;
   box-sizing: border-box;
+}
+.sub10-que .container .tab-wrap {
+  position: relative;
 }
 .sub10-que .tab-link {
   padding: 44px 20px 0;
@@ -1283,7 +1290,7 @@
   font-size: 16px;
 }
 .sub10-que .tab-list-type01 .chk-acc .scroll-inner {
-  height: 566px;
+  height: 527px;
 }
 .sub10-que .tab-list-type01 .table .col.none-data span {
   width: 100%;
@@ -1697,19 +1704,26 @@
 }
 .sub10-que .btm-wrap {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  height: 40px;
   margin-top: 10px;
 }
 .sub10-que .btm-wrap .button-wrap {
   display: flex;
-  margin-left: 196px;
+  position: absolute;
+  right: 0;
 }
 .sub10-que .btm-wrap .button-wrap button + button {
   margin-left: 10px;
 }
 
 .sub10-01 .tab-list-type01 .tbody {
+  position: relative;
   border-bottom: 0;
+}
+.sub10-01 .tab-list-type01 .tbody .scroll-inner {
+  position: sticky;
+  top: 0;
 }
 .sub10-01 .tab-list-type01 .chk-acc span:nth-child(1) {
   width: 6%;

@@ -586,10 +586,13 @@
   .title {
     position: relative;
     margin-right: 90px;
+    width: 508px;
     @include font(20px, 700);
     .txt {
       cursor: pointer;
-      @include text-overflow-multi(2);
+      display: block;
+      width: 100%;
+      @include text-overflow;
       &:hover {
         & + .tooltip-txt {
           display: block;
@@ -599,7 +602,7 @@
     .tooltip-txt {
       display: none;
       position: absolute;
-      top: 50px;
+      top: 30px;
       left: 0;
       width: 100%;
       padding: 10px;
@@ -1082,10 +1085,16 @@
 .sub10-que {
   .container {
     overflow: hidden;
+    position: relative;
     .inner {
+      position: sticky;
+      top: 0;
       margin-top: 70px;
       padding: 0 20px 30px;
       box-sizing: border-box;
+    }
+    .tab-wrap {
+      position: relative;
     }
   }
   .tab-link {
@@ -1382,7 +1391,7 @@
   .tab-list-type01 {
     .chk-acc {
       .scroll-inner {
-        height: 566px;
+        height: 527px;
       }
     }
     .table {
@@ -1803,11 +1812,13 @@
   }
   .btm-wrap {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    height: 40px;
     margin-top: 10px;
     .button-wrap {
       display: flex;
-      margin-left: 196px;
+      position: absolute;
+      right: 0;
       button + button {
         margin-left: 10px;
       }
@@ -1818,7 +1829,12 @@
 .sub10-01 {
   .tab-list-type01 {
     .tbody {
+      position: relative;
       border-bottom: 0;
+      .scroll-inner {
+        position: sticky;
+        top: 0;
+      }
     }
     .chk-acc {
       span {

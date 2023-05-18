@@ -2709,7 +2709,7 @@ input[type="checkbox"] {
   }
   &.answer-sheet-type {
     .pop-inner {
-      width: 1210px;
+      width: 1350px;
     }
     .pop-header {
       padding: 30px 0 20px 24px;
@@ -2743,7 +2743,7 @@ input[type="checkbox"] {
       }
     }
     .answer-cnt {
-      width: 410px;
+      width: 570px;
       border: 1px solid $color-line-type02;
       .scroll-inner {
         padding: 0 30px 0 20px;
@@ -2803,7 +2803,7 @@ input[type="checkbox"] {
       }
     }
     .sheet-cnt {
-      width: calc(100% - 410px);
+      width: calc(100% - 570px);
       border-bottom: 1px solid $color-line-type02;
       .swiper-wrapper {
         position: sticky;
@@ -2924,7 +2924,7 @@ input[type="checkbox"] {
     }
     .swiper-button-prev {
       position: fixed;
-      left: 418px;
+      left: 577px;
       margin-top: -15px;
       transform: rotate(-180deg);
     }
@@ -2933,7 +2933,7 @@ input[type="checkbox"] {
         height: 711px;
       }
       .pop-inner {
-        width: 986px;
+        width: 1050px;
       }
       .pop-header {
         padding: 30px 0 20px 30px;
@@ -2946,7 +2946,7 @@ input[type="checkbox"] {
         }
       }
       .sheet-cnt {
-        width: calc(100% - 499px);
+        width: calc(100% - 800px);
         width: 600px;
         .scroll-inner {
           position: sticky;
@@ -2955,11 +2955,11 @@ input[type="checkbox"] {
         }
       }
       .answer-cnt {
-        width: 499px;
+        width: 800px;
       }
       .content-wrap {
         height: 650px;
-        padding: 21px;
+        padding: 15px;
         background-color: #f2f2f2;
         box-sizing: border-box;
       }
@@ -3416,8 +3416,23 @@ input[type="checkbox"] {
   // popup
   .pop-wrap {
     &.answer-sheet-type {
+      .swiper-button-prev {
+        left: 544px;
+      }
       .scroll-inner {
         height: 442px;
+      }
+      .answer-cnt {
+        width: 540px;
+        .scroll-inner {
+          padding: 0 10px;
+        }
+      }
+      .sheet-cnt {
+        width: calc(100% - 540px);
+      }
+      .name-wrap {
+        padding: 0 5px;
       }
       &.type02 {
         .content-wrap {
@@ -3426,6 +3441,9 @@ input[type="checkbox"] {
         .scroll-inner {
           height: 592px;
         }
+      }
+      .pop-inner {
+        width: 1200px;
       }
     }
     &.add-type {
