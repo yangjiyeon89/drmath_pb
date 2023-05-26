@@ -873,6 +873,7 @@ body {
   background-color: #fff;
 }
 .acc-tab-wrap .acc-btn-wrap {
+  position: relative;
   padding: 16px 16px 16px 30px;
   border-bottom: 1px solid #dddddd;
 }
@@ -889,6 +890,35 @@ body {
   margin-right: 23px;
   font-weight: 600;
   cursor: pointer;
+}
+.acc-tab-wrap .acc-btn-wrap span:hover + .tooltip-txt {
+  display: block;
+}
+.acc-tab-wrap .acc-btn-wrap .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  width: max-content;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.acc-tab-wrap .acc-btn-wrap .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
 }
 .acc-tab-wrap .acc-btn-wrap em {
   padding-right: 15px;
@@ -2316,6 +2346,45 @@ input[type=checkbox]:checked + label::before {
   font-weight: 700;
   text-align: center;
 }
+.pop-wrap .pop-header .tit .txt {
+  display: inline-block;
+  width: 462px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  cursor: pointer;
+}
+.pop-wrap .pop-header .tit .txt:hover + .tooltip-txt {
+  display: block;
+}
+.pop-wrap .pop-header .tit .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 80%;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.pop-wrap .pop-header .tit .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+}
 .pop-wrap .pop-close {
   position: absolute;
   top: 30px;
@@ -2498,6 +2567,86 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.alert-type .pop-content .txt em {
   color: #5a14be;
   font-weight: 600;
+}
+.pop-wrap.alert-type.type02 .pop-inner {
+  width: 600px;
+}
+.pop-wrap.alert-type.type02 .pop-content {
+  position: relative;
+  padding: 60px 0 100px;
+}
+.pop-wrap.alert-type.type02 .pop-content img {
+  padding: 0 0 30px;
+}
+.pop-wrap.alert-type.type02 .pop-content .tit {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.pop-wrap.alert-type.type02 .pop-content .tit em {
+  color: #5a14be;
+  font-weight: 700;
+}
+.pop-wrap.alert-type.type02 .pop-content .box {
+  margin: 25px 30px;
+  padding: 27px 0;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+.pop-wrap.alert-type.type02 .pop-content .box .box-txt {
+  display: block;
+  margin-bottom: 10px;
+}
+.pop-wrap.alert-type.type02 .pop-content .box .box-txt em {
+  color: #5a14be;
+  font-weight: 700;
+}
+.pop-wrap.alert-type.type02 .pop-content .box .date {
+  font-size: 26px;
+  font-weight: 500;
+}
+.pop-wrap.alert-type.type02 .pop-content .btm-txt {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.pop-wrap.alert-type.type02 .pop-content .btm-txt b {
+  display: block;
+  font-weight: 700;
+}
+.pop-wrap.alert-type.type02 .pop-content .btm-txt em {
+  color: #5a14be;
+  font-weight: 700;
+}
+.pop-wrap.alert-type.type02 .pop-content .buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 194px;
+  height: 39px;
+  margin: auto;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #5a14be;
+}
+.pop-wrap.alert-type.type02 .pop-content .buy img {
+  padding: 0;
+  margin: 0;
+  margin-top: -2px;
+  margin-left: 11px;
+}
+.pop-wrap.alert-type.type02 .pop-content .txt-g {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  color: #656565;
+  font-size: 14px;
+  font-weight: 500;
+}
+.pop-wrap.alert-type.type02 .pop-footer button:last-child {
+  background-color: #2c2c2c;
 }
 .pop-wrap.loading-type .pop-content img {
   padding-top: 100px;

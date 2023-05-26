@@ -446,19 +446,19 @@
   width: 7%;
 }
 .sub04-que .tab-list-type01 .table span:nth-child(4) {
-  width: 42%;
+  width: 49%;
 }
 .sub04-que .tab-list-type01 .table span:nth-child(5) {
-  width: 8%;
-}
-.sub04-que .tab-list-type01 .table span:nth-child(6) {
   width: 5%;
 }
+.sub04-que .tab-list-type01 .table span:nth-child(6) {
+  width: 6%;
+}
 .sub04-que .tab-list-type01 .table span:nth-child(7) {
-  width: 11%;
+  width: 5%;
 }
 .sub04-que .tab-list-type01 .table span:nth-child(8) {
-  width: 8%;
+  width: 9%;
 }
 .sub04-que .tab-list-type01 .table span:nth-child(9) {
   width: 3%;
@@ -472,16 +472,16 @@
 }
 
 .sub04-02 .tab-list-type01 .table span:nth-child(3) {
-  width: 54%;
+  width: 58%;
 }
 .sub04-02 .tab-list-type01 .table span:nth-child(4) {
-  width: 5%;
+  width: 6%;
 }
 .sub04-02 .tab-list-type01 .table span:nth-child(5) {
-  width: 11%;
+  width: 5%;
 }
 .sub04-02 .tab-list-type01 .table span:nth-child(6) {
-  width: 8%;
+  width: 9%;
 }
 .sub04-02 .tab-list-type01 .table span:nth-child(7) {
   width: 3%;
@@ -546,8 +546,7 @@
 }
 .sub06-que .title {
   position: relative;
-  margin-right: 90px;
-  width: 508px;
+  width: 428px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -646,6 +645,55 @@
   text-align: center;
   border-radius: 11px;
   background-color: #eaeaea;
+}
+.sub06-que .tab-list-type01 .tit {
+  position: relative;
+  padding: 13px 0 13px 27px;
+}
+.sub06-que .tab-list-type01 .tit .txt {
+  position: relative;
+  display: inline-block;
+  width: 482px;
+  margin: 0;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  cursor: pointer;
+}
+.sub06-que .tab-list-type01 .tit .txt:hover + .tooltip-txt {
+  display: block;
+}
+.sub06-que .tab-list-type01 .tit .tag-type01 {
+  margin: 0 10px;
+}
+.sub06-que .tab-list-type01 .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 100%;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.sub06-que .tab-list-type01 .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
 }
 .sub06-que .tab-list-type01 .tab-top {
   padding: 0;
@@ -996,15 +1044,41 @@
   right: -28px;
 }
 .sub08-01 .stu-list-slide .swiper-slide {
+  position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 71px;
+  width: auto;
   height: 36px;
+  padding: 0 10px;
   border-radius: 17px;
-  border: 1px solid #dddddd;
+  border: 1px solid #5a14be;
   background-color: #fff;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.sub08-01 .stu-list-slide .tooltip {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  display: block;
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #969696;
+  transform: translateX(-50%);
+}
+.sub08-01 .stu-list-slide .tooltip::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 57px;
+  bottom: -8px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+  transform: rotate(-180deg);
 }
 
 .sub10-que .container {
@@ -1229,6 +1303,9 @@
 }
 .sub10-que .form-type table td .fix-txt + button {
   margin-left: 4px;
+}
+.sub10-que .form-type table td.pr0 {
+  padding-right: 0;
 }
 .sub10-que .form-type table .address .wfull {
   margin-top: 10px;
@@ -1617,6 +1694,35 @@
   margin-top: -5px;
   background: url(../../images/common/ico_arrow_acc.png) no-repeat;
 }
+.sub10-que .add-type.wide-w .check-type .acc-btn span:hover + .tooltip-txt {
+  display: block;
+}
+.sub10-que .add-type.wide-w .check-type .acc-btn .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.sub10-que .add-type.wide-w .check-type .acc-btn .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+}
 .sub10-que .add-type.wide-w .check-type .acc-btn em {
   position: absolute;
   right: 30px;
@@ -1762,6 +1868,42 @@
   width: 70px;
   top: -3px;
   right: -70px;
+}
+.sub10-01 .tooltip-tit {
+  position: relative;
+}
+.sub10-01 .tooltip-tit .txt {
+  cursor: pointer;
+}
+.sub10-01 .tooltip-tit .txt:hover + .tooltip-txt {
+  display: block;
+}
+.sub10-01 .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: max-content;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.sub10-01 .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+  transform: translateX(-50%);
 }
 
 .sub10-02 .tab-list-type01 .chk-acc span:nth-child(1) {

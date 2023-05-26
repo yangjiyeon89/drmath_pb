@@ -246,14 +246,23 @@
           .tooltip-txt {
             display: none;
             position: absolute;
-            top: 45px;left: 0;
-            width: 200px;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            top: 50px;left: -25px;
+            width: 90px;           
+            padding: 4px 10px;
+            color: #fff;
+            text-align: center;
             word-break: break-all;
+            background-color: #969696;
+            border-radius: 3px;
             z-index: 1;
+            &::before {
+              @include virtual-selector;
+              position: absolute;
+              left: 47px;
+              top: -8px;
+              width: 11px;height: 8px;
+              background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+            }
           }
         }
       }
@@ -295,12 +304,12 @@
       }
 
       span:nth-child(3) {
-        width: 45%;
+        // width: 45%;
+        width: 55%;
       }
-
-
       span:nth-child(4) {
-        width: 9%;
+        // width: 9%;
+        width: 4%;
       }
 
       span:nth-child(5) {
@@ -308,10 +317,12 @@
       }
 
       span:nth-child(6) {
-        width: 10%;
+        // width: 10%;
+        width: 5%;
       }
       span:nth-child(7) {
-        width: 10%;
+        // width: 10%;
+        width: 9%;
       }
       span:nth-child(8) {
         width: 3%;

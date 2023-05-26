@@ -66,6 +66,18 @@
   line-height: 20px;
   padding: 19px 0 13px;
 }
+.container .wing-menu.wing02 {
+  top: 320px;
+}
+.container .wing-menu.wing02::before {
+  width: 104px;
+  height: 65px;
+  background: url(../../images/common/ico_quick02.png) no-repeat;
+  background-size: contain;
+}
+.container .wing-menu.wing02 a {
+  background-color: #ff9600;
+}
 
 .pagination {
   position: absolute;

@@ -1039,7 +1039,7 @@ input[type="checkbox"] {
     > li {
       position: relative;
       display: inline-block;
-      padding: 0 37px;
+      padding: 0 19px;
       > a {
         display: block;
         padding: 30px 0;
@@ -1074,9 +1074,18 @@ input[type="checkbox"] {
         }
       }
     }
+    .drmath {
+      a {
+        color: #5a14be;
+      }
+      img {
+        position: relative;
+        top: -2px;
+      }
+    }
   }
   .btn-wrap {
-    margin-left: 30px;
+    margin-left: 48px;
     a {
       display: inline-block;
       font-weight: 700;
@@ -1490,3 +1499,12 @@ input[type="checkbox"] {
   background-color: rgba(0,0,0,0.5);
 }
 
+@media (max-width: 1200px){
+  .header {
+    .btn-wrap {
+      .btn-hide {
+        display: none;
+      }
+    }
+  }
+}

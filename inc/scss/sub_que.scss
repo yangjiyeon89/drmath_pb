@@ -447,19 +447,23 @@
           width: 7%;
         }
         &:nth-child(4) {
-          width: 42%;
+          width: 49%;
         }
         &:nth-child(5) {
-          width: 8%;
-        }
-        &:nth-child(6) {
+          // width: 8%;
           width: 5%;
         }
+        &:nth-child(6) {
+          // width: 5%;
+          width: 6%;
+        }
         &:nth-child(7) {
-          width: 11%;
+          // width: 11%;
+          width: 5%;
         }
         &:nth-child(8) {
-          width: 8%;
+          // width: 8%;
+          width: 9%;
         }
         &:nth-child(9) {
           width: 3%;
@@ -494,16 +498,19 @@
     .table {
       span {
         &:nth-child(3) {
-          width: 54%;
+          width: 58%;
         }
         &:nth-child(4) {
-          width: 5%;
+          // width: 5%;
+          width: 6%;
         }
         &:nth-child(5) {
-          width: 11%;
+          // width: 11%;
+          width: 5%;
         }
         &:nth-child(6) {
-          width: 8%;
+          // width: 8%;
+          width: 9%;
         }
         &:nth-child(7) {
           width: 3%;
@@ -585,8 +592,9 @@
   }  
   .title {
     position: relative;
-    margin-right: 90px;
-    width: 508px;
+    // margin-right: 90px;
+    // width: 508px;
+    width: 428px;
     @include font(20px, 700);
     .txt {
       cursor: pointer;
@@ -684,6 +692,49 @@
     }
   }
   .tab-list-type01 {
+    .tit {
+      position: relative;
+      padding: 13px 0 13px 27px;
+      .txt {
+        position: relative;
+        display: inline-block;
+        width: 482px;
+        margin: 0;
+        font-size: 16px;
+        @include text-overflow;
+        cursor: pointer;
+        &:hover {
+          & + .tooltip-txt {
+            display: block;
+          }
+        }
+      }
+      .tag-type01 {
+        margin: 0 10px;
+      }
+    }
+    .tooltip-txt {
+      display: none;
+      position: absolute;
+      top: 50px;left: 50%;
+      width: 100%;           
+      padding: 4px 10px;
+      color: #fff;
+      text-align: center;
+      word-break: break-all;
+      background-color: #969696;
+      border-radius: 3px;
+      z-index: 1;
+      transform: translateX(-50%);
+      &::before {
+        @include virtual-selector;
+        position: absolute;
+        left: 50%;
+        top: -8px;
+        width: 11px;height: 8px;
+        background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+      }
+    }
     .tab-top {
       padding: 0;
     }
@@ -1071,13 +1122,37 @@
       right: -28px;
     }
     .swiper-slide {
+      position: relative;
       @include content-center-center;
-      width: 71px;
+      // width: 71px;
+      width: auto;
       height: 36px;
+      padding: 0 10px;
       border-radius: 17px;
-      border: 1px solid #dddddd;
+      border: 1px solid #5a14be;
       background-color: #fff;
       box-sizing: border-box;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      display: block;
+      padding: 4px 8px;
+      color: #fff;
+      border-radius: 5px;
+      background-color: #969696;
+      transform: translateX(-50%);
+      &::before {
+        @include virtual-selector;
+        position: absolute;
+        left: 57px;
+        bottom: -8px;
+        width: 11px;height: 8px;
+        background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+        transform: rotate(-180deg);
+      }
     }
   }
 }
@@ -1321,6 +1396,9 @@
           & + button {
             margin-left: 4px;
           }
+        }
+        &.pr0 {
+          padding-right: 0;
         }
       }
       .address {
@@ -1703,7 +1781,7 @@
             right: inherit;
           }
         }
-        span {          
+        span {
           position: relative;
           display: inline-block;
           width: 90px;
@@ -1718,6 +1796,33 @@
             width: 7px;height: 11px;
             margin-top: -5px;
             background: url(../../images/common/ico_arrow_acc.png) no-repeat;
+          }
+          &:hover {
+            & + .tooltip-txt {
+              display: block;
+            }  
+          }
+        }
+        .tooltip-txt {
+          display: none;
+          position: absolute;
+          top: 40px;left: 10px;
+          width: 150px;           
+          padding: 4px 10px;
+          color: #fff;
+          text-align: center;
+          word-break: break-all;
+          background-color: #969696;
+          border-radius: 3px;
+          z-index: 1;
+          font-style: normal;
+          &::before {
+            @include virtual-selector;
+            position: absolute;
+            left: 18px;
+            top: -7px;
+            width: 11px;height: 8px;
+            background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
           }
         }
         em {
@@ -1876,6 +1981,40 @@
     .open-select-list {
       width: 70px;
       top: -3px;right: -70px;
+    }
+  }
+  .tooltip-tit {
+    position: relative;
+    .txt {
+      cursor: pointer;
+      &:hover {
+        & + .tooltip-txt {
+          display: block;
+        }
+      }
+    }
+  }
+  .tooltip-txt {
+    display: none;
+    position: absolute;
+    top: 50px;left: 50%;
+    width: max-content;
+    padding: 4px 10px;
+    color: #fff;
+    text-align: center;
+    word-break: break-all;
+    background-color: #969696;
+    border-radius: 3px;
+    z-index: 1;
+    transform: translateX(-50%);
+    &::before {
+      @include virtual-selector;
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      width: 11px;height: 8px;
+      background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+      transform: translateX(-50%);
     }
   }
 }
