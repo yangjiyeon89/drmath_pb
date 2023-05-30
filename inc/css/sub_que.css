@@ -857,6 +857,9 @@
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span:nth-child(8) .btn-icon {
   width: 36px;
 }
+.sub06-que .sub06-student .tab-list-type01 .chk-acc span .box {
+  border: 1px solid #ddd;
+}
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em {
   position: absolute;
   color: #333333;
@@ -864,7 +867,7 @@
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1) {
   top: 3px;
-  left: 3px;
+  right: 33px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1)::after {
   position: absolute;
@@ -982,10 +985,12 @@
   justify-content: space-between;
 }
 .sub08-01 .tab-list-type02 .num {
-  width: 47px;
+  width: 56px;
+  word-break: break-all;
 }
 .sub08-01 .tab-list-type02 .label {
   padding: 9px 20px;
+  margin-left: 10px;
   color: #f13e26;
   font-size: 14px;
   border-radius: 18px;

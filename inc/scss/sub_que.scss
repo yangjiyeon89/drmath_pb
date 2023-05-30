@@ -917,12 +917,13 @@
             }
           }          
           .box {
+            border: 1px solid #ddd;
             em {
               position: absolute;
               color: $color-sub33;
               font-size: 11px;
               &:nth-child(1) {
-                top: 3px;left: 3px;
+                top: 3px;right: 33px;
                 &::after {
                   position: absolute;
                   bottom: -15px;right: -2px;
@@ -1058,10 +1059,12 @@
       }
     }
     .num {
-      width: 47px;
+      width: 56px;
+      word-break: break-all;
     }
     .label {
       padding: 9px 20px;
+      margin-left: 10px;
       color: #f13e26;
       font-size: 14px;
       border-radius: 18px;
