@@ -981,8 +981,18 @@
 .sub08-01 .tab-list-type02 .table li {
   justify-content: flex-start;
 }
+.sub08-01 .tab-list-type02 .table.sheet-cnt .scroll-inner {
+  height: 695px;
+}
 .sub08-01 .tab-list-type02 .table.sheet-cnt li {
   justify-content: space-between;
+}
+.sub08-01 .tab-list-type02 .table .cnt-box {
+  display: flex;
+  align-items: center;
+}
+.sub08-01 .tab-list-type02 .table .cnt-box .num {
+  margin-right: 10px;
 }
 .sub08-01 .tab-list-type02 .num {
   width: 56px;

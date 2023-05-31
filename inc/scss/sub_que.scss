@@ -1053,8 +1053,20 @@
         justify-content: flex-start;
       }
       &.sheet-cnt {
+        .scroll-inner {
+          height: 695px;
+        }
+        // .scroll-inner::-webkit-scrollbar-thumb {
+        //   height: 50%;
+        // }
         li {
           justify-content: space-between;
+        }
+      }
+      .cnt-box {
+        @include layout-center;
+        .num {
+          margin-right: 10px;
         }
       }
     }
