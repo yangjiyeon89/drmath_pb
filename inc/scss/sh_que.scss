@@ -1726,6 +1726,10 @@ i {
 	z-index: 4;
 	padding-bottom: 30px;
 	box-sizing: border-box;
+	.que-badge-group {
+		@include layout-center;
+		gap: 10px;
+	}
 	.que-top {
 		position: relative;
 		z-index: 1;

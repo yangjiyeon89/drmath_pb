@@ -3305,7 +3305,7 @@ input[type=checkbox]:checked + label::before {
   background-color: #ebe3ff;
 }
 .pop-wrap.wrong-sheet-type .btn-wrap.flex-type .btn-line {
-  width: 86px;
+  width: 150px;
   height: 40px;
 }
 .pop-wrap.wrong-sheet-type .btn-wrap.flex-type .btn-line.active {

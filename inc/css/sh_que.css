@@ -1865,6 +1865,11 @@ i.pen-type07 {
   padding-bottom: 30px;
   box-sizing: border-box;
 }
+.que-preview-wrap .que-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .que-preview-wrap .que-top {
   position: relative;
   z-index: 1;

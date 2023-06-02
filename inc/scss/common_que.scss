@@ -3204,7 +3204,8 @@ input[type="checkbox"] {
       }
       &.flex-type {
         .btn-line {
-          width: 86px;height: 40px;
+          // width: 86px;height: 40px;
+          width: 150px;height: 40px;
           &.active {
             color: $color-main-purple;
             font-weight: 600;
