@@ -913,7 +913,7 @@
   margin-top: 10px;
 }
 .sub08-01 .tab-list-type02 .chk-acc li {
-  padding: 0 32px 0 26px;
+  padding: 10px 32px 10px 26px;
 }
 .sub08-01 .tab-list-type02 .chk-acc .scroll-inner {
   height: 695px;
@@ -999,16 +999,16 @@
   word-break: break-all;
 }
 .sub08-01 .tab-list-type02 .label {
-  padding: 9px 20px;
-  margin-left: 10px;
+  padding: 5px 11px;
+  margin-left: 15px;
   color: #f13e26;
-  font-size: 14px;
+  font-size: 11px;
   border-radius: 18px;
   border: 1px solid #f13e26;
   background-color: #fff2f0;
 }
 .sub08-01 .tab-list-type02 .name-wrap {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .sub08-01 .tab-list-type02 .name-wrap .name + .name {
   margin-left: 12px;
@@ -1960,6 +1960,9 @@
 }
 .sub10-03 .tab-list-type01 .chk-acc span:nth-child(6) {
   width: 10%;
+}
+.sub10-03 .tab-list-type01 .chk-acc .fix-head .tit {
+  padding: 11px 27px;
 }
 
 .sub10-04 .toggle-btn {

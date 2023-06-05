@@ -1602,8 +1602,9 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
-  padding: 0 20px 0 26px;
+  min-height: 64px;
+  height: auto;
+  padding: 10px 20px 10px 26px;
   border-bottom: 1px solid #dddddd;
   box-sizing: border-box;
 }

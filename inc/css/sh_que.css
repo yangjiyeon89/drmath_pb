@@ -1549,6 +1549,9 @@ i.pen-type07 {
   padding: 10px 20px;
   background-color: #f6f6f6;
 }
+.full-pop-que .full-pop-wrap .pop-content.cnt02 .opt-wrap .line-box-wrap .line-box .scroll-inner .chk-box .tit label {
+  font-size: 16px;
+}
 .full-pop-que .full-pop-wrap .pop-content.cnt02 .opt-wrap .line-box-wrap .line-box .scroll-inner .chk-box .chk-list {
   padding: 0 20px;
 }

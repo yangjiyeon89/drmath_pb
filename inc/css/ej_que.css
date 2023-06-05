@@ -320,7 +320,8 @@
   left: 50%;
 }
 .que_cont .tooltip-wrap .tooltip.type02 {
-  left: -94px;
+  left: 0;
+  transform: translateX(-45%);
 }
 .que_cont .tooltip-wrap .tooltip.type02 span.level {
   display: inline-flex;

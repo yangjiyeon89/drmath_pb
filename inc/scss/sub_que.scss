@@ -977,7 +977,7 @@
     }
     .chk-acc {
       li {
-        padding: 0 32px 0 26px;
+        padding: 10px 32px 10px 26px;
       }
       .scroll-inner {
         height: 695px;
@@ -1080,16 +1080,16 @@
       word-break: break-all;
     }
     .label {
-      padding: 9px 20px;
-      margin-left: 10px;
+      padding: 5px 11px;
+      margin-left: 15px;
       color: #f13e26;
-      font-size: 14px;
+      font-size: 11px;
       border-radius: 18px;
       border: 1px solid #f13e26;
       background-color: #fff2f0;
     }
     .name-wrap {
-      margin-left: 16px;
+      margin-left: 20px;
       .name {
         & + .name {
           margin-left: 12px;
@@ -2090,6 +2090,11 @@
         }
         &:nth-child(6) {
           width: 10%;
+        }
+      }
+      .fix-head {
+        .tit {
+          padding: 11px 27px;
         }
       }
     }

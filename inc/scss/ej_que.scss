@@ -388,8 +388,8 @@
       }
 
       &.type02 {
-        left: -94px;
-
+        left: 0;
+        transform: translateX(-45%);
         span.level {
           @include content-center-center;
           width: 28px;

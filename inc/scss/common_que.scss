@@ -1514,8 +1514,9 @@ input[type="checkbox"] {
     }
     li {
       @include layout-justify-center;
-      height: 64px;
-      padding: 0 20px 0 26px;
+      min-height: 64px;
+      height: auto;
+      padding: 10px 20px 10px 26px;
       border-bottom: 1px solid $color-line-type02;
       box-sizing: border-box;
     }
