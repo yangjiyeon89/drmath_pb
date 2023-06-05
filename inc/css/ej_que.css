@@ -113,6 +113,7 @@
   width: 7%;
 }
 .que_cont.sub01 .table span:nth-child(5) {
+  min-width: 585px;
   width: 51%;
 }
 .que_cont.sub01 .table span:nth-child(5) img {

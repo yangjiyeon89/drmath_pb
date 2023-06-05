@@ -282,16 +282,16 @@ i {
 								.check-group {
 									position: relative;
 									padding: 10px 0 10px 20px;
-									&::before {
-										@include virtual-selector;
-										position: absolute;	
-										top: 16px;
-										left: 0;
-										width: 13px;
-										height: 7px;
-										background: url("../../images/common/select_arrow.png") no-repeat;
-										transform: rotate(-90deg);
-									}
+									// &::before {
+									// 	@include virtual-selector;
+									// 	position: absolute;	
+									// 	top: 16px;
+									// 	left: 0;
+									// 	width: 13px;
+									// 	height: 7px;
+									// 	background: url("../../images/common/select_arrow.png") no-repeat;
+									// 	transform: rotate(-90deg);
+									// }
 									&.title {
 										background-color: $color-box-type02;
 										&::before {
@@ -303,8 +303,13 @@ i {
 									}
 								}
 								.check-group.on {
-									&::before {
-										transform: rotate(0);
+									// &::before {
+									// 	transform: rotate(0);
+									// }
+									.dep-btn {
+										&::before {
+											transform: rotate(-90deg);
+										}
 									}
 								}
 								.depth02 {
@@ -339,6 +344,16 @@ i {
 											background: url(../../images/common/input_checkbox_chk.png) no-repeat;
 											background-size: contain;
 										}
+									}
+								}
+								.dep-btn {
+									position: relative;
+									&::before {
+										@include virtual-selector;
+										position: absolute;
+										top: 8px;left: -50px;
+										width: 13px;height: 7px;
+										background: url("../../images/common/select_arrow.png") no-repeat;
 									}
 								}
 							}
@@ -2019,9 +2034,14 @@ i {
 				margin-bottom: 70px;
 			}
 			.tit-area {
+				position: relative;
 				width: 100%;
+				min-height: 103px;
+				align-items: center;
 				.tit {
-					flex: auto;
+					width: 71%;
+					padding-left: 130px;
+					word-break: break-all;
 					.desc {
 						font-size: 26px;
 					}
@@ -2030,12 +2050,17 @@ i {
 					@include font(50px, 700);
 				}
 				.badge {
+					position: absolute;
+					right: 0;top: 0;
 					width: 150px;height: 54px;
 					font-size: 24px;
 					border-radius: 6px;
 				}
 			}
 			.grade {
+				flex: none;
+				position: absolute;
+				left: 0;top: 0;
 				@include content-center-center;
 				width: 100px;height: 101px;
 				margin-right: 20px;
@@ -2093,6 +2118,7 @@ i {
 						padding-left: 24px;
 						.txt {
 							@include font(40px, 800);
+							word-break: break-all;
 						}
 						.desc {
 							font-size: 24px;
@@ -2158,13 +2184,21 @@ i {
 			.top-wrap {
 				margin: 23px 60px 35px 0;
 				.tit-area {
+					position: relative;
 					width: 100%;
+					min-height: 156px;
+					align-items: center;
 					.tit {
-						flex: auto;
-						margin-top: 26px;
+						width: 57%;
+						padding-left: 330px;
+						word-break: break-all;
 						.desc {
 							font-size: 26px;
 						}
+					}
+					& > img {
+						position: absolute;
+						right: 0;top: 0;
 					}
 				}
 				.txt {
@@ -2172,6 +2206,9 @@ i {
 				}
 			}
 			.grade-area {
+				position: absolute;
+				left: 0;top: 0;
+				flex: none;
 				width: 240px;
 				padding: 30px;
 				margin-right: 30px;
