@@ -64,6 +64,9 @@
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
+.upload-pop table td input {
+  width: 100%;
+}
 .upload-pop.type02 {
   width: 700px;
 }

@@ -195,7 +195,12 @@
 }
 .fee-cnt01 .list-thum-type03 li .cont .icon {
   display: block;
-  margin: 70px auto 0;
+  margin: 20px auto 0;
+}
+.fee-cnt01 .list-thum-type03 li .cont .txt {
+  display: block;
+  margin-top: 50px;
+  font-size: 14px;
 }
 .fee-cnt01 .list-thum-type03 li.item-type01 {
   border: 1px solid #3dc8a2;

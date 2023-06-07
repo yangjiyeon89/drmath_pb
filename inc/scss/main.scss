@@ -54,6 +54,18 @@
         background-color: #ff9600;
       }
     }
+    &.wing03 {
+      top: 452px;
+      &::before {
+        width: 104px;
+        height: 65px;
+        background: url(../../images/common/ico_quick02.png) no-repeat;
+        background-size: contain;
+      }
+      a {
+        background-color: #1497be;
+      }
+    }
   }
 }
 .pagination {

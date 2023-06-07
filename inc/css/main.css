@@ -78,6 +78,18 @@
 .container .wing-menu.wing02 a {
   background-color: #ff9600;
 }
+.container .wing-menu.wing03 {
+  top: 452px;
+}
+.container .wing-menu.wing03::before {
+  width: 104px;
+  height: 65px;
+  background: url(../../images/common/ico_quick02.png) no-repeat;
+  background-size: contain;
+}
+.container .wing-menu.wing03 a {
+  background-color: #1497be;
+}
 
 .pagination {
   position: absolute;

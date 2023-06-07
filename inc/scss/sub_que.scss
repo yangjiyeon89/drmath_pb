@@ -3,6 +3,14 @@
 @import "_setting.scss";
 @import url(../css/font.css);
 
+//common
+.mr10 {
+  margin-right: 10px;
+}
+.mr30 {
+  margin-right: 30px !important;
+}
+
 // 로그인
 .login {
   height: 100vh;
@@ -813,9 +821,10 @@
           border-radius: 3px;
           &.gray {
             // color: #929292;
-            background-color: $color-table;
+            // background-color: $color-table;
             button {
               color: #929292;
+              background-color: $color-table;
             }
           }
           button {

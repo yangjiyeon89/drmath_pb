@@ -52,6 +52,11 @@
       padding: 10px;
       border-bottom: 1px solid #ddd;
     }
+    td {
+      input {
+        width: 100%;
+      }
+    }
   }
   &.type02 {
     width: 700px;

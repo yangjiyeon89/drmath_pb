@@ -289,6 +289,9 @@
 									</select>
 								</div>
 								<div class="btn-wrap">
+									<!-- s: 20230607 추가 -->
+									<button type="button" class="pop-btn" data-pop="upload-pop02">표지등록</button>
+									<!-- e: 20230607 추가 -->
 									<button type="button" class="pop-btn" data-pop="book-db-pop">교재등록</button>
 									<button type="button" class="pop-btn" data-pop="upload-pop">일괄등록</button>
 								</div>
@@ -473,6 +476,38 @@
 		</div>
 	</div>
 	<div class="dim"></div>
+	<!-- s: 20230607 추가 -->
+	<!-- 표지 등록 팝업 -->
+	<div class="pop-wrap upload-pop" data-pop="upload-pop02">
+		<div class="pop-inner">
+			<div class="pop-header">표지 등록</div>
+			<div class="pop-content">
+				<table>
+					<colgroup>
+						<col width="30%">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>표지 첨부</th>
+							<td>
+								<span class="filebox bs3-primary">
+									<label for="ex_filename" class="btn-txt">알집 업로드</label> 
+									<input type="file" id="ex_filename" class="upload-hidden">
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="btn-wrap">
+					<button type="button" class="pop-close">닫기</button>
+					<button type="button">등록하기</button>
+				</div>
+			</div>
+			<button type="button" class="pop-close ico"></button>
+		</div>
+	</div>
+	<!-- e: 20230607 추가 -->
 	<!-- 일괄 교재 등록 팝업 -->
 	<div class="pop-wrap upload-pop" data-pop="upload-pop">
 		<div class="pop-inner">

@@ -124,6 +124,11 @@
 
 .upload-pop {
   width: 500px;
+  .txt-center {
+    th, td {
+      text-align: center;
+    }
+  }
   .pop-content {
     display: flex;
     flex-direction: column;
@@ -144,6 +149,11 @@
     th, td {
       padding: 10px;
       border-bottom: 1px solid #ddd;
+    }
+    td {
+      input {
+        width: 100%;
+      }
     }
   }
   &.type02 {

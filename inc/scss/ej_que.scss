@@ -135,7 +135,7 @@
       }
 
       span:nth-child(8) {
-        width: 5%;
+        width: 6%;
       }
 
       span:nth-child(9) {
@@ -148,6 +148,11 @@
       span:last-child {
         width: 3%;
         padding-right: 15px;
+      }
+      .fix-head {
+        span:last-child {
+          width: calc(3% + 8px);
+        }
       }
 
       &.table-type01 {
@@ -395,6 +400,7 @@
           @include content-center-center;
           width: 28px;
           height: 28px;
+          min-width: 28px;
           padding: 0;
           z-index: 10;
         }

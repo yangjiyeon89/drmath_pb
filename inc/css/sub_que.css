@@ -18,6 +18,14 @@
 	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
 	*/
 @import url(../css/font.css);
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr30 {
+  margin-right: 30px !important;
+}
+
 .login {
   height: 100vh;
   padding-top: 249px;
@@ -770,11 +778,9 @@
   font-size: 14px;
   border-radius: 3px;
 }
-.sub06-que .tab-list-type01 .chk-acc span .box.gray {
-  background-color: #f2f2f2;
-}
 .sub06-que .tab-list-type01 .chk-acc span .box.gray button {
   color: #929292;
+  background-color: #f2f2f2;
 }
 .sub06-que .tab-list-type01 .chk-acc span .box button {
   color: #5a14be;

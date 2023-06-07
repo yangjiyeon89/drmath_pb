@@ -34,6 +34,44 @@ body {
 .container .inner {
   margin: 41px auto 0;
 }
+.container .wing-menu {
+  position: fixed;
+  top: 190px;
+  right: 160px;
+  z-index: 9;
+}
+.container .wing-menu::before {
+  content: "";
+  display: block;
+  width: 112px;
+  height: 69px;
+  background: url(../../images/common/ico_quick.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+  left: 30px;
+}
+.container .wing-menu a {
+  display: block;
+  width: 169px;
+  background: #ff3f68;
+  border-radius: 36px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 19px 0 13px;
+}
+.container .wing-menu.wing03::before {
+  width: 104px;
+  height: 65px;
+  background: url(../../images/common/ico_quick02.png) no-repeat;
+  background-size: contain;
+}
+.container .wing-menu.wing03 a {
+  background-color: #1497be;
+}
 
 .scroll-inner {
   overflow: overlay;
@@ -69,6 +107,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr30 {
+  margin-right: 30px !important;
 }
 
 .header .inner {
@@ -1751,6 +1797,9 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.tab-list-type01 .table .fix-head span:last-child {
+  margin-right: 8px;
 }
 .tab-list-type01 .table span {
   display: inline-flex;
@@ -3638,6 +3687,11 @@ input[type=checkbox]:checked + label::before {
 }
 
 @media (max-width: 1280px) {
+  .container .wing-menu {
+    right: 0;
+    bottom: 10px;
+    top: inherit;
+  }
   .acc-tab-wrap .scroll-inner, .acc-tab-wrap .none-data.left {
     height: 569px;
   }

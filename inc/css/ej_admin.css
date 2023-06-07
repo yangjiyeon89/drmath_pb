@@ -112,6 +112,9 @@
 .upload-pop {
   width: 500px;
 }
+.upload-pop .txt-center th, .upload-pop .txt-center td {
+  text-align: center;
+}
 .upload-pop .pop-content {
   display: flex;
   flex-direction: column;
@@ -133,6 +136,9 @@
 .upload-pop table th, .upload-pop table td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+}
+.upload-pop table td input {
+  width: 100%;
 }
 .upload-pop.type02 {
   width: 700px;
