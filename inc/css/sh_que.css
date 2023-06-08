@@ -2814,14 +2814,6 @@ i.pen-type07 {
 .que-preview-wrap.page-type .que-cnt {
   width: 100%;
 }
-.que-preview-wrap.page-type .que-bottom {
-  text-align: right;
-}
-.que-preview-wrap.page-type .que-bottom span {
-  position: relative;
-  top: inherit;
-  right: inherit;
-}
 .que-preview-wrap.color-type01 .que-badge-group {
   color: #e84a1f;
 }
