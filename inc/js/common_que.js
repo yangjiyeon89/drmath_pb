@@ -472,18 +472,29 @@ $(function () {
 
   // accordion
   let accBtn = $('.acc-btn');
+  let accBtn2 = $('.acc-btn-wrap > span , .acc-btn-wrap > em');
+
 
   function accFunc() {
     let _this = $(this);
     let accWrap = _this.parents('.acc-btn-wrap');   
 
     if(_this.parents('div').hasClass('acc-btn-wrap')){
+
+      
       accWrap.toggleClass('active');
+
       if(accWrap.hasClass('active')) {
         _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
       } else {
         _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
       }
+
+      if(accWrap.hasClass('on')) {
+        accWrap.removeClass('on');
+        accWrap.removeClass('active');
+        _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+      } 
     } else {
       _this.toggleClass('active');
       if (_this.hasClass('active')) {
@@ -494,7 +505,28 @@ $(function () {
     }
   }
 
+  function accFunc2() {
+    let _this = $(this);
+    let accWrap = _this.parents('.acc-btn-wrap');
+    
+  
+    accWrap.toggleClass('on');
+
+    if(accWrap.hasClass('on')) {
+      _this.parents('.acc-btn-wrap').next('.cnt').stop().slideDown('fast');
+    } else {
+      _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+    }
+
+    if(accWrap.hasClass('active')) {
+      accWrap.removeClass('active');
+      accWrap.removeClass('on');
+      _this.parents('.acc-btn-wrap').next('.cnt').stop().slideUp('fast');
+    } 
+  }
+
   accBtn.on('click', accFunc);
+  accBtn2.on('click', accFunc2);
 
   
   // 채점 팝업 슬라이드

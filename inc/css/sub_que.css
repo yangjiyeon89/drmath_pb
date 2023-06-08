@@ -1022,6 +1022,9 @@
 .sub08-01 .tab-list-type02 .table .scroll-inner {
   height: 630px;
 }
+.sub08-01 .tab-list-type02 .style01 .num {
+  width: auto;
+}
 .sub08-01 .tooltip-wrap .tooltip.type02 {
   left: 0;
 }

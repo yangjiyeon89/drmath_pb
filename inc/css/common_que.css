@@ -968,6 +968,7 @@ body {
 }
 .acc-tab-wrap .acc-btn-wrap em {
   padding-right: 15px;
+  cursor: pointer;
 }
 .acc-tab-wrap .acc-btn-wrap .acc-btn {
   width: 7px;
@@ -977,10 +978,17 @@ body {
   transform: rotate(90deg);
 }
 .acc-tab-wrap .acc-btn-wrap.active span {
+  color: #333;
+  font-weight: 600;
+}
+.acc-tab-wrap .acc-btn-wrap.active .acc-btn {
+  transform: rotate(-90deg);
+}
+.acc-tab-wrap .acc-btn-wrap.on span {
   color: #5a14be;
   font-weight: 700;
 }
-.acc-tab-wrap .acc-btn-wrap.active .acc-btn {
+.acc-tab-wrap .acc-btn-wrap.on .acc-btn {
   transform: rotate(-90deg);
 }
 .acc-tab-wrap .acc-cnt .cnt {
@@ -988,29 +996,68 @@ body {
   padding: 7px 0;
   border-bottom: 1px solid #dddddd;
 }
+.acc-tab-wrap .acc-cnt .cnt span {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  max-width: 105px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.acc-tab-wrap .acc-cnt .cnt span:hover + .tooltip-txt {
+  display: block;
+}
+.acc-tab-wrap .acc-cnt .cnt .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: max-content;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.acc-tab-wrap .acc-cnt .cnt .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+}
 .acc-tab-wrap .acc-cnt li {
-  padding: 14px 30px;
+  position: relative;
+  padding: 14px 0 14px 30px;
 }
 .acc-tab-wrap .acc-cnt li.active span {
   color: #5a14be;
   font-weight: 700;
 }
-.acc-tab-wrap .acc-cnt li span {
-  width: 75px;
-  display: inline-block;
-  margin-right: 34px;
-  cursor: pointer;
-}
-.acc-tab-wrap .acc-cnt li em {
-  position: relative;
-  top: -1px;
+.acc-tab-wrap .acc-cnt li em:last-child {
+  position: absolute;
+  top: 50%;
+  right: 16px;
   display: inline-block;
   width: 8px;
   height: 8px;
+  margin-top: -4px;
   border-radius: 100%;
   background-color: #d6d6d6;
 }
-.acc-tab-wrap .acc-cnt li em.on {
+.acc-tab-wrap .acc-cnt li em:last-child.on {
   background-color: #ffba00;
 }
 

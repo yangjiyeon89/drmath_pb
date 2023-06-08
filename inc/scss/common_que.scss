@@ -902,6 +902,7 @@ body {
     }
     em {
       padding-right: 15px;
+      cursor: pointer;
     }
     .acc-btn {
       width: 7px;height: 11px;
@@ -910,6 +911,15 @@ body {
       transform: rotate(90deg);
     }
     &.active {
+      span {
+        color: #333;
+        font-weight: 600;
+      }
+      .acc-btn {
+        transform: rotate(-90deg);
+      }
+    }
+    &.on {
       span {
         color: $color-main-purple;
         font-weight: 700;
@@ -924,26 +934,58 @@ body {
       display: none;
       padding: 7px 0;
       border-bottom: 1px solid $color-line-type02;
+      span {
+        position: relative;
+        top: 4px;
+        display: inline-block;
+        @include text-overflow;
+        max-width: 105px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          & + .tooltip-txt {
+            display: block;
+          }
+        }
+      }
+      .tooltip-txt {
+        display: none;
+        position: absolute;
+        top: 45px;left: 15px;
+        width: max-content;           
+        padding: 4px 10px;
+        color: #fff;
+        text-align: center;
+        word-break: break-all;
+        background-color: #969696;
+        border-radius: 3px;
+        z-index: 1;
+        font-style: normal;
+        &::before {
+          @include virtual-selector;
+          position: absolute;
+          left: 18px;
+          top: -7px;
+          width: 11px;height: 8px;
+          background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+        }
+      }
     }
     li {
-      padding: 14px 30px;
+      position: relative;
+      padding: 14px 0 14px 30px;
       &.active {
         span {
           color: $color-main-purple;
           font-weight: 700;
         }
       }
-      span {
-        width: 75px;
-        display: inline-block;
-        margin-right: 34px;
-        cursor: pointer;
-      }
-      em {
-        position: relative;
-        top: -1px;
+      em:last-child {
+        position: absolute;
+        top: 50%;right: 16px;
         display: inline-block;
         width: 8px;height: 8px;
+        margin-top: -4px;
         border-radius: 100%;
         background-color: #d6d6d6;
         &.on {
