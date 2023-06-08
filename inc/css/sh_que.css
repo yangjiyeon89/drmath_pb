@@ -3270,12 +3270,12 @@ i.pen-type07 {
   height: 100%;
   box-sizing: border-box;
 }
+.report-wrap .cover-cnt .logo {
+  max-width: 130px;
+}
 .report-wrap .cover-cnt.type01 {
   background: url(../../images/sub/report_cover_01_01.png) no-repeat #fff;
   font-family: "S-CoreDream", sans-serif;
-}
-.report-wrap .cover-cnt.type01 .logo {
-  max-width: 130px;
 }
 .report-wrap .cover-cnt.type01 .logo img {
   max-width: 100%;

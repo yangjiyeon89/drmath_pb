@@ -138,9 +138,6 @@
   width: 3%;
   padding-right: 15px;
 }
-.que_cont.sub01 .table .fix-head span:last-child {
-  width: calc(3% + 8px);
-}
 .que_cont.sub01 .table.table-type01 span:nth-child(1) {
   width: 6%;
 }

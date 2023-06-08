@@ -3422,12 +3422,14 @@ i {
 			height: 100%;
 			box-sizing: border-box;
 		}
+		.logo {
+			max-width: 130px;
+		}
 		//표지 템플릿01
 		&.type01 {
 			background: url(../../images/sub/report_cover_01_01.png) no-repeat #fff;
 			font-family: 'S-CoreDream', sans-serif;
 			.logo {
-				max-width: 130px;
 				img {
 					max-width: 100%;
 				}

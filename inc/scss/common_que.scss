@@ -1746,6 +1746,9 @@ input[type="checkbox"] {
     .fix-head {
       span:last-child {
         margin-right: 8px;
+        &.mr0 {
+          margin-right: 0;
+        }
       }
     }
     span {

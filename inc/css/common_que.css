@@ -1848,6 +1848,9 @@ input[type=checkbox]:checked + label::before {
 .tab-list-type01 .table .fix-head span:last-child {
   margin-right: 8px;
 }
+.tab-list-type01 .table .fix-head span:last-child.mr0 {
+  margin-right: 0;
+}
 .tab-list-type01 .table span {
   display: inline-flex;
   justify-content: center;
