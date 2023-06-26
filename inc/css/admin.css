@@ -192,6 +192,8 @@ a.btn-txt {
   transform: translate(-50%, -50%);
   z-index: 20;
   background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .pop-close {
@@ -201,25 +203,45 @@ a.btn-txt {
   padding-top: 20px;
   color: #d9caff;
   font-size: 13px;
-  background: url("../../images/admin/btn_close.png") no-repeat 50% 0;
+  background: url("../../images/common/ico_close.png") no-repeat 50% 0;
 }
 .pop-close.ico {
   width: 18px;
   height: 18px;
-  top: 20px;
-  right: 20px;
+  top: 34px;
+  right: 30px;
   padding-top: 0;
 }
 
 .pop-header {
-  padding: 20px;
-  color: #fff;
-  font-size: 21px;
-  background-color: #595ec6;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .pop-inner {
   position: relative;
+}
+
+.pop-footer .btn-wrap {
+  display: flex;
+  height: 50px;
+  margin: 0 !important;
+}
+.pop-footer .btn-wrap button {
+  padding: 0;
+  height: 100%;
+  flex: 1;
+  font-size: 18px !important;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+.pop-footer .btn-wrap button:last-child {
+  background-color: #5a14be;
 }
 
 .test-pop {
@@ -261,16 +283,16 @@ a.btn-txt {
 }
 .alert-pop .pop-content {
   position: relative;
+  padding-top: 60px;
   text-align: center;
 }
 .alert-pop .pop-content img {
   display: block;
   margin: auto;
-  padding-top: 50px;
 }
 .alert-pop .pop-content .txt {
   display: block;
-  padding: 15px 0 28px;
+  padding: 15px 0 50px;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -671,6 +693,18 @@ a.btn-txt {
 }
 .view-table th {
   background-color: #f3f3f3;
+}
+.view-table.style02 {
+  margin: 20px 0 10px;
+}
+.view-table.style02 th, .view-table.style02 td {
+  text-align: center;
+}
+.view-table.style02 th {
+  height: 40px;
+}
+.view-table.style02 td {
+  height: 45px;
 }
 
 .datepicker-wrap {

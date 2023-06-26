@@ -503,13 +503,15 @@
 	</div>
 	<div class="dim"></div>
 	<!-- 노출 얼럿 (체크 전) -->
-	<div class="pop-wrap alert-pop" data-pop="exposure-pop">
+	<div class="pop-wrap alert-pop" data-pop="exposure-pop" style="display:block;">
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>
 			<span class="txt">해당 문제지가<br>노출되었습니다.</span>
 		</div>
-		<div class="btn-wrap">
-			<button type="button">확인</button>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button">확인</button>
+			</div>
 		</div>
 	</div>
 	<!-- 노출 얼럿 (체크 후) -->
@@ -528,8 +530,10 @@
 			<button type="button" class="pop-close ico"></button>
 			<span class="txt">해당 문제지가<br>비노출되었습니다.</span>
 		</div>
-		<div class="btn-wrap">
-			<button type="button">확인</button>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button">확인</button>
+			</div>
 		</div>
 	</div>
 	<!-- 비노출 얼럿 (체크 후) -->
@@ -548,9 +552,11 @@
 			<button type="button" class="pop-close ico"></button>
 			<span class="txt">해당 문제지를<br>삭제하시겠습니까?</span>
 		</div>
-		<div class="btn-wrap">
-			<button type="button" class="pop-close">취소</button>
-			<button type="button">삭제</button>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button" class="pop-close">취소</button>
+				<button type="button">삭제</button>
+			</div>
 		</div>
 	</div>
 	<!-- 문항 등록 팝업 -->
@@ -579,6 +585,12 @@
 						</tr>
 					</tbody>
 				</table>
+				<!-- <div class="btn-wrap">
+					<button type="button" class="pop-close">닫기</button>
+					<button type="button">등록하기</button>
+				</div> -->
+			</div>
+			<div class="pop-footer">
 				<div class="btn-wrap">
 					<button type="button" class="pop-close">닫기</button>
 					<button type="button">등록하기</button>
@@ -652,6 +664,12 @@
 						</tbody>
 					</table>
 				</div>
+				<!-- <div class="btn-wrap">
+					<button type="button">수정</button>
+					<button type="button" class="pop-close">닫기</button>
+				</div> -->
+			</div>
+			<div class="pop-footer">
 				<div class="btn-wrap">
 					<button type="button">수정</button>
 					<button type="button" class="pop-close">닫기</button>
@@ -690,6 +708,12 @@
 						</tbody>
 					</table>
 				</div>
+				<!-- <div class="btn-wrap">
+					<button type="button">변경</button>
+					<button type="button" class="pop-close">닫기</button>
+				</div> -->
+			</div>
+			<div class="pop-footer">
 				<div class="btn-wrap">
 					<button type="button">변경</button>
 					<button type="button" class="pop-close">닫기</button>
@@ -782,6 +806,9 @@
 						</tbody>
 					</table>
 				</div>
+				
+			</div>
+			<div class="pop-footer">
 				<div class="btn-wrap">
 					<button type="button" class="pop-close">닫기</button>
 				</div>
