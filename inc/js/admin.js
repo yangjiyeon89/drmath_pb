@@ -8,84 +8,91 @@ $(function () {
 
     switch (_afterStr[0]) {
       case 'admin01':
-        _gnbMenuLink.eq(1).addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(1).find('li').eq(1).addClass('on')
-        break;
-    }
-    switch (_afterStr[0]) {
-      case 'admin02':
-        _gnbMenuLink.eq(1).addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(1).find('li').eq(2).addClass('on')
-        break;
-    }
-    switch (_afterStr[0]) {
-      case 'admin03':
-        _gnbMenuLink.eq(1).addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(0).find('li').eq(3).addClass('on')
-        break;
-    }
-    switch (_afterStr[0]) {
-      case 'admin04':
-        _gnbMenuLink.eq(1).addClass('on');
-        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(3).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(0).find('li').eq(4).addClass('on')
-        break;
-    }
-    switch (_afterStr[0]) {
-      case 'admin07':
-        _gnbMenuLink.eq(2).addClass('on');
-        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(2).find('li').eq(2).addClass('on')
-        break;
-    }
-    switch (_afterStr[0]) {
-      case 'admin08':
         _gnbMenuLink.eq(2).addClass('on');
         _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('on');
         _allMenuLink.find('ul').eq(2).find('li').eq(1).addClass('on')
         break;
     }
     switch (_afterStr[0]) {
-      case 'admin09':
-        _gnbMenuLink.eq(3).addClass('on');
-        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(3).find('li').eq(1).addClass('on')
+      case 'admin02':
+        _gnbMenuLink.eq(2).addClass('on');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(2).find('li').eq(2).addClass('on')
         break;
     }
     switch (_afterStr[0]) {
-      case 'admin10':
+      case 'admin03':
+        _gnbMenuLink.eq(2).addClass('on');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(2).find('li').eq(3).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin04':
+        _gnbMenuLink.eq(2).addClass('on');
+        _gnbMenuLink.eq(2).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(2).find('li').eq(4).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin07':
         _gnbMenuLink.eq(3).addClass('on');
         _gnbMenuLink.eq(3).find('.depth2').find('li').eq(1).find('a').addClass('on');
         _allMenuLink.find('ul').eq(3).find('li').eq(2).addClass('on')
         break;
     }
     switch (_afterStr[0]) {
-      case 'admin11':
+      case 'admin08':
         _gnbMenuLink.eq(3).addClass('on');
-        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(2).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(3).find('li').eq(3).addClass('on')
+        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(3).find('li').eq(1).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin09':
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(1).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin10':
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(2).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin11':
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(3).addClass('on')
         break;
     }
     switch (_afterStr[0]) {
       case 'admin12':
-        _gnbMenuLink.eq(0).addClass('on');
+        _gnbMenuLink.eq(1).addClass('on');
         break;
     }
     switch (_afterStr[0]) {
       case 'admin13':
-        _gnbMenuLink.eq(3).addClass('on');
-        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(3).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(3).find('li').eq(4).addClass('on')
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(4).addClass('on')
         break;
     }
     switch (_afterStr[0]) {
       case 'admin14':
-        _gnbMenuLink.eq(3).addClass('on');
-        _gnbMenuLink.eq(3).find('.depth2').find('li').eq(4).find('a').addClass('on');
-        _allMenuLink.find('ul').eq(3).find('li').eq(5).addClass('on')
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(4).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(5).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin15':
+        _gnbMenuLink.eq(0).addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(0).find('li').eq(1).addClass('on')
         break;
     }
 
