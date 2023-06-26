@@ -96,10 +96,26 @@
   padding: 0 30px;
   cursor: pointer;
 }
+.serv-cnt .faq-list ul li .acc-btn::after {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  width: 10px;
+  height: 17px;
+  margin-top: -8px;
+  background: url(../../images/common/ico_arrow_book_paging.png) no-repeat;
+  transform: rotate(-90deg);
+}
 .serv-cnt .faq-list ul li .acc-btn em {
   display: inline-block;
   margin-right: 10px;
   color: #5a14be;
+}
+.serv-cnt .faq-list ul li .acc-btn.active::after {
+  transform: rotate(90deg);
 }
 .serv-cnt .faq-list ul li .cnt {
   display: none;
@@ -154,6 +170,16 @@
   display: inline-block;
   vertical-align: middle;
   background-color: #f7f7f7;
+}
+.serv-cnt .table-form > div .row .tr .tit em {
+  position: relative;
+  top: -11px;
+  left: 4px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #5a14be;
 }
 .serv-cnt .table-form > div .row .tr .cnt {
   width: 500px;

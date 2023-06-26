@@ -1660,7 +1660,7 @@
 }
 .sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type=checkbox] + label {
   display: block;
-  width: 100%;
+  width: calc(100% + 1px);
   padding-left: 0;
   font-size: 16px;
 }
@@ -1670,6 +1670,45 @@
 }
 .sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type=checkbox] + label em {
   color: #666666;
+}
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type=checkbox] + label span {
+  display: block;
+  width: 69%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  cursor: pointer;
+}
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li input[type=checkbox] + label span:hover + .tooltip-txt {
+  display: block;
+}
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  width: auto;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.sub10-que .add-type.wide-w .check-type .chk-acc .cnt li .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
 }
 .sub10-que .add-type.wide-w .check-type .acc-btn {
   position: relative;
@@ -1855,6 +1894,9 @@
   position: sticky;
   top: 0;
 }
+.sub10-01 .tab-list-type01 .chk-acc span {
+  position: relative;
+}
 .sub10-01 .tab-list-type01 .chk-acc span:nth-child(1) {
   width: 6%;
 }
@@ -1886,7 +1928,8 @@
   width: 10%;
 }
 .sub10-01 .tab-list-type01 .btn-dot {
-  margin-left: 20px;
+  position: absolute;
+  right: 20px;
 }
 .sub10-01 .tab-list-type01 .open-select-list {
   width: 70px;
@@ -2447,8 +2490,50 @@
   width: 107px;
 }
 .sub12-01 .tab-list-type01 .table .name {
+  position: relative;
+  font-size: 15px;
   font-weight: 500;
   background-color: #f7f7f7;
+}
+.sub12-01 .tab-list-type01 .table .name span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
+  cursor: pointer;
+}
+.sub12-01 .tab-list-type01 .table .name span:hover + .tooltip-txt {
+  display: block;
+}
+.sub12-01 .tab-list-type01 .table .name .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 0px;
+  width: auto;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.sub12-01 .tab-list-type01 .table .name .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
 }
 .sub12-01 .tab-list-type01 .table .btn-wrap {
   flex-direction: column;

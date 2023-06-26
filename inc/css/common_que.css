@@ -143,8 +143,8 @@ body {
 }
 .header .logo a {
   display: block;
-  width: 105px;
-  height: 27px;
+  width: 115px;
+  height: 24px;
 }
 .header .logo a img {
   width: 100%;
@@ -191,7 +191,7 @@ body {
   align-items: center;
   display: none;
   position: absolute;
-  top: 100%;
+  top: 107%;
   left: 0;
   width: 100%;
   padding-left: 21%;
@@ -920,7 +920,7 @@ body {
 }
 .acc-tab-wrap .acc-btn-wrap {
   position: relative;
-  padding: 16px 16px 16px 30px;
+  padding: 16px 5px 16px 30px;
   border-bottom: 1px solid #dddddd;
 }
 .acc-tab-wrap .acc-btn-wrap span {
@@ -967,10 +967,17 @@ body {
   background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
 }
 .acc-tab-wrap .acc-btn-wrap em {
-  padding-right: 15px;
+  position: absolute;
+  right: 29px;
+  top: 52%;
   cursor: pointer;
+  transform: translateY(-50%);
 }
 .acc-tab-wrap .acc-btn-wrap .acc-btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  margin-top: -5px;
   width: 7px;
   height: 11px;
   background: url(../../images/common/ico_arrow_acc.png) no-repeat;

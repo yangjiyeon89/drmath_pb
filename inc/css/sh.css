@@ -335,3 +335,68 @@
   width: 480px;
   text-align: right;
 }
+
+.guide-top .btn-wrap {
+  padding: 15px 20px;
+  justify-content: flex-start;
+}
+.guide-top button {
+  width: 132px;
+  height: 50px;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  line-height: 1;
+}
+.guide-top button.btn-pc {
+  background-color: #5a15c0;
+}
+.guide-top button.btn-app {
+  background-color: #282828;
+}
+.guide-top .guide-title {
+  padding: 37px 0;
+  color: #fff;
+  text-align: center;
+  background: url(../../images/sub/guide_bg.png) no-repeat center;
+}
+.guide-top .guide-title .tit {
+  margin-bottom: 5px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.guide-top .guide-title .txt {
+  font-size: 30px;
+}
+
+.guide-ft-logo {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.guide-page01 .inner {
+  width: 960px;
+  margin-top: 6.7708333333vw;
+}
+.guide-page01 .box-wrap .line-box {
+  height: 383px;
+}
+.guide-page01 .line-box {
+  cursor: pointer;
+}
+.guide-page01 .line-box.active {
+  border-color: #5a15c0;
+  background-color: #f7f4fc;
+}
+
+.guide-page02 .guide-title {
+  padding: 5px;
+}
+
+@media (max-width: 1280px) {
+  .guide-ft-logo {
+    right: 10px;
+    bottom: 10px;
+  }
+}

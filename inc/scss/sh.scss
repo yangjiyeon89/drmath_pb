@@ -312,3 +312,71 @@
 		text-align: right;
 	}
 }
+
+// 사용자가이드
+.guide-top {
+  .btn-wrap {
+    padding: 15px 20px;
+    justify-content: flex-start;
+  }
+	button {
+		width: 132px;
+		height: 50px;
+		color: #fff;
+		border-radius: 25px;
+		font-weight: 600;
+		line-height: 1;
+		&.btn-pc {
+			background-color: #5a15c0;
+		}
+		&.btn-app {
+			background-color: #282828;
+		}
+	}
+	.guide-title {
+		padding: 37px 0;
+		color: #fff;
+		text-align: center;
+		background: url(../../images/sub/guide_bg.png) no-repeat center;
+		.tit {
+			margin-bottom: 5px;
+			@include font(40px, 600);
+		}
+		.txt {
+			font-size: 30px;
+		}
+	}
+}
+.guide-ft-logo {
+	position: absolute;
+	right: 50px;bottom: 50px;
+}
+.guide-page01 {
+	.inner {
+		width: 960px;
+		margin-top: get-vw(130px);
+	}
+	.box-wrap {
+		.line-box {
+			height: 383px;
+		}
+	}
+	.line-box {
+		cursor: pointer;
+		&.active {
+			border-color: #5a15c0;
+			background-color: #f7f4fc;
+		}
+	}
+}
+.guide-page02 {
+	.guide-title {
+		padding: 5px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.guide-ft-logo {
+		right: 10px;bottom: 10px;
+	}
+}
