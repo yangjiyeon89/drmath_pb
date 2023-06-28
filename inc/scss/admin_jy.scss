@@ -323,3 +323,56 @@
     top: 50%;
   }
 }
+.upload-pop {
+  width: 550px;
+  .pop-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px;
+  }
+  .scroll-inner {
+    max-height: 700px;
+    overflow-y: auto;
+  }
+  table {
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    th {
+      text-align: center;
+      background-color: #f3f3f3;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    td {
+      input, select {
+        width: 230px;
+        border-radius: 6px;
+      }
+      select {
+        background: url("../../images/admin/ico_select_arr.png") no-repeat 93% 55% #fff;
+      }
+    }
+    .date-wrap {
+      input[type=text] {
+        width: 167px !important;
+        border-radius: 6px;
+      }
+    }
+  }
+  &.type02 {
+    width: 700px;
+    .tit {
+      font-size: 20px; 
+      margin-bottom: 10px;
+    }
+  }
+  .txt-center {
+    th, td {
+      text-align: center;
+    }
+  }
+}

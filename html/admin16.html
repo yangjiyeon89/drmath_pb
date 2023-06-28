@@ -15,7 +15,7 @@
 	<script src="../inc/js/admin.js"></script>
 </head>
 <body>
-	<div id="wrap" class="admin15">
+	<div id="wrap" class="admin16">
 		<div class="header">
 			<div class="header-top">
 				<div class="inner">
@@ -210,7 +210,7 @@
 						</ul>
 					</div>
 					<div class="depth02">
-						<button type="button" class="select-btn">결제 내역</button>
+						<button type="button" class="select-btn">사용권 수수료 정산</button>
 						<ul class="select-list">
 							<li>
 								<a href="javascript:;">결제 내역</a>
@@ -274,17 +274,26 @@
 							<col>
 							<col>
 							<col>
+							<col>
+							<col>
+							<col>
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>결제 건수</th>
-								<th>결제 인원</th>
-								<th>총 결제금액</th>
+								<th>정산연월</th>
+								<th>총 결제액</th>
+								<th>총 수수료</th>
+								<th>본사 부담액</th>
+								<th>센터 부담액</th>
+								<th>센터 실지급액</th>
 							</tr>
 							<tr>
-								<td>00</td>
-								<td>00</td>
-								<td>00</td>
+								<td>22년 10월</td>
+								<td>00000원</td>
+								<td>00000원</td>
+								<td>00000원</td>
+								<td>00000원</td>
+								<td>00000원</td>
 							</tr>
 						</tbody>
 					</table>
@@ -295,41 +304,51 @@
 							<span class="total">검색 결과: <em>00</em>건</span>
 						</div>
 						<div class="btn-wrap">
-							<button type="button" class="pop-btn" data-pop="upload-pop">엑셀 다운로드</button>
+							<button type="button" class="pop-btn" data-pop="upload-pop">정산용 엑셀 전환</button>
 						</div>
 					</div>
 					<div class="scroll-inner">
-						<table>
+						<table class="style02">
 							<colgroup>
+								<col width="3%">
+								<col width="8%">
 								<col width="5%">
-								<col width="8%">
-								<col width="9%">
-								<col width="8%">
-								<col width="8%">
-								<col width="*">
+								<col width="4%">
+								<col width="5%">
 								<col width="7%">
-								<col width="7%">
-								<col width="7%">
-								<col width="7%">
-								<col width="7%">
+								<col width="6%">
+								<col width="5%">
+								<col width="6%">
+								<col width="4%">
+								<col width="6%">
+								<col width="6%">
+								<col width="6%">
+								<col width="5%">
+								<col width="6%">
+								<col width="5%">
 								<col width="7%">
 								<col width="6%">
 							</colgroup>
 							<thead>
 								<tr>
 									<th>번호</th>
-									<th>결제일</th>
-									<th>센터코드</th>
-									<th>센터명</th>
-									<th>학원코드</th>
-									<th>학원명</th>
-									<th>원장명</th>
-									<th>결제구분</th>
-									<th>인원(수량)</th>
-									<th>결제수단</th>
-									<th>결제금액</th>
-									<th>상태</th>
-									<th>상세</th>
+									<th>승인일</th>
+									<th>센터<br>코드</th>
+									<th>센터<br>명</th>
+									<th>센터장<br>명</th>
+									<th>학원<br>코드</th>
+									<th>학원<br>명</th>
+									<th>원장<br>명</th>
+									<th>사용권<br>명</th>
+									<th>인원<br>(수량)</th>
+									<th>총<br>결제액</th>
+									<th>결제<br>수단</th>
+									<th>공급가<br>액</th>
+									<th>세액</th>
+									<th>합계액</th>
+									<th>총<br>수수료</th>
+									<th>부담액<br>본사/센터</th>
+									<th>센터<br>실 지급액</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -338,170 +357,200 @@
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt pop-btn" data-pop="detail-pop">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 								<tr>
 									<td>1</td>
 									<td>2022.10.31</td>
 									<td>D0100</td>
 									<td>대구</td>
+									<td>김엘지</td>
 									<td>H0000541</td>
 									<td>두산에듀</td>
-									<td>김*재</td>
+									<td>김천재</td>
 									<td>교재주문</td>
 									<td>10</td>
-									<td>삼성카드</td>
 									<td>90,000</td>
-									<td>결제완료</td>
-									<td>
-										<a href="javascript:;" class="btn-txt">보기</a>
-									</td>
+									<td>카드</td>
+									<td>100,000</td>
+									<td>10,000</td>
+									<td>110,000</td>
+									<td>2,762</td>
+									<td class="font-c">1,933/829</td>
+									<td class="font-c">109,171</td>
 								</tr>
 							</tbody>
 						</table>
@@ -522,186 +571,6 @@
 		</div>
 	</div>
 	<div class="dim"></div>
-	<div class="pop-wrap detail-pop" data-pop="detail-pop">
-		<div class="pop-inner">
-			<div class="pop-header">결제 상세</div>
-			<div class="pop-content">
-				<button type="button" class="btn-w">환불</button>
-				<div class="table-type01">
-					<table>
-						<colgroup>
-							<col width="18%">
-							<col width="*">
-							<col width="18%">
-							<col width="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th>학원명/코드</th>
-								<td>천재수학/H0000000</td>
-								<th>주문일</th>
-								<td>2022-10-31</td>
-							</tr>
-							<tr>
-								<th>주소</th>
-								<td>(00000)대구 수성로</td>
-								<th>연락처</th>
-								<td>010-XXXX-XXXX</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="table-type02">
-					<table>
-						<colgroup>
-							<col width="*">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>결제유형</th>
-								<th>가입비</th>
-								<th>사용인원</th>
-								<th>사용기간</th>
-								<th>혜택</th>
-								<th>결제방식</th>
-								<th>금액</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>온라인 사용권</td>
-								<td>0</td>
-								<td>30</td>
-								<td>1개월</td>
-								<td>30일 추가</td>
-								<td>자동</td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="5">결제 금액</td>
-								<td></td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="5">할인액</td>
-								<td></td>
-								<td>4,000</td>
-							</tr>
-							<tr class="total">
-								<td colspan="5">총액</td>
-								<td></td>
-								<td class="font-c">19,000</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="pop-footer">
-				<div class="btn-wrap">
-					<button type="button" class="pop-close">닫기</button>
-				</div>
-			</div>
-			<button type="button" class="pop-close ico"></button>
-		</div>
-	</div>
-	<div class="pop-wrap detail-pop" data-pop="detail-pop">
-		<div class="pop-inner">
-			<div class="pop-header">결제 상세</div>
-			<div class="pop-content">
-				<button type="button" class="btn-w">환불</button>
-				<div class="table-type01">
-					<table>
-						<colgroup>
-							<col width="18%">
-							<col width="*">
-							<col width="18%">
-							<col width="*">
-						</colgroup>
-						<tbody>
-							<tr>
-								<th>학원명/코드</th>
-								<td>천재수학/H0000000</td>
-								<th>주문일</th>
-								<td>2022-10-31</td>
-							</tr>
-							<tr>
-								<th>주소</th>
-								<td>(00000)대구 수성로</td>
-								<th>연락처</th>
-								<td>010-XXXX-XXXX</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="table-type02">
-					<table>
-						<colgroup>
-							<col width="10%">
-							<col width="10%">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-							<col width="*">
-							<col width="10%">
-							<col width="13%">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>학년</th>
-								<th>유형</th>
-								<th>사용구분</th>
-								<th>교재구분</th>
-								<th>교재코드</th>
-								<th>교재명</th>
-								<th>수량</th>
-								<th>금액</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>초3</td>
-								<td>심화</td>
-								<td>학생용</td>
-								<td>학기</td>
-								<td>D0000</td>
-								<td>수학 3-1</td>
-								<td>1</td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="6">주문 금액</td>
-								<td></td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="6">배송비</td>
-								<td></td>
-								<td>4,000</td>
-							</tr>
-							<tr class="total">
-								<td colspan="6">총액</td>
-								<td class="font-c">1</td>
-								<td class="font-c">19,000</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="pop-footer">
-				<div class="btn-wrap">
-					<button type="button" class="pop-close">닫기</button>
-				</div>
-			</div>
-			<button type="button" class="pop-close ico"></button>
-		</div>
-	</div>
-	
 </body>
 <script>
   $(function () {
