@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>닥터매쓰</title>
+	<link rel="stylesheet" href="../inc/css/reset.css">
+	<link rel="stylesheet" href="../inc/css/admin.css">
+	<link rel="stylesheet" href="../inc/css/admin_jy.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script src="../inc/js/admin.js"></script>
+</head>
+<body>
+	<div id="wrap" class="admin21">
+		<div class="header">
+			<div class="header-top">
+				<div class="inner">
+					<a href="javascript:;">로그아웃</a>
+				</div>
+			</div>
+			<div class="nav-wrap">
+				<div class="inner">
+					<div class="logo">
+						<a href="javascript:;"><img src="../images/common/logo_0615.png" alt="닥터매쓰"></a>
+					</div>
+					<ul class="nav">
+						<li>
+							<a href="javascript:;">정산 관리</a>
+							<div class="depth2">
+								<p class="tit">정산 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">결제 내역</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용권 수수료 정산</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용권 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">쿠폰 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">교재 사용권 관리</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">고객 관리</a>
+							<div class="depth2">
+								<p class="tit">고객 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">무료체험 신청 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">센터 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">학원 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">일반회원 리스트</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">학습 관리</a>
+							<div class="depth2">
+								<p class="tit">학습 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">교재 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">추천 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">기출 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">교재 VOD 검수</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">부가 관리</a>
+							<div class="depth2">
+								<p class="tit">부가 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">메인 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">문항 오류신고</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">커뮤니티</a>
+							<div class="depth2">
+								<p class="tit">커뮤니티</p>
+								<ul>
+									<li>
+										<a href="javascript:;">1:1 문의</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용 후기</a>
+									</li>
+									<li>
+										<a href="javascript:;">업데이트 소식</a>
+									</li>
+									<li>
+										<a href="javascript:;">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:;">FAQ</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">오류 게시판</a>
+						</li>
+					</ul>
+					<div class="all-menu-wrap">
+						<button type="button" class="pop-btn" data-pop="menu">전체메뉴</button>
+						<div class="all-menu pop-wrap" data-pop="menu">
+							<button type="button" class="pop-close">닫기</button>
+							<ul>
+								<li>
+									<a href="javascript:;">정산 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">결제 내역</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용권 수수료 정산</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용권 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">쿠폰 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 사용권 관리</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">고객 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">무료체험 신청 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">센터 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">학원 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">일반회원 리스트</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">학습 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">추천 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">기출 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 VOD 검수</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">부가 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">메인 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">문항 오류신고</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">커뮤니티</a>
+								</li>
+								<li>
+									<a href="javascript:;">1:1 문의</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용 후기</a>
+								</li>
+								<li>
+									<a href="javascript:;">업데이트 소식</a>
+								</li>
+								<li>
+									<a href="javascript:;">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="local-nav">
+				<div class="inner">
+					<a href="javascript:;" class="home"></a>
+					<div class="depth01">
+						<button type="button" class="select-btn">고객 관리</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">정산 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">고객 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">학습 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">부가 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">커뮤니티</a>
+							</li>
+						</ul>
+					</div>
+					<div class="depth02">
+						<button type="button" class="select-btn">센터 리스트</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">무료체험 신청 리스트</a>
+							</li>
+							<li>
+								<a href="javascript:;">센터 리스트</a>
+							</li>
+							<li>
+								<a href="javascript:;">학원 리스트</a>
+							</li>
+							<li>
+								<a href="javascript:;">일반회원 리스트</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="inner">
+				<div class="tab-wrap">
+					<ul class="tab-menu">
+						<li class="ui-tab-btn">
+							<a href="javascript:;">운영</a>
+						</li>
+						<li class="ui-tab-btn active">
+							<a href="javascript:;">해지</a>
+						</li>
+					</ul>
+					<div class="contents">
+						[admin21_01_list] 탭으로 구현
+					</div>		
+					<div class="contents on">
+						<div class="search-wrap">
+							<table>
+								<colgroup>
+									<col width="10%">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>검색조건</th>
+										<td>
+											<div class="date-wrap">
+												<div class="datepicker-wrap">
+													<input type="text" id="from" name="from" autocomplete="off">
+												</div>
+												<span>~</span>
+												<div class="datepicker-wrap">
+													<input type="text" id="to" name="to" autocomplete="off">
+												</div>
+											</div>
+											<select name="" id="">
+												<option value="">전체</option>
+												<option value="">제목</option>
+												<option value="">작성자</option>
+											</select>
+											<input type="text" placeholder="검색어">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn-wrap">
+							<button type="button">초기화</button>
+							<button>검색</button>
+						</div>
+						<div class="list-table type02">
+							<div class="table-top">
+								<div class="top-box">
+									<span class="total">검색 결과: <em>00</em>건</span>
+								</div>
+								<div class="btn-wrap">
+									<button type="button">삭제</button>
+									<a href="javascript:;" class="bg-c">등록</a>
+									<button type="button">엑셀 다운로드</button>
+								</div>
+							</div>
+							<div class="scroll-inner h450">
+								<table>
+									<colgroup>
+										<col width="4%">
+										<col width="13%">
+										<col width="*">
+										<col width="14%">
+										<col width="15%">
+										<col width="15%">
+										<col width="10%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>
+												<input type="checkbox" class="allCheck" id="chk01_01">
+												<label for="chk01_01"></label>
+											</th>
+											<th>센터코드</th>
+											<th>센터명</th>
+											<th>센터장명</th>
+											<th>연락처</th>
+											<th>가입일</th>
+											<th>상세</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" id="chk01_02" class="chk">
+												<label for="chk01_02"></label>
+											</td>
+											<td class="title">
+												<a href="javascript:;">D0100</a>
+											</td>
+											<td>대전 지역센터</td>
+											<td>김둘리</td>
+											<td>010-XXXX-XXXX</td>
+											<td>YYYY-MM-DD</td>
+											<td>
+												<a href="javascript:;" class="btn-txt">보기</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="paging-wrap">
+							<a href="javascript:;" class="first"></a>
+							<a href="javascript:;" class="prev"></a>
+							<a href="javascript:;" class="page active"><span>1</span></a>
+							<a href="javascript:;" class="page"><span>2</span></a>
+							<a href="javascript:;" class="page"><span>3</span></a>
+							<a href="javascript:;" class="page"><span>4</span></a>
+							<a href="javascript:;" class="page"><span>5</span></a>
+							<a href="javascript:;" class="next"></a>
+							<a href="javascript:;" class="last"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+</body>
+<script>
+  $(function () {
+    var dateFormat = "yy-mm-dd",
+      from = $("#from")
+      .datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+				changeYear: true,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        showOn: "button",
+        buttonImage: "../images/admin/ico_date.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				nextText: '다음 달',
+				prevText: '이전 달',
+				showMonthAfterYear: true, //년 뒤에 월 표시
+				showOn: "both" //버튼 클릭시 달려 표시
+      })
+      .on("change", function () {
+        to.datepicker("option", "minDate", getDate(this));
+      }),
+      to = $("#to").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+				changeYear: true,
+        numberOfMonths: 1,
+        dateFormat: "yy-mm-dd",
+        buttonImage: "../images/admin/ico_date.png",
+        buttonImageOnly: true,
+        buttonText: "Select date",
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				nextText: '다음 달',
+				prevText: '이전 달',
+				showMonthAfterYear: true, //년 뒤에 월 표시
+				showOn: "both" //버튼 클릭시 달려 표시
+
+      })
+      .on("change", function () {
+        from.datepicker("option", "maxDate", getDate(this));
+      });
+
+    function getDate(element) {
+      var date;
+      try {
+        date = $.datepicker.parseDate(dateFormat, element.value);
+      } catch (error) {
+        date = null;
+      }
+
+      return date;
+    }
+    $(".ui-datepicker-trigger").removeAttr("title");
+
+  })
+	</script>
+</html>

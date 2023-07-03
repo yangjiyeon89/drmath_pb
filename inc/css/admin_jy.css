@@ -142,6 +142,8 @@
 .view-table .file-txt button {
   position: relative;
   top: -5px;
+  width: auto;
+  height: auto;
   margin-left: 5px;
   padding: 5px;
   border: 1px solid #666;
@@ -386,4 +388,85 @@
 }
 .upload-pop .txt-center th, .upload-pop .txt-center td {
   text-align: center;
+}
+
+.center-table .tit-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center-table .tit-wrap .toggle-btn {
+  margin: 0;
+}
+.center-table .tit-wrap .toggle-btn .checkbox:checked + .knobs::after {
+  content: "운영";
+}
+.center-table .tit-wrap .toggle-btn .knobs::after {
+  content: "비운영";
+}
+.center-table input[type=text] {
+  width: 230px;
+  height: 33px;
+}
+.center-table input[type=text].w76 {
+  width: 76%;
+}
+.center-table input[type=number] {
+  width: 72px;
+  height: 33px;
+  border: 1px solid #dddddd;
+}
+.center-table select {
+  position: relative;
+  top: 2px;
+  height: 33px;
+}
+.center-table select.w162 {
+  width: 162px;
+}
+.center-table span {
+  margin: 0 5px;
+}
+.center-table .txt {
+  color: #666666;
+  font-size: 14px;
+}
+.center-table .email-box input, .center-table .email-box select {
+  width: 122px;
+}
+.center-table .datepicker-wrap input {
+  width: 167px !important;
+}
+.center-table table button {
+  width: 80px;
+  margin-left: 5px;
+}
+.center-table table button + span {
+  color: #7959c8;
+  font-size: 14px;
+}
+
+.academy-table .logo {
+  position: relative;
+}
+.academy-table .logo img {
+  position: absolute;
+  right: 13px;
+  max-width: 96px;
+}
+.academy-table .txt {
+  color: #666;
+  font-size: 14px;
+}
+.academy-table select {
+  width: 162px;
+  padding: 5px 24px 5px 5px;
+  background: url("../../images/admin/ico_select_arr.png") no-repeat 95% 55% #fff;
+}
+.academy-table select.w72 {
+  width: 72px;
+}
+.academy-table input[type=text] {
+  width: 122px;
 }

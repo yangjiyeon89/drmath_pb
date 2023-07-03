@@ -179,6 +179,10 @@ select {
 .btn-wrap a:last-child {
   background-color: #7959c8;
 }
+.btn-wrap button.bg-c,
+.btn-wrap a.bg-c {
+  background-color: #7959c8 !important;
+}
 
 .table-bottom {
   clear: both;
@@ -715,6 +719,12 @@ a.btn-txt {
   margin-right: 15px;
 }
 
+.table-tit {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .tab-menu {
   display: flex;
   border-bottom: 1px solid #7959c8;
@@ -872,6 +882,17 @@ a.btn-txt {
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
+.view-table table button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 32px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #7959c8;
+}
 .view-table th,
 .view-table td {
   padding: 10px;
@@ -891,6 +912,18 @@ a.btn-txt {
 }
 .view-table.style02 td {
   height: 45px;
+}
+.view-table textarea {
+  width: 100%;
+  height: 140px;
+  padding: 20px;
+  resize: none;
+  border: 1px solid #ddd;
+  outline: none;
+  box-sizing: border-box;
+}
+.view-table + .view-table {
+  margin-top: 40px;
 }
 
 .datepicker-wrap {

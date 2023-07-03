@@ -129,6 +129,8 @@
     button {
       position: relative;
       top: -5px;
+      width: auto;
+      height: auto;
       margin-left: 5px;
       padding: 5px;
       border: 1px solid #666;
@@ -374,5 +376,91 @@
     th, td {
       text-align: center;
     }
+  }
+}
+
+.center-table {
+  .tit-wrap {
+    width: 100%;
+    @include layout-justify-center;
+    .toggle-btn {
+      margin: 0;
+      .checkbox:checked + .knobs::after {content:"운영"}
+      .knobs::after {content: "비운영";}
+    }
+  }
+  input {
+    &[type="text"] {
+      width: 230px;
+      height: 33px;
+      &.w76 {
+        width: 76%;
+      }
+    }
+    &[type="number"] {
+      width: 72px;
+      height: 33px;
+      border: 1px solid #dddddd;
+    }
+  }
+  select {
+    position: relative;
+    top: 2px;
+    height: 33px;
+    &.w162 {
+      width: 162px;
+    }
+  }
+  span {
+    margin: 0 5px;
+  }
+  .txt {
+    color: #666666;
+    font-size: 14px;
+  }
+  .email-box {
+    input, select {
+      width: 122px;
+    }
+  }
+  .datepicker-wrap {
+    input {
+      width: 167px !important;
+    }
+  }
+  table {
+    button {
+      width: 80px;
+      margin-left: 5px;
+      & + span {
+        color: #7959c8;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.academy-table {
+  .logo {
+    position: relative;
+    img {
+      position: absolute;
+      right: 13px;
+      max-width: 96px;
+    }
+  }
+  .txt {
+    color: #666;
+    font-size: 14px;
+  }
+  select {
+    width: 162px;
+    padding: 5px 24px 5px 5px;
+    background: url("../../images/admin/ico_select_arr.png") no-repeat 95% 55% #fff;
+    &.w72 {
+      width: 72px;
+    }
+  }
+  input[type="text"] {
+    width: 122px;
   }
 }

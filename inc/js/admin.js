@@ -123,6 +123,34 @@ $(function () {
         _allMenuLink.find('ul').eq(0).find('li').eq(5).addClass('on')
         break;
     }
+    switch (_afterStr[0]) {
+      case 'admin20':
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(1).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin21':
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(2).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin22':
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(3).addClass('on')
+        break;
+    }
+    switch (_afterStr[0]) {
+      case 'admin23':
+        _gnbMenuLink.eq(1).addClass('on');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(3).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(1).find('li').eq(4).addClass('on')
+        break;
+    }
   }
 
   function menuUI() {
