@@ -2758,28 +2758,50 @@ i.pen-type07 {
 .que-preview-wrap .cnt-answer .problem-cnt .num {
   font-size: 32px;
 }
+.que-preview-wrap .cnt-answer .problem-cnt .num + div {
+  margin-top: 5px;
+}
 .que-preview-wrap .cnt-answer .problem-cnt .problem-txt {
   font-size: 18px;
 }
 .que-preview-wrap .cnt-answer .answer-wrap {
-  text-align: right;
+  display: flex;
 }
 .que-preview-wrap .cnt-answer .answer-wrap em {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 29px;
+  flex: none;
+  width: 42px;
   height: 29px;
+  padding-top: 3px;
   margin-right: 20px;
   color: #fff;
+  font-size: 16px;
   border-radius: 10px;
   background-color: #474747;
+  box-sizing: border-box;
+}
+.que-preview-wrap .cnt-answer .answer-wrap em.type02 {
+  color: #000;
+  background-color: #e1e1e1;
 }
 .que-preview-wrap .cnt-answer .answer-wrap span {
+  padding-top: 3px;
   font-size: 18px;
+  line-height: 1.3;
 }
 .que-preview-wrap .cnt-answer .answer-wrap span.fz-s {
+  padding-top: 10px;
   font-size: 11px;
+}
+.que-preview-wrap .cnt-answer .answer-wrap span .fz-s {
+  padding-top: 0;
+  position: relative;
+  top: -2px;
+}
+.que-preview-wrap .cnt-answer .answer-wrap + .answer-wrap {
+  margin-top: 20px;
 }
 .que-preview-wrap.page-type {
   padding: 0 60px 40px;
