@@ -121,18 +121,16 @@
             <table>
               <colgroup>
                 <col width="*">
-                <col width="7%">
+                <col width="9%">
                 <col width="13%">
-                <col width="13%">
-                <col width="17%">
+                <col width="14%">
               </colgroup>
               <thead>
                 <tr>
-                  <th>상품</th>
+                  <th>주문 교재</th>
                   <th>수량</th>
                   <th>결제금액</th>
                   <th>교재권 사용</th>
-                  <th>총 결제금액</th>
                 </tr>
               </thead>
               <tbody>
@@ -141,13 +139,40 @@
                   <td>1권</td>
                   <td>11,000원</td>
                   <td>- 0원</td>
-                  <td class="total-price">11,000원</td>
+                </tr>
+                <tr>
+                  <td colspan="4" class="txt-box-wrap">
+                    <div class="txt-box">
+                      <span class="c-gray">결제금액</span>
+                      <span class="num">11,000</span>
+                      <span class="txt">원</span>
+                    </div>
+                    <div class="txt-box">
+                      <span class="c-gray">교재권 사용금액</span>
+                      <span class="num">0</span>
+                      <span class="txt">원</span>
+                    </div>
+                    <div class="txt-box">
+                      <span class="c-gray">배송비</span>
+                      <span class="num">4,000</span>
+                      <span class="txt">원</span>
+                    </div>
+                    <div class="txt-box total">
+                      <span class="c-gray">총 결제금액</span>
+                      <span class="num">15,000</span>
+                      <span class="txt">원</span>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="title-wrap">
             <span class="sub-title">배송지 정보</span>
+            <div class="chk-wrap">
+              <input type="checkbox" id="chk01_01" checked="">
+              <label for="chk01_01">기본 배송지로 선택</label>
+            </div>
           </div>
           <div class="table-wrap type02">
             <table>
@@ -221,10 +246,7 @@
                 </tr>
               </tbody>
             </table>
-            <div class="chk-wrap">
-              <input type="checkbox" id="chk01_01" checked="">
-              <label for="chk01_01">기본 배송지로 선택</label>
-            </div>
+            
           </div>
           <div class="title-wrap">
             <span class="sub-title">결제정보</span>
@@ -254,7 +276,7 @@
             <table>
               <colgroup>
                 <col width="7%">
-                <col width="17%">
+                <col width="20%">
                 <col width="*">
                 <col width="17%">
               </colgroup>
@@ -270,7 +292,7 @@
                     <input type="checkbox" id="chk02_01">
                     <label for="chk02_01"></label>
                   </td>
-                  <td><span class="default-label">기본배송지</span>천재수학</td>
+                  <td><span class="default-label">기본</span>천재수학</td>
                   <td><p class="txt">남서울중학교[서울특별시교육청]</p>서울특별시 관악구 남부순환로 172길 97</td>
                   <td>
                     <div class="btn-wrap">
@@ -365,7 +387,7 @@
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
           <img src="../images/common/ico_pop.png" alt="">
-          <span class="txt">정말 삭제하시겠습니까?</span>
+          <span class="txt">삭제하시겠습니까?</span>
         </div>
         <div class="pop-footer">
           <button>취소</button>

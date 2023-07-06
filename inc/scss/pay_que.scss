@@ -20,12 +20,29 @@
     .sub-tit {
       margin-top: 50px;
     }
+    .font-g {
+      color: #999;
+      font-size: 14px;
+    }
+    
+  }
+  .select-list {
+    max-height: 190px;
   }
   .title-wrap {
     @include layout-justify-center;
     margin: 35px 0 10px;
     .sub-tit {
       margin: 0;
+      span {
+        margin-left: 10px;
+        color: #999;
+        font-weight: 400;
+        img {
+          position: relative;
+          top: -2px;
+        }
+      }
     }
   }
   .title {
@@ -77,28 +94,58 @@
       .price {
         color: #737373;
         em {
-          margin-right: 5px;
+          margin-right: 3px;
           color: $color-sub33;
           @include font(18px, 700);
         }
       }
+      
     }
+    .left-cnt {
+      display: flex;
+      .txt-wrap + .txt-wrap {
+        position: relative;
+        margin-left: 250px;
+        &::before {
+          position: absolute;
+          left: -140px;
+          top: 50%;
+          @include virtual-selector;
+          width: 16px;height: 2px;
+          margin-top: -1px;
+          background-color: #333;
+        }
+      }
+    }
+  }
+  .right-txt {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 14px;
+    text-align: right;
   }
   .payment-wrap {
     @include layout-center-center;
-    gap: 14px;
-    padding: 14px 0;
+    gap: 10px;
+    padding: 20px;
     border: 1px solid $color-line-type02;
     border-radius: 5px;
     background-color: $color-box-type02;
     .btn-line {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
       position: relative;
-      padding: 20px 36px 20px 0;
+      width: 50%;
+      height: 144px;
+      padding: 20px;
       font-weight: 600;
       border: 1px solid $color-box;
       border-radius: 5px;
       background-color: #fff;
       cursor: pointer;
+      box-sizing: border-box;
       span {
         position: relative;
         &::before {
@@ -106,6 +153,21 @@
           left: 0;
           @include virtual-selector;
         }
+      }
+      .tit-area {
+        @include content-center;
+        .form-txt-chk {
+          color: #999;
+          font-weight: 400;
+          img {
+            position: relative;
+            top: -2px;
+          }
+        }
+      }
+      .tit {
+        margin-right: 10px;
+        font-size: 24px;
       }
       &.card {
         padding-left: 41px;
@@ -128,7 +190,9 @@
         }
       }
       &.active {
-        color: $color-main-purple;
+        .tit {
+          color: $color-main-purple;
+        }
         border-color: $color-main-purple;
         &.card {
           span {
@@ -144,6 +208,212 @@
             }
           }
         }
+      }
+    }
+    .price-area {
+      display: flex;
+      width: 100%;
+      color: #999999;
+      justify-content: flex-end;
+      & > div {
+        display: flex;
+        align-items: flex-end;
+        & > em {
+          margin-right: 10px;
+        }
+        & + div {
+          margin-left: 20px;
+        }
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        em {
+          margin-right: 3px;
+          font-size: 18px;
+        }
+        .font-c {
+          color: #5a14be;
+          em {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .select-btn {
+    width: 140px;
+  }
+  .sec02 {
+    
+  }
+  .txt-box-wrap {
+    .txt-box {
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        &.num {
+          margin-left: 10px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        &.txt {
+          color: #737373;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      & + .txt-box {
+        margin-left: 120px;
+        &::before {
+          left: -67px;
+        }
+      }
+    }
+  }
+  .benefits {
+    td {
+      vertical-align: top;
+      &.active {
+        background-color: #f5f1ff;
+      }
+    }
+    .tit {
+      padding-top: 20px;
+      em {
+        color: #5a14be;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 20px;
+      }
+      img {
+        position: relative;
+        top: -4px;
+      }
+    }
+    .list-area {
+      margin: 20px 0 10px;
+    }
+    .chk-area {
+      margin-bottom: 0;
+      em {
+        display: block;
+        margin: 5px auto;
+      }
+      span {
+        position: relative;
+        display: block;
+        width: 190px;height: 40px;
+        margin: auto;
+        padding: 11px 15px;
+        text-align: left;
+        font-size: 16px;
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        background-color: #fff;
+        box-sizing: border-box;
+        cursor: pointer;
+        &::after {
+          position: absolute;
+          top: 11px;right: 10px;
+          @include virtual-selector;
+          width: 18px;height: 18px;
+          background: url(../../images/sub/ico_arrow.png) no-repeat;
+        }
+        &.active {
+          color: #5a14be;
+          font-weight: 500;
+          border-color: #5a14be;
+          &::after {
+            background: url(../../images/sub/ico_arrow_on.png) no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .red-line {
+    em {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include virtual-selector;
+        width: 102%;
+        height: 2px;
+        margin-top: -1px;
+        background-color: #ec4a4a;
+      }
+    }
+  }
+  .table-wrap.type03 {
+    overflow: inherit;
+    .c-gray {
+      margin-right: 0;
+    }
+    .c-black {
+      span {
+        &.num, &.txt {
+          color: #333;
+        }
+      }
+    }
+  }
+  .select-list {
+    li {
+      padding-left: 0;
+      height: 40px;
+      a {
+        @include content-center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.coupon-pop.table-type {
+  .pop-content {
+    padding: 0 27px 20px;
+  }
+  .txt {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.sub14 {
+  .txt-box-wrap {
+    .txt-box {
+      align-items: flex-end;
+      span{
+        &.num {
+          position: relative;
+          top: 2px;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 1;
+        }
+        &.txt {
+          margin-left: 3px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.sub15 {
+  .table-wrap {
+    tbody {
+      td {
+        height: 140px;
+        box-sizing: border-box;
       }
     }
   }

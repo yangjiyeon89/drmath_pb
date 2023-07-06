@@ -96,7 +96,7 @@
                   </div>
                 </div>
                 <div class="book-paging-wrap">
-                  <div class="swiper book-page-swiper">
+                  <!-- <div class="swiper book-page-swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide"></div>
                       <div class="swiper-slide"></div>
@@ -107,6 +107,11 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
+                  </div> -->
+                  <div class="pagination">
+                    <input type="number" id="inputValue" class="text">
+                    <span>-</span>
+                    <span>18</span>
                   </div>
                 </div>
               </div>
@@ -119,27 +124,28 @@
 </body>
 <script>
   $(function(){
-    const BookSwiper = new Swiper('.book-preview-swiper', {
+    
+    var swiper = new Swiper('.book-preview-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
       navigation: {
-        nextEl: ".book-preview-swiper .swiper-button-next",
-        prevEl: ".book-preview-swiper .swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
 
-    const PageSwiper = new Swiper('.book-page-swiper', {
-      pagination: {
-        el: ".book-page-swiper .swiper-pagination",
-        type: "fraction",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".book-page-swiper .swiper-button-next",
-        prevEl: ".book-page-swiper .swiper-button-prev",
-      },
-    });
+    $('#inputValue').keypress(function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        var inputValue = $(this).val();
 
-    BookSwiper.controller.control = PageSwiper;
-    PageSwiper.controller.control = BookSwiper;
+        var slideIndex = parseInt(inputValue) - 1;
+
+        if (slideIndex >= 0 && slideIndex < swiper.slides.length) {
+          swiper.slideTo(slideIndex);
+        }
+      }
+    });
 
   });
 </script>

@@ -114,111 +114,125 @@
         <div class="content-wrap scroll-inner">
           <span class="title">기간 연장</span>
           <div class="section sec01">
-            <span class="sub-tit">기간 연장 결제</span>
+            <div class="title-wrap">
+              <span class="sub-tit">기간 연장 결제</span>
+              <button type="button" data-pop="coupon-pop" class="coupon pop-btn">쿠폰</button>
+            </div>
             <div class="table-wrap type03">
               <table>
                 <colgroup>
-                  <col width="6%">
-                  <col width="29%">
-                  <col width="*">
-                  <col width="*">
+                  <col width="33.333333%">
+                  <col width="33.333333%">
+                  <col width="33.333333%">
                 </colgroup>
                 <thead>
                   <tr>
-                    <th>선택</th>
-                    <th>사용기간 <em>(10명 기준)</em></th>
                     <th>사용인원</th>
-                    <th>추가 인원과금</th>
+                    <th>사용기간</th>
+                    <th>결제 후 이용기간</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="input-radio-type01">
-                      <input type="radio" id="radio200_01" name="radio200" checked="">
-                      <label for="radio200_01"></label>
-                    </td>
                     <td>
-                      <span>1개월</span>
-                      <span class="price"><em>￦</em>150,000</span>
-                      <em>(30일)</em>
-                    </td>
-                    <td rowspan="3">
-                      <input type="text" value="10" class="w60">
+                      <input type="text" value="30" class="w60">
                       <span class="txt">명</span>
-                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 10명입니다.</span>
-                    </td>
-                    <td rowspan="3">
-                      <span class="price center">15,000</span>
-                      <span class="txt">원</span>
-                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">11명 부터는 인당 5,500원이 적용됩니다.</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="input-radio-type01">
-                      <input type="radio" id="radio200_02" name="radio200" checked="">
-                      <label for="radio200_02"></label>
+                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 30명입니다.</span>
                     </td>
                     <td>
-                      <span>6개월</span>
-                      <span class="price"><em>￦</em>120,000</span>
-                      <em>(180일)</em>
+                      <div class="select-wrap">
+                        <button type="button" class="select-btn">1개월 <em>(30일)</em></button>
+                        <ul class="select-list" style="display: none;">
+                          <li>
+                            <a href="javascript:;">1개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">2개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">3개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">4개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">5개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">6개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">7개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">8개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">9개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">10개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">11개월 <em>(30일)</em></a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">12개월 <em>(30일)</em></a>
+                          </li>
+                        </ul>
+                      </div>
                     </td>
+                    <td>2023.06.26 ~ 2023.06.30</td>
                   </tr>
-                  <tr>
-                    <td class="input-radio-type01">
-                      <input type="radio" id="radio200_03" name="radio200" checked="">
-                      <label for="radio200_03"></label>
-                    </td>
-                    <td>
-                      <span>12개월</span>
-                      <span class="price"><em>￦</em>100,000</span>
-                      <em>(360일)</em>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="4">
-                      <div class="chk-area">
-                        <div class="radio-wrap">
-                          <div class="input-radio-type02">
-                            <input type="radio" id="radio300_02" name="radio300" checked="">
-                            <label for="radio300_02"><span>인원 10명 추가(66만원 혜택)</span></label>
-                            <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">기본인원(10명) 외 10명의 인원 추가!</span>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="4" class="txt-box-wrap">
-                      <div class="txt-box">
-                        <span class="c-gray">결제금액</span>
-                        <span class="num">1,200,000</span>
-                        <span class="txt">원</span>
-                      </div>
-                      <div class="txt-box">
-                        <span class="c-gray">할인금액</span>
-                        <span class="num">0</span>
-                        <span class="txt">원</span>
-                      </div>
-                      <div class="txt-box total">
-                        <span class="c-gray">총 결제금액</span>
-                        <span class="num">1,200,000</span>
-                        <span class="txt">원</span>
-                      </div>
-                    </td>
-                  </tr>      
                 </tbody>
               </table>
             </div>
           </div>
           <div class="section sec02">
-            <span class="sub-tit">결제정보</span>
-            <div class="payment-wrap btn-wrap">
+            <span class="sub-tit">결제방식 선택</span>
+            <!-- <div class="payment-wrap btn-wrap">
               <div class="btn-line card active">
                 <span>신용카드</span>
               </div>
               <div class="btn-line cash">
                 <span>가상계좌(무통장입금)</span>
+              </div>
+            </div> -->
+            <div class="payment-wrap btn-wrap">
+              <div class="btn-line active">
+                <div class="tit-area">
+                  <span class="tit">자동결제</span>
+                  <span class="form-txt-chk type-color02"><img src="../images/common/ico_check05.png" alt="">선택한 개월 수 만큼 사용권이 자동 결제 됩니다. </span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <em>첫 달</em>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                  <div>
+                    <em>다음 달</em>
+                    <div class="box">
+                      <span class="price red-line"><em>198,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-line">
+                <div class="tit-area">
+                  <span class="tit">선결제</span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -261,20 +275,6 @@
         <div class="pop-footer">
           <button>취소</button>
           <button>적용</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 사용기간 얼럿 -->
-    <div class="pop-wrap alert-type">
-      <div class="pop-inner">
-        <div class="pop-content">
-          <button type="button" class="pop-close"></button>
-          <img src="../images/common/ico_pop.png" alt="">
-          <span class="txt">아직 사용기간이 <em>30일</em> 남아 있습니다.<br>사용기간 만료 후 결제해 주세요.</span>
-        </div>
-        <div class="pop-footer">
-          <button>확인</button>
         </div>
       </div>
     </div>

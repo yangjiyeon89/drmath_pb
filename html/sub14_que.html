@@ -114,7 +114,10 @@
         <div class="content-wrap scroll-inner">
           <span class="title">인원 추가</span>
           <div class="section sec01">
-            <span class="sub-tit">인원 추가 결제</span>
+            <div class="title-wrap">
+              <span class="sub-tit">인원 추가 결제</span>
+              <button type="button" data-pop="coupon-pop" class="coupon pop-btn">쿠폰</button>
+            </div>
             <div class="table-wrap type03">
               <table>
                 <colgroup>
@@ -129,7 +132,7 @@
                     <th colspan="2">이용기간</th>
                   </tr>
                   <tr>
-                    <td colspan="2">10 명</td>
+                    <td colspan="2">30 명</td>
                     <td colspan="2">
                       2022. 01. 01 ~ 2022. 11. 11
                       <span class="price date">10일 남았습니다.</span>
@@ -137,7 +140,7 @@
                   </tr>
                   <tr>
                     <th>추가인원</th>
-                    <th>사용기간 <em>(30일 기준)</em></th>
+                    <th>사용기간 <em class="font-g">(1개월 30일기준)</em></th>
                     <th>인당 금액</th>
                     <th>이용기간</th>
                   </tr>
@@ -180,11 +183,17 @@
                           <li>
                             <a href="javascript:;">10</a>
                           </li>
+                          <li>
+                            <a href="javascript:;">11</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">12</a>
+                          </li>
                         </ul>
                       </div>
                     </td>
                     <td>
-                      <span class="font-c">120,000</span>
+                      <span class="font-c">0</span>
                       원
                       <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">잔여일 30일 미만 시, 일할 계산 적용됩니다.</span>
                     </td>
@@ -194,9 +203,8 @@
                     <td colspan="4" class="txt-box-wrap">
                       <div class="txt-box">
                         <span class="c-gray">정상 금액</span>
-                        <span class="txt">추가인원</span>
                         <span class="num">0</span>
-                        <span class="txt">명</span>
+                        <span class="txt">원</span>
                       </div>
                       <div class="txt-box">
                         <span class="c-gray">할인금액</span>
@@ -214,7 +222,7 @@
               </table>
             </div>
           </div>
-          <div class="section sec02">
+          <!-- <div class="section sec02">
             <span class="sub-tit">결제정보</span>
             <div class="payment-wrap btn-wrap">
               <div class="btn-line card active">
@@ -224,12 +232,48 @@
                 <span>가상계좌(무통장입금)</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <button type="button" class="btn-default">결제하기</button>
       </div>
     </div>
     <div class="dim"></div>
+     <!-- 쿠폰적용 팝업 -->
+     <div class="pop-wrap table-type coupon-pop" data-pop="coupon-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <span>쿠폰번호를 입력해 주세요.</span>
+          <button type="button" class="pop-close"></button>
+        </div>
+        <div class="pop-content">
+          <table>
+            <colgroup>
+              <col width="22%">
+              <col width="*">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>쿠폰번호</th>
+                <td>
+                  <div class="input-wrap">
+                    <input type="number" name="" id="">
+                    <span>-</span>
+                    <input type="number" name="" id="">
+                    <span>-</span>
+                    <input type="number" name="" id="">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <span class="txt">문의전화: 1661-8550</span>
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>적용</button>
+        </div>
+      </div>
+    </div>
 
     <!-- 얼럿 -->
     <div class="pop-wrap alert-type">
@@ -237,7 +281,7 @@
         <div class="pop-content">
           <button type="button" class="pop-close"></button>
           <img src="../images/common/ico_pop.png" alt="">
-          <span class="txt">결제내역이 없습니다.<br>추가 결제는 비용결제 후 이용 가능합니다.</span>
+          <span class="txt">결제내역이 없습니다.<br>사용권 결제 후 사용 가능합니다.</span>
         </div>
         <div class="pop-footer">
           <button>확인</button>

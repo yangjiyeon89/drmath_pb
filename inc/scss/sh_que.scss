@@ -5404,7 +5404,7 @@ i {
 		&.scroll-inner {
 			position: relative;
 			@media (max-width: 1280px) {
-				height: 608px;
+				// height: 608px;
 			}
 		}
 		margin: 70px 20px 0;
@@ -5417,6 +5417,7 @@ i {
 		}
 		.title-wrap {
 			margin: 60px 0 20px;
+			@include layout-justify-center;
 			.sub-title {
 				@include font(18px, 600);
 				em {
@@ -5424,9 +5425,30 @@ i {
 					color: #999;
 				}
 			}
+			em {
+				@include font(16px, 400);
+				color: #999;
+			}
 		}
 		.num {
 			color: $color-main-purple;
+		}
+		.txt-box-wrap {
+			.num {
+				color: #333;
+			}
+			.txt-box {
+				& + .txt-box {
+					&:not(.total) {
+						&::before {
+							width: 16px;height: 16px;
+							margin-top: -8px;
+							background: url(../../images/common/ico_add_type02.png) no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+			}
 		}
 	}
 	.sub16-01 {
@@ -5506,7 +5528,7 @@ i {
 						height: auto;
 						padding-left: 0;
 						border-bottom: 0;
-					
+						line-height: 1.5;
 					}
 				}
 			}
@@ -5542,6 +5564,12 @@ i {
 						&.purple {
 							color: $color-main-purple;
 							background-color: #ebe3ff;
+						}
+						&.blue {
+							background-color: #e3e6ff;
+						}
+						&.yellow {
+							background-color: #fff5e3;
 						}
 					}
 				}
@@ -5625,7 +5653,7 @@ i {
 					position: relative;
 					height: 310px;
 					@media (max-width: 1280px) {
-						height: 95px;
+						// height: 95px;
 					}
 				}
 				.item {
@@ -5695,7 +5723,7 @@ i {
 						}
 
 						.toggle-wrap {
-							@include layout-center;
+							@include layout-justify-center;
 							.tit {
 								display: inline-block;
 								@include font(14px, 500);
@@ -5703,7 +5731,7 @@ i {
 							}
 							.toggle-txt {
 								display: inline-block;
-								margin-right: 6px;
+								// margin-right: 6px;
 								@include font(16px, 700);
 								color: #a8a8a8;
 								&.on {
@@ -5715,6 +5743,7 @@ i {
 							margin-top: 15px;
 							input {
 								width: 218px;
+								text-align: right;
 							}
 							.desc {
 								margin-top: 10px;
@@ -5846,7 +5875,7 @@ i {
 	.sub16-02 {
 		.scroll-inner {
 			@media (max-width: 1280px) {
-				height: 553px;
+				// height: 553px;
 			}
 		}
 		.inner {
@@ -5896,7 +5925,7 @@ i {
 			}
 		}
 		.chk-wrap {
-			margin-top: 10px;
+			// margin-top: 10px;
 			text-align: right;
 			input[type="checkbox"] {
 				& + label {
@@ -5999,7 +6028,8 @@ i {
 					}
 				}
 				td {
-					padding: 12px 20px;
+					// padding: 12px 20px;
+					padding: 7px 20px;
 					& + td {
 						border-left: 1px solid $color-line-type02;
 					}
@@ -6025,15 +6055,20 @@ i {
 				}
 			}
 			.default-label {
-				@include layout-center-center;
-				width: 58px;
-				height: 22px;
+				// @include content-center-center;
+				// width: 58px;
+				// width: 28px;
+				// height: 22px;
+				padding: 3px;
 				border: 1px solid #c5aceb;
 				background-color: #ebe3ff;
 				color: $color-main-purple;
 				border-radius: 3px;
 				font-size: 12px;
-				margin-bottom: 5px;
+				// margin-bottom: 5px;
+				margin-right: 5px;
+				position: relative;
+				top: -2px;
 			}
 			.btn-wrap {
 				flex-direction: column;
@@ -6173,8 +6208,25 @@ i {
 			height: 70px;
 			background-color: #f6f6f6;
 			border-top: 1px solid $color-line-type02;
+			.pagination {
+				input {
+					width: 40px;
+					height: 30px;
+					padding: 0 5px;
+					text-align: center;
+					&::-webkit-outer-spin-button,
+					&::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+    				margin: 0;
+					}
+				}
+				span {
+					margin: 0 5px;
+				}
+			}
 		}
 		.book-page-swiper {
+			display: none;
 			width: 150px;
 			height: 30px;
 			.swiper-pagination-fraction {
