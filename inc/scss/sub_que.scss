@@ -445,10 +445,10 @@
     .table {
       span {
         &:nth-child(1) {
-          width: 8%;
+          width: 7%;
         }
         &:nth-child(2) {
-          width: 8%;
+          width: 7%;
           justify-content: center;
         }
         &:nth-child(3) {
@@ -471,10 +471,15 @@
         }
         &:nth-child(8) {
           // width: 8%;
-          width: 9%;
+          // width: 9%;
+          width: 5%;
         }
         &:nth-child(9) {
-          width: 3%;
+          // width: 3%;
+          width: 9%;
+        }
+        &:nth-child(10) {
+          width: 2%;
         }
       }
       
@@ -518,10 +523,15 @@
         }
         &:nth-child(6) {
           // width: 8%;
-          width: 9%;
+          // width: 9%;
+          width: 5%;
         }
         &:nth-child(7) {
-          width: 3%;
+          // width: 3%;
+          width: 9%;
+        }
+        &:nth-child(8) {
+          width: 2%;
         }
       }
     }
@@ -706,7 +716,8 @@
       .txt {
         position: relative;
         display: inline-block;
-        width: 482px;
+        // width: 482px;
+        width: 425px;
         margin: 0;
         font-size: 16px;
         @include text-overflow;
@@ -882,10 +893,15 @@
     }
     &.style01 {
       .chk-acc {
-        span:nth-child(7) {
-          margin-right: 20px;
-          .btn-icon {
-            width: 69px;
+        span {
+          &:nth-child(6) {
+            width: 7%;
+          }
+          &:nth-child(7) {
+            margin-right: 0;
+            .btn-icon {
+              width: 69px;
+            }
           }
         }
       }

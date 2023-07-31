@@ -80,7 +80,7 @@
               <a href="javascript:;">결제 관리</a>
               <ul class="depth2">
                 <li>
-                  <a href="javascript:;">온라인 사용권</a>
+                  <a href="javascript:;">사용권 구매</a>
                 </li>
                 <li>
                   <a href="javascript:;">인원 추가</a>
@@ -112,7 +112,14 @@
     <div class="container sub13-01">
       <div class="inner">
         <div class="content-wrap scroll-inner">
-          <span class="title">온라인 사용권</span>
+          <!-- s: 20230728 추가 -->
+          <div class="top-banner">
+            <span class="date">2023. 08. 01 - 09. 30 </span>
+            <span class="txt"> 결제분까지 프로모션 혜택가 적용!</span>
+            <img src="../images/sub/banner_deco.png" alt="">
+          </div>
+          <!-- e: 20230728 추가 -->
+          <span class="title">사용권 구매</span>
           <div class="section sec01">
             <div class="title-wrap">
               <span class="sub-tit">가입비 안내 <span class="form-txt-chk type-color02"><img src="../images/common/ico_check05.png" alt="">가입시 최초 1회만 결제합니다.</span></span>
@@ -136,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <span class="right-txt">*리뉴얼 이벤트 가입비 면제</span>
+            <span class="right-txt pr26">*리뉴얼 이벤트 가입비 면제</span><!-- 20230728 class 추가 -->
           </div>
           <div class="section sec02">
             <span class="sub-tit">사용권 결제</span>
@@ -161,7 +168,8 @@
                       <span class="txt">명</span>
                     </td>
                     <td>
-                      <div class="select-wrap">
+                      <!-- s: 20230725 수정 -->
+                      <!-- <div class="select-wrap">
                         <button type="button" class="select-btn">1개월 <em>(30일)</em></button>
                         <ul class="select-list" style="display: none;">
                           <li>
@@ -174,16 +182,35 @@
                             <a href="javascript:;">12개월 <em>(30일)</em></a>
                           </li>
                         </ul>
+                      </div> -->
+                      <div class="input-radio-type01 style01">
+                        <input type="radio" id="radio01_01" name="radio01">
+                        <label for="radio01_01">1개월 <em>(30일)</em></label>
+                        <input type="radio" id="radio01_02" name="radio01" checked="">
+                        <label for="radio01_02">6개월 <em>(180일)</em></label>
+                        <input type="radio" id="radio01_03" name="radio01" checked="">
+                        <label for="radio01_03">12개월 <em>(360일)</em></label>
                       </div>
+                      <!-- e: 20230725 수정 -->
                     </td>
                     <td>
-                      <span class="price center">6,600</span>
+                      <!-- s: 20230725 수정 -->
+                      <!-- <span class="price center">6,600</span>
                       <span class="txt">원</span>
-                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">30명 초과 시, 1인당 4,400원 적용 </span>
+                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">30명 초과 시, 1인당 4,400원 적용 </span> -->
+                      <div class="top-txt">
+                        <span class="txt">정상가</span>
+                        <span class="price-txt">6,600원</span>
+                      </div>
+                      <div class="btm-txt">
+                        <span class="txt">할인가</span>
+                        <span class="price-txt">4,400원</span>
+                      </div>
+                      <!-- e: 20230725 수정 -->
                     </td>
                   </tr>
                   <tr>
-                    <td colspan="4" class="txt-box-wrap">
+                    <td colspan="4" class="txt-box-wrap type02">
                       <div class="txt-box">
                         <span>사용권 금액</span>
                         <span class="num">198,000</span>
@@ -204,19 +231,19 @@
                   <tr class="benefits">
                     <td>
                       <div class="tit">
-                        <img src="../images/sub/ico_pay.png" alt="">
+                        <img src="../images/common/tit_deco.png" alt="">
                         <em>1개월</em>
                         <span>결제 혜택</span>
                       </div>
                       <div class="list-area">
-                        <div class="chk-area">
+                        <div class="chk-area align-c">
                           <span class="active">30일 추가 사용권</span>
                         </div>
                       </div>
                     </td>
-                    <td class="active">
+                    <td>
                       <div class="tit">
-                        <img src="../images/sub/ico_pay.png" alt="">
+                        <img src="../images/common/tit_deco.png" alt="">
                         <em>6개월</em>
                         <span>결제 혜택</span>
                       </div>
@@ -228,13 +255,23 @@
                         <div class="chk-area btn-wrap">
                           <span class="btn-line">전용교재 15만 포인트</span>
                           <em>또는</em>
-                          <span class="btn-line">지니마켓 15만 포인트</span>
+                          <!-- s: 20230728 수정 -->
+                          <span class="btn-line tooltip-btn">
+                            <div class="tooltip-wrap">
+                              <button type="button" class="btn-tip type02"></button>
+                              <div class="tooltip type03">
+                                <span>다음 달 1일 포인트가 지급됩니다. (영업일 기준)</span>
+                              </div>
+                            </div>
+                            지니마켓 15만 포인트
+                          </span>
+                          <!-- e: 20230728 수정 -->
                         </div>
                       </div>
                     </td>
                     <td>
                       <div class="tit">
-                        <img src="../images/sub/ico_pay.png" alt="">
+                        <img src="../images/common/tit_deco.png" alt="">
                         <em>12개월</em>
                         <span>결제 혜택</span>
                       </div>
@@ -246,7 +283,17 @@
                         <div class="chk-area btn-wrap">
                           <span class="btn-line">전용교재 15만 포인트</span>
                           <em>또는</em>
-                          <span class="btn-line">지니마켓 15만 포인트</span>
+                          <!-- s: 20230728 수정 -->
+                          <span class="btn-line tooltip-btn">
+                            <div class="tooltip-wrap">
+                              <button type="button" class="btn-tip type02"></button>
+                              <div class="tooltip type03">
+                                <span>다음 달 1일 포인트가 지급됩니다. (영업일 기준)</span>
+                              </div>
+                            </div>
+                            지니마켓 15만 포인트
+                          </span>
+                          <!-- e: 20230728 수정 -->
                         </div>
                       </div>
                     </td>
@@ -257,11 +304,46 @@
           </div>
           <div class="section sec03">
             <span class="sub-tit">결제방식 선택</span>
+            <!-- s: 20230728 수정 -->
             <div class="payment-wrap btn-wrap">
+              <div class="btn-line">
+                <div class="tit-area">
+                  <span class="tit">카드결제</span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-line">
+                <div class="tit-area">
+                  <span class="tit">가상계좌 <em>(무통장입금)</em></span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="btn-line active">
                 <div class="tit-area">
                   <span class="tit">자동결제</span>
-                  <span class="form-txt-chk type-color02"><img src="../images/common/ico_check05.png" alt="">선택한 개월 수 만큼 사용권이 자동 결제 됩니다. </span>
+                  <span class="form-txt-chk type-color02">
+                    <div class="tooltip-wrap">
+                      <button type="button" class="btn-tip type02"></button>
+                      <div class="tooltip type03">
+                        <span>선택한 개월 수 만큼 사용권이 자동 결제 됩니다. </span>
+                      </div>
+                    </div>
+                    자동결제는 포인트 지급 대상 제외 됩니다.
+                  </span>
                 </div>
                 <div class="price-area">
                   <div>
@@ -280,20 +362,8 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-line">
-                <div class="tit-area">
-                  <span class="tit">선결제</span>
-                </div>
-                <div class="price-area">
-                  <div>
-                    <div class="box">
-                      <span class="price red-line"><em>698,000</em>원</span>
-                      <span class="font-c"><em>159,000</em>원</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+            <!-- e: 20230728 수정 -->
           </div>
         </div>
         <button type="button" class="btn-default">결제하기</button>

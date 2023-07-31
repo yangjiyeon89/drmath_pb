@@ -512,6 +512,11 @@ a.btn-txt {
   }
 }
 
+// 비밀번호 변경 팝업
+.table-type {
+  
+}
+
 
 
 // header
@@ -890,17 +895,14 @@ a.btn-txt {
   .table-top {
     @include layout-justify-center;
     margin-bottom: 10px;
-
     .total {
       padding-left: 20px;
       background: url('../../images/admin/ico_result.png') no-repeat 0% 50%;
-
       em {
         color: #7959c8;
         font-weight: 600;
       }
     }
-
     .down {
       display: inline-block;
       padding: 5px 10px;

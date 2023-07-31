@@ -377,6 +377,35 @@
       text-align: center;
     }
   }
+  &.type03 {
+    .pop-header {
+      padding-bottom: 20px;
+    }
+    table {
+      margin-top: 0;
+      th {
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        height: 36px;
+        padding: 0 10px;
+        border: 1px solid #cfcfcf;
+        box-sizing: border-box;
+      }
+    }
+    .form-txt-chk {
+      display: block;
+      margin-top: 5px;
+      color: #fc3812;
+      font-size: 14px;
+      img {
+        position: relative;
+        top: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 .center-table {
@@ -439,6 +468,7 @@
     }
   }
 }
+
 .academy-table {
   .logo {
     position: relative;
@@ -462,5 +492,59 @@
   }
   input[type="text"] {
     width: 122px;
+  }
+  &.list-table {
+    margin-top: 33px;
+    table {
+      td {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    .table-tit {
+      margin-bottom: 0;
+    }
+    .btn-wrap {
+      margin-top: 0;
+    }
+    .hidden-cnt {
+      position: relative;
+      display: block;
+      width: 613px;
+      margin: auto;
+      padding: 10px 15px;
+      border: 1px solid #dddddd;
+      box-sizing: border-box;
+      .txt {
+        display: block;
+        width: 97%;
+        text-align: left;
+        @include text-overflow;
+      }
+      .cnt-btn {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        width: 11px;
+        height: 7px;
+        margin-top: -2px;
+        background: url(../../images/common/select_arrow.png) no-repeat;
+        background-size: contain;
+      }
+      &.on {
+        .txt {
+          overflow: inherit;
+          white-space: normal;
+        }
+        .cnt-btn {
+          transform: rotate(-180deg);
+          background-size: contain;
+        }
+      }
+    }
+    .paging-wrap{
+      & + .btn-wrap {
+        margin: 40px 0 35px;
+      }
+    }
   }
 }

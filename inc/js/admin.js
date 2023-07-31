@@ -151,6 +151,13 @@ $(function () {
         _allMenuLink.find('ul').eq(1).find('li').eq(4).addClass('on')
         break;
     }
+    switch (_afterStr[0]) {
+      case 'admin24':
+        _gnbMenuLink.eq(0).addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(5).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(0).find('li').eq(6).addClass('on')
+        break;
+    }
   }
 
   function menuUI() {
@@ -285,9 +292,15 @@ $(function () {
         _this.parents('table').find('input[type=checkbox].chk').prop('checked', false);
       }
     }
-
-    
   }
 
   chkAll.on('click', checkFunc);
+
+
+  // tablist 글자 숨김
+  $('.cnt-btn').on('click', function(){
+    let hiddenCnt = $(this).parents('.hidden-cnt');
+
+    hiddenCnt.toggleClass('on');
+  })
 })

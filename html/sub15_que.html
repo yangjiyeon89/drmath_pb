@@ -135,9 +135,11 @@
                 <tbody>
                   <tr>
                     <td>
-                      <input type="text" value="30" class="w60">
-                      <span class="txt">명</span>
-                      <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 30명입니다.</span>
+                      <!-- s: 20230728 수정 -->
+                      <!-- <input type="text" value="30" class="w60"> -->
+                      <span class="txt">30명</span>
+                      <!-- <span class="form-txt-chk type-color04"><img src="../images/common/ico_check05.png" alt="">최소 인원은 30명입니다.</span> -->
+                      <!-- e: 20230728 수정 -->
                     </td>
                     <td>
                       <div class="select-wrap">
@@ -190,19 +192,46 @@
           </div>
           <div class="section sec02">
             <span class="sub-tit">결제방식 선택</span>
-            <!-- <div class="payment-wrap btn-wrap">
-              <div class="btn-line card active">
-                <span>신용카드</span>
-              </div>
-              <div class="btn-line cash">
-                <span>가상계좌(무통장입금)</span>
-              </div>
-            </div> -->
+            <!-- s: 20230728 수정 -->
             <div class="payment-wrap btn-wrap">
+              <div class="btn-line">
+                <div class="tit-area">
+                  <span class="tit">카드결제</span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-line">
+                <div class="tit-area">
+                  <span class="tit">가상계좌 <em>(무통장입금)</em></span>
+                </div>
+                <div class="price-area">
+                  <div>
+                    <div class="box">
+                      <span class="price red-line"><em>698,000</em>원</span>
+                      <span class="font-c"><em>159,000</em>원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="btn-line active">
                 <div class="tit-area">
                   <span class="tit">자동결제</span>
-                  <span class="form-txt-chk type-color02"><img src="../images/common/ico_check05.png" alt="">선택한 개월 수 만큼 사용권이 자동 결제 됩니다. </span>
+                  <span class="form-txt-chk type-color02">
+                    <div class="tooltip-wrap">
+                      <button type="button" class="btn-tip type02"></button>
+                      <div class="tooltip type03">
+                        <span>선택한 개월 수 만큼 사용권이 자동 결제 됩니다. </span>
+                      </div>
+                    </div>
+                    자동결제는 포인트 지급 대상 제외 됩니다.
+                  </span>
                 </div>
                 <div class="price-area">
                   <div>
@@ -221,20 +250,8 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-line">
-                <div class="tit-area">
-                  <span class="tit">선결제</span>
-                </div>
-                <div class="price-area">
-                  <div>
-                    <div class="box">
-                      <span class="price red-line"><em>698,000</em>원</span>
-                      <span class="font-c"><em>159,000</em>원</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+            <!-- e: 20230728 수정 -->
           </div>
         </div>
         <button type="button" class="btn-default">결제하기</button>

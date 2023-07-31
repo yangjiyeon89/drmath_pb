@@ -18,6 +18,29 @@
 	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
 	*/
 @import url(../css/font.css);
+.sub13-que .pr26 {
+  padding-right: 26px;
+}
+.sub13-que .top-banner {
+  margin-bottom: 46px;
+  padding: 14px 0;
+  font-family: "GmarketSans";
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f7f4ff;
+}
+.sub13-que .top-banner img {
+  margin-top: -37px;
+  margin-bottom: -29px;
+}
+.sub13-que .top-banner .date {
+  font-weight: 500;
+}
+.sub13-que .top-banner .txt {
+  color: #8d4aec;
+  font-weight: 700;
+}
 .sub13-que .container .inner {
   padding-bottom: 20px;
 }
@@ -188,8 +211,10 @@
   align-items: center;
 }
 .sub13-que .payment-wrap .btn-line .tit-area .form-txt-chk {
+  padding-left: 17px;
   color: #999;
   font-weight: 400;
+  font-size: 13px;
 }
 .sub13-que .payment-wrap .btn-line .tit-area .form-txt-chk img {
   position: relative;
@@ -198,6 +223,11 @@
 .sub13-que .payment-wrap .btn-line .tit {
   margin-right: 10px;
   font-size: 24px;
+}
+.sub13-que .payment-wrap .btn-line .tit em {
+  display: block;
+  color: #999;
+  font-size: 16px;
 }
 .sub13-que .payment-wrap .btn-line.card {
   padding-left: 41px;
@@ -266,6 +296,20 @@
   font-size: 24px;
   font-weight: 600;
 }
+.sub13-que .payment-wrap .tooltip-wrap {
+  position: absolute;
+  left: -5px;
+  top: -3px;
+}
+.sub13-que .payment-wrap .tooltip-wrap .tooltip {
+  top: -46px;
+  left: -20px;
+}
+.sub13-que .payment-wrap .tooltip-wrap .tooltip::before {
+  top: 35px;
+  left: 22px;
+  transform: rotate(-180deg);
+}
 .sub13-que .select-btn {
   width: 140px;
 }
@@ -289,6 +333,26 @@
 .sub13-que .txt-box-wrap .txt-box + .txt-box::before {
   left: -67px;
 }
+.sub13-que .txt-box-wrap.type02 {
+  position: relative;
+  padding: 27px 100px;
+  text-align: left;
+}
+.sub13-que .txt-box-wrap.type02 .txt-box + .txt-box {
+  margin-left: 220px;
+}
+.sub13-que .txt-box-wrap.type02 .txt-box + .txt-box::before {
+  left: -110px;
+}
+.sub13-que .txt-box-wrap.type02 .txt-box.total {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sub13-que .txt-box-wrap.type02 .txt-box.total::before {
+  display: none;
+}
 .sub13-que .benefits td {
   vertical-align: top;
 }
@@ -299,16 +363,16 @@
   padding-top: 20px;
 }
 .sub13-que .benefits .tit em {
-  color: #5a14be;
+  color: #333;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .sub13-que .benefits .tit span {
-  font-size: 20px;
+  font-size: 24px;
 }
 .sub13-que .benefits .tit img {
   position: relative;
-  top: -4px;
+  top: -13px;
 }
 .sub13-que .benefits .list-area {
   margin: 20px 0 10px;
@@ -320,7 +384,7 @@
   display: block;
   margin: 5px auto;
 }
-.sub13-que .benefits .chk-area span {
+.sub13-que .benefits .chk-area > span {
   position: relative;
   display: block;
   width: 190px;
@@ -335,7 +399,7 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-.sub13-que .benefits .chk-area span::after {
+.sub13-que .benefits .chk-area > span::after {
   position: absolute;
   top: 11px;
   right: 10px;
@@ -346,13 +410,30 @@
   height: 18px;
   background: url(../../images/sub/ico_arrow.png) no-repeat;
 }
-.sub13-que .benefits .chk-area span.active {
+.sub13-que .benefits .chk-area > span.active {
   color: #5a14be;
   font-weight: 500;
   border-color: #5a14be;
 }
-.sub13-que .benefits .chk-area span.active::after {
+.sub13-que .benefits .chk-area > span.active::after {
   background: url(../../images/sub/ico_arrow_on.png) no-repeat;
+}
+.sub13-que .benefits .chk-area.align-c {
+  display: flex;
+  height: 170px;
+}
+.sub13-que .benefits .chk-area .tooltip-btn {
+  width: 211px;
+  padding: 11px 15px 11px 37px;
+}
+.sub13-que .benefits .chk-area .tooltip-wrap {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  margin-top: -9px;
+}
+.sub13-que .benefits .chk-area .tooltip-wrap .tooltip {
+  left: -54px;
 }
 .sub13-que .red-line em {
   position: relative;
@@ -378,6 +459,53 @@
 .sub13-que .table-wrap.type03 .c-black span.num, .sub13-que .table-wrap.type03 .c-black span.txt {
   color: #333;
 }
+.sub13-que .table-wrap.type03 .input-radio-type01 label:last-child {
+  margin-right: 0;
+}
+.sub13-que .table-wrap.type03 .top-txt, .sub13-que .table-wrap.type03 .btm-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 194px;
+  margin: auto;
+}
+.sub13-que .table-wrap.type03 .top-txt .txt, .sub13-que .table-wrap.type03 .btm-txt .txt {
+  width: 76px;
+}
+.sub13-que .table-wrap.type03 .top-txt {
+  margin-bottom: 5px;
+  color: #999;
+}
+.sub13-que .table-wrap.type03 .top-txt span {
+  font-size: 16px;
+}
+.sub13-que .table-wrap.type03 .top-txt .price-txt {
+  position: relative;
+}
+.sub13-que .table-wrap.type03 .top-txt .price-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.sub13-que .table-wrap.type03 .btm-txt {
+  color: #5a14be;
+  font-weight: 600;
+}
+.sub13-que .table-wrap.type03 .btm-txt .txt {
+  padding: 5px 0;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: #f5f1ff;
+}
+.sub13-que .table-wrap.type03 .btm-txt .price-txt {
+  font-size: 24px;
+}
 .sub13-que .select-list li {
   padding-left: 0;
   height: 40px;
@@ -388,6 +516,50 @@
   justify-content: flex-start;
   width: 100%;
   height: 100%;
+}
+.sub13-que .pay-wrap .title-box {
+  text-align: center;
+}
+.sub13-que .pay-wrap .title-box .txt {
+  line-height: 1.5;
+}
+.sub13-que .pay-wrap .title-box .txt em {
+  font-weight: 600;
+}
+.sub13-que .pay-wrap .title {
+  display: block;
+  margin: 20px 0 15px;
+}
+.sub13-que .pay-wrap .sec01 {
+  width: 850px;
+  margin: 20px auto 0;
+}
+.sub13-que .pay-wrap .table-wrap td {
+  padding: 15px 20px;
+  text-align: right;
+}
+.sub13-que .pay-wrap .table-wrap .bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+.sub13-que .pay-wrap .table-wrap .detail-cnt .tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.sub13-que .pay-wrap .table-wrap .detail-cnt .th {
+  color: #999999;
+  font-size: 16px;
+}
+.sub13-que .pay-wrap .table-wrap .num {
+  color: #5a14be;
+  font-size: 20px;
+}
+.sub13-que .pay-wrap .table-wrap .num em {
+  color: #5a14be;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .coupon-pop.table-type .pop-content {

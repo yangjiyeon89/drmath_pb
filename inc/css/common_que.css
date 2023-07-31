@@ -488,6 +488,18 @@ body {
   background-color: #470a9f;
 }
 
+.list-type02 {
+  background: url(../../images/common/ico_list_type02.png);
+  background-size: 14px !important;
+  background-size: contain;
+}
+
+.comment {
+  background: url(../../images/common/ico_comment.png);
+  background-size: 14px !important;
+  background-size: contain;
+}
+
 .preview {
   background: url(../../images/common/ico_preview.png);
   background-size: 14px !important;
@@ -1745,9 +1757,17 @@ input[type=checkbox]:checked + label::before {
   background: #fff url(../../images/common/ico_tooltip.png) no-repeat left 7px top 4px;
   background-size: 4px 8px;
 }
-.tooltip-wrap .btn-tip:hover {
+.tooltip-wrap .btn-tip:hover:not(.type02) {
   background-color: #969696;
   filter: invert(98%) sepia(98%) saturate(8%) hue-rotate(162deg) brightness(102%) contrast(102%);
+}
+.tooltip-wrap .btn-tip.type02 {
+  width: 17px;
+  height: 17px;
+  margin-left: 0;
+  border: 0;
+  background: url(../../images/common/ico_check05.png) no-repeat;
+  background-size: cover;
 }
 .tooltip-wrap .tooltip {
   display: inline-flex;
@@ -1816,6 +1836,21 @@ input[type=checkbox]:checked + label::before {
 .tooltip-wrap .tooltip.type02.fix-w {
   width: 130px;
   box-sizing: border-box;
+}
+.tooltip-wrap .tooltip.type03 {
+  width: 240px;
+  height: auto;
+  padding: 11px 0 9px;
+  background-color: #8d4aec;
+}
+.tooltip-wrap .tooltip.type03::before {
+  top: -7px;
+  width: 12px;
+  height: 7px;
+  background: url(../../images/common/ico_arrow_tooltip_type03.png) no-repeat;
+}
+.tooltip-wrap .tooltip.type03 span {
+  font-size: 13px;
 }
 
 .filter-wrap {

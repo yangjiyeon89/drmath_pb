@@ -5,6 +5,29 @@
 
 //결제관리
 .sub13-que {
+  .pr26 {
+    padding-right: 26px;
+  }
+  .top-banner {
+    margin-bottom: 46px;
+    padding: 14px 0;
+    font-family: 'GmarketSans';
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f7f4ff;
+    img {
+      margin-top: -37px;
+      margin-bottom: -29px;
+    }
+    .date {
+      font-weight: 500;
+    }
+    .txt {
+      color: #8d4aec;
+      font-weight: 700;
+    }
+  }
   .container {
     .inner {
       padding-bottom: 20px;
@@ -157,8 +180,10 @@
       .tit-area {
         @include content-center;
         .form-txt-chk {
+          padding-left: 17px;
           color: #999;
           font-weight: 400;
+          font-size: 13px;
           img {
             position: relative;
             top: -2px;
@@ -168,6 +193,11 @@
       .tit {
         margin-right: 10px;
         font-size: 24px;
+        em {
+          display: block;
+          color: #999;
+          font-size: 16px;
+        }
       }
       &.card {
         padding-left: 41px;
@@ -243,12 +273,23 @@
         }
       }
     }
+    .tooltip-wrap {
+      position: absolute;
+      left: -5px;
+      top: -3px;
+      .tooltip {
+        top: -46px;
+        left: -20px;
+        &::before {
+          top: 35px;
+          left: 22px;
+          transform: rotate(-180deg);
+        }
+      }
+    }
   }
   .select-btn {
     width: 140px;
-  }
-  .sec02 {
-    
   }
   .txt-box-wrap {
     .txt-box {
@@ -273,6 +314,28 @@
         }
       }
     }
+    &.type02 {
+      position: relative;
+      padding: 27px 100px;
+      text-align: left;
+      .txt-box {        
+        & + .txt-box {
+          margin-left: 220px;
+          &::before {
+            left: -110px;
+          }
+        }
+        &.total {
+          position: absolute;
+          right: 100px;
+          top: 50%;
+          transform: translateY(-50%);
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
   }
   .benefits {
     td {
@@ -284,16 +347,16 @@
     .tit {
       padding-top: 20px;
       em {
-        color: #5a14be;
+        color: #333;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
       }
       span {
-        font-size: 20px;
+        font-size: 24px;
       }
       img {
         position: relative;
-        top: -4px;
+        top: -13px;
       }
     }
     .list-area {
@@ -305,7 +368,7 @@
         display: block;
         margin: 5px auto;
       }
-      span {
+      & > span {
         position: relative;
         display: block;
         width: 190px;height: 40px;
@@ -332,6 +395,23 @@
           &::after {
             background: url(../../images/sub/ico_arrow_on.png) no-repeat;
           }
+        }
+      }
+      &.align-c {
+        display: flex;
+        height: 170px;
+      }
+      .tooltip-btn {
+        width: 211px;
+        padding: 11px 15px 11px 37px;
+      }
+      .tooltip-wrap {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        margin-top: -9px;
+        .tooltip {
+          left: -54px;
         }
       }
     }
@@ -363,6 +443,51 @@
         }
       }
     }
+    .input-radio-type01 {
+      label:last-child {
+        margin-right: 0;
+      }
+    }
+    .top-txt , .btm-txt {
+      @include layout-justify-center;
+      width: 194px;
+      margin: auto;
+      .txt {
+        width: 76px;
+      }
+    }
+    .top-txt {
+      margin-bottom: 5px;
+      color: #999;
+      span {
+        font-size: 16px;
+      }
+      .price-txt {
+        position: relative;
+        &::before {
+          @include virtual-selector;
+          width: 100%;
+          height: 1px;
+          background-color: #999;
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+      }
+    }
+    .btm-txt {
+      color: #5a14be;
+      font-weight: 600;
+      .txt {
+        padding: 5px 0;
+        font-size: 18px;
+        border-radius: 15px;
+        background-color: #f5f1ff;
+      }
+      .price-txt {
+        font-size: 24px;
+      }
+    }
   }
   .select-list {
     li {
@@ -373,6 +498,54 @@
         justify-content: flex-start;
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+  .pay-wrap {
+    .title-box {
+      text-align: center;
+      .txt {
+        line-height: 1.5;
+        em {
+          font-weight: 600;
+        }
+      }
+    }
+    .title {
+      display: block;
+      margin: 20px 0 15px;
+    }
+    .sec01 {
+      width: 850px;
+      margin: 20px auto 0;
+    }
+    .table-wrap {
+      td {
+        padding: 15px 20px;
+        text-align: right;
+      }
+      .bold {
+        font-weight: 600;
+        font-size: 16px;
+      }
+      .detail-cnt {
+        .tr {
+          @include layout-justify-center;
+          margin-top: 5px;
+        }
+        .th {
+          color: #999999;
+          font-size: 16px;
+        }
+      }
+      .num {
+        color: #5a14be;
+        font-size: 20px;
+        em {
+          color: #5a14be;
+          font-size: 24px;
+          font-weight: 700;
+        }
       }
     }
   }
