@@ -634,3 +634,47 @@
   border-radius: 5px;
   background-color: #7959c8;
 }
+
+.sms-pop .w680 {
+  width: 680px;
+}
+.sms-pop .text-box {
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1.8;
+  border-top: 1px solid #000;
+}
+.sms-pop .text-box em {
+  font-weight: 600;
+}
+.sms-pop .info-box {
+  padding: 10px 15px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+}
+.sms-pop .info-box em {
+  color: #5a14be;
+  font-weight: 500;
+}
+.sms-pop .coupon-box {
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+.sms-pop table {
+  margin: 20px 0;
+}
+.sms-pop table th, .sms-pop table td {
+  height: 60px;
+}
+.sms-pop table tr:last-child th, .sms-pop table tr:last-child td {
+  border-bottom: 1px solid #333;
+}
+.sms-pop table + .txt {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
