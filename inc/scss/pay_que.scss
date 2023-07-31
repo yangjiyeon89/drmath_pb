@@ -339,13 +339,19 @@
   }
   .benefits {
     td {
+      padding: 30px 0;
       vertical-align: top;
       &.active {
         background-color: #f5f1ff;
       }
+      .txt {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+      }
     }
     .tit {
-      padding-top: 20px;
+      padding-top: 15px;
       em {
         color: #333;
         font-size: 24px;
@@ -360,7 +366,8 @@
       }
     }
     .list-area {
-      margin: 20px 0 10px;
+      margin-top: 40px;
+      // margin: 20px 0 10px;
     }
     .chk-area {
       margin-bottom: 0;
@@ -371,7 +378,7 @@
       & > span {
         position: relative;
         display: block;
-        width: 190px;height: 40px;
+        width: 211px;height: 40px;
         margin: auto;
         padding: 11px 15px;
         text-align: left;
@@ -399,7 +406,7 @@
       }
       &.align-c {
         display: flex;
-        height: 170px;
+        height: 100px;
       }
       .tooltip-btn {
         width: 211px;
@@ -412,6 +419,31 @@
         margin-top: -9px;
         .tooltip {
           left: -54px;
+        }
+      }
+    }
+    .select-wrap {
+      width: 211px;
+      .select-btn {
+        width: 100%;
+      }
+      .select-list {
+        overflow: inherit;
+        .btn-line {
+          width: 100%;
+          border: 0;
+          border-top: 1px solid #e1e1e1;
+          border-radius: 0;
+          &.active {
+            padding: 11px 14px;
+            border: 1px solid #5a14be;
+            &.tooltip-btn {
+              padding: 11px 14px 11px 36px;
+            }
+          }
+          &:last-child {
+            border-radius: 0 0 5px 5px;
+          }
         }
       }
     }
@@ -587,6 +619,11 @@
       td {
         height: 140px;
         box-sizing: border-box;
+      }
+      .plus {
+        position: relative;
+        top: -2px;
+        margin: 0 5px;
       }
     }
   }
