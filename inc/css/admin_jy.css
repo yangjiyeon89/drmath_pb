@@ -549,3 +549,88 @@
 .academy-table.list-table .paging-wrap + .btn-wrap {
   margin: 40px 0 35px;
 }
+
+.justify-cnt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.justify-cnt .left-cnt {
+  width: 470px;
+  flex: none;
+}
+.justify-cnt .left-cnt label {
+  display: block;
+  height: 20px;
+}
+.justify-cnt .left-cnt label:last-child {
+  margin-top: 5px;
+}
+.justify-cnt .left-cnt .textarea-box {
+  position: relative;
+  margin: 10px 0 20px;
+}
+.justify-cnt .left-cnt textarea {
+  overflow-y: scroll;
+  width: 100%;
+  height: 300px;
+  padding: 20px 20px 30px;
+  border: 1px solid #ddd;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+.justify-cnt .left-cnt .textLengthWrap {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+}
+.justify-cnt .left-cnt .textLengthWrap p {
+  display: inline-block;
+}
+.justify-cnt .left-cnt .textLengthWrap .textTotal {
+  color: #666;
+}
+.justify-cnt .left-cnt .num-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5px;
+  margin: 10px 0;
+}
+.justify-cnt .left-cnt .num-wrap .input-wrap {
+  width: min-content;
+}
+.justify-cnt .left-cnt .num-wrap input {
+  width: 357px;
+}
+.justify-cnt .left-cnt .num-wrap input + input {
+  margin-top: 5px;
+}
+.justify-cnt .left-cnt .num-wrap .btn-wrap {
+  display: inline-flex;
+  margin-top: 0;
+}
+.justify-cnt .left-cnt .num-wrap .btn-wrap button {
+  height: auto;
+}
+.justify-cnt .left-cnt .phone-wrap {
+  padding-top: 10px;
+  border-top: 1px solid #909090;
+}
+.justify-cnt .right-cnt .search-wrap {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.justify-cnt .right-cnt .search-wrap button {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 20px;
+  margin-left: 5px;
+  height: 34px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #7959c8;
+}

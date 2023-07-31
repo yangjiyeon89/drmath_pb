@@ -317,211 +317,355 @@
 						</li>
 					</ul>					
 					<div class="contents on">
-						<div class="left-cnt">
-							<div class="chk-area">
-								<input type="checkbox" class="chk" id="chk01_01">
-								<label for="chk01_01">SMS 발송 대상자 체크 후 SMS 발송</label>
-								<input type="checkbox" class="chk" id="chk01_02">
-								<label for="chk01_02">문항 오류 신고-쿠폰 SMS 발송</label>
-							</div>
-							<textarea id="textBox" maxlength="80" placeholder="내용을 입력하세요."></textarea>
-							<div class="textLengthWrap">
-								<p class="textCount">0</p>
-								<p class="textTotal">/80</p>
-							</div>
-
-							
-						</div>
-						<div class="right-cnt">
-
-						</div>
-						<div class="search-wrap">
-							<table>
-								<colgroup>
-									<col width="10%">
-									<col width="*">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>검색조건</th>
-										<td>
-											<div class="date-wrap">
-												<div class="datepicker-wrap">
-													<input type="text" id="from" name="from" autocomplete="off">
-												</div>
-												<span>~</span>
-												<div class="datepicker-wrap">
-													<input type="text" id="to" name="to" autocomplete="off">
-												</div>
-											</div>
-											<select name="" id="">
-												<option value="">전체</option>
-												<option value="">제목</option>
-												<option value="">작성자</option>
-											</select>
-											<input type="text" placeholder="검색어">
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="btn-wrap">
-							<button type="button">초기화</button>
-							<button>검색</button>
-						</div>
-						<div class="list-table type02">
-							<div class="table-top">
-								<div class="top-box">
-									<span class="total">검색 결과: <em>00</em>건</span>
+						<div class="justify-cnt">
+							<div class="left-cnt">
+								<div class="chk-area">
+									<input type="checkbox" id="chk00_01">
+									<label for="chk00_01">SMS 발송 대상자 체크 후 SMS 발송</label>
+									<input type="checkbox" id="chk00_02">
+									<label for="chk00_02">문항 오류 신고-쿠폰 SMS 발송</label>
+								</div>
+								<div class="textarea-box">
+									<textarea id="textBox" maxlength="80" placeholder="내용을 입력하세요."></textarea>
+									<div class="textLengthWrap">
+										<p class="textCount">0</p>
+										<p class="textTotal">/80</p>
+									</div>
+								</div>
+								<div class="chk-area">
+									<input type="checkbox" id="chk00_03">
+									<label for="chk00_03">개별 SMS 발송</label>
+								</div>
+								<div class="num-wrap">
+									<div class="input-wrap">
+										<input type="text" oninput="autoHyphen2(this)" maxlength="13" placeholder="수신번호 입력">
+										<input type="text" oninput="autoHyphen2(this)" maxlength="13" placeholder="발신번호 입력">
+									</div>
+									<div class="btn-wrap">
+										<button>SMS 발송</button>
+									</div>
+								</div>
+								<div class="phone-wrap">
+									<span class="tit">
+										<img src="../images/admin/ico_phone.png" alt="">
+										발신자 번호
+									</span>
+									<div class="num-wrap">
+										<div class="input-wrap">
+											<input type="text" oninput="autoHyphen2(this)" maxlength="13" placeholder="발신번호 입력">
+										</div>
+										<div class="btn-wrap">
+											<button>SMS 발송</button>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="scroll-inner h450">
-								<table>
-									<colgroup>
-										<col width="6%">
-										<col width="9%">
-										<col width="10%">
-										<col width="11%">
-										<col width="*">
-										<col width="9%">
-										<col width="12%">
-										<col width="12%">
-									</colgroup>
-									<thead>
-										<tr>
-											<th>번호</th>
-											<th>학생명</th>
-											<th>아이디</th>
-											<th>비밀번호</th>
-											<th>학교</th>
-											<th>학년</th>
-											<th>연락처</th>
-											<th>가입일</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-										<tr>
-											<td>1</td>
-											<td>김*재</td>
-											<td>cj01</td>
-											<td>
-												<button type="button" class="pop-btn btn-txt" data-pop="reset-pop">초기화</button>
-											</td>
-											<td>서울시 서초구 서초고등학교</td>
-											<td>2</td>
-											<td>010-XXXX-XXXX</td>
-											<td>YYYY-MM-DD</td>
-										</tr>
-									</tbody>
-								</table>
+							<!-- 센터 리스트 -->
+							<div class="right-cnt" style="display:none;">
+								<div class="search-wrap">
+									<input type="radio" id="radio01_01" name="radio01" checked>
+									<label for="radio01_01">센터 리스트</label>
+									<input type="radio" id="radio01_02" name="radio01">
+									<label for="radio01_02">학원 리스트</label>
+									<select name="" id="">
+										<option value="">센터 선택</option>
+									</select>
+									<input type="text" placeholder="검색어">
+									<button>검색</button>
+								</div>
+								<div class="list-table type02">
+									<div class="table-top">
+										<div class="top-box">
+											<span class="total">검색 결과: <em>00</em>건</span>
+										</div>
+										<select name="" id="">
+											<option value="">15개 보기</option>
+											<option value="">45개 보기</option>
+											<option value="">75개 보기</option>
+											<option value="">150개 보기</option>
+										</select>
+									</div>
+									<div class="scroll-inner h450">
+										<table class="chk">
+											<colgroup>
+												<col width="11%">
+												<col width="11%">
+												<col width="*">
+												<col width="20%">
+												<col width="24%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>
+														<input type="checkbox" class="allCheck" id="chk01_01">
+														<label for="chk01_01"></label>
+													</th>
+													<th>NO</th>
+													<th>센터명</th>
+													<th>이름</th>
+													<th>전화번호</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- 학원 리스트 -->
+							<div class="right-cnt">
+								<div class="search-wrap">
+									<input type="radio" id="radio01_01" name="radio01">
+									<label for="radio01_01">센터 리스트</label>
+									<input type="radio" id="radio01_02" name="radio01" checked>
+									<label for="radio01_02">학원 리스트</label>
+									<select name="" id="">
+										<option value="">센터 선택</option>
+									</select>
+									<select name="" id="">
+										<option value="">검색 구분</option>
+									</select>
+									<input type="text" placeholder="검색어">
+									<button>검색</button>
+								</div>
+								<div class="list-table type02">
+									<div class="table-top">
+										<div class="top-box">
+											<span class="total">검색 결과: <em>00</em>건</span>
+										</div>
+										<select name="" id="">
+											<option value="">15개 보기</option>
+											<option value="">45개 보기</option>
+											<option value="">75개 보기</option>
+											<option value="">150개 보기</option>
+										</select>
+									</div>
+									<div class="scroll-inner h450">
+										<table class="chk">
+											<colgroup>
+												<col width="11%">
+												<col width="11%">
+												<col width="*">
+												<col width="20%">
+												<col width="24%">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>
+														<input type="checkbox" class="allCheck" id="chk01_01">
+														<label for="chk01_01"></label>
+													</th>
+													<th>NO</th>
+													<th>학원명</th>
+													<th>이름</th>
+													<th>전화번호</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="checkbox" id="chk01_02" class="chk">
+														<label for="chk01_02"></label>
+													</td>
+													<td>1</td>
+													<td>테스트 센터111</td>
+													<td>닥**쓰</td>
+													<td>000-0000-0000</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="paging-wrap">
@@ -551,7 +695,7 @@
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>
 			<img src="../images/common/ico_pop.png" alt="">
-			<span class="txt">임시 비밀번호가<br>발송되었습니다.</span>
+			<span class="txt">전체 항목을<br>입력/등록 해주세요.</span>
 		</div>
 		<div class="pop-footer">
 			<div class="btn-wrap">
@@ -559,86 +703,45 @@
 			</div>
 		</div>
 	</div>
+	<div class="pop-wrap alert-pop inner-pop" data-pop="reset-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<img src="../images/common/ico_pop.png" alt="">
+			<span class="txt">저장되었습니다.</span>
+		</div>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button" class="pop-close">취소</button>
+				<button type="button" class="pop-close">닫기</button>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
   $(function () {
-    var dateFormat = "yy-mm-dd",
-      from = $("#from")
-      .datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
-				changeYear: true,
-        numberOfMonths: 1,
-        dateFormat: "yy-mm-dd",
-        showOn: "button",
-        buttonImage: "../images/admin/ico_date.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-				nextText: '다음 달',
-				prevText: '이전 달',
-				showMonthAfterYear: true, //년 뒤에 월 표시
-				showOn: "both" //버튼 클릭시 달려 표시
-      })
-      .on("change", function () {
-        to.datepicker("option", "minDate", getDate(this));
-      }),
-      to = $("#to").datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
-				changeYear: true,
-        numberOfMonths: 1,
-        dateFormat: "yy-mm-dd",
-        buttonImage: "../images/admin/ico_date.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-				nextText: '다음 달',
-				prevText: '이전 달',
-				showMonthAfterYear: true, //년 뒤에 월 표시
-				showOn: "both" //버튼 클릭시 달려 표시
-
-      })
-      .on("change", function () {
-        from.datepicker("option", "maxDate", getDate(this));
-      });
-
-    function getDate(element) {
-      var date;
-      try {
-        date = $.datepicker.parseDate(dateFormat, element.value);
-      } catch (error) {
-        date = null;
-      }
-
-      return date;
-    }
-    $(".ui-datepicker-trigger").removeAttr("title");
-
 		// textarea
 		$('#textBox').keydown(function (e) {
 			let content = $(this).val();
 				
 				// 글자수 세기
 				if (content.length == 0 || content == '') {
-					$('.textCount').text('0자');
+					$('.textCount').text('0');
 				} else {
-					$('.textCount').text(content.length + '자');
+					$('.textCount').text(content.length);
 				}
 				
 				// 글자수 제한
-				if (content.length > 200) {
-					// 200자 부터는 타이핑 되지 않도록
-						$(this).val($(this).val().substring(0, 200));
-						// 200자 넘으면 알림창 뜨도록
-						alert('글자수는 200자까지 입력 가능합니다.');
+				if (content.length > 80) {
+						$(this).val($(this).val().substring(0, 80));
+						alert('글자수는 80자까지 입력 가능합니다.');
 				};
 		});
-
   })
-	</script>
+
+	const autoHyphen2 = (target) => {
+	target.value = target.value
+		.replace(/[^0-9]/g, '')
+		.replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+	}
+</script>
 </html>
