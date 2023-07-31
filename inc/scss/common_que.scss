@@ -1332,7 +1332,7 @@ input[type="checkbox"] {
   }
   &.h180 {
     li {
-      height: 180px;
+    height: 180px;
     }
   }
   &.h110 {
@@ -2789,7 +2789,6 @@ input[type="checkbox"] {
         margin-right: 20px;
         padding-left: 25px;
         font-weight: 600;
-        @include text-overflow;
         &::before {
           position: absolute;
           left: 3px;top: 50%;

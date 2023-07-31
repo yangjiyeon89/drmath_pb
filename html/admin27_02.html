@@ -315,31 +315,45 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>이용 권한</th>
+								<th>기간</th>
+								<td>
+									<div class="date-wrap">
+										<div class="datepicker-wrap">
+											<input type="text" id="from" name="from" autocomplete="off">
+										</div>
+										<span>~</span>
+										<div class="datepicker-wrap">
+											<input type="text" id="to" name="to" autocomplete="off">
+										</div>
+									</div>
+									<div class="radio-wrap type02">
+										<input type="radio" id="radio01_01" name="date" checked="">
+										<label for="radio01_01">직접입력</label>
+										<input type="radio" id="radio01_02" name="date">
+										<label for="radio01_02">일주일</label>
+										<input type="radio" id="radio01_03" name="date">
+										<label for="radio01_03">1개월</label>
+										<input type="radio" id="radio01_04" name="date">
+										<label for="radio01_04">3개월</label>
+										<input type="radio" id="radio01_05" name="date">
+										<label for="radio01_05">6개월</label>
+										<input type="radio" id="radio01_06" name="date">
+										<label for="radio01_06">1년</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>메뉴</th>
 								<td>
 									<select name="" id="">
 										<option value="">전체</option>
-										<option value="">관리자</option>
-										<option value="">편집자</option>
-										<option value="">재경팀</option>
+										<option value="">정산 관리</option>
+										<option value="">고객 관리</option>
+										<option value="">학습 관리</option>
+										<option value="">통계 관리</option>
+										<option value="">사이트 관리</option>
+										<option value="">시스템 관리</option>
 									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>사용 여부</th>
-								<td>
-									<input type="radio" id="radio02_01" name="cate" checked="">
-									<label for="radio02_01">전체</label>
-									<input type="radio" id="radio02_02" name="cate">
-									<label for="radio02_02">Y</label>
-									<input type="radio" id="radio02_03" name="cate">
-									<label for="radio02_03">N</label>
-								</td>
-							</tr>
-							<tr>
-								<th>키워드 검색</th>
-								<td>
-									<input type="text" placeholder="키워드">
 									<div class="btn-wrap">
 										<button type="button">검색</button>
 										<button type="button">초기화</button>
@@ -350,173 +364,126 @@
 					</table>
 				</div>
 				<div class="top-txt">
-					* 현재 관리자님의 IP(아이피)는 XXX.XXX.XXX.XX입니다.
+					* 현재 관리자님의 IP(아이피)는 XXX.XXX.XXX.XX입니다. 
 				</div>
 				<div class="list-table type02">
 					<div class="table-top">
 						<div class="top-box">
 							<span class="total">검색 자료수: <em>00</em>건(nn/nn page)</span>
 						</div>
-						<div class="btn-wrap">
-							<button type="button" class="pop-btn" data-pop="upload-pop">등록</button>
-						</div>
 					</div>
 					<div class="scroll-inner h450">
 						<table>
 							<colgroup>
 								<col width="6%">
-								<col width="10%">
-								<col width="15%">
-								<col width="10%">
-								<col width="*">
+								<col width="18%">
+								<col width="12%">
+								<col width="18%">
 								<col width="8%">
-								<col width="12%">
-								<col width="12%">
+								<col width="*%">
 								<col width="8%">
 							</colgroup>
 							<thead>
 								<tr>
 									<th>번호</th>
-									<th>사용자명</th>
+									<th>접속일시</th>
 									<th>ID</th>
-									<th>이용권한</th>
-									<th>연락처</th>
-									<th>사용 여부</th>
-									<th>등록일자</th>
-									<th>결제구분</th>
-									<th>관리</th>
+									<th>IP</th>
+									<th>메뉴</th>
+									<th>처리 내용</th>
+									<th>구분</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>23-07-18 20:15:59</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>test (홍길동)의 개인정보 조회</td>
+									<td>조회</td>
 								</tr>
 								<tr>
 									<td>2</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>test(홍길동)의 개인정보 A->B로 수정</td>
+									<td>수정</td>
 								</tr>
 								<tr>
 									<td>3</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>사이트 관리</td>
+									<td>test(홍길동)의 개인정보 삭제</td>
+									<td>조회</td>
 								</tr>
 								<tr>
 									<td>4</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>시스템 관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>수정</td>
 								</tr>
 								<tr>
 									<td>5</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>학습관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>조회</td>
 								</tr>
 								<tr>
 									<td>6</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>조회</td>
 								</tr>
 								<tr>
 									<td>7</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>학습관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>조회</td>
 								</tr>
 								<tr>
-									<td>8</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+								<td>8</td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>수정</td>
 								</tr>
 								<tr>
 									<td>9</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>조회</td>
 								</tr>
 								<tr>
 									<td>10</td>
-									<td class="title">
-										<a href="javascript:;">최*슬</a>
-									</td>
-									<TD>Jigut*</TD>
-									<td>관리자</td>
-									<td>010-****-****</td>
-									<td>Y</td>
-									<td>YY-MM-DD</td>
-									<td>교재주문</td>
-									<td><a href="javascript:;" class="btn-txt pop-btn" data-pop="edit-pop">수정</a></td>
+									<td>YYMMDD HH24MISS</td>
+									<TD>Jigut*(최다슬)</TD>
+									<td>XXX.XXX.XXX.XX</td>
+									<td>고객관리</td>
+									<td>처리 내용 블라블라</td>
+									<td>조회</td>
 								</tr>
 							</tbody>
 						</table>
@@ -537,201 +504,68 @@
 		</div>
 	</div>
 	<div class="dim"></div>
-
-
-	<!-- 사용자 관리 등록 팝업 -->
-	<div class="pop-wrap upload-pop type04" data-pop="upload-pop">
-		<div class="pop-inner">
-			<div class="pop-header">사용자 관리 등록</div>
-			<div class="pop-content">
-				<table>
-					<colgroup>
-						<col width="19%">
-						<col width="*">
-					</colgroup>
-					<tbody>
-						<tr>
-							<th>사용자명 *</th>
-							<td>
-								<input type="text" placeholder="사용자명">
-							</td>
-						</tr>
-						<tr>
-							<th>소속부서 *</th>
-							<td>
-								<input type="text" placeholder="소속부서">
-							</td>
-						</tr>
-						<tr>
-							<th>ID *</th>
-							<td>
-								<input type="text" placeholder="ID">
-								<div class="btn-wrap">
-									<button type="button" class="pop-btn" data-pop="alert-pop">중복확인</button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>PW *</th>
-							<td>
-								<div class="btn-wrap">
-									<button type="button" class="btn-gray pop-btn" data-pop="reset-pop">초기화</button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>연락처 *</th>
-							<td>
-								<input type="text" placeholder="연락처">
-							</td>
-						</tr>
-						<tr>
-							<th>이용상태 *</th>
-							<td>
-								<input type="radio" id="radio01_01" name="use" checked="">
-									<label for="radio01_01">Y</label>
-									<input type="radio" id="radio01_02" name="use">
-									<label for="radio01_02">N</label>
-							</td>
-						</tr>
-						<tr>
-							<th>사용권한 *</th>
-							<td>
-								<select name="" id="">
-										<option value="">관리자</option>
-										<option value="">편집자</option>
-										<option value="">재경팀</option>
-									</select>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="pop-footer">
-				<div class="btn-wrap">
-					<button type="button" class="pop-btn" data-pop="reg-pop">등록</button>
-				</div>
-			</div>
-			<button type="button" class="pop-close ico"></button>
-		</div>
-	</div>
-
-	<!-- 사용자 관리 수정 팝업 -->
-	<div class="pop-wrap upload-pop type04" data-pop="edit-pop">
-		<div class="pop-inner">
-			<div class="pop-header">사용자 관리 수정</div>
-			<div class="pop-content">
-				<table>
-					<colgroup>
-						<col width="19%">
-						<col width="*">
-					</colgroup>
-					<tbody>
-						<tr>
-							<th>사용자명 *</th>
-							<td>
-								<input type="text" value="김석우" dis>
-							</td>
-						</tr>
-						<tr>
-							<th>소속부서 *</th>
-							<td>
-								<input type="text" value="디지털사업본부 플랫폼사업팀">
-							</td>
-						</tr>
-						<tr>
-							<th>ID *</th>
-							<td>
-								<input type="text" value="ewsdi0816">
-							</td>
-						</tr>
-						<tr>
-							<th>PW *</th>
-							<td>
-								<div class="btn-wrap">
-									<button type="button" class="btn-gray pop-btn" data-pop="reset-pop">초기화</button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<th>연락처 *</th>
-							<td>
-								<input type="text" value="010-1995-0816">
-							</td>
-						</tr>
-						<tr>
-							<th>이용상태 *</th>
-							<td>
-								<input type="radio" id="radio01_01" name="use" checked="">
-									<label for="radio01_01">Y</label>
-									<input type="radio" id="radio01_02" name="use">
-									<label for="radio01_02">N</label>
-							</td>
-						</tr>
-						<tr>
-							<th>사용권한 *</th>
-							<td>
-								<select name="" id="">
-										<option value="">관리자</option>
-										<option value="">편집자</option>
-										<option value="">재경팀</option>
-									</select>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="pop-footer">
-				<div class="btn-wrap">
-					<button type="button" class="pop-btn" data-pop="reg-pop">등록</button>
-				</div>
-			</div>
-			<button type="button" class="pop-close ico"></button>
-		</div>
-	</div>
-
-	<!-- 아이디 중복확인 얼럿 -->
-	<div class="pop-wrap alert-pop inner-pop" data-pop="alert-pop">
-		<div class="pop-content">
-			<button type="button" class="pop-close ico"></button>
-			<img src="../images/common/ico_pop.png" alt="">
-			<span class="txt">이미 사용중인 아이디 입니다.</span>
-		</div>
-		<div class="pop-footer">
-			<div class="btn-wrap">
-				<button type="button" class="pop-close">확인</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- 사용자 등록 얼럿 -->
-	<div class="pop-wrap alert-pop inner-pop" data-pop="reg-pop">
-		<div class="pop-content">
-			<button type="button" class="pop-close ico"></button>
-			<img src="../images/common/ico_pop.png" alt="">
-			<span class="txt">사용자가<br>등록되었습니다.</span>
-		</div>
-		<div class="pop-footer">
-			<div class="btn-wrap">
-				<button type="button" class="pop-close">확인</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- 비밀번호 초기화 얼럿 -->
-	<div class="pop-wrap alert-pop inner-pop" data-pop="reset-pop">
-		<div class="pop-content">
-			<button type="button" class="pop-close ico"></button>
-			<img src="../images/common/ico_pop.png" alt="">
-			<span class="txt">비밀번호가<br>초기화 되었습니다.</span>
-		</div>
-		<div class="pop-footer">
-			<div class="btn-wrap">
-				<button type="button" class="pop-close">확인</button>
-			</div>
-		</div>
-	</div>
+	
 </body>
+<script>
+	$(function () {
+		var dateFormat = "yy-mm-dd",
+			from = $("#from")
+			.datepicker({
+				defaultDate: "+1w",
+				changeMonth: true,
+				changeYear: true,
+				numberOfMonths: 1,
+				dateFormat: "yy-mm-dd",
+				showOn: "button",
+				buttonImage: "../images/admin/ico_date.png",
+				buttonImageOnly: true,
+				buttonText: "Select date",
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				nextText: '다음 달',
+				prevText: '이전 달',
+				showMonthAfterYear: true, //년 뒤에 월 표시
+				showOn: "both" //버튼 클릭시 달려 표시
+			})
+			.on("change", function () {
+				to.datepicker("option", "minDate", getDate(this));
+			}),
+			to = $("#to").datepicker({
+				defaultDate: "+1w",
+				changeMonth: true,
+				changeYear: true,
+				numberOfMonths: 1,
+				dateFormat: "yy-mm-dd",
+				buttonImage: "../images/admin/ico_date.png",
+				buttonImageOnly: true,
+				buttonText: "Select date",
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				nextText: '다음 달',
+				prevText: '이전 달',
+				showMonthAfterYear: true, //년 뒤에 월 표시
+				showOn: "both" //버튼 클릭시 달려 표시
 
+			})
+			.on("change", function () {
+				from.datepicker("option", "maxDate", getDate(this));
+			});
+
+		function getDate(element) {
+			var date;
+			try {
+				date = $.datepicker.parseDate(dateFormat, element.value);
+			} catch (error) {
+				date = null;
+			}
+
+			return date;
+		}
+		$(".ui-datepicker-trigger").removeAttr("title");
+
+	})
+</script>
 
 </html>

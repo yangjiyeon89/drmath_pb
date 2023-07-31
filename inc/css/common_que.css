@@ -2894,11 +2894,6 @@ input[type=checkbox]:checked + label::before {
   margin-right: 20px;
   padding-left: 25px;
   font-weight: 600;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .pop-wrap.check-type .acc-btn span::before {
   position: absolute;

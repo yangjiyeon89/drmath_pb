@@ -53,6 +53,7 @@
     }
   }
 }
+
 .alert-pop {
   .btn-wrap {
     margin-top: 15px;
@@ -123,50 +124,135 @@
 }
 
 .upload-pop {
-  width: 500px;
   .txt-center {
-    th, td {
+
+    th,
+    td {
       text-align: center;
     }
   }
+
   .pop-content {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
+
   .scroll-inner {
     max-height: 700px;
     overflow-y: auto;
   }
+
   table {
     margin-top: 10px;
     width: 100%;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+
     th {
       background-color: #f3f3f3;
     }
-    th, td {
+
+    th,
+    td {
       padding: 10px;
       border-bottom: 1px solid #ddd;
     }
+
     td {
       input {
         width: 100%;
       }
     }
   }
+
   &.type02 {
     width: 700px;
+
     .tit {
-      font-size: 20px; 
+      font-size: 20px;
       margin-bottom: 10px;
     }
   }
+
+  &.type04 {
+    table {
+      td {
+        input {
+          width: 230px;
+        }
+      }
+      .btn-wrap {
+        display: inline-block;
+        margin: 0;
+
+        .btn-gray {
+          background-color: #999;
+        }
+      }
+    }
+  }
+
   .txt-center {
-    th, td {
+
+    th,
+    td {
       text-align: center;
     }
   }
+}
+
+.view-pop {
+  &.type02 {
+    width: 680px;
+
+    .pop-content {
+      padding: 20px 30px 30px;
+    }
+
+    .view-table {
+      table {
+        tr {
+
+          th {
+            text-align: center;
+            font-weight: 500;
+          }
+          &:last-child {
+            th, td {
+              border-bottom: 0;
+            }
+          }
+
+          select {
+            width: 160px;
+            border-radius: 6px;
+          }
+
+          textarea {
+            height: 60px;
+            border-radius: 6px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* 상단 검색바 */
+.search-wrap {
+  &.type03 {
+    .btn-wrap {
+      display: inline-block;
+      margin: 0 0 0 5px;
+    }
+  }
+}
+.top-txt {
+  color: $color-font66;
+  margin: 10px 0 35px;
 }
 

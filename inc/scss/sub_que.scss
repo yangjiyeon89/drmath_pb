@@ -3,14 +3,6 @@
 @import "_setting.scss";
 @import url(../css/font.css);
 
-//common
-.mr10 {
-  margin-right: 10px;
-}
-.mr30 {
-  margin-right: 30px !important;
-}
-
 // 로그인
 .login {
   height: 100vh;
@@ -823,19 +815,16 @@
         }
         .box {
           position: relative;
-          // width: 69px;
-          width: 78px;
-          height: 36px;
+          width: 69px;height: 36px;
           // color: $color-main-purple;
           font-size: 14px;
           // border: 1px solid $color-line-type02;
           border-radius: 3px;
           &.gray {
             // color: #929292;
-            // background-color: $color-table;
+            background-color: $color-table;
             button {
               color: #929292;
-              background-color: $color-table;
             }
           }
           button {
@@ -950,8 +939,7 @@
               color: $color-sub33;
               font-size: 11px;
               &:nth-child(1) {
-                // top: 3px;right: 33px;
-                top: 5px;right: 38px;
+                top: 3px;right: 33px;
                 &::after {
                   position: absolute;
                   bottom: -15px;right: -2px;
@@ -962,9 +950,7 @@
                 }
               }
               &:nth-child(2) {
-                bottom: 0;
-                // right: 3px;
-                left: 40px;
+                bottom: 0;right: 3px;
               }
             }
           }
@@ -1002,7 +988,7 @@
     }
     .chk-acc {
       li {
-        padding: 10px 32px 10px 26px;
+        padding: 0 32px 0 26px;
       }
       .scroll-inner {
         height: 695px;
@@ -1083,20 +1069,8 @@
         justify-content: flex-start;
       }
       &.sheet-cnt {
-        .scroll-inner {
-          height: 695px;
-        }
-        // .scroll-inner::-webkit-scrollbar-thumb {
-        //   height: 50%;
-        // }
         li {
           justify-content: space-between;
-        }
-      }
-      .cnt-box {
-        @include layout-center;
-        .num {
-          margin-right: 10px;
         }
       }
     }
@@ -1105,16 +1079,16 @@
       word-break: break-all;
     }
     .label {
-      padding: 5px 11px;
-      margin-left: 15px;
+      padding: 9px 20px;
+      margin-left: 10px;
       color: #f13e26;
-      font-size: 11px;
+      font-size: 14px;
       border-radius: 18px;
       border: 1px solid #f13e26;
       background-color: #fff2f0;
     }
     .name-wrap {
-      margin-left: 20px;
+      margin-left: 16px;
       .name {
         & + .name {
           margin-left: 12px;
@@ -1124,11 +1098,6 @@
     .table {
       .scroll-inner {
         height: 630px;
-      }
-    }
-    .style01 {
-      .num {
-        width: auto;
       }
     }
   }
@@ -2161,11 +2130,6 @@
         }
         &:nth-child(6) {
           width: 10%;
-        }
-      }
-      .fix-head {
-        .tit {
-          padding: 11px 27px;
         }
       }
     }

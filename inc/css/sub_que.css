@@ -18,14 +18,6 @@
 	* 참고사이트 http://sassbreak.com/viewport-relative-headings-with-sass/
 	*/
 @import url(../css/font.css);
-.mr10 {
-  margin-right: 10px;
-}
-
-.mr30 {
-  margin-right: 30px !important;
-}
-
 .login {
   height: 100vh;
   padding-top: 249px;
@@ -779,14 +771,16 @@
 }
 .sub06-que .tab-list-type01 .chk-acc span .box {
   position: relative;
-  width: 78px;
+  width: 69px;
   height: 36px;
   font-size: 14px;
   border-radius: 3px;
 }
+.sub06-que .tab-list-type01 .chk-acc span .box.gray {
+  background-color: #f2f2f2;
+}
 .sub06-que .tab-list-type01 .chk-acc span .box.gray button {
   color: #929292;
-  background-color: #f2f2f2;
 }
 .sub06-que .tab-list-type01 .chk-acc span .box button {
   color: #5a14be;
@@ -881,8 +875,8 @@
   font-size: 11px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1) {
-  top: 5px;
-  right: 38px;
+  top: 3px;
+  right: 33px;
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(1)::after {
   position: absolute;
@@ -898,7 +892,7 @@
 }
 .sub06-que .sub06-student .tab-list-type01 .chk-acc span .box em:nth-child(2) {
   bottom: 0;
-  left: 40px;
+  right: 3px;
 }
 
 .sub08-01 .tab-wrap {
@@ -928,7 +922,7 @@
   margin-top: 10px;
 }
 .sub08-01 .tab-list-type02 .chk-acc li {
-  padding: 10px 32px 10px 26px;
+  padding: 0 32px 0 26px;
 }
 .sub08-01 .tab-list-type02 .chk-acc .scroll-inner {
   height: 695px;
@@ -996,43 +990,30 @@
 .sub08-01 .tab-list-type02 .table li {
   justify-content: flex-start;
 }
-.sub08-01 .tab-list-type02 .table.sheet-cnt .scroll-inner {
-  height: 695px;
-}
 .sub08-01 .tab-list-type02 .table.sheet-cnt li {
   justify-content: space-between;
-}
-.sub08-01 .tab-list-type02 .table .cnt-box {
-  display: flex;
-  align-items: center;
-}
-.sub08-01 .tab-list-type02 .table .cnt-box .num {
-  margin-right: 10px;
 }
 .sub08-01 .tab-list-type02 .num {
   width: 56px;
   word-break: break-all;
 }
 .sub08-01 .tab-list-type02 .label {
-  padding: 5px 11px;
-  margin-left: 15px;
+  padding: 9px 20px;
+  margin-left: 10px;
   color: #f13e26;
-  font-size: 11px;
+  font-size: 14px;
   border-radius: 18px;
   border: 1px solid #f13e26;
   background-color: #fff2f0;
 }
 .sub08-01 .tab-list-type02 .name-wrap {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 .sub08-01 .tab-list-type02 .name-wrap .name + .name {
   margin-left: 12px;
 }
 .sub08-01 .tab-list-type02 .table .scroll-inner {
   height: 630px;
-}
-.sub08-01 .tab-list-type02 .style01 .num {
-  width: auto;
 }
 .sub08-01 .tooltip-wrap .tooltip.type02 {
   left: 0;
@@ -2021,9 +2002,6 @@
 }
 .sub10-03 .tab-list-type01 .chk-acc span:nth-child(6) {
   width: 10%;
-}
-.sub10-03 .tab-list-type01 .chk-acc .fix-head .tit {
-  padding: 11px 27px;
 }
 
 .sub10-04 .toggle-btn {
