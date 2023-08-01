@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
 	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 	<script src="../inc/js/admin.js"></script>
 </head>
+
 <body>
 	<div id="wrap" class="admin20">
 		<div class="header">
@@ -224,7 +226,7 @@
 									<a href="javascript:;">FAQ</a>
 								</li>
 							</ul>
-							
+
 						</div>
 					</div>
 				</div>
@@ -282,7 +284,7 @@
 						<li class="ui-tab-btn">
 							<a href="javascript:;">종료</a>
 						</li>
-					</ul>					
+					</ul>
 					<div class="contents on">
 						<div class="search-wrap">
 							<table>
@@ -308,16 +310,24 @@
 												<option value="">제목</option>
 												<option value="">작성자</option>
 											</select>
-											<input type="text" placeholder="검색어">
+											<input type="text" placeholder="검색어" class="search-input"><!-- 230801 search-input 추가 -->
+											<!-- S 230801 수정 -->
+											<div class="btn-wrap">
+												<button>검색</button>
+												<button type="button">초기화</button>
+											</div>
+											<!-- E 230801 수정 -->
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-						<div class="btn-wrap">
+						<!-- S 230801 삭제-->
+						<!-- <div class="btn-wrap">
 							<button type="button">초기화</button>
 							<button>검색</button>
-						</div>
+						</div> -->
+						<!-- E 230801 삭제-->
 						<div class="list-table type02">
 							<div class="table-top">
 								<div class="top-box">
@@ -478,39 +488,39 @@
 	<div class="dim"></div>
 </body>
 <script>
-  $(function () {
-    var dateFormat = "yy-mm-dd",
-      from = $("#from")
-      .datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
+	$(function () {
+		var dateFormat = "yy-mm-dd",
+			from = $("#from")
+			.datepicker({
+				defaultDate: "+1w",
+				changeMonth: true,
 				changeYear: true,
-        numberOfMonths: 1,
-        dateFormat: "yy-mm-dd",
-        showOn: "button",
-        buttonImage: "../images/admin/ico_date.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
-        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+				numberOfMonths: 1,
+				dateFormat: "yy-mm-dd",
+				showOn: "button",
+				buttonImage: "../images/admin/ico_date.png",
+				buttonImageOnly: true,
+				buttonText: "Select date",
+				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
 				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 				nextText: '다음 달',
 				prevText: '이전 달',
 				showMonthAfterYear: true, //년 뒤에 월 표시
 				showOn: "both" //버튼 클릭시 달려 표시
-      })
-      .on("change", function () {
-        to.datepicker("option", "minDate", getDate(this));
-      }),
-      to = $("#to").datepicker({
-        defaultDate: "+1w",
-        changeMonth: true,
+			})
+			.on("change", function () {
+				to.datepicker("option", "minDate", getDate(this));
+			}),
+			to = $("#to").datepicker({
+				defaultDate: "+1w",
+				changeMonth: true,
 				changeYear: true,
-        numberOfMonths: 1,
-        dateFormat: "yy-mm-dd",
-        buttonImage: "../images/admin/ico_date.png",
-        buttonImageOnly: true,
-        buttonText: "Select date",
+				numberOfMonths: 1,
+				dateFormat: "yy-mm-dd",
+				buttonImage: "../images/admin/ico_date.png",
+				buttonImageOnly: true,
+				buttonText: "Select date",
 				monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 				dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
 				monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
@@ -519,23 +529,24 @@
 				showMonthAfterYear: true, //년 뒤에 월 표시
 				showOn: "both" //버튼 클릭시 달려 표시
 
-      })
-      .on("change", function () {
-        from.datepicker("option", "maxDate", getDate(this));
-      });
+			})
+			.on("change", function () {
+				from.datepicker("option", "maxDate", getDate(this));
+			});
 
-    function getDate(element) {
-      var date;
-      try {
-        date = $.datepicker.parseDate(dateFormat, element.value);
-      } catch (error) {
-        date = null;
-      }
+		function getDate(element) {
+			var date;
+			try {
+				date = $.datepicker.parseDate(dateFormat, element.value);
+			} catch (error) {
+				date = null;
+			}
 
-      return date;
-    }
-    $(".ui-datepicker-trigger").removeAttr("title");
+			return date;
+		}
+		$(".ui-datepicker-trigger").removeAttr("title");
 
-  })
-	</script>
+	})
+</script>
+
 </html>

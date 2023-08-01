@@ -789,6 +789,21 @@ a.btn-txt {
 .search-wrap table td {
   background-color: #fff;
 }
+.search-wrap .btn-wrap {
+  display: inline-flex;
+  gap: 5px;
+  margin-left: 5px;
+}
+.search-wrap .btn-wrap button {
+  background-color: #7959c8;
+}
+.search-wrap .btn-wrap button:last-child {
+  background-color: #6a6a6a;
+}
+.search-wrap .search-input {
+  width: 506px;
+  margin-left: 3px;
+}
 
 .list-table .scroll-inner {
   height: 330px;

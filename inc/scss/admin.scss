@@ -876,6 +876,24 @@ a.btn-txt {
       background-color: #fff;
     }
   }
+
+  .btn-wrap {
+    display: inline-flex;
+    gap: 5px;
+    margin-left: 5px;
+
+    button {
+      background-color: #7959c8;
+      &:last-child {
+        background-color: $color-font6a;
+      }
+    }
+  }
+
+  .search-input {
+    width: 506px;
+    margin-left: 3px;
+  }
 }
 
 .list-table {
