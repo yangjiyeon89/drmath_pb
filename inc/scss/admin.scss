@@ -866,7 +866,8 @@ a.btn-txt {
 
     th,
     td {
-      padding: 7px 15px;
+      padding: 0 15px;
+      height: 55px;
       border-bottom: 1px solid #dddddd;
     }
 
@@ -881,7 +882,7 @@ a.btn-txt {
   .btn-wrap {
     display: inline-flex;
     gap: 5px;
-    margin-left: 5px;
+    margin: 0 0 0 5px;
 
     button {
       background-color: #7959c8;
