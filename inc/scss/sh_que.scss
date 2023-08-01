@@ -5447,7 +5447,16 @@ i {
 							background-size: cover;
 						}
 					}
+					&.minus {
+						&::before {
+							width: 16px;
+							height: 2px;
+							margin-top: 0;
+							background: #333;
+						}
+					}
 				}
+				
 			}
 		}
 	}

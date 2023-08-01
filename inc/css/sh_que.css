@@ -5144,6 +5144,12 @@ i.pen-type07 {
   background: url(../../images/common/ico_add_type02.png) no-repeat;
   background-size: cover;
 }
+.sub16-que .content-wrap .txt-box-wrap .txt-box + .txt-box.minus::before {
+  width: 16px;
+  height: 2px;
+  margin-top: 0;
+  background: #333;
+}
 .sub16-que .sub16-01 .content-wrap {
   width: 100%;
 }

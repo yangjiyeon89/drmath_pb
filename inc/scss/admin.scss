@@ -861,14 +861,19 @@ a.btn-txt {
 
   table {
     width: 100%;
+    border-top: 1px solid #333;
 
     th,
     td {
       padding: 7px 15px;
+      border-bottom: 1px solid #dddddd;
     }
 
     th {
       font-weight: 600;
+    }
+    td {
+      background-color: #fff;
     }
   }
 }
