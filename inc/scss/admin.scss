@@ -40,6 +40,12 @@
 .mt40 {
   margin-top: 40px;
 }
+.g-btn {
+  background-color: #6a6a6a !important;
+}
+.purple {
+  background-color: #7959c8 !important;
+}
 
 input {
   &[type="text"] {
@@ -147,7 +153,12 @@ select {
     z-index: 1;
   }
 }
-
+.left-cnt {
+  margin-bottom: 20px;
+  button, a {
+    font-size: 14px;
+  }
+}
 .btn-wrap {
   margin-top: 10px;
   text-align: center;
@@ -159,7 +170,7 @@ select {
     height: 34px;
     color: #fff;
     border-radius: 5px;
-    background-color: #6a6a6a;
+    background-color: #9c9c9c;
     box-sizing: border-box;
 
     &:last-child {
@@ -377,7 +388,7 @@ a.btn-txt {
     }
     .txt {
       display: block;
-      padding: 15px 0 50px;
+      padding: 15px 0 30px;
       font-size: 18px;
       line-height: 1.5;
       em {
@@ -928,6 +939,9 @@ a.btn-txt {
         font-weight: 600;
       }
     }
+    .btn-txt {
+      border: 0;
+    }
     .down {
       display: inline-block;
       padding: 5px 10px;
@@ -958,6 +972,13 @@ a.btn-txt {
 
     td {
       padding: 8px 0;
+    }
+
+    .none-data {
+      padding: 170px 0;
+      color: #808080;
+      font-size: 20px;
+      line-height: 1.5;
     }
 
     .pop-btn {
@@ -1021,7 +1042,7 @@ a.btn-txt {
 
   th,
   td {
-    padding: 10px;
+    padding: 20px 10px;
     border-bottom: 1px solid #ddd;
   }
 

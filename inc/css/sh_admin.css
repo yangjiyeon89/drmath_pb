@@ -42,6 +42,9 @@
 .upload-pop {
   width: 500px;
 }
+.upload-pop .pop-header {
+  padding-bottom: 0;
+}
 .upload-pop .pop-content {
   display: flex;
   flex-direction: column;
@@ -67,12 +70,45 @@
 .upload-pop table td input {
   width: 100%;
 }
+.upload-pop .h60 th, .upload-pop .h60 td {
+  height: 60px;
+  box-sizing: border-box;
+}
+.upload-pop .bd-on {
+  border-right: 1px solid #ddd;
+}
+.upload-pop .bd-on th, .upload-pop .bd-on td {
+  border-left: 1px solid #ddd;
+}
+.upload-pop .bd-on .btn-txt {
+  color: #fff;
+  border: 0;
+  background-color: #6a6a6a;
+}
 .upload-pop.type02 {
-  width: 700px;
+  width: 1040px;
+}
+.upload-pop.type02.w550 {
+  width: 550px;
+}
+.upload-pop.type02.w680 {
+  width: 680px;
+}
+.upload-pop.type02 th {
+  text-align: center;
 }
 .upload-pop.type02 .tit {
   font-size: 20px;
   margin-bottom: 10px;
+}
+.upload-pop.type02 input, .upload-pop.type02 select {
+  width: 151px;
+}
+.upload-pop.type02 input.w251, .upload-pop.type02 select.w251 {
+  width: 251px;
+}
+.upload-pop.type02 input.wfull, .upload-pop.type02 select.wfull {
+  width: 100%;
 }
 .upload-pop .txt-center th, .upload-pop .txt-center td {
   text-align: center;

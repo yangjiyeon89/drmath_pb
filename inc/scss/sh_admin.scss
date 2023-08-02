@@ -31,6 +31,9 @@
 }
 .upload-pop {
   width: 500px;
+  .pop-header {
+    padding-bottom: 0;
+  }
   .pop-content {
     display: flex;
     flex-direction: column;
@@ -58,11 +61,46 @@
       }
     }
   }
+  .h60 {
+    th, td {
+      height: 60px;
+      box-sizing: border-box;
+    }
+  }
+  .bd-on {
+    border-right: 1px solid #ddd;
+    th, td {
+      border-left: 1px solid #ddd;
+    }
+    .btn-txt {
+      color: #fff;
+      border: 0;
+      background-color: #6a6a6a;
+    }
+  }
   &.type02 {
-    width: 700px;
+    width: 1040px;
+    &.w550 {
+      width: 550px;
+    }
+    &.w680 {
+      width: 680px;
+    }
+    th {
+      text-align: center;
+    }
     .tit {
       font-size: 20px; 
       margin-bottom: 10px;
+    }
+    input, select {
+      width: 151px;
+      &.w251 {
+        width: 251px;
+      }
+      &.wfull {
+        width: 100%;
+      }
     }
   }
   .txt-center {

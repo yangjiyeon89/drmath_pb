@@ -291,42 +291,37 @@
             </li>
           </ul>
           <div class="contents on">
+						<!-- s: 202308 수정 -->
             <div class="search-wrap">
               <table>
                 <colgroup>
                   <col width="10%">
-                  <col width="*">
+                  <col width="23.333333%">
                   <col width="10%">
-                  <col width="*">
+                  <col width="23.333333%">
                   <col width="10%">
-                  <col width="*">
+									<col width="23.333333%">
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th>년도</th>
-                    <td>
-                      <select name="" id="">
-                        <option value="">전체</option>
-                        <option value="">2023</option>
-                        <option value="">2022</option>
-                        <option value="">2021</option>
-                        <option value="">2020</option>
-                      </select>
-                    </td>
                     <th>문제지 구분</th>
                     <td>
                       <select name="" id="">
                         <option value="">전체</option>
-                        <option value="">중간대비</option>
-                        <option value="">기말대비</option>
                       </select>
                     </td>
-                    <th>노출요부</th>
+										<th>노출여부</th>
                     <td>
                       <input type="radio" id="radio01_01" name="grade">
                       <label for="radio01_01">노출</label>
                       <input type="radio" id="radio01_02" name="grade">
                       <label for="radio01_02">비노출</label>
+                    </td>
+                    <th>출판사</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="">전체</option>
+                      </select>
                     </td>
                   </tr>
                   <tr>
@@ -337,38 +332,30 @@
                       <input type="checkbox" id="chk01_02">
                       <label for="chk01_02">고등</label>
                     </td>
-                    <th>학년</th>
-                    <td>
+                    <th>학년/학기</th>
+                    <td colspan="3">
                       <select name="" id="">
                         <option value="">전체</option>
-                        <option value="">1학년</option>
-                        <option value="">2학년</option>
-                        <option value="">3학년</option>
                       </select>
-                    </td>
-                    <th>난이도</th>
-                    <td>
                       <select name="" id="">
                         <option value="">전체</option>
-                        <option value="">상</option>
-                        <option value="">중</option>
-                        <option value="">하</option>
                       </select>
                     </td>
                   </tr>
                   <tr>
                     <th>키워드 검색</th>
                     <td colspan="5">
-                      <input type="text">
+                      <input type="text" class="search-input">
+											<div class="btn-wrap">
+												<button>검색</button>
+												<button type="button">초기화</button>
+											</div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="btn-wrap">
-              <button type="button">초기화</button>
-              <button>검색</button>
-            </div>
+						
             <div class="list-table type02"><!-- 20230607 class 추가 -->
               <div class="table-top">
                 <div>
@@ -379,14 +366,18 @@
                     <option value="">100개 보기</option>
                   </select>
                 </div>
-                <a href="javascript:;" download="" class="down">엑셀파일 다운로드</a>
+                <div class="btn-wrap">
+									<button type="button" class="g-btn pop-btn" data-pop="exposure-pop">노출</button>
+									<button type="button" class="g-btn pop-btn" data-pop="non-exposure-pop">비노출</button>
+									<button type="button" class="purple pop-btn" data-pop="delete-pop">문항삭제</button>
+									<button type="button" class="purple pop-btn" data-pop="ques-reg-pop">문항등록</button>
+								</div>
               </div>
               <div class="scroll-inner">
                 <table>
                   <colgroup>
                     <col width="3%">
                     <col width="5%">
-                    <col width="8%">
                     <col width="6%">
                     <col width="5%">
                     <col width="5%">
@@ -400,8 +391,7 @@
                   <thead>
                     <tr>
                       <th><input type="checkbox" class="allCheck" id="chk03_01"><label for="chk03_01"></label></th>
-                      <th>seq</th>
-                      <th>년도</th>
+                      <th>SEQ</th>
                       <th>학교급</th>
                       <th>학년</th>
                       <th>난이도</th>
@@ -417,7 +407,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_02"><label for="chk03_02"></label></td>
                       <td>30</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -431,7 +420,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_03"><label for="chk03_03"></label></td>
                       <td>29</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -445,7 +433,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_04"><label for="chk03_04"></label></td>
                       <td>28</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -459,7 +446,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_05"><label for="chk03_05"></label></td>
                       <td>27</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -473,7 +459,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_06"><label for="chk03_06"></label></td>
                       <td>26</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -487,7 +472,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_07"><label for="chk03_07"></label></td>
                       <td>25</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -501,7 +485,6 @@
                     <tr>
                       <td><input type="checkbox" id="chk03_08"><label for="chk03_08"></label></td>
                       <td>24</td>
-                      <td>2022</td>
                       <td>중등</td>
                       <td>3</td>
                       <td>상</td>
@@ -516,6 +499,7 @@
                 </table>
               </div>
             </div>
+						
             <div class="table-bottom">
               <div class="paging-wrap">
                 <a href="javascript:;" class="first"></a>
@@ -528,14 +512,9 @@
                 <a href="javascript:;" class="next"></a>
                 <a href="javascript:;" class="last"></a>
               </div>
-              <div class="btn-wrap">
-                <button type="button" class="btn-txt pop-btn" data-pop="exposure-pop">노출</button>
-                <button type="button" class="btn-txt pop-btn" data-pop="non-exposure-pop">비노출</button>
-                <button type="button" class="btn-txt purple pop-btn" data-pop="delete-pop">문항삭제</button>
-                <button type="button" class="btn-txt pop-btn purple" data-pop="ques-reg-pop">문항등록</button>
-              </div>
             </div>
           </div>
+					<!-- e: 202308 수정 -->
           <div class="contents">
             [admin03_02] 탭으로 구현
           </div>
@@ -552,9 +531,11 @@
   <div class="dim"></div>
 
   <!-- 노출 얼럿 (체크 전) -->
+	<!-- s: 202308 수정 -->
 	<div class="pop-wrap alert-pop" data-pop="exposure-pop">
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>
+			<img src="../images/common/ico_pop.png" alt="">
 			<span class="txt">해당 문제지가<br>노출되었습니다.</span>
 		</div>
 		<div class="pop-footer">
@@ -563,20 +544,25 @@
 			</div>
 		</div>
 	</div>
-	<!-- 노출 얼럿 (체크 후) -->
-	<!--<div class="pop-wrap alert-pop" data-pop="exposure-pop">
+	<!-- 노출 얼럿 (체크 후) -->	
+	<div class="pop-wrap alert-pop" data-pop="exposure-pop">
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>
+			<img src="../images/common/ico_pop.png" alt="">
 			<span class="txt">노출할 문항을<br>선택해주세요.</span>
 		</div>
-		<div class="btn-wrap">
-			<button type="button">확인</button>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button">확인</button>
+			</div>
 		</div>
-	</div>-->
+	</div>
+	
 	<!-- 비노출 얼럿 (체크 전) -->
 	<div class="pop-wrap alert-pop" data-pop="non-exposure-pop">
 		<div class="pop-content">
 			<button type="button" class="pop-close ico"></button>
+			<img src="../images/common/ico_pop.png" alt="">
 			<span class="txt">해당 문제지가<br>비노출되었습니다.</span>
 		</div>
 		<div class="pop-footer">
@@ -585,6 +571,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- e: 202308 수정 -->
 	<!-- 비노출 얼럿 (체크 후) -->
 	<!--<div class="pop-wrap alert-pop" data-pop="non-exposure-pop">
 		<div class="pop-content">

@@ -296,11 +296,11 @@
 							<table>
 								<colgroup>
 									<col width="10%">
-									<col width="*">
+									<col width="23.333333%">
 									<col width="10%">
-									<col width="*">
+									<col width="23.333333%">
 									<col width="10%">
-									<col width="*">
+									<col width="23.333333%">
 								</colgroup>
 								<tbody>
 									<tr>
@@ -338,7 +338,7 @@
 											<label for="chk01_03">고등</label>
 										</td>
 										<th>학년</th>
-										<td>
+										<td colspan="3">
 											<select name="" id="">
 												<option value="">전체</option>
 												<option value="">1학년</option>
@@ -354,17 +354,19 @@
 												<option value="">북코드</option>
 												<option value="">도서명</option>
 											</select>
-											<input type="text">
+											<!-- s: 202308 수정 -->
+											<input type="text" class="search-input">
+											<div class="btn-wrap">
+												<button>검색</button>
+												<button type="button">초기화</button>
+											</div>
+											<!-- e: 202308 수정 -->
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-						<div class="btn-wrap">
-							<button type="button">초기화</button>
-							<button>검색</button>
-						</div>
-						<div class="list-table">
+						<div class="list-table type02"><!-- 202308 수정 -->
 							<div class="table-top">
 								<div class="top-box">
 									<span class="total">총 <em>00</em>개</span>
@@ -459,7 +461,7 @@
 											<td>중등</td>
 											<td>3학년</td>
 											<td class="title">
-												<a href="javascript:;">도서명 도서명 도서명 도서명 도서명 도서명 도서명 도서명</a>
+												<a href="javascript:;">도서명</a>
 											</td>
 											<td>홍길동</td>
 											<td>2</td>
@@ -587,7 +589,9 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>표지 첨부</th>
+							<!-- s: 202308 수정 -->
+							<th>첨부 파일</th>
+							<!-- e: 202308 수정 -->
 							<td>
 								<span class="filebox bs3-primary">
 									<label for="ex_filename" class="btn-txt">알집 업로드</label> 

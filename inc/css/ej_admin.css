@@ -60,7 +60,10 @@
 }
 
 .ques-reg-pop {
-  width: 50%;
+  width: 500px;
+}
+.ques-reg-pop .pop-header {
+  padding-bottom: 0;
 }
 .ques-reg-pop .info {
   padding: 20px;
@@ -74,7 +77,18 @@
   width: 130px;
 }
 .ques-reg-pop .info th {
+  text-align: center;
   background-color: #f3f3f3;
+}
+.ques-reg-pop .info th, .ques-reg-pop .info td {
+  padding: 12px 10px;
+}
+.ques-reg-pop .info label {
+  width: 70px;
+  margin-left: 5px;
+  color: #fff;
+  border: 0;
+  background-color: #6a6a6a;
 }
 
 .video-pop {

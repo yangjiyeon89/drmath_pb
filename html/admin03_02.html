@@ -294,6 +294,7 @@
             [admin03_01] 탭으로 구현
           </div>
           <div class="contents on">
+						<!-- s: 202308 수정 -->
             <div class="search-wrap">
               <table>
                 <colgroup>
@@ -336,26 +337,28 @@
                   <tr>
                     <th>학교급</th>
                     <td>
+                      <input type="radio" id="radio01_00" >
+                      <label for="radio01_00">고등</label>
+                    </td>
+										<th>학년</th>
+                    <td colspan="3">
                       <select name="" id="">
                         <option value="">전체</option>
-                        <option value="">1학년</option>
-                        <option value="">2학년</option>
-                        <option value="">3학년</option>
                       </select>
                     </td>
                   </tr>
                   <tr>
                     <th>키워드 검색</th>
                     <td colspan="5">
-                      <input type="text">
+                      <input type="text" class="search-input">
+											<div class="btn-wrap">
+												<button>검색</button>
+												<button type="button">초기화</button>
+											</div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div class="btn-wrap">
-              <button type="button">초기화</button>
-              <button>검색</button>
             </div>
             <div class="list-table type02"><!-- 20230607 class 추가 -->
               <div class="table-top">
@@ -367,7 +370,12 @@
                     <option value="">100개 보기</option>
                   </select>
                 </div>
-                <a href="javascript:;" download="" class="down">엑셀파일 다운로드</a>
+                <div class="btn-wrap">
+									<button type="button" class="g-btn pop-btn" data-pop="exposure-pop">노출</button>
+									<button type="button" class="g-btn pop-btn" data-pop="non-exposure-pop">비노출</button>
+									<button type="button" class="purple pop-btn" data-pop="delete-pop">문항삭제</button>
+									<button type="button" class="purple pop-btn" data-pop="ques-reg-pop">문항등록</button>
+								</div>
               </div>
               <div class="scroll-inner">
                 <table>
@@ -375,7 +383,6 @@
                     <col width="3%">
                     <col width="5%">
                     <col width="8%">
-
                     <col width="5%">
                     <col width="10%">
                     <col width="*">
@@ -387,7 +394,7 @@
                   <thead>
                     <tr>
                       <th><input type="checkbox" class="allCheck" id="chk03_01"><label for="chk03_01"></label></th>
-                      <th>seq</th>
+                      <th>SEQ</th>
                       <th>년도</th>
                       <th>학년</th>
                       <th>문제지 구분</th>
@@ -505,12 +512,8 @@
                 <a href="javascript:;" class="next"></a>
                 <a href="javascript:;" class="last"></a>
               </div>
-              <div class="btn-wrap">
-                <button type="button" class="btn-txt pop-btn" data-pop="exposure-pop">노출</button>
-                <button type="button" class="btn-txt pop-btn" data-pop="non-exposure-pop">비노출</button>
-                <button type="button" class="btn-txt purple pop-btn" data-pop="delete-pop">문항삭제</button>
-                <button type="button" class="btn-txt pop-btn purple" data-pop="ques-reg-pop">문항등록</button> </div>
             </div>
+						<!-- e: 202308 수정 -->
           </div>
           <div class="contents">
             [admin03_03] 탭으로 구현
