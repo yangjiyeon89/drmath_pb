@@ -5161,6 +5161,7 @@ i.pen-type07 {
 }
 .sub16-que .sub16-01 .inner .content-wrap {
   margin: 30px 20px 0 20px;
+  padding-right: 10px;
 }
 .sub16-que .sub16-01 .table-wrap {
   border: 1px solid #dddddd;
@@ -5229,6 +5230,9 @@ i.pen-type07 {
 .sub16-que .sub16-01 .prod-list {
   display: flex;
   flex-wrap: wrap;
+}
+.sub16-que .sub16-01 .prod-list.scroll-inner {
+  height: 900px;
 }
 .sub16-que .sub16-01 .prod-list .item {
   display: flex;

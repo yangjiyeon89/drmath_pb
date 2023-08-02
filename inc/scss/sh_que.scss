@@ -5469,6 +5469,7 @@ i {
 			padding-bottom: 20px;
 			.content-wrap {
 				margin: 30px 20px 0 20px;
+				padding-right: 10px;
 			}
 		}
 		.table-wrap {
@@ -5545,6 +5546,9 @@ i {
 		.prod-list {
 			display: flex;
 			flex-wrap: wrap;
+			&.scroll-inner {
+				height: 900px;
+			}
 			.item {
 				@include layout-justify-start;
 				margin-right: 28px;
