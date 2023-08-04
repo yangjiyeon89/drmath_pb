@@ -160,22 +160,45 @@
 				color: #fff;
 			}
 			.cont {
-				padding: 30px;
+				padding: 30px 0 30px 30px;
 				color: $color-sub33;
 				p {
   					@include font(14px, 400);
 					span {
+						position: relative;
 						display: inline-block;
 						margin-top: 5px;
 						@include font(24px, 700);
+						&.num {
+							@include font(18px, 700);
+							&::after {
+								@include virtual-selector;
+								width: 100%;height: 1px;
+								background-color: #333;
+								position: absolute;
+								top: 50%;left: 0;
+							}
+						}
 					}
-					& + p {
-						margin-top: 50px;
+					&.red {
+						margin: 5px 0 20px;
+						color: #f31e1e;
+						@include font(24px, 700);
+						em {
+							position: relative;
+							top: -3px;
+							display: inline-block;
+							padding: 2px 10px;
+							color: #fff;
+							@include font(14px, 700);
+							border-radius: 10px;
+							background-color: #f31e1e;
+						}
 					}
 				}
 				.icon {
 					display: block;
-					margin: 20px auto 0;
+					margin: 90px auto 0;
 				}
 				.txt {
 					display: block;
@@ -372,6 +395,23 @@
 .guide-page02 {
 	.guide-title {
 		padding: 5px;
+	}
+}
+.event-pop {
+	overflow: hidden;
+	width: 610px;
+	border-radius: 10px;
+	border: 1px solid #5416b5;
+	.pop-close {
+		position: absolute;
+		width: 17px;height: 17px;
+		right: 20px;top: 20px;
+	}
+	.pop-footer {
+		padding: 12px 20px;
+		color: #fff;
+		text-align: right;
+		background-color: #161616;
 	}
 }
 
