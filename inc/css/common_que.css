@@ -2715,7 +2715,7 @@ input[type=checkbox]:checked + label::before {
 }
 .pop-wrap.alert-type.type02 .pop-content {
   position: relative;
-  padding: 60px 0 100px;
+  padding: 60px 0 90px;
 }
 .pop-wrap.alert-type.type02 .pop-content img {
   padding: 0 0 30px;
@@ -2770,6 +2770,7 @@ input[type=checkbox]:checked + label::before {
   height: 39px;
   margin: auto;
   color: #fff;
+  font-size: 18px;
   border-radius: 10px;
   background-color: #5a14be;
 }
