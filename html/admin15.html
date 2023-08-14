@@ -764,6 +764,11 @@
 				<button type="button" class="pop-close"></button>
 			</div>
 			<div class="pop-content">
+				<!-- s: 20230814 추가 -->
+				<span class="security-txt">
+					회원님은 <em>90일</em> 이상 동일한 비밀번호를 사용하고 계십니다.<br>소중한 개인 정보보호를 위해 비밀번호를 주기적으로 변경해 주세요.
+				</span>
+				<!-- e: 20230814 추가 -->
 				<table>
 					<colgroup>
 						<col width="28%">
@@ -812,6 +817,63 @@
 		</div>
 	</div>
 	<!-- e: 20230728 추가 -->
+
+	<!-- s: 20230814 추가 -->
+	<!-- 본인 확인 팝업 -->
+	<div class="pop-wrap form-pop upload-pop" data-pop="id-pop" style="display:block;">
+		<div class="pop-inner">
+			<div class="pop-header">
+				<span>본인 확인</span>
+				<button type="button" class="pop-close"></button>
+			</div>
+			<div class="pop-content">
+				<span class="security-txt">90일 이상 미접속으로 계정 보호를 위해 인증을 해주세요.</span>
+				<table>
+					<colgroup>
+						<col width="22%"><!-- 20221206 수정 -->
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>이름</th>
+							<td>
+								<input type="text" class="w160" placeholder="이름 입력"><!-- 230503 수정 -->
+							</td>
+						</tr>
+						<tr>
+							<th>휴대폰 번호</th>
+							<td>
+								<div class="tel-form">
+									<select name="" id="">
+										<option value="">010</option>
+									</select>
+									<span>-</span>
+									<input type="number">
+									<span>-</span>
+									<input type="number">
+									<button type="button" class="btn">인증번호 요청</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>인증 번호</th>
+							<td>
+								<input type="number" class="w160">
+								<button type="button" class="btn">인증 확인</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="pop-footer">
+				<div class="btn-wrap">
+					<button type="button" class="pop-close">확인</button>
+				</div>
+			</div>
+			<button type="button" class="pop-close ico"></button>
+		</div>
+	</div>
+	<!-- e: 20230814 추가 -->
 	
 </body>
 <script>

@@ -234,13 +234,18 @@
     </div>
 
     <!-- 비밀번호 변경 팝업 -->
-    <div class="pop-wrap table-type form-pop" data-pop="pw-pop">
+    <div class="pop-wrap table-type form-pop" data-pop="pw-pop" style="display:block;">
       <div class="pop-inner">
         <div class="pop-header">
           <span>비밀번호 변경</span>
           <button type="button" class="pop-close"></button>
         </div>
         <div class="pop-content">
+          <!-- s: 20230814 추가 -->
+          <span class="security-txt">
+            회원님은 <em>90일</em> 이상 동일한 비밀번호를 사용하고 계십니다.<br>소중한 개인 정보보호를 위해 비밀번호를 주기적으로 변경해 주세요.
+          </span>
+          <!-- e: 20230814 추가 -->
           <table>
             <colgroup>
               <col width="28%">

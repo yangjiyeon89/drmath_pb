@@ -524,10 +524,15 @@ a.btn-txt {
 }
 
 // 비밀번호 변경 팝업
-.table-type {
-  
+.security-txt {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.6;
+  em {
+    color: #fc3812;
+  }
 }
-
 
 
 // header
@@ -1097,6 +1102,11 @@ a.btn-txt {
   height: 100vh;
   background-color: #f3f3f3;
 }
+.security {
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+}
 .login-wrap {
   overflow: hidden;
   position: absolute;
@@ -1154,6 +1164,60 @@ a.btn-txt {
       font-weight: 700;
       border-radius: 5px;
       background-color: #3dc8a2;
+    }
+  }
+  &.security-type {
+    overflow: initial;
+    height: 377px;
+    .tit-wrap {
+      flex-direction: column;
+      .txt {
+        display: block;
+        margin: 15px 0 20px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    .input-form {
+      width: 412px;
+      padding-top: 25px;
+    }
+    .num-box {
+      display: flex;
+      gap: 5px;
+      input {
+        padding-left: 10px;
+        height: 40px;
+        margin-bottom: 0;
+      }
+      button {
+        flex: none;
+        width: 89px;
+        color: #fff;
+        border-radius: 6px;
+        background-color: #5a14be;
+      }
+    }
+    .form-txt-chk {
+      font-size: 14px;
+      img {
+        position: relative;
+        top: -1px;
+        width: 15px;
+        margin-right: 7px;
+      }
+    }
+    .login-btn {
+      margin-top: 30px;
+      height: 40px;
+      &.disabled {
+        background-color: #999999;
+      }
+    }
+    .out-chk {
+      position: absolute;
+      bottom: -25px;
+      color: #fff;
     }
   }
 }

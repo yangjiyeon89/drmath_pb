@@ -511,6 +511,16 @@ a.btn-txt {
   margin-top: 20px;
 }
 
+.security-txt {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+.security-txt em {
+  color: #fc3812;
+}
+
 .header-top {
   border-bottom: 1px solid #ededed;
 }
@@ -993,6 +1003,12 @@ a.btn-txt {
   background-color: #f3f3f3;
 }
 
+.security {
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .login-wrap {
   overflow: hidden;
   position: absolute;
@@ -1059,4 +1075,58 @@ a.btn-txt {
   font-weight: 700;
   border-radius: 5px;
   background-color: #3dc8a2;
+}
+.login-wrap.security-type {
+  overflow: initial;
+  height: 377px;
+}
+.login-wrap.security-type .tit-wrap {
+  flex-direction: column;
+}
+.login-wrap.security-type .tit-wrap .txt {
+  display: block;
+  margin: 15px 0 20px;
+  color: #fff;
+  text-align: center;
+}
+.login-wrap.security-type .input-form {
+  width: 412px;
+  padding-top: 25px;
+}
+.login-wrap.security-type .num-box {
+  display: flex;
+  gap: 5px;
+}
+.login-wrap.security-type .num-box input {
+  padding-left: 10px;
+  height: 40px;
+  margin-bottom: 0;
+}
+.login-wrap.security-type .num-box button {
+  flex: none;
+  width: 89px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #5a14be;
+}
+.login-wrap.security-type .form-txt-chk {
+  font-size: 14px;
+}
+.login-wrap.security-type .form-txt-chk img {
+  position: relative;
+  top: -1px;
+  width: 15px;
+  margin-right: 7px;
+}
+.login-wrap.security-type .login-btn {
+  margin-top: 30px;
+  height: 40px;
+}
+.login-wrap.security-type .login-btn.disabled {
+  background-color: #999999;
+}
+.login-wrap.security-type .out-chk {
+  position: absolute;
+  bottom: -25px;
+  color: #fff;
 }

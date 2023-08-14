@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="../inc/css/admin.css">
+  <link rel="stylesheet" href="../inc/css/admin_jy.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="../inc/js/admin.js"></script>
+</head>
+<body>
+  <div id="wrap" class="security">
+    <div class="login-wrap security-type">
+      <div class="tit-wrap">
+        <span class="tit">보안 인증</span>
+        <span class="txt">사전에 등록된 해당의 아이디 휴대폰 번호로<br>인증번호가 발송됩니다.</span>
+      </div>
+      <div class="input-form">
+        <div class="num-box">
+          <input type="number" placeholder="인증번호 6자리 입력" maxlength="6" oninput="maxLengthCheck(this)">
+          <button type="button" class="pop-btn" data-pop="pop01">인증 요청</button>
+        </div>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증번호가 올바르지 않습니다.</span>
+        <!-- <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증되었습니다.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증번호가 발송되었습니다.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증 유효시간이 경과하였습니다. 인증을 재시도해주세요.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">유효시간 03:00</span> -->
+        <button type="button" class="btn-default login-btn disabled">완료</button>
+      </div>
+      <span class="form-txt-chk out-chk" ><img src="../images/common/ico_check08.png" alt="">휴대폰 번호 변경 및 관리자 등록은 솔루션 사업팀에 문의해 주세요.</span>
+    </div>
+    
+  </div>
+  <div class="dim"></div>
+  <div class="pop-wrap alert-pop" data-pop="pop01">
+		<div class="pop-content">
+			<img src="../images/common/ico_pop.png" alt="">
+			<span class="txt">인증번호가<br>발송되었습니다.</span>
+		</div>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button" class="pop-close">확인</button>
+			</div>
+		</div>
+    <button type="button" class="pop-close ico"></button>
+	</div>
+  <div class="pop-wrap alert-pop" data-pop="pop01">
+		<div class="pop-content">
+			<img src="../images/common/ico_pop.png" alt="">
+			<span class="txt">인증번호를<br>입력해 주세요.</span>
+		</div>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button" class="pop-close">확인</button>
+			</div>
+		</div>
+    <button type="button" class="pop-close ico"></button>
+	</div>
+</body>
+<script>
+  function maxLengthCheck(object){
+    if (object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }    
+  }
+</script>
+</html>

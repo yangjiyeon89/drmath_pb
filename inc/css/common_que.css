@@ -3831,3 +3831,12 @@ input[type=checkbox]:checked + label::before {
     height: 629px;
   }
 }
+.security-txt {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+.security-txt em {
+  color: #fc3812;
+}
