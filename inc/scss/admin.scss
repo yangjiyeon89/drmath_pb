@@ -448,8 +448,13 @@ a.btn-txt {
     }
   }
   .table-type02 {    
+    margin-top: 20px;
     text-align: center;
+    .scroll-inner {
+      height: 390px;
+    }
     table {
+      margin-top: 0;
       border-top: 1px solid #ddd;
       border-left: 1px solid #ddd;
     }

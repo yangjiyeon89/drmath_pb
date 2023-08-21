@@ -664,7 +664,7 @@
 			<button type="button" class="pop-close ico"></button>
 		</div>
 	</div>
-	<div class="pop-wrap detail-pop" data-pop="detail-pop">
+	<div class="pop-wrap detail-pop" data-pop="detail-pop" style="display:block;">
 		<div class="pop-inner">
 			<div class="pop-header">결제 상세</div>
 			<div class="pop-content">
@@ -694,57 +694,90 @@
 					</table>
 				</div>
 				<div class="table-type02">
-					<table>
-						<colgroup>
-							<col width="10%">
-							<col width="10%">
-							<col width="13%">
-							<col width="13%">
-							<col width="13%">
-							<col width="*">
-							<col width="10%">
-							<col width="13%">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>학년</th>
-								<th>유형</th>
-								<th>사용구분</th>
-								<th>교재구분</th>
-								<th>교재코드</th>
-								<th>교재명</th>
-								<th>수량</th>
-								<th>금액</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>초3</td>
-								<td>심화</td>
-								<td>학생용</td>
-								<td>학기</td>
-								<td>D0000</td>
-								<td>수학 3-1</td>
-								<td>1</td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="6">주문 금액</td>
-								<td></td>
-								<td>15,000</td>
-							</tr>
-							<tr>
-								<td colspan="6">배송비</td>
-								<td></td>
-								<td>4,000</td>
-							</tr>
-							<tr class="total">
-								<td colspan="6">총액</td>
-								<td class="font-c">1</td>
-								<td class="font-c">19,000</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll-inner">
+						<table>
+							<colgroup>
+								<col width="10%">
+								<col width="10%">
+								<col width="13%">
+								<col width="13%">
+								<col width="13%">
+								<col width="*">
+								<col width="10%">
+								<col width="13%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>학년</th>
+									<th>유형</th>
+									<th>사용구분</th>
+									<th>교재구분</th>
+									<th>교재코드</th>
+									<th>교재명</th>
+									<th>수량</th>
+									<th>금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>초3</td>
+									<td>심화</td>
+									<td>학생용</td>
+									<td>학기</td>
+									<td>D0000</td>
+									<td>수학 3-1</td>
+									<td>1</td>
+									<td>15,000</td>
+								</tr>
+								<tr>
+									<td>초3</td>
+									<td>심화</td>
+									<td>학생용</td>
+									<td>학기</td>
+									<td>D0000</td>
+									<td>수학 3-1</td>
+									<td>1</td>
+									<td>15,000</td>
+								</tr>
+								<tr>
+									<td>초3</td>
+									<td>심화</td>
+									<td>학생용</td>
+									<td>학기</td>
+									<td>D0000</td>
+									<td>수학 3-1</td>
+									<td>1</td>
+									<td>15,000</td>
+								</tr>
+								<tr>
+									<td>초3</td>
+									<td>심화</td>
+									<td>학생용</td>
+									<td>학기</td>
+									<td>D0000</td>
+									<td>수학 3-1</td>
+									<td>1</td>
+									<td>15,000</td>
+								</tr>
+								<tr>
+									<td colspan="6">주문 금액</td>
+									<td></td>
+									<td>15,000</td>
+								</tr>
+								<tr>
+									<td colspan="6">배송비</td>
+									<td></td>
+									<td>4,000</td>
+								</tr>
+								<tr class="total">
+									<td colspan="6">총액</td>
+									<td class="font-c">1</td>
+									<td class="font-c">19,000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
 				</div>
 			</div>
 			<div class="pop-footer">
@@ -820,7 +853,7 @@
 
 	<!-- s: 20230814 추가 -->
 	<!-- 본인 확인 팝업 -->
-	<div class="pop-wrap form-pop upload-pop" data-pop="id-pop" style="display:block;">
+	<div class="pop-wrap form-pop upload-pop" data-pop="id-pop">
 		<div class="pop-inner">
 			<div class="pop-header">
 				<span>본인 확인</span>

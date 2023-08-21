@@ -447,9 +447,14 @@ a.btn-txt {
   color: #666666;
 }
 .detail-pop .table-type02 {
+  margin-top: 20px;
   text-align: center;
 }
+.detail-pop .table-type02 .scroll-inner {
+  height: 390px;
+}
 .detail-pop .table-type02 table {
+  margin-top: 0;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
 }
