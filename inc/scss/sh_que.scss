@@ -2170,6 +2170,12 @@ i {
 						font-weight: 800;
 					}
 				}
+				.date {
+					@include font(24px, 500);
+					position: absolute;
+					right: 0;
+					top: 20px;
+				}
 			}
 			.info-wrap {
 				margin: 50px 0 0;

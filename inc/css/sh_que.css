@@ -2340,6 +2340,13 @@ i.pen-type07 {
   margin-right: 10px;
   font-weight: 800;
 }
+.que-preview-wrap .que-top.top-type06 .top-wrap .date {
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
 .que-preview-wrap .que-top.top-type06 .info-wrap {
   margin: 50px 0 0;
   font-size: 24px;
