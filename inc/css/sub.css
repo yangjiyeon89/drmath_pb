@@ -348,3 +348,61 @@
   border-top: 2px solid #000;
   border-bottom: 1px solid #e1e1e1;
 }
+
+@media screen and (max-width: 1023px) {
+  .sub-top {
+    height: 174px;
+    margin-top: 0;
+    padding-top: 67px;
+  }
+  .title-wrap {
+    top: -20px;
+    width: calc(100% - 40px);
+  }
+  .free-cnt .table-form {
+    margin-bottom: 30px;
+  }
+  .free-cnt .table-form table th, .free-cnt .table-form table td {
+    padding: 10px;
+  }
+  .free-cnt .table-form table th {
+    width: 22%;
+    vertical-align: middle;
+  }
+  .free-cnt .btn-line-type01 {
+    font-size: 14px;
+  }
+  .free-cnt input[type=text], .free-cnt input[type=number], .free-cnt input[type=password] {
+    padding: 13px 12px;
+    font-size: 14px;
+  }
+  .free-cnt input[type=text].w392, .free-cnt input[type=number].w392, .free-cnt input[type=password].w392 {
+    width: 287px;
+  }
+  .num-input-box {
+    position: relative;
+  }
+  .num-input-box input[type=text] {
+    padding-right: 50px;
+  }
+  .num-input-box .time-wrap {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #fc3812;
+    font-size: 15px;
+    transform: translateY(-50%);
+  }
+  .input-box.type02 {
+    gap: 10px;
+  }
+  .input-radio-type01 + .form-txt-error {
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .pop-wrap.content-type {
+    width: 83%;
+  }
+}

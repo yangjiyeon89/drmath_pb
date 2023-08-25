@@ -2883,9 +2883,9 @@ input[type=checkbox]:checked + label::before {
   transform: rotate(90deg);
 }
 .pop-wrap.check-type .acc-btn.active em {
-  position: relative;
-  top: -1px;
-  right: inherit;
+  position: absolute;
+  top: 18px;
+  right: 56px;
 }
 .pop-wrap.check-type .acc-btn span {
   position: relative;
@@ -2895,6 +2895,11 @@ input[type=checkbox]:checked + label::before {
   margin-right: 20px;
   padding-left: 25px;
   font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url(ellipsis.xml#ellipsis);
 }
 .pop-wrap.check-type .acc-btn span::before {
   position: absolute;
@@ -3833,7 +3838,6 @@ input[type=checkbox]:checked + label::before {
 }
 .security-txt {
   display: block;
-  margin-bottom: 10px;
   text-align: center;
   line-height: 1.6;
 }

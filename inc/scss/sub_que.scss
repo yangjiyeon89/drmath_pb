@@ -435,6 +435,10 @@
   }
   .tab-list-type01 {
     .table {
+      .scroll-inner {
+        height: 566px;
+        border-bottom: 1px solid $color-line-type02;
+      }
       span {
         &:nth-child(1) {
           width: 7%;
@@ -474,12 +478,25 @@
           width: 2%;
         }
       }
-      
-    }
-    .table {
-      .scroll-inner {
-        height: 566px;
-        border-bottom: 1px solid $color-line-type02;
+      &.type02 {
+        span {
+          &:nth-child(4) {
+            width: 44%;
+          }
+          &:nth-child(5) {
+            width: 10%;
+          }
+        }
+      }
+      &.type03 {
+        span {
+          &:nth-child(2) {
+            width: 10%;
+          }
+          &:nth-child(3) {
+            width: 52%;
+          }
+        }
       }
     }
   }
@@ -3302,6 +3319,129 @@
     }
     .none-txt {
       margin-top: 14px;
+    }
+  }
+}
+//본인확인
+.security {
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  .login-wrap {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;left: 50%;
+    width: 670px;height: 606px;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    .tit-wrap {    
+      @include layout-center-center;
+      height: 185px;
+      background: url(../../images/common/login_bg_02.png) no-repeat;
+      .tit {
+        color: #fff;
+        font-size: 43px;font-weight: 700;
+      }
+      .txt {
+        line-height: 1.5;
+      }
+    }
+    .input-form {
+      width: 400px;
+      margin: auto;
+      padding-top: 55px;
+      input {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+        padding-left: 45px;
+        border: 1px solid #d4d4d4;
+        border-radius: 5px;
+        background: #f3f3f3;
+        box-sizing: border-box;
+        &[type="text"] {
+          background: #f3f3f3 url(../../images/admin/ico_id.png) no-repeat;
+          background-position: 20px 14px;
+        }
+        &[type="password"] {
+          background: #f3f3f3 url(../../images/admin/ico_pw.png) no-repeat;
+          background-position: 20px 16px;
+        }
+      }
+      .form-txt-chk {
+        display: block;
+        margin-top: 10px;
+        color: #5a14be;
+        img {
+          margin-right: 10px;
+        }
+      }
+      .login-btn {
+        @include layout-center-center;
+        width: 100%;
+        height: 50px;
+        margin-top: 38px;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        background-color: #3dc8a2;
+      }
+    }
+    &.security-type {
+      overflow: initial;
+      height: 377px;
+      .tit-wrap {
+        flex-direction: column;
+        .txt {
+          display: block;
+          margin: 15px 0 20px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+      .input-form {
+        width: 412px;
+        padding-top: 25px;
+      }
+      .num-box {
+        display: flex;
+        gap: 5px;
+        input {
+          padding-left: 10px;
+          height: 40px;
+          margin-bottom: 0;
+        }
+        button {
+          flex: none;
+          width: 89px;
+          color: #fff;
+          border-radius: 6px;
+          background-color: #5a14be;
+        }
+      }
+      .form-txt-chk {
+        font-size: 14px;
+        img {
+          position: relative;
+          top: -1px;
+          width: 15px;
+          margin-right: 7px;
+        }
+      }
+      .login-btn {
+        margin-top: 30px;
+        height: 40px;
+        &.disabled {
+          background-color: #999999;
+        }
+      }
+      .out-chk {
+        position: absolute;
+        bottom: -25px;
+        color: #fff;
+      }
     }
   }
 }

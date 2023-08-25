@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터매쓰</title>
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../inc/css/common_que.css">
+  <link rel="stylesheet" href="../inc/css/sub_que.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="../inc/js/common_que.js"></script>
+</head>
+<body>
+  <div id="wrap" class="security">
+    <div class="login-wrap security-type">
+      <div class="tit-wrap">
+        <span class="tit">본인 확인</span>
+        <span class="txt">회원 정책에 따라 로그인 시,<br>본인확인(최초 1회)이 필요합니다.</span>
+      </div>
+      <div class="input-form">
+        <div class="num-box">
+          <input type="number" placeholder="인증번호 6자리 입력" maxlength="6" oninput="maxLengthCheck(this)">
+          <button type="button" class="pop-btn" data-pop="pop01">인증 요청</button>
+        </div>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증번호가 올바르지 않습니다.</span>
+        <!-- <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증되었습니다.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증번호가 발송되었습니다.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">인증 유효시간이 경과하였습니다. 인증을 재시도해주세요.</span>
+        <span class="form-txt-chk type-color03"><img src="../images/common/ico_check07.png" alt="">유효시간 03:00</span> -->
+        <button type="button" class="btn-default login-btn disabled">완료</button>
+      </div>
+      <span class="form-txt-chk out-chk" ><img src="../images/common/ico_check08.png" alt="">문의사항은 대표번호(1661-8550)로 문의해 주세요.</span>
+    </div>
+    
+  </div>
+  <div class="dim"></div>
+  <div class="pop-wrap alert-type">
+    <div class="pop-inner">
+      <div class="pop-content">
+        <button type="button" class="pop-close"></button>
+        <img src="../images/common/ico_pop.png" alt="">
+        <span class="txt">인증번호가<br>발송되었습니다.</span>
+      </div>
+      <div class="pop-footer">
+        <button>확인</button>
+      </div>
+    </div>
+  </div>
+  <div class="pop-wrap alert-type">
+    <div class="pop-inner">
+      <div class="pop-content">
+        <button type="button" class="pop-close"></button>
+        <img src="../images/common/ico_pop.png" alt="">
+        <span class="txt">인증번호가<br>입력해 주세요.</span>
+      </div>
+      <div class="pop-footer">
+        <button>확인</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function maxLengthCheck(object){
+    if (object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }    
+  }
+</script>
+</html>

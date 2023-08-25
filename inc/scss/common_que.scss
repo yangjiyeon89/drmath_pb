@@ -2777,9 +2777,12 @@ input[type="checkbox"] {
           transform: rotate(90deg);
         }
         em {
-          position: relative;
-          top: -1px;
-          right: inherit;
+          // position: relative;
+          // top: -1px;
+          // right: inherit;
+          position: absolute;
+          top: 18px;
+          right: 56px;
         }
       }
       span {        
@@ -2790,6 +2793,7 @@ input[type="checkbox"] {
         margin-right: 20px;
         padding-left: 25px;
         font-weight: 600;
+        @include text-overflow;
         &::before {
           position: absolute;
           left: 3px;top: 50%;
@@ -3764,7 +3768,6 @@ input[type="checkbox"] {
 
 .security-txt {
   display: block;
-  mb
   text-align: center;
   line-height: 1.6;
   em {

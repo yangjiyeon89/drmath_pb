@@ -1,4 +1,23 @@
 $(function(){
+  // menu
+  let menuBtn = $('.menu-btn');
+  let moMenu = $('.nav-area');
+  let menuClose = $('.menu-close');
+
+  function MoMenuFunc(){
+    moMenu.css('right','0');
+    $('html, body').css('overflow', 'hidden');
+    $('.mobile-menu-dim').fadeIn();
+  }
+  function MoMenuClose(){
+    moMenu.css('right','-100%');
+    $('html, body').css('overflow', 'auto');
+    $('.mobile-menu-dim').fadeOut();
+  }
+
+  menuBtn.on('click', MoMenuFunc);
+  menuClose.on('click', MoMenuClose);
+
   // main swiper
   const swiper = new Swiper('.main-swiper', {
     effect: "fade",
@@ -75,6 +94,7 @@ $(function(){
   const sec02Swiper = new Swiper('.sec02-swiper', {
     slidesPerView: 4,
     slidesPerGroup: 4,
+    spaceBetween:50,
     pagination: {
       el: ".sec02-swiper .swiper-pagination",
       clickable: true,
@@ -87,11 +107,28 @@ $(function(){
       1770: {
         slidesPerView: 6,
         slidesPerGroup: 6,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
         slidesPerGroup: 4,
+        spaceBetween: 15
       },
+      1023: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 15
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 15
+      },
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 15
+      }
     }
   });
 
@@ -115,18 +152,21 @@ $(function(){
 
   // sec03 swiper
   const sec03Swiper = new Swiper(".sec03-swiper .swiper-container", {
-    slidesPerView: 2,
+    // slidesPerView: 4,
     navigation: {
       nextEl: ".sec03-swiper .swiper-button-next",
       prevEl: ".sec03-swiper .swiper-button-prev",
     },
     breakpoints: {
-      1240: {
+      1024: {
         slidesPerView: 3,
       },
-      1200: {
-        slidesPerView: 2,
+      768: {
+        slidesPerView: 3,
       },
+      360: {
+        slidesPerView: 1,
+      }
     }
   });
 
@@ -152,9 +192,20 @@ $(function(){
         $('.contents').eq(now - 1).addClass('on');
       }
     }
-    
-
-    
   })
+
+  function updateButtonLabel() {
+    if ($(window).width() >= 1024) {
+      $(".free-btn").text("7일 무료 체험 신청");
+    } else {
+      $(".free-btn").text("신청");
+    }
+  }
+
+  updateButtonLabel();
+
+  $(window).resize(function() {
+      updateButtonLabel();
+  });
 
 })

@@ -20,61 +20,82 @@
 </head>
 <body>
   <div class="header">
-    <div class="nav-wrap">
-      <div class="inner">
-        <div class="logo">
-          <a href="javascript:;"><img src="../images/common/logo.png" alt="닥터매쓰"></a>
-        </div>
-        <div>
-          <ul class="nav">
-            <li>
-              <a href="javascript:;">요금안내</a>
-              <ul class="depth2">
-                <li>
-                  <a href="javascript:;">요금안내</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:;">사용안내</a>
-              <ul class="depth2">
-                <li>
-                  <a href="javascript:;">사용 가이드</a>
-                </li>
-                <li>
-                  <a href="javascript:;">사용 후기</a>
-                </li>
-                <li>
-                  <a href="javascript:;">업데이트 소식</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:;">고객센터</a>
-              <ul class="depth2">
-                <li>
-                  <a href="javascript:;">공지사항</a>
-                </li>
-                <li>
-                  <a href="javascript:;">FAQ</a>
-                </li>
-                <li>
-                  <a href="javascript:;">1:1 문의</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="btn-wrap">
+		<div class="nav-wrap">
+			<div class="inner">
+				<div class="mobile-menu-dim"></div>
+				<div class="logo">
+					<!-- s: 20230615 수정 -->
+					<a href="javascript:;"><img src="../images/common/logo_0615.png" alt="닥터매쓰"></a>
+					<!-- e: 20230615 수정 -->
+				</div>
+				<div>
+					<!-- s: 20230526 수정 -->
+					<div class="nav-area">
+						<div class="mobile-f-wrap nav-logo-wrap">
+							<img src="../images/common/logo_0615.png" alt="닥터매쓰" class="nav-logo">
+							<button type="button" class="menu-close"></button>
+						</div>
+						<ul class="nav">
+							<li class="drmath">
+								<a href="javascript:;"><img src="../images/common/ico_menu.png" alt=""> 닥터매쓰</a>
+							</li>
+							<li>
+								<a href="javascript:;">요금안내</a>
+								<ul class="depth2">
+									<li>
+										<a href="javascript:;">요금안내</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">사용안내</a>
+								<ul class="depth2">
+									<li>
+										<a href="javascript:;">사용 가이드</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용 후기</a>
+									</li>
+									<li>
+										<a href="javascript:;">업데이트 소식</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="javascript:;">고객센터</a>
+								<ul class="depth2">
+									<li>
+										<a href="javascript:;">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:;">FAQ</a>
+									</li>
+									<li>
+										<a href="javascript:;">1:1 문의</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- e: 20230526 수정 -->
+					<div class="btn-wrap">
 						<!--s: 20230420 수정-->
-						<a href="javascript:;"><img src="../images/common/ico_que_bank.png" alt="문제은행"></a>
-						<a href="javascirpt:;"><img src="../images/common/ico_kakao.png" alt="">톡상담</a>
-						<a href="javascirpt:;"><img src="../images/common/ico_pen.png" alt="">무료 체험 신청</a><!--230208 텍스트 문구 수정-->
+						<!-- s: 20230804 수정 -->
+						<!-- <a href="javascript:;" class="btn-hide"><img src="../images/common/ico_que_bank.png" alt="문제은행"></a> -->
+						<a href="javascirpt:;" class="web-b-btn login-btn"><img src="../images/common/ico_person03.png" alt="">로그인</a>
+						<a href="javascirpt:;"><img src="../images/common/ico_kakao.png" alt=""></a>
+						<a href="javascirpt:;" class="free-btn"><img src="../images/common/ico_pen.png" alt="">7일 무료 체험 신청</a><!--230208 텍스트 문구 수정-->
+						<!-- e: 20230804 수정 -->
 						<!-- e: 20230420 수정 -->
 					</div>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+				<div class="mobile-b-cnt menu-btn">
+					<button type="button"></button>
+				</div>
+			</div>
+		</div>
+	</div>
   <div class="container">
     <div class="sub-top">
       <div class="txt">완벽한 학습 관리! 압도적인 성적 상승!<br>지금 무료로 체험해보세요!</div><!--230208 텍스트 문구 수정-->
@@ -101,7 +122,7 @@
             <tbody>
               <tr>
                 <th>이름<em></em></th>
-                <td><input type="text" placeholder="텍스트 입력 가능"></td>
+                <td><input type="text" placeholder="이름 입력"></td>
               </tr>
               <!-- s: 20230404 추가 -->
               <tr>
@@ -315,7 +336,12 @@
                 <th>인증번호<em></em></th>
                 <td>
                   <div class="input-box">
-                    <input type="text">
+                    <div class="num-input-box">
+                      <input type="text" placeholder="인증번호입력">
+                      <div class="time-wrap">
+                        <em class="time">03:00</em>
+                      </div>
+                    </div>
                     <button type="button" class="btn-line-type01">인증 확인</button>
                     <span class="form-txt-check type-color03"><img src="../images/common/ico_check04.png" alt="">인증번호가 오지 않으면 입력한 정보를 확인해 주세요.</span>
                     <span class="form-txt-error"><img src="../images/common/ico_check01.png" alt="">인증번호가 정확하지 않습니다. 다시 확인해 주세요</span>
@@ -365,14 +391,76 @@
                 <!-- e: 20230501 수정 -->
               </tr>
               <tr>
-                <th>주소<em></em></th>
-                <td class="input-row">
+                <th>지역선택(학원위치)<em></em></th>
+                <!-- <td class="input-row">
                   <div class="input-box">
                     <input type="text" placeholder="우편번호" class="w264" disabled>
                     <button type="button" class="btn-line-type01 pop-btn" data-pop="search-pop">우편번호 찾기</button>
                   </div>
                   <input type="text" placeholder="주소" class="full">
                   <input type="text" placeholder="상세 주소" class="full">
+                </td> -->
+                <td>
+                  <div class="input-box type02">
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn w88">시/도</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">경기도</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="select-wrap">
+                      <button type="button" class="select-btn w88">구/군</button>
+                      <ul class="select-list">
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                        <li>
+                          <a href="javascript:;">가평군</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -488,7 +576,6 @@
           <label for="radio01_02">14세 미만입니다.</label>
         </div>
         <div class="btn-wrap">
-          <button type="button" class="btn-default-type02">취소</button>
           <button type="button" class="btn-default-type01 pop-btn" data-pop="alert-pop">신청하기</button>
         </div>
       </div>
