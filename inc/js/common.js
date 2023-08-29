@@ -7,35 +7,35 @@ $(function () {
 
     switch (_afterStr[0]) {
       case 'page03_01':
-        _gnbMenuLink.eq(0).find('> a').addClass('active');
-        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        _gnbMenuLink.eq(1).find('> a').addClass('active');
+        _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
       case 'page04_01':
-      _gnbMenuLink.eq(1).find('> a').addClass('active');
-      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(0).find('a').addClass('active');
-        break;
-      case 'page04_02':
-      _gnbMenuLink.eq(1).find('> a').addClass('active');
-      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
-        break;
-      case 'page04_03':
-      _gnbMenuLink.eq(1).find('> a').addClass('active');
-      _gnbMenuLink.eq(1).find('.depth2').find('li').eq(2).find('a').addClass('active');
-        break;
-
-      case 'page05_01':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(0).find('a').addClass('active');
         break;
-      
-      case 'page05_02':
+      case 'page04_02':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(1).find('a').addClass('active');
         break;
-
-      case 'page05_03':
+      case 'page04_03':
       _gnbMenuLink.eq(2).find('> a').addClass('active');
       _gnbMenuLink.eq(2).find('.depth2').find('li').eq(2).find('a').addClass('active');
+        break;
+
+      case 'page05_01':
+      _gnbMenuLink.eq(3).find('> a').addClass('active');
+      _gnbMenuLink.eq(3).find('.depth2').find('li').eq(0).find('a').addClass('active');
+        break;
+      
+      case 'page05_02':
+      _gnbMenuLink.eq(3).find('> a').addClass('active');
+      _gnbMenuLink.eq(3).find('.depth2').find('li').eq(1).find('a').addClass('active');
+        break;
+
+      case 'page05_03':
+      _gnbMenuLink.eq(3).find('> a').addClass('active');
+      _gnbMenuLink.eq(3).find('.depth2').find('li').eq(2).find('a').addClass('active');
         break;
 
       case 'page02_01':
@@ -46,21 +46,21 @@ $(function () {
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         _gnbMenuLink.eq(1).find('.depth2').find('li').eq(1).find('a').addClass('active');
         break;
-      case 'page03':
-        _gnbMenuLink.eq(2).addClass('active');
-        break;
-      case 'page04':
-        _gnbMenuLink.eq(3).addClass('active');
+      // case 'page03':
+      //   _gnbMenuLink.eq(2).addClass('active');
+      //   break;
+      // case 'page04':
+      //   _gnbMenuLink.eq(3).addClass('active');
 
-        break;
-      case 'page05':
-        _gnbMenuLink.eq(4).addClass('active');
+      //   break;
+      // case 'page05':
+      //   _gnbMenuLink.eq(4).addClass('active');
 
-        break;
-      case 'page06':
-        _gnbMenuLink.eq(5).addClass('active');
+      //   break;
+      // case 'page06':
+      //   _gnbMenuLink.eq(5).addClass('active');
 
-        break;
+      //   break;
     }
   }
 
@@ -219,5 +219,19 @@ $(function () {
   }
 
   accBtn.on('click', accFunc);
+
+  function updateButtonLabel() {
+    if ($(window).width() >= 1024) {
+      $(".free-btn").text("7일 무료 체험 신청");
+    } else {
+      $(".free-btn").text("신청");
+    }
+  }
+
+  updateButtonLabel();
+
+  $(window).resize(function() {
+      updateButtonLabel();
+  });
 
 });

@@ -194,18 +194,6 @@ $(function(){
     }
   })
 
-  function updateButtonLabel() {
-    if ($(window).width() >= 1024) {
-      $(".free-btn").text("7일 무료 체험 신청");
-    } else {
-      $(".free-btn").text("신청");
-    }
-  }
-
-  updateButtonLabel();
-
-  $(window).resize(function() {
-      updateButtonLabel();
-  });
+  
 
 })
