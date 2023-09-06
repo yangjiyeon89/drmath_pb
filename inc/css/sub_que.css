@@ -515,6 +515,74 @@
   margin-left: 10px;
 }
 
+.sub05-cnt .tab-top {
+  justify-content: flex-start;
+}
+.sub05-cnt .tab-wrap .form-txt-chk {
+  margin-left: 20px;
+}
+.sub05-cnt .search-box {
+  width: 220px;
+}
+.sub05-cnt .input-radio-type01 {
+  margin-left: 20px;
+}
+.sub05-cnt .tab-list-type01 .table span:nth-child(4) {
+  width: 65%;
+}
+.sub05-cnt .tab-list-type01 .table span:nth-child(5) {
+  width: 7%;
+}
+.sub05-cnt .tab-list-type01 .table span:nth-child(6) {
+  width: 7%;
+}
+.sub05-cnt .tab-list-type01 .table span:nth-child(7) {
+  width: 2%;
+}
+.sub05-cnt .tab-list-type01 .table .scroll-inner {
+  border-bottom: 0;
+}
+.sub05-cnt .tab-list-type01 .list-type {
+  display: none;
+}
+.sub05-cnt .tab-list-type01 .list-type.on {
+  display: block;
+}
+.sub05-cnt .tab-list-type01 .list-type .scroll-inner {
+  max-height: 480px;
+  height: auto;
+}
+.sub05-cnt .default-img {
+  margin-bottom: 20px;
+}
+.sub05-cnt .loading-img {
+  margin-bottom: 40px;
+}
+.sub05-cnt .loading-img .txt {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 800;
+}
+.sub05-cnt .loading-img .txt em {
+  color: #5a14be;
+  font-weight: 800;
+}
+.sub05-cnt .info-txt-list li {
+  font-size: 18px;
+  font-weight: 800;
+}
+.sub05-cnt .info-txt-list li img {
+  display: inline-block;
+  margin-right: 8px;
+}
+.sub05-cnt .info-txt-list li em {
+  color: #5a14be;
+  font-weight: 800;
+}
+.sub05-cnt .info-txt-list li + li {
+  margin-top: 15px;
+}
+
 .sub06-que .select-list {
   max-height: 183px;
 }
@@ -3000,6 +3068,33 @@
   color: #5a14be;
   text-align: center;
 }
+.sub13-que .detail-type .table-type01 table {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 0;
+}
+.sub13-que .detail-type .table-type01 table tr:last-child th, .sub13-que .detail-type .table-type01 table tr:last-child td {
+  border-bottom: 0;
+}
+.sub13-que .detail-type .table-type01 table td:last-child {
+  border-right: 0;
+}
+.sub13-que .detail-type .table-type01 table th, .sub13-que .detail-type .table-type01 table td {
+  padding-left: 20px;
+  text-align: left;
+}
+.sub13-que .detail-type .table-type02 {
+  margin-top: 20px;
+}
+.sub13-que .detail-type .table-type02 .scroll-inner {
+  max-height: 390px;
+}
+.sub13-que .detail-type .table-type02 table {
+  margin-top: 0;
+}
+.sub13-que .detail-type .table-type02 table td {
+  height: 55px;
+}
 
 .sub14 .scroll-inner {
   overflow: inherit;
@@ -3058,6 +3153,9 @@
 .sub17 .table-wrap td {
   height: 60px;
   padding: 0;
+}
+.sub17 .table-wrap td .pop-btn {
+  text-decoration: underline;
 }
 .sub17 .table-wrap .btn-icon {
   padding: 0 15px;

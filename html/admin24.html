@@ -50,7 +50,7 @@
 										<a href="javascript:;">교재 사용권 관리</a>
 									</li>
 									<li>
-										<a href="javascript:;">포인트 관리</a>
+										<a href="javascript:;">수기내역 관리</a>
 									</li>
 								</ul>
 							</div>
@@ -157,7 +157,7 @@
 									<a href="javascript:;">교재 사용권 관리</a>
 								</li>
 								<li>
-									<a href="javascript:;">포인트 관리</a>
+									<a href="javascript:;">수기내역 관리</a>
 								</li>
 							</ul>
 							<ul>
@@ -254,7 +254,7 @@
 						</ul>
 					</div>
 					<div class="depth02">
-						<button type="button" class="select-btn">포인트 관리</button>
+						<button type="button" class="select-btn">수기내역 관리</button>
 						<ul class="select-list">
 							<li>
 								<a href="javascript:;">결제 내역</a>
@@ -272,7 +272,7 @@
 								<a href="javascript:;">교재 사용권 관리</a>
 							</li>
 							<li>
-								<a href="javascript:;">포인트 관리</a>
+								<a href="javascript:;">수기내역 관리</a>
 							</li>
 						</ul>
 					</div>
@@ -317,12 +317,20 @@
 						</tbody>
 					</table>
 				</div>
-				<!-- S 230801 삭제-->
-				<!-- <div class="btn-wrap">
-					<button type="button">초기화</button>
-					<button>검색</button>
-				</div> -->
-				<!-- E 230801 삭제-->
+				<!-- s: 20230905 추가 -->
+				<div class="view-table">
+					<div class="download-area">
+						<div class="btn-wrap">
+							<a href="javascript:;" class="c-btn">등록 양식 다운로드</a>
+						</div>
+						<p class="txt">※ 등록 양식에 입력한 내용을 복사하여 이곳에 붙여 넣어주세요.</p>
+					</div>
+					<div class="btn-wrap">
+						<button type="button" class="c-btn">등록</button>
+						<button type="button" class="g-btn">초기화</button>
+					</div>
+				</div>
+				<!-- e: 20230905 추가 -->
 				<div class="list-table type02">
 					<div class="table-top">
 						<div class="top-box">
@@ -332,146 +340,160 @@
 							<a href="javascript:;">엑셀 다운로드</a>
 						</div>
 					</div>
+					<!-- s: 20230905 수정 -->
 					<div class="scroll-inner h450">
 						<table>
 							<colgroup>
-								<col width="6%">
+								<col width="5%">
+								<col width="10%">
 								<col width="12%">
-								<col width="8%">
-								<col width="*">
-								<col width="10%">
 								<col width="9%">
-								<col width="6%">
 								<col width="10%">
+								<col width="10%">
+								<col width="13%">
+								<col width="13%">
+								<col width="9%">
 								<col width="10%">
 							</colgroup>
 							<thead>
 								<tr>
 									<th>번호</th>
-									<th>변동일시</th>
-									<th>센터코드</th>
-									<th>센터명</th>
 									<th>학원코드</th>
-									<th>학원명</th>
-									<th>구분</th>
-									<th>포인트</th>
-									<th>잔여 포인트</th>
+									<th>사용자 아이디</th>
+									<th>결제구분</th>
+									<th>사용기간</th>
+									<th>학생 수</th>
+									<th>시작일자</th>
+									<th>종료일자</th>
+									<th>결제혜택</th>
+									<th>혜택 포인트</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>YYYY.MM.DD</td>
-									<td>D0000</td>
-									<td>화성용인 지역센터</td>
-									<td>H0000000</td>
-									<td>줄리컬리지</td>
-									<td>주문</td>
-									<td>+150,000P</td>
-									<td>150,000P</td>
+									<td>H011110</td>
+									<td>test1</td>
+									<td>사용권</td>
+									<td>1</td>
+									<td>30</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>YYYY-MM-DD<br>HH:MM:SS</td>
+									<td>없음</td>
+									<td>없음</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
+					<!-- e: 20230905 수정 -->
 				</div>
 				<div class="paging-wrap">
 					<a href="javascript:;" class="first"></a>

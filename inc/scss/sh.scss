@@ -17,6 +17,14 @@
 	}
 	.contents {
 		padding: 50px 0 100px 0;
+		.btn-wrap {
+			margin-top: 30px;
+			button {
+				width: 293px;
+				height: 59px;
+				font-weight: 700;
+			}
+		}
 	}
 	.box-wrap {
 		@include layout-justify-start;
@@ -91,6 +99,7 @@
 		& + .paging-wrap {
 			margin-top: 30px;
 		}
+		
 	}
 
 	.table-view {
@@ -466,6 +475,9 @@
 		}
 		.contents {
 			padding: 20px 0 40px;
+			.btn-wrap {
+				justify-content: center;
+			}
 		}
 		.box-wrap {
 			gap: 10px;
@@ -488,6 +500,77 @@
 					width: calc(100% - 40px);
 					margin-top: 35px;
 				}
+			}
+		}
+		.list-thum-type01 {
+			gap: 10px;
+			li {
+				.img-box {
+					height: 131px;
+					img {
+						width: 100%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+				.tit {
+					margin-top: 10px;
+					span {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.list-thum-type02 {
+			gap: 10px;
+			li {
+				.img-box {
+					height: 97px;
+				}
+				.txt-box {
+					padding: 10px 10px 20px;
+				}
+				.tit {
+					font-size: 18px;
+				}
+				.txt {
+					font-size: 16px;
+				}
+				.date {
+					margin-top: 15px;
+					font-size: 13px;
+				}
+			}
+		}
+		.table-view {
+			margin-top: 5px;
+			table {
+				margin-bottom: 0;
+				.tit {
+					margin-bottom: 10px;
+					font-size: 22px;
+				}
+				.date {
+					margin-bottom: 20px;
+					font-size: 16px;
+				}
+				.cnt {
+					padding: 20px 0;
+					margin-bottom: 30px;
+					p {
+						margin-bottom: 0;
+						font-size: 16px;
+						line-height: 1.3;
+					}
+				}
+			}
+			& + .btn-wrap {
+				.btn-default-type01 {
+					width: 294px;
+				}
+			}
+			.prev-cnt, .next-cnt {
+				display: none;
 			}
 		}
 	}
@@ -557,6 +640,17 @@
 		}
 	}
 	.user-cnt {
+		.contents {
+			padding: 20px 0 30px;
+			.btn-wrap {
+				margin-top: 20px;
+				button {
+					width: 100%;
+					height: 45px;
+					font-size: 16px;
+				}
+			}
+		}
 		.tab-menu-type01 {
 			li {
 				a {
@@ -605,6 +699,64 @@
 						width: 11px;
 						margin-right: 7px;
 					}
+				}
+			}
+		}
+		.list-thum-type01 {
+			flex-direction: column;
+			li {
+				width: 100%;
+				.tit {
+					span {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.list-thum-type02 {
+			flex-direction: column;
+			li {
+				width: 100%;
+				.img-box {
+					img {
+						width: 100%;
+					}
+				}
+				.tit {
+					font-size: 14px;
+				}
+				.txt {
+					margin-top: 5px;
+					font-size: 13px;
+				}
+				.date {
+					margin-top: 10px;
+					font-size: 12px;
+				}
+			}
+		}
+		.table-view {
+			margin-top: 0;
+			table {
+				.tit {
+					font-size: 15px;
+				}
+				.date {
+					font-size: 13px;
+				}
+				.cnt {
+					margin-bottom: 0;
+					padding: 20px 15px;
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+			& + .btn-wrap {
+				.btn-default-type01 {
+					width: 100%;
+					height: 45px;
+					font-size: 16px;
 				}
 			}
 		}

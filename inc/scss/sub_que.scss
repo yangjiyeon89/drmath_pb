@@ -569,6 +569,86 @@
     }
   }
 }
+// AI 기출 마스터
+.sub05-cnt {
+  .tab-top {
+    justify-content: flex-start;
+  }
+  .tab-wrap {
+    .form-txt-chk {
+      margin-left: 20px;
+      // font-size: 14px;
+    }
+  }
+  .search-box {
+    width: 220px;
+  }
+  .input-radio-type01 {
+    margin-left: 20px;
+  }
+  .tab-list-type01 {
+    .table {
+      span {
+        &:nth-child(4) {
+          width: 65%;
+        }
+        &:nth-child(5) {
+          width: 7%;
+        }
+        &:nth-child(6) {
+          width: 7%;
+        }
+        &:nth-child(7) {
+          width: 2%;
+        }
+      }
+      .scroll-inner {
+        border-bottom: 0;
+      }
+    }
+    .list-type {
+      display: none;
+      &.on {
+        display: block;
+      }
+      .scroll-inner {
+        max-height: 480px;
+        height: auto;
+      }
+    }
+  }
+  .default-img {
+    margin-bottom: 20px;
+  }
+  .loading-img {
+    margin-bottom: 40px;
+    .txt {
+      margin-top: 20px;
+      @include font(22px, 800);
+      em {
+        color: #5a14be;
+        font-weight: 800;
+      }
+    }
+  }
+  .info-txt-list {
+    li {
+      @include font(18px, 800);
+      img {
+        display: inline-block;
+        margin-right: 8px;
+      }
+      em {
+        color: #5a14be;
+        font-weight: 800;
+      }
+      & + li {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
 // 수업진행
 .sub06-que {
   .select-list {
@@ -3163,6 +3243,38 @@
         
       }
     }
+    .table-type01 {
+      table {
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+        border-left: 0;
+        tr:last-child {
+          th, td {
+            border-bottom: 0;
+          }
+        }
+        td:last-child {
+          border-right: 0;
+        }
+        th, td {
+          padding-left: 20px;
+          text-align: left;
+        }
+        
+      }
+    }
+    .table-type02 {
+      margin-top: 20px;
+      .scroll-inner {
+        max-height: 390px;
+      }
+      table {
+        margin-top: 0;
+        td {
+          height: 55px;
+        }
+      }
+    }
   }
 }
 //인원 추가
@@ -3234,6 +3346,9 @@
     td {
       height: 60px;
       padding: 0;
+      .pop-btn {
+        text-decoration: underline;
+      }
     }
     .btn-icon {
       padding: 0 15px;

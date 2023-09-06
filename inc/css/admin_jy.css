@@ -29,6 +29,24 @@
   height: 46px;
   box-sizing: border-box;
 }
+.list-table.type03 {
+  margin-top: 40px;
+}
+.list-table.type03 .table-tit {
+  margin-bottom: 0;
+}
+.list-table.type03 .btn-wrap {
+  margin-top: 0;
+}
+.list-table.type03 input {
+  max-width: 95%;
+}
+.list-table.type03 .font-red {
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: 14px;
+  text-align: right;
+}
 .list-table .btn-txt.pop-btn {
   color: #666;
   border-bottom-color: #d1d1d1;
@@ -82,7 +100,10 @@
   background-color: #6a6a6a;
 }
 .view-table .btn-wrap .c-btn {
-  background-color: #7959c8;
+  background-color: #7959c8 !important;
+}
+.view-table .btn-wrap .g-btn {
+  background-color: #6a6a6a;
 }
 .view-table .file-name {
   display: inline-block;
@@ -158,6 +179,14 @@
 }
 .view-table .file-down + .file-down {
   margin-left: 10px;
+}
+.view-table .download-area {
+  padding: 40px 0;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.view-table .download-area .btn-wrap {
+  margin: 0 0 10px 0;
 }
 
 .filebox input[type=file] {

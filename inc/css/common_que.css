@@ -2026,6 +2026,74 @@ input[type=checkbox]:checked + label::before {
 .tab-list-type01 .table.chk-acc span:nth-child(7) {
   width: 15%;
 }
+.tab-list-type01 .list-type ul > li {
+  display: flex;
+  min-height: 95px;
+  border-bottom: 1px solid #ddd;
+}
+.tab-list-type01 .list-type ul > li:last-child {
+  border-bottom: 0;
+}
+.tab-list-type01 .list-type .tit-area {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+}
+.tab-list-type01 .list-type .tit-area .txt {
+  margin-top: 15px;
+  font-weight: 800;
+}
+.tab-list-type01 .list-type .cnt-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 35px;
+}
+.tab-list-type01 .list-type .cnt-area button {
+  width: 96px;
+  height: 36px;
+  color: #666;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.tab-list-type01 .list-type .cnt-area .txt-box {
+  flex: 1;
+}
+.tab-list-type01 .list-type .cnt-area .txt-box li .form-txt-chk {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 5px 0 0 20px;
+}
+.tab-list-type01 .list-type .cnt-area .txt-box li img {
+  position: relative;
+  top: -1px;
+  margin-right: 8px;
+}
+.tab-list-type01 .list-type .cnt-area .txt-box li + li {
+  margin-top: 10px;
+}
+.tab-list-type01 .list-type .cnt-area .txt {
+  display: inline-block;
+}
+.tab-list-type01 .list-type .cnt-area .txt.line {
+  position: relative;
+}
+.tab-list-type01 .list-type .cnt-area .txt.line::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  margin-top: -2px;
+  background-color: #333;
+}
 .tab-list-type01 + .paging-wrap {
   margin-top: 15px;
 }
@@ -3736,6 +3804,113 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.list-type .pop-content .chk-form em {
   color: #5a14be;
   font-weight: 600;
+}
+.pop-wrap.search-list .pop-inner {
+  width: 400px;
+}
+.pop-wrap.search-list .pop-content {
+  padding: 0 30px 30px;
+}
+.pop-wrap.search-list .search-box-wrap {
+  padding: 10px 0;
+  background-color: #f2f2f2;
+}
+.pop-wrap.search-list .search-box-wrap .search-box {
+  width: 233px;
+  margin: auto;
+}
+.pop-wrap.search-list .search-box-wrap .search-box input {
+  height: 36px;
+  background-color: #fff;
+}
+.pop-wrap.search-list .search-list {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+.pop-wrap.search-list .search-list .scroll-inner {
+  height: 295px;
+}
+.pop-wrap.search-list .search-list li {
+  padding: 15px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.pop-wrap.search-list .search-list li em {
+  position: relative;
+  margin-right: 10px;
+  font-weight: 700;
+}
+.pop-wrap.search-list .search-list li em::after {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  right: -8px;
+  top: 3px;
+  width: 1px;
+  height: 14px;
+  background-color: #999999;
+}
+.pop-wrap.search-list .search-list li:last-child {
+  border-bottom: 0;
+}
+.pop-wrap.acc-type .pop-inner {
+  width: 600px;
+}
+.pop-wrap.acc-type .pop-content {
+  padding: 0 30px 30px;
+}
+.pop-wrap.acc-type .reset-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.pop-wrap.acc-type .reset-box .reset img {
+  margin-right: 5px;
+}
+.pop-wrap.acc-type .chk-list-wrap {
+  margin-top: 9px;
+}
+.pop-wrap.acc-type .chk-list-box {
+  margin-top: -1px;
+}
+.pop-wrap.acc-type .chk-list-tit {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+}
+.pop-wrap.acc-type .chk-list-tit label {
+  font-size: 16px;
+  font-weight: 600;
+  user-select: none;
+}
+.pop-wrap.acc-type .acc-btn-wrap.active .arrow {
+  transform: rotate(-90deg);
+}
+.pop-wrap.acc-type .arrow {
+  width: 7px;
+  height: 11px;
+  margin: 0 10px 0 5px;
+  background: url(../../images/common/ico_arrow_acc.png) no-repeat;
+  transform: rotate(90deg);
+  outline: 0;
+}
+.pop-wrap.acc-type .chk-list-cnt {
+  padding: 0 47px 10px;
+}
+.pop-wrap.acc-type .chk-list-cnt label {
+  font-size: 16px;
+  user-select: none;
+}
+.pop-wrap.acc-type .chk-list-cnt .depth-list {
+  position: relative;
+  padding: 10px 24px;
+}
+.pop-wrap.acc-type .chk-list-cnt .depth-list .arrow {
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+.pop-wrap.acc-type .chk-list-cnt .depth .depth {
+  padding-left: 23px;
 }
 
 .ui-sortable-helper {

@@ -66,6 +66,12 @@ $(function () {
         _gnbMenuLink.eq(0).find('.depth2').addClass('on');
         _gnbMenuLink.eq(0).find('.depth2').find('li').eq(3).find('a').addClass('on');
         break;      
+      case 'page05_01':
+        _gnbMenuLink.eq(0).find('> a').addClass('active');
+        $('.nav-wrap').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').addClass('on');
+        _gnbMenuLink.eq(0).find('.depth2').find('li').eq(4).find('a').addClass('on');
+        break;      
       case 'page06_01':
         _gnbMenuLink.eq(1).find('> a').addClass('active');
         $('.nav-wrap').addClass('on');
@@ -403,6 +409,12 @@ $(function () {
       } else {
         _this.parents('.chk-acc').find("input[data-chk='" + chkNum + "']").prop('checked', false);
       }
+    } else if(_this.parents('div').hasClass('chk-list-box')){
+      if (_this.prop('checked')) {
+        _this.parents('.chk-list-box').find('input[type=checkbox]').prop('checked', true);
+      } else {
+        _this.parents('.chk-list-box').find('input[type=checkbox]').prop('checked', false);
+      }
     } else {
       if (_this.prop('checked')) {
         _this.parents('table').find('input[type=checkbox]').not('.toggle-btn input[type=checkbox]').prop('checked', true);
@@ -570,5 +582,23 @@ $(function () {
   $('.btn-icon.type02').on('mouseleave', function(){
     $(this).find('i').removeClass('hover');
   })
-  
+
+  //출제범위선택
+
+  //chk
+  let depBtn = $('.depth-list input[type=checkbox]');
+    
+  function depFunc(){
+    let _this = $(this);
+
+    console.log(_this.parents('.depth'))
+    if (_this.prop('checked')) {
+      _this.parents('.depth').eq(0).find('input[type=checkbox]').prop('checked', true);
+    } else {
+      _this.parents('.depth').eq(0).find('input[type=checkbox]').prop('checked', false);
+    }
+  }
+
+  depBtn.on('click', depFunc);
+
 });

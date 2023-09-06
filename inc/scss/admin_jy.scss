@@ -18,6 +18,24 @@
       box-sizing: border-box;
     }
   }
+  &.type03 {
+    margin-top: 40px;
+    .table-tit {
+      margin-bottom: 0;
+    }
+    .btn-wrap {
+      margin-top: 0;
+    }
+    input {
+      max-width: 95%;
+    }
+    .font-red {
+      margin-top: 10px;
+      color: #ff0000;
+      font-size: 14px;
+      text-align: right;
+    }
+  }
   .btn-txt.pop-btn {
     color: #666;
     border-bottom-color: #d1d1d1;
@@ -69,7 +87,10 @@
       }
     }
     .c-btn {
-      background-color: #7959c8;
+      background-color: #7959c8 !important;
+    }
+    .g-btn {
+      background-color: #6a6a6a;
     }
   }
   .file-name {
@@ -145,6 +166,15 @@
     border-bottom: 1px solid #7959c8;
     & + .file-down {
       margin-left: 10px;
+    }
+  }
+  .download-area {
+    padding: 40px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    .btn-wrap {
+      margin: 0 0 10px 0;
+      
     }
   }
 }
