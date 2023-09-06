@@ -3015,9 +3015,9 @@ input[type=checkbox]:checked + label::before {
   display: block;
 }
 .pop-wrap.check-type .right-cnt .acc-btn em {
-  position: relative;
-  top: inherit;
-  right: inherit;
+  position: absolute;
+  top: 19px;
+  right: 56px;
 }
 .pop-wrap.check-type .right-cnt .cnt {
   padding: 0 27px 0 46px;

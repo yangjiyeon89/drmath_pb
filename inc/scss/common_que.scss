@@ -2906,8 +2906,11 @@ input[type="checkbox"] {
           display: block;
         }
         em {
-          position: relative;
-          top: inherit;right: inherit;
+          // position: relative;
+          // top: inherit;right: inherit;
+          position: absolute;
+          top: 19px;
+          right: 56px;
         }
       }
       .cnt {
