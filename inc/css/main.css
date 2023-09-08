@@ -94,13 +94,15 @@
   top: 452px;
 }
 .container .wing-menu.wing03::before {
-  width: 104px;
-  height: 65px;
-  background: url(../../images/common/ico_quick02.png) no-repeat;
+  top: -43px;
+  left: 42px;
+  width: 80px;
+  height: 58px;
+  background: url(../../images/common/ico_quick03.png) no-repeat;
   background-size: contain;
 }
 .container .wing-menu.wing03 a {
-  background-color: #1497be;
+  background-color: #5a93ff;
 }
 
 .pagination {

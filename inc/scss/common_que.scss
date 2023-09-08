@@ -3723,16 +3723,16 @@ input[type="checkbox"] {
   }
   &.search-list {
     .pop-inner {
-      width: 400px;
+      width: 773px;
     }
     .pop-content {
       padding: 0 30px 30px;
     }
     .search-box-wrap {
-      padding: 10px 0;
+      padding: 10px 55px;
       background-color: #f2f2f2;
       .search-box {
-        width: 233px;
+        width: 100%;
         margin: auto;        
         input {          
           height: 36px;
@@ -3779,14 +3779,16 @@ input[type="checkbox"] {
     .reset-box {
       display: flex;
       justify-content: flex-end;
+      margin-bottom: 10px;
       .reset {
         img {
           margin-right: 5px;
         }
       }
     }
-    .chk-list-wrap {
-      margin-top: 9px;
+    .scroll-inner {
+      max-height: 350px;
+      padding-top: 1px;
     }
     .chk-list-box {
       margin-top: -1px;

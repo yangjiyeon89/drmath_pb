@@ -3806,17 +3806,17 @@ input[type=checkbox]:checked + label::before {
   font-weight: 600;
 }
 .pop-wrap.search-list .pop-inner {
-  width: 400px;
+  width: 773px;
 }
 .pop-wrap.search-list .pop-content {
   padding: 0 30px 30px;
 }
 .pop-wrap.search-list .search-box-wrap {
-  padding: 10px 0;
+  padding: 10px 55px;
   background-color: #f2f2f2;
 }
 .pop-wrap.search-list .search-box-wrap .search-box {
-  width: 233px;
+  width: 100%;
   margin: auto;
 }
 .pop-wrap.search-list .search-box-wrap .search-box input {
@@ -3862,12 +3862,14 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.acc-type .reset-box {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 .pop-wrap.acc-type .reset-box .reset img {
   margin-right: 5px;
 }
-.pop-wrap.acc-type .chk-list-wrap {
-  margin-top: 9px;
+.pop-wrap.acc-type .scroll-inner {
+  max-height: 350px;
+  padding-top: 1px;
 }
 .pop-wrap.acc-type .chk-list-box {
   margin-top: -1px;

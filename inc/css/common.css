@@ -1205,9 +1205,6 @@ input[type=checkbox]:checked + label::before {
   position: relative;
   top: -2px;
 }
-.header .btn-wrap {
-  margin-left: 48px;
-}
 .header .btn-wrap a {
   display: inline-block;
   font-weight: 700;
@@ -1237,6 +1234,11 @@ input[type=checkbox]:checked + label::before {
   background: #ec761f url(../../images/common/ico_pen.png) no-repeat;
   background-position: 25px center;
   background-size: 14px 15px;
+}
+.header .btn-wrap a:nth-child(4) {
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #5a93ff;
 }
 .header .btn-wrap a + a {
   margin-left: 10px;
@@ -1620,6 +1622,22 @@ input[type=checkbox]:checked + label::before {
   }
   .footer .left-cnt .txt span span {
     display: none !important;
+  }
+}
+@media screen and (max-width: 1240px) and (min-width: 1023px) {
+  .header .nav > li > a {
+    font-size: 18px;
+  }
+  .header .btn-wrap {
+    margin-left: 0;
+  }
+  .header .btn-wrap a {
+    padding: 10px 15px !important;
+    font-size: 14px;
+  }
+  .header .btn-wrap a:nth-child(3) {
+    padding: 10px 15px 10px 25px !important;
+    background-position: 10px center;
   }
 }
 @media screen and (max-width: 1200px) {
