@@ -1155,6 +1155,7 @@ input[type="checkbox"] {
   border-top: 1px solid $color-line;
   background-color: #fff;
   .inner {
+    width: 1500px;
     @include layout-justify-start;
     padding: 42px 0;
   }
@@ -1194,6 +1195,7 @@ input[type="checkbox"] {
     padding-left: 20px;
     font-weight: 500;
     border-left: 1px solid $color-font66;
+    flex: none;
     .tit {
       font-size: 20px;
     }
@@ -1493,6 +1495,18 @@ input[type="checkbox"] {
   display: none;
 }
 
+@media screen and (max-width: 1500px){
+  .footer {
+    .inner {
+      width: 100%;
+    }
+    .service-cnt {
+      & + .service-cnt {
+        margin-left: 20px;
+      }
+    }
+  }
+}
 
 //홍보사이트
 @media screen and (max-width: 1240px){
@@ -1821,6 +1835,9 @@ input[type="checkbox"] {
       }
       .txt {
         font-size: 12px;
+      }
+      & + .service-cnt {
+        margin-left: 0;
       }
     }
   }

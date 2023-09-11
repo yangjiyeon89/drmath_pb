@@ -84,6 +84,20 @@
         background-color: #5a93ff;
       }
     }
+    &.wing04 {
+      top: 578px;
+      &::before {
+        top: -43px;
+        left: 56px;
+        width: 57px;
+        height: 57px;
+        background: url(../../images/common/ico_quick04.png) no-repeat;
+        background-size: contain;
+      }
+      a {
+        background-color: #6a2ac4;
+      }
+    }
   }
 }
 .pagination {
@@ -954,6 +968,17 @@
         @include font(50px, 700); 
       }
     }
+    &:nth-child(3) {
+      background: url(../../images/main/sec06_bg03.png) no-repeat;
+      background-size: cover;
+      .txt {
+        margin-bottom: 24px;
+      }
+      .tit {
+        font-family: 'Montserrat';
+        @include font(50px, 700); 
+      }
+    }
     .txt {
       display: block;
       font-family: 'Montserrat';
@@ -1499,6 +1524,11 @@
           margin-bottom: 15px;  
         }
       }
+      &:nth-child(3) {
+        .txt {
+          margin-bottom: 15px;  
+        }
+      }
       a {
         margin-top: 10px;
       }
@@ -1902,6 +1932,11 @@
         }
       }
       &:nth-child(2) {
+        .tit {
+          font-size: 24px;
+        }
+      }
+      &:nth-child(3) {
         .tit {
           font-size: 24px;
         }

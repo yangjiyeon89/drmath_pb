@@ -104,6 +104,20 @@
 .container .wing-menu.wing03 a {
   background-color: #5a93ff;
 }
+.container .wing-menu.wing04 {
+  top: 578px;
+}
+.container .wing-menu.wing04::before {
+  top: -43px;
+  left: 56px;
+  width: 57px;
+  height: 57px;
+  background: url(../../images/common/ico_quick04.png) no-repeat;
+  background-size: contain;
+}
+.container .wing-menu.wing04 a {
+  background-color: #6a2ac4;
+}
 
 .pagination {
   position: absolute;
@@ -1026,6 +1040,18 @@
   font-size: 50px;
   font-weight: 700;
 }
+.sec07 > div:nth-child(3) {
+  background: url(../../images/main/sec06_bg03.png) no-repeat;
+  background-size: cover;
+}
+.sec07 > div:nth-child(3) .txt {
+  margin-bottom: 24px;
+}
+.sec07 > div:nth-child(3) .tit {
+  font-family: "Montserrat";
+  font-size: 50px;
+  font-weight: 700;
+}
 .sec07 > div .txt {
   display: block;
   font-family: "Montserrat";
@@ -1513,6 +1539,9 @@
   .sec07 > div:nth-child(2) .txt {
     margin-bottom: 15px;
   }
+  .sec07 > div:nth-child(3) .txt {
+    margin-bottom: 15px;
+  }
   .sec07 > div a {
     margin-top: 10px;
   }
@@ -1844,6 +1873,9 @@
     font-size: 24px;
   }
   .sec07 > div:nth-child(2) .tit {
+    font-size: 24px;
+  }
+  .sec07 > div:nth-child(3) .tit {
     font-size: 24px;
   }
   .sec07 > div a {

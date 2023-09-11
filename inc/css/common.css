@@ -1252,6 +1252,7 @@ input[type=checkbox]:checked + label::before {
   background-color: #fff;
 }
 .footer .inner {
+  width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1293,6 +1294,7 @@ input[type=checkbox]:checked + label::before {
   padding-left: 20px;
   font-weight: 500;
   border-left: 1px solid #666666;
+  flex: none;
 }
 .footer .service-cnt .tit {
   font-size: 20px;
@@ -1583,6 +1585,14 @@ input[type=checkbox]:checked + label::before {
   display: none;
 }
 
+@media screen and (max-width: 1500px) {
+  .footer .inner {
+    width: 100%;
+  }
+  .footer .service-cnt + .service-cnt {
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 1240px) {
   [class^=web-b-] {
     display: block !important;
@@ -1875,5 +1885,8 @@ input[type=checkbox]:checked + label::before {
   }
   .footer .service-cnt .txt {
     font-size: 12px;
+  }
+  .footer .service-cnt + .service-cnt {
+    margin-left: 0;
   }
 }
