@@ -1138,7 +1138,7 @@ input[type="checkbox"] {
       &:nth-child(4) {
         padding: 15px 20px;
         color: #fff;
-        background-color: #5a93ff;
+        background: #5a93ff;
       }
       & + a {
         margin-left: 10px;
@@ -1568,10 +1568,14 @@ input[type="checkbox"] {
     .btn-wrap {
       margin-left: 0;
       a {
-        padding: 10px 15px !important;
+        padding: 10px 15px;
         font-size: 14px;
+        &:nth-child(1) {
+          padding: 10px 15px;
+        }
         &:nth-child(3) {
-          padding: 10px 15px 10px 25px !important;
+          padding: 10px 15px;
+          padding-left: 25px;
           background-position: 10px center;
         }
       }
@@ -1633,9 +1637,28 @@ input[type="checkbox"] {
     background-color: rgba(0,0,0,0.5);
     z-index: 9;
   }
-  .wing-menu {
-    display: none;
-  }
+  body {
+    .container {
+      .wing-menu {
+        display: none;
+        &.wing04 {
+          display: block;
+          top: 173px;
+          a {
+            @include content-center-center;
+            width: 42px;height: 42px;
+            padding: 0;
+            font-weight: 700;
+            border-radius: 100%;
+            background-color: #5a93ff;
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }  
   .inner {
     width: 100%;
     padding: 0 20px;
