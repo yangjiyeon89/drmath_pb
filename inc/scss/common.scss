@@ -37,7 +37,7 @@ html, .header {
     position: fixed;
     top: 190px;
     right: 160px;
-    z-index: 9;
+    z-index: 7;
 
     &::before {
       content: '';
@@ -62,6 +62,20 @@ html, .header {
       font-size: 15px;
       line-height: 20px;
       padding: 19px 0 13px;
+    }
+    &.wing04 {
+      // top: 578px;
+      &::before {
+        top: -43px;
+        left: 56px;
+        width: 57px;
+        height: 57px;
+        background: url(../../images/common/ico_quick04.png) no-repeat;
+        background-size: contain;
+      }
+      a {
+        background-color: #6a2ac4;
+      }
     }
   }
 }
@@ -1021,6 +1035,75 @@ input[type="checkbox"] {
       }
     }
   }
+  &.member-type {
+    width: 800px;
+    background-color: #fff;
+    .pop-header {
+      height: 80px;
+      padding: 0 30px;
+      @include layout-justify-center;
+      color: #fff;
+      background-color: $color-main-purple;
+      .tit {
+        @include font(24px, 700);
+      }
+      .pop-close {
+        background: url(../../images/common/ico_close_w.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .pop-content {
+      padding: 30px 10px 30px 30px;
+      .privacy_date_sel {
+        display: inline-block;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #20154d;
+        margin-bottom: 15px;
+        select {
+          background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
+          background-size: 1.62rem auto;
+          font-size: 15px;
+          width: 380px;
+          height: 40px;
+          color: #fff;
+          border-radius: 20px;
+          background-color: #20154d;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: none;
+          outline: none;
+          padding: 0 45px 0 15px;
+          option {
+            padding-right: 10px;
+          }
+        }
+      }
+      .scroll-inner {
+        height: 660px;
+        overflow-y: auto;
+      }
+    }
+    .privacy_info {
+      margin: 10px 0;
+    }
+    .privacy_sub {
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #ddd;
+      th {
+        text-align: center;
+      }
+      th, td {
+        padding: 5px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
 }
 
 // header
@@ -1778,6 +1861,41 @@ input[type="checkbox"] {
   .pop-wrap {
     &.content-type {
       width: 90%;
+    }
+    &.member-type {
+      width: 90%;
+      height: 95%;
+      .pop-header {
+        height: 60px;
+        .tit {
+          font-size: 18px;
+        }
+        .pop-close {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .pop-content {
+        height: calc(100% - 60px);
+        padding: 20px 10px 20px 20px;
+        box-sizing: border-box;
+        .privacy_date_sel {
+          select {
+            width: 100%;
+          }
+          & + .scroll-inner {
+            height: calc(100% - 40px);
+          }
+        }
+        .scroll-inner {
+          height: 100%;
+        }
+      }
+      table {
+        td {
+          word-break: break-all;
+        }
+      }
     }
   }
 }

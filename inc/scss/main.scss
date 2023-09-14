@@ -32,7 +32,7 @@
     position: fixed;
     top: 190px;
     right: 160px;
-    z-index: 9;
+    z-index: 7;
 
     &::before {
       content: '';
@@ -1041,77 +1041,77 @@
   }
 }
 
-.pop-wrap {
-  &.member-type {
-    width: 800px;
-    background-color: #fff;
-    .pop-header {
-      height: 80px;
-      padding: 0 30px;
-      @include layout-justify-center;
-      color: #fff;
-      background-color: $color-main-purple;
-      .tit {
-        @include font(24px, 700);
-      }
-      .pop-close {
-        background: url(../../images/common/ico_close_w.png) no-repeat;
-        background-size: contain;
-      }
-    }
-    .pop-content {
-      padding: 30px 10px 30px 30px;
-      .privacy_date_sel {
-        display: inline-block;
-        height: 40px;
-        border-radius: 20px;
-        background-color: #20154d;
-        margin-bottom: 15px;
-        select {
-          background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
-          background-size: 1.62rem auto;
-          font-size: 15px;
-          width: 380px;
-          height: 40px;
-          color: #fff;
-          border-radius: 20px;
-          background-color: #20154d;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          border: none;
-          outline: none;
-          padding: 0 45px 0 15px;
-          option {
-            padding-right: 10px;
-          }
-        }
-      }
-      .scroll-inner {
-        height: 660px;
-        overflow-y: auto;
-      }
-    }
-    .privacy_info {
-      margin: 10px 0;
-    }
-    .privacy_sub {
-      margin-bottom: 10px;
-    }
-    table {
-      width: 100%;
-      border: 1px solid #ddd;
-      th {
-        text-align: center;
-      }
-      th, td {
-        padding: 5px;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-      }
-    }
-  }
-}
+// .pop-wrap {
+//   &.member-type {
+//     width: 800px;
+//     background-color: #fff;
+//     .pop-header {
+//       height: 80px;
+//       padding: 0 30px;
+//       @include layout-justify-center;
+//       color: #fff;
+//       background-color: $color-main-purple;
+//       .tit {
+//         @include font(24px, 700);
+//       }
+//       .pop-close {
+//         background: url(../../images/common/ico_close_w.png) no-repeat;
+//         background-size: contain;
+//       }
+//     }
+//     .pop-content {
+//       padding: 30px 10px 30px 30px;
+//       .privacy_date_sel {
+//         display: inline-block;
+//         height: 40px;
+//         border-radius: 20px;
+//         background-color: #20154d;
+//         margin-bottom: 15px;
+//         select {
+//           background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
+//           background-size: 1.62rem auto;
+//           font-size: 15px;
+//           width: 380px;
+//           height: 40px;
+//           color: #fff;
+//           border-radius: 20px;
+//           background-color: #20154d;
+//           -webkit-appearance: none;
+//           -moz-appearance: none;
+//           appearance: none;
+//           border: none;
+//           outline: none;
+//           padding: 0 45px 0 15px;
+//           option {
+//             padding-right: 10px;
+//           }
+//         }
+//       }
+//       .scroll-inner {
+//         height: 660px;
+//         overflow-y: auto;
+//       }
+//     }
+//     .privacy_info {
+//       margin: 10px 0;
+//     }
+//     .privacy_sub {
+//       margin-bottom: 10px;
+//     }
+//     table {
+//       width: 100%;
+//       border: 1px solid #ddd;
+//       th {
+//         text-align: center;
+//       }
+//       th, td {
+//         padding: 5px;
+//         border-right: 1px solid #ddd;
+//         border-bottom: 1px solid #ddd;
+//       }
+//     }
+//   }
+// }
 
 
 
@@ -1534,7 +1534,6 @@
       }
     }
   }
-  
 }
 @media screen and (max-width: 767px) {
   [class^='tab-b-'] {
