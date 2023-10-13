@@ -96,6 +96,13 @@
     border-bottom: 1px solid #e1e1e1;
   }
 }
+.container {
+  .wing-menu {
+    &.wing04 {
+      display: none;
+    }
+  }
+}
 
 @media screen and (max-width:1023px) {
   .sub-top {

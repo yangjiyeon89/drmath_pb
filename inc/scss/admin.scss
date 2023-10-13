@@ -938,6 +938,12 @@ a.btn-txt {
       }
     }
   }
+  &.wide-type {
+    table {
+      width: 2000px;
+      table-layout: auto;
+    }
+  }
   .table-top {
     @include layout-justify-center;
     margin-bottom: 10px;
@@ -961,13 +967,11 @@ a.btn-txt {
       background-color: #7959c8;
     }
   }
-
   table {
     width: 100%;
     border-top: 2px solid #7959c8;
     border-bottom: 1px solid #909090;
     table-layout: fixed;
-
     th,
     td {
       text-align: center;
@@ -983,7 +987,13 @@ a.btn-txt {
     td {
       padding: 8px 0;
     }
-
+    .name {
+      span {
+        display: inline-block;
+        max-width: 110px;
+        word-break: break-all;
+      }
+    }
     .none-data {
       padding: 170px 0;
       color: #808080;
@@ -1032,6 +1042,7 @@ a.btn-txt {
       padding: 8px 0;
     }
   }
+
 }
 
 .view-table {

@@ -3807,6 +3807,10 @@ i {
 						width: 100%;
 					}
 				}
+				&.center-type {
+					align-items: center;
+					margin-bottom: 60px;
+				}
 			}
 			.row-box {
 				width: 650px;
@@ -3893,6 +3897,57 @@ i {
 						color: #5a14be;
 					}
 				}
+				&.type04 {
+					table {
+						th, td {
+							padding: 13px 0;
+							font-size: 16px;
+							font-weight: 600;
+						}
+					}
+				}
+				&.type05 {
+					table {
+						border-left: 1px solid #dedede;
+						border-right: 1px solid #dedede;
+						th, td {
+							padding: 5px 10px;
+							font-size: 14px;
+						}
+						& + table {
+							margin-top: 20px;
+						}
+					}
+					.line-area {
+						text-align: left;
+					}
+					.line {
+						display: inline-block;
+						max-width: calc(100% - 40px);
+						height:17px;
+						border-radius: 8px;
+						&.skyblue {
+							background-color: #e1efff;
+						}
+						&.purple {
+							background-color: #f2efff;
+						}
+						&.yellow {
+							background-color: #fcf2d0;
+						}
+					}
+					.txt {
+						&.blue {
+							color: #4b70c9;
+						}
+						&.yellow {
+							color: #bb7b00;
+						}
+						&.green {
+							color: #1b9372;
+						}
+					}
+				}
 			}
 			.range-wrap {
 				margin: 40px 0 70px 0;
@@ -3955,6 +4010,9 @@ i {
 				&.center {
 					margin: 0 auto;
 				}
+				&.w400 {
+					width: 400px;
+				}
 			}
 			.color-box {
 				background-color: #f6f6f6;
@@ -4003,6 +4061,67 @@ i {
 						@include font(14px, 400);
 						line-height: 1.7;
 					}
+				}
+			}
+			.graph-wrap {
+				margin-bottom: 60px;
+				.graph-area {
+					display: flex;
+					align-items: center;
+				}
+				.txt {
+					width: 8%;
+					padding: 35px 15px 35px 0;
+					font-size: 18px;
+					text-align: right;
+					border-right: 1px solid #d6d6d6;
+					box-sizing: border-box;
+					&.red {
+						color: #f15969;
+					}
+					&.green {
+						color: #1b9372;
+					}
+					&.skyblue {
+						color: #49b7cc;
+					}
+					&.yellow {
+						color: #bb7b00;
+					}
+					&.purple {
+						color: #4b70c9;
+					}
+				}
+				.graph-line {
+					width: 92%;
+					display: flex;
+					align-items: center;
+				}
+				.line {
+					display: block;
+					height: 37px;
+					border-radius: 0 8px 8px 0;
+					&.red {
+						background-color: #ffefeb;
+					}
+					&.green {
+						background-color: #e8f0d3;
+					}
+					&.skyblue {
+						background-color: #e1efff;
+					}
+					&.yellow {
+						background-color: #fcf2d0;
+					}
+					&.purple {
+						background-color: #f2efff;
+					}
+				}
+				.line-txt {
+					margin-left: 20px;
+					color: #5a14be;
+					font-size: 18px;
+					font-weight: 600;
 				}
 			}
 		}

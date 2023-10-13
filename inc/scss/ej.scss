@@ -304,6 +304,13 @@
 
 
 }
+.container {
+  .wing-menu {
+    &.wing04 {
+      display: none;
+    }
+  }
+}
 
 @media (max-width: 1023px) {
 	.serv-cnt {
@@ -485,7 +492,8 @@
 		}
 		.table-list {
 			table {
-				min-width: 600px;
+				table-layout: fixed;
+				// min-width: 600px;
 				th, td {
 					height: 50px;
 				}
@@ -495,7 +503,15 @@
 				td {
 					font-size: 14px;
 					&.tit {
+						position: relative;
 						font-size: 14px;
+						a {
+							display: block;							
+							@include text-overflow;							
+						}
+					}
+					&:last-child {
+						width: 25%;
 					}
 				}
 			}

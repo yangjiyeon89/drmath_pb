@@ -2341,13 +2341,16 @@
           width: 12%;
         }
         &:nth-child(2) {
-          width: 37%;
+          width: 38%;
         }
         &:nth-child(3) {
           width: 22%;
         }
         &:nth-child(4) {
           width: 29%;
+        }
+        button {
+          word-break: break-all;
         }
       }
     }

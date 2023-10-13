@@ -458,6 +458,10 @@
   display: none;
 }
 
+.container .wing-menu.wing04 {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .guide-ft-logo {
     right: 10px;

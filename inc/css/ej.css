@@ -251,6 +251,10 @@
   margin-bottom: 20px;
 }
 
+.container .wing-menu.wing04 {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .serv-cnt .contents {
     margin: 20px auto 40px;
@@ -395,7 +399,7 @@
     font-size: 15px;
   }
   .serv-cnt .table-list table {
-    min-width: 600px;
+    table-layout: fixed;
   }
   .serv-cnt .table-list table th, .serv-cnt .table-list table td {
     height: 50px;
@@ -407,7 +411,19 @@
     font-size: 14px;
   }
   .serv-cnt .table-list table td.tit {
+    position: relative;
     font-size: 14px;
+  }
+  .serv-cnt .table-list table td.tit a {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(ellipsis.xml#ellipsis);
+  }
+  .serv-cnt .table-list table td:last-child {
+    width: 25%;
   }
   .serv-cnt .table-list .scroll-inner::-webkit-scrollbar-thumb {
     border: 5px solid #fff;
