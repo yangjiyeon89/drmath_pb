@@ -179,6 +179,13 @@ $(function () {
         _allMenuLink.find('ul').eq(5).find('li').eq(3).addClass('on')
         break;
     }
+    switch (_afterStr[0]) {
+      case 'admin28':
+        _gnbMenuLink.eq(4).addClass('on');
+        _gnbMenuLink.eq(4).find('.depth2').find('li').eq(5).find('a').addClass('on');
+        _allMenuLink.find('ul').eq(4).find('li').eq(6).addClass('on')
+        break;
+    }
   }
 
   function menuUI() {

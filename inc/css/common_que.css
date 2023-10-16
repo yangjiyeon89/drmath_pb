@@ -273,6 +273,9 @@ body {
 .header .btn-wrap a:hover span {
   filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
 }
+.header .btn-wrap a.active span {
+  filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
+}
 
 .fix-btm-bar {
   display: inline-flex;

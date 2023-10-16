@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>닥터매쓰</title>
+	<link rel="stylesheet" href="../inc/css/reset.css">
+	<link rel="stylesheet" href="../inc/css/admin.css">
+	<link rel="stylesheet" href="../inc/css/admin_jy.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script src="../inc/js/admin.js"></script>
+</head>
+<body>
+	<div id="wrap" class="admin28">
+		<div class="header">
+			<div class="header-top">
+				<div class="inner">
+					<a href="javascript:;">로그아웃</a>
+				</div>
+			</div>
+			<div class="nav-wrap">
+				<div class="inner">
+					<div class="logo">
+						<a href="javascript:;"><img src="../images/common/logo_0615.png" alt="닥터매쓰"></a>
+					</div>
+					<ul class="nav">
+						<li>
+							<a href="javascript:;">정산 관리</a>
+							<div class="depth2">
+								<p class="tit">정산 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">결제 내역</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용권 수수료 정산</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용권 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">쿠폰 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">교재 사용권 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">수기내역 관리</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">고객 관리</a>
+							<div class="depth2">
+								<p class="tit">고객 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">무료체험 신청 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">센터 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">학원 리스트</a>
+									</li>
+									<li>
+										<a href="javascript:;">일반회원 리스트</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">학습 관리</a>
+							<div class="depth2">
+								<p class="tit">학습 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">교재 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">추천 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">기출 문제지 등록</a>
+									</li>
+									<li>
+										<a href="javascript:;">교재 VOD 검수</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">부가 관리</a>
+							<div class="depth2">
+								<p class="tit">부가 관리</p>
+								<ul>
+									<li>
+										<a href="javascript:;">메인 관리</a>
+									</li>
+									<li>
+										<a href="javascript:;">문항 오류신고</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">커뮤니티</a>
+							<div class="depth2">
+								<p class="tit">커뮤니티</p>
+								<ul>
+									<li>
+										<a href="javascript:;">1:1 문의</a>
+									</li>
+									<li>
+										<a href="javascript:;">사용 후기</a>
+									</li>
+									<li>
+										<a href="javascript:;">업데이트 소식</a>
+									</li>
+									<li>
+										<a href="javascript:;">공지사항</a>
+									</li>
+									<li>
+										<a href="javascript:;">FAQ</a>
+									</li>
+									<li>
+										<a href="javascript:;">오류 문의 및 개선사항</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="all-menu-wrap">
+						<button type="button" class="pop-btn" data-pop="menu">전체메뉴</button>
+						<div class="all-menu pop-wrap" data-pop="menu">
+							<button type="button" class="pop-close">닫기</button>
+							<ul>
+								<li>
+									<a href="javascript:;">정산 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">결제 내역</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용권 수수료 정산</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용권 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">쿠폰 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 사용권 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">수기내역 관리</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">고객 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">무료체험 신청 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">센터 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">학원 리스트</a>
+								</li>
+								<li>
+									<a href="javascript:;">일반회원 리스트</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">학습 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">추천 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">기출 문제지 등록</a>
+								</li>
+								<li>
+									<a href="javascript:;">교재 VOD 검수</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">부가 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">메인 관리</a>
+								</li>
+								<li>
+									<a href="javascript:;">문항 오류신고</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="javascript:;">커뮤니티</a>
+								</li>
+								<li>
+									<a href="javascript:;">1:1 문의</a>
+								</li>
+								<li>
+									<a href="javascript:;">사용 후기</a>
+								</li>
+								<li>
+									<a href="javascript:;">업데이트 소식</a>
+								</li>
+								<li>
+									<a href="javascript:;">공지사항</a>
+								</li>
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="javascript:;">오류 문의 및 개선사항</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="local-nav">
+				<div class="inner">
+					<a href="javascript:;" class="home"></a>
+					<div class="depth01">
+						<button type="button" class="select-btn">커뮤니티</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">정산 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">고객 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">학습 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">부가 관리</a>
+							</li>
+							<li>
+								<a href="javascript:;">커뮤니티</a>
+							</li>							
+						</ul>
+					</div>
+					<div class="depth02">
+						<button type="button" class="select-btn">오류 문의 및 개선사항</button>
+						<ul class="select-list">
+							<li>
+								<a href="javascript:;">1:1 문의</a>
+							</li>
+							<li>
+								<a href="javascript:;">사용 후기</a>
+							</li>
+							<li>
+								<a href="javascript:;">업데이트 소식</a>
+							</li>
+							<li>
+								<a href="javascript:;">공지사항</a>
+							</li>
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="javascript:;">오류 문의 및 개선사항</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="inner">
+				<p class="sub-tit">오류 문의 및 개선사항</p>
+				<div class="view-table">
+					<table>
+						<colgroup>
+							<col width="10%">
+							<col width="40%">
+							<col width="10%">
+							<col width="40%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>구분</th>
+								<td>결제</td>
+								<th>제목</th>
+								<td>결제 문의</td>
+							</tr>
+							<tr>
+								<th>학원코드</th>
+								<td>H0000000</td>
+								<th>학원명</th>
+								<td>두산</td>
+							</tr>
+							<tr>
+								<th>작성자</th>
+								<td>김천재</td>
+								<th>작성일</th>
+								<td>YYYY-MM-DD</td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td colspan="3">010-0000-0000</td>
+							</tr>
+						</tbody>
+					</table>
+					<textarea name="" id="" cols="30" rows="10" class="mt10">문의 내용이 노출됩니다.</textarea>
+					<table>
+						<colgroup>
+							<col width="10%">
+							<col width="40%">
+							<col width="10%">
+							<col width="40%">
+						</colgroup>
+						<tbody>
+							<tr class="file-wrap">
+								<th>첨부파일</th>
+								<td colspan="3">
+									<a href="" download="" class="file-down">개인정보처리방침 변경 안내문 1.hwp</a>
+									<a href="" download="" class="file-down">개인정보처리방침 변경 안내문 2.hwp</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table>
+						<colgroup>
+							<col width="10%">
+							<col width="40%">
+							<col width="10%">
+							<col width="40%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>처리상태</th>
+								<td>처리중</td>
+								<th>처리일</th>
+								<td>YYYY-MM-DD</td>
+							</tr>
+							<tr>
+								<th>처리자</th>
+								<td colspan="3">김로운</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="sub-tit">답변</p>
+				<div class="view-table">
+					<textarea name="" id="" cols="30" rows="10">답변이 노출됩니다.</textarea>
+					<div class="btn-wrap">
+						<a href="javascript:;">목록</a>
+						<a href="javascript:;" class="bg-c">등록</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="dim"></div>
+	<div class="pop-wrap alert-pop inner-pop" data-pop="reset-pop">
+		<div class="pop-content">
+			<button type="button" class="pop-close ico"></button>
+			<img src="../images/common/ico_pop.png" alt="">
+			<span class="txt">비밀번호가<br>초기화되었습니다.</span>
+		</div>
+		<div class="pop-footer">
+			<div class="btn-wrap">
+				<button type="button" class="pop-close">확인</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1059,6 +1059,10 @@ a.btn-txt {
       border-radius: 4px;
       background-color: #7959c8;
     }
+    & + textarea {
+      margin-top: 10px;
+    }
+    
   }
 
   th,
@@ -1093,6 +1097,9 @@ a.btn-txt {
   }
   & + .view-table {
     margin-top: 40px;
+  }
+  & + .sub-tit {
+    margin-top: 20px;
   }
 }
 
@@ -1235,5 +1242,51 @@ a.btn-txt {
       bottom: -25px;
       color: #fff;
     }
+  }  
+}
+.pw-type {
+  .header-top {
+    background-color: #fff;
+    a {
+      &:nth-child(1) {
+        margin-right: 25px;
+        background: url("../../images/admin/ico_pw02.png") no-repeat 0% 50%;
+      }
+    }
+  }
+  .input-form {
+    width: 450px;
+    padding-top: 13px;
+  }
+  .row {
+    display: flex;
+    margin-bottom: 20px;
+    .tit {
+      flex: none;
+      width: 130px;
+      padding-top: 10px;
+      font-weight: 500;
+    }
+    .form {
+      input {
+        height: 36px;
+        padding: 10px;
+        margin-bottom: 5px;
+        background: #fff;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      .txt {
+        color: #5a14be;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .form-txt-chk {
+    margin-top: 35px;
+    font-size: 14px;
+    font-weight: 500;
   }
 }

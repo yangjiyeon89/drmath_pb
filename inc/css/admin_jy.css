@@ -173,6 +173,17 @@
   background-size: 6px;
   filter: invert(42%) sepia(1%) saturate(0%) hue-rotate(57deg) brightness(90%) contrast(86%);
 }
+.view-table .file-wrap {
+  border-top: 1px solid #ddd;
+}
+.view-table .file-wrap .file-down {
+  display: block;
+  width: fit-content;
+}
+.view-table .file-wrap .file-down + .file-down {
+  margin-left: 0;
+  margin-top: 10px;
+}
 .view-table .file-down {
   color: #7959c8;
   border-bottom: 1px solid #7959c8;

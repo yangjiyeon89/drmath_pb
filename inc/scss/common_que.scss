@@ -262,6 +262,11 @@ body {
           filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
         }
       }
+      &.active {
+        span {
+          filter: invert(0) sepia(27%) saturate(5921%) hue-rotate(252deg) brightness(91%) contrast(96%);
+        }
+      }
     }
   }
 }

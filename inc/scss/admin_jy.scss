@@ -161,6 +161,17 @@
       filter: invert(42%) sepia(1%) saturate(0%) hue-rotate(57deg) brightness(90%) contrast(86%);
     }
   }
+  .file-wrap {
+    border-top: 1px solid #ddd;
+    .file-down {
+      display: block;
+      width: fit-content;
+      & + .file-down {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
   .file-down {
     color: #7959c8;
     border-bottom: 1px solid #7959c8;
