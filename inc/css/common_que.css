@@ -3051,6 +3051,81 @@ input[type=checkbox]:checked + label::before {
 .pop-wrap.check-type .pop-footer button {
   border-radius: 0 0 10px 10px;
 }
+.pop-wrap.check-type.type02 .pop-inner {
+  width: 670px;
+}
+.pop-wrap.check-type.type02 .pop-content {
+  padding: 18px 30px 30px 30px;
+}
+.pop-wrap.check-type.type02 .pop-content > div {
+  width: 290px;
+}
+.pop-wrap.check-type.type02 .pop-content .search-box {
+  margin-left: 0;
+}
+.pop-wrap.check-type.type02 .pop-content .tab-menu-type03 li a {
+  width: 135px;
+}
+.pop-wrap.check-type.type02 .left-cnt .tab-wrap::after {
+  right: -22px;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .user-info {
+  display: flex;
+  align-items: center;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .name {
+  display: block;
+  width: 53px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .name:hover + .tooltip-txt {
+  display: block;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .tooltip-txt {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: max-content;
+  padding: 4px 10px;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  background-color: #969696;
+  border-radius: 3px;
+  z-index: 1;
+  font-style: normal;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .tooltip-txt::before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  left: 18px;
+  top: -7px;
+  width: 11px;
+  height: 8px;
+  background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .tel {
+  position: relative;
+  padding-left: 10px;
+}
+.pop-wrap.check-type.type02 .chk-acc .cnt .tel:before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 1px;
+  height: 13px;
+  background-color: #dddddd;
+}
 .pop-wrap.paper-type .pop-inner {
   width: 1210px;
   padding: 30px;

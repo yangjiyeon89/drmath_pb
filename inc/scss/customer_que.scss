@@ -440,35 +440,35 @@
       width: 264px;
     }
   }
-  .select-list {
-    display: none;
-    overflow-y: overlay;
-    position: relative;
-    top: -2px;
-    width: 180px;
-    background: #fff;
-    border: 1px solid #cfcfcf;
-    border-top: 0;
-    border-radius: 0 0 5px 5px;
-    box-sizing: border-box;
-    z-index: 1;
-    a {
-      display: block;
-      padding: 12px 15px;
-      color: $color-font66;
-      box-sizing: border-box;
-    }
-    li {
-      &:last-child {
-        a {
-          padding-bottom: 20px;
-        }
-      }
-    }
-    &.scroll-type {
-      height: 214px;
-    }
-  }
+  // .select-list {
+  //   display: none;
+  //   overflow-y: overlay;
+  //   position: relative;
+  //   top: -2px;
+  //   width: 180px;
+  //   background: #fff;
+  //   border: 1px solid #cfcfcf;
+  //   border-top: 0;
+  //   border-radius: 0 0 5px 5px;
+  //   box-sizing: border-box;
+  //   z-index: 1;
+  //   a {
+  //     display: block;
+  //     padding: 12px 15px;
+  //     color: $color-font66;
+  //     box-sizing: border-box;
+  //   }
+  //   li {
+  //     &:last-child {
+  //       a {
+  //         padding-bottom: 20px;
+  //       }
+  //     }
+  //   }
+  //   &.scroll-type {
+  //     height: 214px;
+  //   }
+  // }
   [class^='form-txt-'] {
     margin-left: 2px;
     font-size: 14px;
@@ -831,287 +831,7 @@
       }
     }
   }
-  .pop-wrap {
-    display: none;
-    position: fixed;
-    top: 50%;left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    .pop-close {
-      width: 25px;height: 25px;
-      background: url(../../images/common/ico_close.png) no-repeat;
-    }
-    &.search-type {
-      width: 600px;
-      min-height: 660px;
-      background-color: #fff;
-      .pop-header {
-        height: 80px;
-        padding: 0 30px;
-        @include layout-justify-center;
-        color: #fff;
-        background-color: $color-main-purple;
-        .tit {
-          @include font(24px, 700);
-        }
-        .pop-close {
-          background: url(../../images/common/ico_close_w.png) no-repeat;
-          background-size: contain;
-        }
-      }
-      .pop-content {
-        padding: 30px;
-        .search-wrap {
-          @include layout-justify-center;
-          margin-top: 20px;
-          padding: 20px;
-          border: 1px solid #dcdcdc;
-          background-color: #f2f2f2;
-          input {
-            width: calc(100% - 110px);
-          }
-        }
-        .table-top {
-          position: relative;
-          margin-top: 10px;
-          .txt {
-            em {
-              color: $color-main-purple;
-              font-weight: 500;
-            }
-          }
-          .select-wrap {
-            position: relative;
-            .select-btn {
-              width: 148px;height: 36px;
-              font-size: 14px;
-            }
-            .select-list {
-              position: absolute;
-              width: 100%;
-              top: 34px;
-              max-height: 140px;
-              font-size: 14px;
-            }
-          }
-        }
-        table {
-          margin-top: 10px;
-          border-bottom: 1px solid $color-line;
-          td {
-            div {
-              text-align: left;
-              span {
-                font-size: 14px;
-                &:nth-child(1) {
-                  @include content-center-center;
-                  width: 75px;height: 26px;
-                  margin-right: 10px;
-                  border: 1px solid $color-box;
-                }
-              }
-              & + div {
-                margin-top: 5px;
-              }
-            }
-            &:nth-child(1) {
-              padding: 10px 8px;
-            }
-            &:last-child {
-              @include font(18px, 700);
-              color: $color-main-purple;
-            }
-          }
-        }
-      }
-      .no-data {
-        padding-top: 30px;
-        text-align: center;
-        line-height: 1.5;
-        em {
-          color: $color-main-purple;
-        }
-      }
-    }
-    &.alert-type {
-      overflow: hidden;
-      width: 300px;
-      border: 2px solid $color-main-purple;
-      border-radius: 10px;
-      background-color: #fff;
-      .pop-content {
-        position: relative;
-        @include layout-center-center;
-        height: 148px;
-        .tit {
-          @include font(20px, 700);
-        }
-        .txt {
-          padding-top: 20px;
-          font-size: 18px;
-          text-align: center;
-          line-height: 1.6;
-        }
-        .pop-close {
-          position: absolute;
-          top: 20px;right: 20px;
-          width: 17px;height: 17px;
-          background-size: contain;
-        }
-        &.img-cnt {
-          flex-direction: column;
-          img {
-            padding-top: 20px;
-          }
-          .txt {
-            padding-top: 10px;
-          }
-        }
-      }
-      .pop-footer {
-        display: flex;
-        button {
-          @include content-center-center;
-          flex: 1;
-          height: 50px;
-          font-size: 18px;
-          background-color: $color-line;
-          &:last-child {
-            color: #fff;
-            font-weight: 500;
-            background-color: $color-main-purple;
-          }
-        }
-      }
-      &.img-type {
-        width: 600px;
-        .pop-content {
-          flex-direction: column;
-          padding: 80px 0;
-        }
-        .tit {
-          margin-top: 35px;
-        }
-        .form-txt-error {
-          display: block;
-          margin-top: 10px;
-          font-size: 16px;
-        }
-      }
-    }
-    &.content-type {
-      overflow: hidden;
-      width: 800px;
-      border: 2px solid $color-main-purple;
-      border-radius: 10px;
-      background-color: #fff;
-      .pop-header {
-        @include layout-justify-center;
-        padding: 32px 0 20px;
-        margin: 0 30px;
-        border-bottom: 2px solid $color-sub28;
-        .tit {
-          @include font(18px, 700);
-        }
-        .pop-close {
-          width: 16px;height: 16px;
-          background-size: contain;
-        }
-      }
-      .pop-content {
-        margin: 25px 30px;      
-        border: 1px solid #cfcfcf;
-        .scroll-inner {
-          height: 425px;
-          word-break: break-all;
-        }
-      }
-      .pop-footer {
-        display: flex;
-        button {
-          @include content-center-center;
-          flex: 1;
-          height: 50px;
-          font-size: 18px;
-          background-color: $color-line;
-          &:last-child {
-            color: #fff;
-            font-weight: 500;
-            background-color: $color-main-purple;
-          }
-        }
-      }
-    }
-    &.member-type {
-      width: 800px;
-      background-color: #fff;
-      .pop-header {
-        height: 80px;
-        padding: 0 30px;
-        @include layout-justify-center;
-        color: #fff;
-        background-color: $color-main-purple;
-        .tit {
-          @include font(24px, 700);
-        }
-        .pop-close {
-          background: url(../../images/common/ico_close_w.png) no-repeat;
-          background-size: contain;
-        }
-      }
-      .pop-content {
-        padding: 30px 10px 30px 30px;
-        .privacy_date_sel {
-          display: inline-block;
-          height: 40px;
-          border-radius: 20px;
-          background-color: #20154d;
-          margin-bottom: 15px;
-          select {
-            background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
-            background-size: 1.62rem auto;
-            font-size: 15px;
-            width: 380px;
-            height: 40px;
-            color: #fff;
-            border-radius: 20px;
-            background-color: #20154d;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            border: none;
-            outline: none;
-            padding: 0 45px 0 15px;
-            option {
-              padding-right: 10px;
-            }
-          }
-        }
-        .scroll-inner {
-          height: 660px;
-          overflow-y: auto;
-        }
-      }
-      .privacy_info {
-        margin: 10px 0;
-      }
-      .privacy_sub {
-        margin-bottom: 10px;
-      }
-      table {
-        width: 100%;
-        border: 1px solid #ddd;
-        th {
-          text-align: center;
-        }
-        th, td {
-          padding: 5px;
-          border-right: 1px solid #ddd;
-          border-bottom: 1px solid #ddd;
-        }
-      }
-    }
-  }
+  
   
   // header
   .header {
@@ -1655,6 +1375,365 @@
       justify-content: flex-end;
       button {
         width: 110px;
+      }
+    }
+  }
+  .text-box {
+    position: relative;
+    margin-top: 20px;
+    textarea {
+      width: 100%;
+      height: 490px;
+      padding: 20px;
+      resize: none;
+      border: 1px solid #959595;
+      border-radius: 8px;
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+  .answer-box {
+    margin-top: 20px;
+    padding: 20px 0 20px 20px;
+    border: 1px solid #959595;
+    border-radius: 8px;
+    .tit {
+      color: #5a14be;
+    }
+    .txt {
+      display: block;
+      margin-top: 10px;
+      color: #666666;
+    }
+    .scroll-inner {
+      height: 120px;
+    }
+    & + .btn-wrap {
+      margin: 30px 0;
+    }
+  }
+  .table-wrap {
+    &.type02 {
+      table {
+        border-top: 2px solid #000;
+        border-bottom: 1px solid #dddddd;
+      }
+      td {
+        padding: 0 20px;
+        input {
+          width: 100%;
+        }
+        &.file-box {
+          padding: 20px;
+          .row {
+            @include layout-justify-center;
+            & + .row {
+              margin-top: 20px;
+            }
+          }
+          .file {
+            a {
+              margin-right: 10px;
+              padding-bottom: 2px;
+              color: #3c99da;
+              border-bottom: 1px solid #3c99da;
+            }
+            
+          }
+        }
+      }
+    }
+    & + .btn-wrap {
+      margin: 30px 0;
+    }
+  }
+}
+
+.pop-wrap {
+  display: none;
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  .pop-close {
+    width: 25px;height: 25px;
+    background: url(../../images/common/ico_close.png) no-repeat;
+  }
+  &.search-type {
+    width: 600px;
+    min-height: 660px;
+    background-color: #fff;
+    .pop-header {
+      height: 80px;
+      padding: 0 30px;
+      @include layout-justify-center;
+      color: #fff;
+      background-color: $color-main-purple;
+      .tit {
+        @include font(24px, 700);
+      }
+      .pop-close {
+        background: url(../../images/common/ico_close_w.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .pop-content {
+      padding: 30px;
+      .search-wrap {
+        @include layout-justify-center;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #dcdcdc;
+        background-color: #f2f2f2;
+        input {
+          width: calc(100% - 110px);
+        }
+      }
+      .table-top {
+        position: relative;
+        margin-top: 10px;
+        .txt {
+          em {
+            color: $color-main-purple;
+            font-weight: 500;
+          }
+        }
+        .select-wrap {
+          position: relative;
+          .select-btn {
+            width: 148px;height: 36px;
+            font-size: 14px;
+          }
+          .select-list {
+            position: absolute;
+            width: 100%;
+            top: 34px;
+            max-height: 140px;
+            font-size: 14px;
+          }
+        }
+      }
+      table {
+        margin-top: 10px;
+        border-bottom: 1px solid $color-line;
+        td {
+          div {
+            text-align: left;
+            span {
+              font-size: 14px;
+              &:nth-child(1) {
+                @include content-center-center;
+                width: 75px;height: 26px;
+                margin-right: 10px;
+                border: 1px solid $color-box;
+              }
+            }
+            & + div {
+              margin-top: 5px;
+            }
+          }
+          &:nth-child(1) {
+            padding: 10px 8px;
+          }
+          &:last-child {
+            @include font(18px, 700);
+            color: $color-main-purple;
+          }
+        }
+      }
+    }
+    .no-data {
+      padding-top: 30px;
+      text-align: center;
+      line-height: 1.5;
+      em {
+        color: $color-main-purple;
+      }
+    }
+  }
+  &.alert-type {
+    overflow: hidden;
+    width: 300px;
+    border: 2px solid $color-main-purple;
+    border-radius: 10px;
+    background-color: #fff;
+    .pop-content {
+      position: relative;
+      @include layout-center-center;
+      height: 148px;
+      .tit {
+        @include font(20px, 700);
+      }
+      .txt {
+        padding: 20px 0 0 0;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+      }
+      .pop-close {
+        position: absolute;
+        top: 20px;right: 20px;
+        width: 17px;height: 17px;
+        background-size: contain;
+      }
+      &.img-cnt {
+        flex-direction: column;
+        img {
+          padding-top: 20px;
+        }
+        .txt {
+          padding-top: 10px;
+        }
+      }
+    }
+    .pop-footer {
+      display: flex;
+      button {
+        @include content-center-center;
+        flex: 1;
+        height: 50px;
+        font-size: 18px;
+        color: #333;
+        background-color: $color-line;
+        &:last-child {
+          color: #fff;
+          font-weight: 500;
+          background-color: $color-main-purple;
+        }
+      }
+    }
+    &.img-type {
+      width: 600px;
+      .pop-content {
+        flex-direction: column;
+        padding: 80px 0;
+      }
+      .tit {
+        margin-top: 35px;
+      }
+      .form-txt-error {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  &.content-type {
+    overflow: hidden;
+    width: 800px;
+    border: 2px solid $color-main-purple;
+    border-radius: 10px;
+    background-color: #fff;
+    .pop-header {
+      @include layout-justify-center;
+      padding: 32px 0 20px;
+      margin: 0 30px;
+      border-bottom: 2px solid $color-sub28;
+      .tit {
+        @include font(18px, 700);
+      }
+      .pop-close {
+        width: 16px;height: 16px;
+        background-size: contain;
+      }
+    }
+    .pop-content {
+      margin: 25px 30px;      
+      border: 1px solid #cfcfcf;
+      .scroll-inner {
+        height: 425px;
+        word-break: break-all;
+      }
+    }
+    .pop-footer {
+      display: flex;
+      button {
+        @include content-center-center;
+        flex: 1;
+        height: 50px;
+        font-size: 18px;
+        background-color: $color-line;
+        &:last-child {
+          color: #fff;
+          font-weight: 500;
+          background-color: $color-main-purple;
+        }
+      }
+    }
+    &.type02 {
+      width: 370px;
+      text-align: center;
+      .pop-inner {
+        padding: 30px 0;
+      }
+    }
+  }
+  &.member-type {
+    width: 800px;
+    background-color: #fff;
+    .pop-header {
+      height: 80px;
+      padding: 0 30px;
+      @include layout-justify-center;
+      color: #fff;
+      background-color: $color-main-purple;
+      .tit {
+        @include font(24px, 700);
+      }
+      .pop-close {
+        background: url(../../images/common/ico_close_w.png) no-repeat;
+        background-size: contain;
+      }
+    }
+    .pop-content {
+      padding: 30px 10px 30px 30px;
+      .privacy_date_sel {
+        display: inline-block;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #20154d;
+        margin-bottom: 15px;
+        select {
+          background: url(../../images/main/ico_select.png) no-repeat 97% center #20154d;
+          background-size: 1.62rem auto;
+          font-size: 15px;
+          width: 380px;
+          height: 40px;
+          color: #fff;
+          border-radius: 20px;
+          background-color: #20154d;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: none;
+          outline: none;
+          padding: 0 45px 0 15px;
+          option {
+            padding-right: 10px;
+          }
+        }
+      }
+      .scroll-inner {
+        height: 660px;
+        overflow-y: auto;
+      }
+    }
+    .privacy_info {
+      margin: 10px 0;
+    }
+    .privacy_sub {
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border: 1px solid #ddd;
+      th {
+        text-align: center;
+      }
+      th, td {
+        padding: 5px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
       }
     }
   }

@@ -156,7 +156,7 @@
                       <textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
                       <!-- s: 20221226 수정 -->
                       <div class="btn-wrap">
-                        <button type="button" class="btn-default">수신자 선택</button>
+                        <button type="button" class="btn-default pop-btn" data-pop="check-pop">수신자 선택</button>
                         <button type="button" class="btn-default">등록</button>
                       </div>
                       <!-- e: 20221226 수정 -->
@@ -344,6 +344,557 @@
         <div class="pop-footer">
           <button>취소</button>
           <button>확인</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 수신자 선택 팝업 -->
+    <div class="pop-wrap check-type type02" data-pop="check-pop">
+      <div class="pop-inner">
+        <div class="pop-header">
+          <button type="button" class="pop-close"></button>
+        </div>
+        <!--<div class="input-radio-type01">
+          <input type="radio" id="radio02_01" name="radio02" checked="">
+          <label for="radio02_01">학부모</label>
+          <input type="radio" id="radio02_02" name="radio02">
+          <label for="radio02_02">학생</label>
+        </div>-->
+        <div class="pop-content">
+          <!-- S: 230309 UI 변경으로 인한 마크업 수정 -->
+          <div class="left-cnt">
+            <div class="search-box">
+              <input type="text" placeholder="이름 또는 연락처 + Enter" class="search">
+              <button type="button" class="btn-search"></button>
+            </div>
+            <div class="tab-wrap">
+              <ul class="tab-menu-type03">
+                <li class="ui-tab-btn active">
+                  <a href="javascript:;">클래스</a>
+                </li>
+                <li class="ui-tab-btn">
+                  <a href="javascript:;">학년</a>
+                </li>
+              </ul>
+              <div class="contents on">
+                <div class="scroll-inner">
+                  <!-- S: 검색 결과 없음 -->
+                  <!--<div class="no-data">
+                    <p>검색결과가 없습니다.</p>
+                  </div>-->
+                  <!-- E: 검색 결과 없음 -->
+                  <div class="check-wrap">
+                    <div class="chk-acc" data-index="1">
+                      <div class="acc-btn active">
+                        <span>매쓰반</span>
+                        <em>4명</em>
+                        <input type="checkbox" id="chk02_01" class="allCheck">
+                        <label for="chk02_01"></label>
+                      </div>
+                      <ul class="cnt" style="display: block;">
+                        <li>
+                          <input type="checkbox" id="chk02_02" name="chk02_02">
+                          <label for="chk02_02"> 
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <em class="tooltip-txt">고희동동동</em>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk02_03" name="chk02_03">
+                          <label for="chk02_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk02_04" name="chk02_04">
+                          <label for="chk02_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="select">
+                          <input type="checkbox" id="chk02_05" name="chk02_05">
+                          <label for="chk02_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="2">
+                      <div class="acc-btn">
+                        <span>닥터반</span>
+                        <em>3명</em>
+                        <input type="checkbox" id="chk03_01" class="allCheck">
+                        <label for="chk03_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk03_02" name="chk03_02">
+                          <label for="chk03_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_03" name="chk03_03">
+                          <label for="chk03_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk03_04" name="chk03_04">
+                          <label for="chk03_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc" data-index="3">
+                      <div class="acc-btn">
+                        <span>천재반</span>
+                        <em>7명</em>
+                        <input type="checkbox" id="chk04_01" class="allCheck">
+                        <label for="chk04_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk04_02" name="chk04_02">
+                          <label for="chk04_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_03" name="chk04_03">
+                          <label for="chk04_03">
+                            <div class="user-info">
+                              <span class="name">김김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_04" name="chk04_04">
+                          <label for="chk04_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_05" name="chk04_05">
+                          <label for="chk04_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_06" name="chk04_06">
+                          <label for="chk04_06">
+                            <div class="user-info">
+                              <span class="name">고희동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_07" name="chk04_07">
+                          <label for="chk04_07">
+                            <div class="user-info">
+                              <span class="name">김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk04_08" name="chk04_08">
+                          <label for="chk04_08">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contents">
+                <div class="scroll-inner">
+                  <!-- S: 검색 결과 없음 -->
+                  <!--<div class="no-data">
+                    <p>검색결과가 없습니다.</p>
+                  </div>-->
+                  <!-- E: 검색 결과 없음 -->
+                  <div class="check-wrap">
+                    <div class="chk-acc type02" data-index="4">
+                      <div class="acc-btn active">
+                        <span>초1</span>
+                        <em>4명</em>
+                        <input type="checkbox" id="chk05_01" class="allCheck">
+                        <label for="chk05_01"></label>
+                      </div>
+                      <ul class="cnt" style="display:block;">
+                        <li>
+                          <input type="checkbox" id="chk05_02" name="chk05_02">
+                          <label for="chk05_02">
+                            <div class="user-info">
+                              <span class="name">고희동동동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_03" name="chk05_03">
+                          <label for="chk05_03">
+                            <div class="user-info">
+                              <span class="name">김둘리</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_04" name="chk05_04">
+                          <label for="chk05_04">
+                            <div class="user-info">
+                              <span class="name">도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk05_05" name="chk05_05">
+                          <label for="chk05_05">
+                            <div class="user-info">
+                              <span class="name">김또치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-acc type02" data-index="5">
+                      <div class="acc-btn">
+                        <span>초2</span>
+                        <em>3명</em>
+                        <input type="checkbox" id="chk06_01" class="allCheck">
+                        <label for="chk06_01"></label>
+                      </div>
+                      <ul class="cnt">
+                        <li>
+                          <input type="checkbox" id="chk06_02" name="chk06_02">
+                          <label for="chk06_02">
+                            <div class="user-info">
+                              <span class="name">고희동</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk06_03" name="chk06_03">
+                          <label for="chk06_03">
+                            <div class="user-info">
+                              <span class="name">김또치치</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="chk06_04" name="chk06_04">
+                          <label for="chk06_04">
+                            <div class="user-info">
+                              <span class="name">도우너도우너</span>
+                              <span class="tel">010-1234-5678</span>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-cnt">
+            <div class="check-wrap">
+              <div class="scroll-inner">
+                <!-- S: 수신자 선택 전 -->
+                <!-- <div class="no-data">
+                  <p>수신자를 선택해주세요.</p>
+                </div> -->
+                <!-- E: 수신자 선택 전-->
+                <div class="chk-acc" data-index="1">
+                  <div class="acc-btn active">
+                    <span>매쓰반</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk09_01" class="allCheck">
+                    <label for="chk09_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk09_02" name="chk02_02">
+                      <label for="chk09_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_03" name="chk02_03">
+                      <label for="chk09_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_04" name="chk02_04">
+                      <label for="chk09_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk09_05" name="chk02_05">
+                      <label for="chk09_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="2">
+                  <div class="acc-btn active">
+                    <span>닥터반</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk10_01" class="allCheck">
+                    <label for="chk10_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk10_02" name="chk03_02">
+                      <label for="chk10_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk10_03" name="chk03_03">
+                      <label for="chk10_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk10_04" name="chk03_04">
+                      <label for="chk10_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc" data-index="3">
+                  <div class="acc-btn active">
+                    <span>천재반</span>
+                    <em>7명</em>
+                    <input type="checkbox" id="chk11_01" class="allCheck">
+                    <label for="chk11_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk11_02" name="chk04_02">
+                      <label for="chk11_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_03" name="chk04_03">
+                      <label for="chk11_03">
+                        <div class="user-info">
+                          <span class="name">김김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_04" name="chk04_04">
+                      <label for="chk11_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_05" name="chk04_05">
+                      <label for="chk11_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_06" name="chk04_06">
+                      <label for="chk11_06">
+                        <div class="user-info">
+                          <span class="name">고희동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_07" name="chk04_07">
+                      <label for="chk11_07">
+                        <div class="user-info">
+                          <span class="name">김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk11_08" name="chk04_08">
+                      <label for="chk11_08">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc type02" data-index="4">
+                  <div class="acc-btn active">
+                    <span>초1</span>
+                    <em>4명</em>
+                    <input type="checkbox" id="chk12_01" class="allCheck">
+                    <label for="chk12_01"></label>
+                  </div>
+                  <ul class="cnt" style="display:block;">
+                    <li>
+                      <input type="checkbox" id="chk12_02" name="chk05_02">
+                      <label for="chk12_02">
+                        <div class="user-info">
+                          <span class="name">고희동동동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_03" name="chk05_03">
+                      <label for="chk12_03">
+                        <div class="user-info">
+                          <span class="name">김둘리</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_04" name="chk05_04">
+                      <label for="chk12_04">
+                        <div class="user-info">
+                          <span class="name">도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk12_05" name="chk05_05">
+                      <label for="chk12_05">
+                        <div class="user-info">
+                          <span class="name">김또치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk-acc type02" data-index="5">
+                  <div class="acc-btn">
+                    <span>초2</span>
+                    <em>3명</em>
+                    <input type="checkbox" id="chk13_01" class="allCheck">
+                    <label for="chk13_01"></label>
+                  </div>
+                  <ul class="cnt">
+                    <li>
+                      <input type="checkbox" id="chk13_02" name="chk06_02">
+                      <label for="chk13_02">
+                        <div class="user-info">
+                          <span class="name">고희동</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk13_03" name="chk06_03">
+                      <label for="chk13_03">
+                        <div class="user-info">
+                          <span class="name">김또치치</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="chk13_04" name="chk06_04">
+                      <label for="chk13_04">
+                        <div class="user-info">
+                          <span class="name">도우너도우너</span>
+                          <span class="tel">010-1234-5678</span>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- S: 230309 UI 변경으로 인한 마크업 수정 -->
+        </div>
+        <div class="pop-footer">
+          <button>취소</button>
+          <button>선택</button>
         </div>
       </div>
     </div>

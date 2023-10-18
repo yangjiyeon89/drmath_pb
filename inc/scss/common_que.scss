@@ -2828,6 +2828,7 @@ input[type="checkbox"] {
             }
           }
         }
+        
       }
     }
     .acc-btn {
@@ -2948,6 +2949,94 @@ input[type="checkbox"] {
       button {
         border-radius: 0 0 10px 10px;
       }
+    }
+    &.type02 {
+      .pop-inner {
+        width: 670px;
+      }
+      .pop-content {
+        padding: 18px 30px 30px 30px;
+        & > div {
+          width: 290px;
+        }
+        .search-box {
+					margin-left: 0;
+				}
+        .tab-menu-type03 {
+					li {
+						a {
+							width: 135px;
+						}
+					}
+				}
+      }
+      .left-cnt {
+				.tab-wrap {
+					&::after {
+						right: -22px;
+					}
+				}
+      }
+      .chk-acc {
+				.cnt {
+					.user-info {
+						@include layout-center;
+					}
+					.name {
+						display: block;
+						width: 53px;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						padding-right: 10px;
+            cursor: pointer;
+            &:hover {
+              & + .tooltip-txt {
+                display: block;
+              }
+            }
+					}
+          .tooltip-txt {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            width: max-content;
+            padding: 4px 10px;
+            color: #fff;
+            text-align: center;
+            word-break: break-all;
+            background-color: #969696;
+            border-radius: 3px;
+            z-index: 1;
+            font-style: normal;
+            &::before {
+              content: "";
+              display: block;
+              clear: both;
+              position: absolute;
+              left: 18px;
+              top: -7px;
+              width: 11px;
+              height: 8px;
+              background: url(../../images/common/ico_arrow_tooltip.png) no-repeat;
+            }
+          }
+					.tel {
+						position: relative;
+						padding-left: 10px;
+						&:before {
+							@include virtual-selector;
+							position: absolute;
+							top: 3px;
+							left: 0;
+							width: 1px;
+							height: 13px;
+							background-color: $color-line-type02;
+						}
+					}
+				}
+			}
     }
   }
   &.paper-type {
