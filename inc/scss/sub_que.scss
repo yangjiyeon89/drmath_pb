@@ -3563,6 +3563,26 @@
     }
   }
 }
+.content-pop {
+  .pop-inner {
+    width: 415px;
+  }
+  .pop-content {
+    padding: 0 30px 30px;
+    .text-box {
+      height: 234px;
+      padding: 15px 20px;
+      line-height: 1.5;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      .scroll-inner {
+        height: 100%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
 
 
 

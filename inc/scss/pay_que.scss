@@ -628,6 +628,78 @@
     }
   }
 }
+.swiper-pop {
+  .pop-inner {
+    width: 1000px;
+  }
+  .pop-header {
+    padding: 23px 0;
+    color: #fff;
+    background-color: #5a14be;
+    .title {
+      display: inline-block;
+      padding-left: 40px;
+      font-size: 24px;
+      background: url(../../images/common/ico_book_white.png) no-repeat left center;
+    }
+  }
+  .pop-close {
+    width: 20px;
+    height: 20px;
+    background: url(../../images/common/ico_add_type07.png) no-repeat;
+    background-size: cover;
+    transform: rotate(45deg);
+  }
+  .pop-content {
+    padding: 40px 0;
+    .txt-box {
+      color: #5a14be;
+      text-align: center;
+      .txt {
+        margin-top: 10px;
+        @include font(30px, 700);
+      }
+      .sub-txt {
+        color: #999999;
+        span {
+          margin: 0 10px;
+          color: #5a14be;
+        }
+      }
+    }
+    .book-preview-swiper {
+      width: 60%;
+      margin: 30px auto;      
+      text-align: center;
+      img {
+        height: 596px;
+      }
+      .swiper-button-next, .swiper-button-prev {
+				width: 26px;
+				height: 42px;
+				background: url(../../images/common/ico_arrow_bg_d.png) no-repeat;
+				background-size: contain;
+			}
+      .swiper-button-next {
+				transform: rotate(-180deg);
+			}
+			.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+				display: none;
+			}
+    }
+    .pagination {
+      font-size: 20px;
+      text-align: center;
+      input {
+        width: 37px;
+        height: 37px;
+        padding: 0;
+        text-align: center;
+        border-radius: 0;
+      }
+    }
+  }
+}
 
 @media (max-width: 1280px) {
   .sub13-que {

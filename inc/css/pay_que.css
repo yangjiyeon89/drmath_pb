@@ -628,6 +628,78 @@
   margin: 0 5px;
 }
 
+.swiper-pop .pop-inner {
+  width: 1000px;
+}
+.swiper-pop .pop-header {
+  padding: 23px 0;
+  color: #fff;
+  background-color: #5a14be;
+}
+.swiper-pop .pop-header .title {
+  display: inline-block;
+  padding-left: 40px;
+  font-size: 24px;
+  background: url(../../images/common/ico_book_white.png) no-repeat left center;
+}
+.swiper-pop .pop-close {
+  width: 20px;
+  height: 20px;
+  background: url(../../images/common/ico_add_type07.png) no-repeat;
+  background-size: cover;
+  transform: rotate(45deg);
+}
+.swiper-pop .pop-content {
+  padding: 40px 0;
+}
+.swiper-pop .pop-content .txt-box {
+  color: #5a14be;
+  text-align: center;
+}
+.swiper-pop .pop-content .txt-box .txt {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.swiper-pop .pop-content .txt-box .sub-txt {
+  color: #999999;
+}
+.swiper-pop .pop-content .txt-box .sub-txt span {
+  margin: 0 10px;
+  color: #5a14be;
+}
+.swiper-pop .pop-content .book-preview-swiper {
+  width: 60%;
+  margin: 30px auto;
+  text-align: center;
+}
+.swiper-pop .pop-content .book-preview-swiper img {
+  height: 596px;
+}
+.swiper-pop .pop-content .book-preview-swiper .swiper-button-next, .swiper-pop .pop-content .book-preview-swiper .swiper-button-prev {
+  width: 26px;
+  height: 42px;
+  background: url(../../images/common/ico_arrow_bg_d.png) no-repeat;
+  background-size: contain;
+}
+.swiper-pop .pop-content .book-preview-swiper .swiper-button-next {
+  transform: rotate(-180deg);
+}
+.swiper-pop .pop-content .book-preview-swiper .swiper-button-prev:after, .swiper-pop .pop-content .book-preview-swiper .swiper-rtl .swiper-button-next:after, .swiper-pop .pop-content .book-preview-swiper .swiper-button-next:after, .swiper-pop .pop-content .book-preview-swiper .swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+.swiper-pop .pop-content .pagination {
+  font-size: 20px;
+  text-align: center;
+}
+.swiper-pop .pop-content .pagination input {
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  text-align: center;
+  border-radius: 0;
+}
+
 @media (max-width: 1280px) {
   .sub13-que {
     overflow: hidden;

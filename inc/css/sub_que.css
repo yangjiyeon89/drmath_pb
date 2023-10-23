@@ -3377,6 +3377,25 @@
   color: #fff;
 }
 
+.content-pop .pop-inner {
+  width: 415px;
+}
+.content-pop .pop-content {
+  padding: 0 30px 30px;
+}
+.content-pop .pop-content .text-box {
+  height: 234px;
+  padding: 15px 20px;
+  line-height: 1.5;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.content-pop .pop-content .text-box .scroll-inner {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 @media (max-width: 1280px) {
   .login {
     padding-top: 0;
