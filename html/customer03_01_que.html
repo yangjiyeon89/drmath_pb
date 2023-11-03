@@ -188,9 +188,10 @@
                               <!-- <a href="javascript:;">사진 1.png</a>
                               <button type="button"><img src="../images/common/ico_delete_type08.png" alt=""></button> -->
                             </div>
-                            <div class="file-area">
+                            <div class="file-area file-box">
                               <img src="../images/common/ico_flie.png" alt="">
-                              <span>파일첨부하기</span>
+                              <label for="file">파일첨부하기</label>
+                              <input type="file" id="file">
                             </div>
                           </div>
                           <div class="row">
@@ -277,7 +278,7 @@
 		</div>
 
     <!-- 등록 완료 -->
-		<div class="pop-wrap alert-type">
+		<div class="pop-wrap alert-type" data-pop="ask-pop">
 			<div class="pop-content">
 				<button type="button" class="pop-close"></button>
 				<span class="txt">등록되었습니다.</span>

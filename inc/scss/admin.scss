@@ -452,11 +452,18 @@ a.btn-txt {
     text-align: center;
     .scroll-inner {
       height: 390px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      box-sizing: border-box;
     }
     table {
       margin-top: 0;
       border-top: 1px solid #ddd;
       border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      & + table {
+        margin-top: 20px;
+      }
     }
     th {
       text-align: center;
@@ -464,6 +471,11 @@ a.btn-txt {
     }
     td {
       padding: 18px 0;
+      border-bottom: 1px solid #ddd;
+      &.h140 {
+        height: 140px;
+        box-sizing: border-box;
+      }
     }
     .total {
       th, td {

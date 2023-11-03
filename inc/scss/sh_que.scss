@@ -3442,6 +3442,16 @@ i {
 	height: 1625px;
 	z-index: 4;
 	box-sizing: border-box;
+	&.h-auto {
+		height: auto;
+		.page-cnt {
+			.paging {
+				position: relative;
+				text-align: center;
+			}
+		}
+		
+	}
 	//표지
 	.cover-cnt {
 		position: relative;
@@ -3910,9 +3920,13 @@ i {
 					table {
 						border-left: 1px solid #dedede;
 						border-right: 1px solid #dedede;
+						table-layout: fixed;
 						th, td {
 							padding: 5px 10px;
 							font-size: 14px;
+						}
+						td {
+							word-break: break-all;
 						}
 						& + table {
 							margin-top: 20px;
@@ -4076,6 +4090,7 @@ i {
 					text-align: right;
 					border-right: 1px solid #d6d6d6;
 					box-sizing: border-box;
+					word-break: break-all;
 					&.red {
 						color: #f15969;
 					}
@@ -5587,6 +5602,7 @@ i {
 	}
 	.sub16-01 {
 		.content-wrap {
+			position: relative;
 			width: 100%;
 		}
 		.inner {
@@ -5672,6 +5688,7 @@ i {
 			display: flex;
 			flex-wrap: wrap;
 			&.scroll-inner {
+				position: relative;
 				height: 900px;
 			}
 			.item {

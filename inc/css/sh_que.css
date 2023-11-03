@@ -3280,6 +3280,13 @@ i.pen-type07 {
   z-index: 4;
   box-sizing: border-box;
 }
+.report-wrap.h-auto {
+  height: auto;
+}
+.report-wrap.h-auto .page-cnt .paging {
+  position: relative;
+  text-align: center;
+}
 .report-wrap .cover-cnt {
   position: relative;
   width: 100%;
@@ -3785,10 +3792,14 @@ i.pen-type07 {
 .report-wrap .page-cnt .report-cnt .table-wrap.type05 table {
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
+  table-layout: fixed;
 }
 .report-wrap .page-cnt .report-cnt .table-wrap.type05 table th, .report-wrap .page-cnt .report-cnt .table-wrap.type05 table td {
   padding: 5px 10px;
   font-size: 14px;
+}
+.report-wrap .page-cnt .report-cnt .table-wrap.type05 table td {
+  word-break: break-all;
 }
 .report-wrap .page-cnt .report-cnt .table-wrap.type05 table + table {
   margin-top: 20px;
@@ -3960,6 +3971,7 @@ i.pen-type07 {
   text-align: right;
   border-right: 1px solid #d6d6d6;
   box-sizing: border-box;
+  word-break: break-all;
 }
 .report-wrap .page-cnt .report-cnt .graph-wrap .txt.red {
   color: #f15969;
@@ -5269,6 +5281,7 @@ i.pen-type07 {
   background: #333;
 }
 .sub16-que .sub16-01 .content-wrap {
+  position: relative;
   width: 100%;
 }
 .sub16-que .sub16-01 .inner {
@@ -5350,6 +5363,7 @@ i.pen-type07 {
   flex-wrap: wrap;
 }
 .sub16-que .sub16-01 .prod-list.scroll-inner {
+  position: relative;
   height: 900px;
 }
 .sub16-que .sub16-01 .prod-list .item {

@@ -452,11 +452,18 @@ a.btn-txt {
 }
 .detail-pop .table-type02 .scroll-inner {
   height: 390px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 .detail-pop .table-type02 table {
   margin-top: 0;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.detail-pop .table-type02 table + table {
+  margin-top: 20px;
 }
 .detail-pop .table-type02 th {
   text-align: center;
@@ -464,6 +471,11 @@ a.btn-txt {
 }
 .detail-pop .table-type02 td {
   padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+.detail-pop .table-type02 td.h140 {
+  height: 140px;
+  box-sizing: border-box;
 }
 .detail-pop .table-type02 .total th, .detail-pop .table-type02 .total td {
   font-weight: 600;
